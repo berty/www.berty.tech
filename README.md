@@ -11,3 +11,13 @@
     <a href="https://twitter.com/berty">Twitter</a> •
     <a href="https://github.com/berty">GitHub</a>
 </b></p>
+
+---
+
+## bertytech (https://berty.tech)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3429d23a-ba6e-458e-8bc6-84583c63f742/deploy-status)](https://app.netlify.com/sites/bertytech/deploys)
+
+## bertyart (https://berty.tech/arg)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a59d09a-f53a-4d25-9e36-d4a222fe4571/deploy-status)](https://app.netlify.com/sites/bertyart/deploys)
