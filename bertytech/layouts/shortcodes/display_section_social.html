@@ -1,0 +1,32 @@
+<section class="section-social-links">
+  <div class="section-title">
+    <h2>Interact with us</h2>
+  </div>
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <a class="block block-value bg-white" href="https://crpt.fyi/berty-matrix" target="_blank" rel="noopener">
+      <div class="block-value-icon img-matrix">{{ partial "img" (dict "ctx" . "src" "/img/logo_matrix.svg" "width" "82" "height" "35") }}</div>
+      <div class="block-value-text">Chat with us&nbsp;<br/>on <span class="c-grey">Matrix</span></div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <a class="block block-value bg-white" href="https://crpt.fyi/berty-discord" target="_blank" rel="noopener">
+      <div class="block-value-icon c-discord"><i class="fab fa-discord"></i></div>
+      <div class="block-value-text">Chat with us&nbsp;<br/>on <span class="c-discord">Discord</span></div>
+      </a>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <a class="block block-value bg-white" href="https://twitter.com/berty" target="_blank" rel="noopener">
+      <div class="block-value-icon c-twitter"><i class="fab fa-twitter"></i></div>
+        <div class="block-value-text">Follow us on&nbsp;<br/>twitter <span class="c-twitter">@berty</span></div>
+      </a>
+    </div>
+    
+    <amp-script class="col-lg-3 col-md-6" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+      <a class="block block-value bg-white sendto-{{ `hello@berty.tech` | base64Encode }}">
+        <div class="block-value-icon c-blue"><i class="fal fa-envelope"></i></div>
+        <div class="block-value-text">Email us at&nbsp;<br/> <span class="c-blue to-text obsinner-{{ `hello@berty.tech` | base64Encode }}"></span></div>
+      </a>
+    </amp-script>
+  </div>
+</section>

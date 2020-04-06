@@ -1,0 +1,47 @@
+{{ .Scratch.Set "body-class" "page-single" }}
+{{ partial "head" . }}
+
+<!-- Header -->
+<header class="masthead masthead-portrait" {{ with .Params.image }}{{end}}>
+	{{ with .Params.image }}<div class="bg-image"><img src="{{ ($.Resources.GetMatch .).Permalink }}"></div>{{end}}
+	<div class="container">
+		<div class="intro-text">
+			<div class="intro-heading">{{ .Params.wb_name }}</div>
+				<div class="intro-artist">{{ i18n "a_portrait_by" . | markdownify }} {{ .Params.artist_name }}</div>
+		</div>
+	</div>
+</header>
+
+<div class="content">
+	<section class="page-section bg-light">
+		<div class="container">
+			<div class="block">
+				<h2>{{ i18n "about" . | markdownify }} <stabilo>{{ .Params.wb_name }}</stabilo>, {{ i18n "the_wb" . | markdownify }}</h2>
+				<p>{{ .Params.wb_bio | safeHTML }}</p>
+			</div><!-- /.block -->
+			<div class="block">
+				<h2>{{ i18n "about" . | markdownify }} <stabilo>{{ .Params.artist_name }}</stabilo>, {{ i18n "the_artist" . | markdownify }}</h2>
+				<p>{{ .Params.wb_bio | safeHTML }}</p>
+			</div><!-- /.block -->
+			<div class="block">
+				{{.Content}}
+			</div><!-- /.block -->
+			<div class="block">
+				<h2>{{ .Params.wb_name }} {{ i18n "by" . | markdownify }} {{ .Params.artist_name }}</h2>
+				<img class="img-fluid" {{ with .Params.image }}src="{{ ($.Page.Resources.GetMatch .).Permalink }}"{{end}}>
+				<br/>
+				<br/>
+				<div class="text-center">
+					<a href="#" class="btn btn-primary">{{ i18n "donate" . | markdownify }}</a>
+				</div>
+			</div><!-- /.block -->
+		</div><!-- /.container -->
+	</section><!-- /.content -->
+</div>
+
+
+{{ partial "section_concept" . }}
+
+{{ partial "section_project" . }}
+	
+{{ partial "footer" . }}

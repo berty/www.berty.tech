@@ -1,0 +1,29 @@
+{{ $is_remote := hasPrefix .Destination "http" }}
+
+{{ $layout := "" }}
+{{ $width := "" }}
+{{ $height := "" }}
+{{ $url := "" }}
+
+{{ if $is_remote }}
+  {{ $layout = "fill" }}
+  {{ $width = "1000" }}
+  {{ $height = "500" }}
+  {{ $url = .Destination }}
+{{ else }}
+  {{ $image := (.Page.Resources.GetMatch .Destination) }}
+  {{ if not (eq $image nil) }}
+    {{ $layout = "intrinsic" }}
+    {{ $image = cond (gt $image.Width 970) ($image.Resize "970x q100") $image }}
+    {{ $width = $image.Width }}
+    {{ $height = $image.Height }}
+    {{ $url = $image.RelPermalink }}
+  {{ end }}
+{{ end }}
+
+{{- if not (eq $url nil) -}}
+<figure class="md-image text-center {{ if $is_remote }}contain{{ end }}">
+  {{ partial "img" (dict "src" $url "width" $width "height" $height "layout" $layout "alt" .PlainText "title" (.Title | markdownify | plainify )) }}
+  <figcaption>{{ .Title | markdownify }}</figcaption>
+</figure>
+{{ end }}

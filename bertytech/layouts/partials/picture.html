@@ -1,0 +1,9 @@
+<picture class="_to-webp {{ .class }}">
+    <source 
+        {{with .src}}data-srcset="{{.}}"{{end}} 
+        type="{{.mimeType}}"/> 
+    <img 
+        class="lazyload"
+        {{with .src}}data-src="{{.}}"{{end}}
+        {{with .alt}}alt="{{.}}"{{end}} />
+</picture>

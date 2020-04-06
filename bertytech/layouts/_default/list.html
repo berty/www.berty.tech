@@ -1,0 +1,25 @@
+{{ .Scratch.Set "body-class" "page-single wh" }}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-yellow gradient bg-blog">
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  {{.Content}}
+  <div class="container">
+    <section class="section-posts">
+      <div class ="row">
+        {{ range .Pages }}
+        <div class="col-lg-4 col-sm-6">
+	       {{ partial "post_card" (dict "ctx" . "useAmpImg" true) }}
+        </div><!-- /.col -->
+      {{ end }}
+    </div><!-- /.row -->
+    </section>
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+{{ partial "footer" . }}

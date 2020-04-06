@@ -1,0 +1,186 @@
+{{- if in .Site.Params.home_languages .Lang -}}
+
+{{ .Scratch.Set "body-class" "page-single" }}
+{{ partial "head" . }}
+
+  <!-- Header -->
+  <header class="masthead bg-black bgimage-street">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">{{ .Params.content.intro_title | markdownify }}</div>
+      </div>
+    </div>
+  </header>
+
+  {{ partial "section_concept" . }}
+
+  <!-- FAQ -->
+  <section class="page-section bg-black" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <!--<h2 class="section-heading text-uppercase">{{ .Params.content.faq_title | markdownify }}</h2>-->
+          <h2 class="section-heading ">{{ .Params.content.faq_intro | markdownify }}</h2>
+          <br/>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row justify-content-md-center text-muted">
+        <div class="col-md-10">
+          <div class="faq-group">
+            <div class="faq-bubble q">{{ .Params.content.q_1 | markdownify }}</div>
+            <div class="faq-bubble a">{{ .Params.content.a_1 | markdownify }}</div>
+          </div>
+          <div class="faq-group">
+            <div class="faq-bubble q">{{ .Params.content.q_2 | markdownify }}</div>
+            <div class="faq-bubble a">{{ .Params.content.a_2 | markdownify }}</div>
+          </div>
+          <div class="faq-group">
+            <div class="faq-bubble q">{{ .Params.content.q_3 | markdownify }}</div>
+            <div class="faq-bubble a">{{ .Params.content.a_3 | markdownify }}</div>
+          </div>
+          <div class="faq-group">
+            <div class="faq-bubble q">{{ .Params.content.q_4 | markdownify }}</div>
+            <div class="faq-bubble a">{{ .Params.content.a_4 | markdownify }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="bg-light page-section" id="projects">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ .Params.content.projects_title | markdownify }}</h2>
+          <h3 class="section-subheading text-muted">{{ .Params.content.projects_intro | markdownify }}</h3>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+      <div class="row">
+        {{ partial "list_project_fake_1" . }}
+        {{ partial "list_project_fake_2" . }}
+      </div><!-- /.row -->
+  </section>
+
+  <!-- Call for artists -->
+  <section class="page-section" id="call-for-artists">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ .Params.content.cfa_title | markdownify }}</h2>
+          <h3 class="section-subheading text-muted">{{ .Params.content.cfa_intro | markdownify }}</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="timeline">
+            <li>
+              <div class="timeline-image">
+                <div class="rounded-circle number">1</div>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ .Params.content.cfa_1_title | markdownify }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">{{ .Params.content.cfa_1_body | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <div class="rounded-circle number">2</div>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ .Params.content.cfa_2_title | markdownify }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">
+                      {{ .Params.content.cfa_2_body | markdownify }}
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-image">
+                <div class="rounded-circle number">3</div>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ .Params.content.cfa_3_title | markdownify }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">{{ .Params.content.cfa_3_body | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <div class="rounded-circle number">4</div>
+              </div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h4>{{ .Params.content.cfa_4_title | markdownify }}</h4>
+                </div>
+                <div class="timeline-body">
+                  <p class="text-muted">{{ .Params.content.cfa_4_body | markdownify }}</p>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+              <div class="timeline-image">
+                <h4>{{ .Params.content.cfa_conclusion | markdownify }}</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="bg-light page-section" id="whistle-blowers">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ .Params.content.wb_title| markdownify }}</h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <span class="badge badge-pill badge-primary">{{ .Params.content.badge_portrait_made | markdownify }}</span>
+            <img class="mx-auto rounded-circle" src="{{ `img/art/portrait_1.jpg` | absURL }}" alt="">
+            <h4>Daniel Ellsberg</h4>
+            <p class="text-muted">{{ .Params.content.bio_men | markdownify }}</p>
+            <a href="{{ `daniel_ellsberg/` | absURL }}" class="btn btn-primary">{{ .Params.content.btn_view | markdownify }}</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <span class="badge badge-pill badge-danger">{{ .Params.content.badge_already_taken | markdownify }}</span>
+            <img class="mx-auto rounded-circle" src="{{ `img/art/portrait_2.jpg` | absURL }}" alt="">
+            <h4>Larry Parker</h4>
+            <p class="text-muted">{{ .Params.content.bio_men | markdownify }}</p>
+            <a href="#" class="btn btn-secondary">{{ .Params.content.btn_read | markdownify }}</a>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <span class="badge badge-pill badge-success">{{ .Params.content.badge_available | markdownify }}</span>
+            <img class="mx-auto rounded-circle" src="{{ `img/art/portrait_3.jpg` | absURL }}" alt="">
+            <h4>Diana Pertersen</h4>
+            <p class="text-muted">{{ .Params.content.bio_women | markdownify }}</p>
+            <a href="#" class="btn btn-primary">{{ .Params.content.btn_apply | markdownify }}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{{ partial "footer" . }}
+
+{{- end -}}

@@ -1,0 +1,9 @@
+      <div class="row">
+      {{ $enSite := index (where .Sites "Language.Lang" "en") 0 }}
+
+      {{ range .RegularPages | lang.Merge $enSite.RegularPages }}
+        <div class="col-lg-4 col-md-6">
+          {{ partial "project" . }}
+        </div><!-- /.col -->
+      {{ end }}
+      </div><!-- /.row -->

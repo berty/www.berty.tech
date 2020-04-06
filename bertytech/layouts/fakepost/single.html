@@ -1,0 +1,21 @@
+{{ .Scratch.Set "body-class" "page-post wh page-fake" }}
+{{ partial "head" . }}
+
+<header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).Permalink }}')"{{end}}>
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    <div class="block block-post bg-white">
+      <div class="post-content">
+  	   {{.Content}}
+      </div><!-- /.post-content -->
+      {{ partial "post_footer" . }}
+    </div><!-- /.block -->
+  </div><!-- /.container -->
+</div>
+
+{{ partial "footer" . }}

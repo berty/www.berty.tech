@@ -1,0 +1,35 @@
+{{ $organizationLogo := resources.Get .ctx.Site.Params.organizationLogo }}
+{{ $isMain := .isMain | default false }}
+
+"@context":"https://schema.org",
+"@type":"Organization",
+"url":"{{ .ctx.Site.BaseURL }}",
+"sameAs":[
+    {{ with .ctx.Site.Params.twitter }}"https://twitter.com/{{ . }}"{{ end }},
+    {{ with .ctx.Site.Params.github }}"https://github.com/{{ . }}"{{ end }},
+    {{ with .ctx.Site.Params.medium }}"https://medium.com/{{ . }}"{{ end }},
+    {{ with .ctx.Site.Params.linkedin }}"https://www.linkedin.com/company/{{ . }}"{{ end }}
+],
+{{ if $isMain }}
+"@id":"{{ .ctx.Site.BaseURL }}#organization",
+{{ end }}
+"name":"{{ .ctx.Site.Params.organizationName }}",
+"logo":{
+    "@type": "ImageObject",
+    "@context": "http://schema.org",
+    "url": "{{ $organizationLogo.Permalink }}",
+    "width": "{{ $organizationLogo.Width }}",
+    "height": "{{ $organizationLogo.Height }}"
+},
+"address": {
+    "@type": "PostalAddress"
+    {{ range $key, $val := .ctx.Site.Params.jobsAddress }}
+    ,"{{ $key }}": "{{ $val }}"
+    {{ end }}
+},
+"contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer support",
+    "telephone": "{{ .ctx.Site.Params.contactPhone }}",
+    "email": "{{ .ctx.Site.Params.contactEmail }}"
+}

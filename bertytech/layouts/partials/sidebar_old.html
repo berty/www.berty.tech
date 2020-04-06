@@ -1,0 +1,12 @@
+<amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <ul class="nav flex-column">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+            {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+            {{ $isActive := or $isActive (in ($currentPage.Permalink | relLangURL) (.URL | relLangURL)) }}
+            <li class="nav-item">
+                <a class="nav-link{{if $isActive }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+        {{ end }}
+    </ul>
+</amp-sidebar>

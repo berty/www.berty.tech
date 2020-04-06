@@ -1,0 +1,32 @@
+[build]
+publish = "public"
+command = "make prod-build"
+base = "bertytech/"
+ignore = "git diff --quiet HEAD^ HEAD -- ."
+
+[context.production.environment]
+HUGO_VERSION = "0.65.3"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = 'make prod-build HUGO_OPTS="--enableGitInfo"'
+
+[context.split1.environment]
+HUGO_VERSION = "0.65.3"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = 'make prod-build HUGO_OPTS="-b $DEPLOY_PRIME_URL --enableGitInfo -v"'
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.65.3"
+
+[context.branch-deploy]
+command = 'make prod-build HUGO_OPTS="-b $DEPLOY_PRIME_URL -v"'
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.65.3"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="448px" height="512px" viewBox="0 0 448 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>lock-alt-light (1)</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="lock-alt-light-(1)" fill="#424CDE" fill-rule="nonzero">
+            <path d="M224,420 C213,420 204,411 204,400 L204,336 C204,325 213,316 224,316 C235,316 244,325 244,336 L244,400 C244,411 235,420 224,420 Z M448,272 L448,464 C448,490.5 426.5,512 400,512 L48,512 C21.5,512 0,490.5 0,464 L0,272 C0,245.5 21.5,224 48,224 L64,224 L64,160 C64,71.6 136,-0.3 224.5,-0.000935403128 C312.9,0.3 384,73.1 384,161.5 L384,224 L400,224 C426.5,224 448,245.5 448,272 Z M96,224 L352,224 L352,160 C352,89.4 294.6,32 224,32 C153.4,32 96,89.4 96,160 L96,224 Z M416,464 L416,272 C416,263.2 408.8,256 400,256 L48,256 C39.2,256 32,263.2 32,272 L32,464 C32,472.8 39.2,480 48,480 L400,480 C408.8,480 416,472.8 416,464 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

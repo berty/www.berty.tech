@@ -1,0 +1,24 @@
+{{/* USER INPUT */}}
+{{- $src := .Get "src" -}}
+{{- $class := .Get "class" -}}
+{{- $title := .Get "title" -}}
+{{- $alt := .Get "alt" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+
+{{/* INTERNAL */}}
+{{- $scratch := newScratch -}}
+{{- $img := .Page.Resources.GetMatch $src -}}
+{{- $canResize := in (slice "jpg" "jpeg" "webp" "png") $img.MediaType.SubType -}}
+
+{{ $scratch.Set "image" $img }}
+{{ $scratch.Set "width" $width }}
+{{ $scratch.Set "height" $height }}
+
+{{ if $canResize }}
+{{ $scratch.Set "width" (or $width ($scratch.Get "image").Width) }}
+{{ $scratch.Set "height" (or $height ($scratch.Get "image").Height) }}
+{{ $scratch.Set "image" (($scratch.Get "image").Resize (print ($scratch.Get "width") "x" ($scratch.Get "height"))) }}
+{{ end }}
+
+{{ partial "img" (dict "ctx" . "class" $class "title" $title "alt" $alt "width" ($scratch.Get "width") "height" ($scratch.Get "height") "src" ($scratch.Get "image").Permalink )}}

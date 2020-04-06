@@ -1,0 +1,19 @@
+{{ $layout := .layout | default "responsive" }}
+<amp-img
+    class="_to-webp {{ with .class }}{{.}}{{end}}"
+    {{ with .title }}title="{{.}}"{{end}}
+    {{ with .alt }}alt="{{.}}"{{end}}
+    {{ with .src }}src="{{ . }}"{{end}}
+    {{ with .width }}width="{{.}}"{{end}}
+    {{ with .height }}height="{{.}}"{{end}}
+    layout="{{ $layout }}">
+    <amp-img 
+        fallback
+        {{ with .title }}title="{{.}}"{{end}}
+        {{ with .alt }}alt="{{.}}"{{end}}
+        {{ with .src }}src="{{ . }}"{{end}}
+        {{ with .width }}width="{{.}}"{{end}}
+        {{ with .height }}height="{{.}}"{{end}}
+        layout="{{ $layout }}">
+    </amp-img>
+</amp-img>

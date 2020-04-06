@@ -1,0 +1,100 @@
+<section class="section-about top">
+	<div class="block block-about bg-white">
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="text-center">
+		<div class="img-icon">
+			{{ $img := .Page.Resources.GetMatch "icon_spock.svg" }}
+			{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+		</div><!-- /.block-f-img -->
+		<h4>a non-profit organisation</h4>
+      </div><!-- /.block-wi -->
+    </div><!-- /.col -->
+    <div class="col-lg-4">
+      <div class="text-center">
+		<div class="img-icon">
+			{{ $img := .Page.Resources.GetMatch "icon_team.svg" }}
+			{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+		</div><!-- /.block-f-img -->
+		<h4>with a team of 10 people</h4>
+      </div><!-- /.block-wi -->
+    </div><!-- /.col -->
+    <div class="col-lg-4">
+      <div class="text-center">
+		<div class="img-icon">
+			{{ $img := .Page.Resources.GetMatch "icon_paris.svg" }}
+			{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+		</div><!-- /.block-f-img -->
+		<h4>based in Paris, France</h4>
+      </div><!-- /.block-wi -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div>
+</section><!-- /.section-about -->
+</div>
+<section class="section-hwbg bg-grey">
+  <div class="container">
+    <div class="block-mixed">
+      <div class="row">
+	<div class="col-md-7">
+	  <div class="block-mixed-text">
+	    <h3>We bypass internet censorship</h3>
+	    <ul>
+	      <li>The great benefit of a peer to peer network, is that it's very hard to prevent it from spreading</li>
+	    </ul>
+	    <br />
+	    <br />
+	    <h3>We protect your privacy</h3>
+	    <ul>
+	      <li>Accounts are fully anonymous</li>
+	      <li>All conversations are end to end encrypted, by default</li>
+	    </ul>
+	    <br />
+	    <br />
+	    <h3>We don't rely on a heavy infrastructure</h3>
+	    <ul>
+	      <li>We are fully distributed</li>
+	      <li>To escape from major companies we are also fully decentralized</li>
+	      <li>Anyone can host a Berty node & become a part of the Berty Network</li>
+	    </ul>
+	  </div><!-- /.block-mixed-text -->
+	</div><!-- /.col -->
+	<div class="col-md-5">
+	  <div class="block-mixed-img">
+	  	{{ $img := .Page.Resources.GetMatch "blob_censorship.png" }}
+			{{ partial "img" (dict "ctx" . "class" "img-blob-photo" "src" $img.RelPermalink "layout" "responsive" "width" "200" "height" "300") }}
+	  </div><!-- /.block-mixed-img -->
+	</div><!-- /.col -->
+      </div><!--  /.row -->
+    </div><!-- /.block-mixed -->
+  </div><!-- /.container -->
+</section>
+
+<div class="container">
+<section class="section-about bottom">
+	<div class="block block-mixed bg-white">
+      <div class="row">
+		<div class="col-md-4">
+		  <div class="block-mixed-img">
+			{{ partial "img" (dict "ctx" . "class" "img-open-source" "src" "/img/icon_dev.png" "layout" "responsive" "width" "70" "height" "70") }}
+		  </div><!-- /.block-mixed-img -->
+		</div><!-- /.col -->
+		<div class="col-md-7">
+		  <div class="block-mixed-text">
+		    <h3>The Berty project is fully open source</h3>
+		    <ul>
+		      <li>Everyone can access the source code of the project</li>
+		      <li>Anyone can consult, review, submit changes or enhancements, report a bug, perform a security audit...</li>
+		      <li>We have an open roadmap and anyone can propose a new feature</li>
+		      <li>Wanna get involved ?&nbsp;&nbsp;<a class="btn btn-bty btn-blue icon-right" href="/contribute" role="button">Go to contribute page<i class="far fa-arrow-right"></i></a></li>
+		      <li>As a non-profit organization, we are, by essence incapable of making profit</li>
+			  <li>We are not selling a product</li>
+			  <li>We just build tools to improve peoples lives</li>
+		    </ul>
+		  </div><!-- /.block-mixed-text -->
+		</div><!-- /.col -->
+      </div><!--  /.row -->
+    </div><!-- /.block-mixed -->
+</section>
+</div><!-- /.container -->
+

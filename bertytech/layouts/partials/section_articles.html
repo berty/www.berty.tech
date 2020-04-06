@@ -1,0 +1,18 @@
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := $pctx.RegularPages -}}
+
+<section class="section-articles">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>The latest articles on the blog</h2>
+    </div><!-- /.section-title -->
+    <div class="slick-carousel">
+      {{ range first 6 (where $pages "Section" "blog") }}
+      <div class="block-article">
+	     {{ partial "post_card" (dict "ctx" .) }}
+      </div><!-- /.block article -->
+      {{ end }}
+    </div><!-- /.slick-carousel -->
+  </div><!-- /.container -->
+</section><!-- /.section-articles -->

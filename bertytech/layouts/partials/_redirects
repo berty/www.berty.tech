@@ -1,0 +1,14 @@
+# Redirect domain aliases to primary domain
+{{ range .Site.Params.domainAliases }}
+https://{{.}}/* https://berty.tech/:splat 301!
+{{ end }}
+
+/doc /docs
+/art/* https://bertyart.netlify.com/:splat 200!
+
+## hugo aliases
+{{- range $p := .Site.Pages -}}
+{{ range .Aliases }}
+{{ . | strings.TrimSuffix "/" }} {{ $p.RelPermalink | strings.TrimSuffix "/" }} 301!
+{{ end }}
+{{- end -}}

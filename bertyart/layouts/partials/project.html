@@ -1,0 +1,14 @@
+<a class="portfolio-item" href="{{.Permalink}}">
+  <div class="portfolio-top">
+    <div class="portfolio-hover">
+      <div class="portfolio-hover-content">
+        <i class="fas fa-plus fa-3x"></i>
+      </div>
+    </div>
+    <img class="img-fluid" src="{{ (.Resources.GetMatch .Params.image).Permalink }}" alt="">
+  </div>
+  <div class="portfolio-caption">
+    <h4>{{.Params.wb_name}}</h4>
+    <p class="text-muted">{{ i18n "a_portrait_by" . | markdownify }} {{.Params.artist_name}}</p>
+  </div>
+</a>

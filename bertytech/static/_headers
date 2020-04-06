@@ -1,0 +1,11 @@
+/*
+    X-Frame-Options: DENY
+    X-XSS-Protection: 1
+    Referrer-Policy: no-referrer
+    X-Content-Type-Options: nosniff
+    #X-Content-Security-Policy =
+    #X-Feature-Policy: ""
+    #X-Strict-Transport-Security: ""
+
+/apple-app-site-association
+    Content-Type: application/json
