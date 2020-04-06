@@ -1,0 +1,97 @@
+title: Berty Technologies
+
+timeout: 60000
+
+#theme: berty
+
+metaDataFormat: yaml
+
+#baseURL: /
+baseURL: https://berty.tech/art
+
+languageCode: en-US
+
+enableGitInfo: true
+enableRobotsTXT: true
+
+DefaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+  fr:
+    languageName: French
+  de:
+    languageName: German
+  
+
+taxonomies:
+  category: categories
+  tag: tags
+  author: author
+
+author:
+  name: Berty Technologies
+  email: contact@berty.tech
+  logo: /img/berty_logo.png
+
+enableEmoji: true
+
+params:
+  #useSummaryIfNoDescription: true
+  description: We build tools to enhance communication freedom
+  copyright: Copyright (c)
+  themeColor: custom
+  RSSlink: /index.xml
+  title: Berty
+  #subtitle: Berty Technologies is a technical nonprofit organization
+
+  organizationName: Berty Technologies
+  organizationLogo: /img/berty_logo_square-1200x1200.png
+
+  navbarLogo: /img/berty_logo.svg
+
+  logoSVG: /img/berty_logo.svg
+  logoPNG: /img/berty_logo.png
+  defaultFeaturedImage: /img/berty_social.png
+
+  matomoSiteId: 1
+  matomoBaseURL: https://bertytech.matomo.cloud
+
+  # APP
+  appName: Berty
+  appCategory: Messaging
+  appOperatingSystem:
+    - Android
+    - iOS
+    - OSX
+    - Windows
+
+  # SEO
+  name: "Berty"
+  bio: "We build tools to enhance communication freedom"
+  location: ""
+  twitter: "berty"
+  github: "berty"
+  medium: "berty-tech"
+  linkedin: berty
+
+  useSummaryIfNoDescription: true
+
+  keepReadingStr: More
+  backtotopStr: Up
+  shareStr: Share
+  pageNotFoundTitle: "404 - Page not found"
+
+  # Reason for this paramater, is that Hugo generates index.html for root pages even though the translated page doesn't exist
+  # So to only generate French and English homepages, we have to manually do this.
+  # See issue: https://github.com/gohugoio/hugo/issues/5195
+  home_languages: ['en', 'fr']
+
+
+imaging:
+  resampleFilter: MitchellNetravali
+  quality: 95
+  anchor: smart
+
+canonifyURLs: true
+relativeURLs: true

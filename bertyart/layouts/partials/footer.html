@@ -1,0 +1,20 @@
+
+<!-- Footer -->
+<footer class="footer bg-black">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-12">{{ i18n "copyright" . | markdownify }}
+      </div>
+    </div>
+  </div>
+</footer>
+
+{{ $jQuery := resources.Get "/js/jquery-3.4.1.min.js" }}
+{{ $bootstrap := resources.Get "/js/bootstrap.min.js" }}
+{{ $easing := resources.Get "/js/jquery.easing.min.js" }}
+{{ $main := resources.Get "/js/art_main.js" }}
+{{ $js := slice $jQuery $easing $bootstrap $main | resources.Concat "art_bundle.js" | minify | fingerprint }}
+<script type="text/javascript" src="{{ $js.Permalink }}"></script>
+
+</body>
+</html>

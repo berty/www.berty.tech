@@ -1,0 +1,29 @@
+"@context":"http://schema.org",
+"@type":"JobPosting",
+"datePosted":"{{ .PublishDate }}",
+"title":"{{ .Title }}",
+"hiringOrganization": {
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+},
+"description":"
+    {{ htmlEscape (replace (.Site.Params.jobsAboutBerty | markdownify) "<br>" "") }}
+    <br><br>
+    {{ htmlEscape .Content }}
+    <br><br>
+    {{ htmlEscape (replace (.Site.Params.jobsWorkingAtBerty | markdownify) "<br>" "") }}
+", 
+
+"jobLocation": { 
+    "@type": "Place",
+    "address": {
+        "@type": "PostalAddress"
+        {{ range $key, $val := .Site.Params.jobsAddress }}
+        ,"{{ $key }}": "{{ $val }}"
+        {{ end }}
+    }
+},
+
+<!-- Possible types can be found at https://developers.google.com/search/docs/data-types/job-posting#job-location-type -->
+"employmentType": "{{ .Params.employmentType | default `FULL_TIME` }}"  
+
+{{ with .Params.isRemote }},"jobLocationType": "TELECOMMUTE"{{ end }}

@@ -1,0 +1,37 @@
+{{- $class := .Get "class" -}}
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := .Get "path" -}}
+{{- $files := readDir $path -}}
+
+<div class ="row margin-bottom-40">
+  <div class="col-lg-8 col-md-6">
+    <h3>Press documents</h3>
+    {{- range $files }}
+    <!-- PDF FILES DISPLAY -->
+    <a class="btn btn-bty btn-blue margin-bottom-15" href="/docs/press{{ $pathURL }}{{ .Name | relURL }}" download="">
+      <i class="fal fa-file-pdf"></i>{{ .Name }}
+    </a>
+    <br />
+    <br />
+    <h3>Image assets</h3>
+    <a class="btn btn-bty btn-blue margin-bottom-15" href="https://assets.berty.tech/">
+      <i class="fal fa-globe"></i>View all assets
+    </a>
+    {{- end }}
+  </div><!-- /.col -->
+  <div class="col-lg-4 col-md-6">
+    <amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+    <div class= "block block-contact text-center">
+      <h3>Contact</h3>
+      <a class="h4 obsinner-{{ `press@berty.tech` | base64Encode }} sendto-{{ `press@berty.tech` | base64Encode }}"></a>
+      <br />
+      <br />
+      <br />
+      <h3>Follow Us </h3>
+      <div class="text-center">
+        {{ partial "nav_social" . }}
+      </div>
+    </div><!-- /.block -->
+    </amp-script>
+  </div><!-- /.col -->
+</div><!-- /.row -->

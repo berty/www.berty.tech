@@ -1,0 +1,43 @@
+{{.Scratch.Set "body-class" "page-single wh"}}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-pink gradient bg-help">
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    {{ partial "section_search" }}
+    <section class="section-help">
+      <div class="row">
+        {{ range where .Pages "Section" "help" }}
+        {{ partial "docs_card_m" . }}
+        {{ end }}
+      </div><!-- /.row -->
+    </section>
+    <section class="section-actions">
+      <h2>Didn't find what you were looking for?</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <a class="block block-action bg-pink bg-gradient bg-question" href="#">
+            <h4><i class="fal fa-question-circle left"></i>Ask a question<i class="far fa-chevron-right right"></i></h4>
+          </a><!-- /.block -->
+        </div><!-- /.col -->
+        <div class="col-lg-4">
+          <a class="block block-action bg-pink bg-gradient bg-bug" href="#">
+            <h4><i class="fal fa-bug left"></i>Report a bug<i class="far fa-chevron-right right"></i></h4>
+          </a><!-- /.block -->
+        </div><!-- /.col -->
+        <div class="col-lg-4">
+          <a class="block block-action bg-pink bg-gradient bg-bug" href="/contact">
+            <h4><i class="fal fa-paper-plane left"></i>Contact us<i class="far fa-chevron-right right"></i></h4>
+          </a><!-- /.block -->
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+{{ partial "footer" . }}

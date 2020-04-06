@@ -1,0 +1,57 @@
+{{.Scratch.Set "body-class" "page-single wh"}}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-fakeblack gradient bg-newsletter">
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+    <h3 class="text-shadow subtitle">{{.Params.Subtitle}}</h3>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    <section class="section-jobs">
+      {{ range where .Pages "Section" "newsletter" }}
+      <a class="block job-card block-link bg-white fakeblack" href="{{.RelPermalink}}">
+        <div class="row">
+          <div class="col-md-3 job-card-image">
+            {{ $ := . }}
+            {{- with $.Params.image -}}
+            {{- $img := $.Page.Resources.GetMatch $.Params.image -}}
+            {{- $resize := $img.Resize "300x" -}}
+            {{ partial "img" (dict "ctx" $ "src" $resize.RelPermalink "width" $resize.Width "height" $resize.Height) }}
+            {{- else -}}
+            {{ partial "img" (dict "ctx" $ "class" "img-rounded" "src" "/img/newsletter.png" "width" "255" "height" "120") }}
+            {{- end -}}
+          </div><!-- /.col -->
+          <div class="col-md-6">
+            <div class="job-card-middle">
+              <h4 class="job-card-title">{{.Params.Title}}</h4>
+              <div class="job-card-infos">
+        {{ .Scratch.Set "publish-date" .Lastmod }}
+        {{ if not .PublishDate.IsZero }}{{ .Scratch.Set "publish-date" .PublishDate }}{{ end }}
+  <span class="publication-date"><i class="far fa-calendar-alt"></i>&nbsp;{{ (.Scratch.Get "publish-date").Format "January 2, 2006" }}</span>
+  &nbsp;&nbsp;&nbsp;
+  <span class="read-time"><i class="far fa-clock"></i>&nbsp;{{.ReadingTime}} min read</span>
+
+              </div><!-- /.job-card-infos -->
+            </div><!-- /.job-card-end -->
+          </div><!-- /.col -->
+          <div class="col-md-3">
+            <div class="job-card-end">
+              <div class="job-card-button">
+                <button class="btn btn-bty btn-blue icon-right">Read<i class="far fa-chevron-right"></i></button>
+              </div><!-- /.job-card-button -->
+            </div><!-- /.job-card-end -->
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </a><!-- /.job-card /.block-link -->
+      {{ end }}
+    </section>
+
+    </div><!-- /.container -->
+
+    {{ partial "section_newsletter" . }}
+</div><!-- /.content -->
+
+{{ partial "footer" . }}

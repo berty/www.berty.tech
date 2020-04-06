@@ -1,0 +1,70 @@
+{{ $authorImg := resources.Get (print "/img/avatar_" (.ctx.Params.author | default "staff") ".png") }}
+{{ $authorImg := $authorImg.Resize "120x120 Lanczos" }}
+{{ $authorName := (index .ctx.Site.Data.authors (.ctx.Params.author | default "staff")).name }}
+
+{{ $scratch := newScratch }}
+
+{{ if ne .ctx.Params.image nil }}
+  {{ $img := .ctx.Page.Resources.GetMatch .ctx.Params.image }}
+  {{ if ne $img.MediaType.SubType "gif" }}
+  {{ $img = $img.Resize "350x" }}
+  {{ end }}
+  {{ $scratch.Set "img_path" $img.RelPermalink }}
+  {{ $scratch.Set "img_width" $img.Width }}
+  {{ $scratch.Set "img_height" $img.Height }}
+  {{ $scratch.Set "img_mime" $img.MediaType }}
+{{ else }}
+  {{ $img := resources.Get "/img/avatar_staff.png" }}
+  {{ $scratch.Set "img_path" $img.RelPermalink }}
+  {{ $scratch.Set "img_width" "350" }}
+  {{ $scratch.Set "img_height" "200" }}
+  {{ $scratch.Set "img_mime" $img.MediaType }}
+{{ end }}
+
+{{ if .useAmpImg }}
+  {{ $scratch.Set "author_img" (partial "img" (dict "ctx" . "class" "avatar" "src" $authorImg.RelPermalink "width" "36" "height" "36")) }}
+  {{ $scratch.Set "card_img" (partial "img" (dict "ctx" . "src" ($scratch.Get "img_path") "width" ($scratch.Get "img_width") "height" ($scratch.Get "img_height"))) }}
+{{ else }}
+  {{ $scratch.Set "author_img" (partial "picture" (dict "src" $authorImg.RelPermalink "mimeType" $authorImg.MediaType "class" "avatar")) }}
+  {{ $scratch.Set "card_img" (partial "picture" (dict "src"  ($scratch.Get "img_path") "mimeType" ($scratch.Get "img_mime") ))}}
+{{ end }}
+
+<a class="block bg-white post-card" href="{{.ctx.RelPermalink}}">
+  <div class="pc-top">
+    {{ if .ctx.Params.video_thumbnail }}
+      {{ $video := (.ctx.Resources.GetMatch .ctx.Params.video_thumbnail) }}
+      {{ if .useAmpImg }}
+        <amp-video width="350" height="200" layout="responsive" autoplay loop>
+          <source src="{{ $video.RelPermalink }}" type="video/mp4" />
+          <div fallback>
+            {{ $scratch.Get "card_img" | safeHTML }}
+          </div>
+        </amp-video>
+      {{ else }}
+        <video width="350" autoplay loop style="width: 100%;">
+          <source src="{{ $video.RelPermalink }}" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      {{ end }}
+    {{ else }}
+      {{ $scratch.Get "card_img" | safeHTML }}
+    {{ end }}
+  </div>
+  <div class="pc-middle">
+    <div class="pc-tags blog-tags d-flex flex-wrap">
+      {{ range .ctx.Params.tags }}
+      {{ $tag := $.ctx.Site.GetPage (print "/tags/" .) }}
+      <div class="flex-shrink-1 m-1 tag {{ . | lower }}">{{ $tag.Title }}</div> 
+      {{ end }}
+    </div>
+    <span class="pc-title">{{.ctx.Title}}</span>
+  </div>
+
+  <div class="pc-bottom">
+    {{ $scratch.Get "author_img" | safeHTML }}
+    <span class="author-name">{{ $authorName }}</span>
+    {{- if .ctx.ReadingTime -}}
+    <span class="reading-time"><i class="far fa-clock"></i>&nbsp;{{.ctx.ReadingTime}} min read</span>
+    {{- end -}}
+  </div>
+</a><!-- /.block /.post-card -->

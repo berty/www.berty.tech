@@ -1,0 +1,5 @@
+<amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+	<a class="block block-action bg-blue bg-gradient bg-question sendto-{{ `hello@berty.tech` | base64Encode }} sendsubject-{{ `New FAQ question` | base64Encode }}">
+		<h4><i class="fal fa-question-circle left"></i>Suggest a question<i class="far fa-chevron-right right"></i></h4>
+	</a><!-- /.block -->
+</amp-script>

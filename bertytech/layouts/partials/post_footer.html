@@ -1,0 +1,28 @@
+{{ $authorImg := resources.Get (print "/img/avatar_" (.Params.author | default "staff") ".png") }}
+{{ $authorImg := $authorImg.Resize "70x70 Lanczos" }}
+{{ $authorName := (index .Site.Data.authors (.Params.author | default "staff")).name }}
+{{ $authorBio := (index .Site.Data.authors (.Params.author | default "staff")).bio }}
+
+<div class="post-footer">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="post-avatar">
+        {{ partial "img" (dict "ctx" . "class" "avatar" "src" $authorImg.RelPermalink "width" "60" "height" "60") }}
+      </div><!-- /.blockpost-avatar -->
+      <div class="post-author">
+	<span class="author-name">{{ $authorName }}</span>
+	<br />
+	<span class="author-bio">{{ $authorBio }}</span>
+      </div><!-- /post-author -->
+    </div><!-- /.col -->
+    <div class="col-md-6">
+      <div class="post-info">
+        {{ .Scratch.Set "publish-date" .Lastmod }}
+        {{ if not .PublishDate.IsZero }}{{ .Scratch.Set "publish-date" .PublishDate }}{{ end }}
+	<span class="publication-date"><i class="far fa-calendar-alt"></i>&nbsp;{{ (.Scratch.Get "publish-date").Format "January 2, 2006" }}</span>
+	&nbsp;&nbsp;&nbsp;
+	<span class="read-time"><i class="far fa-clock"></i>&nbsp;{{.ReadingTime}} min read</span>
+      </div><!-- /.post-info -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</div><!-- /.post-footer -->

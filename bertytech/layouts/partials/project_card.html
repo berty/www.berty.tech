@@ -1,0 +1,18 @@
+<div class="block post-card" >
+  <div class="pc-top">
+    {{ $ := . }}
+    {{- with $.Params.image -}}
+    {{- $img := $.Page.Resources.GetMatch $.Params.image -}}
+    {{- $resize := $img.Resize "1312x" -}}
+    {{ partial "img" (dict "ctx" $ "src" $resize.RelPermalink "width" $resize.Width "height" $resize.Height) }}
+    {{- else -}}
+    {{ partial "img" (dict "ctx" $ "src" "/img/avatar_staff.png" "width" "350" "height" "200") }}
+    {{- end -}}
+  </div>
+  <div class="pc-middle">
+    <span class="bpl-title">{{.Title}}</span>
+  </div>
+  <div class="pc-bottom">
+    <a class="btn btn-bty btn-blue" href="{{.LinkURL}}" target="_blank" rel="noopener">{{.LinkTitle}}</a>
+  </div>
+</div><!-- /.block -->

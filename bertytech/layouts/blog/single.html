@@ -1,0 +1,58 @@
+{{.Scratch.Set "body-class" "page-post wh"}}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-yellow gradient bg-blog">
+  <div class="container">
+    <div class="subnav">
+       <a class="btn btn-bty btn-transparent" href="/blog"><i class="far fa-arrow-left"></i>Back to blog posts</a>
+    </div><!-- /.subnav -->
+  </div><!-- /.container -->
+  <div class="container text-center">
+    <br />
+    <h1 class="text-shadow">{{.Title}}</h1>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    <div class="block block-post bg-white">
+      <div class="post-content">
+        <div class="featured-media image-wrapper">
+          {{ partial "post_header" . }}
+        </div>
+
+
+  	  {{.Content}}
+      </div><!-- /.post-content -->
+              <div class="blog-tags">
+          {{ range .Params.tags }}
+            {{ $tag := $.Site.GetPage (print "/tags/" .) }}
+            <a class="tag {{ . | lower }}" href="{{ $tag.Permalink }}">{{ $tag.Title }}</a>
+          {{ end }}
+        </div>
+      {{ partial "post_footer" . }}
+    </div><!-- /.block -->
+
+    <div class="row">
+      <div class="col-md-12 mb-3">
+        <h3 class="font-weight-bold"><strong>Related Articles</strong></h3>
+      </div>
+      {{ range first 3 (.Site.RegularPages.RelatedIndices . "tags") }}
+        <div class="col-lg-4 col-sm-6">
+          {{ partial "post_card" (dict "ctx" . "useAmpImg" true) }}
+        </div><!-- /.col -->
+      {{ end }}
+    </div>
+
+    <section class="section-actions d-none">
+      <a class="block block-action bg-yellow bg-gradient" href="/blog">
+      <h4><i class="far fa-arrow-left left"></i>Back to blog posts</h4>
+      </a><!-- /.block -->
+    </section>
+
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+<!-- TODO : add related posts -->
+
+{{ partial "footer" . }}

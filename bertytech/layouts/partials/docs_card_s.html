@@ -1,0 +1,22 @@
+<div class="col-lg-4 col-md-6">
+    <a class="block bg-white doc-card s {{.Page.Params.color}}" href="{{.URL}}">
+        {{ if .Page.Params.Open }}
+        <div class="corner-ribbon green">Open source</div>
+        {{ else }}
+        <div class="corner-ribbon grey">Not open yet</div>
+        {{ end }}
+        <div class="doc-card-inner">
+            <h4 class="doc-card-title text">
+            <i class="{{.Page.Params.Icon}} c-{{.Page.Params.color}} doc-card-icon"></i>{{.Page.Title}}
+            </h4><!-- /.doc-card-title -->
+            <div class="doc-card-desc text">
+            {{.Page.Description}}
+            </div><!-- /.doc-card-desc -->
+            {{ if .Page.Params.ttags }}
+            <div class="doc-card-tags">
+            {{ .Page.Params.ttags | markdownify }}
+            </div> <!-- /.doc-card-tags -->
+            {{ end }}
+        </div><!-- /.doc-card-inner -->
+    </a><!-- /.doc-card -->
+</div><!-- /.col -->

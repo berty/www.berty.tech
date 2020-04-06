@@ -1,0 +1,42 @@
+staff:
+  name: Berty Crew
+  bio: |
+    Protecting your privacy since 2018
+
+ninel:
+  name: Ninel
+  bio: |
+    Extraterrestrial @ Berty
+
+zooma:
+  name: zôÖma
+  bio: |
+    Ninja @ Berty
+
+manfred:
+  name: Manfred
+  thumbnail: "https://avatars0.githubusercontent.com/u/94029?s=460&v=4"
+  bio: |
+    Founder @ Berty
+  social:
+    github: moul
+    twitter: moul
+    medium: moul
+
+pierre:
+  name: Pierre
+  thumbnail: "https://miro.medium.com/fit/c/240/240/1*uwoRirH9egS09dJxP7xLgA.jpeg"
+  bio: |
+    Parrot Lover <3
+  social:
+    github: pierreboc
+    twitter: pierreboc
+    medium: pierreboc_38580
+
+camille:
+  name: Camille
+  thumbnail: "https://cdn-images-1.medium.com/fit/c/200/200/1*hsAiS-kI2amQo3Um6W-CHw.jpeg"
+  bio: |
+    Support @ Berty
+  social:
+    medium: camille.berty

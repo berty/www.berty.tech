@@ -1,0 +1,32 @@
+[build]
+publish = "public"
+command = "make prod-build"
+base = "bertyart/"
+ignore = "git diff --quiet HEAD^ HEAD -- ."
+
+[context.production.environment]
+HUGO_VERSION = "0.58.3"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1] 
+command = 'make prod-build HUGO_OPTS="--enableGitInfo"'
+
+[context.split1.environment]
+HUGO_VERSION = "0.58.3"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = 'make prod-build HUGO_OPTS="-b $DEPLOY_PRIME_URL --enableGitInfo"'
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.58.3"
+
+[context.branch-deploy]
+command = 'make prod-build HUGO_OPTS="-b $DEPLOY_PRIME_URL"'
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.58.3"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"

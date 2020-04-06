@@ -1,0 +1,11 @@
+"@type": "WebPage",
+"@context": "http://schema.org",
+"inLanguage": "{{ .Site.LanguageCode }}",
+"copyrightYear": {{ now.Format "2006" }},
+"url": "{{ .Permalink | absURL }}",
+"author": {
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+},
+"publisher": {
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+}

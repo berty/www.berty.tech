@@ -1,0 +1,37 @@
+{{- $class := .Get "class" -}}
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := .Get "path" -}}
+{{- $files := readDir (print "/assets/" $path) -}}
+{{- $scratch := newScratch -}}
+<div class="row margin-bottom-40">
+  {{- range $files }}
+
+  {{ $image := resources.Get (print "/docs/press/" $pathURL (.Name | relURL)) }}
+  {{ $canResize := in (slice "jpg" "jpeg" "webp" "png") $image.MediaType.SubType }}
+  {{ $scratch.Set "thumbnail" $image }}
+  {{ $scratch.Set "width" "210" }}
+  {{ $scratch.Set "height" "90" }}
+  {{ if $canResize }}
+  {{ $scratch.Set "thumbnail" (($scratch.Get "thumbnail").Resize "210x") }}
+  {{ $scratch.Set "width" ($scratch.Get "thumbnail").Width }}
+  {{ $scratch.Set "height" ($scratch.Get "thumbnail").Height }}
+  {{ end }}
+
+  <div class="col-md-3 col-6">
+    <!-- IMAGES DISPLAY -->
+    <div class="{{ $class }} block-dl-file">
+      <a href="{{ $image.Permalink }}" download="">
+        <div class="dl-img">
+          {{ partial "img" (dict "ctx" . "src" ($scratch.Get `thumbnail`).Permalink "width" ($scratch.Get `width`) "height" ($scratch.Get `height`) )}}
+        </div>
+        <div class="hover">
+          <div class="btn btn-bty btn-blue">
+            <i class="far fa-arrow-to-bottom"></i>Download
+         </div><!-- /.btn -->
+       </div><!-- /.hover -->
+     </a>
+   </div><!-- /.block-dl-file -->
+  </div><!-- /.col -->
+  {{- end }}
+
+</div><!-- /.row -->

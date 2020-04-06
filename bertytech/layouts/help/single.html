@@ -1,0 +1,28 @@
+{{ .Scratch.Set "body-class" "page-doc wh" }}
+{{ partial "head" . }}
+
+<header class="header-rounded small bg-pink gradient bg-help">
+  <div class="container">
+    <div class="subnav">
+       <a class="btn btn-bty btn-transparent" href="/help"><i class="far fa-arrow-left"></i>Back to help</a>
+    </div><!-- /.subnav -->
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    <!--<a class="btn btn-bty btn-blue" href="#"><i class="far fa-file-pdf"></i>Download the .pdf File</a>-->
+    <div class="block block-doc-content bg-white">
+      {{ .Content }}
+    </div><!-- /.block-doc-content -->
+    <section class="section-actions d-none">
+      <a class="block block-action bg-pink bg-gradient" href="/help">
+      <h4><i class="far fa-arrow-left left"></i>Back to help</h4>
+      </a><!-- /.block -->
+    </section>
+
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+
+{{ partial "footer" . }}

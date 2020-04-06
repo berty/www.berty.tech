@@ -1,0 +1,11 @@
+{{- $class := .Get "class" -}}
+{{- $pathURL := .Get "pathURL" -}}
+{{- $path := .Get "path" -}}
+{{- $files := readDir $path -}}
+
+{{- range $files }}
+<!-- PDF FILES DISPLAY -->
+<a class="btn btn-bty btn-blue btn-lg" href="/docs/press{{ $pathURL }}{{ .Name | relURL }}" download="">
+  <i class="fal fa-file-pdf"></i>{{ .Name }}
+</a>
+{{- end }}

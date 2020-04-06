@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="705px" height="487px" viewBox="0 0 705 487" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Slice</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(35.000000, 160.000000)">
+            <path d="M255,95.7779409 C268.386442,67.6170562 289.219776,53.5366138 317.5,53.5366138 C345.780224,53.5366138 366.613558,67.7837229 380,96.2779409" id="Path-2" stroke="#FFAE3A" stroke-width="24"></path>
+            <path d="M142.5,208.277941 C204.632034,208.277941 255,157.909975 255,95.7779409 C255,33.6459065 204.632034,0 142.5,0 C80.3679656,0 30,33.6459065 30,95.7779409 C30,157.909975 80.3679656,208.277941 142.5,208.277941 Z" id="Oval" stroke="#FFAE3A" stroke-width="23"></path>
+            <path d="M492.5,208.277941 C554.632034,208.277941 605,157.909975 605,95.7779409 C605,33.6459065 554.632034,0 492.5,0 C430.367966,0 380,33.6459065 380,95.7779409 C380,157.909975 430.367966,208.277941 492.5,208.277941 Z" id="Oval" stroke="#FFAE3A" stroke-width="23"></path>
+            <circle id="Oval" fill="#FFAE3A" cx="21" cy="68.2779409" r="21"></circle>
+            <circle id="Oval" fill="#FFAE3A" cx="615" cy="68.2779409" r="21"></circle>
+            <path d="M69.7091901,94.2779409 C69.9280388,109.760499 75.1819475,124.541924 85.4709164,138.622214 C95.7598852,152.702505 112.301562,162.758309 135.095946,168.789627" id="Path-3" stroke="#FFAE3A" stroke-width="12" stroke-linecap="round"></path>
+            <path d="M419.70919,94.2779409 C419.928039,109.760499 425.181948,124.541924 435.470916,138.622214 C445.759885,152.702505 462.301562,162.758309 485.095946,168.789627" id="Path-3" stroke="#FFAE3A" stroke-width="12" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

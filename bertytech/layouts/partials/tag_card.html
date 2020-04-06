@@ -1,0 +1,11 @@
+          {{ $amount := len (index $.ctx.Site.Taxonomies.tags (.ctx.Title | urlize)) }}
+          
+          <a class="block bg-white tag-card yellow" href="{{.ctx.RelPermalink}}">
+            <div class="tag-card-inner blog-tags">
+              <div class="tag {{ .ctx.Title | lower }}">{{ .ctx.Title | lower }}</div>
+              <div class="tag-card-button">
+                {{ $amount }} {{ cond (gt $amount 1) "posts" "post" }}
+                <i class="far fa-chevron-right"></i>
+              </div>
+            </div>
+          </a><!-- /.block /.tag-card -->

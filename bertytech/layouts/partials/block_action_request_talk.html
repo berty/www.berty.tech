@@ -1,0 +1,5 @@
+<amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+	<a class="block block-action bg-blue bg-gradient bg-question sendto-{{ `hello@berty.tech` | base64Encode }} sendsubject-{{ `Request a talk` | base64Encode }}">
+		<h4><i class="fal fa-presentation left"></i>Request a talk<i class="far fa-chevron-right right"></i></h4>
+	</a><!-- /.block -->
+</amp-script>

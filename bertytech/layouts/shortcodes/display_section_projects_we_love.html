@@ -1,0 +1,62 @@
+<section class="section-projects">
+  <h2 id="projects-we-love">Projects we <i class="far fa-heart fa-lg c-pink"></i></h2>
+  <div class="row">
+    <div class="col-lg-3 col-md-6">
+      <div class="block bg-white post-card project">
+        <div class="pc-top">
+          {{ $img := .Page.Resources.GetMatch "project_ipfs.jpeg" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+        </div>
+        <div class="pc-middle">
+          IPFS is a peer-to-peer hypermedia protocol to make the web faster, safer, and more open. It is at the very heart of the berty project.
+        </div>
+        <div class="pc-bottom">
+          <a class="btn btn-bty btn-blue" href="https://ipfs.io/" target="_blank" rel="noopener"><i class="fal fa-globe"></i>ipfs.io</a>
+          <!--<a class="btn btn-bty btn-grack" href="https://ipfs.io/" target="_blank" rel="noopener"><i class="fab fa-github"></i>github.com/ipfs</a>-->
+        </div>
+      </div><!-- /.block -->
+    </div><!-- /.col -->
+    <div class="col-lg-3 col-md-6">
+      <div class="block bg-white post-card project">
+        <div class="pc-top">
+          {{ $img := .Page.Resources.GetMatch "project_eff.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+        </div>
+        <div class="pc-middle">
+          The Electronic Frontier Foundation is the leading nonprofit defending digital privacy, free speech, and innovation.
+        </div>
+        <div class="pc-bottom">
+          <a class="btn btn-bty btn-blue" href="https://www.eff.org/" target="_blank" rel="noopener"><i class="fal fa-globe"></i>www.eff.org</a>
+        </div>
+      </div><!-- /.block -->
+    </div><!-- /.col -->
+    <div class="col-lg-3 col-md-6">
+      <div class="block bg-white post-card project">
+        <div class="pc-top">
+          {{ $img := .Page.Resources.GetMatch "project_42.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+        </div>
+        <div class="pc-middle">
+          42 is the first engineering program free and open to everyone. Education is based on peer-to-peer learning with no classes, no teachers.
+        </div>
+        <div class="pc-bottom">
+          <a class="btn btn-bty btn-blue" href="https://www.42.fr/" target="_blank" rel="noopener"><i class="fal fa-globe"></i>www.42.fr</a>
+        </div>
+      </div><!-- /.block -->
+    </div><!-- /.col -->
+    <div class="col-lg-3 col-md-6">
+      <div class="block bg-white post-card project">
+        <div class="pc-top">
+          {{ $img := .Page.Resources.GetMatch "project_paris_p2p.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+        </div>
+        <div class="pc-middle">
+          Paris P2P is the parisian community interested in P2P et Cryptography technologies. With monthly meetups and other ponctual events.
+        </div>
+        <div class="pc-bottom">
+          <a class="btn btn-bty btn-blue" href="https://p2p.paris/en/" target="_blank" rel="noopener"><i class="fal fa-globe"></i>p2p.paris</a>
+        </div>
+      </div><!-- /.block -->
+    </div><!-- /.col -->
+  </div><!-- /.row -->
+</section>

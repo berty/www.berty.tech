@@ -1,0 +1,11 @@
+"@context": "https://schema.org",
+"@type": "SoftwareApplication",
+"name": "{{ .Site.Params.appName }}",
+"operatingSystem": [{{ range $index, $el := .Site.Params.appOperatingSystem }}"{{ $el }}"{{ if not (eq (add $index 1) (len $.Site.Params.appOperatingSystem)) }},{{ end }}{{ end }}],
+"applicationCategory": "{{ .Site.Params.appCategory }}",
+"offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+}
+

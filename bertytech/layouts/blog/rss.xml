@@ -1,0 +1,68 @@
+{{- $s := newScratch -}}
+
+{{ printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0">
+  <channel>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+    <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+    <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
+    <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
+    <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
+    <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
+    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+    {{ $img := resources.Get .Site.Params.defaultFeaturedImage }}
+    <webfeeds:cover image="{{ ($img.Resize "500x").Permalink }}" />
+    <webfeeds:icon>{{ ($img.Fill "96x96 Center").Permalink }}</webfeeds:icon>
+    <webfeeds:logo>{{ ($img.Resize "x30").Permalink }}</webfeeds:logo>
+    <webfeeds:accentColor>525bec</webfeeds:accentColor>
+    <webfeeds:related layout="card" target="browser"/>
+
+    {{ with .OutputFormats.Get "RSS" }}
+        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{ end }}
+
+    {{ range .Pages }}
+
+    {{ $s.Set "content" .Content }}
+
+    <!-- Tags that needs to be removed -->
+    {{ $tagsToRemove := slice "amp-vimeo" "amp-iframe" "amp-twitter" }}
+    {{ range $tagsToRemove }}
+      <!-- Find all tags to remove -->
+      {{ $found := findRE (print "<" . "(?s).*?/" . ">") ($s.Get "content") }}
+      {{ range $found }}
+        {{ $s.Set "content" (replace ($s.Get "content") . "") }}
+      {{ end }}
+    {{ end }}
+
+    <!-- replace amp-img to img & make absolute path-->
+    {{ $images := findRE (print "<amp-img(?s).*?/amp-img>(?s).*?</amp-img>") ($s.Get "content") }}
+    {{ range $images }}
+      {{ $src := index (findRE `\bsrc="([^"]+)"` .) 0 }}
+      {{ $src := replace $src `src="`  `` }}
+      {{ $src := replace $src `"` `` }}
+      {{ $src := $src | absURL }} 
+      {{ $s.Set "content" (replace ($s.Get "content") . (print `<img src="` $src `" />`)) }}
+    {{ end }}
+
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+      <guid>{{ .Permalink }}</guid>
+      <description>
+        {{- if .Page.Params.image -}}
+        {{- $img := .Page.Resources.GetMatch .Page.Params.image -}}
+        {{- $resize := $img.Resize "1312x" -}}
+          {{ print `<img class="webfeedsFeaturedVisual" src="` $resize.Permalink `" />` | html }}
+        {{- end -}}
+
+        {{ $s.Get "content" | html }}
+      </description>
+    </item>
+    {{ end }}
+  </channel>
+</rss>
