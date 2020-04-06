@@ -1,0 +1,48 @@
+{{ .Scratch.Set "body-class" "page-post wh page-job" }}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-blue bg-image" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).Permalink }}')"{{end}}>
+  <div class="container">
+    <div class="subnav">
+       <a class="btn btn-bty btn-transparent" href="/jobs"><i class="far fa-arrow-left"></i>Back to job offers</a>
+    </div><!-- /.subnav -->
+  </div><!-- /.container -->
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+    <h3 class="text-shadow">{{.Params.location}}</h3>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+     <div class="block block-post bg-white post-job">
+      <div class="post-content">
+        {{ .Site.Params.jobsAboutBerty | markdownify }}
+  	    {{.Content}}
+        {{ .Site.Params.jobsWorkingAtBerty | markdownify }}
+        <br />
+        <div class="buttons">
+          <amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+            <a class="btn btn-bty btn-blue sendto-{{ `jobs@berty.tech` | base64Encode }}"><i class="fal fa-pencil-alt"></i>Apply to this offer</a>
+          </amp-script>
+        </div>
+        <br />
+        <br />
+      </div><!-- /.post-content -->
+      {{ partial "post_footer" . }}
+    </div><!-- /.block -->
+
+    <section class="section-actions d-none">
+      <a class="block block-action bg-blue bg-gradient" href="/jobs">
+      <h4><i class="far fa-arrow-left left"></i>Back to job offers</h4>
+      </a><!-- /.block -->
+    </section>
+
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+
+
+<!-- TODO : add related posts -->
+
+{{ partial "footer" . }}

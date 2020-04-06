@@ -1,0 +1,163 @@
+<section class="section-features-basic" id="basic">
+			<div class="row">
+				<div class="col-md-4 col-features col-features-left">
+					<div class="block-feature-basic">
+						<div class="block-img"><i class="fal fa-users"></i></div>
+						<div class="block-text">
+							<h4>Group conversations</h4>
+							<p>Chat with all your closest friends</p>
+						</div>
+					</div><!-- /.block-feature-basic -->
+					<div class="block-feature-basic">
+						<div class="block-img"><i class="fal fa-user-secret"></i></div>
+						<div class="block-text">
+							<h4>Anonymous account</h4>
+							<p>You don't have to provide any personal info</p>
+						</div>
+					</div><!-- /.block-feature-basic -->
+					<div class="block-feature-basic">
+						<div class="block-img"><i class="fal fa-phone-slash"></i></div>
+						<div class="block-text">
+							<h4>No sim card required</h4>
+							<p>Berty never asks for your phone number</p>
+						</div>
+					</div><!-- /.block-feature-basic -->
+				</div><!-- /.col -->
+				<div class="col-md-4 col-phone">
+                     {{ partial "img" (dict "ctx" . "src" "/img/screen_android.svg" "width" "200" "height" "400" "class" "img-phone") }}
+				</div><!-- /.col -->
+				<div class="col-md-4 col-features col-features-right">
+					<div class="block-feature-basic">
+						<div class="block-img"><i class="fab fa-bluetooth-b"></i></div>
+						<div class="block-text">
+							<h4>Offline messaging</h4>
+							<p>With Bluetooth Low Energy (BLE)</p>
+						</div>
+					</div><!-- /.block-feature-basic -->
+					<div class="block-feature-basic">
+						<div class="block-img"><i class="fal fa-lock-alt"></i></div>
+						<div class="block-text">
+							<h4>Safety by default</h4>
+							<p>Secure chats with end-to-end encryption</p>
+						</div>
+					</div><!-- /.block-feature-basic -->
+					<div class="block-feature-basic">
+						<div class="block-img"><i class="fal fa-phone-laptop"></i></div>
+						<div class="block-text">
+							<h4>Multi-platform</h4>
+							<p>Continue the conversation on your computer</p>
+						</div>
+					</div><!-- /.block-feature-basic -->
+				</div><!-- /.col -->
+			</div><!--  /.row -->
+</section>
+
+</div><!-- /.container -->
+
+<section class="section-features-detail bg-grey" id="secure">
+	<div class="container">
+		<div class="block-mixed">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="block-mixed-img">
+						{{ $img := .Page.Resources.GetMatch "2_phones.png" }}
+                     	{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "90") }}
+					</div><!-- /.block-mixed-img -->
+				</div><!-- /.col -->
+				<div class="col-lg-1 d-none d-lg-block"></div>
+				<div class="col-lg-5 col-md-6">
+					<div class="block-mixed-text">
+						<h3>Secure communications</h3>
+						<ul class="no-ls">
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i><strong>End-to-end encryption</strong><br><span class="spacing"></span>by default on every conversation</li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>A fully <strong>distributed</strong> network</li>
+						</ul>
+					</div><!-- /.block-mixed-text -->
+				</div><!-- /.col -->
+			</div><!--  /.row -->
+		</div><!-- /.block-mixed -->
+	</div><!-- /.container -->
+</section>
+
+<section class="section-features-detail bg-white" id="private">
+	<div class="container">
+		<div class="block-mixed">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="block-mixed-text">
+						<h3>100% anonymous account</h3>
+						<ul class="no-ls">
+							<li><i class="fal fa-lg fa-times-circle c-pink"></i><strong>No name</strong> required</li>
+							<li><i class="fal fa-lg fa-times-circle c-pink"></i><strong>No email</strong> required</li>
+							<li><i class="fal fa-lg fa-times-circle c-pink"></i><strong>No phone number</strong> required</li>
+						</ul>
+					</div><!-- /.block-mixed-text -->
+				</div><!-- /.col -->
+				<div class="col-md-6">
+					<div class="block-mixed-img">
+						<br />
+						<br />
+						{{ $img := .Page.Resources.GetMatch "anonymous.png" }}
+						 {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+					</div><!-- /.block-mixed-img -->
+				</div><!-- /.col -->
+			</div><!--  /.row -->
+		</div><!-- /.block-mixed -->
+	</div><!-- /.container -->
+</section>
+
+<section class="section-features-detail bg-grey">
+	<div class="container">
+		<div class="block-mixed">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="block-mixed-img">
+						{{ $img := .Page.Resources.GetMatch "devices.png" }}
+                     {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "130" "class" "") }}
+					</div><!-- /.block-mixed-img -->
+				</div><!-- /.col -->
+				<div class="col-md-5">
+					<div class="block-mixed-text">
+						<h3>Use Berty on all your devices</h3>
+						<ul class="no-ls">
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>On your <strong>iPhone</strong> or your <strong>iPad</strong></li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>On your <strong>Android</strong> phone</li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>On your <strong>macOS computer</strong></li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>On your <strong>Windows computer</strong></li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>On your <strong>Linux computer</strong></li>
+						</ul><!--<a class="btn btn-bty btn-blue" href="/download" role="button">Go to download page<i class="far fa-arrow-right"></i></a>-->
+					</div><!-- /.block-mixed-text -->
+				</div><!-- /.col -->
+			</div><!--  /.row -->
+		</div><!-- /.block-mixed -->
+	</div><!-- /.container -->
+</section>
+
+<section class="section-features-detail bg-white bg-rounded">
+	<div class="container">
+		<div class="block-mixed">
+			<div class="row">
+				<div class="col-lg-5 col-md-6">
+					<div class="block-mixed-text">
+						<h3>Share your details easily</h3>
+						<ul class="no-ls">
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>Show your <strong>QR code</strong></li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>Copy your <strong>public key</strong> </li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>Send an <strong>invite link</strong></li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i><strong>Share</strong> all of the above</li>
+							<li><i class="fal fa-lg fa-check-circle c-blue"></i>Access your details at any time</li>
+						</ul>
+					</div><!-- /.block-mixed-text -->
+				</div><!-- /.col -->
+				<div class="col-lg-7 col-md-6">
+					<div class="block-mixed-img">
+						{{ $img := .Page.Resources.GetMatch "3_tabs.png" }}
+                    	 {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" "200" "height" "120" "class" "") }}
+					</div><!-- /.block-mixed-img -->
+				</div><!-- /.col -->
+			</div><!--  /.row -->
+		</div><!-- /.block-mixed -->
+	</div><!-- /.container -->
+</section>
+
+<div class="container">

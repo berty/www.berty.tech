@@ -1,0 +1,26 @@
+{{ $organizationLogo := resources.Get .Site.Params.organizationLogo }}
+
+"@type": "Website",
+"@context": "http://schema.org",
+"name": "{{ .Site.Params.organizationName }}",
+"description": "{{ .Site.Params.description }}",
+"url": "{{ .Site.BaseURL }}",
+"image": {
+    "@type": "ImageObject",
+    "@context": "http://schema.org",
+    "url": "{{ $organizationLogo.Permalink }}",
+    "width": "{{ $organizationLogo.Width }}",
+    "height": "{{ $organizationLogo.Height }}"
+},
+"sameAs": [
+    {{ with .Site.Params.twitter }}"https://twitter.com/{{ . }}"{{ end }},
+    {{ with .Site.Params.github }}"https://github.com/{{ . }}"{{ end }},
+    {{ with .Site.Params.medium }}"https://medium.com/{{ . }}"{{ end }},
+    {{ with .Site.Params.linkedin }}"https://www.linkedin.com/company/{{ . }}"{{ end }}
+],
+"copyrightHolder": {
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+},
+"author": {
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+}

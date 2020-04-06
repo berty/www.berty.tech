@@ -1,0 +1,47 @@
+{
+    "webcredentials": {
+        "apps": [
+            "WMBQ84HN4T.chat.berty.ios.staff",
+            "WMBQ84HN4T.chat.berty.ios.debug",
+            "WMBQ84HN4T.chat.berty.ios",
+            "GR5463T564.chat.berty.ios.yolo"
+        ]
+    },
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "WMBQ84HN4T.chat.berty.ios.staff",
+                "paths": [
+                    "/add-contact*",
+                    "/id*",
+                    "/contacts/add*"
+                ]
+            },
+            {
+                "appID": "WMBQ84HN4T.chat.berty.ios.debug",
+                "paths": [
+                    "/add-contact*",
+                    "/id*",
+                    "/contacts/add*"
+                ]
+            },
+            {
+                "appID": "WMBQ84HN4T.chat.berty.ios",
+                "paths": [
+                    "/add-contact*",
+                    "/id*",
+                    "/contacts/add*"
+                ]
+            },
+            {
+                "appID": "GR5463T564.chat.berty.ios.yolo",
+                "paths": [
+                    "/add-contact*",
+                    "/id*",
+                    "/contacts/add*"
+                ]
+            }
+        ]
+    }
+}

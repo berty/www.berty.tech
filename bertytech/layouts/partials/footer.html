@@ -1,0 +1,67 @@
+<footer class="overflow-hidden">
+	<div class="footer-rounded bg-blue text-white">
+		<div class="container">
+			<div class="row row-top">
+				<div class="col-md-5">
+					{{ partial "img" (dict "ctx" . "class" "img-fluid img-bt" "src" "/img/berty_technologies_logo.png" "alt" "Berty Technologies" "width" "352" "height" "145") }}
+					<br />
+					<p>The Berty app is developped by the NGO <a href="/about">Berty Technologies</a>.</p>
+				</div><!-- /.col -->
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-4 col-links">
+								<h5><a href="/features">Features</a></h5>
+								<h5><a href="/challenges">Challenges</a></h5>
+								<h5><a href="/faq">FAQ</a></h5>
+
+							<h5><a href="/community">Community</a></h5>
+							<h5><a href="/blog">Blog</a></h5>
+						</div><!-- /.col -->
+						<div class="col-4 col-links">
+							<h5>Developers</h5>
+							<ul class="list-unstyled text-small">
+								<li><a href="/docs">Docs</a></li>
+								<li><a href="/docs#projects">Our projects</a></li>
+								<li><a href="/contribute">Contribute</a></li>
+								<li><a href="/contribute#projects-we-love">Projects we love</a></li>
+							</ul>
+						</div><!-- /.col -->
+						<div class="col-4 col-links">
+							<h5><a href="/about">About us</a></h5>
+							<ul class="list-unstyled text-small">
+								<li><a href="/jobs">Jobs</a></li>
+								<li><a href="/newsletter">Newsletter</a></li>
+								<li><a href="/contact">Contact</a></li>
+								<li><a href="/press">Press</a></li>
+								<li><a href="https://assets.berty.tech/">Assets</a></li>
+							</ul>
+						</div><!-- /.col -->		
+					</div><!-- /.row -->
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+			<div class="row row-bottom">
+				<div class="col-lg-8 col-md-7 footer-legal">
+					<small>Berty™ is a registered trademark © 2018-2020 Berty Technologies - All right reserved - <a href="/terms">Terms & Conditions</a> - <a href="/privacy-policy">Privacy Policy</a></small>
+				</div><!-- /.col -->
+				<div class="col-lg-4 col-md-5">
+					{{ partial "nav_social" . }}
+				</div><!-- /.col -->
+			</div><!-- /.row -->
+		</div><!-- /.container -->
+	</div><!-- .footer-rounded -->
+</footer>
+
+{{ if not ($.Scratch.Get "isAmpPage") }}
+{{ $jQuery := resources.Get "/js/jquery-3.4.1.min.js" }}
+{{ $bootstrap := resources.Get "/js/bootstrap.min.js" }}
+{{ $slick := resources.Get "/js/slick.min.js" }}
+{{ $particles := resources.Get "/js/particles.min.js" }}
+{{ $lazySizes := resources.Get "/js/lazysizes.min.js" }}
+{{ $qrcode := resources.Get "/js/qrcode.min.js" }}
+{{ $main := resources.Get "/js/main.js" }}
+{{ $js := slice $jQuery $bootstrap $slick $particles $lazySizes $qrcode $main | resources.Concat "bundle.js" | minify | fingerprint }}
+<script type="text/javascript" src="{{ $js.RelPermalink }}"></script>
+{{ end }}
+
+</body>
+</html>

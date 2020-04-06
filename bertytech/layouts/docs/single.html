@@ -1,0 +1,69 @@
+{{ .Scratch.Set "body-class" "page-doc wh" }}
+{{ partial "head" . }}
+
+<header class="header-rounded small bg-blue gradient bg-docs">
+  <div class="container">
+    <div class="subnav">
+       <a class="btn btn-bty btn-transparent" href="/docs"><i class="far fa-arrow-left"></i>Back to docs</a>
+    </div><!-- /.subnav -->
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    <!--<a class="btn btn-bty btn-blue" href="#"><i class="far fa-file-pdf"></i>Download the .pdf File</a>-->
+
+    {{ if .Params.Display_nav }}
+    <div class="row">
+      <div class="col-md-10">
+        <div class="block block-doc-content bg-white js-toc-content">
+          {{ .Content }}
+        </div><!-- /.block-doc-content -->
+      </div><!-- /.col -->
+      <div class="col-md-2">
+        <div class="block-doc-nav">
+          <h6><i class="far fa-align-left"></i>&nbsp;&nbsp;Contents</h6>
+          <div class="js-toc"></div>
+        </div><!-- /.block-doc-nav -->
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+    {{ else }}
+    <div class="block block-doc-content bg-white">
+      {{ .Content }}
+    </div><!-- /.block-doc-content -->
+    {{ end }}
+    <section class="section-actions d-none">
+      <a class="block block-action bg-blue bg-gradient" href="/docs">
+      <h4><i class="far fa-arrow-left left"></i>Back to docs</h4>
+      </a><!-- /.block -->
+    </section>
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+<!-- for docs single pages -->
+<script src="{{ (resources.Get `js/tocbot.min.js`).RelPermalink }}"></script>
+<script type="text/javascript">
+	
+	document.addEventListener("DOMContentLoaded", function() {
+		//generate toc
+   		tocbot.init({
+		  tocSelector: '.js-toc',
+		  contentSelector: '.js-toc-content',
+		  headingSelector: 'h1, h2, h3, h4, h5, h6',
+		  hasInnerContainers: true,
+		  orderedList: false,
+		});
+		//add anchor links
+		document.querySelectorAll('.block-doc-content h1, .block-doc-content h2, .block-doc-content h3, .block-doc-content h4, .block-doc-content h5, .block-doc-content h6').forEach($heading => {
+			var id = $heading.getAttribute("id");
+			$heading.classList.add('anchor-heading');
+			$anchor = document.createElement('a');
+			$anchor.className = 'anchor-link toc-link';
+			$anchor.href = '#' + id;
+			$anchor.innerText = '#';
+			$heading.appendChild($anchor);
+		});
+	});
+</script>
+
+{{ partial "footer" . }}

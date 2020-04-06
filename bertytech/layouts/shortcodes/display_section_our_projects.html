@@ -1,0 +1,8 @@
+<section class="section-projects">
+  <h2 id="our-projects">Our projects</h2>
+  <div class="row">
+    {{ range .Site.Menus.repos }}
+        {{ partial "docs_card_s" . }}
+    {{ end }}
+  </div><!-- /.row -->
+</section>

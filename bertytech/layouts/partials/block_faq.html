@@ -1,0 +1,12 @@
+<div class="block block-faq bg-white">
+	<a class="block-faq-q collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="faq-{{.Params.Id}}">
+		<h4>{{ .Page.Title }}
+		<i class="far fa-chevron-down"></i></h4>
+  	</a><!-- /.block-faq-q -->
+  	<div class="block-faq-a" id="faq-{{.Params.Id}}">
+  		<div class="block-faq-a-inner">
+			{{ .Content }}
+  		</div>
+  	</div><!-- /.block-faq-a -->
+</div><!-- /.block /.block-faq -->
+

@@ -1,0 +1,22 @@
+<section class="section-open-source" id="open-source">
+  <div class="block bg-white block-si">
+    <div class="row">
+      <div class="col-lg-5">
+        {{ $img := .Page.Resources.GetMatch "computers.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "500" "height" "313" "class" "block-si-img left") }}
+      </div><!-- /.col -->
+      <div class="col-lg-7">
+        <div class="block-si-text">
+          <h3>About Open Source</h3>
+          <br />
+          <p>
+            Open source is beneficial for everyone. At Berty, we firmly believe in this commitment. By being open and freely available, we encourage collaboration and technology development to solve problems where we would not have found a solution on our own. We are using open source technology on a daily basis and we also love to contribute to open source projects whenever we can. 
+          </p>
+          <p>
+            Wanna join us and contribute to Berty's code? You'll find below the list of our projects.
+          </p>
+        </div>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.block /block-si -->
+</section>

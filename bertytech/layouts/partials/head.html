@@ -1,0 +1,199 @@
+{{ $.Scratch.Set `pageTitle` (cond (eq .Title .Site.Title) (.Site.Title) ((print .Title " &middot; " .Site.Title) | safeHTML)) }}
+
+<!--
+  Use the first featured image found in the following order:
+  1. .Params.image
+  2. .Site.Params.sectionFeaturedImage
+  3. .Site.Params.defaultFeaturedImage
+-->
+{{ $image := "" }}
+{{ with .Params.image }}
+{{ $image = $.Page.Resources.GetMatch . }}
+{{ else }}
+{{ $image = resources.Get ((index .Site.Params.sectionFeaturedImage .Section) | default .Site.Params.defaultFeaturedImage) }}
+{{ end }}
+{{ if ne $image.MediaType.SubType "gif" }}
+{{ $image = $image.Fill "1024x512 Center" }}
+{{ end }}
+{{ $.Scratch.Set "featuredImage" $image }}
+
+{{ $.Scratch.Set "metaDescription" .Description }}
+{{ $.Scratch.Set "metaDescription" (or ($.Scratch.Get "metaDescription") .Summary) }}
+{{ $.Scratch.Set "metaDescription" (or ($.Scratch.Get "metaDescription") .Site.Params.description) }}
+
+{{ $ampSections := slice "blog" "jobs" "faq" }}
+{{ $ampPages := slice "/contribute/" "/docs/" "/press/" "/privacy-policy/" "/terms/" }}
+{{ $.Scratch.Set "isAmpPage" (hasPrefix .RelPermalink "/amp") }}
+{{ $.Scratch.Set "isAmpPage" (or ($.Scratch.Get "isAmpPage") (in $ampPages .RelPermalink)) }}
+{{ $.Scratch.Set "isAmpPage" (or ($.Scratch.Get "isAmpPage") (in $ampSections .Section)) }}
+
+<!doctype html>
+<!--
+          /\
+     /\  / /\  ______
+    / /\/ /  \/  |   \
+   | |  \/   | ()|    |
+    \ \      |   |____|
+     \ \      \____/ __           __
+      \/       /    / /  ___ ____/ /___ __
+      /     __/    / _ \/ -_) __/ __/ // /
+     /_____/      /____/\__/_/  \__/\__ /
+    /__/                           /___/
+-->
+<html lang="en" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ $.Scratch.Get `pageTitle` }}</title>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- AMP -->
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+    {{ $contentString := string .Content }}
+
+    {{ $lazyAmpLibs := slice }}
+    {{ $lazyAmpLibs := $lazyAmpLibs | append "amp-twitter" }}
+    {{ $lazyAmpLibs := $lazyAmpLibs | append "amp-vimeo" }}
+    {{ $lazyAmpLibs := $lazyAmpLibs | append "amp-iframe" }}
+
+    {{ range $lazyAmpLibs }}
+      {{ if in $contentString . }}
+      <script async custom-element="{{.}}" src="https://cdn.ampproject.org/v0/{{.}}-0.1.js"></script>
+      {{ end }}
+    {{ end }}
+
+    <!-- Styling -->
+    {{ $bootstrapStyle := resources.Get "/css/bootstrap.min.scss" }}
+    {{ $fontAwesome := resources.Get "/css/fontawesome.scss" }}
+    {{ $mailchimpStyle := resources.Get "/css/mailchimp.scss" }}
+    {{ $slickStyle := resources.Get "/css/slick.scss" }}
+    {{ $mainStyle := resources.Get "/css/style.scss" }}
+    {{ $style := slice $bootstrapStyle $fontAwesome $slickStyle $mailchimpStyle $mainStyle | resources.Concat "bundle.scss" | toCSS (dict "outputStyle" "compressed")| postCSS | minify }}
+    {{ $styleContent := replace $style.Content "!important" "" }}
+    {{ $styleContent := replace $styleContent `@charset "UTF-8";` `` }} <!-- Reason for this line is because for an unknown reason it prefixes the CSS output with '@charset "UTF-8"' -->
+    <style {{ if ($.Scratch.Get `isAmpPage`) }}amp-custom{{end}}>
+      {{ $styleContent | safeCSS }}
+      {{ (resources.Get "/css/syntax.css" | resources.Minify).Content | safeCSS }}
+    </style>
+
+    <!-- SEO, Favicons, etc-->
+    <!-- Favicon -->
+    {{ $favicon := resources.Get "/img/favicon.png" }}
+    <!-- generics -->
+    <link rel="shortcut icon" href="{{ relURL "/favicon/favicon.ico" }}">
+    <link rel="icon" href="{{ ($favicon.Resize `32x32`).RelPermalink }}" sizes="32x32">
+    <link rel="icon" href="{{ ($favicon.Resize `57x57`).RelPermalink }}" sizes="57x57">
+    <link rel="icon" href="{{ ($favicon.Resize `76x76`).RelPermalink }}" sizes="76x76">
+    <link rel="icon" href="{{ ($favicon.Resize `96x96`).RelPermalink }}" sizes="96x96">
+    <link rel="icon" href="{{ ($favicon.Resize `128x128`).RelPermalink }}" sizes="128x128">
+    <link rel="icon" href="{{ ($favicon.Resize `192x192`).RelPermalink }}" sizes="192x192">
+    <link rel="icon" href="{{ ($favicon.Resize `228x228`).RelPermalink }}" sizes="228x228">
+    <!-- Android -->
+    <link rel="shortcut icon" href="{{ ($favicon.Resize `196x196`).RelPermalink }}" sizes="196x196">
+    <!-- iOS -->
+    <link rel="apple-touch-icon" href="{{ ($favicon.Resize `120x120`).RelPermalink }}" sizes="120x120">
+    <link rel="apple-touch-icon" href="{{ ($favicon.Resize `152x152`).RelPermalink }}" sizes="152x152">
+    <link rel="apple-touch-icon" href="{{ ($favicon.Resize `180x180`).RelPermalink }}" sizes="180x180">
+    <!-- Windows 8 IE 10-->
+    <meta name="msapplication-TileColor" content="#3f49ea">
+    <meta name="msapplication-TileImage" content="{{ ($favicon.Resize `144x144`).RelPermalink }}">
+    <meta name="msapplication-config" content="{{ relURL "/favicon/browserconfig.xml" }}">
+
+    <link rel="manifest" href="{{ relURL "/favicon/site.webmanifest" }}">
+    <link rel="mask-icon" href="{{ relURL "/favicon/safari-pinned-tab.svg" }}" color="#5bbad5">
+
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{if index .Params "canonical"}}{{index .Params "canonical"}}{{else}}{{ .Permalink | strings.TrimSuffix "/"}}{{end}}" />
+
+    <!-- Alternative Outputs (RSS etc.) -->
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    <meta name="description" content="{{ $.Scratch.Get `metaDescription` }}">
+
+    <!-- Open Graph -->
+    {{ $ogType := cond (and (eq .Section "blog") .IsPage) "article" "website" }}
+    <meta property="og:description" content="{{ $.Scratch.Get `metaDescription` }}">
+    <meta property="og:url" content="{{ .Permalink | strings.TrimSuffix "/" }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="{{ $ogType }}" />
+    <meta property="og:image" content="{{ ($.Scratch.Get `featuredImage`).Permalink }}" />
+    <meta property="og:image:width" content="{{ ($.Scratch.Get `featuredImage`).Width }}" />
+    <meta property="og:image:height" content="{{ ($.Scratch.Get `featuredImage`).Height }}" />
+    <meta property="og:title" content="{{ $.Scratch.Get `pageTitle` }}" />
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    {{- if not .Date.IsZero }}
+    <meta property="og:updated_time" content="{{.Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr}}" />
+    {{- end }}
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{{ $.Scratch.Get `pageTitle` | truncate 65 }}">
+    <meta property="twitter:description" content="{{ $.Scratch.Get `metaDescription` | truncate 195 }}">
+    <meta property="twitter:image" content="{{ ($.Scratch.Get `featuredImage`).Permalink }}">
+
+    <!-- Rich Snippets -->
+    {{ partial "rich-snippets/organization.html" . }}
+    {{ partial "rich-snippets/website.html" . }}
+    {{ partial "rich-snippets/software_application.html" . }}
+    {{ partial "rich-snippets/breadcrumb.html" . }}
+    {{ partial "rich-snippets/webpage.html" . }}
+    {{ if and (eq .Section "blog") .IsPage }}
+    {{ partial "rich-snippets/article.html" . }}
+    {{ end }}
+    {{ if and (eq .Section "jobs") .IsPage }}
+    {{ partial "rich-snippets/job-posting.html" . }}
+    {{ end }}
+    {{ if and (eq .Section "faq") .IsNode }}
+    {{ $faq := slice }}
+    {{ range where .Pages "Section" "faq" }}
+      {{ $faq = $faq | append (dict "question" .Title "answer" .Content) }}
+    {{ end }}
+    {{ partial "rich-snippets/faq" (dict "items" $faq) }}
+    {{ end }}
+
+
+    <meta property="dateModified" content="{{.Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr}}" />
+    <meta property="keywords" content="{{range .Params.keywords}}{{.}},{{end}}{{ range .Params.tags }}{{ . }},{{ end }}{{ range .Params.projects }}{{ . }},{{ end }}" />
+    <meta property="wordCount" content="{{.WordCount}}" />
+
+    <meta name="pinterest" content="nopin" />
+
+    <!-- load fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+
+  </head>
+  <body{{with .Scratch.Get "body-class"}} class="{{.}}"{{end}} tabindex="-1" role="dialog">
+
+    {{ partial "sidebar.html" . }}
+    {{ partial "navbar.html" . }}
+
+    {{ if not .Site.IsServer }}
+    <amp-analytics>
+      <script type="application/json">
+      {
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        },
+        "requests": {
+          "base": "{{ .Site.Params.matomoBaseURL }}/matomo.php?idsite={{ .Site.Params.matomoSiteId }}&rec=1&action_name=${title}&url=${sourceUrl}&rand=${random}&apiv=1&urlref=${documentReferrer}&res=${screenWidth}x${screenHeight}&lang=${browserLanguage}&gt_ms=${serverResponseTime}&cs=${documentCharset}&_cvar={\"1\":[\"errorName\",\"${errorName}\"],\"2\":[\"errorMessage\",\"${errorMessage}\"]}",
+          "pageview": "${base}"
+        }
+      }
+      </script>
+    </amp-analytics>
+    {{ end }}

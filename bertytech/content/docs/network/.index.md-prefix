@@ -1,0 +1,11 @@
+---
+title: Berty Network
+description: IPFS / Libp2p / Bluetooth / Quic / 3G / ...
+icon: fal fa-file-alt
+color: blue
+display_nav: false
+#menu:
+#    docs:
+#        weight: -80
+draft: true
+---

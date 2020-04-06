@@ -1,0 +1,36 @@
+{{ $categories := .Params.categories | default slice }}
+{{ $tags := .Params.tags  | default slice }}
+
+"@context":"http://schema.org",
+"@type":"Article",
+"name":"{{ $.Scratch.Get `pageTitle` }}",
+"headline":"{{ $.Scratch.Get `pageTitle` }}",
+"alternativeHeadline":"{{ $.Scratch.Get `pageTitle` }}",
+"description":"{{ $.Scratch.Get `metaDescription` }}",
+"keywords":"{{ delimit $categories ", " }}, {{ delimit $tags ", " }}",
+"url":"{{ .Permalink }}",
+"mainEntityOfPage": {
+    "@type":"WebPage",
+    "@id":"{{ .Permalink }}"
+},
+"dateModified":"{{ .Lastmod }}",
+"inLanguage":"{{ .Site.LanguageCode }}",
+"accessMode":"textual",
+"accessModeSufficient":"textual",
+"isAccessibleForFree":true,
+"datePublished":"{{ .PublishDate }}",
+"image": {
+    "@type": "ImageObject",
+    "url": "{{ ($.Scratch.Get "featuredImage").Permalink }}",
+    "width": {{ ($.Scratch.Get "featuredImage").Width }},
+    "height": {{ ($.Scratch.Get "featuredImage").Height }}
+},
+"sourceOrganization":{
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+},
+"publisher":{
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+},
+"author": {
+    {{ partial "rich-snippets/organization-inner" (dict "ctx" .) }}
+}

@@ -1,0 +1,174 @@
+{{ $.Scratch.Set `pageTitle` (cond (eq .Title .Site.Title) (.Site.Title) ((print .Title " &middot; " .Site.Title) | safeHTML)) }}
+
+{{ if eq .Params.image nil }}
+{{ $.Scratch.Set "featuredImage" (resources.Get .Site.Params.defaultFeaturedImage) }}
+{{ else }}
+{{ $.Scratch.Set "featuredImage" ((.Page.Resources.GetMatch .Params.image).Fill "1200x1200") }}
+{{ end }}
+
+{{ $.Scratch.Set "metaDescription" .Description }}
+{{ $.Scratch.Set "metaDescription" (or ($.Scratch.Get "metaDescription") .Summary) }}
+{{ $.Scratch.Set "metaDescription" (or ($.Scratch.Get "metaDescription") .Site.Params.description) }}
+
+{{ $ampSections := slice "blog" "docs" "jobs" }}
+{{ $ampPages := slice "/contribute/" "/press/" "/privacy-policy/" "/terms/" }}
+{{ $.Scratch.Set "isAmpPage" (hasPrefix .RelPermalink "/amp") }}
+{{ $.Scratch.Set "isAmpPage" (or ($.Scratch.Get "isAmpPage") (in $ampPages .RelPermalink)) }}
+{{ $.Scratch.Set "isAmpPage" (or ($.Scratch.Get "isAmpPage") (in $ampSections .Section)) }}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ $.Scratch.Get `pageTitle` }}</title>
+
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+
+    <!-- Styling -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-vlOMx0hKjUCl4WzuhIhSNZSm2yQCaf0mOU1hEDK/iztH3gU4v5NMmJln9273A6Jz" crossorigin="anonymous">
+    
+    {{ $bootstrapStyle := resources.Get "/css/bootstrap.min.scss" }}
+    {{ $artStyle := resources.Get "/css/art_style.scss" | resources.ExecuteAsTemplate "/css/art.scss" . }}
+    {{ $style := slice $bootstrapStyle $artStyle | resources.Concat "art_bundle.scss" | toCSS | minify }}
+    {{ $styleContent := replace $style.Content "!important" "!important" }}
+    {{ $styleContent := replace $styleContent `@charset "UTF-8";` `` }} <!-- Reason for this line is because for an unknown reason it prefixes the CSS output with '@charset "UTF-8"' -->
+    <style {{ if ($.Scratch.Get `isAmpPage`) }}amp-custom{{end}}> {{ $styleContent | safeCSS }} </style>
+
+    <!-- Golang -->
+    <meta name="go-import" content="berty.tech git https://github.com/berty/berty">
+    <meta name="go-source" content="berty.tech https://github.com/berty/berty https://github.com/berty/berty/tree/master{/dir} https://github.com/berty/berty/tree/master{/dir}/{file}#L{line}">
+
+    <!-- SEO, Favicons, etc-->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ relURL "/favicon/apple-touch-icon.png" }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ relURL "/favicon/favicon-32x32.png" }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ relURL "/favicon/favicon-16x16.png" }}">
+    <link rel="manifest" href="{{ relURL "/favicon/site.webmanifest" }}">
+    <link rel="mask-icon" href="{{ relURL "/favicon/safari-pinned-tab.svg" }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ relURL "/favicon/favicon.ico" }}">
+    <meta name="msapplication-TileColor" content="#3f49ea">
+    <meta name="msapplication-config" content="{{ relURL "/favicon/browserconfig.xml" }}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{if index .Params "canonical"}}{{index .Params "canonical"}}{{else}}{{ .Permalink | strings.TrimSuffix "/"}}{{end}}" />
+    
+
+    {{ if not (eq (.OutputFormats.Get "amp") nil) }}
+    <link rel="{{ (.OutputFormats.Get "amp").Rel }}" href="{{ (.OutputFormats.Get "amp").Permalink }}">
+    {{ end }}
+
+    <meta name="description" content="{{ $.Scratch.Get `metaDescription` }}">
+
+    <!-- Open Graph --> 
+    {{ $ogType := cond (and (eq .Section "blog") .IsPage) "article" "website" }}
+    <meta property="og:description" content="{{ $.Scratch.Get `metaDescription` }}">
+    <meta property="og:url" content="{{ .Permalink | strings.TrimSuffix "/" }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="{{ $ogType }}" />
+    <meta property="og:image" content="{{ ($.Scratch.Get `featuredImage`).Permalink }}" />
+    <meta property="og:image:width" content="{{ ($.Scratch.Get `featuredImage`).Width }}" />
+    <meta property="og:image:height" content="{{ ($.Scratch.Get `featuredImage`).Height }}" />
+    <meta property="og:title" content="{{ $.Scratch.Get `pageTitle` }}" />
+    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    {{- if not .Date.IsZero }}
+    <meta property="og:updated_time" content="{{.Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr}}" />
+    {{- end }}
+
+    <!-- Twitter Card --> 
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="{{ $.Scratch.Get `pageTitle` | truncate 65 }}">
+    <meta property="twitter:description" content="{{ $.Scratch.Get `metaDescription` | truncate 195 }}">
+    <meta property="twitter:image" content="{{ ($.Scratch.Get `featuredImage`).Permalink }}">
+    
+    <meta property="dateModified" content="{{.Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr}}" />
+    <meta property="keywords" content="{{range .Params.keywords}}{{.}},{{end}}{{ range .Params.tags }}{{ . }},{{ end }}{{ range .Params.projects }}{{ . }},{{ end }}" />
+    <meta property="wordCount" content="{{.WordCount}}" />
+
+    <meta name="pinterest" content="nopin" />
+    
+  </head>
+  <body{{with .Scratch.Get "body-class"}} class="{{.}}"{{end}} id="page-top">
+
+    <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+
+          {{ $home_url := `/` | relURL }}
+          {{ if (in .Site.Params.home_languages .Lang) }}
+          {{ $home_url = `/` | relLangURL }}
+          {{ end }}
+
+          <a class="navbar-brand js-scroll-trigger" href="{{ $home_url }}">Priv/art</a>
+            <div class="dropdown language-switcher d-lg-none flex-row ml-md-auto">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fal fa-globe"></i>{{ upper .Lang }}
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  {{ range .AllTranslations }}
+                  {{- if or (not .IsHome) (and .IsHome (in .Site.Params.home_languages .Lang)) -}}
+                  {{ $isCurrent := (eq .Lang $.Lang) }}
+                  <a class="dropdown-item" href="{{ .Permalink }}">{{ upper .Lang }}{{ if $isCurrent }}<i class="fal fa-check"></i>{{ end }}</a>
+                  {{ end }}
+                  {{ end }}
+              </div>
+            </div>
+
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ `#concept` | relLangURL }}">{{ i18n "menu_concepts" . }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ `#projects` | relLangURL }}">{{ i18n "menu_projects" . }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ `#call-for-artists` | relLangURL }}">{{ i18n "menu_cfa" . }}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ `#whistle-blowers` | relLangURL }}">{{ i18n "menu_whistle_blowers" . }}</a>
+              </li>
+              
+            </ul>
+            <div class="dropdown language-switcher d-none d-lg-block">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fal fa-globe"></i>{{ upper .Lang }}
+              </button>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  {{ range .AllTranslations }}
+                  {{- if or (not .IsHome) (and .IsHome (in .Site.Params.home_languages .Lang)) -}}
+                  {{ $isCurrent := (eq .Lang $.Lang) }}
+                  <a class="dropdown-item" href="{{ .Permalink }}">{{ upper .Lang }}{{ if $isCurrent }}<i class="fal fa-check"></i>{{ end }}</a>
+                  {{ end }}
+                  {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    {{ if not .Site.IsServer }}
+    <amp-analytics>
+      <script type="application/json">
+      {
+        "triggers": {
+          "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+          }
+        },
+        "requests": {
+          "base": "{{ .Site.Params.matomoBaseURL }}/matomo.php?idsite={{ .Site.Params.matomoSiteId }}&rec=1&action_name=${title}&url=${sourceUrl}&rand=${random}&apiv=1&urlref=${documentReferrer}&res=${screenWidth}x${screenHeight}&lang=${browserLanguage}&gt_ms=${serverResponseTime}&cs=${documentCharset}&_cvar={\"1\":[\"errorName\",\"${errorName}\"],\"2\":[\"errorMessage\",\"${errorMessage}\"]}",
+          "pageview": "${base}"
+        }
+      }
+      </script>
+    </amp-analytics>
+    {{ end }}
+    

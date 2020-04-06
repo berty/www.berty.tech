@@ -1,0 +1,21 @@
+<div class="col-lg-4 col-md-6">
+    <a class="block bg-white doc-card m {{.Page.Params.color}}" href="{{.URL}}">
+        <div class="doc-card-inner">
+            <div class="doc-card-icon c-{{.Page.Params.color}}">
+                <i class="{{.Page.Params.Icon}}"></i>
+            </div><!-- /.doc-card-icon -->
+            <h4 class="doc-card-title text">
+            {{.Page.Title}}
+            </h4><!-- /.doc-card-title -->
+            <div class="doc-card-desc text">
+            {{.Page.Description}}
+            </div><!-- /.doc-card-desc -->
+            <!--<div class="doc-card-tags">
+            {{.Page.Params.tags}}
+            </div> /.doc-card-tags -->
+        </div><!-- /.doc-card-inner -->
+        <div class="doc-card-button c-{{.Page.Params.color}}">
+            Read the doc<i class="far fa-chevron-right"></i>
+        </div>
+    </a><!-- /.doc-card -->
+</div><!-- /.col -->

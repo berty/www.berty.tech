@@ -1,0 +1,33 @@
+{{- $max_width := 1024 }}
+{{- $scratch := .Scratch}}
+{{- $scratch.Delete "image_set" }}
+{{- with $img := $.Page.Resources.GetMatch (.Get "src")}}
+ {{- if gt $img.Width $max_width }}
+  {{- $resized := $img.Resize (printf "%dx" $max_width) }}
+  {{- $scratch.Set "image-permalink" $resized.RelPermalink}}
+  {{- $scratch.Set "image-width" $resized.Width}}
+  {{- $scratch.Set "image-height" $resized.Height}}
+ {{- else }}
+  {{- $scratch.Set "image-permalink" $img.RelPermalink}}
+  {{- $scratch.Set "image-width" $img.Width}}
+  {{- $scratch.Set "image-height" $img.Height}}
+ {{- end}}
+{{- else}}
+ {{- if fileExists (printf "/static/%s" (.Get "src")) }}
+  {{- $scratch.Set "image-permalink" (.Get "src")}}
+  {{- with $config := imageConfig (printf "/static/%s" (.Get "src"))}}
+   {{- $scratch.Set "image-width" $config.Width}}
+   {{- $scratch.Set "image-height" $config.Height}}
+  {{- end}}
+ {{- else}}
+  {{- $scratch.Set "image-permalink" (printf "https://via.placeholder.com/1000x500?text=invalid path\n%s" (.Get "src")) }}
+  {{- $scratch.Set "image-width" 1000 }}
+  {{- $scratch.Set "image-height" 500 }}
+ {{- end}}
+{{- end}}
+
+
+<figure class="text-center">
+    {{ partial "img" (dict "ctx" . "class" "rounded" "src" ($scratch.Get "image-permalink") "layout" "responsive" "width" ($scratch.Get "image-width") "height" ($scratch.Get "image-height") "title" (.Get "title") "alt" (.Get "alt")) }}
+    {{ with .Inner }}<figcaption>{{- . | markdownify -}}</figcaption>{{ end }}
+</figure>
