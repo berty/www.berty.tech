@@ -1,0 +1,115 @@
+<section class="section-download">
+	<div class="row">
+
+		<div class="col-lg-6">
+			<div class="block block-dl bg-white" id="download-ios">
+				<div class="block-dl-icon bg-black">
+					<i class="fab fa-apple"></i>
+				</div><!-- /.block-f-img -->
+				<div class="row">
+					<div class="col-7">
+						<div class="block-dl-text fixed-height">
+							<h2>Berty for IOS</h2>
+							<p>
+								Version 1.0
+								<br />
+								Only available for iPhone
+								<br />
+								iPad version coming soon
+							</p>
+						</div><!-- /.block-dl-text -->
+						<div class="block-dl-btn">
+							{{ partial "btn_download" (dict "class" "" "link" "#" "icon" "fab fa-apple" "s" "Download on the" "l" "App Store" "hover" "Coming soon") }}
+							<br />
+							<small>Requires IOS 12 or later</small>
+						</div><!-- /.block-dl-btn -->
+					</div><!-- /.block-dl-text /.col -->
+					<div class="col-5 block-dl-img">
+						{{ partial "img" (dict "ctx" . "src" "/img/screen_ios.svg" "layout" "fill") }}
+					</div><!-- /.block-dl-img /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.block-dl -->
+		</div><!-- /.col -->
+
+		<div class="col-lg-6">
+			<div class="block block-dl bg-white" id="download-android">
+				<div class="block-dl-icon block-dl-icon-android bg-android">
+					<i class="fab fa-android"></i>
+				</div><!-- /.block-f-img -->
+				<div class="row">
+					<div class="col-7">
+						<div class="block-dl-text fixed-height">
+							<h2>Berty for Android</h2>
+							<p>
+								Version 1.0
+							</p>
+							{{ partial "btn_download" (dict "class" "btn-dl-f-droid" "link" "#" "icon" "fas fa-robot" "s" "Get it on" "l" "F-Droid" "hover" "Coming soon") }}
+						</div><!-- /.block-dl-text -->
+						<div class="block-dl-btn">
+							{{ partial "btn_download" (dict "class" "btn-dl-google" "link" "#" "icon" "fab fa-google-play" "s" "Get it on" "l" "Google Play" "hover" "Coming soon") }}
+							<br />
+							<small>Requires Android 9 or later</small>
+						</div><!-- /.block-dl-btn -->
+					</div><!-- /.block-dl-text /.col -->
+					<div class="col-5 block-dl-img">
+						{{ partial "img" (dict "ctx" . "src" "/img/screen_android.svg"  "layout" "fill") }}
+					</div><!-- /.block-dl-img /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.block-dl -->
+		</div><!-- /.col -->
+
+
+		<div class="col-lg-6">
+			<div class="block block-dl bg-white" id="download-macos">
+				<div class="block-dl-icon bg-black">
+					<i class="fab fa-apple"></i>
+				</div><!-- /.block-f-img -->
+				<div class="row">
+					<div class="col-7">
+						<div class="block-dl-text">
+							<h2>Berty for MacOS</h2>
+							<p>
+								Version 1.0
+							</p>
+						</div><!-- /.block-dl-text -->
+						<div class="block-dl-btn">
+							{{ partial "btn_download" (dict "class" "margin-right" "link" "#" "icon" "fab fa-apple" "s" "Download for" "l" "MacOS" "hover" "Coming soon") }}
+							<br />
+							<small>Requires MacOS Mojave or later</small>
+						</div><!-- /.block-dl-btn -->
+					</div><!-- /.block-dl-text /.col -->
+					<div class="col-5 block-dl-img">
+						{{ partial "img" (dict "ctx" . "src" "/img/web.png" "layout" "fill") }}
+					</div><!-- /.block-dl-img /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.block-dl -->
+		</div><!-- /.col -->
+
+		<div class="col-lg-6">
+			<div class="block block-dl bg-white" id="download-windows">
+				<div class="block-dl-icon bg-blue block-dl-icon-windows">
+					<i class="fab fa-windows"></i>
+				</div><!-- /.block-f-img -->
+				<div class="row">
+					<div class="col-7">
+						<div class="block-dl-text">
+							<h2>Berty for Windows</h2>
+							<p>
+								Version 1.0
+							</p>
+						</div><!-- /.block-dl-text -->
+						<div class="block-dl-btn">
+							{{ partial "btn_download" (dict "class" "margin-right" "link" "#" "icon" "fab fa-windows" "s" "Download for" "l" "Windows" "hover" "Coming soon") }}
+							<br />
+							<small>Requires Windows 10 or later</small>
+						</div><!-- /.block-dl-btn -->
+					</div><!-- /.block-dl-text /.col -->
+					<div class="col-5 block-dl-img">
+						{{ partial "img" (dict "ctx" . "src" "/img/web.png" "layout" "fill") }}
+					</div><!-- /.block-dl-img /.col -->
+				</div><!-- /.row -->
+			</div><!-- /.block-dl -->
+		</div><!-- /.col -->
+
+	</div><!-- /.row -->
+</section><!-- /.section-download -->

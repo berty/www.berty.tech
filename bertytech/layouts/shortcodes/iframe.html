@@ -1,0 +1,12 @@
+{{ $layout := (.Get "layout" | default "responsive") }}
+
+<amp-iframe 
+    width="{{ .Get `width` }}" 
+    height="{{ .Get `height` }}"
+    src="{{ .Get `src` }}"
+    layout="{{ $layout }}"
+    sandbox="allow-scripts allow-same-origin allow-presentation"
+    frameborder="0"
+    {{with (.Get `allowfullscreen`)}}allowfullscreen{{end}}>
+    <amp-img layout="nodisplay" src="{{ (resources.Get `/img/berty_logo.png`).RelPermalink }}" placeholder></amp-img>
+</amp-iframe>

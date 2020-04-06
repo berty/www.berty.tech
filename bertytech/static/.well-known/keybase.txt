@@ -1,0 +1,86 @@
+==================================================================
+https://keybase.io/moul
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://berty.tech
+  * I am moul (https://keybase.io/moul) on keybase.
+  * I have a public key with fingerprint 4B2B 95D6 30B5 4295 95AC  6228 6D4D ED2E AB12 3456
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "010130bf784f964ea65b0108ae694d5705cb90d6a657d82e929e3503f55970a2017c0a",
+      "fingerprint": "4b2b95d630b5429595ac62286d4ded2eab123456",
+      "host": "keybase.io",
+      "key_id": "6d4ded2eab123456",
+      "kid": "01014778bae0aed0406a29f37a64917ec9c8bcef7347ca7a0be1e14b637aa8d8ce2f0a",
+      "uid": "7bb34279aaab843f69168e46ca637919",
+      "username": "moul"
+    },
+    "merkle_root": {
+      "ctime": 1562341236,
+      "hash_meta": "26bed2f6d77fd3a497108c756e973842b122511f93f884caf9a3835a2f7e020b",
+      "seqno": 5701543
+    },
+    "revoke": {
+      "sig_ids": [
+        "6d395a0dda8d7ef888fa40707648e771df14d4aaf508dd99189bc650b92c93d20f"
+      ]
+    },
+    "service": {
+      "hostname": "berty.tech",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1562341239,
+  "expire_in": 157680000,
+  "prev": "4795653fa522da1219af1a0451d609ddbd0b3baed07793a5cdbc54b4a5d58bcb",
+  "seqno": 130,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtU2tMFUcYRdCKD9SK4htlNWrx0dnH7OxgYutVQ4mvSFulGLzM7MzCCty97F1e
+Uhsbf0ixGqvgI2orahWF+kharU0TH/HV9gcWkGKrVkw0atRKaKXVqJ0lmjZN989m
+z57vfOc78836uJio2G4F8+5PrRuoLer2wx0alTXaWVUuUYeVSSnlUh7vevF8xiNe
+MM9mUooEZCCrgFrI0Cysa5zokArMIFzHGoMIQJNiwHSBI2YoHCuYqxCoFoQYAaIA
+GZmASJMlyw7lcDfs2iFPyGpUoRgyXUhDTcEQQ2LqimLoTGOcKZxQWVE1qIvCXCfi
+VwhzlET4VNsRmPgIdtn7H/4/vjWEDEo4IJwBDehEwZaKiK5hGXETmwY1uYVUDZkE
+EUC5zGWN6oJBDGaYXLG6fBd1ySFKVU1BmBBCDU21dCzrBtd0k4gCLGOfGOFuiBRw
+wS5wivKlFZOlAu7m5fOg6zieH6zp2f5vGerCq/Cri+FIJDdYwD0iqhSdilEsnSFk
+MZVoGImcTQR1jpFqaIoYUYGybGHVMgzNJBYmqqFColiIAwVQ4SHCC0OOlCKORYaa
+Khy4vNjJ437ziJ0jIotIKUtEaKrIG7CTLhOjIi7kDItoAAGkawZHSGaWrDGNEAsC
+gzGMZQNTU4eAYsXEKlOAJWWt8Nu5xbbZJe+f0ovpKXe9sqkeN3OFo7DreI7p5As8
+1/PCkRQ/F68s7BNLOA2+kAhSO8TEhoiKYu5GbCckchLM/0aGJ0u8NGy7PGj7DIh0
+A4jH78OL/b1CGOpQtQhUFEZkRcbEkgnQoMx0gBmjDFCV+guBEFYJNBk1oUY1AhkU
++/CvDMXWC6MkR4iK6ELEK3K5tKL3R9Fq96husVGjEpK6z5lU3QK+ClRX19OJL69V
+j2j/TkX17jXgJZJ5fEBUbfW8g32TWmaktR+o35UdfW5HT0aXrfkp6+I716oOZT8b
+Xnu2suTIzssjzzctSV0jB9LTxp5pqCtfeaZo2qPE7PuHm9jp9oWR1I7qt24t/y5u
+2Lsxs55XNa9OqBmaderZCOX79tjSL+ULb4COBaD4xMMzVxM7Bv0Jsvr025hTdrpj
+9oVfjjesGvz1X7NuT/j2m3m3LmcM37pl+5b9NzKqJtSEW49eJEOaM8xnp2obvfnj
+3bZ163csuttJs+bcPZcR6c0v7Hww5vrPM5vikrfeS69cCOvjy+1pn1XkFI67hCZW
+rN3WXnFoRkxN5R9OaEdo974YY9PSPVc/f9yjfVBzdP34tA3LhpReH2nf3L0p8Xnt
+knHrtpeuq3u1ZvTayns86f7YvAVPGltDlYVe9u8p5wZWBWZfSj9WhM4n331YOWLP
+K5tPNmcO3bZ8aNWYnj/aH9QWTU+e8/qqzsX18fEfB/gkdXDBsP2LrxU+NQzWb25z
+dfbMDfHP56e/ktS9R3xg/p1wQ2JjyZXd9w4emPHmdCo17D27d2NroGJlSmvN7YmX
+phw7SC7Hna0KtCztnzxtyoPmh5HhvzXc/LRT7ryx6+ij/mUJbY9/nXsnP6G9o3XI
+ex/S1MZUuC++beaVpC+cQfsPv3ao9GR48/v7lrUcSZvb5+iY1eHMJ7FtTXGNb+9E
+bmjEsTWbH60ndXqvE7s+2RMcVfI0c2nfvwE=
+=dzgt
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/moul
+
+==================================================================

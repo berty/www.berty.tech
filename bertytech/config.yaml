@@ -1,0 +1,179 @@
+title: Berty Technologies
+
+timeout: 60000
+
+#theme: berty
+
+metaDataFormat: yaml
+
+#baseURL: /
+baseURL: https://berty.tech/
+
+languageCode: en-US
+
+enableGitInfo: true
+enableRobotsTXT: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  author: author
+
+author:
+  name: Berty Technologies
+  email: contact@berty.tech
+  logo: /img/berty_logo.png
+
+enableEmoji: true
+
+# pygmentsUseClassic: true
+pygmentsUseClasses: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  #useSummaryIfNoDescription: true
+  description: We build tools to enhance communication freedom
+  copyright: Copyright (c)
+  themeColor: custom
+  RSSlink: /index.xml
+  title: Berty
+  #subtitle: Berty Technologies is a technical nonprofit organization
+
+  organizationName: Berty Technologies
+  organizationLogo: /img/berty_logo_square-1200x1200.png
+
+  navbarLogo: /img/berty_logo.svg
+
+  logoSVG: /img/berty_logo.svg
+  logoPNG: /img/berty_logo.png
+  defaultFeaturedImage: /img/berty_social.png
+  sectionFeaturedImage:
+    challenges: /img/berty_challenges.png
+    blog: /img/berty_blog.png
+    docs: /img/berty_docs.png
+    faq: /img/berty_faq.png
+    help: /img/berty_help.png
+    jobs: /img/berty_jobs.png
+    newsletter: /img/berty_news.png
+
+  matomoSiteId: 1
+  matomoBaseURL: https://bertytech.matomo.cloud
+
+  # APP
+  appName: Berty
+  appCategory: Messaging
+  appOperatingSystem:
+    - Android
+    - iOS
+    - OSX
+    - Windows
+
+  # SEO
+  name: "Berty"
+  bio: "We build tools to enhance communication freedom"
+  location: ""
+  twitter: "berty"
+  github: "berty"
+  medium: "berty-tech"
+  #facebook: ""
+  linkedin: berty
+  #googleplus:
+  #instagram:
+  #slack_url:
+
+  useSummaryIfNoDescription: true
+
+  keepReadingStr: More
+  backtotopStr: Up
+  shareStr: Share
+  pageNotFoundTitle: "404 - Page not found"
+
+  # Jobs
+  jobsWorkingAtBerty: |
+    <h2>Working at Berty</h2>
+    <ul>
+      <li>A small team of 10 young & passionate people</li>
+      <li>Full time position</li>
+      <li>Competitive salary</li>
+      <li>Hardware of your choice (Last generation MacBook Pro...)</li>
+      <li>Offices based in Paris, FRANCE</li>
+      <li>Regular events</li>
+    </ul>
+
+  jobsAboutBerty: |
+    <h2>About the project</h2>
+    <p>
+      Berty is a highly encrypted, distributed messenger being developed by people who want to take privacy and security to the next level.<br>
+      It uses cryptography, P2P, and low-level drivers to achieve having privacy, resilience, and simplicity.<br>
+      If you're a like-minded individual and find those challenges interesting, you're welcome to get in touch for a potential collaboration.
+    </p>
+
+  # values from https://schema.org/PostalAddress
+  # Used both in Organization & JobsPosting schema
+  jobsAddress:
+    streetAddress: 96 Boulevard Bessières
+    addressLocality: Paris
+    postalCode: 75017
+    addressRegion: Île-de-France
+    addressCountry: France
+
+  contactPhone: +33 805 08 20 00
+  contactEmail: contact@berty.tech
+
+  domainAliases:
+    - berty.co
+    - www.berty.co
+    - berty.org
+    - www.berty.org
+    - berty.info
+    - www.berty.info
+    - berty.me
+    - www.berty.me
+    - berty.app
+    - www.berty.app
+    - berty.chat
+    - www.berty.chat
+    - berty.io
+    - www.berty.io
+    - bertie.tech
+    - www.bertie.tech
+    - bertytech.netlify.com
+
+imaging:
+  resampleFilter: MitchellNetravali
+  quality: 95
+  anchor: smart
+
+relativeURLs: true
+
+mediaTypes:
+  text/netlify:
+    delimiter: ""
+
+outputFormats:
+  redirects:
+    mediaType: "text/netlify"
+    baseName: "_redirects"
+    isPlainText: true
+    notAlternative: true
+  _redirects:
+    mediaType: "text/netlify"
+    baseName: "_redirects.txt"
+    path: debug
+    isPlainText: true
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "RSS", "redirects", "_redirects"]
+
+related:
+  threshold: 100
+  includeNewer: true
+  toLower: false
+  indices:
+  - name: tags
+    weight: 100

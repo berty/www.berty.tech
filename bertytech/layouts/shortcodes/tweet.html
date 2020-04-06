@@ -1,0 +1,10 @@
+<div class="text-center tweet" style="max-width: 400px;">
+  <amp-twitter width="390"
+    height="330"
+    layout="responsive"
+    data-tweetid="{{ (.Get `id`) }}">
+    <div fallback>
+      An error occurred while retrieving the Tweet. It might have been deleted.
+    </div>
+  </amp-twitter>
+</div>

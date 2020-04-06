@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /art
+Disallow: /art/*
+Disallow: /debug
+
+{{- range .Site.Pages -}}
+{{- if not .Params.private }}
+Allow: {{ cond (ne .RelPermalink "/") (strings.TrimSuffix "/" .RelPermalink) .RelPermalink  }}
+{{- end -}}
+{{ end }}
+
+{{- range .Site.Pages -}}
+{{- if .Params.private }}
+Disallow: {{ cond (ne .RelPermalink "/") (strings.TrimSuffix "/" .RelPermalink) .RelPermalink  }}
+{{- end -}}
+{{ end }}
+

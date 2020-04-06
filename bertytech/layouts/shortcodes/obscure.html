@@ -1,0 +1,5 @@
+<span style="display: inline-flex;">
+<amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+  <span class="obsinner-{{ .Get 0 | base64Encode }}">-</span>
+</amp-script>
+</span>

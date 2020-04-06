@@ -1,0 +1,140 @@
+<nav class="navbar navbar-expand-md navbar-dark{{with .Scratch.Get "navbar-class"}} {{.}}{{end}}">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" "/img/berty_mono.svg")}}  
+        </a>
+        <button on="tap:sidebar.open" class="navbar-toggler" type="button" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="far fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+
+          <amp-script layout="container" src="{{ (resources.Get `js/amp-navbar.js`).Permalink }}">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown"> 
+                  <a class="nav-link" href="#" id="d-difference" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      The difference<i class="far fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="d-difference">
+                      <div class="dropdown-item h">
+                        <span class="title">The privacy-first messenger</span>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <!--
+                      <a class="dropdown-item l" href="#">
+                        <i class="fal fa-lock-alt c-blue"></i>
+                        <span class="title">Security</span>
+                        <span class="subtitle">Anonymous account, E2E encryption...</span>
+                      </a>
+                      <a class="dropdown-item l" href="/docs/white-paper">
+                        <i class="fal fa-file-alt c-blue"></i>
+                        <span class="title">White Paper</span>
+                        <span class="subtitle">The vision behind the Berty project</span>
+                      </a>-->
+                      <a class="dropdown-item l" href="/features">
+                        <i class="fal fa-stars c-blue"></i>
+                        <span class="title">Features</span>
+                        <span class="subtitle">Group conversations, offline messaging...</span>
+                      </a>
+                      <a class="dropdown-item l" href="/challenges">
+                        <i class="fal fa-rocket c-blue"></i>
+                        <span class="title">Challenges</span>
+                        <span class="subtitle">Technicals, humans and more</span>
+                      </a>
+                      <a class="dropdown-item l" href="/faq">
+                        <i class="fal fa-question-circle c-blue"></i>
+                        <span class="title">FAQ</span>
+                        <span class="subtitle">Frequently asked questions</span>
+                      </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="d-developers" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Developers<i class="far fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="d-developers">
+                      <a class="dropdown-item l" href="/docs">
+                        <i class="fal fa-book c-blue"></i>
+                        <span class="title">Docs</span>
+                        <span class="subtitle">Technical documentations</span>
+                      </a>
+                      <a class="dropdown-item l" href="/docs#projects">
+                        <i class="far fa-cubes c-blue"></i>
+                        <span class="title">Our Projects</span>
+                        <span class="subtitle">Go-IPFS-Log, Go-Orbit-DB...</span>
+                      </a>
+                      <a class="dropdown-item l" href="/contribute">
+                        <i class="fal fa-code-branch c-blue"></i>
+                        <span class="title">Contribute</span>
+                        <span class="subtitle">Developer, crypto specialist, translator...</span>
+                      </a>
+                      <a class="dropdown-item l" href="/contribute#projects-we-love">
+                        <i class="fal fa-heart c-blue"></i>
+                        <span class="title">Projects we love</span>
+                        <span class="subtitle">IPFS, 42, Paris P2P...</span>
+                      </a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item f" href="https://github.com/berty" target="_blank" rel="noopener">
+                        <i class="fab fa-github c-fakeblack"></i>
+                        <span class="title">View source code on Github</span>
+                      </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown"> 
+                    <a class="nav-link" href="#" id="d-resources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Resources<i class="far fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="d-resources">
+                      <a class="dropdown-item l" href="/about">
+                        <i class="fal fa-home c-blue"></i>
+                        <span class="title">About us</span>
+                        <span class="subtitle">We're a small NGO</span>
+                      </a>
+                      <a class="dropdown-item l" href="/jobs">
+                        <i class="fal fa-laptop-code c-blue"></i>
+                        <span class="title">Jobs</span>
+                        <span class="subtitle">Our open positions</span>
+                      </a>
+                      <!--<a class="dropdown-item l" href="/help">
+                        <i class="fal fa-life-ring c-pink"></i>
+                        <span class="title">Help center</span>
+                        <span class="subtitle">Tutorials & more</span>
+                      </a>-->
+                      <a class="dropdown-item l" href="/newsletter">
+                        <i class="fal fa-envelope-open-text c-blue"></i>
+                        <span class="title">Newsletter</span>
+                        <span class="subtitle">Subscribe and read previous issues</span>
+                      </a>
+                      <a class="dropdown-item l" href="/contact">
+                        <i class="fal fa-paper-plane c-blue"></i>
+                        <span class="title">Contact</span>
+                        <span class="subtitle">Get in touch with us</span>
+                      </a>
+                      <a class="dropdown-item l" href="/press">
+                        <i class="fal fa-newspaper c-blue"></i>
+                        <span class="title">Press</span>
+                        <span class="subtitle">Press documents and medias</span>
+                      </a>
+                      <a class="dropdown-item l" href="https://assets.berty.tech/">
+                        <i class="fal fa-photo-video c-blue"></i>
+                        <span class="title">Assets</span>
+                        <span class="subtitle">Logos, icons, pictures...</span>
+                      </a>
+                      <!--<div class="dropdown-divider"></div>
+                      <a class="dropdown-item l ff" href="/download">
+                        <i class="fal fa-arrow-circle-down c-blue"></i>
+                        <span class="title">Download app</span>
+                        <span class="subtitle">Berty App for iOS, android, desktop...</span>
+                      </a>-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/community">Community</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+            </ul>
+          </amp-script>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav><!-- /.navbar -->

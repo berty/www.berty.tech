@@ -1,0 +1,14 @@
+"@context": "https://schema.org",
+"@type": "FAQPage",
+"mainEntity": [
+  {{ range $index, $el := .items }}
+  {
+    "@type": "Question",
+    "name": "{{ $el.question }}",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "{{ replaceRE `"` "'" (replaceRE "<amp-img(?s).*?/amp-img>(?s).*?</amp-img>" "" $el.answer) | safeHTML }}"
+    }
+  }{{ if ne (add $index 1) (len $.items) }},{{ end }}
+  {{ end }}
+]

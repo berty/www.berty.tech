@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md navbar-light{{with .Scratch.Get "navbar-class"}} {{.}}{{end}}">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" .Site.Params.navbarLogo)}}
+        </a>
+        <button on="tap:sidebar.open" class="navbar-toggler" type="button" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="far fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            <ul class="navbar-nav">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+                    {{ $isActive := or $isActive (in ($currentPage.Permalink | relLangURL) (.URL | relLangURL)) }}
+                    <li class="nav-item">
+                        <a class="nav-link{{if $isActive }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav><!-- /.navbar -->

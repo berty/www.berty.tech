@@ -1,0 +1,50 @@
+{{.Scratch.Set "navbar-class" "navbar-home" }}
+{{ partial "head" . }}
+
+<section class="section-header">
+	<div class="section-bg bg-purple gradient">
+		<div class="particles" id="particles-js-1"></div>
+		<img src="/img/wave_blue.svg" class="img img-wave">
+		<div class="container">	
+			<div class="img img-planet-purple">
+				{{ partial "img" (dict "ctx" . "src" "/img/planet_purple.png" "layout" "fill")}}
+			</div>
+			<div class="img img-planet-pink">
+				{{ partial "img" (dict "ctx" . "src" "/img/planet_pink.png" "layout" "fill")}}
+			</div>
+		</div><!-- /.container -->
+		<img src="/img/wave_bottom.svg" class="img img-wave-bottom">
+		<div class="img img-planet-orange">
+			{{ partial "img" (dict "ctx" . "src" "/img/planet_orange.png" "layout" "fill")}}
+		</div>
+	</div><!-- /.header-bg -->
+	<div class="section-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 header-left">
+					<h1>The privacy-first messaging app</h1>
+					<br>
+					<h4>that works with or without internet access, cellular data or trust in the network</h4>
+				</div><!-- /.col /.header-left -->
+	      		<div class="col-md-6 header-right">
+	      			<div class="img-phone phone-right android">
+						<img src="/img/screen_android.svg" class="img">
+					</div> 
+					<div class="img-phone phone-left ios">
+						<img src="/img/screen_ios.svg" class="img">
+					</div>
+				</div><!-- /.col /.header-right -->
+	    	</div><!-- /.row -->
+	  	</div><!-- /.container -->
+  	</div><!-- /.header-content -->
+</section>
+
+{{ partial "section_features" . }}
+
+{{ partial "section_more" . }}
+
+{{ partial "section_articles" . }}
+
+{{ partial "section_newsletter" . }}
+
+{{ partial "footer" . }}

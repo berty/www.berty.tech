@@ -1,0 +1,41 @@
+{{.Scratch.Set "body-class" "page-single wh"}}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-blue gradient bg-faq">
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+    <h3 class="text-shadow subtitle">{{.Params.Subtitle}}</h3>
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+
+    <section class="section-faq">
+      <div class="row">
+        <amp-script layout="container" src="{{ (resources.Get `js/amp-faq.js`).Permalink }}">
+          <div class="col-12">
+            {{ range sort .Pages "Params.id" }}
+            {{ partial "block_faq" . }}
+            {{ end }}
+          </div><!-- /.col -->
+        </amp-script>
+      </div><!-- /.row -->
+    </section>
+
+    <section class="section-actions">
+      <h2>Didn't find what you were looking for?</h2>
+      <div class="row">
+        <div class="col-md-6">
+          {{ partial "block_action_suggest_question" . }}
+        </div><!-- /.col -->
+        <div class="col-md-6">
+          {{ partial "block_action_contact_us" . }}
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+{{ partial "footer" . }}
