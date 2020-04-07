@@ -3,8 +3,11 @@
 
 <header class="header-rounded small bg-blue gradient bg-docs">
   <div class="container">
-    <div class="subnav">
+    <div class="subnav col-md-10 px-3 px-md-0 d-flex justify-content-between align-items-center">
        <a class="btn btn-bty btn-transparent" href="/docs"><i class="far fa-arrow-left"></i>Back to docs</a>
+       <a class="btn btn-bty btn-black" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>Edit on GitHub
+      </a>
     </div><!-- /.subnav -->
   </div><!-- /.container -->
 </header>
@@ -33,6 +36,9 @@
     </div><!-- /.block-doc-content -->
     {{ end }}
     <section class="section-actions d-none">
+      <a class="btn btn-bty btn-black mb-3" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>Edit on GitHub
+      </a>
       <a class="block block-action bg-blue bg-gradient" href="/docs">
       <h4><i class="far fa-arrow-left left"></i>Back to docs</h4>
       </a><!-- /.block -->
@@ -43,7 +49,7 @@
 <!-- for docs single pages -->
 <script src="{{ (resources.Get `js/tocbot.min.js`).RelPermalink }}"></script>
 <script type="text/javascript">
-	
+
 	document.addEventListener("DOMContentLoaded", function() {
 		//generate toc
    		tocbot.init({
