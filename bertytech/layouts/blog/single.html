@@ -24,11 +24,18 @@
 
   	  {{.Content}}
       </div><!-- /.post-content -->
-              <div class="blog-tags">
-          {{ range .Params.tags }}
-            {{ $tag := $.Site.GetPage (print "/tags/" .) }}
-            <a class="tag {{ . | lower }}" href="{{ $tag.Permalink }}">{{ $tag.Title }}</a>
-          {{ end }}
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+          <div class="blog-tags mb-3 mb-0">
+            {{ range .Params.tags }}
+              {{ $tag := $.Site.GetPage (print "/tags/" .) }}
+              <a class="tag {{ . | lower }}" href="{{ $tag.Permalink }}">{{ $tag.Title }}</a>
+            {{ end }}
+          </div>
+          <div>
+            <a class="btn btn-bty btn-black" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>Edit on GitHub
+            </a>
+          </div>
         </div>
       {{ partial "post_footer" . }}
     </div><!-- /.block -->
