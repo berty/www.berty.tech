@@ -112,6 +112,8 @@ params:
       If you're a like-minded individual and find those challenges interesting, you're welcome to get in touch for a potential collaboration.
     </p>
 
+  editOnGithubLink: https://github.com/berty/www.berty.tech/edit/master/bertytech/content/%s
+
   # values from https://schema.org/PostalAddress
   # Used both in Organization & JobsPosting schema
   jobsAddress:
