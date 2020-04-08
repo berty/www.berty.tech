@@ -3,6 +3,14 @@ staff:
   bio: |
     Protecting your privacy since 2018
 
+aeddi:
+  name: Antoine Eddi
+  social:
+    github: aeddi
+    twitter: aeddi42
+  bio: |
+    Love tech from low level microcontrollers programming up to high level cloud architecture :)
+
 ninel:
   name: Ninel
   bio: |
@@ -21,7 +29,6 @@ manfred:
   social:
     github: moul
     twitter: moul
-    medium: moul
 
 pierre:
   name: Pierre

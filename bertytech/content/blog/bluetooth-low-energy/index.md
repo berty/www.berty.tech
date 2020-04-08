@@ -2,16 +2,17 @@
 author: aeddi
 title: Berty, Libp2p and Bluetooth Low Energy
 date: 2020-04-08
-image: "https://i.ibb.co/BNBbZxH/2020-04-06-Berty-blogpost-Bluetooth-Low-Energy.jpg"
+image: "2020-04-06-Berty-blogpost-Bluetooth-Low-Energy.jpg"
 categories:
 - announcement
 tags:
+- bluetooth
 - technical
+- open-source
+- ipfs
 ---
 
 # Berty, Libp2p and Bluetooth Low Energy
-
-![BLE banner](https://i.ibb.co/BNBbZxH/2020-04-06-Berty-blogpost-Bluetooth-Low-Energy.jpg)
 
 As you probably know, we are developing Berty, a peer-to-peer messaging application with no regulatory authority and no metadata collection. It aims to preserve both the anonymity and the privacy of the users.
 
@@ -23,7 +24,7 @@ Joking aside, to celebrate the fact that our first transport allowing direct con
 
 ## Back to 2018: Birth of the Berty project
 
-![Back to the Future gif](https://hackmd.io/_uploads/rkbQMNjvI.gif)
+![Back to the Future gif](rkbQMNjvI.gif)
 
 At that time, after about a month of research and testing, the team agreed on implementing the following stack for our chat application:
 
@@ -63,7 +64,7 @@ That's always the way it goes when you do R&D in tech, isn't it?
 
 ### First prototype on Android: What could possibly go wrong?
 
-![It's a trap!](https://media.giphy.com/media/3ornka9rAaKRA2Rkac/giphy.gif)
+![It's a trap!](giphy.gif)
 
 #### Let's give it a try
 
@@ -83,7 +84,7 @@ We needed to put more effort into it, maybe call in another developer for a resc
 
 #### Here Comes a New Challenger
 
-![New Challenger](https://hackmd.io/_uploads/SkVml4jPI.jpg)
+![New Challenger](SkVml4jPI.jpg)
 
 We decided to call for backup and added a second developer on this issue. To get into the swing of things while doing something useful, he started by doing some documentation on our BLE driver for our team.
 
@@ -97,7 +98,7 @@ By working together on the subject, after a couple of weeks, they were able to s
 
 You can take a look at this old version of the driver here: [berty/v1/ble/driver](https://github.com/berty/berty/tree/v1/network/transport/ble/driver)
 
-![BLE dev setup](https://hackmd.io/_uploads/r17mW7jv8.jpg)
+![BLE dev setup](r17mW7jv8.jpg)
 *Four Android smartphones finally communicating through a ble-libp2p-transport*
 
 We are now in January 2019, and even if we are happy with this first brick laid, we still have two major problems to solve:
@@ -117,7 +118,7 @@ You can take a look at the most relevant articles here:
 - [4 Tips to Make Android BLE Actually Work -- Chee Yi Ong](https://punchthrough.com/android-ble-development-tips)
 
 
-![Code sample](https://hackmd.io/_uploads/HydFvfow8.png)
+![Code sample](HydFvfow8.png)
 *Code sample from one of the best "make BLE on Android less painful" libs available out there*
 
 The main information we retained from this research is that there are race condition issues that can occur at a low level that are not directly handled by the Android APIs, so it's up to the developer to handle them (without any documentation to assist them).
@@ -126,7 +127,7 @@ We estimate at this point that it will take our two devs another couple of month
 
 #### The Roadmap Dilemma
 
-![Daily Struggle - Two buttons](https://hackmd.io/_uploads/H1c6Dm9vU.jpg)
+![Daily Struggle - Two buttons](H1c6Dm9vU.jpg)
 
 Two of our devs - roughly a third of our small team - have been working full-time on the Android driver for quite some time.
 
@@ -135,7 +136,6 @@ The concern being that we're falling behind on our roadmap, we initially planned
 Our Alpha version of the BLE driver on Darwin being functional, we decided to postpone the work on the Android driver to a later date — to make it simple: when we have time.
 
 ## IPFS Camp 🇪🇸
-
 
 Related blog post: [Berty team at IPFS Camp, June 2019](https://berty.tech/blog/ipfs-camp/)
 
@@ -147,13 +147,12 @@ Despite our ongoing rush on the chat MVP, we quickly prepared a talk, a demo of 
 
 While doing the demo and talking to people there, we felt that direct transportation was of interest to a lot of people in the IPFS community.
 
-👉 [Talk slides](https://github.com/ipfs/camp/blob/master/LIGHTNING_TALKS/ipfscamp2019-lightningtalk-bluetoothle.pdf) (PDF)  
-👉 [Talk video](https://www.youtube.com/watch?reload=9&v=aaSFHxpwm9A)
+* 👉 [Talk slides](https://github.com/ipfs/camp/blob/master/LIGHTNING_TALKS/ipfscamp2019-lightningtalk-bluetoothle.pdf) (PDF)
+* 👉 [Talk video](https://www.youtube.com/watch?reload=9&v=aaSFHxpwm9A)
 
 ## Mid-2019: Total refactor of the Roadmap
 
-![Refracto everything](https://hackmd.io/_uploads/B1_hcXoDL.gif)
-
+![Refracto everything](B1_hcXoDL.gif)
 
 ### The State of Play
 
@@ -174,16 +173,17 @@ After a few days of thinking about the situation, we finally decided to drop our
 - We will totally redesign the core of the app, document it and make it generic as well. This layer will be built on top of go-orbit-db and will take care of all the cryptographic operations. We will package everything up in a convenient SDK named [Berty Protocol](https://github.com/berty/berty) and provide it to developers wishing to develop secure distributed applications.
 - And on top of that, obviously, we will implement Berty Chat using the Berty Protocol.
 
-![Berty Stack](https://hackmd.io/_uploads/rkyZNGsP8.png)
+![Berty Stack](rkyZNGsP8.png)
 
 
-👉 [Berty Protocol: Non-technical presentation](https://www.youtube.com/watch?v=fnl7Omsbpbw) (english subtitles available)  
-👉 [Berty Protocol: Technical presentation](https://www.youtube.com/watch?v=jtAtIsyUn0A) (english subtitles available)  
-👉 [Berty Protocol docs](https://berty.tech/docs/protocol)  
-👉 [Berty Protocol repo](https://github.com/berty/berty)
+* 👉 [Berty Protocol: Non-technical presentation](https://www.youtube.com/watch?v=fnl7Omsbpbw) (english subtitles available)
+* 👉 [Berty Protocol: Technical presentation](https://www.youtube.com/watch?v=jtAtIsyUn0A) (english subtitles available)
+* 👉 [Berty Protocol docs](https://berty.tech/docs/protocol)
+* 👉 [Berty Protocol repo](https://github.com/berty/berty)
 
 ## Early 2020: How are things going?
-![Sonic waiting](https://hackmd.io/_uploads/HkQ7J7iD8.gif)
+
+![Sonic waiting](HkQ7J7iD8.gif)
 
 So, now it's time! But since our whole team is still actively working on the different parts of the stack, we have recruited a new developer to be entirely in charge of implementing direct transports.
 
@@ -191,22 +191,23 @@ As is our tradition, he started by developing a test application on Android to g
 
 Since the BLE is not suitable for sending large content and we have to start the implementation of the drivers from scratch, we thought about starting by implementing more efficient alternatives first.
 
-*Which ones? And why "first" if they are more efficient?*
+> *Which ones? And why "first" if they are more efficient?*
 
 Apple Multipeer Connectivity (AirDrop) and Android Nearby are two technologies based on the same principle: two peers discover each other and set up their connection using BLE. Then, when everything is ready to get serious, they establish a direct Wifi connection (no need for a router) to continue the dialogue in optimal conditions. So as you can imagine, the connection between the peers is not only more reliable but also much faster. It becomes possible to exchange large files with the bandwidth offered by Wifi and, on top of that, their API offers much more abstraction and the drivers would be much easier to implement.
 
-*Okay cool, perfect! But what the point of implemeting a BLE driver in this case?*
+> *Okay cool, perfect! But what the point of implemeting a BLE driver in this case?*
 
 There is also a downside with these two technologies: they are not interoperable. This means that Apple Mutlipeer Connectivity will only work on Darwin devices and Android Nearby will only work on Android devices.
 
 And since it can happen sometimes (we promise you it can) that two people can be friends despite the fact that they don't use devices of the same brand, we plan to reserve the use of the BLE driver to create an universal bridge between platforms: Android and Darwin... and why not even Linux and Windows if the community gives us a little help. :wink:
 
-*Okay, that's a plan! Didn't you tell us at the beginning of the article that you were close to releasing something?*
-![Alice waiting](https://media.giphy.com/media/qUIm5wu6LAAog/giphy.gif)
+> *Okay, that's a plan! Didn't you tell us at the beginning of the article that you were close to releasing something?*
 
-Yup, we did! :sunglasses:
+![Alice waiting](giphy2.gif)
 
-**Our prognosis:**
+Yup, we did! 😎
+
+### Our prognosis:
 
 - **Multipeer Connectivity:** Implementation in progress! We think and we hope that we will have it ready and available in gomobile-ipfs within a month! :tada:
 - **Android Nearby:** One or two months after the release of the MultiPeer Connectivity driver.
@@ -215,8 +216,8 @@ Yup, we did! :sunglasses:
 
 For the curious (who are definitely very curious), our new developer has also developed a test app for Multipeer Connectivity: [multipeer-connectivity-prototype](https://github.com/berty/multipeer-connectivity-prototype)
 
-I'm told in my earpiece :male-office-worker: that while I'm writing this article, he has also just successfully wired his prototype with the v1 of Berty! Here is [the link](https://github.com/berty/berty/pull/1832#issuecomment-610859687).
+I'm told in my earpiece 👨‍💼 that while I'm writing this article, he has also just successfully wired his prototype with the v1 of Berty! Here is [the link](https://github.com/berty/berty/pull/1832#issuecomment-610859687).
 So all we have to do now is to tweak it and integrate it into gomobile-ipfs.
 
-If you would like to lend a helping hand, we'd be delighted to receive assistance from our community!
-[![Contribute](https://hackmd.io/_uploads/r1VGRZsv8.gif)](https://berty.tech/contribute)
+If you would like to lend a helping hand, we'd be delighted to receive assistance from our [community](https://berty.tech/community)!
+[![Contribute](r1VGRZsv8.gif)](https://berty.tech/contribute)
