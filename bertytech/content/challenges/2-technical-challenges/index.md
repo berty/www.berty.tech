@@ -36,9 +36,9 @@ private: true
 
 #### Constraints
 
-In a centralized environment, there's an authority that can validate the identities, signatures, encryption keys and so on. In a distributed environment, we need to find ways to achieve trust between peers without a central authority.
+Making sure you are who you claim to be" is a fundamental cybersecurity challenge. In a centralized environment, there's an authority that can validate the identities, signatures, encryption keys and so on. In a distributed environment, we need to find ways to achieve trust between peers without a central authority.
 
-In a distributed system, we cannot ensure the message arrival order, especially in off-grid communication context, which can cause problems, mainly when encrypting messages with Perfect Forward Secrecy algorithms that use rotating encryption keys.
+In a distributed system, we cannot ensure the message arrival order. This becomes a particular issue with an offline-first messenger, because messages that were sent off-grid might not be synced correctly when the device goes online again. This can cause problems, mainly when encrypting messages with Perfect Forward Secrecy algorithms that use rotating encryption keys.
 
 Metadata are required to operate a messaging system. However, they could be an important source of information if they were collected and analyzed.
 
@@ -59,3 +59,20 @@ Metadata are required to operate a messaging system. However, they could be an i
     * Rotating rendezvous points and peerIDs
     * Metadata encryption (as much as possible)
     * Noise generation
+    
+### Offline communication between different types of devices
+
+#### Constraints
+To achieve off-grid communication (Berty is an offline-first messaging app), there are two types of technology we consider using:
+- Bluetooth Low Energy is an energy-efficient technology, but it offers only limited performance (just enough to send text). It is difficult to implement, especially with Android APIs. It has, however, the advantage of working between different platforms (Darwin (iOS, macOS), Android and others).
+- Apple Multipeer Connectivity (AirDrop) and Android Nearby allow peers to set up a direct WiFi connection using BLE, which offers much greater performance than BLE alone. It is also a lot easier to implement a driver using these technologies. However, they are platform-dependent and only operate between devices of the same type: Android-to-Android and Darwin-to-Darwin. 
+
+#### How Berty tackles it
+
+- We are currently implementing a driver for MPConnectivity that will be the default transport for communication between Apple devices (Mac and iPhone).
+- After this, we plan to implement a driver for Android Nearby that will be the default transport for communication between Android devices.
+- After the two drivers above, we plan to implement a universal BLE driver for both Android and iOS that will be the fallback transport for cross-platform communications.
+
+With the help of community we could also implement universal BLE drivers for Linux and Windows.
+
+For more information on this subject, you can read this [dedicated article](https://berty.tech/blog/bluetooth-low-energy/).
