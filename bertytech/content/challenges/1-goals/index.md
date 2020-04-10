@@ -5,7 +5,8 @@ icon: fal fa-rocket
 private: true
 ---
 
-* Provide a secure chat application over P2P network on desktop and mobile platforms
+* Provide a secure messenger that would preserve privacy and anonymity of its users
+* Create a chat application that works over P2P network on desktop and mobile platforms
 * Provide an easy to use Protocol, so that developers can create secure applications over P2P networks on desktop and mobile
 * Improve the strenghts and entropy of P2P networks by adding a lot of new peers
 * Be able to do off-grid communication (offline-first)
