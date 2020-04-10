@@ -28,7 +28,16 @@
 
 This repo contains static websites, built with `hugo`. We use `node`, `npm` and a few other helpful modules to optimize the site for deployment.
 
-_TODO: add usage instructions_
+Before you clone this repository ensure you have the following software installed:
+
+- [git](https://git-scm.com) - the used source code management software
+- [git-lfs](https://git-lfs.github.com) - git add on for management of large files
+
+For building the websites the following software is necessary:
+
+- [node and npm](https://nodejs.org/) - Javascript runtime and packet manager
+- [GNU make](https://www.gnu.org/software/make/) - build tool
+- [Hugo](https://gohugo.io) - generator for static websites 
 
 ## Contribute
 
