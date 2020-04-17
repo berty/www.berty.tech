@@ -2,7 +2,7 @@
 author: manfred
 title: Centralized vs Decentralized vs Distributed Systems
 date: 2019-06-20
-image: "decentralized.png"
+image: "decentralized.jpeg"
 categories:
 - free-speech
 tags:
