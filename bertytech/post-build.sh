@@ -4,6 +4,6 @@ set -e
 node ./optimize.js
 node ./webp-converter.js
 
-if [ $CONTEXT == "production" ]; then
+if [ x${CONTEXT} == "xproduction" ]; then
     curl https://www.google.com/ping?sitemap=https://berty.tech/sitemap.xml
 fi
