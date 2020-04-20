@@ -45,7 +45,6 @@ publish.github: build
 .PHONY: amp-validator
 amp-validator: node_modules build 
 	./post-build.sh 
-	node validate-amp
 
 .PHONY: image-optim
 image-optim:
