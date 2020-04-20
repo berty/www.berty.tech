@@ -5,9 +5,10 @@ const fs = require('fs');
 const publicDir = `${__dirname}/public`;
 
 (async () => {
+  let hasError = false;
   glob(`${publicDir}/**/*.html`, {}, (error, files) => {
     if (error) {
-      console.log({error});
+      console.error({error});
       process.exit(1);
     }
 
@@ -21,14 +22,13 @@ const publicDir = `${__dirname}/public`;
         }
 
         const result = validator.validateString(content);
-
-        for (let ii = 0; ii < result.errors.length; ii++) {
-          const error = result.errors[ii];
-
+        const errors = result.errors.filter(error => {
           // ignore this error. This error occurs because the optimize.js script removes white space from the style, but this is OK for valid AMP
-          if (error.message.indexOf("head > style[amp-boilerplate]' is missing or incorrect")) {
-            return;
-          }
+          return error.message.indexOf("head > style[amp-boilerplate]' is missing or incorrect") == -1;
+        })
+
+        for (let ii = 0; ii < errors.length; ii++) {
+          const error = result.errors[ii];
 
           let msg = '-------\n';
               msg += `file: ${file}\n`;
@@ -44,8 +44,17 @@ const publicDir = `${__dirname}/public`;
 
           console.log(msg)
         }
+
+        if (errors.length > 0) {
+          hasError = true;
+        }
       })
       
     });
   })
+  
+  if (hasError) {
+    console.error('AMP validation error');
+    process.exit(2);
+  }
 })()
