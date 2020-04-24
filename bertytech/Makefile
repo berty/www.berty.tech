@@ -43,8 +43,8 @@ publish.github: build
 	cd public && git push -f origin gh-pages
 
 .PHONY: amp-validator
-amp-validator: node_modules build
-	for file in `grep -R amp public/ | grep html: | cut -d: -f1 | sort -u`; do ./node_modules/.bin/amphtml-validator $$file; done
+amp-validator: node_modules build 
+	./post-build.sh 
 
 .PHONY: image-optim
 image-optim:
