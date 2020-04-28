@@ -8,7 +8,6 @@ metaDataFormat: yaml
 
 #baseURL: /
 baseURL: https://berty.tech/
-relativeURLs: true
 
 languageCode: en-US
 
