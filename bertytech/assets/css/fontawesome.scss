@@ -6437,23 +6437,9 @@ readers do not read off random characters that represent icons */
   overflow: visible;
   position: static;
   width: auto; }
-@font-face {
-  font-family: 'Font Awesome 5 Brands';
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url("/fonts/fa-brands-400.eot");
-  src: url("/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-brands-400.woff2") format("woff2"), url("/fonts/fa-brands-400.woff") format("woff"), url("/fonts/fa-brands-400.ttf") format("truetype"), url("/fonts/fa-brands-400.svg#fontawesome") format("svg"); }
 
 .fab {
   font-family: 'Font Awesome 5 Brands'; }
-@font-face {
-  font-family: 'Font Awesome 5 Duotone';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("/fonts/fa-duotone-900.eot");
-  src: url("/fonts/fa-duotone-900.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-duotone-900.woff2") format("woff2"), url("/fonts/fa-duotone-900.woff") format("woff"), url("/fonts/fa-duotone-900.ttf") format("truetype"), url("/fonts/fa-duotone-900.svg#fontawesome") format("svg"); }
 
 .fad {
   position: relative;
@@ -11440,35 +11426,14 @@ readers do not read off random characters that represent icons */
 
 .fad.fa-yin-yang:after {
   content: "\10f6ad"; }
-@font-face {
-  font-family: 'Font Awesome 5 Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url("/fonts/fa-light-300.eot");
-  src: url("/fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-light-300.woff2") format("woff2"), url("/fonts/fa-light-300.woff") format("woff"), url("/fonts/fa-light-300.ttf") format("truetype"), url("/fonts/fa-light-300.svg#fontawesome") format("svg"); }
 
 .fal {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300; }
-@font-face {
-  font-family: 'Font Awesome 5 Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/fa-regular-400.eot");
-  src: url("/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-regular-400.woff2") format("woff2"), url("/fonts/fa-regular-400.woff") format("woff"), url("/fonts/fa-regular-400.ttf") format("truetype"), url("/fonts/fa-regular-400.svg#fontawesome") format("svg"); }
 
 .far {
   font-family: 'Font Awesome 5 Pro';
   font-weight: 400; }
-@font-face {
-  font-family: 'Font Awesome 5 Pro';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url("/fonts/fa-solid-900.eot");
-  src: url("/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("/fonts/fa-solid-900.woff2") format("woff2"), url("/fonts/fa-solid-900.woff") format("woff"), url("/fonts/fa-solid-900.ttf") format("truetype"), url("/fonts/fa-solid-900.svg#fontawesome") format("svg"); }
 
 .fa,
 .fas {
