@@ -47,9 +47,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ $.Scratch.Get `pageTitle` }}</title>
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-
     <!-- AMP -->
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -158,8 +155,53 @@
       src:  url('{{ $rel_path_prefix }}/fonts/slick.eot?#iefix') format('embedded-opentype'), 
             url('{{ $rel_path_prefix }}/fonts/slick.woff') format('woff'), 
             url('{{ $rel_path_prefix }}/fonts/slick.ttf') format('truetype'), 
-            url('{{ $rel_path_prefix }}/fonts/slick.svg#slick') format('svg');
-}
+            url('{{ $rel_path_prefix }}/fonts/slick.svg#slick') format('svg'); }
+
+    /* Roboto Slab font */
+    @font-face {
+      font-family: 'Roboto Slab';
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.svg#slick') format('svg'); }
+    @font-face {
+      font-family: 'Roboto Slab';
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.svg#slick') format('svg'); }
+    
+
+    /* Source Sans Pro font */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.svg#slick') format('svg'); }
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.svg#slick') format('svg'); }
+
       {{ $styleContent | safeCSS }}
       {{ (resources.Get "/css/syntax.css" | resources.Minify).Content | safeCSS }}
     </style>
@@ -247,10 +289,6 @@
     <meta property="wordCount" content="{{.WordCount}}" />
 
     <meta name="pinterest" content="nopin" />
-
-    <!-- load fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-
   </head>
   <body{{with .Scratch.Get "body-class"}} class="{{.}}"{{end}} tabindex="-1" role="dialog">
 
