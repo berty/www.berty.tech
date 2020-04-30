@@ -28,6 +28,14 @@ prod-build:
 	hugo --gc $(HUGO_OPTS)
 	./go-get.sh
 	./post-build.sh
+	node ./validate-amp.js
+
+.PHONY: prod-build-ipfs
+prod-build-ipfs:  
+	./pre-build.sh
+	BERTY_IPFS=true hugo --gc $(HUGO_OPTS)
+	./go-get.sh
+	./post-build.sh
 
 .PHONY: publish
 publish:
