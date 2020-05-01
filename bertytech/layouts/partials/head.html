@@ -47,17 +47,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ $.Scratch.Get `pageTitle` }}</title>
 
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-
     <!-- AMP -->
+    {{ $amp_url_prefix := cond (eq (getenv "BERTY_IPFS") "true") "/amp" "https://cdn.ampproject.org" }}
+
+    {{ if (ne (getenv "BERTY_IPFS") "true") }}
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+    {{ end }}
+    <script async src="{{ $amp_url_prefix }}/v0.js"></script>
+
+    {{ $amp_libs := slice }}
+    {{ $amp_libs := $amp_libs | append "amp-sidebar" }}
+    {{ $amp_libs := $amp_libs | append "amp-script" }}
+    {{ $amp_libs := $amp_libs | append "amp-analytics" }}
+    {{ $amp_libs := $amp_libs | append "amp-video" }}
+
+    {{ range $amp_libs }}
+      <script async custom-element="{{.}}" src="{{ $amp_url_prefix }}/v0/{{.}}-0.1.js"></script>
+    {{ end }}
+
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
 
     {{ $contentString := string .Content }}
 
@@ -68,7 +76,7 @@
 
     {{ range $lazyAmpLibs }}
       {{ if in $contentString . }}
-      <script async custom-element="{{.}}" src="https://cdn.ampproject.org/v0/{{.}}-0.1.js"></script>
+      <script async custom-element="{{.}}" src="{{ $amp_url_prefix }}/v0/{{.}}-0.1.js"></script>
       {{ end }}
     {{ end }}
 
@@ -81,7 +89,130 @@
     {{ $style := slice $bootstrapStyle $fontAwesome $slickStyle $mailchimpStyle $mainStyle | resources.Concat "bundle.scss" | toCSS (dict "outputStyle" "compressed")| postCSS | minify }}
     {{ $styleContent := replace $style.Content "!important" "" }}
     {{ $styleContent := replace $styleContent `@charset "UTF-8";` `` }} <!-- Reason for this line is because for an unknown reason it prefixes the CSS output with '@charset "UTF-8"' -->
+    
+    {{ $segments := split (trim .RelPermalink "/") "/"}}
+    {{ $rel_path_prefix := apply $segments "print" ".." }}
+    {{ $rel_path_prefix = delimit $rel_path_prefix "/" }}
+
     <style {{ if ($.Scratch.Get `isAmpPage`) }}amp-custom{{end}}>
+      /* Fontawesome */
+      @font-face {
+        font-family: 'Font Awesome 5 Brands';
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+        src:  url("{{ $rel_path_prefix }}/fonts/fa-brands-400.eot");
+        src:  url("{{ $rel_path_prefix }}/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), 
+              url("{{ $rel_path_prefix }}/fonts/fa-brands-400.woff2") format("woff2"), 
+              url("{{ $rel_path_prefix }}/fonts/fa-brands-400.woff") format("woff"), 
+              url("{{ $rel_path_prefix }}/fonts/fa-brands-400.ttf") format("truetype"), 
+              url("{{ $rel_path_prefix }}/fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+
+    @font-face {
+      font-family: 'Font Awesome 5 Duotone';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-duotone-900.eot");
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-duotone-900.eot?#iefix") format("embedded-opentype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-duotone-900.woff2") format("woff2"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-duotone-900.woff") format("woff"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-duotone-900.ttf") format("truetype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-duotone-900.svg#fontawesome") format("svg"); }
+
+    @font-face {
+      font-family: 'Font Awesome 5 Pro';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-light-300.eot");
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-light-300.woff2") format("woff2"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-light-300.woff") format("woff"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-light-300.ttf") format("truetype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-light-300.svg#fontawesome") format("svg"); }
+
+    @font-face {
+      font-family: 'Font Awesome 5 Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-regular-400.eot");
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-regular-400.woff2") format("woff2"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-regular-400.woff") format("woff"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-regular-400.ttf") format("truetype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+    @font-face {
+      font-family: 'Font Awesome 5 Pro';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-solid-900.eot");
+      src:  url("{{ $rel_path_prefix }}/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-solid-900.woff2") format("woff2"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-solid-900.woff") format("woff"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-solid-900.ttf") format("truetype"), 
+            url("{{ $rel_path_prefix }}/fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+    /* Slick font */
+    @font-face {
+      font-family: 'slick';
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/slick.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/slick.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/slick.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/slick.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/slick.svg#slick') format('svg'); }
+
+    /* Roboto Slab font */
+    @font-face {
+      font-family: 'Roboto Slab';
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-regular.svg#slick') format('svg'); }
+    @font-face {
+      font-family: 'Roboto Slab';
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/roboto-slap-v9-latin-700.svg#slick') format('svg'); }
+    
+
+    /* Source Sans Pro font */
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-regular.svg#slick') format('svg'); }
+    @font-face {
+      font-family: 'Source Sans Pro';
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.eot');
+      src:  url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.eot?#iefix') format('embedded-opentype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.woff') format('woff'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.ttf') format('truetype'), 
+            url('{{ $rel_path_prefix }}/fonts/source-sans-pro-v13-latin-600.svg#slick') format('svg'); }
+
       {{ $styleContent | safeCSS }}
       {{ (resources.Get "/css/syntax.css" | resources.Minify).Content | safeCSS }}
     </style>
@@ -169,10 +300,6 @@
     <meta property="wordCount" content="{{.WordCount}}" />
 
     <meta name="pinterest" content="nopin" />
-
-    <!-- load fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
-
   </head>
   <body{{with .Scratch.Get "body-class"}} class="{{.}}"{{end}} tabindex="-1" role="dialog">
 
