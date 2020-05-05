@@ -85,7 +85,7 @@ It was now time to start the real deal and for me the opportunity to start Berty
 
 ## New UI: the team's expectations
 
-We are a new app, bobody knows us. 
+We are a new app, nobody knows us. 
 
 * We don't have a second chance to make a first impression.
 * We are building an app that will launch in 2020, let's make it look like it. 
