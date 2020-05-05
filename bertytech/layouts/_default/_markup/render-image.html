@@ -1,4 +1,5 @@
 {{ $is_remote := hasPrefix .Destination "http" }}
+{{ $resizable := slice "jpg" "jpeg" "png" }}
 
 {{ $layout := "" }}
 {{ $width := "" }}
@@ -12,9 +13,11 @@
   {{ $url = .Destination }}
 {{ else }}
   {{ $image := (.Page.Resources.GetMatch .Destination) }}
-  {{ if not (eq $image nil) }}
+  {{ if ne $image nil }}
     {{ $layout = "intrinsic" }}
+    {{ if in $resizable $image.MediaType.SubType }}
     {{ $image = cond (gt $image.Width 970) ($image.Resize "970x q100 Lanczos") ($image.Resize (print $image.Width "x q100 Lanczos")) }}
+    {{ end }}
     {{ $width = $image.Width }}
     {{ $height = $image.Height }}
     {{ $url = $image.RelPermalink }}
