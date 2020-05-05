@@ -14,7 +14,7 @@
   {{ $image := (.Page.Resources.GetMatch .Destination) }}
   {{ if not (eq $image nil) }}
     {{ $layout = "intrinsic" }}
-    {{ $image = cond (gt $image.Width 970) ($image.Resize "970x q100") $image }}
+    {{ $image = cond (gt $image.Width 970) ($image.Resize "970x q100 Lanczos") ($image.Resize (print $image.Width "x q100 Lanczos")) }}
     {{ $width = $image.Width }}
     {{ $height = $image.Height }}
     {{ $url = $image.RelPermalink }}
