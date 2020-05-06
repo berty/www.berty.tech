@@ -905,9 +905,12 @@ section.section-features-detail img {
   max-width:100%;
 }
 .section-articles {
-  padding:40px 0;
-  overflow:hidden;
-  margin:-45px 0 0 0;
+  padding: 0 0 40px;
+  overflow: hidden;
+  margin: -10px 0 0;
+  background: $color-grey-light;
+  z-index: 1;
+  position: relative;
   .container {
     padding-left:0;
     padding-right:0;
