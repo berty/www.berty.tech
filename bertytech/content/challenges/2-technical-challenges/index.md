@@ -36,7 +36,7 @@ private: true
 
 #### Constraints
 
-Making sure you are who you claim to be" is a fundamental cybersecurity challenge. In a centralized environment, there's an authority that can validate the identities, signatures, encryption keys and so on. In a distributed environment, we need to find ways to achieve trust between peers without a central authority.
+Making sure "you are who you claim to be" is a fundamental cybersecurity challenge. In a centralized environment, there's an authority that can validate the identities, signatures, encryption keys and so on. In a distributed environment, we need to find ways to achieve trust between peers without a central authority.
 
 In a distributed system, we cannot ensure the message arrival order. This becomes a particular issue with an offline-first messenger, because messages that were sent off-grid might not be synced correctly when the device goes online again. This can cause problems, mainly when encrypting messages with Perfect Forward Secrecy algorithms that use rotating encryption keys.
 
