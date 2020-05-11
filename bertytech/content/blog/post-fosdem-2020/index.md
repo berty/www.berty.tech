@@ -38,7 +38,7 @@ So for us, Friday night was all about getting in touch  with friends... and, of 
 ### Saturday Morning
 On Saturday morning we went to the opening ceremony. The amphitheatre was just FULL - despite the 1500 seats and the retransmission. At that moment, we realized that there are a lot of participants. We mean... a lot.  It's hard to know exactly because there are no tickets and the event is completely free.  Rumors says there were between 8,000 and 10,000 participants.
 
-![Fosdem's openning ceremony in the main amphitheater](openning-ceremony-fosdem2020.jpg "Fosdem's openning ceremony in the main amphitheater")
+![Fosdem's opening ceremony in the main amphitheater](openning-ceremony-fosdem2020.jpg "Fosdem's opening ceremony in the main amphitheater")
 
 Then, the team split into several independent groups. Each group was given the opportunity to listen to lectures on their topics of interest. It was easy to get lost, in a couple of ways:
 
@@ -47,7 +47,7 @@ Then, the team split into several independent groups. Each group was given the o
 
 
 ### Saturday Afternoon/Night
-We attemded a lot of lectures (see the list below) and left the convention around 6:00 pm to have a nap and take a shower at our house before going to a party. Oh, we didn't mention there's an unofficial '[byte night](https://hsbxl.be/events/byteweek/2020/bytenight/)' party. 🎉
+We attended a lot of lectures (see the list below) and left the convention around 6:00 pm to have a nap and take a shower at our house before going to a party. Oh, we didn't mention there's an unofficial '[byte night](https://hsbxl.be/events/byteweek/2020/bytenight/)' party. 🎉
 
 After eating a Flemish Stew (a typical dish made of beef and beer) in town, we went to this party near the train station. We met friends and some people we had already seen at [Paris P2P](https://p2p.paris/) and from [IPFS Camp 2019](https://github.com/ipfs/camp). It's a small world!
 
