@@ -20,6 +20,7 @@
     <div class="row">
       <div class="col-md-10">
         <div class="block block-doc-content bg-white js-toc-content">
+          <span class="text-secondary">Last modified on <strong>{{ .Page.Lastmod.Format "02 Jan 2006" }}</strong></span>
           {{ .Content }}
         </div><!-- /.block-doc-content -->
       </div><!-- /.col -->
@@ -32,6 +33,7 @@
     </div><!-- /.row -->
     {{ else }}
     <div class="block block-doc-content bg-white">
+      <span class="text-secondary">Last modified on <strong>{{ .Page.Lastmod.Format "02 Jan 2006" }}</strong></span>
       {{ .Content }}
     </div><!-- /.block-doc-content -->
     {{ end }}
