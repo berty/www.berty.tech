@@ -15,6 +15,10 @@ description: Our memories from Fosdem 2020.
 
 # Berty at FOSDEM 2020
 
+{{< youtube id="RwXqkm3DQnc" >}}
+
+<br></br>
+
 Berty was at FOSDEM! For those not familiar with [FOSDEM](fosdem.org/2020/), it's a completely free event that allows software developers to meet, share ideas and collaborate.
 
 FOSDEM was originally a gathering of open source hackers, and now it's one of the largest open source community events. This year was the twentieth edition. Every year, thousands of free and open source software developers from all over the world come together at this event in Brussels, and it's super cool!
