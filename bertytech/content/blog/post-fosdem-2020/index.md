@@ -9,7 +9,7 @@ categories:
 tags:
 - meetup
 - privacy
-- open source
+- open-source
 description: Our memories from Fosdem 2020.
 ---
 
