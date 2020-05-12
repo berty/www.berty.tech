@@ -78,6 +78,12 @@ Some ideas for deploying a network quickly?
 - Put up a few small posters in local businesses announcing the self-help group and the link to find your way around.
 - If no one really wants to go out... You can also take out a speaker, plug in a microphone, and tell your neighbours the information. Try to do it at the right time, so as not to scare the elders ;) 
 
+### Before you go, some things to consider:
+
+Please consider submitting your story so we can share it on our blog or write us your thought at hello@berty.tech. Recommend or share this if you found it useful. It gives us 🔋 to write knowing people find value in it. 
+
+Don't forget to subscribe to our newsletter if you want more reads like this, or updates of the Berty project. 
+
 
  {{<tweet id="1240668694310793216">}}
 
