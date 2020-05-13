@@ -4,10 +4,16 @@
 <header class="header-rounded small bg-blue gradient bg-docs">
   <div class="container">
     <div class="subnav col-md-10 px-3 px-md-0 d-flex justify-content-between align-items-center">
-       <a class="btn btn-bty btn-transparent" href="/docs"><i class="far fa-arrow-left"></i>Back to docs</a>
-       <a class="btn btn-bty btn-grack" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>Edit on GitHub
-      </a>
+        <a class="btn btn-bty btn-transparent" href="/docs"><i class="far fa-arrow-left"></i>Back to docs</a>
+        <div class="d-flex">
+          <a class="btn btn-bty btn-blue mr-2" href="https://github.com/sponsors/berty" target="_blank">
+            <i class="far fa-heart"></i>
+            <span>Support our work</span>
+          </a>
+          <a class="btn btn-bty btn-grack ml-2" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>Edit on GitHub
+          </a>
+        </div>
     </div><!-- /.subnav -->
   </div><!-- /.container -->
 </header>
@@ -40,6 +46,9 @@
     <section class="section-actions d-none">
       <a class="btn btn-bty btn-grack mb-3" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
         <i class="fab fa-github"></i>Edit on GitHub
+      </a>
+      <a class="btn btn-bty btn-blue mb-3" href="https://github.com/sponsors/berty" target="_blank">
+        <i class="far fa-heart"></i>Support our work
       </a>
       <a class="block block-action bg-blue bg-gradient" href="/docs">
       <h4><i class="far fa-arrow-left left"></i>Back to docs</h4>
