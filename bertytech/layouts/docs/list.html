@@ -26,9 +26,7 @@
         {{ partial "docs_card_s" . }}
         {{ end }}
         <div class="col-md-12 text-center mt-4 mt-md-0">
-          <a class="btn btn-bty btn-blue" href="https://github.com/sponsors/berty" target="_blank">
-            <i class="far fa-heart"></i>Support our work
-          </a>
+          {{ partialCached "btn_support_our_work" . }}
         </div>
       </div><!-- /.row -->
     </section>
