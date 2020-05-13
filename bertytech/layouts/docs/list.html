@@ -25,6 +25,9 @@
         {{ range .Site.Menus.repos }}
         {{ partial "docs_card_s" . }}
         {{ end }}
+        <div class="col-md-12 text-center mt-4 mt-md-0">
+          {{ partialCached "btn_support_our_work" . }}
+        </div>
       </div><!-- /.row -->
     </section>
 

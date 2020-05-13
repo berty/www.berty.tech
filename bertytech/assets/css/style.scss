@@ -475,6 +475,20 @@ a.btn.btn-black {
       background-color:$color-black;
     }
   }
+  &:hover {
+    .hover-show {
+      display: inherit;
+    }
+    .hover-hide {
+      display: none;
+    }
+  }
+  .hover-show {
+    display: none;
+  }
+  .hover-hide {
+    display: inherit;
+  }
 }
 .btn-transparent{
   color:#FFF;
@@ -3626,3 +3640,4 @@ footer {
 .md-image.contain amp-img img {
   object-fit: contain;
 }
+
