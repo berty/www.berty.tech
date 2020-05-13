@@ -2,54 +2,63 @@
 
 </div><!-- /.container -->
 
-<section class="section-features-detail bg-white" id="private">
-  <div class="container">
-    <div class="row text-center">
+<div class="container">
+  <section class="section-about top">
+      <div class="row text-center">
 
-      <div class="col-md-6 px-lg-5">
-        <div class="block-mixed-text">
-          <h3>No Face, No Name, No Number</h3>
-          <h4>No SIM card, No Internet</h4>
-          <p>Berty is a messenger that doesn’t require any of your personal data or network connection.</p>
-
-          <div>
-            {{ $img := .Page.Resources.GetMatch "anonymous.png" }}
-            {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="block bg-white h-100">
+            <div class="py-0 px-5" style="padding-left: 20px; padding-right: 20px;">
+              <h3 class="mb-2">
+                <strong>No Face, No Name, No Number</strong>
+              </h3>
+              <h4>No SIM card, No Internet</h4>
+              <p>Berty is a messenger that doesn’t require any of your personal data or network connection.</p>
+    
+              <div class="mt-5">
+                {{ $img := .Page.Resources.GetMatch "anonymous.png" }}
+                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col-md-6 px-lg-5">
-        <div class="block-mixed-text">
-          <h3>Safety by Default</h3>
-          <p>All conversations are encrypted with end-to-end encryption, in a fully distributed network.</p>
-
-          <div>
-            <img style="width: 200px;" src="https://image.flaticon.com/icons/png/512/1183/1183734.png" />
+  
+        <div class="col-md-6 mb-5 mb-md-0">
+          <div class="block bg-white h-100">
+            <div class="py-0" style="padding-left: 20px; padding-right: 20px;">
+              <h3 class="mb-2">
+                <strong>Safety by Default</strong>
+              </h3>
+              <h4>Lorum ipsum</h4>
+              <p>All conversations are encrypted with end-to-end encryption, in a fully distributed network.</p>
+    
+              <div class="mt-5">
+                <img style="height: 150px;" src="https://image.flaticon.com/icons/png/512/1183/1183734.png" />
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
+  </section>
+</div>
 
-    </div><!--  /.row -->
-  </div><!-- /.container -->
-</section>
-
-<section class="section-features-detail bg-grey" id="secure">
+<section class="section-features-detail section-hwbg bg-grey" id="secure">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-md-12 text-center">
         <h3>
           <strong>Berty will be released soon, and fully open-sourced!</strong>
         </h3>
         <p>Be the first to know when the app is released:</p>
       </div><!-- /.col -->
-      <div class="col-md-12 d-flex justify-content-center">
-        <div id="mc_embed_signup">
+      <div class="col-md-6 d-flex justify-content-center">
+        <div id="mc_embed_signup" class="features">
           <form
             action="https://tech.us20.list-manage.com/subscribe/post?u=5ca3993c7f0b8f646dcda714b&amp;id=4d7828715b"
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
             target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
+            <div id="mc_embed_signup_scroll" class="d-flex flex-column flex-md-row">
               <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
                 placeholder="your.name@example.com" required>
 
@@ -57,8 +66,6 @@
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
                 <input type="text" name="b_5ca3993c7f0b8f646dcda714b_4d7828715b" tabindex="-1" value="">
               </div>
-            </div>
-            <div>
               <input type="submit" value="I want to know!" name="subscribe" id="mc-embedded-subscribe"
                 class="button btn btn-bty btn-blue">
             </div>
@@ -167,36 +174,32 @@
 
 <section class="section-features-detail bg-white" id="secure">
   <div class="container">
-    <div class="block-mixed">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center">
-          <h3>
-            <strong>The future of secure communication is waiting for YOU! …whoever you might be.</strong>
-          </h3>
-        </div><!-- /.col -->
-        <div class="col-md-12 d-flex justify-content-center">
-          <div id="mc_embed_signup">
-            <form
-              action="https://tech.us20.list-manage.com/subscribe/post?u=5ca3993c7f0b8f646dcda714b&amp;id=4d7828715b"
-              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-              target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
-                  placeholder="your.name@example.com" required>
+    <div class="row flex-column align-items-center">
+      <div class="col-md-6 text-center">
+        <h3>
+          <strong>The future of secure communication is waiting for YOU! …whoever you might be.</strong>
+        </h3>
+      </div><!-- /.col -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div id="mc_embed_signup" class="features">
+          <form
+            action="https://tech.us20.list-manage.com/subscribe/post?u=5ca3993c7f0b8f646dcda714b&amp;id=4d7828715b"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll" class="d-flex flex-column flex-md-row">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                placeholder="your.name@example.com" required>
 
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                  <input type="text" name="b_5ca3993c7f0b8f646dcda714b_4d7828715b" tabindex="-1" value="">
-                </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_5ca3993c7f0b8f646dcda714b_4d7828715b" tabindex="-1" value="">
               </div>
-              <div>
-                <input type="submit" value="Keep me posted" name="subscribe" id="mc-embedded-subscribe"
-                  class="button btn btn-bty btn-blue">
-              </div>
-            </form>
-          </div>
+              <input type="submit" value="Keep me posted" name="subscribe" id="mc-embedded-subscribe"
+                class="button btn btn-bty btn-blue">
+            </div>
+          </form>
         </div>
-      </div><!--  /.row -->
-    </div><!-- /.block-mixed -->
+      </div>
+    </div><!--  /.row -->
   </div><!-- /.container -->
 </section>

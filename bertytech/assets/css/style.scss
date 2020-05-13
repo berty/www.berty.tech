@@ -2209,6 +2209,38 @@ a.block-value {
   color:$color-white;
   background-color:$color-yellow;
 }
+
+// On features page
+#mc_embed_signup.features {
+  width: 100%;
+
+  input[name="EMAIL"] {
+    width: 100%;
+    height: 60px;
+    padding: 20px 25px;
+    color: #343434;
+    font-weight: 700;
+    border-radius: 12px;
+    background-color: #E2E4FC;
+    border: none;
+  }
+  .button {
+    background-color: $color-blue;
+  }
+
+  input::placeholder {
+    color:$color-black;
+    opacity:0.8;
+  }
+  input:-ms-input-placeholder{
+    color:$color-black;
+    opacity:0.8;
+  }
+  input::-ms-input-placeholder{
+    color:$color-black;
+    opacity:0.8;
+  }
+}
 /* BLOCK NEWSLETTER */
 
 /* BLOCK ACTION */
