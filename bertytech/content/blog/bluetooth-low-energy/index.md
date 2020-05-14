@@ -26,7 +26,7 @@ Joking aside, to celebrate the fact that our first transport allowing direct con
 
 ![Back to the Future gif](rkbQMNjvI.gif)
 
-At that time, after about a month of research and testing, the team agreed on implementing the following stack for our chat application:
+At that time, after about a month of research split in two teams, one team testing Peer-to-Peer networking technologies, and another one experimenting with direct transport technologies - more precisely Apple MultipeerConnectivity - we agreed on implementing the following stack for our chat application:
 
 - A [React Native](https://reactnative.dev/) UI.
 - A monolithic [gomobile](https://github.com/golang/go/wiki/Mobile) block including a custom [go-libp2p](https://docs.libp2p.io/introduction/) network, all the cryptography management and chat intelligence (database, contacts management, sending/receiving events, etc...).
@@ -80,13 +80,13 @@ That's probably why several libraries are available on the internet, all claimin
 
 Unfortunately, we concluded that they did not fit our very specific needs, so we chose to continue the development using  the Android API directly.
 
-We needed to put more effort into it, maybe call in another developer for a rescue?
+We needed to put more effort into it, maybe to add another developer of our team on the subject?
 
 #### Here Comes a New Challenger
 
 ![New Challenger](SkVml4jPI.jpg)
 
-We decided to call for backup and added a second developer on this issue. To get into the swing of things while doing something useful, he started by doing some documentation on our BLE driver for our team.
+We decided to add a second developer on this issue. To get into the swing of things while doing something useful, he started by doing some documentation on our BLE driver for our team.
 
 In a few days, he quickly developed a simple Android application based on initial prototype to be handmade with Java and Android's BLE APIs.
 
