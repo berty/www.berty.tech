@@ -48,3 +48,14 @@
 {{ partial "section_newsletter" . }}
 
 {{ partial "footer" . }}
+
+<script src="{{ (resources.Get `js/lottie.js` | resources.Minify | fingerprint).RelPermalink }}"></script>
+<script>
+	lottie.loadAnimation({
+		container: document.getElementById('distributed_web_anim'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: '{{ (resources.Get "animations/distributed_web_anim.json").RelPermalink }}'
+	});
+</script>
