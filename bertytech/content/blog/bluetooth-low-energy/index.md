@@ -26,7 +26,7 @@ Joking aside, to celebrate the fact that our first transport allowing direct con
 
 ![Back to the Future gif](rkbQMNjvI.gif)
 
-At that time, after about a month of research split in two team, one team testing Peer-to-Peer networking technologies, and another one experimenting with direct transport technologies - more precisely Apple MultipeerConnectivity - we agreed on implementing the following stack for our chat application:
+At that time, after about a month of research split in two teams, one team testing Peer-to-Peer networking technologies, and another one experimenting with direct transport technologies - more precisely Apple MultipeerConnectivity - we agreed on implementing the following stack for our chat application:
 
 - A [React Native](https://reactnative.dev/) UI.
 - A monolithic [gomobile](https://github.com/golang/go/wiki/Mobile) block including a custom [go-libp2p](https://docs.libp2p.io/introduction/) network, all the cryptography management and chat intelligence (database, contacts management, sending/receiving events, etc...).
