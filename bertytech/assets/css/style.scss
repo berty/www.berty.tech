@@ -1130,7 +1130,13 @@ section.section-features-detail img {
 
 /* SECTION FEATURES DETAIL */
 .section-features-detail {
-  padding:100px 0;
+  padding: 70px 0;
+  &.section-hwbg {
+    padding-bottom: 90px;
+  }
+  &.pb-0 {
+    padding-bottom: 0;
+  }
   .block-mixed .block-mixed-text {
     padding:20px 0;
   }
