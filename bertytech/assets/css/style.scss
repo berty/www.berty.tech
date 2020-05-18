@@ -1138,6 +1138,13 @@ section.section-features-detail img {
     @media (max-width:768px){
       padding-bottom: 0;
     }
+    h3 {
+      color: $color-blue;
+      span {
+        color: initial;
+        font-weight: normal;
+      }
+    }
   }
 }
 /* SECTION FEATURES DETAIL */
