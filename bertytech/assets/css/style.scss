@@ -1134,6 +1134,11 @@ section.section-features-detail img {
   .block-mixed .block-mixed-text {
     padding:20px 0;
   }
+  .block-mixed-text {
+    @media (max-width:768px){
+      padding-bottom: 0;
+    }
+  }
 }
 /* SECTION FEATURES DETAIL */
 
