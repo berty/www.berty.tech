@@ -1,14 +1,14 @@
-<!-- TODO: validate AMP, test form, change id's, cleanup inline style -->
+<!-- TODO: order on mobile -->
 
 </div><!-- /.container -->
 
-<div class="container">
+<div id="hero" class="container">
   <section class="section-about top">
       <div class="row text-center">
 
         <div class="col-md-6 mb-5 mb-md-0">
           <div class="block bg-white h-100">
-            <div class="py-0 px-5" style="padding-left: 20px; padding-right: 20px;">
+            <div class="py-0 px-4">
               <h3 class="mb-2">
                 <strong>No Face, No Name, No Number</strong>
               </h3>
@@ -25,15 +25,16 @@
   
         <div class="col-md-6 mb-5 mb-md-0">
           <div class="block bg-white h-100">
-            <div class="py-0" style="padding-left: 20px; padding-right: 20px;">
+            <div class="py-0 px-4">
               <h3 class="mb-2">
                 <strong>Safety by Default</strong>
               </h3>
               <h4>Lorum ipsum</h4>
               <p>All conversations are encrypted with end-to-end encryption, in a fully distributed network.</p>
     
-              <div class="mt-5">
-                <img style="height: 150px;" src="https://image.flaticon.com/icons/png/512/1183/1183734.png" />
+              <div class="mt-5 mx-auto" style="max-width: 150px;">
+                {{ $img := (.Page.Resources.GetMatch "qrcode.png").Resize "x150" }}
+                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
               </div>
             </div>
           </div>
@@ -43,7 +44,7 @@
   </section>
 </div>
 
-<section class="section-features-detail section-hwbg bg-grey" id="secure">
+<section id="subscribe-1" class="section-features-detail section-hwbg bg-grey">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 text-center">
@@ -76,7 +77,7 @@
   </div><!-- /.container -->
 </section>
 
-<section class="section-features-detail bg-white" id="secure">
+<section id="bluetooth" class="section-features-detail bg-white">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6">
@@ -96,7 +97,7 @@
   </div><!-- /.container -->
 </section>
 
-<section class="section-features-detail bg-grey">
+<section id="devices" class="section-features-detail bg-grey">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7">
@@ -115,7 +116,7 @@
   </div><!-- /.container -->
 </section>
 
-<section class="section-features-detail bg-white bg-rounded">
+<section id="add-contacts" class="section-features-detail bg-white bg-rounded">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6">
@@ -133,7 +134,7 @@
   </div><!-- /.container -->
 </section>
 
-<section class="section-features-detail bg-grey">
+<section id="data" class="section-features-detail bg-grey">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-7">
@@ -153,7 +154,7 @@
   </div><!-- /.container -->
 </section>
 
-<section class="section-features-detail bg-white bg-rounded">
+<section id="secure" class="section-features-detail bg-white bg-rounded">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5 col-md-6">
@@ -172,7 +173,7 @@
   </div><!-- /.container -->
 </section>
 
-<section class="section-features-detail bg-white" id="secure">
+<section id="subscribe-2" class="section-features-detail bg-white" id="secure">
   <div class="container">
     <div class="row flex-column align-items-center">
       <div class="col-md-6 text-center">
