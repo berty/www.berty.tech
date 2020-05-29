@@ -43,6 +43,7 @@ We also plan to do some auditing sessions. If you're interested, get in touch wi
 
 
 ![](https://assets.berty.tech/files/contribute-contribute_v2--1_Contribute-berty-version-spatiale.gif)
+
 _(Thanks to Ombé for the design of this new gif!)_
 
 ## 📚 Blog posts
