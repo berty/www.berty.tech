@@ -26,9 +26,7 @@ We also plan to do some auditing sessions. If you're interested, get in touch wi
 
 
 * **App testing parties**: We've been telling you about it for a few newsletters now: We are currently developing a test version of the Berty application. We are organizing private test parties for the moment. For now, we're adding tracing (only) on the dev version of the app to understand better what's going on. The last one was yesterday, and it was great. We can't wait to show it to you! 
-
 ![](https://i.imgur.com/NBtOazd.png)
-
 ![](https://i.imgur.com/NcQjaCk.png)
 
 
@@ -41,9 +39,10 @@ We also plan to do some auditing sessions. If you're interested, get in touch wi
 * **Contributors:**
     * [Mentos1386](https://github.com/berty/go-orbit-db/pull/36) 🙏
 
+_Thanks to Ombé for the design of this new gif:_
 
 ![](https://assets.berty.tech/files/contribute-contribute_v2--1_Contribute-berty-version-spatiale.gif)
-_(Thanks to Ombé for the design of this new gif!)_
+
 
 ## 📚 Blog posts
 
