@@ -11,1446 +11,899 @@ aliases:
     - /protocol
 ---
 
-Berty protocol
-==============
+# Berty protocol
 
-This document defines how communication between accounts, devices belonging to
-an account and groups of devices is possible via the network protocol used in
-Berty.
+## Introduction
 
+This document provides a technical description of the Berty Protocol.  
+The Berty Protocol provides secure communication between devices owned by the
+same account, communication between contacts in one-to-one conversations,
+as well as communication between several users in multi-member groups. This
+paper will explain how those points are implemented in a distributed and
+asynchronous way, both with or without internet access using IPFS and direct
+transports such as BLE. It will also describe how the Berty Protocol provides
+end-to-end encryption and perfect forward secrecy for all the exchanged messages.
 
-Common formats
---------------
+:::warning
+The implementation of the protocol is still in progress. Some features described
+in this document are not implemented yet.
 
-The base timezone is UTC.
+This protocol has still not been thoroughly audited and some points are bound to
+evolve with time and feedback.
 
+Nevertheless, we are confident enough about the progression of the protocol
+design to say that the majority of these specifications should remain the same.
 
-Account, device, contact and group
-----------------------------------
+If a security expert reads this document and wishes to provide us with some
+feedback, we look forward to reading it. Please contact us using one of the
+means listed on this page: [berty.tech/community#-how-to-contact-us](https://berty.tech/community#-how-to-contact-us)
+:::
 
-An account is associated to a Berty user.
+## Protocol Stack
 
-A device is a physical terminal (phone, tablet or computer) which is attached to
-an account. One or more devices can be attached to an account. On a new account
-only the device on which it has been created is attached to it. The user has the
-possibility to attach additional devices or create paper keys using their
-previously attached devices or paper keys.
+### IPFS
 
-Two accounts can be considered as contacts if a contact request from one has
-been accepted by the other and secrets for further communication have been
-exchanged. Otherwise, they’re considered as unknown.
+#### Properties
 
-A group is a common communication channel shared by a set of devices. It can be
-devices from different accounts. In the context of the Berty messaging
-application, groups are used for all conversations between contacts, whether
-they include two or more contacts.
+[IPFS](https://ipfs.io/) is a peer-to-peer network for storing and sharing data
+in a [distributed](https://berty.tech/blog/decentralized-distributed-centralized/)
+file system. Here is a very succinct description of how IPFS works:
 
+* Each peer has an identity key pair
+* Each peer identifies itself using a peerID (basically, a hash of its identity
+public key).
+* Each content is identified using a contentID (basically, a hash of the content).
+* A peer can make a locally stored content available on the network, announcing
+that a given contentID is provided by its peerID, so other peers can connect to
+it and fetch the content.
+* Once a peer has fetched the content over IPFS, it can also become a provider
+for this content, thus increasing its availability.
+* To make it all work, IPFS uses the [libp2p network stack](https://libp2p.io/)
+which provides everything that is needed to create a p2p application: DHT,
+PubSub, Nat Traversal, a collection of transports, etc...
 
+#### Implications
 
-Identities
-----------
+Berty uses IPFS for the specific purpose of instant messaging. The utilization
+of a peer-to-peer network for instant messages provides two main advantages:
 
-### Key format
+* **It is virtually impossible to block it or take it down**: anyone can launch a
+node in a few seconds on their computer and two nodes within the same LAN are
+still able to communicate and operate without internet access, whereas in a
+centralized model, it is easier to block access to the servers of the company
+concerned, or even to force it to shut down its servers and stop its activity.
+* **It is difficult to monitor**: there is no central server to spy on nor central
+directory to compromise, thus metadata collection is greatly minimized. Instead
+of a directory linking public keys to personal data such as telephone numbers,
+the Berty Protocol uses a combination of TOTP and a public key to generate
+rendezvous point addresses and register its users on IPFS, who can later be
+contacted by peers wishing to communicate.
 
-Berty identities (account and device) are based on Ed25519 key pairs.
+However it also brings several technical constraints:
 
-ECC is a good choice compared to RSA in the context of a
-mobile app<sup>[1](#footnote1)</sup> like Berty because:
+* **Content availability**: since there is no central storage, all the messages
+are stored on the users devices and it is impossible to access content stored
+on a device that is offline or unreachable from a given network.
+* **Asynchrony**: there is no central server to rule over the timeline, and
+therefore timestamps cannot be used for any purpose other than non-critical
+tasks like displaying messages in a certain order. For example: expiration time
+cannot be used to revoke access to a resource, it is impossible to determine
+with certainty the order in which operations occurred within a group of peers, etc...
+* **Authority**: there is no central authority to arbitrate operations and any
+resulting conflicts or to manage user identity and permissions.
 
-* ECC key pairs are generated faster than RSA ones (less user time and battery
-  consumption)
-* ECC key pairs are way smaller at equal robustness. For 128 bits of security,
-  RSA requires a 3072 bits long key whereas an ECC equivalent requires only 256
-  bits. This is really interesting for all network operations that require to
-  provide a public key along with the payload for example. In our case it’s also
-  useful to produce a QR Code containing a public key that is easier to scan
-  thanks to a smaller data density.
-* Private key operations are faster. For example, in those cases with 128 bits
-  of security, RSA is generally 10 times slower than ECC.
+:::warning
+For the moment, IPFS is not privacy-focused and since it is a peer-to-peer
+network, any peer can for instance resolve a peerID to its associated public IP
+address. On the protocol layer, we can only mitigate this problem by rotating
+the peerID of the user regularly, rotating rendezvous points that peers use to
+meet and synchronize with each other and by making it difficult to establish a
+relationship between the data shared by users.
 
-### Key attribution
+In the near future, we plan to invest some time to see to what extent, and with
+what constraints and implications, it would be possible to add an optional mode
+to the protocol in which connections are anonymized through networks like I2P,
+Tor or equivalent.
+:::
 
-During the account creation process, two random key pairs are generated:
+### Rendezvous Point
 
-* An account key pair
-* A device key pair that will be associated to the current device (used to
-  create the account)
+A rendezvous point is a volatile address on a peer-to-peer network where two
+devices can meet. Peers can register their peerIDs on a given rendezvous point
+and/or get the list of already registered peers. In this way peers who, for
+example, need to connect together to exchange messages within a conversation,
+could find each other.
 
-The device public key is added as the first block (SigChainInit) in the account
-signature chain and is signed by the account private key. The signature chain is
-described in the next section below.
+Peers need to be able to generate on their own, the same address for a given
+rendezvous using previously shared secrets.
 
-Afterwards, the account private key is discarded because it won’t be used
-anymore. The subsequent device identities that will be added to the account
-signature chain will be signed by any device already present in the signature
-chain and not revoked.
+In the Berty Protocol, the address of a rendezvous point is generated from two
+values:
 
-### Signature chain
+* A resource ID
+* A time-based token generated from a 32-byte seed
 
-The signature chain, or SigChain, logs the history of added and removed devices
-for an account. It can be provided to any contact to certify that a device
-belongs to the same account. If the signature chain has two “branches” it must
-be consolidated so it includes all the added/removed devices.
+The generation of the time-based token follows the core principles of the
+[RFC 6238](https://tools.ietf.org/html/rfc6238).
 
-The signature chain is transmitted via
-Protocol Buffers<sup>[2](#footnote2)</sup> using the SigChain message.
+```go=1
+// golang
+func rendezvousPoint(id, seed []byte, date time.Time) []byte {
+    buf := make([]byte, 32)
+    mac := hmac.New(sha256.New, seed)
+    binary.BigEndian.PutUint64(buf, uint64(date.Unix()))
 
-#### Initialize signature chain
+    mac.Write(buf)
+    sum := mac.Sum(nil)
 
-Create the sigchain by self signing the first device public key with the account
-key.
+    rendezvousPoint := sha256.Sum256(append(id, sum...))
 
-See SigChainInit message.
-
-#### Add device
-
-Add a new device by signing its device public key using an existing device
-public key.
-
-See SigChainAddDevice message.
-
-#### Remove device
-
-Remove a device by signing the operation using an existing device public key.
-
-See SigChainRemoveDevice message.
-
-
-### Rendezvous points
-
-A rendezvous point is a volatile address on the peer to peer network where two
-devices can meet. Both devices need to be able to generate the same address from
-previously shared secrets. In this way, device A can advertise its presence on
-the rendezvous point and device B will just need to check the rendezvous point
-if it need to communicate with device A.
-
-A device can broadcast its availability on multiple rendezvous points (specific
-to its account, a group it’s part of, etc…).
-
-The address of the rendezvous point is generated from two values:
-
-* A resource ID (account ID, group ID, etc…)
-* A time based token generated from a 32-bytes seed (also specific to an
-  account, a group or a contact pair)
-
-The rendezvous seed is a random value exchanged by parties upstream, when shared
-within an URL or a QR Code the seed is multibase<sup>[3](#footnote3)</sup>
-encoded.
-
-The default period is a timestamp as an unsigned 64 bits integer and is resetted
-at midnight UTC + an offset. During this whole period a device will announce its
-presence to other devices and can therefore be reached multiple time.
-
-The offset (after midnight UTC) is applied to even out updates of the rendezvous
-point across the network. The `periodBytes` value below is the current period of
-time in seconds since epoch represented as 8 bytes in
-big-endian<sup>[4](#footnote4)</sup>.
-
-The time update offset is a modulo of the resource ID by 21600 seconds (6
-hours).
-
-The rendezvous point address is a base64 encoded SHA256 hash of the following
-value
-
-```
-ResourceID + hmac_sha256(rdvSeed, periodBytes)
+    return rendezvousPoint[:]
+}
 ```
 
-Three types of rendezvous points currently exist:
+There are two types of rendezvous points in the Berty Protocol:
 
-* A contact request rendezvous point, which can be enabled or disabled at will
-  (one by account)
-* A contact to contact rendezvous point (one by pair of accounts that are
-  contacts)
-* A group rendezvous point (one by group)
+* [**Public rendezvous point:**](#Contact-Request) This rendezvous point is
+used by an account to receive contact requests. The resource ID used here is
+the Account ID and the seed can be renewed at will by the user, so it is
+possible to revoke the ability to send contact requests to users having only
+the previous seed.
+* [**Group rendezvous point:**](#Invitation) This rendezvous point is used to
+exchange messages within a group. The resource ID used here is the Group ID,
+and the seed cannot be changed.
 
-Communication
--------------
+The protocol relies on three different rendezvous point systems:
 
-### Envelope
+* **DHT-based**: fully distributed, virtually impossible to shutdown, can
+operate without internet access but can be slow, especially for mobile usage.
+* **Decentralized servers**: not p2p / distributed, can be shut down easier
+than a DHT, can't be reached offline but is a lot faster.
+* **Local record**: used in combination with direct transports such as
+Bluetooth Low Energy. To make it simple, it consists of a process where a peer
+is sending its rendezvous point list to the peers it connects to via a direct
+transport. The advantage is that it works in this particular case with almost
+instantaneous results, but the disadvantage is that it raises privacy
+concerns. We are still working on this process to improve this point.
+More info in [Specificities of direct transport](#Specificities-of-direct-transport)
+section.
 
-See the Envelope protocol buffer message.
+### Direct Transport
 
-The envelope contains everything that has to be publicly accessible for message
-delivery and their decryption. We attempt to make this metadata as meaningless
-as possible to devices external to the group. We will describe below how this is
-the case for the message counter, the sender device identifier, the group
-identifier and the envelope signature.
+When there is no internet access it is still possible to communicate using
+direct transports, given some physical constraints of distance. These
+transports integrate directly with IPFS and more precisely with its network
+layer: libp2p.
 
-Each of those values has to be sufficiently opaque so a third party observer
-wouldn’t be able to link participants or their activity.
+Those direct transports are built on top of Android Nearby for Android
+devices, Multipeer Connectivity for iOS devices and
+[Bluetooth Low Energy (BLE)](https://berty.tech/blog/bluetooth-low-energy/)
+for inter-OS communications. With Android Nearby and Multipeer Connectivity,
+messages can be exchanged over a Wi-Fi direct connection instead of BLE which
+is much faster and reliable.
 
-However depending on the context some metadata can’t be hidden. As an example,
-the push notification servers (Apple for iOS, Google for Android), that are
-optional but available  to provide a better user experience. Such servers will
-know the recipient device and the rough emission time of a message, but they
-won’t know anything about the sender or the group related to that message.
+It is possible to fully use the Berty Protocol without ever accessing the
+Internet: create an account, add contacts to it, join conversations and send
+messages as long as there are Berty users within a Bluetooth range.
 
-#### Sender and group identifiers
+### Conflict-free Replicated Data Type
 
-The sender and group identifiers are derived from the group rendezvous seed.
-They will rotate once daily.
+Since it is possible to communicate both online and offline using direct
+transport, it is necessary to have a way to keep coherence and order between
+all the messages, especially in a conversation with several participants. For
+example, if Alice and Bob are in a chat group with several other persons and
+they both lose internet connection by taking the subway, they can still
+communicate with each other in this same conversation using BLE, creating a
+parallel version of this conversation. When they go back online, the BLE
+version and the Internet version will have to merge.  
+It is therefore necessary to use an algorithm that ensures that all peers,
+once synchronized, have exactly the same sorted list of messages.
 
-For PubSub<sup>[5](#footnote5)</sup> and publicly accessible logs it is a
-SHA-256 hash of:
+The solution to this problem is [Conflict-free Replicated Data Type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+(CRDT), which is a data structure allowing a consistent ordering of the
+messages on a distributed system. Berty relies on [OrbitDB](https://github.com/berty/go-orbit-db)
+which implements CRDT. The CRDT provides optimistic replication and strong
+eventual consistency, which assures that once synchronized, every peer will
+have the same version of the message list.
 
+Every message is linked to its parent, which is the last message sent in a
+conversation by one of the peers connected together at this moment. Problems
+appear when an online and an offline version of a conversation are
+synchronized: some messages are linked to the same parent and the linked list
+becomes a [Directed Acyclic Graphs](https://en.wikipedia.org/wiki/Directed_acyclic_graph).
+
+TODO: Add image ![DAG-offgrid](https://hackmd.io/_uploads/BkFkKBDOU.png)
+
+This causes the creation of several parallel branches that will need to be
+eventually merged. OrbitDB achieves this by using a [Lamport Clock](https://en.wikipedia.org/wiki/Lamport_timestamp):
+each message will include one, and the merged list will be sorted according to
+its value.
+
+A Lamport Clock is a struct that consists of two fields: an identity public
+key and a counter that is incremented for each message posted by the
+associated user/identity.
+
+```go=1
+// golang
+type lamportClock struct {
+    time int
+    id   crypto.PublicKey
+}
 ```
-ResourceID + hmac_sha256(rdvSeed, periodBytes)
+
+The comparison function is very simple, it will first check the distance
+between the counter values and if there is none, it will check the
+lexicographic distance between the identity public keys, knowing that a given
+identity can't post two messages with the same counter value.
+
+```go=1
+// golang
+func compareClock(a, b lamportClock) int {
+    dist := a.time - b.time
+
+    if dist == 0 {
+        dist = comparePubKey(a.id, b.id) // Returns lexicographic distance
+    }
+
+    return dist
+}
 ```
 
-For a push notifications it is a SHA-256 hash of:
+## Account
+
+### Account Creation
+
+In order to use the Berty Protocol, a user will have to create an account. No
+personal data is required for the Account Creation. Please note that in the
+whole Berty Protocol, all key pairs will be X25519 for encryption and Ed25519
+for signature. See the [Cryptography](#Cryptography) section for more details
+about this choice.
+
+**Account creation steps:**
+
+1. Generate Account ID Key Pair. This operation will not be repeated. This key
+pair is the identity of the account, hence it is not possible to change it.
+2. Generate Alias Key Pair. Operation will not be repeated. More details on
+Alias Key Pair in [*Alias Identity*](#Alias-Identity).
+3. Generate Device ID Key Pair on device used for account creation. This
+operation will be repeated on every new device.
+See [*Linking Devices*](#Linking-Devices) for more information. This key pair
+is the identity of the device.
+4. Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to
+receive a Contact Request. See [*Adding Contacts*](#Adding-Contacts) for more
+information. This operation can be repeated anytime.
+
+Since there is no central directory, it is not required to have access to the
+Internet in order to create an Account and send/receive a contact request. If
+two users create their Account offline and then connect via direct transport,
+they will exchange their public rendezvous points (used for contact requests)
+and will therefore be able to add each other as a contact.
+
+**Note**: In this paper, an "ID" will always denote the public key of a key pair.
+
+### Linking Devices
+
+In the Berty Protocol, a user can use multiple devices within the same
+account, which means that those devices need to be linked with each other in
+order to synchronize the Account's contact list, group list, settings, etc...
+To add a device B, to an existing Account on a device A, the linking steps
+below will be followed.
+
+**Linking steps:**
+
+1. First step is to generate a Device ID key pair on the new device B.
+2. Then device A has to generate an invitation containing A's peerID, for
+example, in the form of an URL or a QRCode.
+3. Device B must scan the QRCode or follow the URL provided by A to retrieve
+A's peerID, establish a connection with A and then send to A a linking request
+containing B's Device ID, initiating the following handshake:
+
+TODO: Add image ![handshake-sequence](https://hackmd.io/_uploads/SkWZnyPOU.png)
+
+#### Challenges
+
+There are three different types of challenges that A can send to B:
+
+1. **QRCode:** B must display a QRCode containing the fingerprint of its
+Device ID and the user must scan this QRCode with device A. If the QRCode
+matches the ID that A previously received, then the linking is successful. If
+device A possesses a functioning camera, this challenge shall be preferred
+because it is both more secure and convenient for the user (there is no error
+possible while checking the ID and it requires minimal effort from the user).
+2. **PIN:** A must display a PIN that the user has to enter on device B. Then
+B sends to A the signature of the PIN using its Device ID. Finally, A verifies
+the signature of the PIN using B's Device ID then the linking is successful.
+This challenge is secure but less convenient for the user (an active
+confirmation is required).
+3. **Fingerprint:** B and A must display a fingerprint of B's ID then the user
+will have to verify manually that the two fingerprints are the same and
+confirm it using a checkbox. This challenge is less secure because the user
+can confirm the equality without carefully reading the fingerprints, so it
+shall not be proposed to the user, unless they want to automate this process,
+for example, in the context of linking a range of servers to an Account with a
+script that could automatically check that the fingerprints match.
+
+We recommend to developers implementing an application using the Berty
+Protocol to follow this state diagram to choose a challenge on Device A:
 
-```
-ResourceID + ReceiverID + hmac_sha256(rdvSeed, periodBytes)
-```
+TODO: Add image ![challenge-choice](https://hackmd.io/_uploads/SJ6dgzaiU.png)
+
+#### Limitations
 
-The value of ResourceID above is:
+* **Device revocation:** Please note that it is impossible to revoke a device.
+Once a device has been linked, it is in possession of the same information and
+secrets as every other device. Hence it has the same capabilities as every
+other device, for example the capability to link other devices, send messages,
+join groups or add contacts. There is no hierarchy between devices linked to
+an account.
+* **Device synchronization:** Since Berty is an asynchronous protocol, two
+devices need to be online at the same time to be synchronized. However, it is
+possible to palliate this problem using replication devices, whose sole
+purpose is to provide high availability for content. Those devices are not
+able to decrypt messages and all they can do is verify their authenticity
+(see [*High Availability*](#High-Availability) for more information).
 
-* The group identifier for the GroupID field
-* The device identifier for the SenderID field
+### Adding Contacts
 
-The value of ReceiverID is the device identifier of the device receiving the
-push notification.
+If an Account A wants to start a one-to-one conversation with an Account B, it
+will have to add B as a contact first.  
+A will have to send a contact request to B that B will have to accept before
+the conversation can begin
 
-The rendezvous seed is specific to the group.
+#### Contact Request
 
-#### Signature
+When an Account A (the Requester) wants to add an Account B (the Responder) to
+its contacts, it needs to know the Responder's Public rendezvous point. This
+[rendezvous point](#Rendezvous-Points) is derived from the RDV Seed and the
+Account ID. Thus the Responder first needs to share his RDV Seed and his
+Account ID with the Requester, so that the latter can compute the RDV Point.
+This information can be sent by different means: an URL sent by message, a
+QRCode displayed on the Responder's device and scanned by the Requester's
+smartphone, etc...
 
-The envelope signature is based on data not present within the envelope so it
-can’t be proved that the sender has sent the message unless you have access to
-the group secrets.
+The Responder can renew their RDV Seed at any time. If it does so, the
+Requester will not be able to send a contact request anymore unless the
+Responder shares its new RDV Seed. The Responder can also completely disable
+incoming contact requests by unregistering its devices from its public
+rendezvous point.
 
-The envelopes are signed using a `Ed25519` secret key of the sender device.
+Once the Requester has computed the Responder's RDV Point, it will be able to
+initiate the following Contact Request handshake.
 
-```
-ed25519_sig(hmac_sha256(rdvSeed, encryptedEventBytes))
-```
+#### Handshake
 
-#### Counter
+Here is the handshake which occurs when the Requester sends a Contact Request
+to the Responder:
 
-A counter is present in the envelope to ensure that all messages are received in
-the right order. In some part of the protocol, this value is used as a nonce
-during message encryption process (see Group encryption). This value is publicly
-exposed and needs to be non predictable by external entities. We do so by
-computing a HMAC value of the counter with a secret shared across parties. The
-counter is a 64 bits hash used to determine whether a message is missing or if
-messages arrive out of order. Internally the state is stored as an unsigned
-integer.
+TODO: Add image ![handshake-sequence](https://hackmd.io/_uploads/Hy-d6h6wL.png)
 
-##### Initial value
+This handshake is widely inspired by [Scuttlebutt's Capability-based Handshake](https://scuttlebot.io/more/protocols/shs.pdf).
 
-The initial counter value is random and created either by the group creator or
-the group inviter. This prevent to expose if the group is newly created or not.
+##### Starting keys
 
-##### Seed
+Here is the list of the keys known by each participant at the beginning of the
+handshake:
 
-The seed used is the private rendezvous seed exchanged by two contact accounts
-in case of device-to-device communication or the group rendezvous seed which is
-common to the whole group members in case of a multiple device context. In both
-cases they are used for  the rendezvous points generation.
+* Requester knows:
+  * $A_s$ and $A_p$: Requester's ID key pair.
+  * $a_s$ and $a_p$: Requester's ephemeral key pair.
+  * $B_p$: Responder's ID public key.
+* Responder knows:
+  * $B_s$ and $B_p$: Responder's ID key pair.
+  * $b_s$ and $b_p$: Responder's ephemeral key pair.
 
-##### Overflows
+##### 1. Requester Hello
 
-The counter is circular so when it overflows the value of an unsigned 64 bit
-integer it loops back to 0.
+The Requester sends its ephemeral public key $a_p$ to the Responder. Ephemeral
+keys are only used for one handshake and then discarded. They guarantee the
+freshness of the messages to avoid replay attacks.
 
-##### Over the wire values
+TODO: Add image ![requester-hello](https://hackmd.io/_uploads/HkAFBapv8.png)
 
-The value of the counter exchanged publicly (for example within a push
-notification or in logs accessible by anyone) is a HMAC value computed using the
-rendezvous seed and the current counter increment. This allows recipients to
-ensure messages are received in order and that none are missing without
-disclosing the actual counter value to external parties.
+##### 2. Responder Hello
 
-hmac_sha256(rdvSeed, counterValue)
+The Responder sends its ephemeral public key $b_p$ to the Requester.
 
-### Device to device
+TODO: Add image ![responder-hello-1](https://hackmd.io/_uploads/rkYDSaaDI.png)
 
-#### Rendezvous points
+Now both the Requester and the Responder are able to compute two shared
+secrets denoted $a.b$ and $a.B$:
 
-##### For two unknown accounts
+TODO: Add image ![responder-hello-2](https://hackmd.io/_uploads/ryrmDTpw8.png)
 
-To reach an unknown account, a device needs
+Secrets are derived using the X25519 protocol. Since a man-in-the-middle could
+have intercepted the ephemeral keys and replaced them, we need cannot only
+rely on $a.b$ and we also need to use $a.B$ in our following exchanges.
 
-* Their account public key
-* Their public rendezvous point rendezvous seed
+##### 3. Requester Authenticate
 
-Both informations are exchanged by peers during the contact adding process in
-the form of a QRCode, an URI or a simple string.
+The Requester sends a secret box containing the signature of $a.b$ along with
+their ID public key to authenticate themselves. The secret box is sealed with
+$a.b$ and $a.B$, thus in this step the Requester also proves that they know
+the Responder's ID.
 
-Note: More data can be added to a Berty URI, for example to add a contact it can
-be:
+TODO: Add image ![requester-auth-1](https://hackmd.io/_uploads/BymgCaaDI.png)
 
-> [berty://contact/add#contact-id=AccountPublicKey&rendezvous-seed=RendezvousSeed&displayName=Mark%20Z](#)
+From this step, a man-in-the-middle is no longer able to intercept the
+exchanges because they are not able to compute $a.B$, regardless of what they
+have done in the previous steps.
 
-The rendezvous seed used for contact requests can be resetted for privacy
-reasons. Additionally a device may not broadcast its availability on the
-rendezvous point if the user desires it. As it is different from the seed used
-among group members or between to accounts other communications won’t be
-affected by this change.
+Now both the Requester and the Responder are able to compute another shared
+secret denoted $A.B$:
 
-##### For two accounts that are contacts
+TODO: Add image ![requester-auth-2](https://hackmd.io/_uploads/BJWLZR6vU.png)
 
-To reach an account in its contact list, a device needs
-
-* Their account public key
-* Their private rendezvous point rendezvous seed
-
-These values were exchanged during the contact adding process.
-
-#### Handshakes<sup>[6](#footnote6)</sup>
-
-Handshakes are used by a pair of devices to establish trust and communicate
-through a double ratchet<sup>[7](#footnote7)</sup> session.
-Two cases can happen:
-
-1. Accounts owning the devices are unknown, so devices need to:
-    1. Identify themselves, the device that initiated the handshake needs to
-       prove that it have permission to do so by providing the account ID
-       associated to the target device (see Rendezvous points unknown)
-    2. Exchange their account signature chains
-    3. Initialize a double ratchet session
-2. Accounts ownings the devices are contacts, so devices need to:
-    1. Identify themselves using their device ID and data derived from their
-       private rendezvous seed  (see Rendezvous points contacts)
-        1. If both devices already communicated before, continue to step 2.ii
-        2. If both devices never communicated before, fallback to step 1.i
-    2. Continue to communicate through the double ratchet session initialized
-    previously
-
-We’ll describe both handshakes further using this naming convention:
-
-* _A_ is the **account identity** (Ed25519) public key of the account **A**
-* _A<sub>1</sub>_ is the **device long-term identity** (Ed25519) public key for
-  the **first** device of the account A
-* _a<sub>1</sub>_ is a device **ephemeral** signing (Ed25519) or encryption
-  (X25519) public key for device the **first** device of account **A**
-* _A<sup>sigChain</sup>_ is the **account signature chain** of the account A
-* _E<sub>y·z</sub>(x)_ notes the encryption of value _x_ using the key pairs _y_
-  and _z_ (we rely on NaCl crypto_box function which encrypts and authenticates
-  a message using public key cryptography).
-* _sig<sub>y</sub>(x)_ notes the signature of value _x_ using the private key
-  _y_ verifiable using the corresponding public key.
-
-Depending on the use case devices A and B can be handled by two distinct or by
-the same account.
-
-We need to ensure that no one is impersonating the intended contact on their
-rendezvous point otherwise they would be able to reuse informations received
-during the handshake.
-
-Both handshakes start with the following steps that are not encrypted:
-
-
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Step</th>
-            <th>Description</th>
-            <th>Comment</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td><i>A<sub>1</sub>→B<sub>1</sub>:a<sub>1</sub></i></td>
-            <td>A sends its ephemeral public keys (signature and encryption)</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><i>A<sub>1</sub>←B<sub>1</sub>:b<sub>1</sub></i></td>
-            <td>B sends its ephemeral public key (encryption)</td>
-        </tr>
-    </tbody>
-</table>
-
-For all the steps preceding the double ratchet communication, the message
-encryption is performed using the crypto_box
-[NaCl](https://nacl.cr.yp.to/index.html) function
-([golang implementation](https://godoc.org/golang.org/x/crypto/nacl/box)) using
-both device ephemeral encryption key pairs:
-
-[`crypto_box`](https://nacl.cr.yp.to/box.html)`(m,n,pk,sk)`
-
-_Note: here n (nonce) is a simple counter_
-
-##### For two unknown accounts
-
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Step</td>
-      <th class="formula l">Description</td>
-      <th>Comment</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>3a</td>
-      <td>
-          <i>A<sub>1</sub>→B<sub>1</sub>:
-          E<sub>a<sub>1</sub>·b<sub>1</sub></sub>
-          (sig<sub>a<sub>1</sub></sub>(B·b<sub>1</sub>))
-          </i>
-      </td>
-      <td>
-        <p>
-            A sends a concat of B’s account public key and B’s
-            ephemeral encryption key signed with A’s ephemeral signing key.
-            Adding B’s ephemeral encryption key to signed data ensure that A
-            didn’t get a signed B’s account public key and reused A’s ephemeral
-            key from a previous handshake where A was impersonating B.
-        </p>
-        <p>
-            B needs to ensure these values are correct before continuing.
-            The value is encrypted using the temporary secrets.
-        </p>
-        <p><b>
-            A now proved to B that he knew B’s account public key before
-            the handshake
-        </b></p>
-      </td>
-    </tr>
-    <tr>
-      <td>4a</td>
-      <td>
-          <i>A<sub>1</sub>←B<sub>1</sub>:
-          E<sub>a<sub>1</sub>·b<sub>1</sub></sub>
-          (
-              B<sup>sigChain</sup>, B<sub>1</sub>,
-              sig<sub>B<sub>1</sub></sub>(B<sup>sigChain</sup>·a<sub>1</sub>)
-          )
-          </i>
-      </td>
-      <td>
-        <p>
-            B sends its signature chain and current device public key along
-            with a concat of both values signed with B’s current device key
-            to prove there’s no impersonation.
-        </p>
-        <p>
-            A must ensure that the signature chain is valid, sent from the same
-            account ID as requested and the device ID is correctly included in
-            the sigchain.
-        </p>
-        <p>
-            <b>B now proved to A that B’s device is owned by the right account
-            A now knows B’s sigchain and current device identity</b>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>5a</td>
-      <td>
-          <i>A<sub>1</sub>→B<sub>1</sub>:
-          E<sub>a<sub>1</sub>·b<sub>1</sub></sub>
-          (
-              A<sup>sigChain</sup>, A<sub>1</sub>,
-              sig<sub>A<sub>1</sub></sub>(A<sup>sigChain</sup>·a<sub>1</sub>)
-          )
-          </i>
-      </td>
-      <td>
-        <p>
-            A sends its signature chain and current device public key along with
-            a concat of both values signed with A’s current device key to prove
-            there’s no impersonation.
-        </p>
-        <p>
-            B must ensure that the signature chain is valid and the device ID is
-            correctly included in the sigchain.
-        </p>
-        <p>
-            <b>B now knows A’s sigchain and current device identity</b>
-        </p>
-      </td>
-    <tr>
-      <td>6a</td>
-      <td>
-        <span class="tag pink">
-          <i class="far fa-exclamation-triangle"></i>TODO
-        </span>
-      </td>
-      <td>
-          <p>Init double ratchet session</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-##### For two accounts that are contacts
-
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Step</td>
-      <th class="formula m">Description</td>
-      <th>Comment</td>
-    </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>3b</td>
-    <td>
-        <i>A<sub>1</sub>→B<sub>1</sub>:
-        E<sub>a<sub>1</sub>·b<sub>1</sub></sub>
-        (
-            sig<sub>A<sub>1</sub></sub>(b<sub>1</sub>)
-        )
-        </i>
-    </td>
-    <td>
-      <p>
-        A sends a concat of the output generated using the private rendezvous
-        seed common to A and B and B’s ephemeral encryption key signed with A’s
-        ephemeral signing key.
-      </p>
-      <p>
-        Adding B’s ephemeral key to signed data ensure that A didn’t get a
-        signed rendezvous token for the current period and reused A ephemeral
-        key from a previous handshake where A was impersonating B.</p>
-      <p><b>
-        A now proved to B that their accounts are contacts (via a rendezvous
-        token for the current period) and gave its current device ID
-        (via signature)
-      </b></p>
-    </td>
-  </tr>
-  <tr>
-    <td>4b</td>
-    <td>
-        <i>A<sub>1</sub>←B<sub>1</sub>:
-        E<sub>a<sub>1</sub>·b<sub>1</sub></sub>
-        (
-            sig<sub>B<sub>1</sub></sub>(a<sub>1</sub>)
-        )
-        </i>
-    </td>
-    <td>
-      <p>
-        If B’s current device already communicated before with A’s current
-        device:
-      </p>
-      <p>
-        B sends A’s ephemeral key signed with its current device key so A can
-        identify B’s current device and they can resume their double ratchet
-        session.
-      </p>
-      <p>
-        B now proved to A that it owns this device private key
-        (no impersonation)
-      </p>
-      <p>
-        A now knows B’s current device ID
-      </p>
-      <p><strong>ALTERNATIVELY</strong></p>
-      <p>
-        If B’s current device never communicated before with A’s current device:
-      </p>
-      <p>
-        It send a fallback response, both devices fallback to step 3a to update
-        each other signature chain and init a double ratchet session.
-      </p>
-    </td>
-    </tr>
-    <tr>
-      <td>5b</td>
-      <td>
-        <span class="tag pink">
-          <i class="far fa-exclamation-triangle"></i>TODO
-        </span>
-      </td>
-      <td>
-          <p>Resume double ratchet session</p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-#### Message types
-
-##### New contact request
-
-Event sent to a new contact to request it.
-
-###### Request structure
-
-ContactRequest protobuf message
-
-
-##### Accept contact request
-
-Event sent from a requested contact
-
-The requester signature is included so any of their device can
-accept the contact request
-
-###### Request structure
-
-ContactRequestAccepted protobuf message
-
-##### Group invite
-
-The group invite event is sent to a device to include it to a group. The
-inviter sets the value of the “Device group secret”, the “current derivation
-status” and “counter” for the devices. The “counter” value can be set
-to anything.
-
-###### Request structure
-
-GroupDetails protobuf message
-
-
-### Group communication
-
-#### Envelope structure
-
-See the Envelope protocol buffer message.
-
-#### Encryption
-
-Encryption for group messaging relies on
-[KDF chain](https://signal.org/docs/specifications/doubleratchet/#kdf-chains)
-concept and more specifically on
-[symmetric-key ratchet](https://signal.org/docs/specifications/doubleratchet/#symmetric-key-ratchet)
-variant. Each device in a group manages its own message chain and is the only
-one able to write on it (one writer / many readers).
-
-Each new device added to the group is assigned:
-
-* KDF key: random 32 bytes long value (will be derived for each message)
-* Salt: random 64 bytes long value (will remain constant)
-* Counter: random unsigned int (see Counter)
-
-These values are shared with every other group member along with the device
-ID of the new device.
-
-When a device sends a message to the group, it will first derive one new KDF
-key and one message key using [HKDF](https://tools.ietf.org/html/rfc5869).
-Find below a golang example code using
-[HKDF package](https://godoc.org/golang.org/x/crypto/hkdf):
-
-```go
-func deriveNextKeys(currKDFKey [32]byte, salt [64]byte, groupID []byte)
-   (nextKDFKey, nextMsgKey [32]byte) {
+##### 4. Responder Accept
+
+The Responder sends a secret box containing the signature of $a.b$. The secret
+box is sealed with $a.b$ and the new secret $A.B$, which proves that the
+Responder has effectively received and decrypted the previous message.
+
+TODO: Add image ![responder-accept](https://hackmd.io/_uploads/ry6qXApPU.png)
+
+##### 5. Requester Acknowledge
+
+To inform the Responder that the Requester has not encountered any errors
+while verifying the contents of the `Responder Accept`, the Requester sends an
+acknowledgement. After this step, the handshake is considered valid by both
+parties.
+
+TODO: Add image ![requester-ack](https://hackmd.io/_uploads/Hks1bEvu8.png)
+
+##### Security
+
+* **Man-in-the-Middle:** The handshake is not vulnerable to Man-in-the-Middle
+Attack. Indeed, the Requester already knows the Responder's identity because
+they got it in a trusted way (for example by scanning a QRCode directly from
+the Responder's device). To verify each other's identities, the Requester and
+the Responder may meet later and check the fingerprint of their shared secret.
+* **DDoS Attack:** If the Responder refuses the Contact Request, they can
+block the Requester's ID so they cannot initiate handshakes with them anymore.
+If the Responder is receiving too many contact requests, they can also change
+their RDV Seed and become unreachable using a former RDV Point.
+* **Replay Attack:** The use of ephemeral key pairs guarantees that an
+attacker cannot reuse a previously stolen message in order to dupe the
+Requester or the Responder.
+
+##### Limitations
+
+* **Device availability:** Please note that the Handshake is the only
+synchronous operation of the Berty Protocol: in order to succeed, both devices
+need to be online at the same time, which is usually the case if the Requester
+has scanned a QRCode on the Responder's Device, but which may also not be the
+case if the Requester has clicked on a URL received by message. In the case
+none of the Responder's devices are available, the Requester must wait and
+initiate a handshake later.
+
+## Groups
+
+### Concept
+
+The protocol is strongly based on the concept of group. A group is a logical
+structure in which Members and their Devices connect to exchange messages and
+metadata.
+The metadata are various, some of them inform the group that a new Member or a
+new Member's Device has joined the group, others are used to exchange
+encryption keys between Members and so on.
+Messages and Metadata are exchanged through two immutable logs provided by
+OrbitDB.
+
+### Group Structure
+
+A Group is divided into two logs: a message log and a metadata log.
+
+* **Message log:** Contains all the messages exchanged within a Group. Members
+of the group can download only a part of the message log if they want to (for
+example only the 1000 last messages). Besides, members cannot decrypt messages
+sent before their arrival due to the Symmetric Ratchet Protocol
+(see [*Encryption*](#Encryption) for more information).
+* **Metadata log:** Contains all the metadata of the Group. Since it contains
+essential information, members of the group shall download the whole metadata
+log. Secrets are exchanged on this log.
+[Arrivals of new members](#Joining-a-Group) are also announced on this log, so
+if a new member does not download the whole metadata log they will not know
+the full list of members, thus they will not be able to exchange secrets with
+them and therefore, they will not be able to decrypt their messages.
+
+### Types of Groups
+
+In the Berty Protocol, there are three different types of Groups: Account
+Group, Contact Group, and Multi-Member Group. A Group Member is a Berty user
+(an account) in a Group. Groups are essential for communication in Berty, and
+they have their own keys and secrets shared between all the Group Members:
+
+* **Group Secret:** The Group Secret is a symmetric key used to
+encrypt/decrypt group payloads.
+* **Group ID Key Pair:** The Group ID is used to derive the Group RDV Point.
+The private key is only used to generate the Group Secret Sig and to sign the
+creator Member ID, and then it is discarded (Multi-Member Groups only)
+* **Attachment key:** The Attachment Key is a symmetric key used to
+encrypt/decrypt contentID of files attached to messages. Attachment Key is not
+used to encrypt the files.
+* **Group Secret Sig:** The Signature of the Group Secret by the Group ID
+Private Key (only used in Multi-Member Groups)
+
+#### Account Group
+
+The Account Group is the group of all the devices linked to the same Account.
+Devices of the same account need to be in a private group in order to
+communicate with each other and share information about the Account, for
+example the messages sent and received, the groups joined, the contacts added,
+etc... The Account Group is only composed of one Group Member, who is the
+account owning all the devices. Every time a new device is linked to the
+Account, it joins the Account Group. The keys and secrets of the Account Group
+are randomly generated at the creation of the account in the same way as in
+Multi-Member Groups.
+
+TODO: Add image ![account-group](https://hackmd.io/_uploads/SklLFmD_I.png)
+
+#### Contact Group
+
+A Contact Group is a group consisting of exactly two Group Members who are
+Contacts. When an Account adds another Account as a contact, the Contact Group
+is created. The Group Secret, Group ID and Attachment Key are generated by the
+sender of the Contact Request using X25519 key agreement protocol.
+
+TODO: Add image ![contact-group](https://hackmd.io/_uploads/H1jJ6fvdI.png)
+
+If the secrets were generated the same way as in a Multi-Member Group and
+Account-Group (i.e. randomly), the lack of synchronization between devices
+could cause the creation of several distinct Contact Groups for the two same
+contacts. Let's suppose that the Contact Group secrets are randomly generated
+by the group creator. Alice sends to Bob a contact request with her device A1
+and Bob accepts the contact request with his device B1. A1 and B1 are now in a
+Contact Group with random secrets that A1 shared with B1. Then A1 and B1 are
+turned offline and A2 and B2 are turned online. A2 is not aware that the
+contact request of Alice has been accepted by Bob, so it sends it again and B2
+accepts the new contact request as it is not aware that a contact request has
+already been accepted by B1. Again A2 generates random secrets and shares them
+with B2, and they are now in a Contact Group which is distinct from the first
+Contact Group since the secrets are different. This situation is avoided if
+secrets are generated deterministically from Alice’s and Bob's Account ID key
+pairs.
+
+#### Multi-Member Group
+
+A Multi-Member Group is a group of several Group Members who may or may not be
+Contacts. A particularity of a Multi-Member Group is that users will not be
+using their Account ID in the Group, instead they will use a distinct Member
+ID, specific to this Group (derived from the Group ID and some secret
+accounts). Similarly their devices will use a Member Device ID (randomly
+generated). Hence users knowing each other’s Account ID (namely contacts) will
+not be able to recognize each other in Multi-Member Groups, unless they want
+to (see [Alias Identity](#Alias-Identity)).
+
+TODO: Add image ![multi-member-group](https://hackmd.io/_uploads/HyEDRMvO8.png)
+
+Keys and secrets of the multi-member group are randomly generated at the
+creation of the group by the group creator. Once the secrets have been
+generated, the group creator posts an Init Member Entry on the Metadata Log:
+
+TODO: Add image ![init-member-entry](https://hackmd.io/_uploads/rkI4GWD_8.png)
+
+As shown on the schema above, the Init Member Entry consists of a secret box
+sealed with the Group Secret ($G_S$) containing the following elements:
+
+* The Member ID public key ($M_P$)
+* The signature of the Member ID public key ($M_P$) by the Group ID private
+key
+
+It is omitted on the schema but the secret box is signed with a key derived
+from the Group Secret and the signature is sent along. It is the case for all
+entries posted on the group, to prevent members from trying to decrypt and
+store messages sent by outsiders.
+
+After posting this entry on the metadata log, the group creator discards the
+Group ID private key. All Members in the Group have the same status, except
+the creator of the group who can be identified with this Init Member Entry.
+However it does not grant them more rights or capabilities than the other
+Members.
+
+##### Alias Identity
+
+In Multi-Member Groups, users will not be using their Account ID in the Group,
+instead they will use a distinct Member ID, specific to this Group (derived
+from the Group ID and some account’s secret). Similarly their devices will use
+a Member Device ID (randomly generated). Hence users knowing someone's Account
+ID will not be able to recognize them in Multi-Member Groups. However, if they
+want to be identified by their contacts, they can share with the group an
+Alias Entry, composed of an Alias Resolver and an Alias Proof:
+
+* **Alias Resolver:** an HMAC of the Alias public Key and the Group ID.
+* **Alias Proof:** the signature of the Alias Resolver by the Alias private key.
+
+TODO: Add image![alias-identity](https://hackmd.io/_uploads/rJP2m-vO8.png)
+
+The Alias Key Pair is generated at the creation of the Account and the Alias
+Public Key is shared with Contacts once the contact request has been accepted.
+With the Alias Entry, everyone within the group who knows someone's Alias
+public key will be able to identify their Member ID. When a user joins a new
+Multi-Member Group, it computes the Alias Resolver for each of its contacts so
+that whenever an Alias Entry is disclosed by another member, the matching is
+instant.
+
+Please note that whenever an Alias Entry is disclosed in a Multi-Member Group,
+it cannot be undone. An Alias Entry can only be used to identify a member in
+one particular Multi-Member Group, since the Alias Resolver is derived from
+the Group ID.
+
+## Messages
+
+### Encryption
+
+In the Berty Protocol, all communications are fully end-to-end encrypted using
+[Symmetric-key Ratchet](https://signal.org/docs/specifications/doubleratchet/#symmetric-key-ratchet).
+Every time a user wants to send a message to someone, a Message Key is derived
+from their Chain Key using [HKDF](https://tools.ietf.org/html/rfc5869).
+The HKDF also updates the Chain Key after each derivation. The Message Key is
+then used to encrypt the message and will not be reused to encrypt other messages.
+
+TODO: Add image ![symmetric-ratchet](https://hackmd.io/_uploads/BJAQwQP_I.png)
+
+Each member's device within a group has a different Chain Key. The Group ID is
+included in the parameters of the HKDF to make the derived keys
+[context-specific](https://tools.ietf.org/html/rfc5869#section-3.2). At the
+beginning of the conversation members [share their device's Chain Key](#New-member-arrival)
+with the other participants. To decrypt messages sent by other participants,
+they have to follow the same process and derive the Message Key from the Chain
+Key of the sender with the HKDF for every message they receive.
+
+```go=1
+// golang
+func deriveNextKeys(currChainKey [32]byte, salt [64]byte, groupID []byte)
+   (nextChainKey, nextMsgKey [32]byte) {
     // Salt length must be equal to hash length (64 bytes for sha256)
     hash := sha256.New
 
-    // Generate Pseudo Random Key using currKDFKey as IKM and salt
-    prk := hkdf.Extract(hash, currKDFKey[:], salt[:])
+    // Generate Pseudo Random Key using currChainKey as IKM and salt
+    prk := hkdf.Extract(hash, currChainKey[:], salt[:])
     // Expand using extracted prk and groupID as info (kind of namespace)
     kdf := hkdf.Expand(hash, prk, groupID)
 
-    // Generate next KDF and message keys
-    io.ReadFull(kdf, nextKDFKey[:])
+    // Generate next chain and message keys
+    io.ReadFull(kdf, nextChainKey[:])
     io.ReadFull(kdf, nextMsgKey[:])
 
-    return nextKDFKey, nextMsgKey
+    return nextChainKey, nextMsgKey
 }
 ```
 
-Then it:
+### Joining a Group
 
-  1. Replaces the current KDF key with newly derived one
-  2. Increments the counter (see Increments)
-  3. Encrypts the message using
-     [secretbox](https://godoc.org/golang.org/x/crypto/nacl/secretbox) seal
-     function passing counter as nonce and newly derived message key as key
-  4. Sends the ciphertext to other members along with the counter
-     and a signature
+To communicate with other devices (or users), a device (or a user) has to join
+a group. A device (or a user) can only join a group if it is in possession of
+an invitation.
 
+#### Invitation
 
-_Notes:_
+An invitation is composed of the Group ID, the Group Secret, the Group Secret
+Sig and the Attachment Key. An invitation can thus be created by any member of
+the Group. With the invitation, a Berty user can compute the [Rendezvous Point](#Rendezvous-Points)
+of the Group, which is derived from the Group ID.
+
+Once the RDV Point has been computed, the user is able to download the
+metadata log on the group and decrypt part of its entries with the Group
+Secret. He will namely obtain the list of all the Group members, which is
+essential to exchange secrets with them and be able to decrypt their messages.
+
+#### New member arrival
+
+Once a user has received an invitation to join a Multi-Member Group and has
+downloaded the metadata log, they have to announce their arrival. To do so,
+they post a Member Entry for each of their devices on the metadata log:
+
+TODO: Add image ![new-member-entry-1](https://hackmd.io/_uploads/SkXjmJRvL.png)
+
+As shown on the schema above, a Member Entry consists of a secret box sealed
+with the Group Secret ($G_S$) containing the following elements:
+
+* The signature of the Group ID ($G_{ID}$) and the member device ID public key
+($D_P$) by the member ID secret key ($M_S$)
+* The Member ID public key ($M_P$) to verify the signature
+* The Device ID public key ($D_P$) to authenticate the new member
+
+Now that the new member has announced their arrival, they need to exchange
+their chain key with the other members. To do so, for each of their devices
+they post a Secret Entry on the metadata log for each member already in the group:
+
+TODO: Add image ![new-member-entry-2](https://hackmd.io/_uploads/Hkn4kg0v8.png)
+
+A Secret Entry consists of a secret box sealed with the Group Secret ($G_S$)
+containing the following elements:
+
+* The Sender Device ID public key ($S_P$)
+* The Receiver Member ID public key ($R_P$) so that everyone within the group
+knows to whom the secret entry is addressed to
+* A secret box sealed with a shared secret $R.S$ that can be computed by both
+the Sender and the Receiver, containing the Sender's Chain Key ($CK$) and its
+current counter.
+
+This operation is bilateral, once a member has fetched a Secret Entry on the
+metadata log they also post a Secret Entry destined for the new member. In the
+end, everyone has the new member's chain key and the new member has the
+current chain key of every member of the group.
+
+#### Exchanging messages
+
+Now that every member of the group has the chain key of the new member and the
+new member has the chain key of every member of the group, everyone is able to
+send and receive messages. To do so, they have to first derive a Message Key
+from their Chain Key following the [symmetric ratchet protocol](#Encryption).
+
+A Member who wants to send messages to the group has to post a Message Entry
+on the Message Log:
+
+TODO: Add image ![message](https://hackmd.io/_uploads/HJ9wKg0PL.png)
+
+A Secret Entry consists of a secret box sealed with the Group Secret ($G_S$)
+containing the following elements:
+
+* A secret box sealed by the message key $K$ containing the message.
+* The signature of this secret box with the Device ID secret key ($D_S$).
+* The Device ID public key $D_P$ to verify the signature above and identify
+the sender.
+* The counter corresponding to the message key.
+
+Once a member has fetched a message entry from the message log, they have to
+decrypt it using the sender chain key. First they need to rotate the sender's
+chain key until they reach the message counter. Then they need to use the
+message key to decrypt the message.
+
+TODO: Add image ![message-sym-ratchet](https://hackmd.io/_uploads/B1onw7wdI.png)
+
+Once the message key has been used, it is discarded because it can decrypt
+only one message.
+
+#### Security
+
+* **Forward Secrecy:** New members are not able to decrypt messages sent
+before their arrival because the Symmetric Ratchet Protocol grants Forward
+Secrecy. Indeed, it is not possible to revert a Chain Key into a previous
+state once it has been derived with the HKDF, and thus it is not possible to
+obtain a Message Key older than the current Chain Key.
+
+#### Limitations
+
+* **Invitation expiration:** As discussed earlier, there is no expiration time
+in the Berty Protocol due to its asynchronous nature. Thus invitations do not
+expire, are not nominative and can be used any number of times. Furthermore,
+contrary to the Account RDV Point, the Group RDV Point cannot be renewed at
+will by the Members and thus cannot be used to escape unwanted arrivals.
+* **Member removal:** A member cannot be removed from a group because it would
+involve the renewing of all the secrets including the members’ chain keys with
+the constraints that the banned member must not know the new secrets exchanged
+and that some members may not be synchronized with the rest of the group for a
+long period of time. The simplest, less error-prone and clearer way for the
+user, is simply to recreate a new group without the unwanted member. Members
+can willingly leave a group but for the others, there will be no cryptographic
+guarantee that a member has effectively left the group and is not in
+possession of the secrets anymore.
+* **Scalability:** Since new members have to post a secret entry for every
+member of the group and then have to receive a secret entry from every member
+of the group, a new arrival in a Multi-Member Group can become a very
+expensive process as the Group acquires more and more members. Thus it may be
+required to set a member limit in Multi-Member Groups to ensure the effective
+functioning of the applications using the Berty Protocol.
+* **Post-compromise secrecy:** There is currently no post-compromise secrecy
+in the Berty Protocol for the same reason there is no member removal. However,
+it could be feasible to renew all the members’ Chain Keys, for example every
+hundred messages sent to mitigate an eventual unnoticed compromise.
+
+## High Availability
+
+Since there is no central server in the Berty Protocol, messages and files are
+only stored on users devices. Thus, if a certain device has some information
+and is offline, other devices will not be able to get this information. For
+example, if a user adds a contact with its device A, and turns device A
+offline and then uses device B, device B will not be aware of this new contact
+and will not be able to communicate with it.
+
+To palliate this problem and provide high availability, the user can set up a
+dedicated device with one of the following configurations: bot account, linked
+device, replication device and replication server.
+
+### Bot account
+
+A bot account is an account that was created on a dedicated device (e.g a
+server) and added to the user account as a contact. The user will have to
+manually add the bot contact into all its Multi-Member groups. Since nothing
+differentiates a bot account from a user account, this account can do
+everything a user account can do, including sending and reading messages. The
+bot account provides high availability for Multi-Member groups only, since it
+cannot be added to the Contact Group.
+
+### Linked device
+
+A linked device can be dedicated to replication, however it is only a usage
+difference, and nothing differentiates this device from the other devices
+linked to an account, which means they can read and send messages, as well as
+join groups or link new devices to the account. Linked devices provide high
+availability for every group the account belongs to.
+
+### Replication device
+
+A replication device is a dedicated device which is linked to an account but
+does not get all the account secrets and is not able to send contact requests
+or link new devices. It is automatically added to all the groups to which the
+account belongs but it does not get any of the group secrets, except the Group
+ID public key, the Group Sig and the Attachment Key. Therefore, it is not able
+to read messages nor to send them. All it can do is store messages and verify
+their authenticity with the Group ID public key, in order to avoid storing
+spam messaging from outside the group. It also needs the Attachment Key in
+order to decrypt an attachment cID and store the attachment.
+
+### Replication server
+
+A replication server is basically a replication device that is not linked to a
+user account but instead is owned and made available by a third party. Anybody
+can add an existing replication server to a Group (via an API) to provide high
+availability. Like the replication devices, replication servers only get the
+Group ID public key, the Group Sig and the Attachment Key when they are added
+to the groups, and are thus unable to decrypt the messages.
+
+### Comparison
+
+TODO: Add image ![replication-comparison](https://hackmd.io/_uploads/B1qIgVw_8.png)
+
+## Implementation Details
+
+### Specificities of direct transport
+
+When a Berty user connects to another Berty user with direct transports, the
+first thing they do is send a list of all the RDV Points on which they are
+listening: their Public RDV Point (for contact requests) and all RDV Points of
+Groups to which they belong. If the second user is already listening on some
+of these RDV Points, they will both be able to communicate in those Groups
+using direct transports.
+
+For example, if Alice and Bob are contacts, they will both listen on the RDV
+Point of their contact group and thus when Alice will send all her RDV Points
+to Bob he will see that they have an RDV Point in common, and he will be able
+to send her messages within their contact group. The same thing is valid for
+Multi-Member Groups.
+
+Thus direct transports are not using a DHT like IPFS and this is a synchronous
+communication protocol since both devices need to be connected to each other
+in order to exchange messages. This aside, the Berty Protocol works exactly
+the same way.
+
+:::danger
+WARNING: If Alice sends all her RDV Points to Bob, he could make deductions on
+her true identity in Multi-Member Groups. Bob will indeed know all the Groups
+to which he and Alice belong and may be able to link different Member IDs in
+different Groups to Alice.
+:::
+
+### Cryptography
+
+#### Key Types
+
+All key pairs used in the Berty Protocol are X25519 for encryption and Ed25519
+for signature, for two main reasons:
+
+* These are [smaller](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8951-CryptoAuth-RSA-ECC-Comparison-Embedded-Systems-WhitePaper.pdf)
+than RSA key pairs for the same level of security which means, less data to
+store and smaller payload to send over the network.
+* Elliptic Curve Cryptography is also [faster](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8951-CryptoAuth-RSA-ECC-Comparison-Embedded-Systems-WhitePaper.pdf)
+than the RSA algorithm, especially on private key operations, which means less
+CPU consumption and thus a longer battery life on mobile devices.
+
+#### Golang Packages
+
+Most of the crypto libs used in the Berty Protocol are packages included in
+the standard Go library:
+
+[crypto/sha256](https://pkg.go.dev/crypto/sha256)
+[crypto/rand](https://pkg.go.dev/crypto/rand)
+[x/crypto/nacl/box](https://pkg.go.dev/golang.org/x/crypto/nacl/box)
+[x/crypto/nacl/secretbox](https://pkg.go.dev/golang.org/x/crypto/nacl/secretbox)
+[x/crypto/hkdf](https://pkg.go.dev/golang.org/x/crypto/hkdf)
+[x/crypto/ed25519](https://pkg.go.dev/golang.org/x/crypto/ed25519)
+
+The only non-standard packages used in the Berty Protocol are the following
+two, although they have been written by experts are widely reviewed by the
+community:
+
+[libp2p/go-libp2p-core/crypto](https://pkg.go.dev/github.com/libp2p/go-libp2p-core/crypto)
+[agl/ed25519/extra25519](https://pkg.go.dev/github.com/agl/ed25519/extra25519)
 
-  * The salt is constant to make it possible to read a message if some
-    previous ones were never received.
-  * The “groupID” used in the code is the group identifier. It’s used as
-    info parameter in expand to make the derived keys context-specific as
-    advised in the [HKDF RFC](https://tools.ietf.org/html/rfc5869#section-3.2).
-  * A message key is only used to encrypt and decrypt one specific message
-    and nothing will be derived from it.
-
-#### Rendezvous point/Pubsub channel
-
-The rendezvous point is constructed using:
-
-  * ResourceID : Group ID
-  * Rendezvous seed: Group rendezvous seed
-
-If desired, an account can also advertise itself on the following rendezvous
-point so other member of the group can send it a contact request:
-
-  * ResourceID: AccountID
-  * Rendezvous seed: Group rendezvous point seed (common to all group members)
-
-
-#### Group management
-
-##### Group init
-
-The group creator will initiate the group locally and send the invitation to
-the other group members. See the Group Invite section in the
-_Device to Device signaling_ part of this document for more information.
-
-##### Add members
-
-New members will receive a payload similar to the one received on group init.
-See the Group Invite section in the Device to Device signaling part of this
-document for more information.
-
-Existing members will receive the list of the newly added members and the
-required secrets to open their messages.
-
-Permissions are not defined by this document and can be enforced in clients by
-implementers. For example an account holder could be able to add some of its
-own devices to a group but can not add devices from someone else.
-
-###### Payload
-
-GroupAddedMembers protobuf message
-
-#### Group signaling
-
-##### Group state synchronisation
-
-<span class="tag yellow"><i class="far fa-traffic-cone"></i>WIP</span>
-
-Should we send our current event status and receive others?
-Should it be done via PubSub (ask Antoine for the Wazza event)? We can do it
-with replicated database (see OrbitDB or the lower level IPFS-log)
-
-##### Event broadcast
-
-When a new event is created it is broadcasted using PubSub, so that not all
-of the group members need to be reached individually. Only devices currently
-connected can be reached this way.
-
-## Protobuf
-
-### Signature chain
-
-```protobuf
-message SigChainInit {
-   bytes account_public_key = 1;
-   bytes device_public_key = 2;
-   bytes signature = 3;
-}
-
-message SigChainAddDevice {
-   bytes parent_signature = 1;
-   bytes new_device_public_key = 2;
-   bytes signer_public_key = 3;
-   bytes signature = 4;
-}
-
-message SigChainRemoveDevice {
-   bytes parent_signature = 1;
-   bytes removed_device_public_key = 2;
-   bytes signer_public_key = 3;
-   bytes signature = 4;
-}
-
-enum SigChainEventType {
-   INIT_CHAIN = 0;
-   ADD_DEVICE = 1;
-   REMOVE_DEVICE = 2;
-}
-
-message SigChainEvent {
-   SigChainEventType event_type = 1;
-   bytes event = 2;
-}
-
-message SigChain {
-   repeated SigChainEvent events = 1;
-}
-```
-
-### Device to device
-
-```protobuf
-message ContactRequest {
-   bytes own_public_rendezvous_seed = 1;
-   bytes contact_pair_rendezvous_seed = 2;
-   bytes request_signature = 3;
-   // ...other metadata
-}
-
-message ContactRequestAccepted {
-   bytes own_public_rendezvous_seed = 1;
-   bytes contact_pair_rendezvous_seed = 2;
-   bytes request_signature = 3;
-   // ...other metadata
-}
-```
-
-
-### Group management
-
-```protobuf
-message GroupMemberDevice {
-   bytes public_key = 1;
-   bytes group_secret = 2;
-   bytes derivation_state = 3;
-   bytes derivation_counter = 4;
-   // ...other metadata
-}
-
-message GroupMemberAccount {
-   bytes sig_chain = 1;
-   repeated GroupDevice devices = 2;
-   // ...other metadata
-}
-
-message GroupDetails {
-   bytes group_creator_public_key = 1;
-   bytes group_id = 2;
-   bytes group_rendezvous_seed = 3;
-   repeated GroupMemberAccount members = 4;
-}
-
-message GroupAddedMembers {
-  repeated GroupMemberAccount members = 1;
-}
-```
-
-### Group messages
-
-```protobuf
-message Envelope {
-   bytes group_id = 1;
-   bytes sender_id = 2;
-   bytes counter = 3;
-   bytes event = 4;
-   google.protobuf.Timestamp timestamp = 5;
-   bytes signature = 6;
-}
-```
-
-## Threats
-
-### Modified clients
-* They may not forward appropriate messages if they want to mute someone
-* They could use forged ids
-
-Protocol versioning
--------------------
-
-##### Version 0.1 - Initial release:
-
-  * Contact requests
-  * Group management (creation, add members)
-  * Group messaging
-
-##### Planned for future releases:
-
-  * Streams (audio, video)
-  * Device pairing + device sync
-  * Attachments
-  * Invitation links to groups (ie. RDV point + Group ID +
-    Single-use invitation token)
-  * Public links to groups (ie. RDV point + Group ID +
-    Reusable invitation token)
-  * Removing devices from groups
-
-##### Considered for future releases:
-
-  * Device capabilities (Push reception, emission, mobile, desktop,
-    tunneling, dispatching)
-  * Group members types (Regular, bot, dispatching)
-  * Group members removal
-  * Location sharing<sup>[8](#footnote8)</sup>
-
-
-Footnotes
----------
-
-1. <a name="footnote1"></a> More info:
-   http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8951-CryptoAuth-RSA-ECC-Comparison-Embedded-Systems-WhitePaper.pdf
-2. <a name="footnote2"></a> Protocol Buffers or Protobuf is a serialization
-   protocol developed by Google. https://developers.google.com/protocol-buffers/
-3. <a name="footnote3"></a>  https://github.com/multiformats/multibase
-4. <a name="footnote4"></a> In Python it would be `struct.pack(">Q", timestamp)`.
-5. <a name="footnote5"></a> Publish-subscribe. In our case we rely on libp2p’s
-   PubSub which provides an efficient way to propagate the data among peers.
-6. <a name="footnote6"></a> Inspired by
-   https://dominictarr.github.io/secret-handshake-paper/shs.pdf
-7. <a name="footnote7"></a> See Signal doc on Double Ratchet
-   https://www.signal.org/docs/specifications/doubleratchet/
-8. <a name="footnote8"></a> WhatsApp lists it on their white paper as a distinct
-   problem (real time, frequent updates, but only the last value is important)
-   https://www.whatsapp.com/security/WhatsApp-Security-Whitepaper.pdf
-
-
-## `bertyprotocol.proto`
-
-{{< highlight protobuf "linenos=table,linenostart=1" >}}
-syntax = "proto3";
-
-package berty.protocol;
-
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
-import "github.com/golang/protobuf/ptypes/timestamp/timestamp.proto";
-
-option go_package = "berty.tech/go/pkg/bertyprotocol";
-
-// ProtocolService is the top-level API to manage an instance of the Berty Protocol.
-// Each Berty Protocol Instance is considered as a Berty device and is associated with a Berty user.
-service ProtocolService {
-  // InstanceExportData exports instance data
-  rpc InstanceExportData (InstanceExportData.Request) returns (InstanceExportData.Reply);
-
-  // InstanceGetConfiguration gets current configuration of this protocol instance
-  rpc InstanceGetConfiguration (InstanceGetConfiguration.Request) returns (InstanceGetConfiguration.Reply);
-
-  //
-  // AccountManager
-  //
-
-  // An account is associated with a Berty user
-
-  // AccountGetConfiguration get current account global configuration (shared between all devices linked to current account)
-  rpc AccountGetConfiguration (AccountGetConfiguration.Request) returns (AccountGetConfiguration.Reply);
-
-  // AccountGetInformation get current account global information (shared between all devices linked to current account)
-  rpc AccountGetInformation (AccountGetInformation.Request) returns (AccountGetInformation.Reply);
-
-  // AccountLinkNewDevice link a new device to this account
-  rpc AccountLinkNewDevice (AccountLinkNewDevice.Request) returns (AccountLinkNewDevice.Reply);
-
-  // AccountDisableIncomingContactRequest disable incoming contact request, under the hood, this will make you undiscoverable for new contact
-  rpc AccountDisableIncomingContactRequest (AccountDisableIncomingContactRequest.Request) returns (AccountDisableIncomingContactRequest.Reply);
-
-  // AccountEnableIncomingContactRequest enable incoming contact request
-  rpc AccountEnableIncomingContactRequest (AccountEnableIncomingContactRequest.Request) returns (AccountEnableIncomingContactRequest.Reply);
-
-  // AccountResetIncomingContactRequestLink invalidate the request link
-  rpc AccountResetIncomingContactRequestLink (AccountResetIncomingContactRequestLink.Request) returns (AccountResetIncomingContactRequestLink.Reply);
-
-  //
-  // Event Manager
-  //
-
-  // Event Stream is a channel on which all the events of the protocol are
-  // published (contact request, new incoming message, etc...).
-
-  // EventSubscribe listen for real time protocol events
-  rpc EventSubscribe (EventSubscribe.Request) returns (stream EventSubscribe.Reply);
-
-  //
-  // ContactRequestManager
-  //
-  // Two accounts can be considered as contacts if a contact request from one has been accepted by the other and secrets
-  // for further communication have been exchanged.
-
-  // ContactRequestAccept accepts the given contact request, the requester signature is included so any of their device
-  // can accept the contact request
-  rpc ContactRequestAccept (ContactRequestAccept.Request) returns (ContactRequestAccept.Reply);
-
-  // ContactRequestDiscard discards the given contact request
-  rpc ContactRequestDiscard (ContactRequestDiscard.Request) returns (ContactRequestDiscard.Reply);
-
-  // ContactRequestListIncoming lists incoming contact request sent to your account
-  rpc ContactRequestListIncoming (ContactRequestListIncoming.Request) returns (stream ContactRequestListIncoming.Reply);
-
-  // ContactRequestListIncoming lists pending contact request sent by your account
-  rpc ContactRequestListOutgoing (ContactRequestListOutgoing.Request) returns (stream ContactRequestListOutgoing.Reply);
-
-  // ContactRequestSend sends a contact request to the given contact
-  rpc ContactRequestSend (ContactRequestSend.Request) returns (ContactRequestSend.Reply);
-
-  //
-  // Contact Manager
-  //
-
-  // ContactGet gets contact's information
-  rpc ContactGet (ContactGet.Request) returns (ContactGet.Reply);
-
-  // ContactList lists contacts of this account
-  rpc ContactList (ContactList.Request) returns (stream ContactList.Reply);
-
-  // ContactList removes the given contact
-  rpc ContactRemove (ContactRemove.Request) returns (ContactRemove.Reply);
-
-  //
-  // Stream Manager
-  //
-
-  // StreamManagerRequestToContact requests a stream to a specific contact
-  rpc StreamManagerRequestToContact (StreamManagerRequestToContact.Request) returns (StreamManagerRequestToContact.Reply);
-
-  // StreamManagerAccept accepts a stream request, and create a stream with the
-  // contact that sent you this request
-  rpc StreamManagerAccept (stream StreamManagerAccept.Request) returns (stream StreamManagerAccept.Reply);
-
-  //
-  // Group Manager
-  //
-  // A group is a common communication channel shared by a set of devices. It can be devices from different accounts. In
-  // the context of the Berty messaging application, groups are used for all conversations between contacts, whether
-  // they include two or more contacts.
-
-  // GroupCreate initiate a group locally
-  rpc GroupCreate (GroupCreate.Request) returns (GroupCreate.Reply);
-
-  // GroupGenerateInviteLink generates an invitation link used to send the invitation to
-  // the other group members
-  rpc GroupGenerateInviteLink (GroupGenerateInviteLink.Request) returns (GroupGenerateInviteLink.Reply);
-
-  // GroupLeave leaves a group
-  rpc GroupLeave (GroupLeave.Request) returns (GroupLeave.Reply);
-
-  // GroupList lists all group for this account
-  rpc GroupList (GroupList.Request) returns (stream GroupList.Reply);
-
-  //
-  // Group Message Manager
-  //
-
-  // GroupMessageCreate creates a new message for the group, and send the invitation to
-  // the other group members.
-  rpc GroupMessageCreate (GroupMessageCreate.Request) returns (GroupMessageCreate.Reply);
-
-  // GroupMessageList lists messages from this group
-  rpc GroupMessageList (GroupMessageList.Request) returns (stream GroupMessageList.Reply);
-
-  // GroupTopicPublish return a stream used to publish volatile updates to other group members
-  // on a specific topic
-  rpc GroupTopicPublish (stream GroupTopicPublish.Request) returns (GroupTopicPublish.Reply);
-
-  // GroupTopicSubscribe subscribes to a topic to receive volatile message from it
-  rpc GroupTopicSubscribe (GroupTopicSubscribe.Request) returns (stream GroupTopicSubscribe.Reply);
-
-  //
-  // Group Invitation Manager
-  //
-  // New members will receive a payload similar to the one received on group init. Existing members will receive the
-  // list of the newly added members and the required secrets to open their messages.
-
-  // GroupInvitationAccept accepts an invation to join a group
-  rpc GroupInvitationAccept (GroupInvitationAccept.Request) returns (GroupInvitationAccept.Reply);
-
-  // GroupInvitationCreate creates an invitation, that can be sent to join this group
-  rpc GroupInvitationCreate (GroupInvitationCreate.Request) returns (GroupInvitationCreate.Reply);
-
-  // GroupInvitationDiscard discards an invtation sent to you to join a group
-  rpc GroupInvitationDiscard (GroupInvitationDiscard.Request) returns (GroupInvitationDiscard.Reply);
-
-  // GroupInvitationList lists pending invitation to this group
-  rpc GroupInvitationList (GroupInvitationList.Request) returns (stream GroupInvitationList.Reply);
-}
-
-//
-// Instance Manager
-//
-
-message InstanceExportData {
-  message Request {}
-  message Reply {
-    bytes exported_data = 1;
-  }
-}
-
-message InstanceGetConfiguration {
-  enum SettingState {
-    Unknown = 0;
-    Enabled = 1;
-    Disabled = 2;
-    Unavailable = 3;
-  }
-  message Request {}
-  message Reply {
-    string peer_id = 1 [(gogoproto.customname) = "PeerID"];
-    repeated string listeners = 2;
-    SettingState ble_enabled = 3;
-    SettingState wifi_p2p_enabled = 4; // MultiPeerConnectivity for Darwin and Nearby for Android
-    SettingState mdns_enabled = 5;
-    SettingState relay_enabled = 6;
-  }
-}
-
-//
-// Account Manager
-//
-
-message AccountGetConfiguration {
-  message Request {}
-  message Reply {
-    bool contact_requestable = 1;
-    bytes default_pinning_service = 2;
-    bytes metadata = 3;
-  }
-}
-
-message AccountGetInformation {
-  message Request {}
-  message Reply {
-    bytes account_pub_key = 1;
-    repeated Device devices = 2;
-  }
-}
-
-message AccountLinkNewDevice {
-  message Request {}
-  message Reply {
-    Invitation invitation = 1;
-  }
-}
-
-message AccountDisableIncomingContactRequest {
-  message Request {}
-  message Reply {}
-}
-
-message AccountEnableIncomingContactRequest {
-  message Request {}
-  message Reply {
-    ContactRequestLink contact_request_link = 1;
-  }
-}
-
-message AccountResetIncomingContactRequestLink {
-  message Request {}
-  message Reply {
-    ContactRequestLink contact_request_link = 1; // Reset rdv_point_seed and rotation_time_point
-  }
-}
-
-//
-// Event Manager
-//
-
-message EventSubscribe {
-  message Request {}
-  message Reply {
-    Type type = 1;
-    bytes event_id = 2 [(gogoproto.customname) = "EventID"];
-
-    MessageEvent message_event = 3;
-    ContactRequestEvent contact_request_event = 4;
-    GroupInvitationEvent group_invitation_event = 5;
-    BroadcastEvent broadcast_event = 6;
-  }
-
-  enum Type {
-    EventUnknown = 0;
-    EventMessage = 1;
-    EventContactRequest = 2;
-    EventGroupInvitation = 3;
-    EventBroadcastAvailable = 4;
-  }
-  message MessageEvent {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    bytes member_id = 2 [(gogoproto.customname) = "MemberID"];
-    bytes payload = 3;
-  }
-
-  message ContactRequestEvent {
-    bytes contact_account_pub_key = 1;
-    bytes metadata = 2;
-  }
-
-  message GroupInvitationEvent {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    bytes inviter_pub_key = 2;
-    bytes metadata = 3;
-  }
-
-  message BroadcastEvent {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    bytes member_id = 2 [(gogoproto.customname) = "MemberID"];
-    bytes topic_id = 3 [(gogoproto.customname) = "TopicID"];
-  }
-}
-
-//
-// ContactRequest Manager
-//
-
-message ContactRequestAccept {
-  message Request {
-    bytes contact_account_pub_key = 1;
-  }
-  message Reply {}
-}
-
-message ContactRequestDiscard {
-  message Request {
-    bytes contact_account_pub_key = 1;
-  }
-  message Reply {}
-}
-
-message ContactRequestListIncoming {
-  message Request {}
-  message Reply { // streamed
-    Contact contact = 1;
-  }
-}
-
-message ContactRequestListOutgoing {
-  message Request {}
-  message Reply { // streamed
-    Contact contact = 1;
-  }
-}
-
-message ContactRequestSend {
-  message Request {
-    ContactRequestLink contact_request_link = 1;
-  }
-  message Reply {}
-}
-
-//
-// Contact Manager
-//
-
-message ContactGet {
-  message Request {
-    bytes contact_account_pub_key = 1;
-  }
-  message Reply {
-    Contact contact = 1;
-  }
-}
-
-message ContactRemove {
-  message Request {
-    bytes contact_account_pub_key = 1;
-  }
-  message Reply {}
-}
-
-message ContactList {
-  message Request {}
-  message Reply { // streamed
-    Contact contact = 1;
-  }
-}
-
-//
-// Stream Manager
-//
-
-message StreamManagerRequestToContact {
-  message Request {}
-  message Reply {}
-}
-
-message StreamManagerAccept {
-  message Request {}
-  message Reply {} // streamed
-}
-
-//
-// Group Manager
-//
-
-message GroupCreate {
-  message Request {
-    repeated bytes contact_account_pub_key = 1; // Invitees
-    bytes pinning_service = 2;
-    bytes metadata = 3;
-  }
-  message Reply {
-    GroupInfo group_info = 1;
-  }
-}
-
-message GroupGenerateInviteLink {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-  }
-  message Reply {
-    Invitation invitation = 1;
-  }
-}
-
-message GroupLeave {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-  }
-  message Reply {}
-}
-
-message GroupList {
-  message Request {}
-  message Reply { // streamed
-    GroupInfo group_info = 1;
-  }
-}
-
-//
-// GroupMessage Manager
-//
-
-message GroupMessageCreate {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    bytes payload = 2;
-  }
-  message Reply {}
-}
-
-message GroupMessageList {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    uint64 from_index = 2;
-    uint64 to_index = 3;
-  }
-  message Reply { // streamed
-    bytes message_id = 1 [(gogoproto.customname) = "MessageID"];
-    bytes member_id = 2 [(gogoproto.customname) = "MemberID"];
-    bytes payload = 3;
-  }
-}
-
-//
-// GroupTopic Manager
-//
-
-message GroupTopicPublish {
-  message Request { // streamed
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    bytes topic_id = 2 [(gogoproto.customname) = "TopicID"];
-    bytes volatile_data = 3;
-  }
-  message Reply {}
-}
-
-message GroupTopicSubscribe {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    bytes topic_id = 2 [(gogoproto.customname) = "TopicID"];
-  }
-  message Reply { // streamed
-    bytes volatile_data = 1;
-  }
-}
-
-//
-// GroupInvitation Manager
-//
-
-message GroupInvitationAccept {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-  }
-  message Reply {}
-}
-
-message GroupInvitationCreate {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-    repeated bytes contact_account_pub_key = 2;
-  }
-  message Reply {}
-}
-
-message GroupInvitationDiscard {
-  message Request {
-    bytes group_id = 1 [(gogoproto.customname) = "GroupID"];
-  }
-  message Reply {}
-}
-
-message GroupInvitationList {
-  message Request {}
-  message Reply { // streamed
-    bytes inviter_account_pub_key = 1;
-    GroupInfo group_info = 2;
-  }
-}
-
-//
-// Common entities
-//
-
-message Device {
-  bytes device_pub_key = 1;
-  bytes parent_device_pub_key = 2; // Equal to account_pub_key for the first device
-  google.protobuf.Timestamp linked_at = 3;
-  bool ble_capable = 4;
-  bool wifi_p2p_capable = 5;
-  bool relay_capable = 6;
-}
-
-message Invitation {
-  bytes inviter_member_pub_key = 1;
-  bytes invitation_priv_key = 2;
-  bytes invitation_pub_key_signature = 3; // Signed by inviter_member_priv_key
-  uint32 group_version = 4;
-  bytes group_id_pub_key = 5;
-  bytes shared_secret = 6;
-}
-
-// Contact is the public version of protocolmodel.Contact and should stay in sync
-message Contact {
-  enum TrustLevel {
-    Unknown = 0;
-    Untrusted = 1;
-    Accepted = 2;
-    Trusted = 3;
-    UltimateTrust = 4;
-  }
-  bytes account_pub_key = 1;
-  bytes one_to_one_group_pub_key = 2;
-  reserved 3;
-  TrustLevel trust_level = 4;
-  bytes metadata = 5;
-  bool blocked = 6;
-  GroupInfo one_to_one_group = 80;
-  reserved 98;
-  reserved 99;
-}
-
-// GroupInfo is the public version of protocolmodel.GroupInfo and should stay in sync
-message GroupInfo { // group clashes with reserved SQL keyword
-  enum GroupAudience {
-    Undefined = 0;
-    OneToOne = 1;
-    Group = 2;
-    Self = 3;
-  }
-  bytes group_pub_key = 1;
-  reserved 2;
-  bytes metadata = 3;
-  GroupAudience audience = 4;
-  uint32 version = 5;
-  reserved 6;
-  reserved 7;
-  reserved 8;
-  bytes inviter_contact_pub_key = 9;
-  reserved 10;
-  reserved 11;
-  reserved 12;
-  reserved 13;
-  repeated GroupMember members = 80;
-  Contact inviter = 81;
-  reserved 98;
-  reserved 99;
-}
-
-// GroupMember is the public version of protocolmodel.GroupMember and should stay in sync
-message GroupMember {
-  bytes group_member_pub_key = 1;
-  bytes group_pub_key = 2;
-  bytes inviter_pub_key = 3; // Will be null for first member of the group
-  bytes contact_account_pub_key = 4;
-  reserved 5;
-  bytes metadata = 6;
-  reserved 80;
-  GroupInfo group_info = 81;
-  GroupMember inviter = 82;
-  Contact contact = 83;
-  reserved 98;
-  reserved 99;
-}
-
-message ContactRequestLink {
-  bytes rendezvous_point_seed = 1;
-  bytes contact_account_pub_key = 2;
-  bytes metadata = 3;
-}
-{{< / highlight >}}
