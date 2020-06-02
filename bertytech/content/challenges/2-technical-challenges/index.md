@@ -28,9 +28,9 @@ private: true
 
 #### How Berty tackles it
 
-* `Gomobile-IPFS`: a repo created by Berty Technologies that aims to provide packages for Android, iOS and React Native that allow one to run and use an IPFS node on mobile devices. 
-* `Berty-Protocol`: we are currently designing a protocol that can be used by everyone in their projects to create secure P2P applications that run on both desktop and mobile.
-* `Berty-Chat`: a concrete example of a simple app that is built on top of Berty Protocol, designed with non-tech people in mind, trying to get P2P on mobile to the mass user.
+* `Gomobile-IPFS`: a repo created by Berty Technologies that aims to provide packages for Android, iOS and React Native that allow one to run and use an IPFS node on mobile devices.
+* `Berty Protocol`: we are currently designing a protocol that can be used by everyone in their projects to create secure P2P applications that run on both desktop and mobile.
+* `Berty Messenger`: a concrete example of a simple app that is built on top of Berty Protocol, designed with non-tech people in mind, trying to get P2P on mobile to the mass user.
 
 ### Preserving Privacy and Securing Communication in a Distributed Environment
 
@@ -47,7 +47,7 @@ Metadata are required to operate a messaging system. However, they could be an i
 * `Signal.org`: the gold standard for any centralized environment. Berty uses many of its cryptographic algorithms/protcols, having them adapted for distributed environment. They work hard to limit their metadata footprint as much as possible, but their servers are still hosted on Google Cloud and are automatically subject to the Cloud Act.
 * `Messaging Layer Security`: MLS offers a more scalable alternative to Signal Protocol. This solution still requires a central server in order to work.
 * `Olvid.io`: Olvid claims to be the only messaging service that also encrypts metadata. They are centralized and host their servers on AWS, which also belongs to the Cloud Act.
-* `status.im`: Status designed Whisper to overcome some of the above shortcomings AND be configurable to the end user, who ought to be able to specify what trade-offs they are willing to make between battery life and mobile data charges, privacy and possible metadata leakage. 
+* `status.im`: Status designed Whisper to overcome some of the above shortcomings AND be configurable to the end user, who ought to be able to specify what trade-offs they are willing to make between battery life and mobile data charges, privacy and possible metadata leakage.
 
 #### How Berty tackles it
 
@@ -59,13 +59,13 @@ Metadata are required to operate a messaging system. However, they could be an i
     * Rotating rendezvous points and peerIDs
     * Metadata encryption (as much as possible)
     * Noise generation
-    
+
 ### Offline communication between different types of devices
 
 #### Constraints
 To achieve off-grid communication (Berty is an offline-first messaging app), there are two types of technology we consider using:
 - Bluetooth Low Energy is an energy-efficient technology, but it offers only limited performance (just enough to send text). It is difficult to implement, especially with Android APIs. It has, however, the advantage of working between different platforms (Darwin (iOS, macOS), Android and others).
-- Apple Multipeer Connectivity (AirDrop) and Android Nearby allow peers to set up a direct WiFi connection using BLE, which offers much greater performance than BLE alone. It is also a lot easier to implement a driver using these technologies. However, they are platform-dependent and only operate between devices of the same type: Android-to-Android and Darwin-to-Darwin. 
+- Apple Multipeer Connectivity (AirDrop) and Android Nearby allow peers to set up a direct WiFi connection using BLE, which offers much greater performance than BLE alone. It is also a lot easier to implement a driver using these technologies. However, they are platform-dependent and only operate between devices of the same type: Android-to-Android and Darwin-to-Darwin.
 
 #### How Berty tackles it
 

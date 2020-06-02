@@ -171,7 +171,7 @@ After a few days of thinking about the situation, we finally decided to drop our
 - No more custom go-libp2p network! We will work on [gomobile-ipfs](https://github.com/ipfs-shipyard/gomobile-ipfs) a generic library to run a complete IPFS node on mobile. In this way, the community will benefit from our work and we will be able to benefit from their contributions in order to optimize and adapt this library to the specific needs of mobile platforms.
 - We will implement an open-source golang port of [Orbit-DB](https://orbitdb.org/) named [go-orbit-db](https://github.com/berty/go-orbit-db). This distributed database over IPFS will be used it to sync, store and order our messages.
 - We will totally redesign the core of the app, document it and make it generic as well. This layer will be built on top of go-orbit-db and will take care of all the cryptographic operations. We will package everything up in a convenient SDK named [Berty Protocol](https://github.com/berty/berty) and provide it to developers wishing to develop secure distributed applications.
-- And on top of that, obviously, we will implement Berty Chat using the Berty Protocol.
+- And on top of that, obviously, we will implement Berty Messenger using the Berty Protocol.
 
 ![Berty Stack](rkyZNGsP8.png)
 
