@@ -51,11 +51,11 @@ h6 {
   margin-bottom:5px;
 }
 
-textarea:hover, 
-input:hover, 
-textarea:active, 
-input:active, 
-textarea:focus, 
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
 input:focus,
 button:focus,
 button:active,
@@ -83,9 +83,9 @@ amp-img {
 .c-pink {color:$color-pink;}
 .c-yellow {color:$color-yellow;}
 .c-green {color:$color-green;}
-.c-github {color:$color-github;} 
-.c-twitter {color:$color-twitter;} 
-.c-discord {color:$color-discord;} 
+.c-github {color:$color-github;}
+.c-twitter {color:$color-twitter;}
+.c-discord {color:$color-discord;}
 .c-grey {color:#898ba3;}
 .c-green-alt {color:#2AC892;}
 /* COLORS */
@@ -201,14 +201,14 @@ amp-img {
   height:600px;
   background-repeat:no-repeat;
   background-size:100%;
-  opacity:0.5; 
+  opacity:0.5;
 }
 .bg-help:before {
   background-image:url(../img/bg_help.svg);
   transform: rotate(10deg);
 }
 .bg-about:before {
-  background-image:url(../img/bg_about.svg); 
+  background-image:url(../img/bg_about.svg);
   transform: rotate(5deg);
 }
 .bg-jobs:before {
@@ -768,8 +768,8 @@ header.bg-image {
     list-style:none;
     padding-left: 25px;
     li::before{
-        content: "\2022";  
-        color: $color-blue; 
+        content: "\2022";
+        color: $color-blue;
         font-weight: bold;
         display: inline-block;
         width: 1em;
@@ -1159,7 +1159,7 @@ section.section-features-detail img {
     .block.block-doc-content {
       margin-top:-70px;
       padding:50px;
-      border-radius:$border-radius;  
+      border-radius:$border-radius;
       word-wrap: break-word;
       position:relative;
       height:auto;
@@ -1212,7 +1212,7 @@ section.section-features-detail img {
         padding:10px 20px 10px 20px;
         border-radius: 3px 5px 5px 3px;
         p {
-          margin:0;
+          margin:0 0 10px;
         }
         i {
           margin-right:10px;
@@ -1657,7 +1657,7 @@ a.block-value {
   &.block {
      .block-wi-img {
       margin-top:0;
-     } 
+     }
   }
 }
 .block-features .block-wi {
@@ -1724,18 +1724,18 @@ a.block-value {
     }
   }
   &.block-co-blue .block-co-img:before {
-    background-image:url(../img/blob_4.svg); 
+    background-image:url(../img/blob_4.svg);
   }
   &.block-co-pink .block-co-img:before {
-    background-image:url(../img/blob_2.svg); 
+    background-image:url(../img/blob_2.svg);
   }
   &.block-co-yellow .block-co-img:before {
-    background-image:url(../img/blob_3.svg); 
+    background-image:url(../img/blob_3.svg);
   }
   &:hover {
     .block-co-img {
       height:180%;
-      width:180%; 
+      width:180%;
     }
     .block-co-img:before{
       opacity:0.3;
@@ -1795,7 +1795,7 @@ a.block-value {
   }
   &.pink {
     background-color:$color-pink-light;
-    color:$color-pink;  
+    color:$color-pink;
   }
   &.yellow {
     background-color:$color-yellow-light;
@@ -1803,7 +1803,7 @@ a.block-value {
   }
   &.green {
     background-color:#CCF3EB;
-    color:#2ac892;  
+    color:#2ac892;
   }
 }
 /* BLOCK INFO */
@@ -1922,7 +1922,7 @@ a.block-value {
       }
     }
   }
-  &.bg-grid .dl-img {  
+  &.bg-grid .dl-img {
     background-image: url("../img/bg_grid.png");
     background-color: rgba(56, 59, 98, 0.06);
     border-radius:11px;
@@ -2041,7 +2041,7 @@ a.block-value {
     width:200px;
     margin: auto;
   }
-  .block-wp-center  
+  .block-wp-center
   .block-wp-left {
     margin-right:-40px;
   }
@@ -2351,7 +2351,7 @@ a.block-action {
   img {
     max-width:100%;
     padding:25px 25px 10px 25px;
-  } 
+  }
 }
 /* BLOCK FAQ */
 
@@ -2435,8 +2435,8 @@ a.block-action {
     list-style:none;
     padding-left: 35px;
     li::before{
-        content: "\2022";  
-        color: $color-blue; 
+        content: "\2022";
+        color: $color-blue;
         font-weight: bold;
         display: inline-block;
         width: 1em;
@@ -2784,13 +2784,13 @@ footer {
       border-radius:8px 8px 0 0;
     }
     .right {
-      
+
       border-radius:0 0 8px 8px;
     }
   }
 }
 @media (max-width:768px){
-  #mc_embed_signup .button {  
+  #mc_embed_signup .button {
     width:auto;
   }
 }
@@ -2914,7 +2914,7 @@ footer {
       margin-bottom:60px;
     }
   }
-  .page-fake header.header-rounded.large {  
+  .page-fake header.header-rounded.large {
     min-height:0;
     h1 {
       margin-bottom:45px;
@@ -3304,7 +3304,7 @@ footer {
         margin-bottom:1.5rem;
       }
     }
-  }  
+  }
   a.doc-card  {
     margin:10px 0;
     padding:25px;
@@ -3640,4 +3640,3 @@ footer {
 .md-image.contain amp-img img {
   object-fit: contain;
 }
-

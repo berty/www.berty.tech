@@ -15,7 +15,7 @@ aliases:
 
 ## Introduction
 
-This document provides a technical description of the Berty Protocol.  
+This document provides a technical description of the Berty Protocol.
 The Berty Protocol provides secure communication between devices owned by the
 same account, communication between contacts in one-to-one conversations,
 as well as communication between several users in multi-member groups. This
@@ -24,20 +24,21 @@ asynchronous way, both with or without internet access using IPFS and direct
 transports such as BLE. It will also describe how the Berty Protocol provides
 end-to-end encryption and perfect forward secrecy for all the exchanged messages.
 
-:::warning
-The implementation of the protocol is still in progress. Some features described
-in this document are not implemented yet.
+> :warning: Warning
+>
+> The implementation of the protocol is still in progress. Some features described
+> in this document are not implemented yet.
+>
+> This protocol has still not been thoroughly audited and some points are bound to
+> evolve with time and feedback.
+>
+> Nevertheless, we are confident enough about the progression of the protocol
+> design to say that the majority of these specifications should remain the same.
+>
+> If a security expert reads this document and wishes to provide us with some
+> feedback, we look forward to reading it. Please contact us using one of the
+> means listed on this page: [berty.tech/community#-how-to-contact-us](https://berty.tech/community#-how-to-contact-us)
 
-This protocol has still not been thoroughly audited and some points are bound to
-evolve with time and feedback.
-
-Nevertheless, we are confident enough about the progression of the protocol
-design to say that the majority of these specifications should remain the same.
-
-If a security expert reads this document and wishes to provide us with some
-feedback, we look forward to reading it. Please contact us using one of the
-means listed on this page: [berty.tech/community#-how-to-contact-us](https://berty.tech/community#-how-to-contact-us)
-:::
 
 ## Protocol Stack
 
@@ -92,19 +93,19 @@ with certainty the order in which operations occurred within a group of peers, e
 * **Authority**: there is no central authority to arbitrate operations and any
 resulting conflicts or to manage user identity and permissions.
 
-:::warning
-For the moment, IPFS is not privacy-focused and since it is a peer-to-peer
-network, any peer can for instance resolve a peerID to its associated public IP
-address. On the protocol layer, we can only mitigate this problem by rotating
-the peerID of the user regularly, rotating rendezvous points that peers use to
-meet and synchronize with each other and by making it difficult to establish a
-relationship between the data shared by users.
-
-In the near future, we plan to invest some time to see to what extent, and with
-what constraints and implications, it would be possible to add an optional mode
-to the protocol in which connections are anonymized through networks like I2P,
-Tor or equivalent.
-:::
+> :warning: Warning
+>
+> For the moment, IPFS is not privacy-focused and since it is a peer-to-peer
+> network, any peer can for instance resolve a peerID to its associated public IP
+> address. On the protocol layer, we can only mitigate this problem by rotating
+> the peerID of the user regularly, rotating rendezvous points that peers use to
+> meet and synchronize with each other and by making it difficult to establish a
+> relationship between the data shared by users.
+>
+> In the near future, we plan to invest some time to see to what extent, and with
+> what constraints and implications, it would be possible to add an optional mode
+> to the protocol in which connections are anonymized through networks like I2P,
+> Tor or equivalent.
 
 ### Rendezvous Point
 
@@ -126,7 +127,7 @@ values:
 The generation of the time-based token follows the core principles of the
 [RFC 6238](https://tools.ietf.org/html/rfc6238).
 
-```go=1
+```go
 // golang
 func rendezvousPoint(id, seed []byte, date time.Time) []byte {
     buf := make([]byte, 32)
@@ -144,12 +145,12 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
 
 There are two types of rendezvous points in the Berty Protocol:
 
-* [**Public rendezvous point:**](#Contact-Request) This rendezvous point is
+* [**Public rendezvous point:**](#contact-request) This rendezvous point is
 used by an account to receive contact requests. The resource ID used here is
 the Account ID and the seed can be renewed at will by the user, so it is
 possible to revoke the ability to send contact requests to users having only
 the previous seed.
-* [**Group rendezvous point:**](#Invitation) This rendezvous point is used to
+* [**Group rendezvous point:**](#invitation) This rendezvous point is used to
 exchange messages within a group. The resource ID used here is the Group ID,
 and the seed cannot be changed.
 
@@ -165,7 +166,7 @@ is sending its rendezvous point list to the peers it connects to via a direct
 transport. The advantage is that it works in this particular case with almost
 instantaneous results, but the disadvantage is that it raises privacy
 concerns. We are still working on this process to improve this point.
-More info in [Specificities of direct transport](#Specificities-of-direct-transport)
+More info in [Specificities of direct transport](#specificities-of-direct-transport)
 section.
 
 ### Direct Transport
@@ -195,7 +196,7 @@ example, if Alice and Bob are in a chat group with several other persons and
 they both lose internet connection by taking the subway, they can still
 communicate with each other in this same conversation using BLE, creating a
 parallel version of this conversation. When they go back online, the BLE
-version and the Internet version will have to merge.  
+version and the Internet version will have to merge.
 It is therefore necessary to use an algorithm that ensures that all peers,
 once synchronized, have exactly the same sorted list of messages.
 
@@ -212,7 +213,7 @@ appear when an online and an offline version of a conversation are
 synchronized: some messages are linked to the same parent and the linked list
 becomes a [Directed Acyclic Graphs](https://en.wikipedia.org/wiki/Directed_acyclic_graph).
 
-TODO: Add image ![DAG-offgrid](https://hackmd.io/_uploads/BkFkKBDOU.png)
+![DAG-offgrid](./BkFkKBDOU.png)
 
 This causes the creation of several parallel branches that will need to be
 eventually merged. OrbitDB achieves this by using a [Lamport Clock](https://en.wikipedia.org/wiki/Lamport_timestamp):
@@ -223,7 +224,7 @@ A Lamport Clock is a struct that consists of two fields: an identity public
 key and a counter that is incremented for each message posted by the
 associated user/identity.
 
-```go=1
+```go
 // golang
 type lamportClock struct {
     time int
@@ -236,7 +237,7 @@ between the counter values and if there is none, it will check the
 lexicographic distance between the identity public keys, knowing that a given
 identity can't post two messages with the same counter value.
 
-```go=1
+```go
 // golang
 func compareClock(a, b lamportClock) int {
     dist := a.time - b.time
@@ -256,7 +257,7 @@ func compareClock(a, b lamportClock) int {
 In order to use the Berty Protocol, a user will have to create an account. No
 personal data is required for the Account Creation. Please note that in the
 whole Berty Protocol, all key pairs will be X25519 for encryption and Ed25519
-for signature. See the [Cryptography](#Cryptography) section for more details
+for signature. See the [Cryptography](#cryptography) section for more details
 about this choice.
 
 **Account creation steps:**
@@ -264,13 +265,13 @@ about this choice.
 1. Generate Account ID Key Pair. This operation will not be repeated. This key
 pair is the identity of the account, hence it is not possible to change it.
 2. Generate Alias Key Pair. Operation will not be repeated. More details on
-Alias Key Pair in [*Alias Identity*](#Alias-Identity).
+Alias Key Pair in [*Alias Identity*](#alias-identity).
 3. Generate Device ID Key Pair on device used for account creation. This
 operation will be repeated on every new device.
-See [*Linking Devices*](#Linking-Devices) for more information. This key pair
+See [*Linking Devices*](#linking-devices) for more information. This key pair
 is the identity of the device.
 4. Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to
-receive a Contact Request. See [*Adding Contacts*](#Adding-Contacts) for more
+receive a Contact Request. See [*Adding Contacts*](#adding-contacts) for more
 information. This operation can be repeated anytime.
 
 Since there is no central directory, it is not required to have access to the
@@ -298,7 +299,7 @@ example, in the form of an URL or a QRCode.
 A's peerID, establish a connection with A and then send to A a linking request
 containing B's Device ID, initiating the following handshake:
 
-TODO: Add image ![handshake-sequence](https://hackmd.io/_uploads/SkWZnyPOU.png)
+![handshake-sequence](./SkWZnyPOU.png)
 
 #### Challenges
 
@@ -326,7 +327,7 @@ script that could automatically check that the fingerprints match.
 We recommend to developers implementing an application using the Berty
 Protocol to follow this state diagram to choose a challenge on Device A:
 
-TODO: Add image ![challenge-choice](https://hackmd.io/_uploads/SJ6dgzaiU.png)
+![challenge-choice](./SJ6dgzaiU.png)
 
 #### Limitations
 
@@ -341,12 +342,12 @@ devices need to be online at the same time to be synchronized. However, it is
 possible to palliate this problem using replication devices, whose sole
 purpose is to provide high availability for content. Those devices are not
 able to decrypt messages and all they can do is verify their authenticity
-(see [*High Availability*](#High-Availability) for more information).
+(see [*High Availability*](#high-availability) for more information).
 
 ### Adding Contacts
 
 If an Account A wants to start a one-to-one conversation with an Account B, it
-will have to add B as a contact first.  
+will have to add B as a contact first.
 A will have to send a contact request to B that B will have to accept before
 the conversation can begin
 
@@ -354,7 +355,7 @@ the conversation can begin
 
 When an Account A (the Requester) wants to add an Account B (the Responder) to
 its contacts, it needs to know the Responder's Public rendezvous point. This
-[rendezvous point](#Rendezvous-Points) is derived from the RDV Seed and the
+[rendezvous point](#rendezvous-points) is derived from the RDV Seed and the
 Account ID. Thus the Responder first needs to share his RDV Seed and his
 Account ID with the Requester, so that the latter can compute the RDV Point.
 This information can be sent by different means: an URL sent by message, a
@@ -375,7 +376,7 @@ initiate the following Contact Request handshake.
 Here is the handshake which occurs when the Requester sends a Contact Request
 to the Responder:
 
-TODO: Add image ![handshake-sequence](https://hackmd.io/_uploads/Hy-d6h6wL.png)
+![handshake-sequence](./Hy-d6h6wL.png)
 
 This handshake is widely inspired by [Scuttlebutt's Capability-based Handshake](https://scuttlebot.io/more/protocols/shs.pdf).
 
@@ -398,18 +399,18 @@ The Requester sends its ephemeral public key $a_p$ to the Responder. Ephemeral
 keys are only used for one handshake and then discarded. They guarantee the
 freshness of the messages to avoid replay attacks.
 
-TODO: Add image ![requester-hello](https://hackmd.io/_uploads/HkAFBapv8.png)
+![requester-hello](./HkAFBapv8.png)
 
 ##### 2. Responder Hello
 
 The Responder sends its ephemeral public key $b_p$ to the Requester.
 
-TODO: Add image ![responder-hello-1](https://hackmd.io/_uploads/rkYDSaaDI.png)
+![responder-hello-1](./rkYDSaaDI.png)
 
 Now both the Requester and the Responder are able to compute two shared
 secrets denoted $a.b$ and $a.B$:
 
-TODO: Add image ![responder-hello-2](https://hackmd.io/_uploads/ryrmDTpw8.png)
+![responder-hello-2](./ryrmDTpw8.png)
 
 Secrets are derived using the X25519 protocol. Since a man-in-the-middle could
 have intercepted the ephemeral keys and replaced them, we need cannot only
@@ -422,7 +423,7 @@ their ID public key to authenticate themselves. The secret box is sealed with
 $a.b$ and $a.B$, thus in this step the Requester also proves that they know
 the Responder's ID.
 
-TODO: Add image ![requester-auth-1](https://hackmd.io/_uploads/BymgCaaDI.png)
+![requester-auth-1](./BymgCaaDI.png)
 
 From this step, a man-in-the-middle is no longer able to intercept the
 exchanges because they are not able to compute $a.B$, regardless of what they
@@ -431,7 +432,7 @@ have done in the previous steps.
 Now both the Requester and the Responder are able to compute another shared
 secret denoted $A.B$:
 
-TODO: Add image ![requester-auth-2](https://hackmd.io/_uploads/BJWLZR6vU.png)
+![requester-auth-2](./BJWLZR6vU.png)
 
 ##### 4. Responder Accept
 
@@ -439,7 +440,7 @@ The Responder sends a secret box containing the signature of $a.b$. The secret
 box is sealed with $a.b$ and the new secret $A.B$, which proves that the
 Responder has effectively received and decrypted the previous message.
 
-TODO: Add image ![responder-accept](https://hackmd.io/_uploads/ry6qXApPU.png)
+![responder-accept](./ry6qXApPU.png)
 
 ##### 5. Requester Acknowledge
 
@@ -448,7 +449,7 @@ while verifying the contents of the `Responder Accept`, the Requester sends an
 acknowledgement. After this step, the handshake is considered valid by both
 parties.
 
-TODO: Add image ![requester-ack](https://hackmd.io/_uploads/Hks1bEvu8.png)
+![requester-ack](./Hks1bEvu8.png)
 
 ##### Security
 
@@ -496,11 +497,11 @@ A Group is divided into two logs: a message log and a metadata log.
 of the group can download only a part of the message log if they want to (for
 example only the 1000 last messages). Besides, members cannot decrypt messages
 sent before their arrival due to the Symmetric Ratchet Protocol
-(see [*Encryption*](#Encryption) for more information).
+(see [*Encryption*](#encryption) for more information).
 * **Metadata log:** Contains all the metadata of the Group. Since it contains
 essential information, members of the group shall download the whole metadata
 log. Secrets are exchanged on this log.
-[Arrivals of new members](#Joining-a-Group) are also announced on this log, so
+[Arrivals of new members](#joining-a-group) are also announced on this log, so
 if a new member does not download the whole metadata log they will not know
 the full list of members, thus they will not be able to exchange secrets with
 them and therefore, they will not be able to decrypt their messages.
@@ -535,7 +536,7 @@ Account, it joins the Account Group. The keys and secrets of the Account Group
 are randomly generated at the creation of the account in the same way as in
 Multi-Member Groups.
 
-TODO: Add image ![account-group](https://hackmd.io/_uploads/SklLFmD_I.png)
+![account-group](./SklLFmD_I.png)
 
 #### Contact Group
 
@@ -544,7 +545,7 @@ Contacts. When an Account adds another Account as a contact, the Contact Group
 is created. The Group Secret, Group ID and Attachment Key are generated by the
 sender of the Contact Request using X25519 key agreement protocol.
 
-TODO: Add image ![contact-group](https://hackmd.io/_uploads/H1jJ6fvdI.png)
+![contact-group](./H1jJ6fvdI.png)
 
 If the secrets were generated the same way as in a Multi-Member Group and
 Account-Group (i.e. randomly), the lack of synchronization between devices
@@ -571,15 +572,15 @@ ID, specific to this Group (derived from the Group ID and some secret
 accounts). Similarly their devices will use a Member Device ID (randomly
 generated). Hence users knowing each other’s Account ID (namely contacts) will
 not be able to recognize each other in Multi-Member Groups, unless they want
-to (see [Alias Identity](#Alias-Identity)).
+to (see [Alias Identity](#alias-identity)).
 
-TODO: Add image ![multi-member-group](https://hackmd.io/_uploads/HyEDRMvO8.png)
+![multi-member-group](./HyEDRMvO8.png)
 
 Keys and secrets of the multi-member group are randomly generated at the
 creation of the group by the group creator. Once the secrets have been
 generated, the group creator posts an Init Member Entry on the Metadata Log:
 
-TODO: Add image ![init-member-entry](https://hackmd.io/_uploads/rkI4GWD_8.png)
+![init-member-entry](./rkI4GWD_8.png)
 
 As shown on the schema above, the Init Member Entry consists of a secret box
 sealed with the Group Secret ($G_S$) containing the following elements:
@@ -612,7 +613,7 @@ Alias Entry, composed of an Alias Resolver and an Alias Proof:
 * **Alias Resolver:** an HMAC of the Alias public Key and the Group ID.
 * **Alias Proof:** the signature of the Alias Resolver by the Alias private key.
 
-TODO: Add image![alias-identity](https://hackmd.io/_uploads/rJP2m-vO8.png)
+TODO: Add image![alias-identity](./rJP2m-vO8.png)
 
 The Alias Key Pair is generated at the creation of the Account and the Alias
 Public Key is shared with Contacts once the contact request has been accepted.
@@ -638,17 +639,17 @@ from their Chain Key using [HKDF](https://tools.ietf.org/html/rfc5869).
 The HKDF also updates the Chain Key after each derivation. The Message Key is
 then used to encrypt the message and will not be reused to encrypt other messages.
 
-TODO: Add image ![symmetric-ratchet](https://hackmd.io/_uploads/BJAQwQP_I.png)
+![symmetric-ratchet](./BJAQwQP_I.png)
 
 Each member's device within a group has a different Chain Key. The Group ID is
 included in the parameters of the HKDF to make the derived keys
 [context-specific](https://tools.ietf.org/html/rfc5869#section-3.2). At the
-beginning of the conversation members [share their device's Chain Key](#New-member-arrival)
+beginning of the conversation members [share their device's Chain Key](#new-member-arrival)
 with the other participants. To decrypt messages sent by other participants,
 they have to follow the same process and derive the Message Key from the Chain
 Key of the sender with the HKDF for every message they receive.
 
-```go=1
+```go
 // golang
 func deriveNextKeys(currChainKey [32]byte, salt [64]byte, groupID []byte)
    (nextChainKey, nextMsgKey [32]byte) {
@@ -678,7 +679,7 @@ an invitation.
 
 An invitation is composed of the Group ID, the Group Secret, the Group Secret
 Sig and the Attachment Key. An invitation can thus be created by any member of
-the Group. With the invitation, a Berty user can compute the [Rendezvous Point](#Rendezvous-Points)
+the Group. With the invitation, a Berty user can compute the [Rendezvous Point](#rendezvous-points)
 of the Group, which is derived from the Group ID.
 
 Once the RDV Point has been computed, the user is able to download the
@@ -692,7 +693,7 @@ Once a user has received an invitation to join a Multi-Member Group and has
 downloaded the metadata log, they have to announce their arrival. To do so,
 they post a Member Entry for each of their devices on the metadata log:
 
-TODO: Add image ![new-member-entry-1](https://hackmd.io/_uploads/SkXjmJRvL.png)
+![new-member-entry-1](./SkXjmJRvL.png)
 
 As shown on the schema above, a Member Entry consists of a secret box sealed
 with the Group Secret ($G_S$) containing the following elements:
@@ -706,7 +707,7 @@ Now that the new member has announced their arrival, they need to exchange
 their chain key with the other members. To do so, for each of their devices
 they post a Secret Entry on the metadata log for each member already in the group:
 
-TODO: Add image ![new-member-entry-2](https://hackmd.io/_uploads/Hkn4kg0v8.png)
+![new-member-entry-2](./Hkn4kg0v8.png)
 
 A Secret Entry consists of a secret box sealed with the Group Secret ($G_S$)
 containing the following elements:
@@ -728,12 +729,12 @@ current chain key of every member of the group.
 Now that every member of the group has the chain key of the new member and the
 new member has the chain key of every member of the group, everyone is able to
 send and receive messages. To do so, they have to first derive a Message Key
-from their Chain Key following the [symmetric ratchet protocol](#Encryption).
+from their Chain Key following the [symmetric ratchet protocol](#encryption).
 
 A Member who wants to send messages to the group has to post a Message Entry
 on the Message Log:
 
-TODO: Add image ![message](https://hackmd.io/_uploads/HJ9wKg0PL.png)
+![message](./HJ9wKg0PL.png)
 
 A Secret Entry consists of a secret box sealed with the Group Secret ($G_S$)
 containing the following elements:
@@ -749,7 +750,7 @@ decrypt it using the sender chain key. First they need to rotate the sender's
 chain key until they reach the message counter. Then they need to use the
 message key to decrypt the message.
 
-TODO: Add image ![message-sym-ratchet](https://hackmd.io/_uploads/B1onw7wdI.png)
+![message-sym-ratchet](./B1onw7wdI.png)
 
 Once the message key has been used, it is discarded because it can decrypt
 only one message.
@@ -843,7 +844,7 @@ to the groups, and are thus unable to decrypt the messages.
 
 ### Comparison
 
-TODO: Add image ![replication-comparison](https://hackmd.io/_uploads/B1qIgVw_8.png)
+![replication-comparison](./B1qIgVw_8.png)
 
 ## Implementation Details
 
@@ -867,12 +868,12 @@ communication protocol since both devices need to be connected to each other
 in order to exchange messages. This aside, the Berty Protocol works exactly
 the same way.
 
-:::danger
-WARNING: If Alice sends all her RDV Points to Bob, he could make deductions on
-her true identity in Multi-Member Groups. Bob will indeed know all the Groups
-to which he and Alice belong and may be able to link different Member IDs in
-different Groups to Alice.
-:::
+> :warning: Warning
+>
+> If Alice sends all her RDV Points to Bob, he could make deductions on
+> her true identity in Multi-Member Groups. Bob will indeed know all the Groups
+> to which he and Alice belong and may be able to link different Member IDs in
+> different Groups to Alice.
 
 ### Cryptography
 
@@ -893,17 +894,16 @@ CPU consumption and thus a longer battery life on mobile devices.
 Most of the crypto libs used in the Berty Protocol are packages included in
 the standard Go library:
 
-[crypto/sha256](https://pkg.go.dev/crypto/sha256)
-[crypto/rand](https://pkg.go.dev/crypto/rand)
-[x/crypto/nacl/box](https://pkg.go.dev/golang.org/x/crypto/nacl/box)
-[x/crypto/nacl/secretbox](https://pkg.go.dev/golang.org/x/crypto/nacl/secretbox)
-[x/crypto/hkdf](https://pkg.go.dev/golang.org/x/crypto/hkdf)
-[x/crypto/ed25519](https://pkg.go.dev/golang.org/x/crypto/ed25519)
+* [crypto/sha256](https://pkg.go.dev/crypto/sha256)
+* [crypto/rand](https://pkg.go.dev/crypto/rand)
+* [x/crypto/nacl/box](https://pkg.go.dev/golang.org/x/crypto/nacl/box)
+* [x/crypto/nacl/secretbox](https://pkg.go.dev/golang.org/x/crypto/nacl/secretbox)
+* [x/crypto/hkdf](https://pkg.go.dev/golang.org/x/crypto/hkdf)
+* [x/crypto/ed25519](https://pkg.go.dev/golang.org/x/crypto/ed25519)
 
 The only non-standard packages used in the Berty Protocol are the following
 two, although they have been written by experts are widely reviewed by the
 community:
 
-[libp2p/go-libp2p-core/crypto](https://pkg.go.dev/github.com/libp2p/go-libp2p-core/crypto)
-[agl/ed25519/extra25519](https://pkg.go.dev/github.com/agl/ed25519/extra25519)
-
+* [libp2p/go-libp2p-core/crypto](https://pkg.go.dev/github.com/libp2p/go-libp2p-core/crypto)
+* [agl/ed25519/extra25519](https://pkg.go.dev/github.com/agl/ed25519/extra25519)
