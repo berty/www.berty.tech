@@ -1,6 +1,9 @@
 {{ $is_remote := hasPrefix .Destination "http" }}
 {{ $resizable := slice "jpg" "jpeg" "png" }}
 
+<!-- Remove relative prefixed if defined -->
+{{ $destination := strings.TrimLeft "./" .Destination }}
+
 {{ $layout := "" }}
 {{ $width := "" }}
 {{ $height := "" }}
@@ -10,9 +13,9 @@
   {{ $layout = "fill" }}
   {{ $width = "1000" }}
   {{ $height = "500" }}
-  {{ $url = .Destination }}
+  {{ $url = $destination }}
 {{ else }}
-  {{ $image := (.Page.Resources.GetMatch .Destination) }}
+  {{ $image := (.Page.Resources.GetMatch $destination) }}
   {{ if ne $image nil }}
     {{ $layout = "intrinsic" }}
     {{ if in $resizable $image.MediaType.SubType }}
