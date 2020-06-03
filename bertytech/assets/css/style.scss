@@ -3640,3 +3640,11 @@ footer {
 .md-image.contain amp-img img {
   object-fit: contain;
 }
+
+.highlight > pre {
+  padding: 30px;
+
+  @media (max-width:768px){
+    padding: 15px;
+  }
+}
