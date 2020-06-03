@@ -128,19 +128,20 @@ The generation of the time-based token follows the core principles of the
 [RFC 6238](https://tools.ietf.org/html/rfc6238).
 
 ```go
-// golang
-func rendezvousPoint(id, seed []byte, date time.Time) []byte {
-    buf := make([]byte, 32)
-    mac := hmac.New(sha256.New, seed)
-    binary.BigEndian.PutUint64(buf, uint64(date.Unix()))
+    // golang
 
-    mac.Write(buf)
-    sum := mac.Sum(nil)
+    func rendezvousPoint(id, seed []byte, date time.Time) []byte {
+        buf := make([]byte, 32)
+        mac := hmac.New(sha256.New, seed)
+        binary.BigEndian.PutUint64(buf, uint64(date.Unix()))
 
-    rendezvousPoint := sha256.Sum256(append(id, sum...))
+        mac.Write(buf)
+        sum := mac.Sum(nil)
 
-    return rendezvousPoint[:]
-}
+        rendezvousPoint := sha256.Sum256(append(id, sum...))
+
+        return rendezvousPoint[:]
+    }
 ```
 
 There are two types of rendezvous points in the Berty Protocol:
@@ -225,11 +226,12 @@ key and a counter that is incremented for each message posted by the
 associated user/identity.
 
 ```go
-// golang
-type lamportClock struct {
-    time int
-    id   crypto.PublicKey
-}
+    // golang
+
+    type lamportClock struct {
+        time int
+        id   crypto.PublicKey
+    }
 ```
 
 The comparison function is very simple, it will first check the distance
@@ -238,16 +240,17 @@ lexicographic distance between the identity public keys, knowing that a given
 identity can't post two messages with the same counter value.
 
 ```go
-// golang
-func compareClock(a, b lamportClock) int {
-    dist := a.time - b.time
+    // golang
 
-    if dist == 0 {
-        dist = comparePubKey(a.id, b.id) // Returns lexicographic distance
+    func compareClock(a, b lamportClock) int {
+        dist := a.time - b.time
+
+        if dist == 0 {
+            dist = comparePubKey(a.id, b.id) // Returns lexicographic distance
+        }
+
+        return dist
     }
-
-    return dist
-}
 ```
 
 ## Account
@@ -650,23 +653,24 @@ they have to follow the same process and derive the Message Key from the Chain
 Key of the sender with the HKDF for every message they receive.
 
 ```go
-// golang
-func deriveNextKeys(currChainKey [32]byte, salt [64]byte, groupID []byte)
-   (nextChainKey, nextMsgKey [32]byte) {
-    // Salt length must be equal to hash length (64 bytes for sha256)
-    hash := sha256.New
+    // golang
 
-    // Generate Pseudo Random Key using currChainKey as IKM and salt
-    prk := hkdf.Extract(hash, currChainKey[:], salt[:])
-    // Expand using extracted prk and groupID as info (kind of namespace)
-    kdf := hkdf.Expand(hash, prk, groupID)
+    func deriveNextKeys(currChainKey [32]byte, salt [64]byte, groupID []byte)
+       (nextChainKey, nextMsgKey [32]byte) {
+        // Salt length must be equal to hash length (64 bytes for sha256)
+        hash := sha256.New
 
-    // Generate next chain and message keys
-    io.ReadFull(kdf, nextChainKey[:])
-    io.ReadFull(kdf, nextMsgKey[:])
+        // Generate Pseudo Random Key using currChainKey as IKM and salt
+        prk := hkdf.Extract(hash, currChainKey[:], salt[:])
+        // Expand using extracted prk and groupID as info (kind of namespace)
+        kdf := hkdf.Expand(hash, prk, groupID)
 
-    return nextChainKey, nextMsgKey
-}
+        // Generate next chain and message keys
+        io.ReadFull(kdf, nextChainKey[:])
+        io.ReadFull(kdf, nextMsgKey[:])
+
+        return nextChainKey, nextMsgKey
+    }
 ```
 
 ### Joining a Group
