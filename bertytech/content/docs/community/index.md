@@ -183,7 +183,7 @@ Thank you to all our backers! 🙏 [Become a backer]
 
 ### 🛍️ Berty Store
 
-When you [shop at our store](https://berty-tech.myshopify.com/), you'll find great items that are not only cool but also allow Berty to exist!
+When you [shop at our store](https://shop.berty.tech/), you'll find great items that are not only cool but also allow Berty to exist!
 
 Support the team and rock a new shirt on the next event 👕
 
