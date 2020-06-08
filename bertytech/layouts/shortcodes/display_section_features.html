@@ -6,7 +6,7 @@
 
         <div class="col-md-6 mb-5 mb-md-0">
           <div class="block bg-white h-100">
-            <div class="d-flex flex-column py-0 px-4">
+            <div class="d-flex flex-column py-0">
               <div class="order-2 order-md-1">
                 <h3 class="mb-2">
                   <strong>No Face, No Name, No Number</strong>
@@ -16,7 +16,7 @@
               </div>
     
               <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
-                {{ $img := .Page.Resources.GetMatch "anonymous.png" }}
+                {{ $img := .Page.Resources.GetMatch "noface-noname.png" }}
                 {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
               </div>
             </div>
@@ -25,18 +25,18 @@
   
         <div class="col-md-6 mb-5 mb-md-0">
           <div class="block bg-white h-100">
-            <div class="d-flex flex-column py-0 px-4">
+            <div class="d-flex flex-column py-0">
               <div class="order-2 order-md-1">
                 <h3 class="mb-2">
                   <strong>Safety by Default</strong>
                 </h3>
-                <h4>Lorum ipsum</h4>
+                <h4>Privacy by Design</h4>
                 <p>All conversations are encrypted with end-to-end encryption, in a fully distributed network.</p>
               </div>
     
-              <div class="mx-auto order-1 order-md-2 mb-4 mb-md-0 mt-md-4" style="width: 150px;">
-                {{ $img := (.Page.Resources.GetMatch "qrcode.png").Resize "x150" }}
-                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
+              <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
+                {{ $img := .Page.Resources.GetMatch "secure-encryption.png" }}
+                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
               </div>
             </div>
           </div>
@@ -85,13 +85,13 @@
       <div class="col-lg-5 col-md-6 order-2 order-md-1">
         <div class="block-mixed-text">
           <h3>With Bluetooth Low Energy (BLE)<span>, messaging doesn’t require network connection or cell coverage</span></h3>
-          <p>Possibly more details here, like linking to an article about BLE</p>
+          <p>Our <a href="{{ `/blog/bluetooth-low-energy/` | relURL }}">article explaining what BLE is</a> and why we chose it</p>
         </div><!-- /.block-mixed-text -->
       </div><!-- /.col -->
       <div class="col-md-6 order-1 order-md-2">
         <div class="block-mixed-img">
-          {{ $img := .Page.Resources.GetMatch "2_phones.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "90") }}
+          {{ $img := .Page.Resources.GetMatch "1-BLE.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
     </div><!--  /.row -->
@@ -103,14 +103,13 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-md-6">
         <div class="block-mixed-img">
-          {{ $img := .Page.Resources.GetMatch "devices.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "130" "class" "") }}
+          {{ $img := .Page.Resources.GetMatch "2-any-device.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
       <div class="col-md-5">
         <div class="block-mixed-text">
           <h3>Available on any device <span>or system: iOS, Android, Windows, Linux</span></h3>
-          <p>Possibly more details here</p>
         </div><!-- /.block-mixed-text -->
       </div><!-- /.col -->
     </div><!--  /.row -->
@@ -127,8 +126,8 @@
       </div><!-- /.col -->
       <div class="col-md-6 order-1 order-md-2 pl-3 pl-md-5">
         <div class="block-mixed-img">
-          {{ $img := .Page.Resources.GetMatch "3_tabs.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" "200" "height" "120" "class" "") }}
+          {{ $img := .Page.Resources.GetMatch "3-share-details.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
     </div><!--  /.row -->
@@ -140,15 +139,13 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-md-6">
         <div class="block-mixed-img">
-          {{ $img := .Page.Resources.GetMatch "devices.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "130" "class" "") }}
+          {{ $img := .Page.Resources.GetMatch "4-No_servers.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
       <div class="col-md-5">
         <div class="block-mixed-text">
           <h3>No servers <span>- your data is only stored on the device where Berty is installed and used</span></h3>
-          <p>Possibly more details here</p>
-          <!--<a class="btn btn-bty btn-blue" href="/download" role="button">Go to download page<i class="far fa-arrow-right"></i></a>-->
         </div><!-- /.block-mixed-text -->
       </div><!-- /.col -->
     </div><!--  /.row -->
@@ -162,12 +159,13 @@
         <div class="block-mixed-text">
           <h3>Open-source and fully distributed <span> - no one would be able to access the data or shut the app down, not
             even the developers</span></h3>
+          <p>Read more about <a href="{{ `/blog/decentralized-distributed-centralized/` | relURL }}">Centralized vs Decentralized vs Distributed Systems</a></p>
         </div><!-- /.block-mixed-text -->
       </div><!-- /.col -->
       <div class="col-md-6 order-1 order-md-2 pl-3 pl-md-5">
         <div class="block-mixed-img">
-          {{ $img := .Page.Resources.GetMatch "3_tabs.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" "200" "height" "120" "class" "") }}
+          {{ $img := .Page.Resources.GetMatch "5-fully-distributed.png" }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
     </div><!--  /.row -->
