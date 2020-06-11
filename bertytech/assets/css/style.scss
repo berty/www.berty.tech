@@ -3701,13 +3701,9 @@ footer {
 
 // Compare table
 .compare-table {
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(171,174,209,.3);
-  font-weight: 400;
-  display: block;
-  position: relative;
-  background: #fff;
   overflow-x: auto;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
   .compare-table-inner {
     margin: 0;
   }

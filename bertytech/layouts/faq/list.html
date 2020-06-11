@@ -12,15 +12,13 @@
   <div class="container">
 
     <section class="section-faq">
-      <div class="row">
-        <amp-script layout="container" src="{{ (resources.Get `js/amp-faq.js`).Permalink }}">
-          <div class="col-12">
-            {{ range sort .Pages "Params.id" }}
-            {{ partial "block_faq" . }}
-            {{ end }}
-          </div><!-- /.col -->
-        </amp-script>
-      </div><!-- /.row -->
+      <amp-script class="row" layout="container" src="{{ (resources.Get `js/amp-faq.js`).Permalink }}">
+        <div class="col-12">
+          {{ range sort .Pages "Params.id" }}
+          {{ partial "block_faq" . }}
+          {{ end }}
+        </div><!-- /.col -->
+      </amp-script>
     </section>
 
     <section class="section-actions">
