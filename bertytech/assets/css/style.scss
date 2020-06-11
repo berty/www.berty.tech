@@ -3713,6 +3713,14 @@ footer {
   }
   thead th {
     text-align: center;
+    &:first-child {
+      min-width: 190px;
+    }
+  }
+  tbody th {
+    font-size: 90%;
+    width: 100px;
+    vertical-align: middle;
   }
   .compare-value {
     text-align: center;
