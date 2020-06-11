@@ -1,5 +1,6 @@
 ---
 title: Berty
+weight: -100
 distributed: true
 offline_messaging: true
 no_phone_required: true

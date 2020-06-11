@@ -1,5 +1,6 @@
 ---
 title: Telegram
+weight: -90
 distributed: false
 offline_messaging: false
 no_phone_required: false

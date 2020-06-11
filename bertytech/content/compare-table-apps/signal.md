@@ -1,5 +1,6 @@
 ---
 title: Signal
+weight: -70
 distributed: false
 offline_messaging: false
 no_phone_required: false

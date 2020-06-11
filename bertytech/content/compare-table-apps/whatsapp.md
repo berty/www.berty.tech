@@ -1,5 +1,6 @@
 ---
 title: Whatsapp
+weight: -80
 distributed: false
 offline_messaging: false
 no_phone_required: false
