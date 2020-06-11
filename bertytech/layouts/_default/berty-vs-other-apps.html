@@ -23,7 +23,9 @@
                 <tr>
                   <th scope="col">Feature</th>
                   {{ range $apps }}
-                  <th scope="col">{{ .Title }}</th>
+                  <th scope="col">
+                    {{ .Title }}
+                  </th>
                   {{ end }}
                 </tr>
               </thead>
@@ -48,6 +50,16 @@
                   {{ end }}
                 </tr>
                 {{ end }}
+                <tr>
+                  <th scope="row"></th>
+                  {{ range $apps }}
+                  <td>
+                    <a class="btn btn-bty btn-grack d-flex align-items-center" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
+                      <i class="fab fa-github"></i><small>Edit</small>
+                    </a>
+                  </td>
+                  {{ end }}
+                </tr>
               </tbody>
             </table>
           </div>

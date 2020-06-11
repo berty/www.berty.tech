@@ -3711,6 +3711,9 @@ footer {
   .compare-table-inner {
     margin: 0;
   }
+  thead th {
+    text-align: center;
+  }
   .compare-value {
     text-align: center;
     vertical-align: middle;
