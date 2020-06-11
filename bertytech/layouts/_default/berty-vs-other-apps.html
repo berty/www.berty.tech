@@ -30,10 +30,10 @@
                 </tr>
               </thead>
               <tbody>
-                {{ range $key, $value := $table.Params.compared_items }}
-                {{ $compare_key := $key }}
+                {{ range $table.Params.compared_items }}
+                {{ $key := .key }}
                 <tr>
-                  <th scope="row">{{ $value }}</th>
+                  <th scope="row">{{ .value }}</th>
                   {{ range $apps }}
                   {{ $value := (index .Params $key) | lower }}
                   <td class="compare-value value-{{ $value | lower }}">

@@ -1,12 +1,20 @@
 ---
 headless: true
 compared_items:
-  distributed: "Distributed"
-  offline_messaging: "Offline messaging"
-  no_phone_required: "No phone number required"
-  open_source: "Open Source"
-  open_spec: "Open Spec"
-  e2ee: "E2EE"
-  aosp: "AOSP (Android Open Source Project)"
-  multi_device: "Multi-device messaging"
+  - key: open_source
+    value: "Open Source"
+  - key: distributed
+    value: "Distributed"
+  - key: no_phone_required
+    value: "No phone number required"
+  - key: e2ee
+    value: "E2EE"
+  - key: offline_messaging
+    value: "Offline messaging"
+  - key: multi_device
+    value: "Multi-device messaging"
+  - key: open_spec
+    value: "Open Spec"
+  - key: aosp
+    value: "AOSP (Android Open Source Project)"
 ---
