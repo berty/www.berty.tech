@@ -3698,3 +3698,40 @@ footer {
     padding: 15px;
   }
 }
+
+// Compare table
+.compare-table {
+  overflow-x: auto;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+  .compare-table-inner {
+    margin: 0;
+  }
+  thead th {
+    text-align: center;
+    &:first-child {
+      min-width: 190px;
+    }
+  }
+  tbody th {
+    font-size: 90%;
+    width: 100px;
+    vertical-align: middle;
+  }
+  .compare-value {
+    text-align: center;
+    vertical-align: middle;
+    &.value-true {
+      color: green;
+    }
+    &.value-false {
+      color: red;
+    }
+    &.value-partially {
+      color: orange;
+    }
+    i {
+      font-size: 24px;
+    }
+  }
+}
