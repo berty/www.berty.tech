@@ -1,12 +1,17 @@
 ---
 title: Berty
 weight: -100
-distributed: true
-offline_messaging: true
-no_phone_required: true
 open_source: true
-open_spec: true
+no_runtime_fee: true
+no_purchase_fee: true
+distributed: true
+decentralized: "-"
+no_phone_required: true
+anonymous: true
 e2ee: true
-aosp: true
+offline_messaging: true
 multi_device: true
+open_spec: true
+aosp: true
+privacy_respecting: true
 ---

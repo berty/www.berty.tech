@@ -1,11 +1,16 @@
 ---
 title: Firechat
-distributed:
-offline_messaging:
-no_phone_required: true
 open_source: false
-open_spec:
+no_runtime_fee:
+no_purchase_fee:
+distributed:
+decentralized:
+no_phone_required: true
+anonymous:
 e2ee: true
-aosp:
+offline_messaging:
 multi_device:
+open_spec:
+aosp:
+privacy_respecting:
 ---

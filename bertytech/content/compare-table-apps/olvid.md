@@ -1,11 +1,16 @@
 ---
 title: Olvid
-distributed: 
-offline_messaging: 
-no_phone_required: false
 open_source: 
-open_spec: 
+no_runtime_fee:
+no_purchase_fee:
+distributed: 
+decentralized: 
+no_phone_required: false
+anonymous: false
 e2ee: 
-aosp: 
+offline_messaging: 
 multi_device: 
+open_spec: 
+aosp: 
+privacy_respecting:
 ---

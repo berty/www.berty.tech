@@ -1,12 +1,17 @@
 ---
 title: Signal
 weight: -70
-distributed: false
-offline_messaging: false
-no_phone_required: false
 open_source: true
-open_spec: true
+no_runtime_fee: true
+no_purchase_fee: Partially
+distributed: false
+decentralized: "?"
+no_phone_required: true
+anonymous: true
 e2ee: true
-aosp: true
+offline_messaging: false
 multi_device: Partially
+open_spec: true
+aosp: true
+privacy_respecting: true
 ---

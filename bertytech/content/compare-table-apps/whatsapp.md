@@ -1,12 +1,17 @@
 ---
 title: Whatsapp
 weight: -80
-distributed: false
-offline_messaging: false
-no_phone_required: false
 open_source: false
-open_spec: "?"
+no_runtime_fee: true
+no_purchase_fee: true
+distributed: false
+decentralized: false
+no_phone_required: false
+anonymous: false
 e2ee: true
-aosp: "?"
+offline_messaging: false
 multi_device: Partially
+open_spec: "?"
+aosp: "?"
+privacy_respecting: false
 ---
