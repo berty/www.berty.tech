@@ -43,7 +43,17 @@
     <div class="row mb-5">
       <div class="col-md-12">
         <div class="block bg-white">
-          <div id='discourse-comments'></div>
+          <amp-iframe 
+            id="blog-comments"
+            layout="intrinsic"
+            width="1100"
+            height="500"
+            sandbox="allow-scripts allow-same-origin allow-popups"
+            frameborder="0"
+            referrerpolicy="origin"
+            src="{{ .Site.Params.discourseBaseUrl }}/embed/comments?embed_url={{ .Permalink }}">
+            <amp-img layout="nodisplay" src="{{ (resources.Get .Site.Params.logoSVG).RelPermalink }}" placeholder></amp-img>
+          </amp-iframe>
         </div>
       </div>
     </div>
@@ -67,18 +77,5 @@
 
   </div><!-- /.container -->
 </div><!-- /.content -->
-
-<!-- TODO : add related posts -->
-<script type="text/javascript">
-  DiscourseEmbed = { discourseUrl: 'https://cadl.trydiscourse.com/',
-                     discourseEmbedUrl: '{{ .Permalink }}',
-                     discourseReferrerPolicy: "origin" };
-
-  (function() {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
 
 {{ partial "footer" . }}
