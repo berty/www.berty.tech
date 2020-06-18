@@ -1,0 +1,11 @@
+<amp-iframe 
+  id="blog-comments"
+  layout="intrinsic"
+  width="1100"
+  height="500"
+  sandbox="allow-scripts allow-same-origin allow-popups"
+  frameborder="0"
+  referrerpolicy="unsafe-url"
+  src="{{ .Site.Params.discourseBaseUrl }}/embed/comments?embed_url={{ .Permalink }}">
+  <amp-img layout="nodisplay" src="{{ (resources.Get .Site.Params.logoSVG).RelPermalink }}" placeholder></amp-img>
+</amp-iframe>
