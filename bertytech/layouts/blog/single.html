@@ -41,6 +41,9 @@
     </div><!-- /.block -->
 
     <div class="row mb-5">
+      <div class="col-md-12 mb-3">
+        <h3 class="font-weight-bold"><strong>Comments</strong></h3>
+      </div>
       <div class="col-md-12">
         <div class="block bg-white">
           <amp-iframe 
@@ -50,7 +53,7 @@
             height="500"
             sandbox="allow-scripts allow-same-origin allow-popups"
             frameborder="0"
-            referrerpolicy="origin"
+            referrerpolicy="unsafe-url"
             src="{{ .Site.Params.discourseBaseUrl }}/embed/comments?embed_url={{ .Permalink }}">
             <amp-img layout="nodisplay" src="{{ (resources.Get .Site.Params.logoSVG).RelPermalink }}" placeholder></amp-img>
           </amp-iframe>
