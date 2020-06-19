@@ -3714,11 +3714,15 @@ footer {
 
 // Compare table
 $table-first-column-width: 190px;
+$table-first-column-width-mobile: 115px;
 .compare-table {
   overflow-x: auto;
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
   margin-left: $table-first-column-width;
+  @media (max-width: 600px) {
+    margin-left: $table-first-column-width-mobile;
+  }
   .compare-table-inner {
     margin: 0;
   }
@@ -3739,6 +3743,10 @@ $table-first-column-width: 190px;
     align-items: center;
     border-bottom-width: 0;
     margin-left: -$table-first-column-width;
+    @media (max-width: 600px) {
+      width: $table-first-column-width-mobile;
+      margin-left: -$table-first-column-width-mobile;
+    }
     &:last-child {
       border-bottom-width: 1px;
     }
@@ -3751,6 +3759,9 @@ $table-first-column-width: 190px;
     &:first-child {
       min-width: $table-first-column-width;
       height: auto;
+      @media (max-width: 600px) {
+        min-width: $table-first-column-width-mobile;
+      }
     }
   }
   .compare-value {
