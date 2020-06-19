@@ -1,11 +1,11 @@
 ---
 title: Olvid
-distributed: 
-offline_messaging: 
-no_phone_required: false
-open_source: 
-open_spec: 
-e2ee: 
-aosp: 
-multi_device: 
+distributed: false
+offline_messaging: false
+no_phone_required: true
+open_source: false
+open_spec: true
+e2ee: true
+aosp: "?"
+multi_device: false
 ---
