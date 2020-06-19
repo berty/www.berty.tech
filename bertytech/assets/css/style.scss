@@ -69,6 +69,19 @@ label:focus,
     box-shadow: none !important;
 }
 
+html blockquote {
+  color:$color-blue;
+  border-left: 5px solid $color-blue;
+  background-color:#f2f3ff;
+  padding:10px 20px 10px 20px;
+  border-radius: 3px 5px 5px 3px;
+  margin-top:20px;
+  p {
+    margin:0;
+    margin-bottom: 0;
+  }
+}
+
 amp-img {
   vertical-align: middle;
 }
@@ -702,7 +715,7 @@ header.bg-image {
 .block-post {
   margin:0 0 50px;
   z-index:1;
-  h1,h2,h3,p,ul {
+  h1,h2,h3,ul,&:not(blockquote)p {
     margin-bottom: 1.5rem;
   }
   amp-img {
