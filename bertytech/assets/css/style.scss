@@ -3722,6 +3722,7 @@ $table-first-column-width-mobile: 115px;
   margin-left: $table-first-column-width;
   @media (max-width: 600px) {
     margin-left: $table-first-column-width-mobile;
+    width: calc(100% - #{$table-first-column-width-mobile});
   }
   .compare-table-inner {
     margin: 0;
@@ -3758,7 +3759,8 @@ $table-first-column-width-mobile: 115px;
     text-align: center;
     &:first-child {
       min-width: $table-first-column-width;
-      height: auto;
+      height: 50px;
+      border-bottom-width: 2px;
       @media (max-width: 600px) {
         min-width: $table-first-column-width-mobile;
       }
