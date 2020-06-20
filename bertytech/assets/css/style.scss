@@ -3720,6 +3720,22 @@ $table-first-column-width-mobile: 115px;
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
   margin-left: $table-first-column-width;
+  /* width */
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #e2e4fc;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $color-blue;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
   @media (max-width: 600px) {
     margin-left: $table-first-column-width-mobile;
     width: calc(100% - #{$table-first-column-width-mobile});
