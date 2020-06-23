@@ -1,11 +1,16 @@
 ---
 title: Matrix
-distributed:
-offline_messaging:
-no_phone_required:
 open_source:
-open_spec:
-e2ee:
+no_runtime_fee: true
+no_purchase_fee: true
+distributed: false
+decentralized: Partially
+no_phone_required: true
+anonymous: true
+e2ee: Partially
+offline_messaging:
+multi_device: true
+open_spec: true
 aosp:
-multi_device:
+privacy_respecting: true
 ---

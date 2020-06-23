@@ -1,16 +1,17 @@
 ---
-title: Facebook
+title: Threema
+weight: -60
 open_source: false
 no_runtime_fee: true
-no_purchase_fee: true
+no_purchase_fee: false
 distributed: false
 decentralized: false
 no_phone_required: true
-anonymous:
-e2ee: Partially
+anonymous: true
+e2ee: true
 offline_messaging: false
-multi_device: true
-open_spec: "?"
+multi_device: Partially
+open_spec: false
 aosp: "?"
-privacy_respecting: false
+privacy_respecting: true
 ---

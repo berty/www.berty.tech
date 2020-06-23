@@ -1,11 +1,16 @@
 ---
 title: Skuttlebut
-distributed: true
-offline_messaging: true
-no_phone_required: "?"
 open_source: "?"
-open_spec: "?"
+no_runtime_fee:
+no_purchase_fee:
+distributed: true
+decentralized: "-"
+no_phone_required: "?"
+anonymous:
 e2ee: "?"
-aosp: "?"
+offline_messaging: true
 multi_device: "?"
+open_spec: "?"
+aosp: "?"
+privacy_respecting:
 ---

@@ -1,11 +1,16 @@
 ---
 title: iMessage
-distributed: 
-offline_messaging: 
-no_phone_required: 
 open_source: false
-open_spec: 
+no_runtime_fee: true
+no_purchase_fee:
+distributed: 
+decentralized: 
+no_phone_required: true
+anonymous: false
 e2ee: true
+offline_messaging: 
+multi_device: true
+open_spec: 
 aosp: 
-multi_device: 
+privacy_respecting:
 ---

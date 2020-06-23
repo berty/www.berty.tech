@@ -1,11 +1,16 @@
 ---
 title: Jami
-distributed: true
-offline_messaging: 
-no_phone_required: true
 open_source: true
-open_spec: 
+no_runtime_fee: true
+no_purchase_fee: true
+distributed: true
+decentralized: "-"
+no_phone_required: true
+anonymous: true
 e2ee: true
-aosp:
+offline_messaging: 
 multi_device: true
+open_spec: 
+aosp:
+privacy_respecting: true
 ---
