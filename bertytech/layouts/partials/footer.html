@@ -1,3 +1,5 @@
+{{ $is_404 := eq .Kind "404" }}
+
 <footer class="overflow-hidden">
 	<div class="footer-rounded bg-blue text-white">
 		<div class="container">
@@ -5,34 +7,34 @@
 				<div class="col-md-5">
 					{{ partial "img" (dict "ctx" . "class" "img-fluid img-bt" "src" "/img/berty_technologies_logo.png" "alt" "Berty Technologies" "width" "352" "height" "145") }}
 					<br />
-					<p>The Berty app is developed by the NGO <a href="/about">Berty Technologies</a>.</p>
+					<p>The Berty app is developed by the NGO <a href="{{ cond $is_404 (absURL `/about`) `/about` }}">Berty Technologies</a>.</p>
 				</div><!-- /.col -->
 				<div class="col-md-7">
 					<div class="row">
 						<div class="col-4 col-links">
-								<h5><a href="/features">Features</a></h5>
-								<h5><a href="/challenges">Challenges</a></h5>
-								<h5><a href="/faq">FAQ</a></h5>
+								<h5><a href="{{ cond $is_404 (absURL `/features`) `/features` }}">Features</a></h5>
+								<h5><a href="{{ cond $is_404 (absURL `/challenges`) `/challenges` }}">Challenges</a></h5>
+								<h5><a href="{{ cond $is_404 (absURL `/faq`) `/faq` }}">FAQ</a></h5>
 
-							<h5><a href="/community">Community</a></h5>
-							<h5><a href="/blog">Blog</a></h5>
+							<h5><a href="{{ cond $is_404 (absURL `/community`) `/community` }}">Community</a></h5>
+							<h5><a href="{{ cond $is_404 (absURL `/blog`) `/blog` }}">Blog</a></h5>
 						</div><!-- /.col -->
 						<div class="col-4 col-links">
 							<h5>Developers</h5>
 							<ul class="list-unstyled text-small">
-								<li><a href="/docs">Docs</a></li>
-								<li><a href="/docs#projects">Our projects</a></li>
-								<li><a href="/contribute">Contribute</a></li>
-								<li><a href="/contribute#projects-we-love">Projects we love</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/docs`) `/docs` }}">Docs</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/docs#projects`) `/docs#projects` }}">Our projects</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/contribute`) `/contribute` }}">Contribute</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/contribute#projects-we-love`) `/contribute#projects-we-love` }}">Projects we love</a></li>
 							</ul>
 						</div><!-- /.col -->
 						<div class="col-4 col-links">
-							<h5><a href="/about">About us</a></h5>
+							<h5><a href="{{ cond $is_404 (absURL `/about`) `/about` }}">About us</a></h5>
 							<ul class="list-unstyled text-small">
-								<li><a href="/jobs">Jobs</a></li>
-								<li><a href="/newsletter">Newsletter</a></li>
-								<li><a href="/contact">Contact</a></li>
-								<li><a href="/press">Press</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/jobs`) `/jobs` }}">Jobs</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/newsletter`) `/newsletter` }}">Newsletter</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/contact`) `/contact` }}">Contact</a></li>
+								<li><a href="{{ cond $is_404 (absURL `/press`) `/press` }}">Press</a></li>
 								<li><a href="https://berty-tech.myshopify.com/">Boutique</a></li>
 								<li><a href="https://assets.berty.tech/">Assets</a></li>
 							</ul>
@@ -42,7 +44,7 @@
 			</div><!-- /.row -->
 			<div class="row row-bottom">
 				<div class="col-lg-8 col-md-7 footer-legal">
-					<small>Berty™ is a registered trademark © 2018-2020 Berty Technologies - All right reserved - <a href="/terms">Terms & Conditions</a> - <a href="/privacy-policy">Privacy Policy</a></small>
+					<small>Berty™ is a registered trademark © 2018-2020 Berty Technologies - All right reserved - <a href="{{ cond $is_404 (absURL `/terms`) `/terms` }}">Terms & Conditions</a> - <a href="{{ cond $is_404 (absURL `/privacy-policy`) `/privacy-policy` }}">Privacy Policy</a></small>
 				</div><!-- /.col -->
 				<div class="col-lg-4 col-md-5">
 					{{ partial "nav_social" . }}
