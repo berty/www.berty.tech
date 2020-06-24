@@ -2363,8 +2363,14 @@ a.block-action {
 /* FORM */
 
 /* BLOCK FAQ */
+.block-faq-wrapper {
+  padding-top: 40px;
+  &:target .block-faq-q[aria-expanded="false"] {
+    border-radius: 12px;
+    border: 2px solid $color-blue;
+  }
+}
 .block-faq {
-  margin-bottom:40px;
   padding:0;
   width:100%;
   a.block-faq-q {
@@ -2372,7 +2378,7 @@ a.block-action {
     padding:34px;
     display:block;
     width:100%;
-    color:$color-fakeblack;
+    color:$color-fakeblack;    
     &:hover,
     &:focus {
       color:$color-blue;
