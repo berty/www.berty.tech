@@ -15,13 +15,21 @@ function openDropdown(dropdown) {
 
   const link = dropdown.querySelector('.nav-link');
   const menu = dropdown.querySelector('.dropdown-menu');
-  menu.classList.add('show');
+
+  // temporary workaround because of this issue: https://github.com/berty/www.berty.tech/issues/97
+  menu.setAttribute('class', 'dropdown-menu show');
+  // menu.classList.add('show');
+
   link.setAttribute('aria-expanded', true);
 }
 
 function closeDropdown(dropdown) {
   const link = dropdown.querySelector('.nav-link');
   const menu = dropdown.querySelector('.dropdown-menu');
-  menu.classList.remove('show');
+
+  // temporary workaround because of this issue: https://github.com/berty/www.berty.tech/issues/97
+  menu.setAttribute('class', 'dropdown-menu');
+  // menu.classList.remove('show');
+  
   link.setAttribute('aria-expanded', false);
 }
