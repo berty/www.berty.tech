@@ -2363,8 +2363,14 @@ a.block-action {
 /* FORM */
 
 /* BLOCK FAQ */
+.block-faq-wrapper {
+  padding-top: 40px;
+  &:target .block-faq-q[aria-expanded="false"] {
+    border-radius: 12px;
+    border: 2px solid $color-blue;
+  }
+}
 .block-faq {
-  margin-bottom:40px;
   padding:0;
   width:100%;
   a.block-faq-q {
@@ -3001,8 +3007,10 @@ footer {
     font-size: 1.6rem;
     margin-bottom: 15px;
   }
+  .block-faq-wrapper {
+    padding-top:20px;
+  }
   .block-faq {
-    margin-bottom:20px;
     a.block-faq-q {
       padding:20px;
       h4 {
