@@ -112,7 +112,7 @@ Despite its large network size, BitTorrent’s architecture is primarily for tor
 
 ![IPFS Logo](https://i.imgur.com/xmrplgH.png)
 
-Another project that caught our eye was the[InterPlanetary File System](https://ipfs.io/), a peer-to-peer protocol for the distribution of addressable content via hypermedia. Although the IPFS project is younger than BitTorent, it’s already mature.
+Another project that caught our eye was the [InterPlanetary File System](https://ipfs.io/), a peer-to-peer protocol for the distribution of addressable content via hypermedia. Although the IPFS project is younger than BitTorent, it’s already mature.
 
 The project seemed all the more impressive because Protocol Labs — the people behind IPFS — had the great idea to split the project into several pieces and make all the code of the networking part of IPFS independent by providing libp2p: a library with all the necessary tools to create P2P applications.
 
