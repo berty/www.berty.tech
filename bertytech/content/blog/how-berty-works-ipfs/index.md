@@ -1,6 +1,6 @@
 ---
 author: Pierre
-title: How Berty Works #1: IPFS
+title: "How Berty Works #1: IPFS"
 date: 2020-06-23
 #image: "HBW1.jpg"
 image: "HBW1.jpg"
