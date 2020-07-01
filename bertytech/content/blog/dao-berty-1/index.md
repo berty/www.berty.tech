@@ -1,5 +1,5 @@
 ---
-author: Pierre
+author: philh
 title: "Why a DAO for Berty? (Part I)" 
 date: 2020-07-01
 image: "dao-berty.png"
