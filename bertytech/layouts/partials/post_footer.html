@@ -1,7 +1,8 @@
 {{ $authorImg := resources.Get (print "/img/avatar_" (.Params.author | default "staff") ".png") }}
 {{ $authorImg := $authorImg.Resize "70x70 Lanczos" }}
-{{ $authorName := (index .Site.Data.authors (.Params.author | default "staff")).name }}
-{{ $authorBio := (index .Site.Data.authors (.Params.author | default "staff")).bio }}
+{{ $author := index .Site.Data.authors ((.Params.author | lower) | default "staff") }}
+{{ $authorName := $author.name }}
+{{ $authorBio := $author.bio }}
 
 <div class="post-footer">
   <div class="row">
