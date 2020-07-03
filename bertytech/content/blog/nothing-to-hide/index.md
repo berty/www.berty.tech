@@ -2,7 +2,7 @@
 author: manfred
 title: Why You Should Stop Saying You Have Nothing To Hide!
 date: 2018-12-13
-image: "nothing-to-hide.png"
+image: "nothing-to-hide.jpg"
 categories:
 - "free-speech"
 tags:
