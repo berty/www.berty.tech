@@ -12,7 +12,9 @@ tags:
 
 # Why a DAO for Berty? (Part I)
 
-* **TLDR**: no, Berty won't use a blockchain to run the app.
+* **TLDR**: 
+    * The Berty protocol will never depend on a Blockchain.
+    * We plan to set up a DAO to secure governance of its development team.
 
 [Berty](https://berty.tech)’s mission is to create a protocol and applications enabling secure p2p communication between people. More simply put, it means that Berty’s applications will protect confidential conversations between individuals, including in adverse political situations that might compromise the security or the availability of the internet itself.
 
