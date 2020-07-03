@@ -1,5 +1,5 @@
 ---
-author: pierre
+author: gfanton
 title: "Gomobile-IPFS" 
 date: 2020-07-02
 image: "gomobile-ipfs.jpg"
