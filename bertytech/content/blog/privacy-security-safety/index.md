@@ -2,7 +2,7 @@
 author: pierre
 title: Differences Between Safety, Security, Private, Privacy and Intimacy
 date: 2018-12-24
-image: "security.png"
+image: "privacy-security-safety.jpg"
 categories:
 - free-speech
 tags:
