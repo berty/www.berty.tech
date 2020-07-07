@@ -2,7 +2,7 @@
 author: camille
 title: Digital Signature
 date: 2019-10-17
-image: "digitalsignature.png"
+image: "digital-signature.jpg"
 categories:
 - free-speech
 tags:
