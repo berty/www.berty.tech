@@ -44,7 +44,7 @@ Metadata are required to operate a messaging system. However, they could be an i
 
 #### Related
 
-* `Signal.org`: the gold standard for any centralized environment. Berty uses many of its cryptographic algorithms/protcols, having them adapted for distributed environment. They work hard to limit their metadata footprint as much as possible, but their servers are still hosted on Google Cloud and are automatically subject to the Cloud Act.
+* `Signal.org`: the gold standard for any centralized environment. Berty uses many of its cryptographic algorithms/protocols, having them adapted for distributed environment. They work hard to limit their metadata footprint as much as possible, but their servers are still hosted on Google Cloud and are automatically subject to the Cloud Act.
 * `Messaging Layer Security`: MLS offers a more scalable alternative to Signal Protocol. This solution still requires a central server in order to work.
 * `Olvid.io`: Olvid claims to be the only messaging service that also encrypts metadata. They are centralized and host their servers on AWS, which also belongs to the Cloud Act.
 * `status.im`: Status designed Whisper to overcome some of the above shortcomings AND be configurable to the end user, who ought to be able to specify what trade-offs they are willing to make between battery life and mobile data charges, privacy and possible metadata leakage.
