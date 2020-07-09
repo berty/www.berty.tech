@@ -11,8 +11,8 @@ tags:
 - security
 ---
 
-# Watching :eye:   Hong-kong Updates - China scares the world.
-_Our 'Watching' series focuses on monitoring the evolution of laws and government actions on privacy and communications security issues.
+# Watching :eye: :  Hong-kong Updates - China scares the world.
+_Our 'Watching' series focuses on monitoring the evolution of laws and government actions on privacy and communications security issues._
 
 ![](https://i.imgur.com/utu8jGu.jpg)
 
