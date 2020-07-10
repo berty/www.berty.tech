@@ -59,7 +59,7 @@ For his part, Tik Tok took a more radical stance by withdrawing entirely from Ho
 ![](https://i.imgur.com/BPpn6x2.jpg)
 
 
-#### Recommandation : 
+#### Recommendation : 
 What recommendations do we give to journalists, activists for the safety of their communications in this context?
 
 Until the Berty application is officially available, we recommend you to use Signal, which is open source and does not, to our knowledge, pass on any metadata to anyone. 
