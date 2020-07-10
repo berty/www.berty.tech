@@ -63,7 +63,7 @@ params:
   matomoSiteId: 1
   matomoBaseURL: https://bertytech.matomo.cloud
 
-  discourseBaseUrl: https://berty.community/
+  discourseBaseUrl: https://berty.community
 
   # APP
   appName: Berty
