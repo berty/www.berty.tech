@@ -2,7 +2,7 @@
 author: camille
 title: Has National Defense Every Right?
 date: 2018-12-28
-image: "privacy.png"
+image: "national-defense.jpg"
 categories:
 - free-speech
 tags:

@@ -2,7 +2,7 @@
 author: pierre
 title: How Social Networks Affect Our Privacy?
 date: 2019-01-07
-image: "social.png"
+image: "social-media.jpg"
 categories:
 - free-speech
 tags:
