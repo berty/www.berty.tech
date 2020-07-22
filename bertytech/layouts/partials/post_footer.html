@@ -1,4 +1,4 @@
-{{ $authorImg := resources.Get (print "/img/avatar_" (.Params.author | default "staff") ".png") }}
+{{ $authorImg := resources.Get (print "/img/avatar_" ((.Params.author | default "staff") | lower) ".png") }}
 {{ $authorImg := $authorImg.Resize "70x70 Lanczos" }}
 {{ $author := index .Site.Data.authors ((.Params.author | lower) | default "staff") }}
 {{ $authorName := $author.name }}

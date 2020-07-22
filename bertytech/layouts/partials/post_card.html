@@ -1,4 +1,4 @@
-{{ $authorImg := resources.Get (print "/img/avatar_" (.ctx.Params.author | default "staff") ".png") }}
+{{ $authorImg := resources.Get (print "/img/avatar_" ((.ctx.Params.author | default "staff") | lower) ".png") }}
 {{ $authorImg := $authorImg.Resize "120x120 Lanczos" }}
 {{ $authorName := (index .ctx.Site.Data.authors ((.ctx.Params.author | lower) | default "staff")).name }}
 
