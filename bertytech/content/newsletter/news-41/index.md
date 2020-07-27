@@ -29,7 +29,7 @@ Without further ado, here's your digest of berty's shiny new things for the last
 ## 🗣️ Community
 
 * **Community Forum**: It may be a little early to tell you about it, but since you're our favorites, we can't resist. We are currently adding a forum for the community. It is directly linked to the berty website and allows us to have a comment system (blog/newsletter). Sign up and give us your feedback. It will be very much appreciated!
-* 
+
 The forum is here: 👉 https://berty.community/
 _(it couldn't be simpler: berty + community!)_
  
