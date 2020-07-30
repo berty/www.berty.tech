@@ -2,7 +2,7 @@
 author: ninel
 title: History of Cryptography
 date: 2019-06-26
-image: "crypto.png"
+image: "2020-07-29-Berty-Blogpost-History_of_cryptography.jpg"
 categories:
 - free-speech
 tags:
