@@ -21,4 +21,4 @@ Dual-licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) an
 ## Source code
 Source code is available on [GitHub](https://github.com/berty/yolo)
 
-<a class="btn btn-bty btn-grack" href="https://github.com/berty/zero-push"><i class="fab fa-github"></i>berty/zero-push</a>
+<a class="btn btn-bty btn-grack" href="https://github.com/berty/yolo"><i class="fab fa-github"></i>berty/yolo</a>
