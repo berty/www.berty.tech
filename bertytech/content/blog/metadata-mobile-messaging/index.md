@@ -40,9 +40,9 @@ Let's put it very clearly: **encryption protects your message's content but not 
 Source: [FGDC.GOV](https://storymaps.arcgis.com/stories/724b222bf3424fc097b1b51d83cb5a0a)
 
 ### The WhatsApp example
-Let's take an example: you probably know WhatsApp? Yes, one of the most popular applications in the world. Have you ever paid to use Whatsapp? It's a private company that needs to make a profit to keep server costs down, etc. So, how do Whatsapp runs if it's free? 
+Let's take an example: you probably know WhatsApp? Yes, one of the most popular applications in the world. Have you ever paid to use Whatsapp? It's a private company that needs to make a profit to keep server costs down, etc. So, how do Whatsapp runs if it's free? It's not an NGO that receives donations.
 
-The ultimate goal of WhatsApp is actually to advertise in the app. How to put relevant advertising if the content of the messages is not in clear text? That's where metadata come into place. They bright a lot of information about who you are, your consumption habits, your future purchases... and they are very accurate! 
+So maybe, the ultimate goal of WhatsApp is actually to advertise in the app? How to put relevant advertising if the content of the messages is not in clear text? That's where metadata come into place. They bright a lot of information about who you are, your consumption habits, your future purchases... and they are very accurate! 
 
 WhatsApp can claim loud and clear that end-to-end encryption is the default since 2016 but what if they leak metadata? Can we still considerate WhatsApp as a secure messaging application?    
 
