@@ -22,7 +22,7 @@ Understanding metadata, especially in mobile applications, is essential to under
 
 We won't give you a long introduction on what metadata is. You probably know that if the data is a letter, the metadata is the envelope and its associated information (address, time, date, size...). For those who want a very good sum-up, see what Edward Snowden wrote on his Twitter in 2015:  
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Are your readers having trouble understanding the term &quot;metadata&quot;? Replace it with &quot;activity records.&quot; That&#39;s what they are. <a href="https://twitter.com/hashtag/clarity?src=hash&amp;ref_src=twsrc%5Etfw">#clarity</a></p>&mdash; Edward Snowden (@Snowden) <a href="https://twitter.com/Snowden/status/661305566967562240?ref_src=twsrc%5Etfw">November 2, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{<tweet id="661302234068701188">}}
 
 ## Why encryption is not enough?
 
@@ -68,8 +68,8 @@ So metadata allows you to infer information that people don't have to have. And 
 
 Or even worst: **People are killed based on metadata!**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PxwEwwlDM8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+{{< youtube id="PxwEwwlDM8Q" >}}
 
 ## Final thoughts:
 
