@@ -46,6 +46,7 @@ Add to that the obvious security concerns that arise when one owner stores (and 
 - Longer access times to data for users who are far from the server </br>
 
 </Br>
+
 ## Decentralized Systems
 
 As its name implies, decentralized systems don’t have one central owner. Instead, they use multiple central owners, each of which usually stores a copy of the resources users can access.
@@ -75,6 +76,7 @@ However, decentralized systems are still prone to the same security and privacy 
 - Inconsistent performance when not properly optimized </br>
 
 </br>
+
 ## Distributed System
 
 A distributed system is similar to a decentralized one in that it doesn’t have a single central owner. But going a step further, it eliminates centralization. In a distributed system, users have equal access to data, though user privileges can be enabled when needed. The best example of a vast, distributed system is the internet itself.
@@ -127,6 +129,7 @@ Now that you have a better understanding of every system, let’s see how these 
 - High: Decentralized systems, Distributed systems </br>
 
 </br>
+
 ## Final Thoughts
 
 As you can see, there are advantages and disadvantages to every system. Centralized systems helped the first networks grow and were the only choice before decentralized systems began to emerge.
