@@ -395,7 +395,7 @@ handshake:
 
 ##### 1. Requester Hello
 
-The Requester sends its ephemeral public key {{< mathml "`p_s`" >}} to the Responder. Ephemeral
+The Requester sends its ephemeral public key {{< mathml "`a_p`" >}} to the Responder. Ephemeral
 keys are only used for one handshake and then discarded. They guarantee the
 freshness of the messages to avoid replay attacks.
 
@@ -699,9 +699,9 @@ As shown on the schema above, a Member Entry consists of a secret box sealed
 with the Group Secret ({{< mathml "`G_S`" >}}) containing the following elements:
 
 * The signature of the Group ID ({{< mathml "`G_{ID}`" >}}) and the member device ID public key
-({{< mathml "`D_{P}`" >}}) by the member ID secret key ({{< mathml "`M_{S}`" >}})
-* The Member ID public key ({{< mathml "`M_{P}`" >}}) to verify the signature
-* The Device ID public key ({{< mathml "`D_{P}`" >}}) to authenticate the new member
+({{< mathml "`D_P`" >}}) by the member ID secret key ({{< mathml "`M_S`" >}})
+* The Member ID public key ({{< mathml "`M_P`" >}}) to verify the signature
+* The Device ID public key ({{< mathml "`D_P`" >}}) to authenticate the new member
 
 Now that the new member has announced their arrival, they need to exchange
 their chain key with the other members. To do so, for each of their devices
