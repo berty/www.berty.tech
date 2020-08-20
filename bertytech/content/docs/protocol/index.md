@@ -698,10 +698,10 @@ they post a Member Entry for each of their devices on the metadata log:
 As shown on the schema above, a Member Entry consists of a secret box sealed
 with the Group Secret ($G_S$) containing the following elements:
 
-* The signature of the Group ID ($G_{ID}$) and the member device ID public key
-($D_P$) by the member ID secret key ($M_S$)
-* The Member ID public key ($M_P$) to verify the signature
-* The Device ID public key ($D_P$) to authenticate the new member
+* The signature of the Group ID ({{< mathml "`G^{ID}`" >}}) and the member device ID public key
+({{< mathml "`D^{P}`" >}}) by the member ID secret key ({{< mathml "`M^{S}`" >}})
+* The Member ID public key ({{< mathml "`M^{P}`" >}}) to verify the signature
+* The Device ID public key ({{< mathml "`D^{P}`" >}}) to authenticate the new member
 
 Now that the new member has announced their arrival, they need to exchange
 their chain key with the other members. To do so, for each of their devices
