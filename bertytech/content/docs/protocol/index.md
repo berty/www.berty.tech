@@ -386,16 +386,16 @@ Here is the list of the keys known by each participant at the beginning of the
 handshake:
 
 * Requester knows:
-  * $A_s$ and $A_p$: Requester's ID key pair.
-  * $a_s$ and $a_p$: Requester's ephemeral key pair.
-  * $B_p$: Responder's ID public key.
+  * {{< mathml "`A_s`" >}} and {{< mathml "`A_p`" >}}: Requester's ID key pair.
+  * {{< mathml "`a_s`" >}} and {{< mathml "`a_p`" >}}: Requester's ephemeral key pair.
+  * {{< mathml "`B_p`" >}} Responder's ID public key.
 * Responder knows:
-  * $B_s$ and $B_p$: Responder's ID key pair.
-  * $b_s$ and $b_p$: Responder's ephemeral key pair.
+  * {{< mathml "`B_s`" >}} and {{< mathml "`B_p`" >}}: Responder's ID key pair.
+  * {{< mathml "`b_s`" >}} and {{< mathml "`b_p`" >}}: Responder's ephemeral key pair.
 
 ##### 1. Requester Hello
 
-The Requester sends its ephemeral public key $a_p$ to the Responder. Ephemeral
+The Requester sends its ephemeral public key {{< mathml "`p_s`" >}} to the Responder. Ephemeral
 keys are only used for one handshake and then discarded. They guarantee the
 freshness of the messages to avoid replay attacks.
 
@@ -403,41 +403,41 @@ freshness of the messages to avoid replay attacks.
 
 ##### 2. Responder Hello
 
-The Responder sends its ephemeral public key $b_p$ to the Requester.
+The Responder sends its ephemeral public key {{< mathml "`b_p`" >}} to the Requester.
 
 ![responder-hello-1](./rkYDSaaDI.png)
 
 Now both the Requester and the Responder are able to compute two shared
-secrets denoted $a.b$ and $a.B$:
+secrets denoted {{< mathml "`a.b`" >}} and {{< mathml "`a.B`" >}}:
 
 ![responder-hello-2](./ryrmDTpw8.png)
 
 Secrets are derived using the X25519 protocol. Since a man-in-the-middle could
 have intercepted the ephemeral keys and replaced them, we need cannot only
-rely on $a.b$ and we also need to use $a.B$ in our following exchanges.
+rely on {{< mathml "`a.b`" >}} and we also need to use {{< mathml "`a.B`" >}} in our following exchanges.
 
 ##### 3. Requester Authenticate
 
-The Requester sends a secret box containing the signature of $a.b$ along with
+The Requester sends a secret box containing the signature of {{< mathml "`a.b`" >}} along with
 their ID public key to authenticate themselves. The secret box is sealed with
-$a.b$ and $a.B$, thus in this step the Requester also proves that they know
+{{< mathml "`a.b`" >}} and {{< mathml "`a.B`" >}}, thus in this step the Requester also proves that they know
 the Responder's ID.
 
 ![requester-auth-1](./BymgCaaDI.png)
 
 From this step, a man-in-the-middle is no longer able to intercept the
-exchanges because they are not able to compute $a.B$, regardless of what they
+exchanges because they are not able to compute {{< mathml "`a.B`" >}}, regardless of what they
 have done in the previous steps.
 
 Now both the Requester and the Responder are able to compute another shared
-secret denoted $A.B$:
+secret denoted {{< mathml "`A.B`" >}}:
 
 ![requester-auth-2](./BJWLZR6vU.png)
 
 ##### 4. Responder Accept
 
-The Responder sends a secret box containing the signature of $a.b$. The secret
-box is sealed with $a.b$ and the new secret $A.B$, which proves that the
+The Responder sends a secret box containing the signature of {{< mathml "`a.b`" >}}. The secret
+box is sealed with {{< mathml "`a.b`" >}} and the new secret {{< mathml "`A.B`" >}}, which proves that the
 Responder has effectively received and decrypted the previous message.
 
 ![responder-accept](./ry6qXApPU.png)
@@ -583,10 +583,10 @@ generated, the group creator posts an Init Member Entry on the Metadata Log:
 ![init-member-entry](./rkI4GWD_8.png)
 
 As shown on the schema above, the Init Member Entry consists of a secret box
-sealed with the Group Secret ($G_S$) containing the following elements:
+sealed with the Group Secret ({{< mathml "`G_S`" >}}) containing the following elements:
 
-* The Member ID public key ($M_P$)
-* The signature of the Member ID public key ($M_P$) by the Group ID private
+* The Member ID public key ({{< mathml "`M_P`" >}})
+* The signature of the Member ID public key ({{< mathml "`M_P`" >}}) by the Group ID private
 key
 
 It is omitted on the schema but the secret box is signed with a key derived
@@ -696,12 +696,12 @@ they post a Member Entry for each of their devices on the metadata log:
 ![new-member-entry-1](./SkXjmJRvL.png)
 
 As shown on the schema above, a Member Entry consists of a secret box sealed
-with the Group Secret ($G_S$) containing the following elements:
+with the Group Secret ({{< mathml "`G_S`" >}}) containing the following elements:
 
-* The signature of the Group ID ({{< mathml "`G^{ID}`" >}}) and the member device ID public key
-({{< mathml "`D^{P}`" >}}) by the member ID secret key ({{< mathml "`M^{S}`" >}})
-* The Member ID public key ({{< mathml "`M^{P}`" >}}) to verify the signature
-* The Device ID public key ({{< mathml "`D^{P}`" >}}) to authenticate the new member
+* The signature of the Group ID ({{< mathml "`G_{ID}`" >}}) and the member device ID public key
+({{< mathml "`D_{P}`" >}}) by the member ID secret key ({{< mathml "`M_{S}`" >}})
+* The Member ID public key ({{< mathml "`M_{P}`" >}}) to verify the signature
+* The Device ID public key ({{< mathml "`D_{P}`" >}}) to authenticate the new member
 
 Now that the new member has announced their arrival, they need to exchange
 their chain key with the other members. To do so, for each of their devices
@@ -709,14 +709,14 @@ they post a Secret Entry on the metadata log for each member already in the grou
 
 ![new-member-entry-2](./Hkn4kg0v8.png)
 
-A Secret Entry consists of a secret box sealed with the Group Secret ($G_S$)
+A Secret Entry consists of a secret box sealed with the Group Secret ({{< mathml "`G_S`" >}})
 containing the following elements:
 
-* The Sender Device ID public key ($S_P$)
-* The Receiver Member ID public key ($R_P$) so that everyone within the group
+* The Sender Device ID public key ({{< mathml "`S_P`" >}})
+* The Receiver Member ID public key ({{< mathml "`R_P`" >}}) so that everyone within the group
 knows to whom the secret entry is addressed to
-* A secret box sealed with a shared secret $R.S$ that can be computed by both
-the Sender and the Receiver, containing the Sender's Chain Key ($CK$) and its
+* A secret box sealed with a shared secret {{< mathml "`R.S`" >}} that can be computed by both
+the Sender and the Receiver, containing the Sender's Chain Key ({{< mathml "`CK`" >}}) and its
 current counter.
 
 This operation is bilateral, once a member has fetched a Secret Entry on the
@@ -736,12 +736,12 @@ on the Message Log:
 
 ![message](./HJ9wKg0PL.png)
 
-A Secret Entry consists of a secret box sealed with the Group Secret ($G_S$)
+A Secret Entry consists of a secret box sealed with the Group Secret ({{< mathml "`G_S`" >}})
 containing the following elements:
 
-* A secret box sealed by the message key $K$ containing the message.
-* The signature of this secret box with the Device ID secret key ($D_S$).
-* The Device ID public key $D_P$ to verify the signature above and identify
+* A secret box sealed by the message key {{< mathml "`K`" >}} containing the message.
+* The signature of this secret box with the Device ID secret key ({{< mathml "`D_S`" >}}).
+* The Device ID public key {{< mathml "`D_P`" >}} to verify the signature above and identify
 the sender.
 * The counter corresponding to the message key.
 
