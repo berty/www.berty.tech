@@ -37,7 +37,7 @@ For building the websites the following software is necessary:
 
 - [node and npm](https://nodejs.org/) - Javascript runtime and packet manager
 - [GNU make](https://www.gnu.org/software/make/) - build tool
-- [Hugo](https://gohugo.io) - generator for static websites 
+- [Hugo Extended](https://gohugo.io) - generator for static websites
 
 ## Contribute
 
