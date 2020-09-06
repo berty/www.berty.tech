@@ -27,6 +27,11 @@ prod-build:
 	hugo --gc $(HUGO_OPTS)
 	./post-build.sh
 
+.PHONY: prod-build-ipfs
+prod-build-ipfs:
+	hugo --gc $(HUGO_OPTS)
+	./minify.sh
+
 .PHONY: publish
 publish:
 	@echo "done by netlify"
