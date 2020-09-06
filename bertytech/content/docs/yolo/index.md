@@ -7,7 +7,7 @@ display_nav: false
 open: true
 menu:
     repos:
-        weight: 7
+        weight: 8
 ---
 
 # Yolo
