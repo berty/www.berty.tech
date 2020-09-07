@@ -25,7 +25,12 @@ build: $(DEPS)
 .PHONY: prod-build
 prod-build:
 	hugo --gc $(HUGO_OPTS)
-	./post-build.sh
+	CONTEXT="production" ./post-build.sh
+
+.PHONY: prod-build-ipfs
+prod-build-ipfs:
+	hugo --gc $(HUGO_OPTS)
+	./minify.sh
 
 .PHONY: publish
 publish:
