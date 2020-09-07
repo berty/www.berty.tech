@@ -26,6 +26,11 @@ $color-yellow-light:#FFF0D4; /* yellow 23% */
 $color-green-light: #D3F8F2;
 $color-purple-light:#472e91;
 
+/* Anonymity's color */
+$color-cyan:#00BAE8;
+$color-cyan-light:#C3F7F4;
+$color-tor:#7D4698; /* Tor's text palette. */
+
 $color-blue-90: #525BEC; /* blue 90% for backgrounds */
 
 /* other variables */
@@ -1528,6 +1533,16 @@ a.tag-card{
   &.green {
     color:$color-green;
     background-color:$color-green-light;
+  }
+  &.cyan {
+    color:$color-cyan;
+    background-color:$color-cyan-light;
+  }
+  &.tor {
+    color:$color-tor; /* Using Color on white text with a border because any kind of lightened of tor's palette is ugly. */
+    border-color:$color-tor;
+    border:solid;
+    border-width:thin;
   }
 }
 /* TAG */

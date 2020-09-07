@@ -6,7 +6,7 @@ color: black
 open: true
 menu:
     repos:
-        weight: 6
+        weight: 7
 ---
 
 # Assets
