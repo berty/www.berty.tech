@@ -1,6 +1,6 @@
 ---
 title: Go-Tor-Transport
-description: Go version of Peer-to-Peer Databases for the Decentralized Web
+description: Go and C tor binary builtin transport for libp2p.
 icon: fab fa-github
 color: black
 display_nav: false
@@ -13,13 +13,16 @@ menu:
 
 # Go-Tor-Transport
 
-**Go and C tor builtin transport for libp2p.**
+**Go and C tor binary builtin transport for libp2p, aiming to provide anonymised access to the libp2p network.**
+
 
 ## Introduction
 
 [go-tor-transport](https://github.com/berty/go-tor-transport) is a transport proving access to an libp2p network through the tor network.
 
 To do that the code mainly uses [go-libtor](https://github.com/ipsn/go-libtor) to provide a go linking of the [Tor's](https://www.torproject.org/) node.
+
+So at the start it either connects to a node running in system or start his own one embed in the binary, so usage can be seemless as possible.
 
 ## Source code
 Source code is available on [github](https://github.com/berty/go-tor-transport).
