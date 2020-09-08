@@ -22,7 +22,9 @@
         {{ .Site.Params.jobsWorkingAtBerty | markdownify }}
         <br />
         <div class="buttons">
-          <amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).RelPermalink }}">
+          {{ $res := resources.Get "js/obs-email.js" }}
+          {{ $src := cond (eq (getenv "BERTY_IPFS") "true") $res.RelPermalink $res.Permalink }} 
+          <amp-script layout="flex-item" src="{{ $src }}">
             <a class="btn btn-bty btn-blue sendto-{{ `jobs@berty.tech` | base64Encode }}"><i class="fal fa-pencil-alt"></i>Apply to this offer</a>
           </amp-script>
         </div>
