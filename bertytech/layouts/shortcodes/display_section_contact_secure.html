@@ -9,7 +9,7 @@
 			<p><strong>If you wish to enhance email security</strong>, use PGP/GPG encryption technology:</p>
 			<div class="block-key">
 				<span class="left"><i class="far fa-envelope"></i>Email</span>
-				<amp-script class="right" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+				<amp-script class="right" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).RelPermalink }}">
 					<span class="obsinner-{{ `secure@berty.tech` | base64Encode }}"></span>
 				</amp-script>
 			</div>
@@ -25,7 +25,7 @@
 
 			<div class="block-key">
 				<span class="left"><i class="far fa-envelope"></i>Email</span>
-				<amp-script class="right" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+				<amp-script class="right" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).RelPermalink }}">
 					<span class="obsinner-{{ `bertytech@protonmail.com` | base64Encode }}"></span>
 				</amp-script>
 			</div>

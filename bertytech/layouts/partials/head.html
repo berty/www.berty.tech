@@ -99,8 +99,12 @@
     {{ $styleContent := replace $styleContent `@charset "UTF-8";` `` }} <!-- Reason for this line is because for an unknown reason it prefixes the CSS output with '@charset "UTF-8"' -->
     
     {{ $segments := split (trim .RelPermalink "/") "/"}}
-    {{ $rel_path_prefix := apply $segments "print" ".." }}
-    {{ $rel_path_prefix = delimit $rel_path_prefix "/" }}
+    {{ $rel_path_prefix := "" }}
+    {{ if .IsHome }}
+    {{ $rel_path_prefix = "." }}
+    {{ else }}
+    {{ $rel_path_prefix = delimit (apply $segments "print" "..") "/" }}
+    {{ end }}
 
     <style {{ if ($.Scratch.Get `isAmpPage`) }}amp-custom{{end}}>
       /* Fontawesome */
