@@ -7,3 +7,4 @@ go-libp2p-ble-transport https://github.com/berty/go-libp2p-ble-transport
 zero-push               https://github.com/berty/zero-push
 yolo                    https://github.com/berty/yolo
 ipfs-webui-packed       https://github.com/berty/ipfs-webui-packed
+go-tor-transport        https://github.com/berty/go-tor-transport
