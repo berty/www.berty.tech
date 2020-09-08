@@ -3,7 +3,7 @@
 {{ range $index, $el := index .ctx.Site.Menus .menu }}
 
     {{ $isActive := or ($currentPage.IsMenuCurrent $.menu .) ($currentPage.HasMenuCurrent $.menu .) }}
-    {{ $isActive := or $isActive (in ($currentPage.Permalink | relLangURL) (.URL | relLangURL)) }}
+    {{ $isActive := or $isActive (in ($currentPage.RelPermalink | relLangURL) (.URL | relLangURL)) }}
         <li {{if $isActive }}class="active"{{end}}><a href="{{ .URL }}">{{ .Name }}</a></li>
 {{ end }}
 </ul>

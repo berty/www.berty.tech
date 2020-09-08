@@ -12,7 +12,7 @@
   <div class="container">
 
     <section class="section-faq">
-      <amp-script class="row" layout="container" src="{{ (resources.Get `js/amp-faq.js`).Permalink }}">
+      <amp-script class="row" layout="container" src="{{ (resources.Get `js/amp-faq.js`).RelPermalink }}">
         <div class="col-12">
           {{ range sort .Pages "Params.id" }}
           {{ partial "block_faq" . }}

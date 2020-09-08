@@ -20,7 +20,7 @@
     {{- end }}
   </div><!-- /.col -->
   <div class="col-lg-4 col-md-6">
-    <amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+    <amp-script layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).RelPermalink }}">
     <div class= "block block-contact text-center">
       <h3>Contact</h3>
       <a class="h4 obsinner-{{ `press@berty.tech` | base64Encode }} sendto-{{ `press@berty.tech` | base64Encode }}"></a>

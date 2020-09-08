@@ -11,7 +11,7 @@
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
                     {{ $isActive := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-                    {{ $isActive := or $isActive (in ($currentPage.Permalink | relLangURL) (.URL | relLangURL)) }}
+                    {{ $isActive := or $isActive (in ($currentPage.RelPermalink | relLangURL) (.URL | relLangURL)) }}
                     <li class="nav-item">
                         <a class="nav-link{{if $isActive }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
                     </li>

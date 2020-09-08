@@ -16,7 +16,7 @@
       </a>
     </div>
     
-    <amp-script class="col-lg-3 col-md-6" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).Permalink }}">
+    <amp-script class="col-lg-3 col-md-6" layout="flex-item" src="{{ (resources.Get `js/obs-email.js` | minify | fingerprint).RelPermalink }}">
       <a class="block block-value bg-white sendto-{{ `hello@berty.tech` | base64Encode }}">
         <div class="block-value-icon c-blue"><i class="fal fa-envelope"></i></div>
         <div class="block-value-text">Email us at&nbsp;<br/> <span class="c-blue to-text obsinner-{{ `hello@berty.tech` | base64Encode }}"></span></div>
