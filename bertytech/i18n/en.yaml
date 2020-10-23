@@ -35,3 +35,41 @@ read_the_faq:
 
 contact_us:
   other: Contact us
+
+partially:
+  other: partially
+
+features:
+  one: Feature
+  other: Features
+
+edit:
+  other: Edit
+  
+# Apps compare table
+open_source:
+  other: Open Source
+no_runtime_fee: 
+  other: No runtime fee
+no_purchase_fee: 
+  other: No purchase fee
+distributed:  
+  other: Distributed
+decentralized:  
+  other: Decentralized
+no_phone_required:  
+  other: No phone number required
+anonymous:  
+  other: Anonymous use possible
+e2ee:  
+  other: end-to-end encryption
+offline_messaging:  
+  other: Offline messaging
+multi_device:  
+  other: Multi-device messaging
+open_spec:  
+  other: Open Spec
+aosp:  
+  other: AOSP (Android Open Source Project)
+privacy_respecting:  
+  other: Privacy respecting terms of use
