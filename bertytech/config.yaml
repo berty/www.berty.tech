@@ -34,6 +34,11 @@ markup:
     renderer:
       unsafe: true
 
+DefaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+
 params:
   #useSummaryIfNoDescription: true
   description: We build tools to enhance communication freedom
