@@ -64,7 +64,7 @@
     {{ $scratch.Get "author_img" | safeHTML }}
     <span class="author-name">{{ $authorName }}</span>
     {{- if .ctx.ReadingTime -}}
-    <span class="reading-time"><i class="far fa-clock"></i>&nbsp;{{.ctx.ReadingTime}} min read</span>
+    <span class="reading-time"><i class="far fa-clock"></i>&nbsp;{{ T "minutes_read" .ctx.ReadingTime }}</span>
     {{- end -}}
   </div>
 </a><!-- /.block /.post-card -->

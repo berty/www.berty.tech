@@ -7,7 +7,7 @@
       <table class="compare-table-inner table table-bordered">
         <thead>
           <tr>
-            <th scope="col">Feature</th>
+            <th scope="col">{{ T "features" "1" }}</th>
             {{ range $apps }}
             <th scope="col">
               {{ .Title }}
@@ -19,7 +19,7 @@
           {{ range $table.Params.compared_items }}
           {{ $key := .key }}
           <tr>
-            <th scope="row" class="compare-name">{{ .value }}</th>
+            <th scope="row" class="compare-name">{{ T (print "compare_" $key) . }}</th>
             {{ range $apps }}
             {{ $value := (index .Params $key) | lower }}
             <td class="compare-value value-{{ $value | lower }}">
@@ -30,7 +30,7 @@
               {{ else if eq $value "?" }}
               <i class="fal fa-question-circle"></i>
               {{ else }}
-              {{ $value }}
+              {{ T $value . }}
               {{ end }}
             </td>
             {{ end }}
@@ -41,7 +41,7 @@
             {{ range $apps }}
             <td>
               <a class="btn btn-bty btn-grack d-flex align-items-center" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i><small>Edit</small>
+                <i class="fab fa-github"></i><small>{{ T "edit" . }}</small>
               </a>
             </td>
             {{ end }}

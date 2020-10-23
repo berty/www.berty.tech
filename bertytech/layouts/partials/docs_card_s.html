@@ -1,9 +1,9 @@
 <div class="col-lg-4 col-md-6">
     <a class="block bg-white doc-card s {{.Page.Params.color}}" href="{{ .Page.RelPermalink }}">
         {{ if .Page.Params.Open }}
-        <div class="corner-ribbon green">Open source</div>
+        <div class="corner-ribbon green">{{ T "open_source" . }}</div>
         {{ else }}
-        <div class="corner-ribbon grey">Not open yet</div>
+        <div class="corner-ribbon grey">{{ T "not_open_yet" . }}</div>
         {{ end }}
         <div class="doc-card-inner">
             <h4 class="doc-card-title text">

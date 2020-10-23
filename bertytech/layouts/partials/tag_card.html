@@ -4,7 +4,7 @@
             <div class="tag-card-inner blog-tags">
               <div class="tag {{ .ctx.Title | lower }}">{{ .ctx.Title | lower }}</div>
               <div class="tag-card-button">
-                {{ $amount }} {{ cond (gt $amount 1) "posts" "post" }}
+                {{ $amount }} {{ T "posts" $amount }}
                 <i class="far fa-chevron-right"></i>
               </div>
             </div>

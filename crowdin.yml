@@ -1,0 +1,9 @@
+base_path: /bertytech 
+preserve_hierarchy: true
+files:
+  - source: /content/**/*.md
+    ignore:
+      - /content/**/*.*.md
+    translation: /%original_path%/%file_name%.%two_letters_code%.md
+  - source: /i18n/en.yml
+    translation: /%original_path%/%two_letters_code%.yml
