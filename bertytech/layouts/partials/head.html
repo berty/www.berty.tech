@@ -42,12 +42,17 @@
      /_____/      /____/\__/_/  \__/\__ /
     /__/                           /___/
 -->
-<html lang="en" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
+<html lang="{{ .Lang }}" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ $.Scratch.Get `pageTitle` }}</title>
+
+    {{ range .Page.Translations }}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+    <meta http-equiv="Content-Language" content="{{ .Lang }}">
 
     <!-- AMP -->
     {{ $amp_url_prefix := cond (eq (getenv "BERTY_IPFS") "true") "/amp" "https://cdn.ampproject.org" }}
