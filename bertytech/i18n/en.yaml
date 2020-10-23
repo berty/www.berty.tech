@@ -74,6 +74,10 @@ request_a_talk:
 
 not_open_yet:
   other: Not open yet
+
+downloads:
+  one: Download
+  other: Downloads
   
 # Apps compare table
 compare_open_source:
@@ -115,3 +119,17 @@ subscribe:
 email_placeholder:
   other: your.name@example.com
 
+press_documents:
+  other: Press documents
+
+image_assets:
+  other: Image Assets
+
+view_all_assets:
+  other: View all assets
+
+contact:
+  other: Contact
+
+follow_us:
+  other: Follow Us

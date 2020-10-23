@@ -4,7 +4,7 @@
 
 <div class ="row margin-bottom-40">
   <div class="col-lg-8 col-md-6">
-    <h3>Press documents</h3>
+    <h3>{{ T "press_documents" "2" }}</h3>
     {{- range $files }}
     {{ $file_path := path.Join $path .Name }}
     <!-- PDF FILES DISPLAY -->
@@ -13,9 +13,9 @@
     </a>
     <br />
     <br />
-    <h3>Image assets</h3>
+    <h3>{{ T "image_assets" "2" }}</h3>
     <a class="btn btn-bty btn-blue margin-bottom-15" href="https://assets.berty.tech/">
-      <i class="fal fa-globe"></i>View all assets
+      <i class="fal fa-globe"></i>{{ T "view_all_assets" "2" }}
     </a>
     {{- end }}
   </div><!-- /.col -->
@@ -24,12 +24,12 @@
     {{ $src := cond (eq (getenv "BERTY_IPFS") "true") $res.RelPermalink $res.Permalink }} 
     <amp-script layout="flex-item" src="{{ $src }}">
     <div class= "block block-contact text-center">
-      <h3>Contact</h3>
+      <h3>{{ T "contact" . }}</h3>
       <a class="h4 obsinner-{{ `press@berty.tech` | base64Encode }} sendto-{{ `press@berty.tech` | base64Encode }}"></a>
       <br />
       <br />
       <br />
-      <h3>Follow Us </h3>
+      <h3>{{ T "follow_us" . }}</h3>
       <div class="text-center">
         {{ partial "nav_social" . }}
       </div>
