@@ -1,0 +1,2 @@
+go_to_page:
+  other: Go to {{ .data }} page
