@@ -1,4 +1,4 @@
-base_path: /bertytech 
+base_path: /bertytech
 preserve_hierarchy: true
 files:
   - source: /content/**/*.md
