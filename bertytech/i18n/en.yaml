@@ -76,31 +76,31 @@ not_open_yet:
   other: Not open yet
   
 # Apps compare table
-open_source:
+compare_open_source:
   other: Open Source
-no_runtime_fee: 
+compare_no_runtime_fee: 
   other: No runtime fee
-no_purchase_fee: 
+compare_no_purchase_fee: 
   other: No purchase fee
-distributed:  
+compare_distributed:  
   other: Distributed
-decentralized:  
+compare_decentralized:  
   other: Decentralized
-no_phone_required:  
+compare_no_phone_required:  
   other: No phone number required
-anonymous:  
+compare_anonymous:  
   other: Anonymous use possible
-e2ee:  
+compare_e2ee:  
   other: end-to-end encryption
-offline_messaging:  
+compare_offline_messaging:  
   other: Offline messaging
-multi_device:  
+compare_multi_device:  
   other: Multi-device messaging
-open_spec:  
+compare_open_spec:  
   other: Open Spec
-aosp:  
+compare_aosp:  
   other: AOSP (Android Open Source Project)
-privacy_respecting:  
+compare_privacy_respecting:  
   other: Privacy respecting terms of use
 
 # newsletter block
