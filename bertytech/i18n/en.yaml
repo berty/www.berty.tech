@@ -10,6 +10,9 @@ comments:
 back_to_blog_posts:
   other: Back to blog posts
 
+back_to_list:
+  other: Back to list
+
 related_articles:
   other: Related Articles
 
@@ -45,6 +48,9 @@ features:
 
 edit:
   other: Edit
+
+read:
+  other: Read
   
 # Apps compare table
 open_source:
@@ -73,3 +79,15 @@ aosp:
   other: AOSP (Android Open Source Project)
 privacy_respecting:  
   other: Privacy respecting terms of use
+
+# newsletter block
+newsletter_block_title:
+  other: Get updates on Berty
+newsletter_block_item_1:
+  other: Weekly news on the project
+newsletter_block_item_2:
+  other: App release announcements
+subscribe:
+  other: Subscribe
+email_placeholder:
+  other: your.name@example.com

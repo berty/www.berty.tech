@@ -32,7 +32,7 @@
         {{ if not .PublishDate.IsZero }}{{ .Scratch.Set "publish-date" .PublishDate }}{{ end }}
   <span class="publication-date"><i class="far fa-calendar-alt"></i>&nbsp;{{ (.Scratch.Get "publish-date").Format "January 2, 2006" }}</span>
   &nbsp;&nbsp;&nbsp;
-  <span class="read-time"><i class="far fa-clock"></i>&nbsp;{{.ReadingTime}} min read</span>
+  <span class="read-time"><i class="far fa-clock"></i>&nbsp;{{ T "minutes_read" .ReadingTime }}</span>
 
               </div><!-- /.job-card-infos -->
             </div><!-- /.job-card-end -->
@@ -40,7 +40,7 @@
           <div class="col-md-3">
             <div class="job-card-end">
               <div class="job-card-button">
-                <button class="btn btn-bty btn-blue icon-right">Read<i class="far fa-chevron-right"></i></button>
+                <button class="btn btn-bty btn-blue icon-right">{{ T "read" . }}<i class="far fa-chevron-right"></i></button>
               </div><!-- /.job-card-button -->
             </div><!-- /.job-card-end -->
           </div><!-- /.col -->
