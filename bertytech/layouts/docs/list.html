@@ -20,7 +20,7 @@
     </section>
 
     <section class="section-projects">
-      <h2 id="projects">Projects</h2>
+      <h2 id="projects">{{ T "projects" "2" }}</h2>
       <div class="row">
         {{ range .Site.Menus.repos }}
         {{ partial "docs_card_s" . }}
@@ -32,7 +32,7 @@
     </section>
 
     <section class="section-actions">
-      <h2>Didn't find what you were looking for?</h2>
+      <h2>{{ T "didnt_find_what_you_were_looking_for" . }}</h2>
       <div class="row">
         <div class="col-lg-4">
           {{ partial "block_action_go_to_github" . }}

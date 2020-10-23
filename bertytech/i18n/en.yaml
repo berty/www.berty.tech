@@ -13,11 +13,20 @@ back_to_blog_posts:
 back_to_list:
   other: Back to list
 
+back_to_docs:
+  other: Back to docs
+
 related_articles:
   other: Related Articles
 
 edit_on_github:
   other: Edit on github
+
+last_modified_on:
+  other: Last modified on
+
+contents:
+  other: Contents
 
 posts:
   one: Post
@@ -31,6 +40,7 @@ didnt_find_what_you_were_looking_for:
   other: Didn't find what you were looking for?
 
 read_the_docs:
+  one: Read the doc
   other: Read the docs
 
 read_the_faq:
@@ -51,6 +61,19 @@ edit:
 
 read:
   other: Read
+
+projects:
+  one: Project
+  other: Projects
+
+go_to_github:
+  other: Go to Github org
+
+request_a_talk:
+  other: Request a talk
+
+not_open_yet:
+  other: Not open yet
   
 # Apps compare table
 open_source:
@@ -91,3 +114,4 @@ subscribe:
   other: Subscribe
 email_placeholder:
   other: your.name@example.com
+

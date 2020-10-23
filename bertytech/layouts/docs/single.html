@@ -4,13 +4,13 @@
 <header class="header-rounded small bg-blue gradient bg-docs">
   <div class="container">
     <div class="subnav col-md-10 px-3 px-md-0 d-flex justify-content-between align-items-center">
-        <a class="btn btn-bty btn-transparent" href="/docs"><i class="far fa-arrow-left"></i>Back to docs</a>
+        <a class="btn btn-bty btn-transparent" href="/docs"><i class="far fa-arrow-left"></i>{{ T "back_to_docs" . }}</a>
         <div class="d-flex">
           <div class="mr-2">
             {{ partialCached "btn_support_our_work" . }}
           </div>
           <a class="btn btn-bty btn-grack ml-2" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
-            <i class="fab fa-github"></i>Edit on GitHub
+            <i class="fab fa-github"></i>{{ T "edit_on_github" . }}
           </a>
         </div>
     </div><!-- /.subnav -->
@@ -25,32 +25,32 @@
     <div class="row">
       <div class="col-md-10">
         <div class="block block-doc-content bg-white js-toc-content">
-          <span class="text-secondary">Last modified on <strong>{{ .Page.Lastmod.Format "02 Jan 2006" }}</strong></span>
+          <span class="text-secondary">{{ T "last_modified_on" . }} <strong>{{ .Page.Lastmod.Format "02 Jan 2006" }}</strong></span>
           {{ .Content }}
         </div><!-- /.block-doc-content -->
       </div><!-- /.col -->
       <div class="col-md-2">
         <div class="block-doc-nav">
-          <h6><i class="far fa-align-left"></i>&nbsp;&nbsp;Contents</h6>
+          <h6><i class="far fa-align-left"></i>&nbsp;&nbsp;{{ T "contents" . }}</h6>
           <div class="js-toc"></div>
         </div><!-- /.block-doc-nav -->
       </div><!-- /.col -->
     </div><!-- /.row -->
     {{ else }}
     <div class="block block-doc-content bg-white">
-      <span class="text-secondary">Last modified on <strong>{{ .Page.Lastmod.Format "02 Jan 2006" }}</strong></span>
+      <span class="text-secondary">{{ T "last_modified_on" . }} <strong>{{ .Page.Lastmod.Format "02 Jan 2006" }}</strong></span>
       {{ .Content }}
     </div><!-- /.block-doc-content -->
     {{ end }}
     <section class="section-actions d-none">
       <a class="btn btn-bty btn-grack mb-3" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>Edit on GitHub
+        <i class="fab fa-github"></i>{{ T "edit_on_github" . }}
       </a>
       <div class="mb-3">
         {{ partialCached "btn_support_our_work" . }}
       </div>
       <a class="block block-action bg-blue bg-gradient" href="/docs">
-      <h4><i class="far fa-arrow-left left"></i>Back to docs</h4>
+      <h4><i class="far fa-arrow-left left"></i>{{ T "back_to_docs" . }}</h4>
       </a><!-- /.block -->
     </section>
   </div><!-- /.container -->
