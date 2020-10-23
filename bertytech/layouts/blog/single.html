@@ -4,7 +4,7 @@
 <header class="header-rounded large bg-yellow gradient bg-blog">
   <div class="container">
     <div class="subnav">
-       <a class="btn btn-bty btn-transparent" href="/blog"><i class="far fa-arrow-left"></i>Back to blog posts</a>
+       <a class="btn btn-bty btn-transparent" href="/blog"><i class="far fa-arrow-left"></i>{{ T "back_to_blog_posts" . }}</a>
     </div><!-- /.subnav -->
   </div><!-- /.container -->
   <div class="container text-center">
@@ -33,7 +33,7 @@
           </div>
           <div>
             <a class="btn btn-bty btn-grack" href="{{ printf .Site.Params.editOnGithubLink .File.Path }}" target="_blank" rel="noopener">
-              <i class="fab fa-github"></i>Edit on GitHub
+              <i class="fab fa-github"></i>{{ T "edit_on_github" . }}
             </a>
           </div>
         </div>
@@ -42,7 +42,7 @@
 
     <div class="row mb-5">
       <div class="col-md-12 mb-3">
-        <h3 class="font-weight-bold"><strong>Comments</strong></h3>
+        <h3 class="font-weight-bold"><strong>{{ T "comments" "2"}}</strong></h3>
       </div>
       <div class="col-md-12">
         <div class="block bg-white">
@@ -53,7 +53,7 @@
 
     <div class="row">
       <div class="col-md-12 mb-3">
-        <h3 class="font-weight-bold"><strong>Related Articles</strong></h3>
+        <h3 class="font-weight-bold"><strong>{{ T "related_articles" . }}</strong></h3>
       </div>
       {{ range first 3 (.Site.RegularPages.RelatedIndices . "tags") }}
         <div class="col-lg-4 col-sm-6">
@@ -64,7 +64,7 @@
 
     <section class="section-actions d-none">
       <a class="block block-action bg-yellow bg-gradient" href="/blog">
-      <h4><i class="far fa-arrow-left left"></i>Back to blog posts</h4>
+      <h4><i class="far fa-arrow-left left"></i>{{ T "back_to_blog_posts" . }}</h4>
       </a><!-- /.block -->
     </section>
 

@@ -1,2 +1,25 @@
-go_to_page:
-  other: Go to {{ .data }} page
+go_to_contribute_page:
+  other: Go to contribute page
+
+support_our_work:
+  other: Support our work
+
+comments:
+  other: Comments
+
+back_to_blog_posts:
+  other: Back to blog posts
+
+related_articles:
+  other: Related Articles
+
+edit_on_github:
+  other: Edit on github
+
+posts:
+  one: Post
+  other: Posts
+
+minutes_read:
+  one: "{{ .Count }} Min read"
+  other: "{{ .Count }} Min read"

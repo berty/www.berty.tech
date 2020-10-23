@@ -74,7 +74,7 @@
 								<li>
 									{{.}}
 									{{ if eq $index 3 }}
-									&nbsp;&nbsp;<a class="btn btn-bty btn-blue icon-right" href="{{ relLangURL `/contribute` }}" role="button">{{ T "go_to_page" (dict "data" "contribute" ) }}<i class="far fa-arrow-right"></i></a>
+									&nbsp;&nbsp;<a class="btn btn-bty btn-blue icon-right" href="{{ relLangURL `/contribute` }}" role="button">{{ T "go_to_contribute_page" . }}<i class="far fa-arrow-right"></i></a>
 									{{ end }}
 								</li>
 								{{ end }}
