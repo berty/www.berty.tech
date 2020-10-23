@@ -23,3 +23,15 @@ posts:
 minutes_read:
   one: "{{ .Count }} Min read"
   other: "{{ .Count }} Min read"
+
+didnt_find_what_you_were_looking_for:
+  other: Didn't find what you were looking for?
+
+read_the_docs:
+  other: Read the docs
+
+read_the_faq:
+  other: Read the FAQ
+
+contact_us:
+  other: Contact us
