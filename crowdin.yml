@@ -5,5 +5,5 @@ files:
     ignore:
       - /content/**/*.*.md
     translation: /%original_path%/%file_name%.%two_letters_code%.md
-  - source: /i18n/en.yml
-    translation: /%original_path%/%two_letters_code%.yml
+  - source: /i18n/en.yaml
+    translation: /%original_path%/%two_letters_code%.yaml
