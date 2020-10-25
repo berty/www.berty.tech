@@ -13,6 +13,11 @@
     <a href="https://github.com/berty">GitHub</a>
 </b></p>
 
+<p align="center">
+    <a title="Crowdin" href="https://translate.berty.community/website"><img src="https://badges.crowdin.net/e/c647509959bdd72d6c1cbb94ff06f88f/localized.svg"></a>
+    <a title="Netlify Status" href="https://app.netlify.com/sites/bertytech/deploys"><img src="https://api.netlify.com/api/v1/badges/3429d23a-ba6e-458e-8bc6-84583c63f742/deploy-status"></a>
+</p>
+
 ---
 
 > Source for the [Berty websites](https://berty.tech)
