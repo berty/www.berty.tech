@@ -1,0 +1,153 @@
+[go_to_contribute_page]
+other = "Go to contribute page"
+
+[support_our_work]
+other = "Support our work"
+
+[comments]
+other = "Comments"
+
+[back_to_blog_posts]
+other = "Back to blog posts"
+
+[back_to_list]
+other = "Back to list"
+
+[back_to_docs]
+other = "Back to docs"
+
+[related_articles]
+other = "Related Articles"
+
+[edit_on_github]
+other = "Edit on github"
+
+[last_modified_on]
+other = "Last modified on"
+
+[contents]
+other = "Contents"
+
+[posts]
+one = "Post"
+other = "Posts"
+
+[minutes_read]
+one = "{{ .Count }} Min read"
+other = "{{ .Count }} Min read"
+
+[didnt_find_what_you_were_looking_for]
+other = "Didn't find what you were looking for?"
+
+[read_the_docs]
+one = "Read the doc"
+other = "Read the docs"
+
+[read_the_faq]
+other = "Read the FAQ"
+
+[contact_us]
+other = "Contact us"
+
+[partially]
+other = "partially"
+
+[features]
+one = "Feature"
+other = "Features"
+
+[edit]
+other = "Edit"
+
+[read]
+other = "Read"
+
+[projects]
+one = "Project"
+other = "Projects"
+
+[go_to_github]
+other = "Go to Github org"
+
+[request_a_talk]
+other = "Request a talk"
+
+[not_open_yet]
+other = "Not open yet"
+
+[downloads]
+one = "Download"
+other = "Downloads"
+
+# start Apps compare table
+[compare_open_source]
+other = "Open Source"
+
+[compare_no_runtime_fee]
+other = "No runtime fee"
+
+[compare_no_purchase_fee]
+other = "No purchase fee"
+
+[compare_distributed]
+other = "Distributed"
+
+[compare_decentralized]
+other = "Decentralized"
+
+[compare_no_phone_required]
+other = "No phone number required"
+
+[compare_anonymous]
+other = "Anonymous use possible"
+
+[compare_e2ee]
+other = "end-to-end encryption"
+
+[compare_offline_messaging]
+other = "Offline messaging"
+
+[compare_multi_device]
+other = "Multi-device messaging"
+
+[compare_open_spec]
+other = "Open Spec"
+
+[compare_aosp]
+other = "AOSP (Android Open Source Project)"
+
+[compare_privacy_respecting]
+other = "Privacy respecting terms of use"
+# end Apps compare table
+
+# start newsletter block
+[newsletter_block_title]
+other = "Get updates on Berty"
+
+[newsletter_block_item_1]
+other = "Weekly news on the project"
+
+[newsletter_block_item_2]
+other = "App release announcements"
+# end newsletter block
+
+[subscribe]
+other = "Subscribe"
+
+[email_placeholder]
+other = "your.name@example.com"
+
+[press_documents]
+other = "Press documents"
+
+[image_assets]
+other = "Image Assets"
+
+[view_all_assets]
+other = "View all assets"
+
+[contact]
+other = "Contact"
+
+[follow_us]
+other = "Follow Us"
