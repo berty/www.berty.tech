@@ -14,7 +14,7 @@
     "@id":"{{ .Permalink }}"
 },
 "dateModified":"{{ .Lastmod }}",
-"inLanguage":"{{ .Site.LanguageCode }}",
+"inLanguage":"{{ ($.Scratch.Get "currentPage").Lang }}",
 "accessMode":"textual",
 "accessModeSufficient":"textual",
 "isAccessibleForFree":true,

@@ -1,6 +1,6 @@
 "@type": "WebPage",
 "@context": "http://schema.org",
-"inLanguage": "{{ .Site.LanguageCode }}",
+"inLanguage": "{{ ($.Scratch.Get "currentPage").Lang }}",
 "copyrightYear": {{ now.Format "2006" }},
 "url": "{{ .Permalink | absURL }}",
 "author": {

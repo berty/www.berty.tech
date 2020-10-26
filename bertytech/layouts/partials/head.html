@@ -30,7 +30,6 @@
 {{ $discourseCommentsPages := slice "blog" "newsletter" }}
 
 <!-- Check if current page has been translated or is just a copy of the English page -->
-{{ $.Scratch.Set "language" .Lang }}
 {{ $.Scratch.Set "englishPage" "" }}
 {{ $.Scratch.Set "currentPage" . }}
 {{ $.Scratch.Set "isEnglishCopy" false }}
@@ -55,7 +54,6 @@
 {{ end }}
 <!-- Set language to "en" if it's just a copy -->
 {{ if ($.Scratch.Get "isEnglishCopy") }}
-  {{ $.Scratch.Set "language" "en" }}
   {{ $.Scratch.Set "currentPage" ($.Scratch.Get "englishPage") }}
 {{ end }}
 
@@ -72,7 +70,7 @@
      /_____/      /____/\__/_/  \__/\__ /
     /__/                           /___/
 -->
-<html lang="{{ .Lang }}" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
+<html lang="{{ ($.Scratch.Get "currentPage").Lang }}" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
 
   <head>
     <meta charset="utf-8">
@@ -82,7 +80,7 @@
     {{ range .Page.Translations }}
       <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
     {{ end }}
-    <meta http-equiv="Content-Language" content="{{ .Lang }}">
+    <meta http-equiv="Content-Language" content="{{ ($.Scratch.Get "currentPage").Lang }}">
 
     <!-- AMP -->
     {{ $amp_url_prefix := cond (eq (getenv "BERTY_IPFS") "true") "/amp" "https://cdn.ampproject.org" }}
@@ -313,7 +311,7 @@
     <meta property="og:image:width" content="{{ ($.Scratch.Get `featuredImage`).Width }}" />
     <meta property="og:image:height" content="{{ ($.Scratch.Get `featuredImage`).Height }}" />
     <meta property="og:title" content="{{ $.Scratch.Get `pageTitle` }}" />
-    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    <meta property="og:locale" content="{{ ($.Scratch.Get "currentPage").Site.LanguageCode }}" />
     {{- if not .Date.IsZero }}
     <meta property="og:updated_time" content="{{.Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr}}" />
     {{- end }}
