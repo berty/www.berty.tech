@@ -29,6 +29,36 @@
 
 {{ $discourseCommentsPages := slice "blog" "newsletter" }}
 
+<!-- Check if current page has been translated or is just a copy of the English page -->
+{{ $.Scratch.Set "language" .Lang }}
+{{ $.Scratch.Set "englishPage" "" }}
+{{ $.Scratch.Set "currentPage" . }}
+{{ $.Scratch.Set "isEnglishCopy" false }}
+{{ $englishSite := .Sites.First }}
+{{ $englishPageContent := "" }}
+<!-- If current page is not English -->
+{{ if ne .Lang "en" }}
+  <!-- Get English page -->
+  {{ range .Translations}}
+    {{ if eq .Site $englishSite }}
+      {{ $.Scratch.Set "englishPage" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+<!-- Get English file's content -->
+{{ if ($.Scratch.Get "englishPage") }}
+  {{ $englishPageContent = readFile ($.Scratch.Get "englishPage").File }}
+{{ end }}
+<!-- Compare English file's content -->
+{{ if .File }}
+{{ $.Scratch.Set "isEnglishCopy" (eq (readFile .File) $englishPageContent) }}
+{{ end }}
+<!-- Set language to "en" if it's just a copy -->
+{{ if ($.Scratch.Get "isEnglishCopy") }}
+  {{ $.Scratch.Set "language" "en" }}
+  {{ $.Scratch.Set "currentPage" ($.Scratch.Get "englishPage") }}
+{{ end }}
+
 <!doctype html>
 <!--
           /\
@@ -261,7 +291,10 @@
     <link rel="mask-icon" href="{{ relURL "/favicon/safari-pinned-tab.svg" }}" color="#5bbad5">
 
     <meta name="theme-color" content="#ffffff">
+
+    {{ with ($.Scratch.Get "currentPage") }}
     <link rel="canonical" href="{{if index .Params "canonical"}}{{index .Params "canonical"}}{{else}}{{ .Permalink | strings.TrimSuffix "/"}}{{end}}" />
+    {{ end }}
 
     <!-- Alternative Outputs (RSS etc.) -->
     {{ range .AlternativeOutputFormats -}}
