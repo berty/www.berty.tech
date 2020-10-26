@@ -1,0 +1,149 @@
+[go_to_contribute_page]
+other = "Aller à la page de contribution"
+
+[support_our_work]
+other = "Soutenez nos travaux"
+
+[comments]
+other = "Commentaires"
+
+[back_to_blog_posts]
+other = "Retour aux articles de blog"
+
+[back_to_list]
+other = "Revenir à la liste"
+
+[back_to_docs]
+other = "Retour à la documentation"
+
+[related_articles]
+other = "Articles liés"
+
+[edit_on_github]
+other = "Modifier sur GitHub"
+
+[last_modified_on]
+other = "Dernière modification le"
+
+[contents]
+other = "Contenus"
+
+[posts]
+one = "Publication"
+other = "Publication"
+
+[minutes_read]
+one = "{{ .Count }} minutes de lecture"
+other = "{{ .Count }} minutes de lecture"
+
+[didnt_find_what_you_were_looking_for]
+other = "Vous n'avez pas trouvé ce que vous recherchiez ?"
+
+[read_the_docs]
+one = "Lire la documentation"
+other = "Lire les documentations"
+
+[read_the_faq]
+other = "Lire la FAQ"
+
+[contact_us]
+other = "Nous contacter"
+
+[partially]
+other = "partiellement"
+
+[features]
+one = "Fonctionnalité"
+other = "Fonctionnalités"
+
+[edit]
+other = "Modifier"
+
+[read]
+other = "Lire"
+
+[projects]
+one = "Projet"
+other = "Projets"
+
+[go_to_github]
+other = "Accéder à l'organisation Github"
+
+[request_a_talk]
+other = "Demander une discussion"
+
+[not_open_yet]
+other = "Pas encore ouvert"
+
+[downloads]
+one = "Télécharger"
+other = "Téléchargements"
+
+[compare_open_source]
+other = "Open Source"
+
+[compare_no_runtime_fee]
+other = "Aucun frais de fonctionnement"
+
+[compare_no_purchase_fee]
+other = "Aucuns frais d'achat"
+
+[compare_distributed]
+other = "Distribué"
+
+[compare_decentralized]
+other = "Décentralisé"
+
+[compare_no_phone_required]
+other = "Aucun numéro de téléphone requis"
+
+[compare_anonymous]
+other = "Utilisation anonyme possible"
+
+[compare_e2ee]
+other = "chiffrement de bout en bout"
+
+[compare_offline_messaging]
+other = "Messagerie hors ligne"
+
+[compare_multi_device]
+other = "Messagerie multi-appareils"
+
+[compare_open_spec]
+other = "Spécifications ouvertes"
+
+[compare_aosp]
+other = "AOSP (Android Open Source Project)"
+
+[compare_privacy_respecting]
+other = "Conditions d'utilisations respectueuses de la vie privée"
+
+[newsletter_block_title]
+other = "Recevoir les mises à jour sur Berty"
+
+[newsletter_block_item_1]
+other = "Actualités hebdomadaires sur le projet"
+
+[newsletter_block_item_2]
+other = "Annonces de publication de l'application"
+
+[subscribe]
+other = "S'abonner"
+
+[email_placeholder]
+other = "votre.nom@exemple.com"
+
+[press_documents]
+other = "Documents de presse"
+
+[image_assets]
+other = "Images"
+
+[view_all_assets]
+other = "Voir toutes les ressources"
+
+[contact]
+other = "Contact"
+
+[follow_us]
+other = "Nous suivre"
