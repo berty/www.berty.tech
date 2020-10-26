@@ -2,7 +2,7 @@
 publish = "public"
 command = "make prod-build"
 base = "bertytech/"
-ignore = "git diff --quiet HEAD^ HEAD -- ."
+ignore = "./ignore-build.sh"
 
 [context.production.environment]
 HUGO_VERSION = "0.73.0"
