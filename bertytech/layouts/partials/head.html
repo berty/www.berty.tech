@@ -46,7 +46,9 @@
 {{ end }}
 <!-- Get English file's content -->
 {{ if ($.Scratch.Get "englishPage") }}
-  {{ $englishPageContent = readFile ($.Scratch.Get "englishPage").File }}
+  {{ if ($.Scratch.Get "englishPage").File }}
+    {{ $englishPageContent = readFile ($.Scratch.Get "englishPage").File }}
+  {{ end }}
 {{ end }}
 <!-- Compare English file's content -->
 {{ if .File }}
