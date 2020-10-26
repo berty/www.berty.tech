@@ -28,7 +28,7 @@
           <div class="blog-tags mb-3 mb-0">
             {{ range .Params.tags }}
               {{ $tag := $.Site.GetPage (print "/tags/" .) }}
-              <a class="tag {{ . | lower }}" href="{{ $tag.RelPermalink }}">{{ $tag.Title }}</a>
+              <a class="tag {{ . | lower }}" href="{{ $tag.RelPermalink | relLangURL }}">{{ $tag.Title }}</a>
             {{ end }}
           </div>
           <div>

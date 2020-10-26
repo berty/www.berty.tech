@@ -29,6 +29,36 @@
 
 {{ $discourseCommentsPages := slice "blog" "newsletter" }}
 
+<!-- Check if current page has been translated or is just a copy of the English page -->
+{{ $.Scratch.Set "englishPage" "" }}
+{{ $.Scratch.Set "currentPage" . }}
+{{ $.Scratch.Set "isEnglishCopy" false }}
+{{ $englishSite := .Sites.First }}
+{{ $englishPageContent := "" }}
+<!-- If current page is not English -->
+{{ if ne .Lang "en" }}
+  <!-- Get English page -->
+  {{ range .Translations}}
+    {{ if eq .Site $englishSite }}
+      {{ $.Scratch.Set "englishPage" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+<!-- Get English file's content -->
+{{ if ($.Scratch.Get "englishPage") }}
+  {{ if ($.Scratch.Get "englishPage").File }}
+    {{ $englishPageContent = readFile ($.Scratch.Get "englishPage").File }}
+  {{ end }}
+{{ end }}
+<!-- Compare English file's content -->
+{{ if .File }}
+{{ $.Scratch.Set "isEnglishCopy" (eq (readFile .File) $englishPageContent) }}
+{{ end }}
+<!-- Set language to "en" if it's just a copy -->
+{{ if ($.Scratch.Get "isEnglishCopy") }}
+  {{ $.Scratch.Set "currentPage" ($.Scratch.Get "englishPage") }}
+{{ end }}
+
 <!doctype html>
 <!--
           /\
@@ -42,7 +72,7 @@
      /_____/      /____/\__/_/  \__/\__ /
     /__/                           /___/
 -->
-<html lang="{{ .Lang }}" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
+<html lang="{{ ($.Scratch.Get "currentPage").Lang }}" {{ if ($.Scratch.Get `isAmpPage`) }}⚡{{end}}>
 
   <head>
     <meta charset="utf-8">
@@ -52,7 +82,7 @@
     {{ range .Page.Translations }}
       <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
     {{ end }}
-    <meta http-equiv="Content-Language" content="{{ .Lang }}">
+    <meta http-equiv="Content-Language" content="{{ ($.Scratch.Get "currentPage").Lang }}">
 
     <!-- AMP -->
     {{ $amp_url_prefix := cond (eq (getenv "BERTY_IPFS") "true") "/amp" "https://cdn.ampproject.org" }}
@@ -261,7 +291,10 @@
     <link rel="mask-icon" href="{{ relURL "/favicon/safari-pinned-tab.svg" }}" color="#5bbad5">
 
     <meta name="theme-color" content="#ffffff">
+
+    {{ with ($.Scratch.Get "currentPage") }}
     <link rel="canonical" href="{{if index .Params "canonical"}}{{index .Params "canonical"}}{{else}}{{ .Permalink | strings.TrimSuffix "/"}}{{end}}" />
+    {{ end }}
 
     <!-- Alternative Outputs (RSS etc.) -->
     {{ range .AlternativeOutputFormats -}}
@@ -280,7 +313,7 @@
     <meta property="og:image:width" content="{{ ($.Scratch.Get `featuredImage`).Width }}" />
     <meta property="og:image:height" content="{{ ($.Scratch.Get `featuredImage`).Height }}" />
     <meta property="og:title" content="{{ $.Scratch.Get `pageTitle` }}" />
-    <meta property="og:locale" content="{{ .Site.LanguageCode }}" />
+    <meta property="og:locale" content="{{ ($.Scratch.Get "currentPage").Site.LanguageCode }}" />
     {{- if not .Date.IsZero }}
     <meta property="og:updated_time" content="{{.Date.Format "2006-01-02T15:04:05-07:00" | safeHTMLAttr}}" />
     {{- end }}

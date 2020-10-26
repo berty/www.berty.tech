@@ -38,8 +38,10 @@ DefaultContentLanguage: en
 languages:
   en:
     languageName: English
+    languageCode: en-US
   fr:
     languageName: French
+    languageCode: fr-FR
 
 params:
   #useSummaryIfNoDescription: true

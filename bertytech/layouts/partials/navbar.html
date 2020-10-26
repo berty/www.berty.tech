@@ -34,17 +34,20 @@
                         <span class="title">White Paper</span>
                         <span class="subtitle">The vision behind the Berty project</span>
                       </a>-->
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/features`) `/features` }}">
+                      {{ $url := relLangURL "/features" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-stars c-blue"></i>
                         <span class="title">Features</span>
                         <span class="subtitle">Group conversations, offline messaging...</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/challenges`) `/challenges` }}">
+                      {{ $url := relLangURL "/challenges" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-rocket c-blue"></i>
                         <span class="title">Challenges</span>
                         <span class="subtitle">Technicals, humans and more</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/faq`) `/faq` }}">
+                      {{ $url := relLangURL "/faq" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-question-circle c-blue"></i>
                         <span class="title">FAQ</span>
                         <span class="subtitle">Frequently asked questions</span>
@@ -56,22 +59,26 @@
                         Developers<i class="far fa-chevron-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="d-developers">
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/docs`) `/docs` }}">
+                      {{ $url := relLangURL "/docs" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-book c-blue"></i>
                         <span class="title">Docs</span>
                         <span class="subtitle">Technical documentations</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/docs#projects`) `/docs#projects` }}">
+                      {{ $url := relLangURL "/docs#projects" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="far fa-cubes c-blue"></i>
                         <span class="title">Our Projects</span>
                         <span class="subtitle">Go-IPFS-Log, Go-Orbit-DB...</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/contribute`) `/contribute` }}">
+                      {{ $url := relLangURL "/contribute" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-code-branch c-blue"></i>
                         <span class="title">Contribute</span>
                         <span class="subtitle">Developer, crypto specialist, translator...</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/contribute#projects-we-love`) `/contribute#projects-we-love` }}">
+                      {{ $url := relLangURL "/contribute#projects-we-love" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-heart c-blue"></i>
                         <span class="title">Projects we love</span>
                         <span class="subtitle">IPFS, 42, Paris P2P...</span>
@@ -88,12 +95,14 @@
                         Resources<i class="far fa-chevron-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="d-resources">
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/about`) `/about` }}">
+                      {{ $url := relLangURL "/about" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-home c-blue"></i>
                         <span class="title">About us</span>
                         <span class="subtitle">We're a small NGO</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/jobs`) `/jobs` }}">
+                      {{ $url := relLangURL "/jobs" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-laptop-code c-blue"></i>
                         <span class="title">Jobs</span>
                         <span class="subtitle">Our open positions</span>
@@ -103,17 +112,20 @@
                         <span class="title">Help center</span>
                         <span class="subtitle">Tutorials & more</span>
                       </a>-->
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/newsletter`) `/newsletter` }}">
+                      {{ $url := relLangURL "/newsletter" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-envelope-open-text c-blue"></i>
                         <span class="title">Newsletter</span>
                         <span class="subtitle">Subscribe and read previous issues</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/contact`) `/contact` }}">
+                      {{ $url := relLangURL "/contact" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-paper-plane c-blue"></i>
                         <span class="title">Contact</span>
                         <span class="subtitle">Get in touch with us</span>
                       </a>
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL `/press`) `/press` }}">
+                      {{ $url := relLangURL "/press" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-newspaper c-blue"></i>
                         <span class="title">Press</span>
                         <span class="subtitle">Press documents and medias</span>
@@ -136,11 +148,13 @@
                       </a>-->
                     </div>
                 </li>
+                {{ $url := relLangURL "/community" }}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ cond $is_404 (absURL `/community`) `/community` }}">Community</a>
+                    <a class="nav-link" href="{{ cond $is_404 (absURL $url) $url }}">Community</a>
                 </li>
+                {{ $url := relLangURL "/blog" }}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ cond $is_404 (absURL `/blog`) `/blog` }}">Blog</a>
+                    <a class="nav-link" href="{{ cond $is_404 (absURL $url) $url }}">Blog</a>
                 </li>
             </ul>
           </amp-script>
