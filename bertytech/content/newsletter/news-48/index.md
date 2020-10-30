@@ -59,7 +59,7 @@ We dropped in on some great talks: "Can technology save us?"; "Human rights: we 
 
 ### Reddit
 
-We were quoted in Reddit (see above). Several people discovered Berty and made interesting remarks about Berty. We took the opportunity to make an issue gathering all the comments about the repo /community. We say it every time: thank you for your feedback and advice. We're takers! 
+We were quoted in Reddit (see above). Several people discovered Berty and made interesting remarks about Berty. We took the opportunity to make an issue gathering all the comments in the repo /community. We say it every time: thank you for your feedback and advice. We're takers! 
 
 👉 https://github.com/berty/community/issues/108
 
