@@ -1,6 +1,6 @@
 ---
 author: Camille
-title: "Basic #3: Two Authentification Factor"
+title: "Basic #3: Two-Factor Authentification"
 date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
