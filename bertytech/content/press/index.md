@@ -1,5 +1,5 @@
 ---
-title: Press & Media
+title: "Press & Media"
 type: fakepost
 hclass: bg-blue gradient bg-press
 image: "berty_press.png"

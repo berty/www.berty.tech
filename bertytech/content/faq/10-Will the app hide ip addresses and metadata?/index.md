@@ -1,5 +1,5 @@
 ---
-title: Will the app hide ip addresses and metadata?
+title: "Will the app hide ip addresses and metadata?"
 id: 10
 private: true
 ---

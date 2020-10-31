@@ -1,5 +1,5 @@
 ---
-title: How can I get Berty? 
+title: "How can I get Berty? "
 id: 8
 private: true
 ---

@@ -1,5 +1,5 @@
 ---
-title: Docs
+title: "Docs"
 subtitle: Technical documentations
 menu:
     footer_col2:

@@ -1,6 +1,6 @@
 ---
 author: manfred
-title: Berty releases gomobile-ipfs!! 
+title: "Berty releases gomobile-ipfs!! "
 date: 2020-02-12
 image: "gomobile_ipfs_logo.jpg"
 categories:

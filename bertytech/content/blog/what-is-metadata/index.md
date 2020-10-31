@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: What Is Metadata?
+title: "What Is Metadata?"
 date: 2019-12-20
 image: "blogpost-metadata.jpg"
 categories:

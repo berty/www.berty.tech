@@ -1,5 +1,5 @@
 ---
-title: Gomobile-IPFS
+title: "Gomobile-IPFS"
 description: IPFS and libp2p on Mobile, with Gomobile
 icon: fab fa-github
 color: black

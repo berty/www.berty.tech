@@ -1,6 +1,6 @@
 ---
 author: Ninel
-title: Sim Swapping
+title: "Sim Swapping"
 date: 2020-08-24
 #image: "sim-swapping.png"
 image: "sim-swapping.png"

@@ -1,5 +1,5 @@
 ---
-title: What's the encryption protocol used in Berty?
+title: "What's the encryption protocol used in Berty?"
 id: 11
 private: true
 ---

@@ -1,6 +1,6 @@
 ---
 author: manfred
-title: Centralized vs Decentralized vs Distributed Systems
+title: "Centralized vs Decentralized vs Distributed Systems"
 date: 2019-06-20
 image: "decentralized.jpeg"
 categories:

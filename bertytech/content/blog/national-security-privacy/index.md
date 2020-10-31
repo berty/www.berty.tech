@@ -1,6 +1,6 @@
 ---
 author: camille
-title: Has National Defense Every Right?
+title: "Has National Defense Every Right?"
 date: 2018-12-28
 image: "national-defense.jpg"
 categories:

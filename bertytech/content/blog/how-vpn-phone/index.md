@@ -1,6 +1,6 @@
 ---
 author: ninel
-title: How to set up a VPN on your phone in less than 10 minutes
+title: "How to set up a VPN on your phone in less than 10 minutes"
 date: 2019-06-05
 image: "vpn-phone.jpg"
 categories:

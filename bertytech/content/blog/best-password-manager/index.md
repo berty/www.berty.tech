@@ -1,6 +1,6 @@
 ---
 author: Pierre
-title: Best Password Manager in 2020.
+title: "Best Password Manager in 2020."
 date: 2020-08-07
 #image: "password-manager.jpg"
 image: "password-manager.jpg"

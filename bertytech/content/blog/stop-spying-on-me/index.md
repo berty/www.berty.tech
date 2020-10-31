@@ -1,6 +1,6 @@
 ---
 author: Camille
-title: Stop spying on me!
+title: "Stop spying on me!"
 date: 2020-06-16
 image: "stop-spying.jpg"
 categories:

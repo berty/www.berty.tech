@@ -1,5 +1,5 @@
 ---
-title: White Paper
+title: "White Paper"
 Description: The vision statement for the Berty project
 icon: fal fa-file-alt
 color: blue

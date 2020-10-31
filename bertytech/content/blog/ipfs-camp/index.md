@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: Berty team at IPFS Camp, June 2019
+title: "Berty team at IPFS Camp, June 2019"
 date: 2019-08-15
 image: "berty_at_ipfs_camp.jpg"
 categories:

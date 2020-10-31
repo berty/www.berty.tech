@@ -1,5 +1,5 @@
 ---
-title: Terms & Conditions
+title: "Terms & Conditions"
 type: fakepost
 image_bg: "terms.png"
 ---

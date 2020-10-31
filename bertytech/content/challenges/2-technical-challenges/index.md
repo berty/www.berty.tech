@@ -1,5 +1,5 @@
 ---
-title: Technical challenges
+title: "Technical challenges"
 id: 2
 icon: fal fa-laptop-code
 private: true

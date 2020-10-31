@@ -1,5 +1,5 @@
 ---
-title: Berty Protocol
+title: "Berty Protocol"
 description: The offline-first P2P alternative to the Signal Protocol
 icon: fal fa-book
 color: blue

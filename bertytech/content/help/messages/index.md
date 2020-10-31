@@ -1,5 +1,5 @@
 ---
-title: Messages
+title: "Messages"
 description: Keep your data safe & your life private
 icon: fal fa-paper-plane
 color: pink

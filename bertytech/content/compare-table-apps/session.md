@@ -1,5 +1,5 @@
 ---
-title: Session
+title: "Session"
 weight: -80
 open_source: true
 no_runtime_fee: true

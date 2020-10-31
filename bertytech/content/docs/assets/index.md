@@ -1,5 +1,5 @@
 ---
-title: Assets
+title: "Assets"
 description: 🎨 Berty logos, icons, pictures, text, etc
 icon: fab fa-github
 color: black

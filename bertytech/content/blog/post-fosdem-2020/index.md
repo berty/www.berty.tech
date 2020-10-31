@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: Memories from FOSDEM 2020
+title: "Memories from FOSDEM 2020"
 date: 2020-02-03
 #image: "fosdem-2020-logo.jpg"
 image: "fosdem_memories.jpg"

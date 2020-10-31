@@ -1,5 +1,5 @@
 ---
-title: Example doc
+title: "Example doc"
 description: This page displays all styling options available
 icon: fal fa-pencil-ruler
 color: green-alt

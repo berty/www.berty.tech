@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: How Social Networks Affect Our Privacy?
+title: "How Social Networks Affect Our Privacy?"
 date: 2019-01-07
 image: "social-media.jpg"
 categories:

@@ -1,6 +1,6 @@
 ---
 author: alex
-title: Berty's UX/UI
+title: "Berty's UX/UI"
 date: 2020-05-04
 image: "berty_ux_ui.png"
 categories:

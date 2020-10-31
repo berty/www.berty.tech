@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: Advantages of being an NGO
+title: "Advantages of being an NGO"
 date: 2020-05-26
 image: "ngo-non-profit.png"
 categories:

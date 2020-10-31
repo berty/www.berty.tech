@@ -1,6 +1,6 @@
 ---
 author: Pierre
-title: How to create a strong password?
+title: "How to create a strong password?"
 date: 2020-08-04
 #image: "create-strong-password.jpg"
 image: "create-strong-password.jpg"

@@ -1,6 +1,6 @@
 ---
 author: manfred
-title: Covid-19, The Berty Update
+title: "Covid-19, The Berty Update"
 date: 2020-03-19
 #image: "corona.jpg"
 image: "corona.jpg"

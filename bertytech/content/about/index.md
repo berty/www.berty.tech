@@ -1,5 +1,5 @@
 ---
-title: About us
+title: "About us"
 subtitle: We build tools to enhance communication freedom
 hclass: bg-blue gradient bg-about
 image: "berty_about.png"

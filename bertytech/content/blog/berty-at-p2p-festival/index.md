@@ -1,6 +1,6 @@
 ---
 author: camille
-title: Throwback from the first edition of P2P Festival! 
+title: "Throwback from the first edition of P2P Festival! "
 date: 2020-01-27
 image: "festival.png"
 video: time_laps_festival.mp4

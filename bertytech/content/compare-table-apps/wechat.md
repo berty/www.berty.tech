@@ -1,5 +1,5 @@
 ---
-title: WeChat
+title: "WeChat"
 open_source: false
 no_runtime_fee:
 no_purchase_fee:

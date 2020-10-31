@@ -1,5 +1,5 @@
 ---
-title: Threema
+title: "Threema"
 weight: -60
 open_source: false
 no_runtime_fee: true

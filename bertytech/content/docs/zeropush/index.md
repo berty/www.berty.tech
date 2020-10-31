@@ -1,5 +1,5 @@
 ---
-title: Zero-Push
+title: "Zero-Push"
 description: Zero-Push is a Berty component used to send push notifications from a server without a central token repository.
 icon: fab fa-github
 color: black
