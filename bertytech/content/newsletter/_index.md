@@ -1,5 +1,5 @@
 ---
-title: Newsletter
+title: "Newsletter"
 subtitle: Previous issues
 menu:
     footer_col4:

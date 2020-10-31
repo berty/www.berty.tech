@@ -1,5 +1,5 @@
 ---
-title: QA Engineer
+title: "QA Engineer"
 image_bg: paris.png
 location: "Paris, France / Remote"
 contract: "Part Time / Freelance"

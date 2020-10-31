@@ -1,6 +1,6 @@
 ---
 author: camille
-title: Top 2018 Privacy Leaks
+title: "Top 2018 Privacy Leaks"
 date: 2019-02-11
 image: "leak-2018.jpg"
 categories:

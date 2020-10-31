@@ -1,7 +1,7 @@
 
 ---
 author: zooma
-title: How do we imagine the future?
+title: "How do we imagine the future?"
 date: 2020-07-27
 image: "future-berty.jpg"
 categories:

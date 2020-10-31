@@ -1,5 +1,5 @@
 ---
-title: Go-Tor-Transport
+title: "Go-Tor-Transport"
 description: Go and C tor binary builtin transport for libp2p.
 icon: fab fa-github
 color: black

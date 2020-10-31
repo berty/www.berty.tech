@@ -1,6 +1,6 @@
 ---
 author: Ninel
-title: How to counter censhorship?
+title: "How to counter censhorship?"
 date: 2020-07-07
 #image: "counter-censorship.jpg"
 image: "counter-censorship.jpg"

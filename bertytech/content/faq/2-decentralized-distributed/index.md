@@ -1,5 +1,5 @@
 ---
-title: What does "decentralized" and "distributed" mean?
+title: 'What does "decentralized" and "distributed" mean?'
 id: 2
 private: true
 ---

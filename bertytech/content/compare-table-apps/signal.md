@@ -1,5 +1,5 @@
 ---
-title: Signal
+title: "Signal"
 weight: -70
 open_source: true
 no_runtime_fee: true

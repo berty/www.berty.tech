@@ -1,5 +1,5 @@
 ---
-title: Go-Orbit-DB
+title: "Go-Orbit-DB"
 description: Go version of Peer-to-Peer Databases for the Decentralized Web
 icon: fab fa-github
 color: black

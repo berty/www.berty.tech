@@ -1,6 +1,6 @@
 ---
 author: zooma
-title: Why might Berty allow the new forms of micro-local cooperation facing COVID-19?
+title: "Why might Berty allow the new forms of micro-local cooperation facing COVID-19?"
 date: 2020-03-24
 #image: "Micro-local-cooperation.jpg"
 image: "Micro-local-cooperation.jpg"

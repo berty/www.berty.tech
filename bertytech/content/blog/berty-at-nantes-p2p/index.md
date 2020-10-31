@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: Meet us at Nantes P2P #0!
+title: "Meet us at Nantes P2P #0!"
 date: 2020-02-26
 #image: "nantes_cover_3.jpg"
 image: "nantes_cover_3.jpg"

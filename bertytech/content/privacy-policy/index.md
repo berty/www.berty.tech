@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy
+title: "Privacy Policy"
 type: fakepost
 image_bg: "privacy.png"
 ---

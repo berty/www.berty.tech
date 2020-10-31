@@ -1,5 +1,5 @@
 ---
-title: Berty Network
+title: "Berty Network"
 description: IPFS / Libp2p / Bluetooth / Quic / 3G / ...
 icon: fal fa-book
 color: blue

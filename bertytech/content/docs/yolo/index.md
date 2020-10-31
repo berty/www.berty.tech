@@ -1,5 +1,5 @@
 ---
-title: Yolo
+title: "Yolo"
 description: "Over-the-air installation and testing of mobile applications (TestFlight alternative)"
 icon: fab fa-github
 color: black

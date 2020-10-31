@@ -1,5 +1,5 @@
 ---
-title: Settings
+title: "Settings"
 description: Keep your data safe & your life private
 icon: fal fa-cog
 color: pink

@@ -1,5 +1,5 @@
 ---
-title: Will it have features such as self-destructing messages and BOR?
+title: "Will it have features such as self-destructing messages and BOR?"
 id: 13
 private: true
 ---

@@ -1,6 +1,6 @@
 ---
 author: ninel
-title: Rencontrez nous au FOSDEM 2020 !
+title: "Rencontrez nous au FOSDEM 2020 !"
 date: 2020-01-27
 #image: "fosdem2020.png"
 image: "meet_fosdem.jpg"

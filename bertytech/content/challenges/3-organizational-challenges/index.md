@@ -1,5 +1,5 @@
 ---
-title: Organizational challenges
+title: "Organizational challenges"
 id: 3
 icon: fal fa-heart
 private: true

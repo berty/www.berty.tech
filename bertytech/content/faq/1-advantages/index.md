@@ -1,5 +1,5 @@
 ---
-title: What are the advantages of Berty compared to the other messengers?
+title: "What are the advantages of Berty compared to the other messengers?"
 id: 1
 private: true
 ---

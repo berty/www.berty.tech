@@ -1,5 +1,5 @@
 ---
-title: Security & Privacy
+title: "Security & Privacy"
 description: Keep your data safe & your life private
 icon: fal fa-lock-alt
 color: pink

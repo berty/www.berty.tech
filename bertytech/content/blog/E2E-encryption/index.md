@@ -1,6 +1,6 @@
 ---
 author: camille
-title: What is E2E Encryption?
+title: "What is E2E Encryption?"
 date: 2019-09-05
 image: "E2EE-encryption.jpg"
 categories:

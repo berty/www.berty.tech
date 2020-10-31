@@ -1,5 +1,5 @@
 ---
-title: Technical Writer
+title: "Technical Writer"
 image_bg: paris.png
 location: "Paris, FRANCE / Remote"
 contract: "Part Time / Freelance"

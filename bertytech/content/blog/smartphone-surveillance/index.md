@@ -1,6 +1,6 @@
 ---
 author: ninel
-title: Are smartphones the best surveillance devices?
+title: "Are smartphones the best surveillance devices?"
 date: 2019-11-15
 image: "smartphone-surveillance.jpg"
 categories:

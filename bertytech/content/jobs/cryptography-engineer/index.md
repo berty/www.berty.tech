@@ -1,5 +1,5 @@
 ---
-title: Cryptography Engineer
+title: "Cryptography Engineer"
 image_bg: paris.png
 location: Paris, FRANCE
 contract: Full time

@@ -1,5 +1,5 @@
 ---
-title: Go-IPFS-Log
+title: "Go-IPFS-Log"
 description: Go version of append-only log CRDT on IPFS
 icon: fab fa-github
 color: black

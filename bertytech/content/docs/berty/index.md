@@ -1,5 +1,5 @@
 ---
-title: Berty
+title: "Berty"
 description: A mobile & desktop app
 icon: fab fa-github
 color: black

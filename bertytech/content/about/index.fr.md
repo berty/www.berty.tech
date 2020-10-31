@@ -1,5 +1,5 @@
 ---
-title: À propos
+title: "À propos"
 subtitle: Nous développons des outils pour améliorer la liberté d'expression
 hclass: bg-blue gradient bg-about
 image: "berty_about.png"

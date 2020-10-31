@@ -1,6 +1,6 @@
 ---
 author: ninel
-title: Cryptography In Our Daily Usage
+title: "Cryptography In Our Daily Usage"
 date: 2019-10-16
 image: "cryptography-daily-usage.jpg"
 categories:
