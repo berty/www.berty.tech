@@ -30,7 +30,7 @@
 {{ $discourseCommentsPages := slice "blog" "newsletter" }}
 
 <!-- Check if current page has been translated or is just a copy of the English page -->
-{{ $.Scratch.Set "englishPage" "" }}
+{{ $.Scratch.Set "englishPage" . }}
 {{ $.Scratch.Set "currentPage" . }}
 {{ $.Scratch.Set "isEnglishCopy" false }}
 {{ $englishSite := .Sites.First }}
