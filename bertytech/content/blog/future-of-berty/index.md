@@ -1,4 +1,3 @@
-
 ---
 author: zooma
 title: "How do we imagine the future?"
