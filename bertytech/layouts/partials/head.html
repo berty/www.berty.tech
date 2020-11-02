@@ -46,7 +46,7 @@
   {{ end }}
 
   <!-- Filter out params of current page and add to string to compare -->
-  {{ $scratch.Set "currentPageCompare" (print "content=" .Content) }}
+  {{ $scratch.Set "currentPageCompare" "" }}
   {{ range $key, $value := .Params}}
     {{ if (not (in $ignoreCompareKeys $key)) }}
       {{ $scratch.Add "currentPageCompare" (print $key "=" $value) }}
@@ -54,7 +54,7 @@
   {{ end }}
 
   <!-- Filter out params of english page and add to string to compare -->
-  {{ $scratch.Set "englishPageCompare" (print "content=" ($.Scratch.Get "englishPage").Content) }}
+  {{ $scratch.Set "englishPageCompare" "" }}
   {{ range $key, $value := ($.Scratch.Get "englishPage").Params }}
     {{ if (not (in $ignoreCompareKeys $key)) }}
       {{ $scratch.Add "englishPageCompare" (print $key "=" $value) }}
