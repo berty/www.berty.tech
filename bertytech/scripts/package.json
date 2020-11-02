@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "glob": "^7.1.6"
+    "glob": "^7.1.6",
+    "yaml": "^1.10.0"
   }
 }
