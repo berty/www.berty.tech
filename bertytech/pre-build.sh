@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 
-# node ./replace-remote-md-images.js
+node ./scripts/create-translation-files.js

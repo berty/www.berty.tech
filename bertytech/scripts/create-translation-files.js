@@ -28,6 +28,7 @@ const createTranslatedFiles = async (filepath) => {
     );
 
     if (!fs.existsSync(langFile)) {
+      console.log(`Created missing translation file: ${langFile}`);
       fs.copyFileSync(filepath, langFile);
     }
   });
