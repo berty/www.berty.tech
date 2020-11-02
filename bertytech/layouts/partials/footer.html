@@ -27,7 +27,7 @@
 						<div class="col-4 col-links">
 							<h5>Developers</h5>
 							<ul class="list-unstyled text-small">
-								{{ $page := .Site.GetPage "/docs" }}
+								{{ $url := relLangURL "/docs" }}
 								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Docs</a></li>
 								{{ $url := relLangURL "/docs#projects" }}
 								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Our projects</a></li>
