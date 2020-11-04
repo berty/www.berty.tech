@@ -89,6 +89,9 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
 
     return rendezvousPoint[:]
 }
+
+    return rendezvousPoint[:]
+}
 ```
 
 There are two types of rendezvous points in the Berty Protocol:
@@ -180,9 +183,9 @@ In the Berty Protocol, a user can use multiple devices within the same account, 
 
 There are three different types of challenges that A can send to B:
 
-1. **QRCode:** B must display a QRCode containing the fingerprint of its Device ID and the user must scan this QRCode with device A. If the QRCode matches the ID that A previously received, then the linking is successful. If device A possesses a functioning camera, this challenge shall be preferred because it is both more secure and convenient for the user (there is no error possible while checking the ID and it requires minimal effort from the user).
-2. **PIN:** A must display a PIN that the user has to enter on device B. Then B sends to A the signature of the PIN using its Device ID. Finally, A verifies the signature of the PIN using B's Device ID then the linking is successful. This challenge is secure but less convenient for the user (an active confirmation is required).
-3. **Fingerprint:** B and A must display a fingerprint of B's ID then the user will have to verify manually that the two fingerprints are the same and confirm it using a checkbox. This challenge is less secure because the user can confirm the equality without carefully reading the fingerprints, so it shall not be proposed to the user, unless they want to automate this process, for example, in the context of linking a range of servers to an Account with a script that could automatically check that the fingerprints match.
+1. **Fingerprint:** B and A must display a fingerprint of B's ID then the user will have to verify manually that the two fingerprints are the same and confirm it using a checkbox. This challenge is less secure because the user can confirm the equality without carefully reading the fingerprints, so it shall not be proposed to the user, unless they want to automate this process, for example, in the context of linking a range of servers to an Account with a script that could automatically check that the fingerprints match.
+2. **QRCode:** B must display a QRCode containing the fingerprint of its Device ID and the user must scan this QRCode with device A. If the QRCode matches the ID that A previously received, then the linking is successful. If device A possesses a functioning camera, this challenge shall be preferred because it is both more secure and convenient for the user (there is no error possible while checking the ID and it requires minimal effort from the user).
+3. **PIN:** A must display a PIN that the user has to enter on device B. Then B sends to A the signature of the PIN using its Device ID. Finally, A verifies the signature of the PIN using B's Device ID then the linking is successful. This challenge is less secure because the user can confirm the equality without carefully reading the fingerprints, so it shall not be proposed to the user, unless they want to automate this process, for example, in the context of linking a range of servers to an Account with a script that could automatically check that the fingerprints match.
 
 We recommend to developers implementing an application using the Berty Protocol to follow this state diagram to choose a challenge on Device A:
 
