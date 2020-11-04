@@ -1,15 +1,9 @@
----
-author: zooma 
-title: "How do we imagine the future?" 
-date: 2020-07-27 
-image: "future-berty.jpg" 
-categories:
-- free-speech 
-tags:
+- - -
+author: zooma title: "How do we imagine the future?" date: 2020-07-27 image: "future-berty.jpg" categories:
+- free-speech tags:
 - privacy
-- security 
-description: "At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project."
----
+- security description: "At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project."
+- - -
 
 
 
