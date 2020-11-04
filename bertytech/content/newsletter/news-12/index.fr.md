@@ -40,7 +40,7 @@ Help us find the right person 👉 https://berty.tech/jobs/react-native-develope
 
 All Berty team will not be here next week, because berty has annual vacation.
 
- Don't worry if we don't give you too much news, we'll probably be under the sun ...  thinking of you 😇
+ Don't worry if we don't give you too much news, we'll probably be under the sun ... thinking of you 😇
 
 We'll be in touch again on September 16th by email and in two weeks for our weekly newsletter - which we know you're looking forward to!
 
