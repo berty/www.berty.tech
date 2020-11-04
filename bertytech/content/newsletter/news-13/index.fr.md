@@ -21,11 +21,7 @@ This week, we published our article on End-to-end encryption.
 
 Check this 👉 [What is E2E Encryption?](https://berty.tech/blog/e2e-encryption/)
 
-![](newsletter.png)
-
-<!--[![](newsletter.png)](https://berty.tech/blog/e2e-encryption/)-->
-
-<br />
+![](newsletter.png)<!--\[![\](newsletter.png)](https://berty.tech/blog/e2e-encryption/)--><br />
 <br />
 
 ## React Native Developer
