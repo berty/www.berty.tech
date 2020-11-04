@@ -1,5 +1,5 @@
 ---
-title: Berty
+title: "Berty"
 weight: -100
 open_source: true
 no_runtime_fee: true
