@@ -1,32 +1,32 @@
 ---
-title: "Terms & Conditions"
+title: "Termes & Conditions"
 type: fakepost
 image_bg: "terms.png"
 ---
 
 <!-- template: layouts/_default/single.html -->
 
-Berty technologies is a french non-profit organization, defined by the law 1901 and registered with the RNA number W751245498.
+Berty Technologies est une association française à but non lucratif, définie par la loi 1901 et enregistrée sous le numéro d'ARN W751245498.
 
-The organization is represented by M. Manfred Touron.
+L'association est représentée par M. Manfred Touron.
 
 Telephone: +33 805 08 2000.
 
-Postal address: Berty Technologies, 96 Boulevard Bessières, 75017 Paris, FRANCE.
+Adresse postale : Berty Technologies, 96 Boulevard Bessières, 75017 Paris, FRANCE.
 
-### Warning
+### Avertissement
 
-Any reproduction, representation, translation, adaptation, or quotation that it is integral or partial, whatever the process, is strictly prohibited without authorization of the association Berty technologies, except cases envisaged by the article L.112-5 of the intellectual property code. The brands mentioned are the property of their respective owners. Non-contractual pictures.
+Toute reproduction, représentation, traduction, adaptation ou citation intégrale ou partielle, quel que soit le processus, est strictement interdite sans autorisation de l'association Berty technologies, à l'exception des cas prévus par l'article L. 12-5 du code de la propriété intellectuelle. Les marques citées sont la propriété de leurs propriétaires respectifs. Images non contractuelles.
 
-### Personal information
+### Données personnelles
 
-You can visit our site on the Internet without having to disclose your identity or to provide any personal information about you. However, we may sometimes ask you for information to identify a support request or apply for a position. You can learn more about this subject by reading our [privacy policy](/privacy-policy).
+Vous pouvez visiter notre site sur Internet sans avoir à divulguer votre identité ou à fournir des renseignements personnels vous concernant. Cependant, il se peut que nous vous demandions parfois des renseignements pour identifier une demande d'assistance ou pour postuler à un poste. Vous pouvez en apprendre plus sur ce sujet en lisant notre [politique de confidentialité](/privacy-policy).
 
 ### Cookies
 
-We use a third party cookie to:
+Nous utilisons un cookie tiers pour :
 
-* follow your navigation during the session to ensure the quality and safety of navigation on our website,
-* obtain anonymous statistical data of attendance regarding the use of our website.
+* suivre votre navigation pendant la session pour assurer la qualité et la sécurité de la navigation sur notre site Web,
+* obtenir des données statistiques anonymes de présence concernant l'utilisation de notre site Web.
 
-This entity is committed to complying with the legislation in force regarding cookies / tracers and guarantees the implementation of measures to protect and secure the data collected. You can allow, block or delete these cookies installed on your computer by setting your browser options.
+Cette entité s'engage à se conformer à la législation en vigueur en ce qui concerne les cookies / traceurs et garantit la mise en œuvre de mesures pour protéger et sécuriser les données collectées. Vous pouvez autoriser, bloquer ou supprimer ces cookies installés sur votre ordinateur en définissant les options de votre navigateur.
