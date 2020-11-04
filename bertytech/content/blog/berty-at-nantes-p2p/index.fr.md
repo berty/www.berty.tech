@@ -1,18 +1,18 @@
 ---
 author: pierre
-title: "Meet us at Nantes P2P #0!"
+title: "Rencontrez-nous à Nantes P2P #0 !"
 date: 2020-02-26
 #image: "nantes_cover_3.jpg"
 image: "nantes_cover_3.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
-  - meetup
-  - security
-  - technical
+  - rencontre
+  - sécurité
+  - technique
 ---
 
-# Berty will be at the Nantes P2P!
+# Berty sera au P2P de Nantes !
 
 As the readers of our newsletter and this blog, you are aware that we are co-organizers of the [FranceP2P](https://francep2p.org/) movement and, more precisely, of the Parisian branch [ParisP2P](https://p2p.paris/en/). These events are intended to gather all the things around _peer-to-peer_, including cryptography communities in various events (monthly meetings and festivals).
 
