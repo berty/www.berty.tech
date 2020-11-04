@@ -32,7 +32,7 @@ We left on Friday afternoon from Paris, the day before FOSDEM, toward  Brussels 
 
 We had booked an Airbnb a few months ago, in the centre of the city to be able to go out in the evening, but still close enough to the tram line that leads directly to FOSDEM, which took place at the [Free University of Brussels (ULB)](https://www.ulb.be/). Looking back, it was a pretty good strategic choice. We recommend you to do the same. A lot of things happens in the city in the evening/at night: eating Belgian fries, waffles, and drinking beer at the Delirium bar...
 
-So for us, Friday night was all about getting in touch  with friends... and, of course, enjoying a few beers together. 🍻
+Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
 
 ### Saturday Morning
 On Saturday morning we went to the opening ceremony. The amphitheatre was just FULL - despite the 1500 seats and the retransmission. At that moment, we realized that there are a lot of participants. We mean... a lot.  It's hard to know exactly because there are no tickets and the event is completely free.  Rumors says there were between 8,000 and 10,000 participants.
