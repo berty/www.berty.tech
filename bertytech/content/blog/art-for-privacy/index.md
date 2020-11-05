@@ -71,7 +71,7 @@ Share your opinion on this first serie below!
 ![](https://i.imgur.com/4J0UkGF.jpg)
 
 
-## Links
+## Discover Djalouz Works:
 * [Instagram](https://www.instagram.com/djalouz/)
 * [Facebook](https://www.facebook.com/pages/djalouz/262896791627)
 * [Twitter](https://twitter.com/djalouz)
