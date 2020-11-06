@@ -1,5 +1,5 @@
 ---
-title: Firechat
+title: "Firechat"
 open_source: false
 no_runtime_fee:
 no_purchase_fee:

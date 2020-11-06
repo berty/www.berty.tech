@@ -1,63 +1,63 @@
 ---
 author: pierre
-title: "Berty team at IPFS Camp, June 2019"
+title: "L'équipe Berty au camp IPFS, Juin 2019"
 date: 2019-08-15
 image: "berty_at_ipfs_camp.jpg"
 categories:
-  - crew
+  - Equipe
 tags:
-  - meetup
+  - rencontre
 ---
 
-On June 27-30, 2019, Berty team visited the [IPFS Camp](https://camp.ipfs.io/), a hacker retreat organized by the people behind [IPFS](https://ipfs.io).
+Du 27 au 30 juin 2019, l'équipe de Berty s'est rendu au [camp d'IPFS](https://camp.ipfs.io/), une retraite de hackers organisée par les personnes à l'origine d' [IPFS](https://ipfs.io).
 
-> InterPlanetary File System (IPFS) is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system.
+> Le système de fichiers interplanétaire (IPFS) est un protocole et un réseau conçus pour créer une méthode de stockage et de partage des hypermédias dans un système de fichiers distribué, adressable par le contenu et de type peer-to-peer.
 
-We were impressed by the organization of the event; the schedule was packed with interesting courses, talks and workshops in a short time frame. Also, the food was delicious, and there was a spa, a pool, and even an archery range! We spoke a lot with the IPFS team and community, and met many cool people there. The courses helped to better understand the IPFS concepts, usages and implementation.
+Nous avons été impressionnés par l'organisation de l'événement ; le programme était rempli de cours, de conférences et d'ateliers intéressants dans un délai très court. De plus, la nourriture était délicieuse, et il y avait un spa, une piscine, et même un terrain de tir à l'arc ! Nous avons beaucoup parlé avec l'équipe et la communauté de l'IPFS, et nous y avons rencontré beaucoup de gens sympas. Les cours ont permis de mieux comprendre les concepts, les utilisations et l'implémentation d'IPFS.
 
 {{< img src="image1.jpg" >}}
 
-## How is Berty related to IPFS?
+## Quelle est la relation de Berty avec IPFS?
 
-At Berty, we’ve made our proof of concept using [libp2p](https://libp2p.io), a library that IPFS is built on top of, and made by the same team, [Protocol Labs](https://protocol.ai). We are now focused on rewriting the app's backend, which will include a vanilla IPFS node that will manage all the network-related things and the file sharing layer. We'll implement the Berty protocol on top of that IPFS node, providing a user-friendly way of managing identities (account and devices), managing contacts and communicating with them through encrypted / authenticated messages. Also, we’ll tweak the node, making it more suited for mobile.
+Chez Berty, nous utilisons [libp2p](https://libp2p.io), une bibliothèque sur laquelle IPFS est construit, et réalisée par la même équipe, [Protocol Labs](https://protocol.ai). Nous nous concentrons maintenant sur la réécriture du backend de l'application, qui inclura un nœud IPFS vanilla qui gérera toutes les choses liées au réseau et la couche de partage de fichiers. Nous mettrons en œuvre le protocole Berty au sommet de ce nœud IPFS, offrant un moyen convivial de gérer les identités (compte et appareils), de gérer les contacts et de communiquer avec eux par le biais de messages cryptés/authentifiés. Nous allons également modifier le nœud, afin de le rendre plus adapté aux téléphones portables.
 
 {{< img src="image4.jpg" >}}
 
-## Some interesting topics
+## Quelques sujets intéressants
 
-One of the formats presented on the conference were [Deep Dives](https://github.com/ipfs/camp/tree/master/DEEP_DIVES) — tackling a common problem for a couple of hours and then presenting it to the other attendees. Here are a couple of dives in which the Berty team participated:
+L'un des formats présentés lors de la conférence était "Deep Dives" - s'attaquer à un problème commun pendant quelques heures et le présenter ensuite aux autres participants.  Voici quelques plongées auxquelles l'équipe de Berty a participé :
 
-**“How to optimize IPFS on mobile platform”**, led by [Carson Farmer](https://github.com/carsonfarmer) from [Textile](https://textile.io). Here’s the [video from the presentation](https://www.youtube.com/watch?v=RfXRn8RTLh4&feature=youtu.be). The purpose of this Deep Dive session was to list the problems encountered with IPFS on mobile and to think about possible solutions. Problems addressed:
+"Comment optimiser l'IPFS sur la plate-forme mobile", dirigé par Carson Farmer de Textile. Voici la vidéo [de la présentation](https://www.youtube.com/watch?v=RfXRn8RTLh4&feature=youtu.be). Le but de cette session Deep Dive était de lister les problèmes rencontrés avec IPFS sur mobile et de réfléchir à des solutions possibles. Problèmes abordés :
 
-- limited resources (CPU, RAM, data (3G/4G), battery)
-- app killed / put in background frequently
-- short time frame when app launched or resumed to reconnect to IPFS network, discover peers, init services, etc...
+- ressources limitées (CPU, RAM, données (3G/4G), batterie)
+- application arrêtée / mise en arrière-plan fréquemment
+- court délai au lancement ou à la reprise de l'application pour se reconnecter au réseau IPFS, découvrir des pairs, des services init, etc.
 
-The issues were similar to those we faced, so we started a shared repository with the Textile folks and plan to provide guidance and good practices to the wider IPFS community. The repo is private at the time of writing, but will be open source later.
+Les problèmes étaient similaires à ceux auxquels nous avons été confrontés, donc nous avons commencé un repo partagé avec les gens de Textile et nous avons l'intention de fournir des conseils et de bonnes pratiques à l'ensemble de la communauté IPFS. Le repo est privé au moment de la rédaction du présent document, mais elle sera ouverte plus tard.
 
-**“Private content on IPFS”** led by [Dr. Ian Preston](https://github.com/ianopolous) from [Peergos](https://peergos.org/). You can [watch the video here](https://www.youtube.com/watch?v=oiEhyw17_OI&feature=youtu.be). It focused on exploring the likelihood of [Messaging Layer Security](https://messaginglayersecurity.rocks/) (MLS) being usable in a distributed environment. In such context messages might arrive in the “wrong” order as the network can be partitioned and merged afterward. Compared to an implementation based on a centralized architecture, a longer retention of the previous decryption keys can be required for reading the messages.
+**“Contenu privé sur IPFS”** dirigé par [Dr. Ian Preston](https://github.com/ianopolous) de [Peergos](https://peergos.org/). Vous pouvez [regarder la vidéo ici](https://www.youtube.com/watch?v=oiEhyw17_OI&feature=youtu.be). Il s'est concentré sur l'exploration de la probabilité que [Messaging Layer Security](https://messaginglayersecurity.rocks/) (MLS) soit utilisable dans un environnement distribué. Dans ce contexte, les messages peuvent arriver dans le "mauvais" ordre car le réseau peut être partitionné et fusionné par la suite. Comparé à une implémentation basée sur une architecture centralisée, une rétention plus longue des clés de déchiffrement précédentes peut être nécessaire pour lire les messages.
 
 {{< img src="image3.jpg" >}}
 
-## Our presentations
+## Nos présentations
 
-[Antoine](https://github.com/aeddi) presented the **architecture of the Bluetooth component** used in Berty: [here’s the video](https://www.youtube.com/watch?v=aaSFHxpwm9A).
+[Antoine](https://github.com/aeddi) a présenté l'architecture **du composant Bluetooth** utilisée dans Berty : [voici la vidéo](https://www.youtube.com/watch?v=aaSFHxpwm9A).
 
-### BLE demo on the Sci-Fi Stand:
+### BLE démo sur le stand Sci-Fi :
 
-* We showcased the communication of two devices using the Berty app in “airplane mode” through Bluetooth.
-* People were interested and had the opportunity to sign up for the beta version of Berty.
-* Our team members were interviewed by [Raúl Kripalani](https://github.com/raulk), the video will be posted in [IPFS Camp repository](https://github.com/ipfs/camp/#-sci-fi-fair).
+* Nous avons présenté la communication de deux appareils utilisant l'application Berty en "mode avion" via Bluetooth.
+* Les gens étaient intéressés et ont eu la possibilité de s'inscrire à la version bêta de Berty.
+* Les membres de notre équipe ont été interviewés par [Raúl Kripalani](https://github.com/raulk), la vidéo sera publiée dans [le dépôt d'IPFS Camp](https://github.com/ipfs/camp/#-sci-fi-fair).
 
 {{< img src="image5.jpg" >}}
 
-## The takeaways
+## Ce qu'on en garde
 
-A project that was born after visiting the camp is [Paris P2P](https://p2p.paris/en/), a monthly meetup of people who are interested in peer-to-peer technologies and cryptography. The first event [already took place](https://www.meetup.com/Paris-P2P/events/263089573/), and it was fun! If you are in Paris or planning to visit, we’ll be happy to see you at the [upcoming events](https://www.meetup.com/Paris-P2P/).
+Un projet qui est né après avoir visité le camp est [Paris P2P](https://p2p.paris/en/), une rencontre mensuelle de personnes intéressées par les technologies et la cryptographie pair à pair. Le premier événement [a déjà eu lieu](https://www.meetup.com/Paris-P2P/events/263089573/), et c'était amusant ! Si vous êtes à Paris ou si vous prévoyez de vous y rendre, nous serons heureux de vous rencontrer lors des [prochains événements](https://www.meetup.com/Paris-P2P/).
 
-We’ve learned that other people face some of the same issues the Berty team does, and it was interesting to discuss the common issues and think of solutions; also, talked about the future improvements that IPFS itself plans. We are now communicating directly with more IPFS peers. We’ve also opened our organization to more people and provided the preview access.
+Nous avons appris que d'autres personnes sont confrontées aux mêmes problèmes que l'équipe de Berty, et il était intéressant de discuter des questions communes et de réfléchir aux solutions; nous avons également parlé des améliorations futures que IPFS lui-même prévoit. Nous communiquons désormais directement avec un plus grand nombre de pairs IPFS. Nous avons également ouvert notre organisation à un plus grand nombre de personnes et nous avons fourni un accès de prévisualisation.
 
-Also, here are the reports by other teams who were at the camp: by [Peergos](https://peergos.org/blog#ipfs_camp_new_features_july_2019_) and by [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513).
+Aussi, voici les rapports d'autres équipes qui étaient au camp : par [Peergos](https://peergos.org/blog#ipfs_camp_new_features_july_2019_) et par [Textile](https://medium.com/textileio/ipfs-camp-2019-the-highlights-and-takeaways-2b3cb4f42513).
 
 {{< img src="image6.jpg" >}}
 

@@ -1,60 +1,60 @@
 ---
 author: Manfred
-title: "We released our closed beta"
+title: "Nous avons sorti notre bêta fermée"
 date: 2020-10-30
 #image: "2020-09-28-Berty-Blogpost-Release-closed-Beta.png"
 image: "2020-09-28-Berty-Blogpost-Release-closed-Beta.png"
 categories:
   - berty
-  - announcement
+  - annonce
 tags:
-  - news
-  - announcement
-description: We released our closed beta!
+  - Actualités
+  - Annonce
+description: Nous avons sorti notre bêta fermée !
 ---
 
-# We released our closed beta!
+# Nous avons sorti notre bêta fermée !
 
-Yup, you read the headline correctly! We're slowly opening access to our beta version. Although we've been working in our cave for two years with no public release on the shelf, more people follow the Berty project every day. It's incredible. We thank you for that from the bottom of our hearts. Sincerely.
+Oui, vous avez bien lu le titre ! Nous ouvrons progressivement l’accès à notre version bêta. Bien que nous travaillions dans notre grotte depuis deux ans sans aucune version publique facilement accessible, de plus en plus de gens suivent le projet Berty chaque jour. C’est incroyable. Nous vous en remercions du fond du cœur. Sincèrement !
 
-If you're here, you understand the project's philosophy and the technological challenges it implies. It's truly astounding to feel as supported as we are. We have the best community!
+Si vous êtes ici, vous comprenez la philosophie du projet et les défis technologiques qu'il implique. Il est vraiment stupéfiant de se sentir aussi soutenu que nous le sommes. Nous avons la meilleure communauté !
 
-## Done is better than perfect
+## Faire est mieux que parfait
 
-Today, Berty's development has reached the stage where a release is necessary. Sharing with you is about getting as much feedback as possible so we can move in the right direction. For this, we'll need all of you.
+Aujourd'hui, le développement de Berty est au stade où une publication est nécessaire. Partager avec vous consiste à obtenir le plus de commentaires possibles afin que nous puissions aller dans la bonne direction. Pour cela, nous aurons besoin de vous tous.
 
-Our philosophy has always been "done is better than perfect." If you tinker with the best product out there forever in your secret workshop, it's useless!
+Notre philosophie a toujours été "Faire est mieux que parfait". Si vous bricolez sans cesse le meilleur produit dans votre atelier secret, c'est inutile !
 
-> If you're the team member that makes things happen, you become indispensable. If you and your organization are the ones (the only ones) that can get things done, close the sale, ship the product and make a difference, you're the linchpins—the ones we can't live without. Author: Seth Godin
+> Si vous êtes le membre de l'équipe qui fait bouger les choses, vous devenez indispensable. Si vous et votre organisation êtes les seuls qui peuvent faire avancer les choses, conclure la vente, expédier le produit et faire la différence, vous êtes les piliers - ceux dont nous ne pouvons pas nous passer. Auteur : Seth Godin
 
-So, it's now time to face the outside world! Let's be honest: It's still a development version with lots of things to improve, change, remove, keep. We'll proceed in two stages:
+Alors, il est maintenant temps de faire face au monde extérieur ! Soyons honnêtes : c'est encore une version de développement avec beaucoup de choses à améliorer, changer, supprimer, garder. Nous allons procéder en deux étapes:
 
-1. Have the application tested by a small circle of friends and contributors
-2. Invite each person who tells us they want in
+1. Faire tester l'application par un petit cercle d'amis et de contributeurs
+2. Inviter chaque personne désireuse d'y participer
 
-## Why a closed rather than a public beta?
+## Pourquoi une bêta fermée plutôt qu'une bêta publique ?
 
-We know you can't wait to try Berty, and believe us, neither can we! But we have some important reasons for waiting a little longer.
+Nous savons que vous avez hâte d'essayer Berty et croyez-nous, pas plus que nous ! Mais nous avons des raisons importantes d'attendre un peu plus longtemps.
 
-First, an initial, closed beta lets us establish that Berty's handling is decisively intuitive before inviting other testers. Our first preview is available to a restricted circle, including our closest friends. This allows us to get a realtime first impression of the application's use. (It's easier to organize face-to-face test sessions with friends in our office.)
+Tout d'abord, une première bêta fermée nous permet de constater que l'utilisation de Berty est résolument intuitive avant d'inviter d'autres testeurs. Notre premier aperçu est disponible à un cercle restreint, incluant nos amis les plus proches. Cela nous permet d'avoir une première impression en temps réel de l'utilisation de l'application. (Il est plus facile d'organiser des sessions de test en face à face avec des amis dans notre bureau.)
 
-We want to tackle any problems that come up in this initial stage (plus some recurring bugs) before we open testing to everyone to get more concise feedback and discover less common bugs.
+Nous voulons nous attaquer à tous les problèmes qui surviennent au cours de cette phase initiale (plus quelques bogues récurrents) avant d'ouvrir les tests à tout le monde pour obtenir des commentaires plus concis et découvrir des bogues moins courants.
 
-Second, you probably know that we are a small team (a tiny one even!). We think a two-stage opening is an excellent way to pace ourselves and keep focus.
+Deuxièmement, vous savez probablement que nous sommes une petite équipe (une minuscule même !). Nous pensons qu'une ouverture en deux temps est un excellent moyen pour progresser dans de bonnes conditions et de rester concentré.
 
-Finally, we also know that many people need Berty (activists, journalists, lawyers, internet citizens...). We have you in mind. We're uncompromising on protecting your anonymity, data, and privacy. We know what's at stake.
+Enfin, nous savons aussi que de nombreuses personnes ont besoin de Berty (militants, journalistes, avocats, citoyens de l'internet...) Nous vous gardons à l'esprit. Nous ne faisons aucun compromis sur la protection de votre anonymat, de vos données et de votre vie privée. Nous connaissons les enjeux.
 
-We're doing what we can to make this the most secure messenging application ever designed - and we don't take this assignment lightly. This takes time. That's why we'll need you: Your feedback, your ideas, your app review. We need you on board.
+Nous faisons tout notre possible pour que cette application de messagerie soit la plus sécurisée jamais conçue - et nous ne prenons pas cette tâche à la légère. Cela demande du temps. C'est pourquoi nous aurons besoin de vous : vos commentaires, vos idées, votre évaluation de l'application. Nous avons besoin de vous à bord.
 
-To this end, we're working hard to release it openly, asap. We know that some of you have been following us for over two years and are really looking forward to this moment.
+À cette fin, nous travaillons dur pour ouvrir la Bêta, dès que possible. Nous savons que certains d'entre vous nous suivent depuis plus de deux ans et attendent ce moment avec impatience.
 
-## Your mission, should you accept
+## Votre mission, si vous acceptez
 
 ![image alt](https://media.giphy.com/media/U6pXdeEVb4fEfzZg0R/giphy.gif)
 
-For the curious (especially for those who would like to take part in Berty's progress), we will announce Yolo's public opening through a blog post *very soon*. We'll give you all the instructions to get Berty's beta therein.
+Pour les curieux (particulièrement pour ceux qui voudraient participer à la progression de Berty), nous annoncerons, très prochainement, l'ouverture publique de Yolo par l'intermédiaire d'un billet de blog *très bientôt*. Nous vous donnerons toutes les instructions pour obtenir la bêta de Berty dans ce cadre.
 
-So, if you accept it, your mission will be to share anything and everything of your experience using Yolo to help us build a better application!
+Donc, si vous l'acceptez, votre mission sera de partager votre expérience sur Yolo pour nous aider à construire une meilleure application !
 
 
 

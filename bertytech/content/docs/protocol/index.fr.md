@@ -1,6 +1,6 @@
 ---
-title: "Berty Protocol"
-description: The offline-first P2P alternative to the Signal Protocol
+title: "Le protocole Berty"
+description: L'alternative au protocole Signal, qui ne dépend pas d'Internet
 icon: fal fa-book
 color: blue
 display_nav: true
@@ -11,21 +11,21 @@ aliases:
   - /protocol
 ---
 
-# Berty protocol
+# Le protocole Berty
 
 ## Introduction
 
-This document provides a technical description of the Berty Protocol. The Berty Protocol provides secure communication between devices owned by the same account, communication between contacts in one-to-one conversations, as well as communication between several users in multi-member groups. This paper will explain how those points are implemented in a distributed and asynchronous way, both with or without internet access using IPFS and direct transports such as BLE. It will also describe how the Berty Protocol provides end-to-end encryption and perfect forward secrecy for all the exchanged messages.
+Ce document fournit une description technique du protocole de Berty. Le protocole Berty fournit une communication sécurisée entre les appareils appartenant au même compte la communication entre les contacts dans une conversation individuelle, ainsi que la communication entre plusieurs utilisateurs dans des groupes multimembres. Ce document expliquera comment ces points sont implémentés d'une manière distribuée et asynchrone avec ou sans accès à Internet en utilisant IPFS et les transports directs tels que BLE (Bluetooth-Low-Energy). Il décrira également comment le protocole Berty fournit un chiffrement de bout en bout et un secret parfait pour tous les messages échangés.
 
-> :warning: Warning
+> :warning: Avertissement
 > 
-> The implementation of the protocol is still in progress. Some features described in this document are not implemented yet.
+> La mise en œuvre du protocole est encore en cours. Certaines fonctionnalités décrites dans ce document ne sont pas encore implémentées.
 > 
-> This protocol has still not been thoroughly audited and some points are bound to evolve with time and feedback.
+> Ce protocole n'a pas encore été complètement vérifié et certains points sont tenus à évoluer avec le temps et les commentaires.
 > 
-> Nevertheless, we are confident enough about the progression of the protocol design to say that the majority of these specifications should remain the same.
+> Néanmoins, nous sommes suffisamment confiants quant à la progression de la conception du protocole pour dire que la majorité de ces spécifications devrait rester la même.
 > 
-> If a security expert reads this document and wishes to provide us with some feedback, we look forward to reading it. Please contact us using one of the means listed on this page: [berty.tech/community#-how-to-contact-us](https://berty.tech/community#-how-to-contact-us)
+> Si un expert en sécurité lit ce document et souhaite nous fournir des commentaires, nous attendons avec impatience de le lire. Veuillez nous contacter en utilisant l'un des moyens listés sur cette page : [berty.tech/community#-how-to-contact-us](https://berty.tech/community#-how-to-contact-us)
 
 
 ## Protocol Stack
@@ -86,6 +86,9 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
     sum := mac.Sum(nil)
 
     rendezvousPoint := sha256.Sum256(append(id, sum...))
+
+    return rendezvousPoint[:]
+}
 
     return rendezvousPoint[:]
 }
@@ -180,9 +183,9 @@ In the Berty Protocol, a user can use multiple devices within the same account, 
 
 There are three different types of challenges that A can send to B:
 
-1. **QRCode:** B must display a QRCode containing the fingerprint of its Device ID and the user must scan this QRCode with device A. If the QRCode matches the ID that A previously received, then the linking is successful. If device A possesses a functioning camera, this challenge shall be preferred because it is both more secure and convenient for the user (there is no error possible while checking the ID and it requires minimal effort from the user).
-2. **PIN:** A must display a PIN that the user has to enter on device B. Then B sends to A the signature of the PIN using its Device ID. Finally, A verifies the signature of the PIN using B's Device ID then the linking is successful. This challenge is secure but less convenient for the user (an active confirmation is required).
-3. **Fingerprint:** B and A must display a fingerprint of B's ID then the user will have to verify manually that the two fingerprints are the same and confirm it using a checkbox. This challenge is less secure because the user can confirm the equality without carefully reading the fingerprints, so it shall not be proposed to the user, unless they want to automate this process, for example, in the context of linking a range of servers to an Account with a script that could automatically check that the fingerprints match.
+1. **Fingerprint:** B and A must display a fingerprint of B's ID then the user will have to verify manually that the two fingerprints are the same and confirm it using a checkbox. This challenge is less secure because the user can confirm the equality without carefully reading the fingerprints, so it shall not be proposed to the user, unless they want to automate this process, for example, in the context of linking a range of servers to an Account with a script that could automatically check that the fingerprints match.
+2. **QRCode:** B must display a QRCode containing the fingerprint of its Device ID and the user must scan this QRCode with device A. If the QRCode matches the ID that A previously received, then the linking is successful. If device A possesses a functioning camera, this challenge shall be preferred because it is both more secure and convenient for the user (there is no error possible while checking the ID and it requires minimal effort from the user).
+3. **PIN:** A must display a PIN that the user has to enter on device B. Then B sends to A the signature of the PIN using its Device ID. Finally, A verifies the signature of the PIN using B's Device ID then the linking is successful. This challenge is less secure because the user can confirm the equality without carefully reading the fingerprints, so it shall not be proposed to the user, unless they want to automate this process, for example, in the context of linking a range of servers to an Account with a script that could automatically check that the fingerprints match.
 
 We recommend to developers implementing an application using the Berty Protocol to follow this state diagram to choose a challenge on Device A:
 

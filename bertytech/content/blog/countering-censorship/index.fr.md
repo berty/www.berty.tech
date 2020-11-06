@@ -48,7 +48,7 @@ However, a VPN creates an encrypted tunnel between you and your ISP that hides y
 
 ![](https://i.imgur.com/NahWVmZ.jpg)
 
-Google has company policies and must comply with government censorship laws, which means that it may not show all sites on the web. Google blacklists not only websites containing (or suspected to contain) malware, but also sites containing adult content, vendors of questionable goods, and a variety of other websites which have come to be regarded as “the dark web.” In recent years, the Pirate Bay has become one of its targets as well.
+Google has company policies and must comply with government censorship laws, which means that it may not show all sites on the web. Google blacklists not only websites containing (or suspected to contain) malware, but also sites containing adult content, vendors of questionable goods, and a variety of other websites which have come to be regarded as “the dark web.” In recent years, the Pirate Bay has become one of its targets as well. In recent years, the Pirate Bay has become one of its targets as well.
 
 Alternative search engines like Gibiru promise uncensored, anonymous search. Changing your browser can be one of the easiest ways to counter censorship in 2019 and beyond.
 

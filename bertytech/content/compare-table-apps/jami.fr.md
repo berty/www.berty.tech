@@ -1,5 +1,5 @@
 ---
-title: Jami
+title: "Jami"
 open_source: true
 no_runtime_fee: true
 no_purchase_fee: true
