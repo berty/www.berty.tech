@@ -13,28 +13,28 @@ tags:
 description:
 ---
 
-# Art For Privacy
+# De l'Art pour défendre la vie privée
 
-As an NGO, we feel invested of a mission.  We strongly believe that there can be no change without education and awareness. We promote a free world without surveillance and censorship. So how do we do it? How do we make an impact on the causes we fight for? How can we alert on the current situation?
+En tant qu'ONG, nous nous sentons investis d'une mission.  Nous sommes fermement convaincus qu'il ne peut y avoir de vrai changement sans éducation et sans sensibilisation. Nous défendons un monde libre, sans surveillance et sans censure. Alors, comment allons-nous le faire? Comment pouvons-nous avoir un impact sur les causes pour lesquelles nous luttons? Comment pouvons-nous alerter sur la situation actuelle?
 
-We were looking for a low-cost communication (NGO power!), accessible, collaborative and free for interpretation campaign.  So, we opt for a slightly different communication channel. Something that belongs to everyone: our streets. For us at Berty, streets are metaphors. They are both a public place and a place of free expression. A bit like a free and limitless museum.
+Nous étions à la recherche d'une communication à faible coût (NGO power!), accessible, collaborative et offrant une grande liberté d'interprétation.  Nous avons donc opté pour un canal de communication légèrement inhabituel. Quelque chose qui appartient à tout le monde: nos rues. Pour nous à Berty, les rues sont des métaphores. Elles sont à la fois un lieu public et un lieu de liberté d'expression. Un peu comme un musée gratuit et illimité.
 
-So, we are delighted to present ART4PRIVACY.
+Nous sommes donc heureux de vous présenter ART4PRIVACY.
 
 
-## The Art4Privacy Project
+## Le Projet Art4Privacy
 
-As we are not street artists, we have decided to open contributions to artists sensitive to this cause, and to create a series of works intended for the general public.
+Comme nous ne sommes pas nous-même des artistes de rue, nous avons décidé d'ouvrir des contributions aux artistes sensibles à cette cause, et de créer une série d'œuvres destinées au grand public.
 
-This series entitled #Art4Privacy was to correspond to Berty's values of accessibility and free for all. It therefore takes the form of works in the street, and video formats that are then relayed on the networks.
+Cette série intitulée #Art4Privacy devait correspondre aux valeurs d'accessibilité et de libre accès de Berty pour tous. Elle prend donc la forme d'oeuvres dans la rue, et de petits formats vidéos qui sont ensuite relayés sur les réseaux.
 
-We think that Berty has much better things to do than making soulless advertisements: letting real artists speak, rather than advertisers, is much more in line with our state of mind.
+Nous pensons que Berty a beaucoup mieux à faire que de faire de la publicité sans âme : laisser parler les vrais artistes, plutôt que d'annonceurs, est beaucoup plus conforme à notre état d'esprit.
 
-To relay this series effectively, we chose the hashtag #Art4Privacy, on which all artists defending these same values are welcome to join the community.
+Pour relayer efficacement cette série, nous avons choisi le hashtag #Art4Privacy, sur lequel tous les artistes qui défendent ces mêmes valeurs sont les bienvenus pour rejoindre la communauté.
 
-The first serie, please give a big round of applause to Djalouz!
+Pour la première session, s'il vous plaît, faites un tonnerre d'applaudissements à Djalouz !
 
-## Art4Privacy #1 : "The girl being spied on." by Djalouz (Paris, France)
+## Art4Privacy #1 : "La jeune fille espionnée" par Djalouz (Paris, France)
 
 </br>
 
@@ -43,38 +43,38 @@ The first serie, please give a big round of applause to Djalouz!
 </br>
 
 
-### Who is Djalouz ?
+### Qui est Djalouz ?
 
-**Djalouz**, Paris, France: Visual artist, illustrator and graffiti artist, Djalouz was born in 1985. Parallel to obtaining his diploma as a model draftsman, he started graffiti in 2003, inspired by the young rising scene of French and European graffiti (Marko 93, Dran, Daim, MTO, etc.) but also by the world of comics (Enki Bilal, Frank Miller).
+**Djalouz**, Paris, France: Visual artist, illustrator and graffiti artist, Djalouz was born in 1985. Parallèlement à l'obtention de son diplôme en tant que dessinateur modèle, il a commencé le graffiti en 2003, inspirée par la jeune scène montante des graffitis français et européens (Marko 93, Dran, Daim, MTO, etc.). mais aussi par le monde de la bande dessinée (Enki Bilal, Frank Miller).
 
 ![](https://i.imgur.com/qKbJXft.jpg)
 
-At ease on various media, we find his works on canvas as well as on Parisian walls, wastelands and abandoned factories where nature has taken back its rights. He practices the art of lettering with 3D graffiti as well as figurative drawing.
+À l'aise sur divers supports, on retrouve ses œuvres aussi bien sur toile que sur les murs parisiens, ou sur les terrains et les usines abandonnées où la nature a repris ses droits. Il pratique l'art du lettrage avec des graffitis 3D ainsi que le dessin figuratif.
 
- Recently, in his series of drawings "Je d'enfant, dessine moi en mouton", he sketches the evils of the world through a childish look. Beneath the apparent simplicity of the line there are actually multiple references that question the world around us and the often brutal current events: war, migration flows, pollution, ecology, surveillance...
+ Récemment, dans sa série de dessins "Je d'enfant, dessine moi en mouton", il esquisse les maux du monde à travers une apparence enfantine. Sous la simplicité apparente de la ligne, il y a en fait de multiples références qui remettent en question le monde qui nous entoure et les événements souvent brutaux actuels: la guerre, flux migratoires, pollution, écologie, surveillance...
 
 ![](https://i.imgur.com/2qevch5.jpg)
 
 
-## Support us!
+## Soutenez-nous!
 
-There are many ways to help us:
-* You can share the video
-* You are a street artist and you are interested in this type of project? Let's get in touch!
-* Talk about Berty around you
+Il y a de nombreuses façons de nous aider :
+* Vous pouvez partager cette vidéo
+* Vous êtes artiste et vous êtes intéressé par ce type de projet? Contactons-nous!
+* Parlez de Berty autour de vous
 
-In short, all actions are good. 🧡
+Bref, toutes les actions sont positives. 🧡
 
-Share your opinion on this first serie below!
+Partagez votre avis sur cette première série ci-dessous!
 
 ![](https://i.imgur.com/4J0UkGF.jpg)
 
 
-## Discover Djalouz Works:
+## Découvrez les travaux de Djalouz :
 * [Instagram](https://www.instagram.com/djalouz/)
 * [Facebook](https://www.facebook.com/pages/djalouz/262896791627)
 * [Twitter](https://twitter.com/djalouz)
-* [Email contact](mailto:dja.louz@gmail.com)
+* [Contact email](mailto:dja.louz@gmail.com)
 
 
 
