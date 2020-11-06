@@ -15,11 +15,11 @@ aliases:
 
 ## Introduction
 
-This document provides a technical description of the Berty Protocol. The Berty Protocol provides secure communication between devices owned by the same account, communication between contacts in one-to-one conversations, as well as communication between several users in multi-member groups. This paper will explain how those points are implemented in a distributed and asynchronous way, both with or without internet access using IPFS and direct transports such as BLE. It will also describe how the Berty Protocol provides end-to-end encryption and perfect forward secrecy for all the exchanged messages.
+This document provides a technical description of the Berty Protocol. Le protocole Berty fournit une communication sécurisée entre les appareils appartenant au même compte la communication entre les contacts dans une conversation individuelle, ainsi que la communication entre plusieurs utilisateurs dans des groupes multimembres. This paper will explain how those points are implemented in a distributed and asynchronous way, both with or without internet access using IPFS and direct transports such as BLE. It will also describe how the Berty Protocol provides end-to-end encryption and perfect forward secrecy for all the exchanged messages.
 
 > :warning: Warning
 > 
-> The implementation of the protocol is still in progress. Some features described in this document are not implemented yet.
+> The implementation of the protocol is still in progress. Certaines fonctionnalités décrites dans ce document ne sont pas encore implémentées.
 > 
 > This protocol has still not been thoroughly audited and some points are bound to evolve with time and feedback.
 > 
