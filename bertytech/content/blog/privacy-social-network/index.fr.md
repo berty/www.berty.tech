@@ -46,21 +46,21 @@ Et pourtant, de nombreux lanceurs d’alerte nous ont démontré le contraire. N
 
 ***
 
-**TEST #2 :** vous êtes tranquillement assis sur votre canapé. Vous prenez votre smartphone et chattez avec un de vos amis, puis vous naviguez sur internet et effectuez plusieurs recherches sur un sujet qui vous préoccupe. You know in the corner of your head that you are indeed being watched because you are smart and aware of government practices.
+**TEST #2 :** vous êtes tranquillement assis sur votre canapé. Vous prenez votre smartphone et chattez avec un de vos amis, puis vous naviguez sur internet et effectuez plusieurs recherches sur un sujet qui vous préoccupe. Vous savez dans un coin de votre tête que vous êtes certainement surveillé puisque vous êtes intelligent et conscient des pratiques gouvernementales.
 
-*What is your reaction, in any case? You say to yourself, "After all, what can I do about it?" and then you continue your activities.*
-
-***
-
-**TEST #3:** You are at home and surfing on your smartphone. Then, mechanically, your eye is carried towards your outside window, and you see 20 NSA members, with binoculars, spying on everything you do on your phone.
-
-*What will be your reaction? Fear? Anger? The amazement? A feeling of being disillusioned?*
+*Quelle est pourtant votre réaction ? Vous vous dites “après tout, qu’est-ce que je peux y faire”, puis vous poursuivez vos activités.*
 
 ***
 
-A simple question to conclude those simple tests: **which situation is the worst?**
+**TEST #3 :** Vous êtes chez vous et surfez sur votre smartphone. Puis,  machinalement votre œil se porte en direction de votre fenêtre et vous apercevez 20 membres de la NSA, aux jumelles, épiant tout ce que vous faites sur votre téléphone.
 
- None is the correct answer. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+*Quelle sera votre réaction ? Peur ? Colère ? La stupéfaction ? Un sentiment d’avoir été désabusé ? *
+
+***
+
+Une question se pose à présent : **Est-il possible que nous acceptions l'inacceptable par le simple fait que ce délit ne soit pas flagrant ?**
+
+ Aucune réponse n'est correcte. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
 
 {{< tweet id="1082309056050671617" >}}
 
