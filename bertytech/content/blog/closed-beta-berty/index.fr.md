@@ -15,7 +15,7 @@ description: Nous avons sorti notre bêta fermée !
 
 # Nous avons sorti notre bêta fermée !
 
-Oui, vous avez bien lu le titre ! Nous ouvrons lentement l’accès à notre version bêta. Bien que nous travaillions dans notre grotte depuis deux ans sans aucune publication publique sur l'étagère, plus de gens suivent le projet Berty chaque jour. C’est incroyable. Nous vous en remercions du fond du cœur. Sincèrement !
+Oui, vous avez bien lu le titre ! Nous ouvrons progressivement l’accès à notre version bêta. Bien que nous travaillions dans notre grotte depuis deux ans sans aucune version publique facilement accessible, de plus en plus de gens suivent le projet Berty chaque jour. C’est incroyable. Nous vous en remercions du fond du cœur. Sincèrement !
 
 Si vous êtes ici, vous comprenez la philosophie du projet et les défis technologiques qu'il implique. Il est vraiment stupéfiant de se sentir aussi soutenu que nous le sommes. Nous avons la meilleure communauté !
 
@@ -52,7 +52,7 @@ Nous faisons tout notre possible pour que cette application de messagerie soit l
 
 ![image alt](https://media.giphy.com/media/U6pXdeEVb4fEfzZg0R/giphy.gif)
 
-Pour les curieux (surtout pour ceux qui voudraient participer à la progression de Berty), nous annoncerons très prochainement l'ouverture publique de Yolo par le biais d'un billet de blog. Nous vous donnerons toutes les instructions pour obtenir la bêta de Berty dans ce cadre.
+Pour les curieux (particulièrement pour ceux qui voudraient participer à la progression de Berty), nous annoncerons, très prochainement, l'ouverture publique de Yolo par l'intermédiaire d'un billet de blog *très bientôt*. Nous vous donnerons toutes les instructions pour obtenir la bêta de Berty dans ce cadre.
 
 Donc, si vous l'acceptez, votre mission sera de partager votre expérience sur Yolo pour nous aider à construire une meilleure application !
 
