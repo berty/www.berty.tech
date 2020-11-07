@@ -58,9 +58,9 @@ Et pourtant, de nombreux lanceurs d’alerte nous ont démontré le contraire. N
 
 ***
 
-Une question se pose à présent : **Est-il possible que nous acceptions l'inacceptable par le simple fait que ce délit ne soit pas flagrant ?**
+Une question simple pour conclure ces tests simples : **Quelle est la situation la plus grave**
 
- Aucune réponse n'est correcte. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+ Aucune réponse n'est correcte. Alors pourquoi nous continuons à accepter l'inacceptable par le simple fait que le délit ne soit pas flagrant ?  Santé chers lecteurs, n'hésitez pas à applaudir et à amplifier ; suivez nos histoires, à la prochaine. 🤫
 
 {{< tweet id="1082309056050671617" >}}
 
