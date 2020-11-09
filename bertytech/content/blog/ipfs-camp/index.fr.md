@@ -25,7 +25,7 @@ Chez Berty, nous utilisons [libp2p](https://libp2p.io), une bibliothèque sur la
 
 ## Quelques sujets intéressants
 
-L'un des formats présentés lors de la conférence était "Deep Dives" - s'attaquer à un problème commun pendant quelques heures et le présenter ensuite aux autres participants. Voici quelques plongées auxquelles l'équipe de Berty a participé :
+L'un des formats présentés lors de la conférence était "Deep Dives" - s'attaquer à un problème commun pendant quelques heures et le présenter ensuite aux autres participants.  Voici quelques plongées auxquelles l'équipe de Berty a participé :
 
 "Comment optimiser l'IPFS sur la plate-forme mobile", dirigé par Carson Farmer de Textile. Voici la vidéo [de la présentation](https://www.youtube.com/watch?v=RfXRn8RTLh4&feature=youtu.be). Le but de cette session Deep Dive était de lister les problèmes rencontrés avec IPFS sur mobile et de réfléchir à des solutions possibles. Problèmes abordés :
 
