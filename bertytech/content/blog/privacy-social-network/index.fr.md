@@ -21,7 +21,7 @@ Privacy is a difficult concept to grasp. Our world is changing from day to day, 
 
 Aujourd’hui, les réseaux sociaux occupent une place pondérante dans la vie des individus. Ils permettent de rester socialement actifs et de partager des intérêts communs. développant ainsi le sentiment d’appartenance à un groupe. Nous suivons tous plus ou moins cet engouement afin d’élargir notre champ social. À contrario, ceux qui décident de rester en retrait de toute cette ferveur sont plus ou moins considérés comme des “troglodytes” et des “pestiférés” de la société. Ce fait est d’autant plus marqué par l’effet de groupe qui renforce cette connivence intrusive et ce besoin d’être omniprésent sur les réseaux. Désormais, il est devenu courant de partager les moments de sa vie privée sur ces médias sociaux. Dans ce monde numérique dans lequel nous vivons, il n’est plus concevable de préserver notre vie privée. Nous partageons tout, nos expériences, nos souvenirs, nos rires, nos larmes, notre vie quotidienne.
 
-Cette nouvelle ère brise toutes les barrières que, pendant tant d’années, nos ancêtres se sont obstinés à mettre en place. On casse les codes, nous devenons transparent avec les uns, sans tabou avec les autres. On nous inculque depuis plusieurs années que si nous n’avons rien à cacher, nous n’avons rien à craindre ! « Nous n'avons rien à cacher. »  Cette volonté de “transparence” parce que l’on a rien à “cacher” conforte le fait de se montrer et de s’exposer encore plus. Cet argument nous est subtilement rabâché et a fortement été appuyé suite aux attentats, événements tragiques de ces dernières années. Aujourd’hui, cette détermination à se montrer “transparent” résonne en nous comme quelque chose de rationnel.
+Cette nouvelle ère brise toutes les barrières que, pendant tant d’années, nos ancêtres se sont obstinés à mettre en place. On casse les codes, nous devenons transparent avec les uns, sans tabou avec les autres. On nous inculque depuis plusieurs années que si nous n’avons rien à cacher, nous n’avons rien à craindre ! « Nous n'avons rien à cacher.  »  Cette volonté de “transparence” parce que l’on a rien à “cacher” conforte le fait de se montrer et de s’exposer encore plus. Cet argument nous est subtilement rabâché et a fortement été appuyé suite aux attentats, événements tragiques de ces dernières années. Aujourd’hui, cette détermination à se montrer “transparent” résonne en nous comme quelque chose de rationnel.
 
 > _Lisez notre article précédent sur [ pourquoi vous devriez arrêter de dire que vous n'avez rien à cacher](https://berty.tech/blog/nothing-to-hide/)._
 
@@ -42,7 +42,7 @@ Et pourtant, de nombreux lanceurs d’alerte nous ont démontré le contraire. N
 
 **TEST #1 :** imaginez que vous passez une agréable  soirée chez des amis. Vous avez besoin de vous absenter quelques minutes et laissez vos affaires. À votre retour, vous prenez en flagrant délit l’un de vos ami en train de fouiller dans votre smartphone.
 
-*Quelle sera votre réaction ?  En colère ? Un sentiment d’avoir été désabusé ? *
+**Quelle sera votre réaction ?  En colère ? Un sentiment d’avoir été désabusé ? *
 
 ***
 
@@ -54,13 +54,13 @@ Et pourtant, de nombreux lanceurs d’alerte nous ont démontré le contraire. N
 
 **TEST #3 :** Vous êtes chez vous et surfez sur votre smartphone. Puis,  machinalement votre œil se porte en direction de votre fenêtre et vous apercevez 20 membres de la NSA, aux jumelles, épiant tout ce que vous faites sur votre téléphone.
 
-*Quelle sera votre réaction ? Peur ? Colère ? La stupéfaction ? Un sentiment d’avoir été désabusé ? *
+**Quelle sera votre réaction ? Peur ? Colère ? La stupéfaction ? Un sentiment d’avoir été désabusé ? *
 
 ***
 
 Une question se pose à présent : **Est-il possible que nous acceptions l'inacceptable par le simple fait que ce délit ne soit pas flagrant ?**
 
- Aucune réponse n'est correcte. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+ Aucune réponse n'est correcte. Alors pourquoi nous continuons à accepter l'inacceptable par le simple fait que le délit ne soit pas flagrant ?  Santé chers lecteurs, n'hésitez pas à applaudir et à amplifier ; suivez nos histoires, à la prochaine. 🤫
 
 {{< tweet id="1082309056050671617" >}}
 
