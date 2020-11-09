@@ -197,7 +197,7 @@ Apple Multipeer Connectivity (AirDrop) and Android Nearby are two technologies b
 
 There is also a downside with these two technologies: they are not interoperable. This means that Apple Mutlipeer Connectivity will only work on Darwin devices and Android Nearby will only work on Android devices.
 
-**BLE for Linux and Windows:** Probably the wisest thing to do would be to wait for the reference versions of the drivers to be implemented (iOS and Android), but if the community is too impatient to wait for us to work on it, we won't stand in its way. :smirk:
+**BLE for Linux and Windows:** Probably the wisest thing to do would be to wait for the reference versions of the drivers to be implemented (iOS and Android), but if the community is too impatient to wait for us to work on it, we won't stand in its way. :wink:
 
 > *Okay, that's a plan! Didn't you tell us at the beginning of the article that you were close to releasing something?*
 
@@ -210,7 +210,7 @@ Yup, we did! 😎
 - **Multipeer Connectivity:** Implementation in progress! We think and we hope that we will have it ready and available in gomobile-ipfs within a month! :tada:
 - **Android Nearby:** One or two months after the release of the MultiPeer Connectivity driver.
 - **BLE for Android and iOS:** No date defined and no duration estimated, but it will be the 3rd step.
-- **BLE for Linux and Windows:** Probably the wisest thing to do would be to wait for the reference versions of the drivers to be implemented (iOS and Android), but if the community is too impatient to wait for us to work on it, we won't stand in its way. :wink:
+- **BLE for Linux and Windows:** Probably the wisest thing to do would be to wait for the reference versions of the drivers to be implemented (iOS and Android), but if the community is too impatient to wait for us to work on it, we won't stand in its way. :smirk:
 
 For the curious (who are definitely very curious), our new developer has also developed a test app for Multipeer Connectivity: [multipeer-connectivity-prototype](https://github.com/berty/multipeer-connectivity-prototype)
 
