@@ -49,7 +49,7 @@ Vos intérêts, ce que vous mangez, comment vous voyez, les lieux, la récurrenc
 
 ![](https://i.imgur.com/9hsjx1a.jpg)
 
-Doctorant au MIT, Yves-Alexandre de Montjoye travaille au Laboratoire de Dynamique Humaine du média Lab. Il explique que **nos métadonnées sont plus personnelles que nos empreintes digitales**: "_Pour identifier une personne avec ses empreintes digitales, 12 points de référence doivent être utilisés pour être sûrs. En revanche, nos traces numériques laissent dernière nous bien plus d’empreintes que 12 petits points".</p>
+Doctorant au MIT, Yves-Alexandre de Montjoye travaille au Laboratoire de Dynamique Humaine du média Lab. Yves-Alexandre de Montjoye travaille au Laboratoire de Dynamique Humaine du média Lab. Il explique que **nos métadonnées sont plus personnelles que nos empreintes digitales**: "_Pour identifier une personne avec ses empreintes digitales, 12 points de référence doivent être utilisés pour être sûrs. En revanche, nos traces numériques laissent dernière nous bien plus d’empreintes que 12 petits points".
 
 
 
@@ -59,7 +59,7 @@ Les répercussions des Big Data peuvent aussi nous impacter de manière plus dir
 ![](https://i.imgur.com/klYN0ht.jpg)
 
 
-Un recruteur peut connaître votre mode de vie avant même de vous auditionner. Ce que vous publiez sur les réseaux sociaux peut être analysé très attentivement. Grâce à ces réseaux, on peut étudier votre situation familiale, vos centres d’intérêts, vos fréquentations, vos voyages, vos opinions politiques, vos partis pris, vos soirées arrosées. une masse d’informations précieuses qui peuvent déterminer votre sort lors d’un recrutement
+Un recruteur peut connaître votre mode de vie avant même de vous auditionner. Ce que vous publiez sur les réseaux sociaux peut être analysé très attentivement. Grâce à ces réseaux, on peut étudier votre situation familiale, vos centres d’intérêts, vos fréquentations, vos voyages, vos opinions politiques, vos partis pris, vos soirées arrosées.
 
 
 
