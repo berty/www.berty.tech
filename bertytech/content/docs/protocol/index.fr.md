@@ -77,18 +77,15 @@ The generation of the time-based token follows the core principles of the [RFC 6
 
 ```go
 // golang
-func rendezvousPoint(id, seed []byte, date time.Time) []byte {
-    buf := make([]byte, 32)
-    mac := hmac.New(sha256.New, seed)
-    binary.BigEndian.PutUint64(buf, uint64(date.Unix()))
+func rendezvousPoint (id, seed []byte, date horaire. ime) []byte {
+    buf := make([]octet, 32)
+    mac := hmac. ew(sha256.New, graine)
+    binaire. igEndian.PutUint64(buf, uint64(date.Unix()))
 
     mac.Write(buf)
-    sum := mac.Sum(nil)
+    somme := mac.Sum(nil)
 
-    rendezvousPoint := sha256.Sum256(append(id, sum...))
-
-    return rendezvousPoint[:]
-}
+    rendezvousPoint := sha256.Sum256(appendid, sum...))
 
     return rendezvousPoint[:]
 }
