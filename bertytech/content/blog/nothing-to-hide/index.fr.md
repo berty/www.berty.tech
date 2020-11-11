@@ -13,9 +13,9 @@ description: So you are being watched online. Why should you care? After all, yo
 medium_url: https://medium.com/berty-tech/nothing-to-hide-5d4ef25cf271
 ---
 
-## And why it's not OK being watched.
+## Pourquoi il n'est pas normal d'être surveillé ?
 
-So you are being watched online. Why should you care? After all, you are doing nothing wrong. You have nothing to hide, right? You just go online to chat with your friends, maybe argue with strangers, and life moves on! Should it really be a concern that the government and other parties are spying on you, gathering valuable information? That there are data aggregators building a nice (or not so nice 😅) profile of you to sell to the highest bidder? What of state agencies, travel companies, telecommunication giants, marketing agencies, advertising companies and insurance providers all clamoring for the personal data used not only to sell to you but sell you as well?
+Vous êtes donc surveillé en ligne. Pourquoi devriez-vous vous en soucier ? Après tout, vous ne faites rien de mal. Vous n'avez rien à cacher, n'est-ce pas ? You just go online to chat with your friends, maybe argue with strangers, and life moves on! Devrait-on vraiment s'inquiéter que le gouvernement et d'autres partis vous espionnent, recueillant des informations précieuses ? That there are data aggregators building a nice (or not so nice 😅) profile of you to sell to the highest bidder? What of state agencies, travel companies, telecommunication giants, marketing agencies, advertising companies and insurance providers all clamoring for the personal data used not only to sell to you but sell you as well?
 
 **Your privacy is a precious commodity.** You should care about your online conversations even if they’re just about making plans with your best friend or reassuring your mom you are eating right.
 
