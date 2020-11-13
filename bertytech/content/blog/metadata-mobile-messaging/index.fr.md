@@ -15,22 +15,22 @@ description: "Wanna learn more on metadata in mobile messaging? Check this artic
 
 # Metadata in mobile messaging
 
-In this article, we will talk about **metadata in mobile messaging**. It's a reasonably rare subject on the web. We thought we'd tell you about it because it's a topic that's close to our hearts. We've been fighting for two years to build a messaging application that preserves privacy. So we're going to explain why it's so important, and why it's necessary to limit their collections.
+In this article, we will talk about **metadata in mobile messaging**. C'est un sujet relativement rare sur le Web. We thought we'd tell you about it because it's a topic that's close to our hearts. Nous luttons depuis deux ans pour développer une application de messagerie qui préserve la vie privée. Nous allons donc vous expliquer pourquoi c'est si important, et pourquoi il est nécessaire de limiter leurs collections.
 
-Understanding metadata, especially in mobile applications, is essential to understand the security, confidentiality, and anonymity of mobile messaging.
+La compréhension des métadonnées, en particulier dans les applications mobiles, est essentielle pour comprendre la sécurité, la confidentialité et l'anonymat de la messagerie mobile.
 
 We won't give you a long introduction on what metadata is. You probably know that if the data is a letter, the metadata is the envelope and its associated information (address, time, date, size...). For those who want a very good sum-up, see what Edward Snowden wrote on his Twitter in 2015:
 
 {{<tweet id="661302234068701188">}}
 
-## Why encryption is not enough?
+## Pourquoi le chiffrement ne suffit pas ?
 
-Before you dig into this section, if you don't know what encryption is, please read our article on the subject: https://berty.tech/blog/e2e-encryption/.
+Avant de creuser davantage, si vous ne savez pas ce qu'est le chiffrement, veuillez lire notre article sur le sujet : https://berty.tech/blog/e2e-encryption/.
 
 
 Let's put it very clearly: **encryption protects your message's content but not your confidentiality.** It's not just what you say that's sensitive in a message.
 
-> Metadata is far more intimate than our conversations. It shows where we go, our interests, our relationships - it shows who we are.
+> Les métadonnées sont bien plus intimes que nos conversations. Il montre où nous allons, nos intérêts, nos relations - cela montre qui nous sommes.
 > 
 > -- <cite>Bruce Schneier</cite>
 
@@ -38,7 +38,7 @@ Let's put it very clearly: **encryption protects your message's content but not 
 ![image alt](https://i.imgur.com/kUbf7wo.png) Source: [FGDC.GOV](https://storymaps.arcgis.com/stories/724b222bf3424fc097b1b51d83cb5a0a)
 
 ### The WhatsApp example
-Let's take an example: you probably know WhatsApp? Yes, one of the most popular applications in the world. Have you ever paid to use Whatsapp? It's a private company that needs to make a profit to keep server costs down, etc. So, how do Whatsapp runs if it's free? It's not an NGO that receives donations.
+Prenons un exemple : vous connaissez probablement WhatsApp ? Oui, une des applications les plus populaires au monde. Avez-vous déjà payé pour utiliser Whatsapp ? It's a private company that needs to make a profit to keep server costs down, etc. So, how do Whatsapp runs if it's free? It's not an NGO that receives donations.
 
 So maybe, the ultimate goal of WhatsApp is actually to advertise in the app? How to put relevant advertising if the content of the messages is not in clear text? That's where metadata come into place. They bright a lot of information about who you are, your consumption habits, your future purchases... and they are very accurate!
 

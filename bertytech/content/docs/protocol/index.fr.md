@@ -89,9 +89,6 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
 
     return rendezvousPoint[:]
 }
-
-    return rendezvousPoint[:]
-}
 ```
 
 There are two types of rendezvous points in the Berty Protocol:
