@@ -19,7 +19,7 @@ Oui, vous avez bien lu le titre ! Nous ouvrons progressivement l’accès à not
 
 Si vous êtes ici, vous comprenez la philosophie du projet et les défis technologiques qu'il implique. Il est vraiment stupéfiant de se sentir aussi soutenu que nous le sommes. Nous avons la meilleure communauté !
 
-## Faire est mieux que parfait
+## Le mieux est l'ennemi du bien
 
 Aujourd'hui, le développement de Berty est au stade où une publication est nécessaire. Partager avec vous consiste à obtenir le plus de commentaires possibles afin que nous puissions aller dans la bonne direction. Pour cela, nous aurons besoin de vous tous.
 
