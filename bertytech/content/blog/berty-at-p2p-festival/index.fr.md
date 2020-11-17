@@ -1,6 +1,6 @@
 ---
 author: camille
-title: "Throwback from the first edition of P2P Festival!"
+title: "Retour sur la première édition du festival P2P !"
 date: 2020-01-27
 image: "festival.png"
 video: time_laps_festival.mp4
@@ -9,24 +9,24 @@ categories:
   - free-speech
 tags:
   - technical
-  - security
+  - sécurité
 ---
 
-# Berty at Paris P2P Festival #0
+# Berty au Festival de Paris P2P #0
 
 
-As announced in our previous [blog post](https://berty.tech/blog/paris-p2p-festival/), we had the pleasure to co-organize the very first [Paris P2P Festival](https://p2p.paris/fr/event/festival-0/) from January 8 to 12, 2020 in Paris. This event was a true opportunity to bring together peer-to-peer enthusiasts and people curious about open source in general. These were 5 intense days of sharing, learning and chance encounters!
+Comme annoncé dans notre précédent [billet de blog](https://berty.tech/blog/paris-p2p-festival/), nous avons eu le plaisir de co-organiser le tout premier [Festival de Paris P2P ](https://p2p.paris/fr/event/festival-0/) du 8 au 12 janvier 2020 à Paris. Cet événement a été une véritable opportunité de réunir les passionnés du peer-to-peer et des personnes curieuses de l'open source en général. Ce furent 5 jours intenses de partage, d'apprentissage et de rencontres fortuites !
 
-TLDR: We had a blast! 🤩
-
-
+TLDR: Nous nous sommes éclatés ! 🤩
 
 
-## P2P Festival #0
 
-![](conference.jpg) We had the pleasure to welcome 73 speakers from all over the world to cover the 96 events of the festival. Topics ranged from secure communication, knowledge sharing, participative governance and digital currencies to art and mentalism.
 
-What a line-up! 🤯 Have a glimpse below 👇
+## Festival P2P #0
+
+![](conference.jpg) Nous avons eu le plaisir d'accueillir 73 conférenciers venus du monde entier pour couvrir les 96 événements du festival. Les sujets abordés vont de la communication sécurisée, du partage de connaissances, de la gouvernance participative et des monnaies numériques, à l'art et au mentalisme.
+
+Quelle programme ! 🤯 Have a glimpse below 👇
 
 * [The schedule](https://p2p.paris/en/event/festival-0/#schedule)
 * [List of speakers](https://p2p.paris/en/event/festival-0/#speakers)
