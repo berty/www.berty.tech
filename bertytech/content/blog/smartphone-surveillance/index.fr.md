@@ -1,73 +1,73 @@
 ---
-author: ninel
-title: "Are smartphones the best surveillance devices?"
+author: Ninel
+title: "Les smartphones sont-ils les meilleurs dispositifs de surveillance ?"
 date: 2019-11-15
 image: "smartphone-surveillance.jpg"
 categories:
-  - free-speech
-description: "What's sitting in your pocket is the most powerful tracking device ever made: localization, habits, communication. Everything can be monitored from your smartphone!"
+  - Liberté d'expression
+description: "Ce qui se trouve dans votre poche est le dispositif de suivi le plus puissant jamais fabriqué : la localisation, les habitudes, la communication. Tout peut être surveillé depuis votre smartphone !"
 tags:
-  - security
-  - censorship
+  - sécurité
+  - censure
   - surveillance
-  - privacy
+  - confidentialité
 ---
 
-# Are Smartphones the best surveillance devices?
+# Les Smartphones sont-ils les meilleurs dispositifs de surveillance ?
 
 Hi Internet!
 
-Did you know that today there are more people on the planet who own a smartphone than a toothbrush? Sounds crazy, right? 😱
+Saviez-vous qu'aujourd'hui, il y a plus de gens sur la planète qui possèdent un smartphone qu'une brosse à dents ? Ça a l'air fou, non ? 😱
 
-Odds are you're reading this article on your mobile phone or have one in your pocket! 🔮
+Il y a de fortes chances que vous lisiez cet article sur votre téléphone portable ou que vous en ayez un dans votre poche ! 🔮
 
-What's sitting in your pocket is the most powerful tracking device ever made: localization, habits, communication. Everything could be monitored.
+Ce qui se trouve dans votre poche est le dispositif de suivi le plus puissant jamais réalisé : localisation, habitudes, communication. Tout pourrait être contrôlé.
 
-## Mass Surveillance of Chat App Communication
+## Surveillance de masse de la communication des applications de chat
 
 ![](smartphone.jpg)
 
-Surveillance has been the subject of much controversy, especially after  **Edward Snowden’s expose**. The idea that there are parties such as the government who are really interested in spying on you and collecting information on you is quite alarming.
+La surveillance a fait l'objet de nombreuses controverses, surtout après l'exposition d'**Edward Snowden**. L'idée qu'il y ait des parties telles que le gouvernement qui soient réellement intéressées par l'espionnage et la collecte d'informations sur vous est assez alarmante.
 
-In fact, you would not be blamed at all for deciding to quit all manner of communication over the internet in a bit, to ensure no one is keeping an eye on the kind of messages you send or the information you post across various internet platforms and messaging apps. Therefore, making sure that your messaging app is secure enough is important in order to ensure that your communication is protected from any third party’s snooping eyes.
+En réalité, on ne vous reprocherait pas d'avoir décidé d'arrêter toute forme de communication sur Internet, pour s'assurer que personne ne garde un œil sur le type de messages que vous envoyez ou les informations que vous publiez sur les différentes plateformes internet et applications de messagerie. Par conséquent, il est important de s'assurer que votre application de messagerie est suffisamment sécurisée afin de garantir que votre communication est protégée des regards indiscrets de tout tiers.
 
-Monitoring done by state, corporate and private parties to mine data to suit their purposes is quite a frequent occurrence when you are dealing with electronic online communication. This data mining, intelligence gathering process benefits these parties. In addition, there are data aggregators always present, always ready to form a profile of you based on the information you publish, and then sell that data to the government agencies, retailers, marketing agencies, technology and telecommunications companies, travel companies, health and insurance companies, financial services and analytical companies, and other interested parties.
+Les contrôles effectués par l'État, les entreprises et les parties privées pour exploiter les données en fonction de leurs objectifs sont assez fréquents lorsqu'il s'agit de communication électronique en ligne. Ce processus de collecte de données profite à ces parties. En outre, il existe des agrégateurs de données toujours présents, toujours prêts à établir votre profil sur la base des informations que vous publiez, puis vendre ces données aux agences gouvernementales, aux détaillants, aux agences de marketing, aux entreprises de technologie et de télécommunications, aux entreprises de voyage, aux compagnies de santé et d'assurance, aux services financiers et aux sociétés d'analyse, ainsi qu'à d'autres parties intéressées.
 
-Most people who are apologists of mass surveillance tend to think that it is only the criminals or suspected criminals who are targeted. They couldn’t be more wrong. Going by Snowden’s words:
+La plupart des personnes qui font l'apologie de la surveillance de masse ont tendance à penser que seuls les criminels ou les criminels présumés sont visés. Ils ne peuvent pas avoir plus tort. Selon les mots de Snowden :
 
-> *“Even if you aren’t doing anything wrong, you are being watched and recorded.”*
+> *"Même si vous ne faites rien de mal, vous êtes surveillé et enregistré."*
 
-When you think about this, it means that the government and other parties have a wealth of information on its citizens. The only question is when an opportunity presents itself for them to use this information against you, to condemn you or to profile you for a whole host of interested parties to use as they may. Therefore, mass surveillance is synonymous with uncertainty.
+Quand on y pense, cela signifie que le gouvernement et les autres partis disposent d'une multitude d'informations sur ses citoyens. La seule question est de savoir quand une occasion se présente pour eux d'utiliser ces informations contre vous, de vous condamner ou de vous profiler pour que toute une série de parties intéressées puissent les utiliser comme elles le souhaitent. Par conséquent, la surveillance de masse est synonyme d'incertitude.
 
-While the information and communications that you send out over the internet may seem harmless now, who knows how that will change in the near and far future. For instance, a new government may come into place bent on exploiting or targeting people with particular profiles. Or this information may be used against you to the detriment of your social standing or career goals. These ways, among hundreds of other ways of data exploitation, in which information collected about you can not only be used against you now but also can be used against you in the future. It definitely makes mass surveillance something you want to avoid. Fortunately, there are ways to protect yourself from the now mainstream mass surveillance when using messaging apps.
+Si les informations et les communications que vous envoyez sur l'internet peuvent sembler inoffensives aujourd'hui, qui sait comment cela va changer dans un avenir proche et lointain. Par exemple, un nouveau gouvernement peut se mettre en place, déterminé à exploiter ou à cibler des personnes ayant des profils particuliers. Ces informations peuvent également être utilisées contre vous au détriment de votre statut social ou de vos objectifs professionnels. Ces moyens, parmi des centaines d'autres d'exploitation des données, dans lesquels les informations recueillies à votre sujet peuvent non seulement être utilisées contre vous maintenant mais aussi à l'avenir. Cela fait de la surveillance de masse quelque chose que vous voulez éviter. Heureusement, il existe des moyens de se protéger contre la surveillance de masse désormais courante lors de l'utilisation d'applications de messagerie.
 
 **Use a Chat App with Secure Encryption** </br> While there is no such thing as completely perfect security, using messaging apps that employ the best form of security-minded features and encryption such as end-to-end encryption, message deletion, and safety numbers to confirm identity, is a great way to ensure online privacy to the best extent.
 
-**Ensure your Password is Strong Enough** </br> Passwords can be a weak point of entry if they are not strong enough. Some programs can even identify the manner in which you come up with your passwords, therefore, ensuring that you don’t use similar passwords for different chat apps and other logins, thus making them  harder to crack.
+**Ensure your Password is Strong Enough** </br> Passwords can be a weak point of entry if they are not strong enough. Certains programmes peuvent même identifier la manière dont vous créez vos mots de passe, garantissant ainsi que vous n'utilisez pas des mots de passe similaires pour différentes applications de chat et autres connexions, ce qui les rend plus difficiles à craquer.
 
 
-## What About Censorship?
+## Qu'en est-il de la censure ?
 
 ![](surveillance.jpg)
 
 
-Are you really sure that your messaging app is capable of protecting your privacy or bypassing government censorship? Yes, some governments tend to censor what you are able to see. Some messaging app companies may bow to the government’s pressure and conduct censorship in a bid to keep enjoying the government’s support. China, Cuba, and Oman are some of the countries whose governments are notorious for conducting censorship.
+Êtes-vous vraiment sûr que votre application de messagerie est capable de protéger votre vie privée ou de contourner la censure gouvernementale ? Oui, certains gouvernements ont tendance à censurer ce que vous êtes en mesure de voir.  Certaines sociétés d'applications de messagerie peuvent céder à la pression du gouvernement et pratiquer la censure afin de continuer à bénéficier du soutien du gouvernement. La Chine, Cuba et Oman font partie des pays dont les gouvernements sont connus pour pratiquer la censure.
 
-Even besides allowing the government to conduct censorship in their platforms, some messaging apps go a step further and commit the egregious act of failing to inform you that their messages are undergoing censorship, which is a grave slight against your privacy.
+Outre le fait qu'elles permettent au gouvernement de censurer leurs plateformes, certaines applications de messagerie vont plus loin et commettent l'acte flagrant de ne pas vous informer que leurs messages sont censurés, ce qui constitue une grave atteinte à votre vie privée.
 
-**Keyword Blocking** </br> Censorship in chat apps can be by way of keyword blocking, where messages that contain certain words deemed as sensitive are not received. Keyword filtering is not only done through messaging apps, search engines can also be censored to return limited results when some keywords are entered. Internet service providers and messaging app companies that are implicit in censoring of keywords use deep packet inspection to look for keywords deemed sensitive in communication flows and block such keywords. On a large scale keyword filtering, however, there are other methods, such as intrusion detection system, which disrupts connection when blacklisted content is discovered.
+**Keyword Blocking** </br> Censorship in chat apps can be by way of keyword blocking, where messages that contain certain words deemed as sensitive are not received. Le filtrage des mots clés n'est pas seulement effectué par les applications de messagerie, les moteurs de recherche peuvent également être censurés pour renvoyer des résultats limités lorsque certains mots clés sont saisis. Les fournisseurs de services Internet et les sociétés d'applications de messagerie qui sont implicites dans la censure des mots-clés utilisent l'inspection approfondie des paquets pour rechercher les mots-clés jugés sensibles dans les flux de communication et bloquer ces mots-clés. Cependant, à grande échelle, il existe d'autres méthodes, telles que le système de détection d'intrusion, qui perturbe la connexion lorsque le contenu de la liste noire est découvert.
 
-Of course, the excuse the government would use is that it is trying to curb you from spreading politically sensitive information or organize ‘riots’ among other ‘national security and wellbeing’ excuses. However, it is a violation of your right to privacy and free speech. Censorship also threatens the open communication and information access, in moves that undermine your civil liberties, such as the free speech that the internet advocates for.
+Évidemment, l’excuse que le gouvernement utiliserait est qu’il tente de vous empêcher de diffuser des informations politiquement sensibles ou d’organiser des «émeutes» parmi d'autres excuses de "sécurité et de bien-être national". Toutefois, il s'agit d'une violation de votre droit à la vie privée et à la liberté d'expression. La censure menace également le libre accès à la communication et à l'information, par des mesures qui portent atteinte à vos libertés civiles, telles que la liberté d'expression que prône Internet.
 
-**IP Blocking** </br> Since apps and websites have a unique IP address, the government can block access to them by instructing the ISP to block these IP addresses using a firewall, thus restricting your access to them. Since tech companies can often choose not to stand up for your rights, especially when their profits are under threat, then most carry out these orders, allowing censors access to certain messaging apps and  restricting mass communication. Indeed, this method of censorship is often used in times when the public is dissenting or protesting against the government.
+**IP Blocking** </br> Since apps and websites have a unique IP address, the government can block access to them by instructing the ISP to block these IP addresses using a firewall, thus restricting your access to them. Comme les entreprises technologiques peuvent souvent choisir de ne pas défendre vos droits, en particulier lorsque leurs profits sont menacés, la plupart d'entre elles exécutent ces ordres, permettant aux censeurs d'accéder à certaines applications de messagerie et limitant les communications de masse. En effet, cette méthode de censure est souvent utilisée dans les moments où la population est en dissidence ou proteste contre le gouvernement.
 
-**DNS Spoofing**</Br> This is DNS (Domain Name System) tampering, which happens whenever traffic is diverted due to corrupt DNS data. Some DNS entries for messaging apps and websites can be poisoned, so that if you try to access them you will be redirected to the wrong IP address. This method of censorship used in tandem with keyword filtering can be very effective in censoring information if the tech companies and ISPs are implicit in the censorship of such information as the government requires.
+**DNS Spoofing**</Br> This is DNS (Domain Name System) tampering, which happens whenever traffic is diverted due to corrupt DNS data. Certaines entrées DNS d'applications de messagerie et de sites web peuvent être "empoisonnées", de sorte que si vous essayez d'y accéder, vous serez redirigé vers la mauvaise adresse IP.  Cette méthode de censure utilisée en tandem avec le filtrage par mot-clé peut être très efficace pour censurer l'information si les entreprises technologiques et les fournisseurs d'accès Internet sont implicites dans la censure de ces informations comme l'exige le gouvernement.
 
 ![](freeme.jpg)
 
-To avoid censorship, using messaging apps that have found a way to circumvent it is a great move. Use chat apps that employ tight effective encryption and anonymity tools. You can also make use of encryption and anonymity software yourself by using a VPN or Tor, among other methods.
+Pour éviter la censure, l'utilisation d'applications de messagerie qui ont trouvé un moyen de la contourner est une excellente initiative. Utilisez des applications de chat qui utilisent des outils de cryptage et d'anonymat très efficaces. Vous pouvez également utiliser vous-même un logiciel de cryptage et d'anonymat en utilisant un VPN ou Tor, entre autres.
 
-Cheers Internet, see you next time 🤫
+Chers lecteurs, à la prochaine 🤫
 
  {{<tweet id="1186666663191728129">}}
 
