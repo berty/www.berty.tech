@@ -1,23 +1,23 @@
 ---
 author: pierre
-title: "How Social Networks Affect Our Privacy?"
+title: "Comment les réseaux sociaux affectent notre vie privée ?"
 date: 2019-01-07
 image: "social-media.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
-  - privacy
-  - social-networks
+  - vie privée
+  - réseaux sociaux
   - internet
-description: Privacy is a difficult concept to grasp. Our world is changing from day to day, and it is sometimes difficult to define what is on the private side or public side. Is putting a beautiful photograph on Instagram, something private?
+description: La vie privée est un concept difficile à saisir. Notre monde change de jour en jour, et il est parfois difficile de définir ce qui se trouve du côté privé ou du côté public. Mettre une belle photo sur Instagram, c'est quelque chose de privé ?
 medium_url: https://medium.com/berty-tech/privacy-social-network-63f4c239a208
 ---
 
 
 # Comment les réseaux sociaux affectent notre vie privée ?
-Privacy is a difficult concept to grasp. Our world is changing from day to day, and it is sometimes difficult to define what is on the private side or public side. Besides, is it possible to define private? Is putting a beautiful photograph on Instagram, something private? However, it is indeed my photo, my life and it is up to me to choose who can look at it. So, have we lost the notion of privacy? Have the boundaries changed? What are the elements behind this paradigm shift, if any?
+La protection de la vie privée est un concept difficile à saisir. Notre monde change de jour en jour, et il est parfois difficile de définir ce qui se trouve du côté privé ou du côté public. Par ailleurs, est-il possible de définir le terme "privé" ? Mettre une belle photo sur Instagram, c'est quelque chose de privé ? Mais c'est bien ma photo, ma vie, et c'est à moi de choisir qui peut la regarder. Alors, avons-nous perdu la notion de vie privée ? Les frontières ont-elles changé ? Quels sont les éléments qui sous-tendent ce changement de paradigme, le cas échéant ?
 
-## 1) IRL vs. Social Networks
+## 1) IRL vs. Réseaux sociaux
 
 Aujourd’hui, les réseaux sociaux occupent une place pondérante dans la vie des individus. Ils permettent de rester socialement actifs et de partager des intérêts communs. développant ainsi le sentiment d’appartenance à un groupe. Nous suivons tous plus ou moins cet engouement afin d’élargir notre champ social. À contrario, ceux qui décident de rester en retrait de toute cette ferveur sont plus ou moins considérés comme des “troglodytes” et des “pestiférés” de la société. Ce fait est d’autant plus marqué par l’effet de groupe qui renforce cette connivence intrusive et ce besoin d’être omniprésent sur les réseaux. Désormais, il est devenu courant de partager les moments de sa vie privée sur ces médias sociaux. Dans ce monde numérique dans lequel nous vivons, il n’est plus concevable de préserver notre vie privée. Nous partageons tout, nos expériences, nos souvenirs, nos rires, nos larmes, notre vie quotidienne.
 
@@ -27,7 +27,7 @@ Cette nouvelle ère brise toutes les barrières que, pendant tant d’années, n
 
 Cette forme d'exhibitionnisme est aussi et surtout accentuée par la volonté d’augmenter sa visibilité sur les réseaux sociaux. Il convient alors de faire vivre son profil au maximum en l’alimentant avec des publications, en partageant, en commentant et en interpellant. Nous restons donc dans une logique d'interactivité constante pour apparaître davantage. “Apparaître” signifie devenir visible aux yeux de quelqu’un.  La vie privée est exposée. Les médias sociaux ont favorisé la culture de l’égo, la culture de “soi”. Un besoin excessif d’être admiré s’exprimant sous des formes différents telles que des selfies avantageux, des clichés de rêve qui amassent tout autant de “likes”, que de retweets” et de “followers”. une obsession constante d’être vu par n’importe qui et par n’importe quel moyen afin d’avoir une reconnaissance hiérarchique sociale. Une sorte de compétition des uns contre les autres s’organise autour de ces réseaux pour gagner toujours plus d’amis pour encore et toujours plus paraître et exister afin de satisfaire l'ego. Cela rejoint indéniablement ce que l’on appelle plus communément la “société du paraître”. Ce jeu d’acteurs dans lequel nous nous y prêtons tous à des degrés différents.
 
-## 2) No Longer A Simple Sharing
+## 2) Plus un simple partage
 
 Ce n’est plus un simple partage.  il s’agit plutôt d’un faire valoir, un véritable souci de mise en scène établie par une gestion constante et stratégique du capital social.   En général, les personnes ne téléchargent que des photos qui les montrent sur leur meilleur angle. Certaines applications en ligne permettent d’ailleurs de rendre ces clichés plus attrayants. La plupart du temps, les gens ne se soucient pas de montrer leur véritable identité sur les réseaux sociaux, ils cherchent tout simplement à présenter une image “parfaite” d’eux même. Ce que nous affichons sur les réseaux n’est donc pas le véritable reflet de sa vie privée. On expose ce que l’on veut bien exposer. On montre ce que l’on veut bien montrer. Nous ne publierons pas une discussion d’ordre privé aux yeux des autres par exemple. En réalité, nous souhaitons contrôler ce qui doit être vu et entendu par les autres. Nous nous soucions bien évidemment de notre vie privée. Seulement, nous pensons, plus ou moins naïvement, la contrôler.
 
@@ -64,4 +64,4 @@ Une question se pose à présent : **Est-il possible que nous acceptions l'inacc
 
 {{< tweet id="1082309056050671617" >}}
 
-📷 by [Geralt](https://pixabay.com/fr/homme-d-affaires-kaufmann-tablette-3847389/)
+📷 Par [Geralt](https://pixabay.com/fr/homme-d-affaires-kaufmann-tablette-3847389/)
