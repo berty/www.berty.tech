@@ -8,7 +8,7 @@ video_thumbnail: time_laps_festival_350x200.mp4
 categories:
   - free-speech
 tags:
-  - technical
+  - technique
   - sécurité
 ---
 
