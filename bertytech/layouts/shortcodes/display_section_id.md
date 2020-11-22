@@ -9,7 +9,7 @@
 				<div id="id-title" class="page-id-title display-none text-center">
 				</div>
 				<div class="block block-id bg-white display-none" id="id-block-id">
-					<div class="block-id-avatar" id="id-initials">
+					<div class="block-id-avatar display-none" id="id-initials">
 					</div>
 					<div class="block-id-name c-name">
 					</div>
