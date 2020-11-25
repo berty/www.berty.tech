@@ -91,7 +91,7 @@ But in the meantime, how can things be improved? It is entirely possible to add 
 
 Email is an essential part of our online communications. In everyday life, it's more about the messages we send. 
 
-To be able to chat with confidence, it is necessary to use secure messaging systems. Not only is it necessary to use [end-to-end encryption] (https://berty.tech/blog/e2e-encryption/), but you have to ask yourself who is behind the messaging. What is its purpose? Read expert reports. Is the data stored (and therefore vulnerable)? 
+To be able to chat with confidence, it is necessary to use secure messaging systems. Not only is it necessary to use [end-to-end encryption](https://berty.tech/blog/e2e-encryption/), but you have to ask yourself who is behind the messaging. What is its purpose? Read expert reports. Is the data stored (and therefore vulnerable)? 
 
 As we are subjective on the subject, we let you do your research. For those who are interested, we build a decentralized messaging system that doesn't go through any intermediate server and doesn't store any information/data. Berty's goal is to preserve everyone's privacy and secure exchanges. 
 
