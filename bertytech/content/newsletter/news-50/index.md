@@ -16,7 +16,7 @@ Masks on. Fingers crossed. 🤞😷
 
 We wish our US friends a Happy Thanksgiving (and tolerable black friday). 🦃🍁  
 
-Take care!
+Take care! 
 
 ## 🚀 Open Source
 
