@@ -1,51 +1,51 @@
 ---
-title: "About us"
-subtitle: We build tools to enhance communication freedom
+title: "Tentang kami"
+subtitle: Kami membangun alat untuk meningkatkan kebebasan berkomunikasi
 hclass: bg-blue gradient bg-about
 image: "berty_about.png"
 layout: about
 menu:
   footer_col3:
-    name: About us
+    name: Tentang kami
     weight: 10
 section_1:
   - 
     image: icon_spock.svg
-    title: a non-profit organisation
+    title: sebuah organisasi nirlaba
   - 
     image: icon_team.svg
-    title: with a team of 10 people
+    title: dengan tim yang terdiri dari 10 orang
   - 
     image: icon_paris.svg
-    title: based in Paris, France
+    title: berbasis di Paris, Prancis
 section_2:
   image: blob_censorship.png
   items:
     - 
-      title: We bypass internet censorship
+      title: Kami membuka batasan internet
       items:
-        - The great benefit of a peer to peer network, is that it's very hard to prevent it from spreading
+        - Manfaat besar dari jaringan peer to peer, adalah sangat sulit untuk mencegahnya menyebar
     - 
-      title: We protect your privacy
+      title: Kami melindungi privasi Anda
       items:
-        - Accounts are fully anonymous
-        - All conversations are end to end encrypted, by default
+        - Akun sepenuhnya anonim
+        - Semua percakapan dienkripsi ujung ke ujung, secara default
     - 
-      title: We don't rely on a heavy infrastructure
+      title: Kami tidak mengandalkan infrastruktur yang berat
       items:
-        - We are fully distributed
-        - To escape from major companies we are also fully decentralized
-        - Anyone can host a Berty node & become a part of the Berty Network
+        - Kami sepenuhnya terdistribusi
+        - Untuk melepaskan diri dari perusahaan besar, kami juga sepenuhnya terdesentralisasi
+        - Siapapun dapat menghosting Berty node & menjadi bagian dari Berty Network
 section_3:
   image: /img/icon_dev.png
-  title: The Berty project is fully open source
+  title: Proyek Berty sepenuhnya open source
   items:
-    - Everyone can access the source code of the project
-    - Anyone can consult, review, submit changes or enhancements, report a bug, perform a security audit...
-    - We have an open roadmap and anyone can propose a new feature
-    - Wanna get involved ?
-    - As a non-profit organization, we are, by essence incapable of making profit
-    - We are not selling a product
-    - We just build tools to improve peoples lives
+    - Setiap orang dapat mengakses kode sumber proyek
+    - Siapapun dapat berkonsultasi, meninjau, mengirimkan perubahan atau peningkatan, melaporkan bug, melakukan audit keamanan...
+    - Kami memiliki roadmap terbuka dan siapa pun dapat mengusulkan fitur baru
+    - Mau ikut partisipasi?
+    - Sebagai organisasi nirlaba, kami pada dasarnya tidak mampu menghasilkan keuntungan
+    - Kami tidak menjual produk
+    - Kami hanya membangun alat untuk meningkatkan kehidupan masyarakat
 ---
 
