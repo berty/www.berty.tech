@@ -310,11 +310,17 @@
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
+    {{ range .Page.Translations }}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{ end }}
 
     <meta name="description" content="{{ $.Scratch.Get `metaDescription` }}">
 
     <!-- Open Graph -->
     {{ $ogType := cond (and (eq .Section "blog") .IsPage) "article" "website" }}
+    {{ range .Page.Translations }}
+      <meta property="og:locale:alternate" content="{{ .Site.Params.Locale }}" />
+    {{ end }}
     <meta property="og:description" content="{{ $.Scratch.Get `metaDescription` }}">
     <meta property="og:url" content="{{ .Permalink | strings.TrimSuffix "/" }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
