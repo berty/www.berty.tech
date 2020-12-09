@@ -39,9 +39,11 @@ languages:
   en:
     languageName: English
     languageCode: en-US
+    locale: en_US
   fr:
     languageName: French
     languageCode: fr-FR
+    locale: fr_FR
 
 params:
   #useSummaryIfNoDescription: true
