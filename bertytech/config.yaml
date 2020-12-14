@@ -44,6 +44,10 @@ languages:
     languageName: French
     languageCode: fr-FR
     locale: fr_FR
+  id:
+    languageName: Indonesian
+    languageCode: id-ID 
+    locale: id_ID
 
 params:
   #useSummaryIfNoDescription: true
