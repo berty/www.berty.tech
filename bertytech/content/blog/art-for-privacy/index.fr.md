@@ -1,6 +1,6 @@
 ---
 author: zooma
-title: "De l'Art pour défendre la vie privée #1"
+title: "Art for Privacy #1"
 date: 2020-11-05
 #image: "Djalouz-Art4Privacy1.png"
 image: "Djalouz-Art4Privacy1.png"
