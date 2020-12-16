@@ -4,7 +4,7 @@ const glob = require("glob");
 
 const files = glob.sync(path.resolve(__dirname, "../content", "**/*.id.md"));
 
-// Sanitize filenames to work with crowdin.com
+// Rename indonesian language prefix
 const rename = async (filepath) => {
   const newFilepath = filepath.replace(".id.md", ".id-id.md");
 
