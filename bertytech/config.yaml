@@ -44,7 +44,7 @@ languages:
     languageName: French
     languageCode: fr-FR
     locale: fr_FR
-  id:
+  id-id:
     languageName: Indonesian
     languageCode: id-ID 
     locale: id_ID
