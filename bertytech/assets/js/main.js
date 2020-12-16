@@ -91,6 +91,7 @@ $(function() {
         switch (kind) {
           case "contact":
           case "group":
+          case "enc":
             var name = getQueryVariable(metadata, "name");
             if (name !== undefined) {
               var name_cleaned = capitalizeWords(name.replaceAll('-', ' ').replaceAll('+', ' '));
