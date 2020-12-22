@@ -24,28 +24,28 @@ section_2:
     - 
       title: Мы делаем невозможной интернет-цензуру
       items:
-        - The great benefit of a peer to peer network, is that it's very hard to prevent it from spreading
+        - Огромное преимущество P2P сетей - это чрезвычайная трудность их блокировки
     - 
-      title: We protect your privacy
+      title: Мы защищаем вашу приватность
       items:
-        - Accounts are fully anonymous
-        - All conversations are end to end encrypted, by default
+        - Аккаунты полностью анонимны
+        - Все разговоры защищены сквозным шифрованием, по умолчанию
     - 
-      title: We don't rely on a heavy infrastructure
+      title: Мы не зависим от тяжёлой инфраструктуры
       items:
-        - We are fully distributed
-        - To escape from major companies we are also fully decentralized
-        - Anyone can host a Berty node & become a part of the Berty Network
+        - Мы полностью распределены
+        - Для независимости от крупных компаний, мы также полностью децентрализованы
+        - Любой может содержать узел Berty и стать частью сети Berty
 section_3:
   image: /img/icon_dev.png
-  title: The Berty project is fully open source
+  title: Исходный код Berty полностью открыт
   items:
-    - Everyone can access the source code of the project
-    - Anyone can consult, review, submit changes or enhancements, report a bug, perform a security audit...
-    - We have an open roadmap and anyone can propose a new feature
-    - Wanna get involved ?
-    - As a non-profit organization, we are, by essence incapable of making profit
-    - We are not selling a product
-    - We just build tools to improve peoples lives
+    - Все могут получить доступ к исходному коду проекта
+    - Каждый может консультировать, проверять, вносить изменения, улучшать, писать отчеты о багах, производить аудит безопасности...
+    - У нас открытая дорожная карта, и любой может предложить новую функцию
+    - Хотите принять участие?
+    - Будучи некоммерческой организацией, мы, по своей сути, не может получать прибыль
+    - Мы не продаём продут
+    - Мы просто создаёт инструменты, чтобы улучшить жизни людей
 ---
 
