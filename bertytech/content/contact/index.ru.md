@@ -1,10 +1,10 @@
 ---
-title: "Contact us"
+title: "Свяжитесь с нами"
 hclass: bg-blue gradient bg-contact
 image: "berty_contact.png"
 menu:
   footer_col4:
-    name: Contact
+    name: Связаться
     weight: 30
 ---
 
