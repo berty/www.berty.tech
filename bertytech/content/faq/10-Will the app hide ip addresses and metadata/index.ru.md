@@ -1,16 +1,16 @@
 ---
-title: "Will the app hide ip addresses and metadata?"
+title: "Будет ли приложение скрывать IP-адреса и метаданные?"
 id: 10
 private: true
 ---
 
-For the moment, no mechanism to hide IP addresses is in place. In a P2P network, peers need to know each other’s IP addresses in order to communicate.
+На данный момент нет механизма скрытия IP-адресов. В P2P сети узлы должны знать IP-адреса друг друга, чтобы коммуницировать.
 
-On the one hand, the information is dispersed like a drop in the ocean (as opposed to a centralized service that logs all the users’ IPs in a single place), on the other hand, the users’ IP address becomes, in a way, public on the network.
+С одной стороны, информация рассредоточена как капли в океане (в отличие от централизованных сервисов, которые сохраняют IP-адреса всех пользователей в одном месте), с другой стороны, IP-адреса пользователей, таким образом, становится публичными в сети.
 
-The concern is of course less when the user connects to the network through a relay (this will almost always be the case on mobile phones), in this case, only the randomly chosen relay (basically, any IPFS node on the network having activated the option to act as a relay) will know the real IP of the user.
+Проблема, конечно, становится меньше, если пользователь подключается к сети через посредника (на мобильных устройствах это будет практически всегда), в этом случае, только случайно выбранный узел (по сути, любой узел IPFS в сети имеет включённой функцию работы в качестве посредника) будет знать реальный IP-адрес пользователя.
 
-The problem also does not arise when Berty users communicate offline, using direct transports such as: BLE, Apple MultipeerConnectivity or Android Nearby. Although in this case, to be complete, users will be able to detect other Berty users who have activated these transports within a short distance.
+Проблема также не возникает, когда пользователи Berty общаются в автономном режиме, используя транспорты с прямым подключением: BLE, Apple MultipeerConnectivity, Android Nearby. Однако, в этом случае, пользователи смогут обнаруживать на короткой дистанции других пользователей Berty, которые активировали эти транспорты.
 
 In other cases, we are currently working on adding to the protocol the use of a mix network system such as I2P or Tor to mitigate IP address leakage.
 
