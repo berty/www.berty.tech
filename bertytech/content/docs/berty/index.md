@@ -117,7 +117,7 @@ We are currently setting up a goodies store and a donation page so you can help 
 
 And finally, you can help us by spreading the word about us to your peers.
 
-Thank you, and feel free to [contact](https://berty.tech/conttact) us or open the GitHub issues if you want more details.
+Thank you, and feel free to [contact](https://berty.tech/contact) us or open the GitHub issues if you want more details.
 
 Read our [contribute page](https://berty.tech/contribute).
 

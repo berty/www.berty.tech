@@ -31,43 +31,11 @@
 {{ $discourseCommentsPages := slice "blog" "newsletter" }}
 
 <!-- Check if current page has been translated or is just a copy of the English page -->
-{{ $.Scratch.Set "englishPage" . }}
-{{ $.Scratch.Set "currentPage" . }}
-{{ $.Scratch.Set "isEnglishCopy" false }}
-{{ $englishSite := .Sites.First }}
-{{ $ignoreCompareKeys := slice "date" "lastmod" }}
+{{- $isTranslatedPage := partial "is_translated_page" . -}}
 
-{{ if ne .Lang "en" }}
-  <!-- Get English page -->
-  {{ range .Translations}}
-    {{ if eq .Site $englishSite }}
-      {{ $.Scratch.Set "englishPage" . }}
-    {{ end }}
-  {{ end }}
-
-  <!-- Filter out params of current page and add to string to compare -->
-  {{ $scratch.Set "currentPageCompare" "" }}
-  {{ range $key, $value := .Params}}
-    {{ if (not (in $ignoreCompareKeys $key)) }}
-      {{ $scratch.Add "currentPageCompare" (print $key "=" $value) }}
-    {{ end }}
-  {{ end }}
-
-  <!-- Filter out params of english page and add to string to compare -->
-  {{ $scratch.Set "englishPageCompare" "" }}
-  {{ range $key, $value := ($.Scratch.Get "englishPage").Params }}
-    {{ if (not (in $ignoreCompareKeys $key)) }}
-      {{ $scratch.Add "englishPageCompare" (print $key "=" $value) }}
-    {{ end }}
-  {{ end }}
-
-  <!-- Compare if params and content are the same between the english and translated version -->
-  {{ $.Scratch.Set "isEnglishCopy" (eq ($scratch.Get "currentPageCompare") ($scratch.Get "englishPageCompare") ) }}
-  {{ if ($.Scratch.Get "isEnglishCopy") }}
-    {{ $.Scratch.Set "currentPage" ($.Scratch.Get "englishPage") }}
-  {{ end }}
-
-{{ end }}
+{{ $.Scratch.Set "englishPage" $isTranslatedPage.englishPage }}
+{{ $.Scratch.Set "currentPage" $isTranslatedPage.currentPage }}
+{{ $.Scratch.Set "isEnglishCopy" $isTranslatedPage.isEnglishCopy }}
 
 <!doctype html>
 <!--
@@ -89,9 +57,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ $.Scratch.Get `pageTitle` }}</title>
 
-    {{ range .Page.Translations }}
-      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-    {{ end }}
     <meta http-equiv="Content-Language" content="{{ ($.Scratch.Get "currentPage").Lang }}">
 
     <!-- AMP -->
@@ -311,7 +276,10 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
     {{ range .Page.Translations }}
+      {{- $isTranslatedPage := partial "is_translated_page" . -}}
+      {{ if not $isTranslatedPage.isEnglishCopy }}
       <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+      {{ end }}
     {{ end }}
 
     <meta name="description" content="{{ $.Scratch.Get `metaDescription` }}">

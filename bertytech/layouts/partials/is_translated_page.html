@@ -1,0 +1,41 @@
+{{ $s := newScratch }}
+
+<!-- Check if current page has been translated or is just a copy of the English page -->
+{{ $s.Set "englishPage" . }}
+{{ $s.Set "currentPage" . }}
+{{ $s.Set "isEnglishCopy" false }}
+{{ $englishSite := .Sites.First }}
+{{ $ignoreCompareKeys := slice "date" "lastmod" "url" }}
+
+{{ if ne .Lang "en" }}
+  <!-- Get English page -->
+  {{ range .Translations}}
+    {{ if eq .Site $englishSite }}
+      {{ $s.Set "englishPage" . }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Filter out params of current page and add to string to compare -->
+  {{ $s.Set "currentPageCompare" "" }}
+  {{ range $key, $value := .Params}}
+    {{ if (not (in $ignoreCompareKeys $key)) }}
+      {{ $s.Add "currentPageCompare" (print $key "=" $value) }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Filter out params of english page and add to string to compare -->
+  {{ $s.Set "englishPageCompare" "" }}
+  {{ range $key, $value := ($s.Get "englishPage").Params }}
+    {{ if (not (in $ignoreCompareKeys $key)) }}
+      {{ $s.Add "englishPageCompare" (print $key "=" $value) }}
+    {{ end }}
+  {{ end }}
+
+  <!-- Compare if params and content are the same between the english and translated version -->
+  {{ $s.Set "isEnglishCopy" (eq ($s.Get "currentPageCompare") ($s.Get "englishPageCompare") ) }}
+  {{ if ($s.Get "isEnglishCopy") }}
+    {{ $s.Set "currentPage" ($s.Get "englishPage") }}
+  {{ end }}
+{{ end }}
+
+{{ return (dict "englishPage" ($s.Get "englishPage") "currentPage" ($s.Get "currentPage") "isEnglishCopy" ($s.Get "isEnglishCopy")) }}

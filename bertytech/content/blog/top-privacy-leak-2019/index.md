@@ -89,7 +89,7 @@ The fact that people are an essential part of the process will always expose tha
 
 You may be interested in how [the history of cryptography](https://berty.tech/blog/history-cryptography/), [how it works](https://berty.tech/blog/e2e-encryption/), [how we use it every day](https://berty.tech/blog/cryptography-daily-usage/) and [digital signatures](https://berty.tech/blog/digital_signature/) works. 
 
-Finally, remember that we've only dealt with data leaks here. But there is some invisible data that we leave lying around, namely [metadata](https://berty.tech/blog/what-is-metadat). Maybe one day we can do an article on top metadata leak.... 
+Finally, remember that we've only dealt with data leaks here. But there is some invisible data that we leave lying around, namely [metadata](https://berty.tech/blog/what-is-metadata). Maybe one day we can do an article on top metadata leak.... 
 
 
  {{<tweet id="1224339846333976577">}}
