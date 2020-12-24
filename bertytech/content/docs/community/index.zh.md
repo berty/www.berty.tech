@@ -203,5 +203,5 @@ Contact: https://berty.tech/contact
 * Documentation: https://berty.tech/docs#
 * Github: https://github.com/berty (don't forget to click on the ⭐️ button 😘)
 * Blog: https://berty.tech/blog
-* Newsletter: https://berty.tech/news
+* Newsletter: https://berty.tech/newsletter
 * Shop: https://shop.berty.tech/
