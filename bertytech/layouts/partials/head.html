@@ -32,6 +32,7 @@
 
 <!-- Check if current page has been translated or is just a copy of the English page -->
 {{- $isTranslatedPage := partial "is_translated_page" . -}}
+
 {{ $.Scratch.Set "englishPage" $isTranslatedPage.englishPage }}
 {{ $.Scratch.Set "currentPage" $isTranslatedPage.currentPage }}
 {{ $.Scratch.Set "isEnglishCopy" $isTranslatedPage.isEnglishCopy }}
