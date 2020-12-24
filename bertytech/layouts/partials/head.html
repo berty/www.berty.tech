@@ -57,9 +57,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ $.Scratch.Get `pageTitle` }}</title>
 
-    {{ range .Page.Translations }}
-      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
-    {{ end }}
     <meta http-equiv="Content-Language" content="{{ ($.Scratch.Get "currentPage").Lang }}">
 
     <!-- AMP -->
@@ -279,7 +276,10 @@
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
     {{ range .Page.Translations }}
+      {{- $isTranslatedPage := partial "is_translated_page" . -}}
+      {{ if not $isTranslatedPage.isEnglishCopy }}
       <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+      {{ end }}
     {{ end }}
 
     <meta name="description" content="{{ $.Scratch.Get `metaDescription` }}">
