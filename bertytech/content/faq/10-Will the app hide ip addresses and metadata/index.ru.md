@@ -12,13 +12,13 @@ private: true
 
 Проблема также не возникает, когда пользователи Berty общаются в автономном режиме, используя транспорты с прямым подключением: BLE, Apple MultipeerConnectivity, Android Nearby. Однако, в этом случае, пользователи смогут обнаруживать на короткой дистанции других пользователей Berty, которые активировали эти транспорты.
 
-В других случаях в настоящее время мы работаем над добавлением в протокол использования системы смешивания сети, такой как у I2P или Tor, для уменьшения утечки IP-адресов.
+Для других случаев, в настоящее время мы работаем над добавлением в протокол использования системы смешивания сети, такой как у I2P или Tor, для сокращения утечек IP-адресов.
 
-Regarding metadata, we have created a [custom protocol](https://berty.tech/docs/protocol/) that makes the collection of metadata as difficult as possible:
-* Having no phone/email required for registration, user identity is only based on public key cryptography
-* Not mandating any type of registration or use of a centralized service at any level (we may propose an optional directory service to easily find contacts, with the sole purpose of making the app easier to use for users who want it)
-* Rotating rendezvous points (kind of addresses where peers meet each other) on a regular basis
-* Offering the possibility to disable the contact request link or generate a new one by revoking the previous one
-* Aliasing identity, an user joining a group conversation will do it using an identity specific to this group
+Что касается метаданных, то мы создали [свой протокол](https://berty.tech/docs/protocol/) , который делает сбор метаданных максимально сложным:
+* Не требуется ни телефон, ни электронная почта для регистрации, идентификация пользователя основана только на криптографии открытого ключа
+* Не требуя никаких видов регистрации или использования централизованной службы на любом уровне (мы можем предложить опциональную службу каталога, чтобы легко находить контакты, с одной целью упрощения использования приложения для пользователей, которые этого хотят)
+* Регулярно переключать точки рандеву (вид адресов, где узлы встречаются друг с другом)
+* Возможность отключить ссылку для запросов в контакты или создать новую, отозвав предыдущую
+* Создавая связанный идентификатор, пользователь, присоединившийся к групповому разговору, будет делать это с использованием идентификации, специфичной для этой группы
 
-**We make our best efforts to ensure user privacy. We are therefore committed to keep our users as anonymous as possible and making the collection of metadata as difficult as possible.**
+**Мы прилагаем все усилия к тому, чтобы обеспечить конфиденциальность пользователей. Поэтому мы стремимся обеспечить максимальную анонимность наших пользователей и сделать сбор метаданных как можно более сложным.**
