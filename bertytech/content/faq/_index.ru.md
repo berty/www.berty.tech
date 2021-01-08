@@ -1,6 +1,6 @@
 ---
-title: "FAQ"
-subtitle: Frequently asked questions
+title: "ЧАВО"
+subtitle: Часто задаваемые вопросы
 draft: false
 ---
 
