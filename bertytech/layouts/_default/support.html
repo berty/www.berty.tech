@@ -1,0 +1,61 @@
+{{.Scratch.Set "body-class" "page-single wh"}}
+{{ partial "head" . }}
+
+<header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).RelPermalink }}')"{{end}}>
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+    {{ if .Params.Subtitle }}
+    <h3 class="text-shadow subtitle">{{.Params.Subtitle | markdownify }}</h3>
+    {{ end }}
+  </div>
+</header>
+
+<div class="content">
+  <div class="container">
+    <section class="section-blocks-3">
+      <div class="row">
+
+        <!-- FAQ -->
+        <div class="col-lg-4">
+          <div class="block block-wi text-center bg-white">
+            <div>
+              <img class="img-fluid" src="{{ ((.Resources.GetMatch `books.png`).Resize `300x`).RelPermalink }}" />
+            </div>
+            <h2>FAQ</h2>
+            <a class="btn btn-bty btn-blue icon-right" href="{{ `/faq` | relLangURL }}">
+              Go to FAQ page<i class="far fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Community -->
+        <div class="col-lg-4">
+          <div class="block block-wi text-center bg-white">
+            <div>
+              <img class="img-fluid" src="{{ ((.Resources.GetMatch `house.png`).Resize `300x`).RelPermalink }}" />
+            </div>
+            <h2>Community</h2>
+            <a class="btn btn-bty btn-blue icon-right" href="https://berty.community/">
+              Go to community<i class="far fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4">
+          <div class="block block-wi text-center bg-white">
+            <div>
+              <img class="img-fluid" src="{{ ((.Resources.GetMatch `phone.png`).Resize `300x`).RelPermalink }}" />
+            </div>
+            <h2>Contact</h2>
+            <a class="btn btn-bty btn-blue icon-right" href="{{ `/contact` | relLangURL }}">
+              Go to contact page<i class="far fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{{ partial "footer" . }}
