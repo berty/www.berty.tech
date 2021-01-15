@@ -52,7 +52,7 @@ languages:
     languageName: Arabic
     languageCode: ar-sa 
     locale: ar_SA
-  zh-cn:
+  cn:
     languageName: Chinese
     languageCode: zh-cn
     locale: zh_CN
