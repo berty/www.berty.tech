@@ -33,8 +33,8 @@ one = "Publication"
 other = "Publication"
 
 [minutes_read]
-one = "{{ .Count }} minutes de lecture"
-other = "{{ .Count }} minutes de lecture"
+one = "{{ .Count }} min de lecture"
+other = "{{ .Count }} min de lecture"
 
 [didnt_find_what_you_were_looking_for]
 other = "Vous n'avez pas trouvé ce que vous recherchiez ?"

@@ -48,6 +48,42 @@ languages:
     languageName: Indonesian
     languageCode: id-ID 
     locale: id_ID
+  ar:
+    languageName: Arabic
+    languageCode: ar-sa 
+    locale: ar_SA
+  cn:
+    languageName: Chinese
+    languageCode: zh-cn
+    locale: zh_CN
+  eo:
+    languageName: Esperanto
+    languageCode: eo
+    locale: eo
+  hi:
+    languageName: Hindi
+    languageCode: hi-IN
+    locale: hi_IN
+  pt:
+    languageName: Portuguese
+    languageCode: pt-BR
+    locale: pt_BR
+  ru:
+    languageName: Russian
+    languageCode: ru-RU
+    locale: ru_RU
+  sl:
+    languageName: Slovenian
+    languageCode: sl-SI
+    locale: sl_SI
+  es:
+    languageName: Spanish
+    languageCode: es-ES
+    locale: es_ES
+  uk:
+    languageName: Ukranian
+    languageCode: uk-UA
+    locale: uk_UA
 
 params:
   #useSummaryIfNoDescription: true

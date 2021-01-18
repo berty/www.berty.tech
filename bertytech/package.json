@@ -20,7 +20,6 @@
     "postcss-import": "^12.0.1",
     "postcss-purifycss": "^1.1.0",
     "postcss-replace": "^1.1.2",
-    "webp-converter": "^2.2.3",
     "yaml": "^1.10.0"
   },
   "browserslist": [
@@ -32,5 +31,7 @@
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "sharp": "^0.27.0"
+  }
 }
