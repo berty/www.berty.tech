@@ -6,6 +6,9 @@
 
 {{ if ne .ctx.Params.image nil }}
   {{ $img := .ctx.Page.Resources.GetMatch .ctx.Params.image }}
+  {{ if not $img }}
+    {{ warnf "Image doesn't exist. Image: %s, Page: %s" .ctx.Params.image .ctx.Page.RelPermalink }}
+  {{ end }}
   {{ if ne $img.MediaType.SubType "gif" }}
   {{ $img = $img.Resize "350x" }}
   {{ end }}
