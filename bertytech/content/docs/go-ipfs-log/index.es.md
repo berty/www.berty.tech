@@ -4,11 +4,11 @@ description: Go version of append-only log CRDT on IPFS
 icon: fab fa-github
 color: black
 display_nav: false
-ttags:  <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">CRDT</span>
+ttags: <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">CRDT</span>
 open: true
 menu:
-    repos:
-        weight: 2
+  repos:
+    weight: 2
 ---
 
 # Go-IPFS-Log
