@@ -4,11 +4,11 @@ title: "What Is Metadata?"
 date: 2019-12-20
 image: "blogpost-metadata.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- Privacy
-- Security
-description: 
+  - Privacy
+  - Security
+description:
 ---
 
 # Metadata: What can you learn from it?
@@ -25,7 +25,7 @@ On its own, data is useless and meaningless; but if organized and structured, da
 
 ![](letters-numbers.jpg)
 
-Picture a pie chart or bar graph without any labels. That is data processed into some form of information. Is this information useful? Probably not. Without a point of reference, it is nearly impossible to measure data. This is because there are no rules or structure, and without rules or structure, there are no measurements. 
+Picture a pie chart or bar graph without any labels. That is data processed into some form of information. Is this information useful? Probably not. Without a point of reference, it is nearly impossible to measure data. This is because there are no rules or structure, and without rules or structure, there are no measurements.
 
 ## What is Metadata?
 
