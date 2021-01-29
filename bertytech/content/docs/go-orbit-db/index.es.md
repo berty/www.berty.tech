@@ -4,11 +4,11 @@ description: Go version of Peer-to-Peer Databases for the Decentralized Web
 icon: fab fa-github
 color: black
 display_nav: false
-ttags:  <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">CRDT</span>
+ttags: <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">CRDT</span>
 open: true
 menu:
-    repos:
-        weight: 3
+  repos:
+    weight: 3
 ---
 
 # Go-Orbit-DB
