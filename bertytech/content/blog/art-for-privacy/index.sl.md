@@ -5,11 +5,11 @@ date: 2020-11-05
 #image: "Djalouz-Art4Privacy1.png"
 image: "Djalouz-Art4Privacy1.png"
 categories:
-- free-speech
+  - free-speech
 tags:
-- privacy
-- surveillance
-- art
+  - privacy
+  - surveillance
+  - art
 description:
 ---
 
@@ -17,9 +17,9 @@ description:
 
 As an NGO, we feel invested of a mission.  We strongly believe that there can be no change without education and awareness. We promote a free world without surveillance and censorship. So how do we do it? How do we make an impact on the causes we fight for? How can we alert on the current situation?
 
-We were looking for a low-cost communication (NGO power!), accessible, collaborative and free for interpretation campaign.  So, we opt for a slightly different communication channel. Something that belongs to everyone: our streets. For us at Berty, streets are metaphors. They are both a public place and a place of free expression. A bit like a free and limitless museum. 
+We were looking for a low-cost communication (NGO power!), accessible, collaborative and free for interpretation campaign.  So, we opt for a slightly different communication channel. Something that belongs to everyone: our streets. For us at Berty, streets are metaphors. They are both a public place and a place of free expression. A bit like a free and limitless museum.
 
-So, we are delighted to present ART4PRIVACY. 
+So, we are delighted to present ART4PRIVACY.
 
 
 ## The Art4Privacy Project
@@ -45,8 +45,7 @@ The first serie, please give a big round of applause to Djalouz!
 
 ### Who is Djalouz ?
 
-**Djalouz**, Paris, France: Visual artist, illustrator and graffiti artist, Djalouz was born in 1985.
-Parallel to obtaining his diploma as a model draftsman, he started graffiti in 2003, inspired by the young rising scene of French and European graffiti (Marko 93, Dran, Daim, MTO, etc.) but also by the world of comics (Enki Bilal, Frank Miller).
+**Djalouz**, Paris, France: Visual artist, illustrator and graffiti artist, Djalouz was born in 1985. Parallel to obtaining his diploma as a model draftsman, he started graffiti in 2003, inspired by the young rising scene of French and European graffiti (Marko 93, Dran, Daim, MTO, etc.) but also by the world of comics (Enki Bilal, Frank Miller).
 
 ![](https://i.imgur.com/qKbJXft.jpg)
 
@@ -64,9 +63,9 @@ There are many ways to help us:
 * You are a street artist and you are interested in this type of project? Let's get in touch!
 * Talk about Berty around you
 
-In short, all actions are good. 🧡 
+In short, all actions are good. 🧡
 
-Share your opinion on this first serie below!  
+Share your opinion on this first serie below!
 
 ![](https://i.imgur.com/4J0UkGF.jpg)
 
