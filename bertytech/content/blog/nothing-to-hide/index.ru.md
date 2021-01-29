@@ -4,14 +4,12 @@ title: "Why You Should Stop Saying You Have Nothing To Hide!"
 date: 2018-12-13
 image: "nothing-to-hide.jpg"
 categories:
-- "free-speech"
+  - "free-speech"
 tags:
-- privacy
-- cybersecurity
-- surveillance
-description: So you are being watched online. Why should you care? After all, you
-  are doing nothing wrong. You have nothing to hide, right? You just go online to
-  chat with your friends, maybe argue with…
+  - privacy
+  - cybersecurity
+  - surveillance
+description: So you are being watched online. Why should you care? After all, you are doing nothing wrong. You have nothing to hide, right? You just go online to chat with your friends, maybe argue with…
 medium_url: https://medium.com/berty-tech/nothing-to-hide-5d4ef25cf271
 ---
 
@@ -21,7 +19,7 @@ So you are being watched online. Why should you care? After all, you are doing n
 
 **Your privacy is a precious commodity.** You should care about your online conversations even if they’re just about making plans with your best friend or reassuring your mom you are eating right.
 
-### 1)	Do you really think you have nothing to hide?
+### 1)  Do you really think you have nothing to hide?
 
   * Would you be willing to hand over your phone and give me your PIN?
   * Would you be willing to let your postman open your mail and make a copy of it?
