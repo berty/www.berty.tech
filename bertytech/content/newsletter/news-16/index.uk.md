@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #16"
 date: 2019-10-11
-aliases: ["/newsletter/weekly-16"]
+aliases:
+  - "/newsletter/weekly-16"
 ---
 
 ## Current Work
