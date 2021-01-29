@@ -17,13 +17,13 @@ private: true
 
 * We're getting donations from sponsors.
 * We plan to crowdfund some tasks, like security audits.
-    
+
 ### Being incorruptible / unkillable
 
 #### Constraints:
 
 * Government can force you to add a backdoor in your software.
-* Government can force you to give them metadata and messages. This is strictly framed by SBDU in France (anti-terrorism section) and Cloud Act in USA. 
+* Government can force you to give them metadata and messages. This is strictly framed by SBDU in France (anti-terrorism section) and Cloud Act in USA.
 * Government can force you to kill the project.
 * You must comply with the regulations so you can't be sued.
 
