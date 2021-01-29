@@ -1,7 +1,8 @@
 ---
 title: "Berty News #47"
 date: 2020-10-16
-aliases: ["/newsletter/weekly-47"]
+aliases:
+  - "/newsletter/weekly-47"
 ---
 
 
@@ -9,15 +10,15 @@ aliases: ["/newsletter/weekly-47"]
 
 Ahoy Bertizen! 🏴‍☠️
 
- We hope you are comfortably settled. Ready for newsletter #47? 
+ We hope you are comfortably settled. Ready for newsletter #47?
 
-All good on our side. We're sprinting towards releasing our beta + we had an important meeting at the beginning of the week with a sponsor. It went great, and the collective stress is coming down 😅. We discussed a lot of things, including the peer-to-peer vision of the project and increasing state-sponsored censorship and surveillance in China. 
+All good on our side. We're sprinting towards releasing our beta + we had an important meeting at the beginning of the week with a sponsor. It went great, and the collective stress is coming down 😅. We discussed a lot of things, including the peer-to-peer vision of the project and increasing state-sponsored censorship and surveillance in China.
 
 And you, how are you doing? 🧡
 
 ## 🚀 Open Source
 
-Over the past two last weeks, we have been working on: 
+Over the past two last weeks, we have been working on:
 
 * **UI refactor of the main view**: try to move the sent requests and some popups into virtual conversations to keep this important stuff in its own unique view
 * **Replication UI**: add a new onboarding step specific to beta sessions that suggests enabling Berty's replication server to help everyone test this feature
@@ -27,7 +28,7 @@ Over the past two last weeks, we have been working on:
 * the **integration of the log replayer** that offers database replay as soon as we detect an abnormal app state
 * the **improvement bots** in general – eg. a new devtool entry to list all the optional features
 * Brainstorming to get a **better UI** (simple & intuitive)
-* Brainstorming to get a **"Network Map"** (similar to IPFS WebUI) built into the app to help people understand what's happening under the hood 
+* Brainstorming to get a **"Network Map"** (similar to IPFS WebUI) built into the app to help people understand what's happening under the hood
 * Writing a **custom driver for prometheus** to log protocol metrics
 
 
@@ -35,7 +36,7 @@ Over the past two last weeks, we have been working on:
 
 We are creating a dashboard to have real time metrics on the different nodes we have (rendezvous server, replication server, betabot, etc ...) that will allow us to know for example the number of peers connected and usage stats (bandwidth utilized and such).
 
-It will probably look like this: 
+It will probably look like this:
 
 ![](https://i.imgur.com/BQQxvC2.png)
 
