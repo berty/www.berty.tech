@@ -5,8 +5,8 @@ icon: fal fa-book
 color: blue
 display_nav: false
 #menu:
-#    docs:
-#        weight: 20
+#docs:
+#weight: 20
 draft: true
 ---
 
