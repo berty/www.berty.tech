@@ -1,45 +1,51 @@
 ---
-title: "About us"
-subtitle: We build tools to enhance communication freedom
+title: "Sobre nosotros"
+subtitle: Desarrollamos herramientas para mejorar la libertad de comunicación
 hclass: bg-blue gradient bg-about
 image: "berty_about.png"
 layout: about
 menu:
   footer_col3:
-    name: About us
+    name: Sobre nosotros
     weight: 10
-
 section_1:
-  - image: icon_spock.svg
-    title: a non-profit organisation
-  - image: icon_team.svg
-    title: with a team of 10 people
-  - image: icon_paris.svg
-    title: based in Paris, France
+  - 
+    image: icon_spock.svg
+    title: una organización sin ánimo de lucro
+  - 
+    image: icon_team.svg
+    title: con un equipo de 10 personas
+  - 
+    image: icon_paris.svg
+    title: con sede en París, Francia
 section_2:
   image: blob_censorship.png
   items:
-    - title: We bypass internet censorship
+    - 
+      title: Evitamos la censura en internet
       items:
-        - The great benefit of a peer to peer network, is that it's very hard to prevent it from spreading
-    - title: We protect your privacy
+        - El gran beneficio de la comunicación de igual a igual es que es muy dificil evitar que se extienda
+    - 
+      title: Protegemos tu privacidad
       items:
-        - Accounts are fully anonymous
-        - All conversations are end to end encrypted, by default
-    - title: We don't rely on a heavy infrastructure
+        - Las cuentas son completamente anónimas
+        - Todas las conversaciones están cifradas de extremo a extremo por defecto
+    - 
+      title: No dependemos de una infraestructura pesada
       items:
-        - We are fully distributed
-        - To escape from major companies we are also fully decentralized
-        - Anyone can host a Berty node & become a part of the Berty Network
+        - Estamos totalmente distribuidos
+        - Para escapar de compañías más grandes, también estamos totalmente decentralizados
+        - Cualquiera puede alogar un nodo Berty y formar parte de la red Berty
 section_3:
   image: /img/icon_dev.png
-  title: The Berty project is fully open source
-  items: 
-    - Everyone can access the source code of the project
-    - Anyone can consult, review, submit changes or enhancements, report a bug, perform a security audit...
-    - We have an open roadmap and anyone can propose a new feature
-    - Wanna get involved ?
-    - As a non-profit organization, we are, by essence incapable of making profit
-    - We are not selling a product
-    - We just build tools to improve peoples lives
+  title: El proyecto Berty es totalmente de código abierto
+  items:
+    - Todos pueden acceder al código del proyecto
+    - Todos pueden consultar, revisar, hcaer cambios o mejoras, reportar errores, realizar una auditoría de seguridad...
+    - Tenemos una hoja de ruta abierta. Cualquiera puede proponer una nueva característica
+    - '¿Quieres involucrarte?'
+    - Como una organización sin ánimo de lucro, somos, en esencia, incapaces de obtener ganacias
+    - No estamos vendiendo un producto
+    - Simplemente desarrollamos herramientas para mejorar la vida de las personas
 ---
+
