@@ -5,11 +5,11 @@ date: 2020-11-06
 #image: "cybersecurity.jpg"
 image: "cybersecurity.jpg"
 categories:
-- freespeech
+  - freespeech
 tags:
-- surveillance
-- cybersecurity
-- privacy
+  - surveillance
+  - cybersecurity
+  - privacy
 description: "Introduction to Cybersecurity Fundamentals"
 ---
 
