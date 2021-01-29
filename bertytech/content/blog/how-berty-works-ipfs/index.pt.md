@@ -5,12 +5,11 @@ date: 2020-06-23
 #image: "HBW1.jpg"
 image: "HBW1.jpg"
 categories:
-- technical
+  - technical
 tags:
-- technical
-- ipfs
-- how-to
-
+  - technical
+  - ipfs
+  - how-to
 description: "We will explain why we chose to build Berty over IPFS."
 ---
 
@@ -19,13 +18,11 @@ description: "We will explain why we chose to build Berty over IPFS."
 
 # How Berty Works #1: IPFS
 
-Welcome to the first part of this blog series that will get into everything you need to know about Berty and how it works! In these articles, we’ll introduce you to the inner workings of Berty, answer some frequently asked questions, and explain some of our biggest decisions.
-In this first installment of the series, we’ll focus on why we chose **to build Berty with IPFS.**
+Welcome to the first part of this blog series that will get into everything you need to know about Berty and how it works! In these articles, we’ll introduce you to the inner workings of Berty, answer some frequently asked questions, and explain some of our biggest decisions. In this first installment of the series, we’ll focus on why we chose **to build Berty with IPFS.**
 
 ## Our Ultimate Goal
 
-As you may know, Berty aims to build a censorship-proof messaging application that will protect your privacy.
-Your messaging app probably promises to keep your messages “private,” right? Unfortunately, it’s not that simple!
+As you may know, Berty aims to build a censorship-proof messaging application that will protect your privacy. Your messaging app probably promises to keep your messages “private,” right? Unfortunately, it’s not that simple!
 
 There are three main concerns with mainstream messaging apps:
 * All messages exchanged by users pass through and are stored on central servers. This means that your messages and their metadata are all in one place, making them more vulnerable to surveillance and censorship.
@@ -50,8 +47,7 @@ All that aside, it still remains much easier for a government or a hacker to blo
 **_tl;dr:_** Compared with a distributed architecture like Berty’s, a centralized model is less complex to implement and offers some performance advantages, but it creates a single point of failure for your privacy. It’s much more vulnerable to censorship and surveillance, and it requires that users trust the actors involved — _blindly_.
 
 
-> If you are wondering how Internet censorship is done, we urge you to read
-[this blog post](https://townsendcenter.berkeley.edu/blog/internet-censorship-part-2-technology-information-control).
+> If you are wondering how Internet censorship is done, we urge you to read [this blog post](https://townsendcenter.berkeley.edu/blog/internet-censorship-part-2-technology-information-control).
 
 ## Building a Messaging App Without Central Servers
 
@@ -59,7 +55,7 @@ How can we get rid of central servers for passing messages between users? The so
 
 > Want to brush up on some vocabulary? Distribution, centralization, and decentralization are clarified in a [dedicated blog post](https://berty.tech/blog/decentralized-distributed-centralized/).
 
-In a nutshell, with Berty, there’s no need for servers because no user is merely a client. Each peer assumes the roles of both the client and the server on a P2P network. 
+In a nutshell, with Berty, there’s no need for servers because no user is merely a client. Each peer assumes the roles of both the client and the server on a P2P network.
 
 In a centralized system, exchanged data doesn’t transit through a single point and is not stored in a single location.
 
@@ -142,8 +138,7 @@ After some discussion, we concluded that it would be wiser to port Orbit-DB in g
 When comparing a custom libp2p network with full node IPFS, we stumbled on some important insights:
 * Using a full IPFS node would allow us to better benefit from and contribute to the IPFS existing network than with a custom node.
 * We could develop a generic mobile version of IPFS that would be useful for the community and take advantage of their contributions to improve the project.
-* The other projects we’d develop (direct transport drivers, go-orbit-db,
-etc.) would also be more generic and would thus reinforce collaboration with the community.
+* The other projects we’d develop (direct transport drivers, go-orbit-db, etc.) would also be more generic and would thus reinforce collaboration with the community.
 
 So we decided to abandon our custom network to start Berty V2 from scratch based on a full IPFS node and to launch the following projects:
 * [gomobile-ipfs](https://github.com/ipfs-shipyard/gomobile-ipfs):
@@ -168,7 +163,7 @@ In the end, the architecture we’re developing is very different from blockchai
 
 ![Textile Logo](https://i.imgur.com/FHK1POE.png)
 
-Good question! 
+Good question!
 
 Textile provides a set of open-source tools allowing for rapid development of a decentralized application over IPFS, including mobile platforms.
 
