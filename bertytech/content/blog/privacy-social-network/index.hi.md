@@ -4,14 +4,12 @@ title: "How Social Networks Affect Our Privacy?"
 date: 2019-01-07
 image: "social-media.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- privacy
-- social-networks
-- internet
-description: Privacy is a difficult concept to grasp. Our world is changing from day
-  to day, and it is sometimes difficult to define what is on the private side or public
-  side. Is putting a beautiful photograph on Instagram, something private?
+  - privacy
+  - social-networks
+  - internet
+description: Privacy is a difficult concept to grasp. Our world is changing from day to day, and it is sometimes difficult to define what is on the private side or public side. Is putting a beautiful photograph on Instagram, something private?
 medium_url: https://medium.com/berty-tech/privacy-social-network-63f4c239a208
 ---
 
@@ -31,9 +29,7 @@ This form of exhibitionism is also and above all accentuated by the desire to in
 
 ## 2) No Longer A Simple Sharing
 
-It is no longer a simple sharing. Instead, it is a question of promoting, a real concern for staging established by constant and strategic management of social capital.   In most cases, people only upload photos that show them at their best angle. Some online applications make these images more attractive. Most of the time, people don't care about showing their true identity on social networks, they want to present a "perfect" image of themselves.
-What we post on the networks is therefore not the accurate reflection of his private life. We expose what we want to expose. We show what we want to show. We do not publish a private discussion in the eyes of others, for example.
-In reality, we want to control what must be seen and heard by others. We care about our privacy. However, we think, more or less naively, we can control it.
+It is no longer a simple sharing. Instead, it is a question of promoting, a real concern for staging established by constant and strategic management of social capital.   In most cases, people only upload photos that show them at their best angle. Some online applications make these images more attractive. Most of the time, people don't care about showing their true identity on social networks, they want to present a "perfect" image of themselves. What we post on the networks is therefore not the accurate reflection of his private life. We expose what we want to expose. We show what we want to show. We do not publish a private discussion in the eyes of others, for example. In reality, we want to control what must be seen and heard by others. We care about our privacy. However, we think, more or less naively, we can control it.
 
 
 Moreover, yet, many whistleblowers have shown us the opposite. We have all, as best we can, heard the denunciations of Edward Snowden, a computer genius and former NSA employee, revealing documents classified as secret by the US National Security Agency concerning the capture of our metadata, Internet listening systems, and mass surveillance programs. Moreover, one of his concerns says a lot about the behavior of our current society:
