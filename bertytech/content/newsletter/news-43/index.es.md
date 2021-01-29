@@ -1,7 +1,8 @@
 ---
 title: "Berty News #43"
 date: 2020-08-21
-aliases: ["/newsletter/weekly-43"]
+aliases:
+  - "/newsletter/weekly-43"
 ---
 
 
@@ -9,11 +10,11 @@ aliases: ["/newsletter/weekly-43"]
 
 Ahoy Bertizens! 🏴☠️
 
-First of all, thanks very much for all your messages over the past two weeks, all the team members really enjoyed hearing from you. 
+First of all, thanks very much for all your messages over the past two weeks, all the team members really enjoyed hearing from you.
 
-As usual, here's the news from the team: Half of the team met at the office in Paris for a team lunch yesterday, and then threw a testing party. The rest of the team is on vacation or working remotely (say hello to Antoine if you are in Greece 🇬🇷 or to Elizabeth in Canada 🇨🇦). 
+As usual, here's the news from the team: Half of the team met at the office in Paris for a team lunch yesterday, and then threw a testing party. The rest of the team is on vacation or working remotely (say hello to Antoine if you are in Greece 🇬🇷 or to Elizabeth in Canada 🇨🇦).
 
-Without futher ado, let's jump into News #43! 
+Without futher ado, let's jump into News #43!
 
 Have a fantastic weekend!
 
@@ -24,7 +25,7 @@ Stay safe and cool 🧡
 
 ***As you know, we're on our "road to open the beta" rush.***
 
-We're going for gold in app stability. To this end, we're pushing hard on our replication server. This will be an optional service that will greatly improve performance. 
+We're going for gold in app stability. To this end, we're pushing hard on our replication server. This will be an optional service that will greatly improve performance.
 
 We're also diving deep into lifecycle management — how (and when) to trigger the application in the background. We're continuing to move messenger store logic from JS to Go, and progressively switching from gRPC to native calls in the mobile app.
 
@@ -35,7 +36,7 @@ For the first time, we were able to organize a live testing party at the office 
 ![](https://i.imgur.com/EIBHUnF.png)
 
 
-We noticed our group chat feature could use some attention, so we've corrected and improved group creation and invitation UX. We dredged up some interesting bugs, too. For example, one button prevents you from adding more than 3 contacts to your group. This is the kind of thing we can only find out about live.  
+We noticed our group chat feature could use some attention, so we've corrected and improved group creation and invitation UX. We dredged up some interesting bugs, too. For example, one button prevents you from adding more than 3 contacts to your group. This is the kind of thing we can only find out about live.
 
 ![](https://i.imgur.com/PIwVnfc.png)
 
@@ -43,7 +44,7 @@ In short, it's on the right track, don't you think? At the moment, we're explori
 
 ***Berty Web Dev App***
 
-We were also able to test the Berty Web Dev app for the first time. This is a minimalist browser developer tool that uses the latest versions of the go store and bridge. It allows us to test Berty Messenger on the back-end side. We'll tell you more in an upcoming newsletter. 
+We were also able to test the Berty Web Dev app for the first time. This is a minimalist browser developer tool that uses the latest versions of the go store and bridge. It allows us to test Berty Messenger on the back-end side. We'll tell you more in an upcoming newsletter.
 
 ![](https://i.imgur.com/sR3uNSl.png)
 
@@ -61,14 +62,14 @@ Until further notice, we are canceling all in-person events at public venues –
 
 ## 📚 Blogposts
 
-Here are the articles published since the last newsletter. Don't forget to follow us on [Twitter](https://twitter.com/berty) so you don't miss them! 
+Here are the articles published since the last newsletter. Don't forget to follow us on [Twitter](https://twitter.com/berty) so you don't miss them!
 
 ▶️ [Basic #2: Password Manager](https://berty.tech/blog/best-password-manager/)
 
 ![](https://i.imgur.com/gRtsVOE.png)
 
 
-▶️ [Metadata in Mobile Messaging](https://berty.tech/blog/metadata-mobile-messaging/) 
+▶️ [Metadata in Mobile Messaging](https://berty.tech/blog/metadata-mobile-messaging/)
 
 ![](https://i.imgur.com/FpHFKCF.jpg)
 
