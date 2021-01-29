@@ -1,14 +1,14 @@
 ---
-title: "Contribute to the Berty Project"
+title: "Внесите вклад в Berty"
 hclass: bg-blue gradient bg-contribute
 image: "berty_contribute.png"
 menu:
-    main:
-        name: Contribute
-        weight: -20
-    footer_col2:
-        name: Contribute
-        weight: 30
+  main:
+    name: Внести вклад
+    weight: -20
+  footer_col2:
+    name: Внести вклад
+    weight: 30
 ---
 
 {{< display_section_contribute >}}
