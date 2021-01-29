@@ -1,7 +1,8 @@
 ---
 title: "Berty News #50"
 date: 2020-11-27
-aliases: ["/newsletter/weekly-50"]
+aliases:
+  - "/newsletter/weekly-50"
 ---
 
 # News #50
@@ -10,13 +11,13 @@ Ahoy Bertizen! 🏴‍☠️
 
 Today is newsletter #50! Yeah, *fifty*. 😮  It's a perfect opportunity to tell you how much we sincerely think we have a great community. Thanks for everything. We really appreciate it. 🧡
 
-Some news from the team: The French government has announced a progressive end to the lockdown. Starting tomorrow, we can travel up to 20km (12.5miles) for our baguettes, as long as it takes less than three hours to get back home. (Baguette would probably be stale at that point, anyway. 😉) Shops will reopen, too. If all goes well, we'll be able to spend the holidays with our family. 
+Some news from the team: The French government has announced a progressive end to the lockdown. Starting tomorrow, we can travel up to 20km (12.5miles) for our baguettes, as long as it takes less than three hours to get back home. (Baguette would probably be stale at that point, anyway. 😉) Shops will reopen, too. If all goes well, we'll be able to spend the holidays with our family.
 
 Masks on. Fingers crossed. 🤞😷
 
-We wish our US friends a Happy Thanksgiving (and tolerable black friday). 🦃🍁  
+We wish our US friends a Happy Thanksgiving (and tolerable black friday). 🦃🍁
 
-Take care! 
+Take care!
 
 ## 🚀 Open Source
 
@@ -47,9 +48,9 @@ Highlights from the last two weeks:
 
 ## 🗣️ Community
 
-### Translating 
+### Translating
 
-You can help us by translating the Berty app + website. It will be much appreciated! 🧡 
+You can help us by translating the Berty app + website. It will be much appreciated! 🧡
 
 👉 http://translate.berty.community/
 
@@ -64,13 +65,9 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 
 ## 💌 Mentions
 
-
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy Monday!☕️<br><br>Catch up on the latest <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> weekly to learn about all the cool new innovative projects like <a href="https://twitter.com/vocdoni?ref_src=twsrc%5Etfw">@vocdoni</a> &amp; <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a>, and don&#39;t miss out on the special interviewee featured on the latest <a href="https://twitter.com/NEARProtocol?ref_src=twsrc%5Etfw">@NEARProtocol</a>&#39;s Whiteboard Series! <a href="https://t.co/jHBbxBgpNt">https://t.co/jHBbxBgpNt</a> <a href="https://t.co/6cP0HhWz1P">https://t.co/6cP0HhWz1P</a></p>&mdash; IPFSMain (@IPFSMain) <a href="https://twitter.com/IPFSMain/status/1328469634895343616?ref_src=twsrc%5Etfw">November 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">soon <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> could be in! ✌️<br>And you should have a look at protocol doc here:<a href="https://t.co/H0w4AoeDfn">https://t.co/H0w4AoeDfn</a></p>&mdash; zôÖma (@zo_oma_) <a href="https://twitter.com/zo_oma_/status/1332024265311391747?ref_src=twsrc%5Etfw">November 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ## 🎉 Meet the Berty Crew
 
