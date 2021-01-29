@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #15"
 date: 2019-10-04
-aliases: ["/newsletter/weekly-15"]
+aliases:
+  - "/newsletter/weekly-15"
 ---
 
 ## Current Work
@@ -16,9 +17,7 @@ aliases: ["/newsletter/weekly-15"]
 
 ## Paris P2P #2
 
-This Wednesday, we participated in the **2nd edition of Paris P2P** and the topics presented are still as interesting as ever.
-Antoine did a talk about **IPFS**.
-Our friend Zooma made a poster session on **DPOS**.
+This Wednesday, we participated in the **2nd edition of Paris P2P** and the topics presented are still as interesting as ever. Antoine did a talk about **IPFS**. Our friend Zooma made a poster session on **DPOS**.
 
 We are delighted to see that more and more of us are meeting at these monthly events, and if you're around next time, you should definitely join us!
 
