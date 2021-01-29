@@ -1,27 +1,27 @@
 ---
 author: manfred
-title: "Berty is opening its code! 📢" 
+title: "Berty is opening its code! 📢"
 date: 2020-03-25
 #image: "opensource.png"
 image: "opensource.png"
 categories:
-- news
+  - news
 tags:
-- liberty
-- announcement
-- news
-description: "All Berty's repos will be open-sourced!" 
+  - liberty
+  - announcement
+  - news
+description: "All Berty's repos will be open-sourced!"
 ---
 
 
 **TL;DR:**
- 
+
 * **All Berty's repos will be open-sourced: https://github.com/berty/**
 * **Join the Berty community on [Discord](https://crpt.fyi/berty-discord)**
 
 # Berty is opening its code!
 
-Since its inception, Berty was meant to be completely open source. And we're finally putting all our work at your disposal! This includes both the work in progress and the finished work. In this blog post, we will explain why we decided to open-source everything and how to get access. 
+Since its inception, Berty was meant to be completely open source. And we're finally putting all our work at your disposal! This includes both the work in progress and the finished work. In this blog post, we will explain why we decided to open-source everything and how to get access.
 
 Keep in mind that all the repos will be opened progressively. It's a real challenge, but we're hopeful we'll be able to start sharing today.
 
@@ -34,12 +34,12 @@ At Berty's, we're big fans of using metaphors. So, here's our _DaftPunk_ argumen
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gAjR4_CbPpQ/0.jpg)](https://www.youtube.com/watch?v=gAjR4_CbPpQ)
 
-_Click to listen to Harder, Better, Stronger song 🎵_ 
+_Click to listen to Harder, Better, Stronger song 🎵_
 
 
 ### Harder 🏋️
 
-Harder, because we know that open source will force us to outdo ourselves! We are committed to working harder to release Berty as soon as possible with your help. Let's get this thing done together!  
+Harder, because we know that open source will force us to outdo ourselves! We are committed to working harder to release Berty as soon as possible with your help. Let's get this thing done together!
 
 
 ### Better 🔨
@@ -57,26 +57,26 @@ Faster, because everyone can repair, update, and upgrade free software faster th
 
 Stronger, because everyone can audit Berty's code and is allowed to verify it without trusting someone else. Berty is meant to be completely transparent. There's no secret agenda - the thing we care about is your security and privacy. Open-sourcing up is the best way to prove that there is no backdoor or bad things hidden in the code.
 
-And we're sure that the community can come up with great ideas that will make the project stronger! 
+And we're sure that the community can come up with great ideas that will make the project stronger!
 
 
 ## 🙌 We need you
 
-We truly need you. The Berty team is focused on the parts that are complicated and require deep knowledge of this project, but some parts are more readily accessible to people who are just getting on the board. Anyone could help, and it's greatly appreciated! So if you have the soul of a warrior, join us and help us create the messaging application of tomorrow as soon as possible! 
+We truly need you. The Berty team is focused on the parts that are complicated and require deep knowledge of this project, but some parts are more readily accessible to people who are just getting on the board. Anyone could help, and it's greatly appreciated! So if you have the soul of a warrior, join us and help us create the messaging application of tomorrow as soon as possible!
 
-Non-programmers can also help. We know that there are a lot of designers and other creative people who are interested in privacy and security. We hope they will take some time to contribute to projects like Berty. 
+Non-programmers can also help. We know that there are a lot of designers and other creative people who are interested in privacy and security. We hope they will take some time to contribute to projects like Berty.
 
-We started with a DaftPunk comparison, so we will end by quoting one of their albums, _Human after all_. Since the software is written by humans, it's highly unlikely to be perfect, and even if it's great, it's unlikely to satisfy every use case. 
+We started with a DaftPunk comparison, so we will end by quoting one of their albums, _Human after all_. Since the software is written by humans, it's highly unlikely to be perfect, and even if it's great, it's unlikely to satisfy every use case.
 
 * Maybe you thought about things we didn't
 * Maybe you have a better idea to write a specific piece of code
 * Maybe you have some tools to share
-* Maybe you want to share a good practice 
+* Maybe you want to share a good practice
 * Maybe ...
 
 There are so many reasons to contribute! With your help, we hope to build the best private instant messaging app ever!
 
- 
+
 
 ## 🔑 How to get access?
 
@@ -94,11 +94,11 @@ Hot news will be annoucement on our [Discord](https://crpt.fyi/berty-discord) / 
 
 ## 🛡️ Berty Licence
 
-* *Berty will NEVER be proprietary software.* 
+* *Berty will NEVER be proprietary software.*
 
-We strongly believe that secure messaging cannot be proprietary and has to be open source. In a manner of fact, we have opted for a permissible license. An [Apache 2](https://www.apache.org/licenses/LICENSE-2.0) + [MIT](https://en.wikipedia.org/wiki/MIT_License), to be precise. 
+We strongly believe that secure messaging cannot be proprietary and has to be open source. In a manner of fact, we have opted for a permissible license. An [Apache 2](https://www.apache.org/licenses/LICENSE-2.0) + [MIT](https://en.wikipedia.org/wiki/MIT_License), to be precise.
 
-The execution of the software for any kind of use will be free. This will allow you to review its source code as often as you wish, at any development stage. 
+The execution of the software for any kind of use will be free. This will allow you to review its source code as often as you wish, at any development stage.
 
 
 ## 👊 Berty is truly yours!
