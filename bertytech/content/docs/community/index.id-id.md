@@ -12,16 +12,10 @@ menu:
     weight: 40
 aliases:
   - /docs/community
-url: /id-id/community
+url: /community
 ---
 
 # Welcome in Berty's community
-
-
-## Read this in other languages (🔜)
-🇧🇩 🇧🇬 🇧🇷  🇨🇳 🇨🇿 🇩🇪 🇩🇰 🇪🇬 🇪🇸 🇫🇷 🏴 🇬🇷 🇭🇺 🇮🇩 🇮🇱 🇮🇳 🇮🇷 🇮🇷 🇮🇹 🇯🇵 🇰🇪 🇰🇷 🇰🇵 🇱🇹 🇲🇩 🇷🇴 🇲🇲 🇲🇰 🇲🇽 🇲🇾 🇳🇱 🇳🇬 🇳🇴 🇳🇵 🇵🇭  🇵🇰 🇵🇱 🇵🇹 🇷🇺 🇸🇦 🇸🇪 🇸🇰 🇸🇮 🇹🇭 🇹🇷 🇹🇼 🇺🇦 🇻🇳 🇿🇦 🇿🇦 🇰🇪 🇳🇬 🇱🇻
-
-_Your language isn't available yet? Help the community to translate this page._
 
 
 ## 🏠🗺️ Community
@@ -146,6 +140,10 @@ As you may guess, we don't know every language. However, we want Berty to be acc
 
 This can be the documentation, the app, the support, a blog post, even this page, or another section on the site.
 
+➡️ https://translate.berty.community/
+
+We encourage you to read our dedicated [blog post](https://berty.tech/blog/berty-translation/)
+
 ### 🐞 Bugs and Report
 
 We use GitHub issues for tracking requests and bugs. Please post the questions directly there using the 'bug' tag.
@@ -176,7 +174,7 @@ There are many small things you can do to help us. Each contribution will be hig
 
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [Become a sponsor](https://github.com/sponsors/berty)
 
-Thank you to all our backers! 🙏 [Become a backer]
+Thank you to all our backers! 🙏
 
 
 ### 🛍️ Berty Store
@@ -205,3 +203,4 @@ Contact: https://berty.tech/contact
 * Blog: https://berty.tech/blog
 * Newsletter: https://berty.tech/newsletter
 * Shop: https://shop.berty.tech/
+* Translation page: https://translate.berty.community/
