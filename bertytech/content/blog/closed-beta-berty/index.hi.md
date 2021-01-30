@@ -13,30 +13,30 @@ tags:
 description: We released our closed beta!
 ---
 
-# We released our closed beta!
+# हमने अपना बंद बीटा जारी किया!
 
-Yup, you read the headline correctly! We're slowly opening access to our beta version. Although we've been working in our cave for two years with no public release on the shelf, more people follow the Berty project every day. It's incredible. We thank you for that from the bottom of our hearts. Sincerely.
+हाँ, आपने शीर्षक को सही ढंग से पढ़ा है! हम धीरे-धीरे अपने बीटा संस्करण की पहुंच खोल रहे हैं. हालाँकि हम दो साल से अपनी गुफा में काम कर रहे हैं, लेकिन शेल्फ़ पर कोई सार्वजनिक रिलीज़ नहीं हुआ है, और अधिक लोग हर दिन बर्टी प्रोजेक्ट का पालन करते हैं। यह विस्मयकरी है। इसके लिए ह्म आपका दिल की गहराई से धन्यवाद करते हैं। निष्ठापूर्वक.
 
-If you're here, you understand the project's philosophy and the technological challenges it implies. It's truly astounding to feel as supported as we are. We have the best community!
+यदि आप यहां हैं, तो आप परियोजना के दर्शन और तकनीकी चुनौतियों को समझते हैं। यह वास्तव में अचरज है समर्थन महसूस करना जैसे हैं वैसे ही। हमारे पास सबसे अच्छा समुदाय है!
 
-## Done is better than perfect
+## ये बेहतरीन से भी बेहतर किया
 
-Today, Berty's development has reached the stage where a release is necessary. Sharing with you is about getting as much feedback as possible so we can move in the right direction. For this, we'll need all of you.
+आज, बर्टी का विकास उस चरण में पहुंच गया है जहां एक रिलीज आवश्यक है। आपके साथ साझा करना जितना संभव हो उतना प्रतिक्रिया प्राप्त करने के बारे में है ताकि हम सही दिशा में आगे बढ़ सकें। इसके लिए हमें आप सभी की आवश्यकता होगी।
 
-Our philosophy has always been "done is better than perfect." If you tinker with the best product out there forever in your secret workshop, it's useless!
+हमारा दर्शन हमेशा "बेहतरीन से भी बेहतर है।" यदि आप अपने गुप्त कार्यशाला में हमेशा के लिए सर्वश्रेष्ठ उत्पाद के साथ टिंकर करते हैं, तो यह बेकार है!
 
-> If you're the team member that makes things happen, you become indispensable. If you and your organization are the ones (the only ones) that can get things done, close the sale, ship the product and make a difference, you're the linchpins—the ones we can't live without. Author: Seth Godin
+> यदि आप टीम के सदस्य हैं जो चीजें करते हैं, तो आप अपरिहार्य हो जाते हैं। यदि आप और आपका संगठन (केवल वही) हैं जो काम कर सकते हैं, बिक्री को बंद कर सकते हैं, उत्पाद को शिप कर सकते हैं और फर्क कर सकते हैं, तो आप लिंचपिन हैं - हम जिनके बिना नहीं रह सकते हैं। लेखक: सेठ गोडिन
 
-So, it's now time to face the outside world! Let's be honest: It's still a development version with lots of things to improve, change, remove, keep. We'll proceed in two stages:
+इसलिए, अब बाहरी दुनिया का सामना करने का समय आ गया है! चलो ईमानदार बनें: यह अभी भी एक विकास संस्करण है जिसमें बहुत सी चीजों को सुधारना, बदलना, हटाना, रखना है। हम दो चरणों में आगे बढ़ेंगे:
 
-1. Have the application tested by a small circle of friends and contributors
-2. Invite each person who tells us they want in
+1. दोस्तों और योगदानकर्ताओं के एक छोटे से सर्कल द्वारा आवेदन का परीक्षण करे
+2. प्रत्येक व्यक्ति को आमंत्रित करें जो हमें बताता है कि वे चाहते हैं
 
-## Why a closed rather than a public beta?
+## सार्वजनिक बीटा के बजाय एक बंद क्यों?
 
-We know you can't wait to try Berty, and believe us, neither can we! But we have some important reasons for waiting a little longer.
+हम जानते हैं कि आप बेरी का प्रयास करने के लिए इंतजार नहीं कर सकते हैं, और हम पर विश्वास करे, न ही हम कर सकते हैं! लेकिन हमारे पास थोड़ी देर इंतजार करने के कुछ महत्वपूर्ण कारण हैं।
 
-First, an initial, closed beta lets us establish that Berty's handling is decisively intuitive before inviting other testers. Our first preview is available to a restricted circle, including our closest friends. This allows us to get a realtime first impression of the application's use. (It's easier to organize face-to-face test sessions with friends in our office.)
+पहला, एक प्रारंभिक, बंद बीटा हमें यह स्थापित करने देता है कि अन्य परीक्षकों को आमंत्रित करने से पहले बर्टी की हैंडलिंग निर्णायक रूप से सहज है। हमारा पहला पूर्वावलोकन एक प्रतिबंधित सर्कल के लिए उपलब्ध है, जिसमें हमारे निकटतम मित्र शामिल हैं। यह हमें आवेदन के उपयोग की एक वास्तविक समय की पहली छाप प्राप्त करने की अनुमति देता है। (हमारे कार्यालय में दोस्तों के साथ आमने-सामने परीक्षण सत्र आयोजित करना आसान है।)
 
 We want to tackle any problems that come up in this initial stage (plus some recurring bugs) before we open testing to everyone to get more concise feedback and discover less common bugs.
 
