@@ -1,3 +1,4 @@
+{{ $ctx := . }}
 <section class="section-id">
   <div class="container">
     <div class="row justify-content-center">
@@ -8,12 +9,23 @@
     <div class="row justify-content-center">
 
       <!-- Download Berty -->
-      <div class="col-lg-4">
+      <div class="col-lg-4 text-center">
         {{ with .Page.Params.download_berty }}
-        <div class="block bg-white">
-          <h2>{{.title}}</h2>
-          <img class="img-fluid" src="{{ (resources.Get $.Site.Params.logoSVG).RelPermalink }}" />
-          <p>{{.body}}</p>
+        <div class="block bg-white h-100 d-flex flex-column" style="display: flex!important;">
+          <h3 class="c-blue mb-4">
+            <strong>{{.title}}</strong>
+          </h3>
+          <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <div class="w-100" style="max-width: 200px;">
+              {{ partial "img" (dict "ctx" $ctx "src" $.Site.Params.logoSVG "width" "300" "height" "150") }}
+            </div>
+          </div>
+          <div>
+            <p class="c-grey">{{.body}}</p>
+            <a class="btn btn-bty btn-blue icon-right" href="{{ `/download` | relLangURL }}" role="button">
+              <strong>{{ .button_text | upper }}</strong>
+            </a>
+          </div>
         </div>
         {{ end }}
       </div>
@@ -21,7 +33,7 @@
       <!-- QR code -->
       <div class="col-lg-4">
 
-        <div class="block block-id bg-white display-none" id="id-block-id">
+        <div class="block block-id bg-white display-none h-100" id="id-block-id">
           <div class="block-id-avatar display-none" id="id-initials"></div>
           <div class="block-id-name c-name"></div>
           <div class="block-id-qrcode" id="id-qrcode"></div>
@@ -42,18 +54,32 @@
       <!-- What is Berty -->
       <div class="col-lg-4">
         {{ with .Page.Params.what_is_berty }}
-        <div class="block bg-white">
-          <h2>{{.title}}</h2>
+        <div class="block bg-white text-center h-100">
+          <h3 class="c-blue mb-4">
+            <strong>{{.title}}</strong>
+          </h3>
           <div class="row">
-            {{ range .items }}
-            <div class="col-6">
-              <img class="img-fluid" src="{{ (resources.Get $.Site.Params.logoSVG).RelPermalink }}" />
-              <h3>{{.title}}</h3>
-              <p>{{.body | safeHTML }}</p>
+            {{ $color_classes := slice "c-yellow" "c-pink" "c-blue" "c-fakeblack" }}
+            {{ range $index, $el := .items }}
+            {{ $color_class := index $color_classes $index }}
+            {{ $is_image := hasPrefix .icon "/" }}
+            <div class="col-6 px-1">
+              <div class="{{ $color_class }}" style="height: 60px; width: 80px; margin: auto; font-size: 35px; margin-bottom: 15px;">
+              {{ if $is_image }}
+                {{ partial "img" (dict "ctx" $ctx "src" .icon "width" "80" "height" "60") }}
+              {{ else }}
+                <i class="{{.icon}}"></i>
+              {{ end }}
+              </div>
+              <h4>{{.title}}</h4>
+              <p class="c-grey">{{.body | safeHTML }}</p>
             </div>
             {{ end }}
           </div>
           <p>{{.body}}</p>
+          <a class="btn btn-bty btn-blue icon-right" href="{{ `/about` | relLangURL }}" role="button">
+            <strong>{{ .button_text | upper }}</strong>
+          </a>
         </div>
         {{ end }}
       </div>
