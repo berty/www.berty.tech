@@ -66,8 +66,16 @@ languages:
     locale: hi_IN
   pt:
     languageName: Portuguese
+    languageCode: pt-PT
+    locale: pt_PT
+  pt-br:
+    languageName: Portuguese (Brazil)
     languageCode: pt-BR
     locale: pt_BR
+  pl:
+    languageName: Polish
+    languageCode: pl-PL
+    locale: pl_PL
   ru:
     languageName: Russian
     languageCode: ru-RU
