@@ -29,32 +29,32 @@ description: We released our closed beta!
 
 इसलिए, अब बाहरी दुनिया का सामना करने का समय आ गया है! चलो ईमानदार बनें: यह अभी भी एक विकास संस्करण है जिसमें बहुत सी चीजों को सुधारना, बदलना, हटाना, रखना है। हम दो चरणों में आगे बढ़ेंगे:
 
-1. दोस्तों और योगदानकर्ताओं के एक छोटे से सर्कल द्वारा आवेदन का परीक्षण करे
+1. दोस्तों और योगदानकर्ताओं के एक छोटे से सर्कल द्वारा एप्लिकेशन का परीक्षण करे
 2. प्रत्येक व्यक्ति को आमंत्रित करें जो हमें बताता है कि वे चाहते हैं
 
 ## सार्वजनिक बीटा के बजाय एक बंद क्यों?
 
 हम जानते हैं कि आप बेरी का प्रयास करने के लिए इंतजार नहीं कर सकते हैं, और हम पर विश्वास करे, न ही हम कर सकते हैं! लेकिन हमारे पास थोड़ी देर इंतजार करने के कुछ महत्वपूर्ण कारण हैं।
 
-पहला, एक प्रारंभिक, बंद बीटा हमें यह स्थापित करने देता है कि अन्य परीक्षकों को आमंत्रित करने से पहले बर्टी की हैंडलिंग निर्णायक रूप से सहज है। हमारा पहला पूर्वावलोकन एक प्रतिबंधित सर्कल के लिए उपलब्ध है, जिसमें हमारे निकटतम मित्र शामिल हैं। यह हमें आवेदन के उपयोग की एक वास्तविक समय की पहली छाप प्राप्त करने की अनुमति देता है। (हमारे कार्यालय में दोस्तों के साथ आमने-सामने परीक्षण सत्र आयोजित करना आसान है।)
+पहला, एक प्रारंभिक, बंद बीटा हमें यह स्थापित करने देता है कि अन्य परीक्षकों को आमंत्रित करने से पहले बर्टी की हैंडलिंग निर्णायक रूप से सहज है। हमारा पहला पूर्वावलोकन एक प्रतिबंधित सर्कल के लिए उपलब्ध है, जिसमें हमारे निकटतम मित्र शामिल हैं। यह हमें एप्लिकेशन के उपयोग की एक वास्तविक समय की पहली छाप प्राप्त करने की अनुमति देता है। (हमारे कार्यालय में दोस्तों के साथ आमने-सामने परीक्षण सत्र आयोजित करना आसान है।)
 
-We want to tackle any problems that come up in this initial stage (plus some recurring bugs) before we open testing to everyone to get more concise feedback and discover less common bugs.
+हम इस प्रारंभिक चरण में आने वाली किसी भी समस्या (और कुछ आवर्ती बग) से निपटना चाहते हैं, इससे पहले कि हम अधिक संक्षिप्त प्रतिक्रिया प्राप्त करने और कम सामान्य बग की खोज करने के लिए सभी के लिए परीक्षण खोलें।
 
-Second, you probably know that we are a small team (a tiny one even!). We think a two-stage opening is an excellent way to pace ourselves and keep focus.
+दूसरा, आप शायद जानते हैं कि हम एक छोटी टीम हैं (एक छोटी सी भी!)। हमें लगता है कि दो चरणों का उद्घाटन खुद को गति देने और ध्यान केंद्रित रखने का एक शानदार तरीका है।
 
-Finally, we also know that many people need Berty (activists, journalists, lawyers, internet citizens...). We have you in mind. We're uncompromising on protecting your anonymity, data, and privacy. We know what's at stake.
+अंत में, हम यह भी जानते हैं कि बहुत से लोगों को (कार्यकर्ता, पत्रकार, वकील, इंटरनेट नागरिक...) बर्टी की आवश्यकता है। हमारे मन में आप है। हम आपकी गुमनामी, डेटा, और गोपनीयता की रक्षा करने में समझौता नहीं कर रहे हैं। हमें पता है कि दांव पर क्या है।
 
-We're doing what we can to make this the most secure messenging application ever designed - and we don't take this assignment lightly. This takes time. That's why we'll need you: Your feedback, your ideas, your app review. We need you on board.
+हम यह कर रहे हैं कि हम इसे अब तक का सबसे सुरक्षित मैसेंजिंग एप्लिकेशन बना सकते हैं - और हम इस असाइनमेंट को हल्के में नहीं लेते हैं। इसमें समय लगता है। इसलिए हमें आपकी आवश्यकता होगी: आपकी प्रतिक्रिया, आपके विचार, आपके एप्लिकेशन की समीक्षा। हमें आपकी आवश्यकता है।
 
-To this end, we're working hard to release it openly, asap. We know that some of you have been following us for over two years and are really looking forward to this moment.
+इसके लिए, हम इसे जितनी जल्दी हो सके, खुलकर जारी करने के लिए कड़ी मेहनत कर रहे हैं। हम जानते हैं कि आप में से कुछ दो वर्षों से हमारा अनुसरण कर रहे हैं और वास्तव में इस क्षण का इंतजार कर रहे हैं।
 
-## Your mission, should you accept
+## आपका मिशन, आपको स्वीकार करना चाहिए
 
 ![image alt](https://media.giphy.com/media/U6pXdeEVb4fEfzZg0R/giphy.gif)
 
-For the curious (especially for those who would like to take part in Berty's progress), we will announce Yolo's public opening through a blog post *very soon*. We'll give you all the instructions to get Berty's beta therein.
+जिज्ञासु के लिए (विशेष रूप से उन लोगों के लिए जो बर्टी की प्रगति में भाग लेना चाहते हैं), हम एक ब्लॉग पोस्ट में योलो के सार्वजनिक उद्घाटन की घोषणा करेंगे *बहुत जल्द ही*. हम आपको बर्टी का बीटा प्राप्त करने के लिए सभी निर्देश देंगे।
 
-So, if you accept it, your mission will be to share anything and everything of your experience using Yolo to help us build a better application!
+इसलिए, यदि आप इसे स्वीकार करते हैं, तो आपका मिशन होगा, योलो का उपयोग करके अपने अनुभव के बारे में कुछ भी और सब कुछ साझा करना एक बेहतर एप्लिकेशन बनाने में हमारी मदद करने के लिए!
 
 
 
