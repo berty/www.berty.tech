@@ -1,0 +1,62 @@
+<section class="section-id">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="block-loader" id="id-block-loader">
+        <img src="../img/berty_loader_dots.gif" />
+      </div>
+    </div>
+    <div class="row justify-content-center">
+
+      <!-- Download Berty -->
+      <div class="col-lg-4">
+        {{ with .Page.Params.download_berty }}
+        <div class="block bg-white">
+          <h2>{{.title}}</h2>
+          <img class="img-fluid" src="{{ (resources.Get $.Site.Params.logoSVG).RelPermalink }}" />
+          <p>{{.body}}</p>
+        </div>
+        {{ end }}
+      </div>
+
+      <!-- QR code -->
+      <div class="col-lg-4">
+
+        <div class="block block-id bg-white display-none" id="id-block-id">
+          <div class="block-id-avatar display-none" id="id-initials"></div>
+          <div class="block-id-name c-name"></div>
+          <div class="block-id-qrcode" id="id-qrcode"></div>
+        </div>
+        <div
+          class="block block-id bg-white block-error display-none"
+          id="id-block-error"
+        >
+          <div class="block-id-avatar">
+            <i class="far fa-exclamation-triangle"></i>
+          </div>
+          <div class="block-id-name">
+            <h4>This is not a valid Berty Key</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- What is Berty -->
+      <div class="col-lg-4">
+        {{ with .Page.Params.what_is_berty }}
+        <div class="block bg-white">
+          <h2>{{.title}}</h2>
+          <div class="row">
+            {{ range .items }}
+            <div class="col-6">
+              <img class="img-fluid" src="{{ (resources.Get $.Site.Params.logoSVG).RelPermalink }}" />
+              <h3>{{.title}}</h3>
+              <p>{{.body | safeHTML }}</p>
+            </div>
+            {{ end }}
+          </div>
+          <p>{{.body}}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
