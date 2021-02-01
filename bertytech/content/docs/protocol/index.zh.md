@@ -1,6 +1,6 @@
 ---
-title: "Berty Protocol"
-description: The offline-first P2P alternative to the Signal Protocol
+title: "Berty 协议"
+description: 离线优先P2P替代信号协议
 icon: fal fa-book
 color: blue
 display_nav: true
