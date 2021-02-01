@@ -34,7 +34,7 @@
         <div class="row justify-content-center">
 
           <!-- Download Berty -->
-          <div class="col-lg-4 text-center">
+          <div class="col-lg-4 text-center order-2 order-lg-1 mb-5">
             {{ with .Page.Params.download_berty }}
             <div class="block bg-white h-100 d-flex flex-column" style="display: flex!important;">
               <h3 class="c-blue mb-4">
@@ -56,7 +56,7 @@
           </div>
 
           <!-- QR code -->
-          <div class="col-lg-4">
+          <div class="col-lg-4  order-1 order-lg-2 mb-5">
 
             <div class="block block-id bg-white display-none h-100" id="id-block-id">
               <div class="block-id-avatar display-none" id="id-initials"></div>
@@ -77,7 +77,7 @@
           </div>
 
           <!-- What is Berty -->
-          <div class="col-lg-4">
+          <div class="col-lg-4 order-3 mb-5">
             {{ with .Page.Params.what_is_berty }}
             <div class="block bg-white text-center h-100">
               <h3 class="c-blue mb-4">
