@@ -23,5 +23,3 @@ download_berty:
   body: Berty is a privacy-first messaging app that works with or without internet access cellular data or trust in the network
   button_text: Download Berty
 ---
-
-{{< display_section_id >}}
