@@ -493,6 +493,18 @@ a.btn.btn-black {
       background-color:$color-black;
     }
   }
+  &.btn-disabled {
+    filter: grayscale(1);
+    background-color: #efefef;
+    color: #b9b9b9;
+    cursor: default;
+    &:hover,
+    &:focus {
+      background-color: #efefef;
+      color: #b9b9b9;
+      pointer-events: none;
+    }
+  }
   &:hover {
     .hover-show {
       display: inherit;
@@ -508,6 +520,7 @@ a.btn.btn-black {
     display: inherit;
   }
 }
+
 .btn-transparent{
   color:#FFF;
   background-color:transparent;
@@ -3822,3 +3835,37 @@ $table-first-column-width-mobile: 115px;
     }
   }
 }
+
+/* ID page */
+.id-page {
+  .counter-badge {
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 100%;
+    font-size: 19px;
+    font-weight: 900;
+    color: #fff;
+    padding-top: 3px;
+    position: relative;
+    left: 7px;
+    top: -15px;
+  }
+  
+  .download-berty-block .berty-logo {
+    max-width: 200px;
+  }
+  
+  .what-is-berty-block .icon {
+    height: 60px;
+    width: 80px;
+    margin: auto;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .block-id-qrcode canvas {
+    max-width: 100%;
+  }
+}
+
