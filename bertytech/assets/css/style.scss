@@ -493,6 +493,18 @@ a.btn.btn-black {
       background-color:$color-black;
     }
   }
+  &.btn-disabled {
+    filter: grayscale(1);
+    background-color: #efefef;
+    color: #b9b9b9;
+    cursor: default;
+    &:hover,
+    &:focus {
+      background-color: #efefef;
+      color: #b9b9b9;
+      pointer-events: none;
+    }
+  }
   &:hover {
     .hover-show {
       display: inherit;
@@ -508,6 +520,7 @@ a.btn.btn-black {
     display: inherit;
   }
 }
+
 .btn-transparent{
   color:#FFF;
   background-color:transparent;
