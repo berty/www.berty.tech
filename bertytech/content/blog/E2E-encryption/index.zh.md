@@ -1,61 +1,61 @@
 ---
 author: camille
-title: "What is E2E Encryption?"
+title: "什么是E2E加密？"
 date: 2019-09-05
 image: "E2EE-encryption.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - technical
-  - security
-description: You have probably already heard about cryptography and, more specifically, about end-to-end encryption. But do you know what it really is?
+  - 技术方面
+  - 安全
+description: 您可能已经听说过加密，更具体地说，是端到端的加密。 但你是否真了解它是什么呢？
 ---
 
 
-# What is End-to-End encryption (E2EE)?
+# 什么是端到端加密(E2EE)？
 
-You have probably already heard about [cryptography](https://berty.tech/blog/history-cryptography/) and, more specifically, about end-to-end encryption. But do you know what it really is?
+您可能已经听说过 [加密技术](https://berty.tech/blog/history-cryptography/) ，更具体地说，是端到端加密。 但你是否真了解它是什么呢？
 
-In this article, you’ll learn more about this method at the heart of many (but not all) secure instant messaging applications. Encryption is a computer algorithm that ensures that the data you exchange with one or more people can only be read by the correct recipient, and not by a random person who may be malicious.
+在这篇文章中，您将会更多地了解这种在许多(但不是所有) 安全即时通讯应用程序的核心方法。 加密是一种计算机算法，确保您与一个或多个人交换的数据只能由正确的收件人阅读， 而不是随便的一个人而且他可能是恶意的。
 
-There is a simple principle of confidentiality: every time you send any information over the Internet, whether it has a value or not, it must be encrypted. If you don't do this, anyone (for example, people using the hotel's wifi network) can easily steal it. Almost all websites use encryption when it comes to passwords, credit card numbers, online banking information or similar sensitive information. If we weren’t encrypting such information, fraud and identity theft would be widespread. Encryption is a basic prerequisite for the use of the Internet.
+有一个简单的保密原则：每次您通过因特网发送任何信息。 无论其是否有价值，都必须加密。 如果您不这样做，任何人(例如使用旅馆WiFi的人) 都可以轻松地偷窃。 几乎所有网站在密码、信用卡号码、在线银行信息或类似敏感信息时都使用加密。 如果我们不加密这类信息，欺诈和盗用身份的现象将很普遍。 加密是使用互联网的基本先决条件。
 
 </br>
 
-## Different Types of Encryption
+## 不同的加密类型
 
-Encryption is a kind of digital envelope that prevents the data placed in this envelope from being read, with the exception of the sender and the recipient(s). Encryption can be applied at different levels. There are two types of encryption:
+加密是一种数字信封，防止除发件人和收件人之外的人读取放在这个信封中的数据， 加密可以应用在不同的层级。 有两种加密方式：
 
-***Encryption in transit:*** The data is encrypted when it is transmitted between your device and a server (a service provider such as your telephone operator) and then the data is encrypted again to be transmitted to the recipient(s). This way, the data is secured on the way. But what is important to remember is that the service provider has access to the data in its unencrypted form. The provider is able to read all the communication and you have no choice but to trust him to protect the data you transmit in the best way possible.
+***中转加密：*** 当数据在您的设备和服务器之间传输时(例如您的电话运营商) 被加密，将其传输给收件人时再次加密。 这样，数据就在传输过程中就安全了。 但重要的是要记住这一点：服务提供者能够以未加密的形式查阅数据。 提供商能够阅读所有通讯，您别无选择，只能信任他以尽可能最好的方式保护您传输的数据。
 
 ![](image8.png)
 
-***End-to-end encryption:*** With this type of encryption, data is encrypted to the end between you and the person you are talking to, which means no intermediaries. The service provider only transmits the encrypted data, but cannot preview the content. Only the sender and the recipient(s) can read the data.
+***端到端加密：*** 使用这种类型的加密，数据从你到接收者之间都被加密，这意味着没有中间人。 服务提供商只能传输加密数据，但不能预览内容。 只有发件人和收件人才能读取数据。
 
 ![](image6.png)
 
 
-## How does End-to-End Encryption work?
+## 端到端加密是如何工作的？
 
 
 
-It must be understood that for data to be protected by end-to-end encryption, a set of keys is required. A key is a series of characters, numbers and special characters.
+必须要理解的是，数据需要一组密钥才能通过端到端加密来保护。 一个密钥是一系列字符、数字和特殊字符。
 
-Conceptually, it is a unique code. In end-to-end encryption, it is mandatory to generate at least two keys:
+从概念上讲，它是一个独特的规则。 在端到端加密中，必须至少生成两个密钥：
 
-- a public key, which will be used for encryption
+- 一个公钥，用于加密
 
-- a private key that will be used for decryption
+- 一个用于解密的私钥
 - ![](image5.png)
 
 
-As their names suggest: the public key is visible to everyone and the private key is personal. These keys are not the same, which is why this setup is commonly referred to as “asymmetric encryption”. The private key is generated randomly and the public key is generated using the private key. It is very simple to create the public key from the private key but it is very hard (takes time) to find the private key from the public key. Otherwise it would be too straightforward.
+正如他们的名字所表明的那样：公用钥匙对每个人都是可见的，私人钥匙则是私有的。 这些密钥并不相同，这就是为什么这种设置通常被称为“非对称加密”。 私钥随机生成，公钥使用私钥生成。 从私人钥匙中创建公用钥匙是非常简单的，但要从公用钥匙中找到私人钥匙是非常困难的(需要时间)。 否则，那就太简单了。
 
 ![](image1.png)
 
 </br>
 
-## A simple example: Alice and Bob
+## 一个简单的示例：Alice和Bob
 
 ![](image4.png)
 
