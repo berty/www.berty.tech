@@ -1,6 +1,7 @@
 ---
 title:
-subtitle: 'Open the Berty app on your phone and scan this code to make a contact request to <span class="c-name"></span>'
+subtitle: You have received a Berty Request!
+layout: id
 what_is_berty:
   title: What's Berty?
   items:
