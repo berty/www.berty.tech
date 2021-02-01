@@ -1,51 +1,51 @@
 ---
-title: "About us"
-subtitle: We build tools to enhance communication freedom
-hclass: bg-blue gradient bg-about
+title: "关于我们"
+subtitle: 为了通信自由我们建造了工具
+hclass: 蓝色渐变
 image: "berty_about.png"
-layout: about
+layout: 关于
 menu:
   footer_col3:
-    name: About us
+    name: 关于我们
     weight: 10
 section_1:
   - 
     image: icon_spock.svg
-    title: a non-profit organisation
+    title: 非营利组织
   - 
     image: icon_team.svg
-    title: with a team of 10 people
+    title: 与一个由10人组成的团队
   - 
     image: icon_paris.svg
-    title: based in Paris, France
+    title: 总部设在法国巴黎
 section_2:
   image: blob_censorship.png
   items:
     - 
-      title: We bypass internet censorship
+      title: 我们绕过互联网审查
       items:
-        - The great benefit of a peer to peer network, is that it's very hard to prevent it from spreading
+        - 对等网络的的巨大优势是很难阻止其传播
     - 
-      title: We protect your privacy
+      title: 我们保护您的隐私
       items:
-        - Accounts are fully anonymous
-        - All conversations are end to end encrypted, by default
+        - 帐户是完全匿名的
+        - 默认情况下，所有对话都是点对点加密的
     - 
-      title: We don't rely on a heavy infrastructure
+      title: 我们不依赖重型基础设施
       items:
-        - We are fully distributed
-        - To escape from major companies we are also fully decentralized
-        - Anyone can host a Berty node & become a part of the Berty Network
+        - 我们已经完全分发
+        - 为了避免大公司的缺点，我们完全放权。
+        - 任何人都可以维护一个 Berty 节点 & 成为Berty 网络的一部分。
 section_3:
   image: /img/icon_dev.png
-  title: The Berty project is fully open source
+  title: Berty 项目是完全开源的
   items:
-    - Everyone can access the source code of the project
-    - Anyone can consult, review, submit changes or enhancements, report a bug, perform a security audit...
-    - We have an open roadmap and anyone can propose a new feature
-    - Wanna get involved ?
-    - As a non-profit organization, we are, by essence incapable of making profit
-    - We are not selling a product
-    - We just build tools to improve peoples lives
+    - 每个人都可以访问项目的源代码
+    - 任何人都可以咨询、 审查、提交修改或改进、 报告错误、 执行安全审计...
+    - 我们有一个开放的路径图，任何人都可以提出一个新功能
+    - 想要参与吗？
+    - 作为一个非营利组织，本质上我们是无法赚取利润的。
+    - 我们不是在销售产品
+    - 我们只是建立改善每个人的生活的工具
 ---
 
