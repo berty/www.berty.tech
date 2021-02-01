@@ -1,23 +1,23 @@
 ---
 author: Camille
-title: "Basic #3: Two-Factor Authentification"
+title: "基本#3：双重身份验证"
 date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - security
-  - privacy
-description: Learn about 2FA
+  - 安全
+  - 隐私
+description: 学习两步验证
 ---
 
-# Basic #3: Two-Factor Authentication
+# 基本#3：双重身份验证
 
 
-Nowadays, access to an account is more and more compromised. Indeed, there is more and more powerful software to test a set of passwords. So how do you protect access to your account? Have you ever heard of multi-step or multi-factor authentication?
+现在，访问帐户变的越来越麻烦。 事实上，猜测一组密码的软件也越来越强大。 那么您如何保护您的账户的访问权？ 您是否曾听说过多步骤或多因素认证？
 
-You may not have paid attention, but you are probably already using two-factor authentication in the physical world. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+您可能没有注意，但您可能已经在现实世界中使用了双重身份验证。 您是否记得您的银行给你的银行卡来确认您帐户上的交易？ 双重身份验证（2FA）是您登录账户的又一个必要步骤。 没有 2FA，请只需要输入您的用户名和密码。 The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
 
 The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
 
@@ -90,10 +90,10 @@ However, you will find yourself confronted with a few constraints: you will have
 
 ## Closing Thoughts
 
-To sum up, there is not ONE perfect and unique method. If we were to recommend something to you: mix and match methods. Don't be afraid to go further than two-factor authentication, opt for multiple factor authentication (MFA). Make access to your password manager as secure as possible and activate 2FA whenever possible.
+总而言之，没有完美和独特的方法。 如果我们要向您推荐一些东西的话：混合使用各种方法。 不要害怕选择超越双重身份验证的方式，选择多重身份验证(MFA) 吧。 尽可能保证访问您的密码管理器时的安全性，并尽可能激活 2FA。
 
-We hope you enjoyed this article. Any ideas and comments are welcome.
+我们希望你喜欢这篇文章。 欢迎任何想法和评论。
 
-Cheers Internet!
+为互联网干杯！
 {{<tweet id="1291024965630939136">}}
 
