@@ -12,60 +12,60 @@ tags:
 description: Dowiedz się więcej o 2FA
 ---
 
-# Basic #3: Two-Factor Authentication
+# Podstawa #3: Uwierzytelnianie dwuskładnikowe
 
 
-Nowadays, access to an account is more and more compromised. Indeed, there is more and more powerful software to test a set of passwords. So how do you protect access to your account? Have you ever heard of multi-step or multi-factor authentication?
+W dzisiejszych czasach dostęp do konta jest coraz bardziej zagrożony. Rzeczywiście powstaje coraz więcej i więcej potężnego oprogramowania do testowania zestawów haseł. Jak więc zabezpieczyć dostęp do swojego konta? Czy słyszałeś kiedykolwiek o uwierzytelnianiu wieloetapowym lub wielostopniowym?
 
-You may not have paid attention, but you are probably already using two-factor authentication in the physical world. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+Być może nie zwróciłeś uwagi, ale prawdopodobnie już w świecie fizycznym używasz uwierzytelniania dwuskładnikowego. Czy pamiętasz tę kartę wydaną przez bank, aby potwierdzić transakcję na Twoim koncie? Weryfikacja dwuskładnikowa lub 2FA jako powszechniej znana, jest kolejnym krokiem do wymaganej procedury logowania. Bez 2FA wprowadzasz nazwę użytkownika oraz hasło i jesteś gotowy. Hasło jest jedynym czynnikiem uwierzytelniającym. Drugi czynnik sprawia, że Twoje konto jest bezpieczniejsze, w kilku słowach.
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+Nie należy mylić 2FA ze zdolnością połączenia z witryną za pośrednictwem dostawcy poczty elektronicznej („zaloguj za pomocą Google” itp.). Nie jest to ściśle rzecz biorąc 2FA ale czasami lepiej jest mieć bezpieczny system poczty elektronicznej, a nie zaufać „bezpiecznej” stronie internetowej. Ale to inny temat.
 
-## What is two-factor authentification (2FA)?
+## Czym jest uwierzytelnianie dwuskładnikowe (2FA)?
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
-Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism.
+Uwierzytelnianie dwuskładnikowe (2FA) to metoda uwierzytelniania, w ramach której użytkownik komputera uzyskuje dostęp wyłącznie po pomyślnym przesłaniu dwóch lub więcej dowodów do mechanizmu uwierzytelniania.
 
-For example, if you want to log in to your email account, you will need to present an additional method and your password. This may be a code received by SMS or code on an identification application.
+Na przykład, jeśli chcesz zalogować się na swoje konto e-mail, musisz przedstawić dodatkową metodę i hasło. Może to być kod otrzymany przez SMS lub kod w aplikacji identyfikacyjnej.
 
-Usually, the first authentication method is something you know (your password, a PIN code). The second one is information you don't know (code generated especially for authentication) but which is linked to you.
+Zazwyczaj pierwsza metoda uwierzytelniania jest czymś, co znasz (hasło, kod PIN). Drugim z nich jest informacja, której nie znasz (kod generowany szczególnie dla uwierzytelniania), ale która jest z Tobą powiązana.
 
-It is customary to divide into several types of information:
-- 🔑 something you have (an object like a USB key)
-- 🐾 something you are (fingerprint, facial recognition)
-- 🧠 something you know (a password)
-- 📍 somewhere you are (a GPS location)
+Można je podzielić na kilka rodzajów informacji:
+- 🔑 coś co masz (obiekt jak klucz USB)
+- 🐾 coś czym jesteś (odcisk palca, rozpoznawanie twarzy)
+- 🧠 coś co znasz (hasło)
+- 📍 tam gdzie jesteś (lokalizacja GPS)
 
 
-> You can check on https://twofactorauth.org/ is a website/app support 2FA or not.
+> Możesz sprawdzić na https://twofactorauth.org/ czy strona internetowa/aplikacja obsługuje 2FA czy nie.
 
-## 📞 Two Factor Authentication by SMS
+## 📞 Uwierzytelnianie dwuetapowe przez SMS
 
 ![](https://i.imgur.com/uuqGxCp.jpg)
 
 
-The second factor in identifying yourself is a code received by SMS. This is probably the method you are most familiar with.
+Drugim składnikiem identyfikacji jest kod otrzymany przez SMS. Jest to prawdopodobnie najbardziej znana dla ciebie metoda.
 
-The code received by SMS differs each time, so if your password is stolen, it won't be enough to go further. The code is linked to your cell phone number, which is a powerful security feature - unless you have been physically stolen or hacked by a [Sim Swapping](https://berty.tech/blog/sim-swapping/).
+Kod otrzymany przez SMS jest inny za każdym razem, więc jeśli Twoje hasło zostanie skradzione, to nie wystarczy by przejść dalej. Kod jest połączony z numerem telefonu komórkowego, który jest potężną funkcją bezpieczeństwa - chyba że zostałeś fizycznie skradziony lub zhakowany przez [Sim Swapping](https://berty.tech/blog/sim-swapping/).
 
-A significant disadvantage of this 2FA is that if the mobile network does not work or is in a region without coverage, you will not receive the code allowing you to identify yourself. Another disadvantage is if you are using connected and centralized equipment (between your tablet and mobile), you will receive the code on these devices; your login codes are as much at risk as your passwords.
+Istotną wadą tej dwustopniowej weryfikacji jest to, że jeżeli sieć komórkowa nie działa lub znajdujesz się w regionie bez zasięgu, nie otrzymasz kodu pozwalającego na twoją identyfikację. Inną wadą jest korzystanie z podłączonego i konkretnego sprzętu (między tabletem a telefonem komórkowym), otrzymasz kod na tych urządzeniach; Twoje kody logowania są tak samo w niebezpieczeństwie, jak Twoje hasła.
 
 
-## 📱 2FA by Authentificator App:
+## 📱 2FA przez aplikację uwierzytelniającą:
 
 ![](https://i.imgur.com/YuRNDY0.jpg)
 
 
-Authentication applications provide you with the same type of service as 2FA by SMS. However, instead of receiving the codes, they are generated locally within your smartphone or tablet. So, they offer flexibility when traveling to a location without cellular service.
+Aplikacje uwierzytelniające zapewniają ten sam rodzaj usługi co usługi 2FA przez SMS. Jednak zamiast odbierać kody, są one generowane lokalnie na smartfonie lub tablecie. Tak więc oferują one elastyczność podczas podróży do miejsca bez sieci komórkowej.
 
-The operation relies on cryptographic algorithms to generate single-use passwords that integrate the notion of time (Time-based One-time Password algorithm, TOTP).
+Operacja opiera się na algorytmach kryptograficznych do generowania jednorazowych haseł, które integrują pojęcie czasu (Time-based One-time Password algorithm, TOTP).
 
-The 2FA application will first generate a start key called "seed". The latter will be derived and mixed with the time and date to make a one-time code, usually valid for 30 to 60 seconds.
+Aplikacja 2FA wygeneruje najpierw klucz startowy o nazwie "seed". Ten ostatni będzie pochodny i wymieszany z czasem i datą w celu utworzenia kodu jednorazowego, zwykle ważnego przez 30 do 60 sekund.
 
-> 💡 A good thing to know: there are [password managers](https://berty.tech/blog/best-password-manager/) that manage TOTPs.
+> 💡 Warto wiedzieć: istnieją [menedżerzy haseł](https://berty.tech/blog/best-password-manager/), którzy zarządzają TOTP.
 
-***Open Source TOTP:***
+***Otwarto źródłowe TOTP:***
 
 👉 https://awesomeopensource.com/projects/totp
 
@@ -73,27 +73,27 @@ The 2FA application will first generate a start key called "seed". The latter wi
 
 👉 https://krypt.co/
 
-The major drawback of 2FA applications is that if a scammer grabs your seed (either from your equipment or by hacking the server), he can compute any future code. If you log in and use the authentication application on the same equipment, your authentication codes are as much at risk as your passwords.
+Główną wadą aplikacji 2FA jest to, że jeśli hacker przechwyci Twój seed (albo z twojego sprzętu, albo poprzez hakowanie serwera), może obliczyć każdy przyszły kod. Jeśli zalogujesz się i korzystasz z aplikacji uwierzytelniającej na tym samym urządzeniu, Twoje kody uwierzytelniania są tak samo w niebezpieczeństwie, jak hasła.
 
 
-## 🗝️ FIDO U2F hardware authenticators: YubiKey and others
+## 🗝️ uwierzytelnianie sprzętowe FIDO U2F: YubiKey i inne
 
 ![](https://i.imgur.com/ZzJa77a.png)
 
 
-If you are looking for a robust solution that fits your pocket, then look no further than hardware tokens based on the U2F (Universal 2nd Factor) standard, created by the FIDO Alliance. The most famous and typical example of U2F is YubiKey, made by Yubico.
+Jeśli szukasz solidnego rozwiązania, które jest kieszonkowe, zobacz tylko tokeny sprzętowe oparte na standardzie U2F (Universal 2nd Factor) stworzonym przez grupę FIDO. Najbardziej znanym i typowym przykładem U2F jest YubiKey, stworzonym przez Yubico.
 
-Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
+Konkretnie jest to małe urządzenie o rozmiarze klucza USB, który generuje kod identyfikacyjny lokalnie. Po prostu podłącz klucz, aby utworzyć odpowiedni kod identyfikacyjny. Jest to zatem dodatkowy krok w prawdziwym świecie: U2F musi być fizycznie z Tobą.
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... Hope you have saved them well. Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+Jednakże znajdziesz się w konfrontacji z kilkoma ograniczeniami: będziesz musiał je kupić i system nie jest obsługiwany we wszystkich witrynach obsługujących już 2FA przez SMS/Aplikacje. Ten 2FA wymaga fizycznego dostępu do portu USB maszyny (więc zapomnij o użyciu zdalnego dostępu, jak TeamViewer). Wreszcie, jeśli go zgubisz, będziesz musiał odzyskać wszystkie swoje konta używając kodów odzyskiwania 2FA ... Mamy nadzieję, że dobrze je zabezpieczyłeś. W przeciwnym razie dobrze skontaktować się z pomocą techniczną każdej witryny, aby wyłączyć 2FA na twoim koncie!
 
 
-## Closing Thoughts
+## Koniec rozmyślania
 
-To sum up, there is not ONE perfect and unique method. If we were to recommend something to you: mix and match methods. Don't be afraid to go further than two-factor authentication, opt for multiple factor authentication (MFA). Make access to your password manager as secure as possible and activate 2FA whenever possible.
+Podsumowując, nie ma JEDNEJ idealnej i unikalnej metody. Gdybyśmy mieli polecić coś dla ciebie: mieszaj i dopasowuj metody. Nie bój się pójść dalej niż uwierzytelnianie dwuskładnikowe, wybierz uwierzytelnianie wieloskładnikowe (MFA). Uzyskaj dostęp do menedżera haseł jak najbezpieczniej i w miarę możliwości aktywuj 2FA.
 
-We hope you enjoyed this article. Any ideas and comments are welcome.
+Mamy nadzieję, że podobał Ci się ten artykuł. Wszelkie pomysły i komentarze są mile widziane.
 
-Cheers Internet!
+Pozdrowienia dla internetu!
 {{<tweet id="1291024965630939136">}}
 
