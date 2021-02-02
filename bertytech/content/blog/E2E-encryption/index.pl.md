@@ -1,109 +1,109 @@
 ---
 author: camille
-title: "What is E2E Encryption?"
+title: "Czym jest szyfrowanie E2E?"
 date: 2019-09-05
 image: "E2EE-encryption.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
-  - technical
-  - security
-description: You have probably already heard about cryptography and, more specifically, about end-to-end encryption. But do you know what it really is?
+  - techniczne
+  - bezpieczeństwo
+description: Prawdopodobnie słyszałeś już o kryptografii, a dokładniej o szyfrowaniu end-to-end. Ale czy wiesz co to naprawdę jest?
 ---
 
 
-# What is End-to-End encryption (E2EE)?
+# Czym jest szyfrowanie End-to-End (E2EE)?
 
-You have probably already heard about [cryptography](https://berty.tech/blog/history-cryptography/) and, more specifically, about end-to-end encryption. But do you know what it really is?
+Prawdopodobnie słyszałeś już o [kryptografii](https://berty.tech/blog/history-cryptography/), a dokładniej o szyfrowaniu end-to-end. Ale czy wiesz co to naprawdę jest?
 
-In this article, you’ll learn more about this method at the heart of many (but not all) secure instant messaging applications. Encryption is a computer algorithm that ensures that the data you exchange with one or more people can only be read by the correct recipient, and not by a random person who may be malicious.
+W tym artykule dowiesz się więcej o tej metodzie, która jest sercem wielu (ale nie wszystkich) bezpiecznych aplikacji do natychmiastowego wysyłania wiadomości. Szyfrowanie jest algorytmem komputerowym, który gwarantuje, że dane wymieniane z jednym lub kilkoma osobami mogą być odczytywane tylko przez właściwego odbiorcę, a nie przez losową osobę, która może być zła.
 
-There is a simple principle of confidentiality: every time you send any information over the Internet, whether it has a value or not, it must be encrypted. If you don't do this, anyone (for example, people using the hotel's wifi network) can easily steal it. Almost all websites use encryption when it comes to passwords, credit card numbers, online banking information or similar sensitive information. If we weren’t encrypting such information, fraud and identity theft would be widespread. Encryption is a basic prerequisite for the use of the Internet.
+Istnieje prosta zasada poufności: za każdym razem, gdy przesyłasz jakiekolwiek informacje przez Internet, czy ma wartość, czy nie, musi być zaszyfrowana. Jeśli tego nie zrobisz, ktokolwiek (na przykład ktoś korzystający z sieci WiFi hotelu) może łatwo cię ukraść. Prawie wszystkie strony internetowe wykorzystują szyfrowanie haseł, numerów kart kredytowych, informacji bankowych online lub podobnych wrażliwych informacji. Gdybyśmy nie zaszyfrowali takich informacji, oszustwa i kradzieże tożsamości byłyby powszechne. Szyfrowanie jest podstawowym warunkiem korzystania z Internetu.
 
 </br>
 
-## Different Types of Encryption
+## Różne typy szyfrowania
 
-Encryption is a kind of digital envelope that prevents the data placed in this envelope from being read, with the exception of the sender and the recipient(s). Encryption can be applied at different levels. There are two types of encryption:
+Szyfrowanie jest rodzajem koperty cyfrowej, która uniemożliwia odczyt danych umieszczonych w tej kopercie, z wyjątkiem nadawcy i odbiorcy(ów). Szyfrowanie może być stosowane na różnych poziomach. Istnieją dwa rodzaje szyfrowania:
 
-***Encryption in transit:*** The data is encrypted when it is transmitted between your device and a server (a service provider such as your telephone operator) and then the data is encrypted again to be transmitted to the recipient(s). This way, the data is secured on the way. But what is important to remember is that the service provider has access to the data in its unencrypted form. The provider is able to read all the communication and you have no choice but to trust him to protect the data you transmit in the best way possible.
+***Szyfrowanie w tranzycie:*** Dane są zaszyfrowane, gdy są przesyłane między twoim urządzeniem a serwerem (dostawcą usług, takim jak operator telefonu), a następnie dane są ponownie zaszyfrowane w celu przesłania ich odbiorcy(om). W ten sposób dane są zabezpieczone w drodze. Należy jednak pamiętać, że dostawca usług ma dostęp do danych w niezaszyfrowanej formie. Dostawca jest w stanie odczytać całą komunikację i nie ma innego wyboru, jak tylko zaufać mu w celu ochrony danych, które przesyłasz w najlepszy możliwy sposób.
 
 ![](image8.png)
 
-***End-to-end encryption:*** With this type of encryption, data is encrypted to the end between you and the person you are talking to, which means no intermediaries. The service provider only transmits the encrypted data, but cannot preview the content. Only the sender and the recipient(s) can read the data.
+***Szyfrowanie end-to-end:*** Z tego typu szyfrowaniem, dane są zaszyfrowane na sam koniec pomiędzy Tobą a osobą, z którą rozmawiasz, co oznacza, że nie ma pośredników. Dostawca usług przesyła tylko zaszyfrowane dane, ale nie może zobaczyć treści. Tylko nadawca i odbiorca(y) mogą odczytywać dane.
 
 ![](image6.png)
 
 
-## How does End-to-End Encryption work?
+## Jak działa szyfrowanie end-to-end?
 
 
 
-It must be understood that for data to be protected by end-to-end encryption, a set of keys is required. A key is a series of characters, numbers and special characters.
+Należy rozumieć, że aby dane były chronione szyfrowaniem end-to-end, wymagany jest zestaw kluczy. Kluczem to szereg znaków, cyfr i znaków specjalnych.
 
-Conceptually, it is a unique code. In end-to-end encryption, it is mandatory to generate at least two keys:
+Koncepcyjnie jest to unikalny kod. W szyfrowaniu end-to-end obowiązkowe jest generowanie co najmniej dwóch kluczy:
 
-- a public key, which will be used for encryption
+- klucz publiczny, który będzie używany do szyfrowania
 
-- a private key that will be used for decryption
+- klucz prywatny, który będzie używany do deszyfrowania
 - ![](image5.png)
 
 
-As their names suggest: the public key is visible to everyone and the private key is personal. These keys are not the same, which is why this setup is commonly referred to as “asymmetric encryption”. The private key is generated randomly and the public key is generated using the private key. It is very simple to create the public key from the private key but it is very hard (takes time) to find the private key from the public key. Otherwise it would be too straightforward.
+Jak sugerują ich nazwy: klucz publiczny jest widoczny dla wszystkich, a klucz prywatny jest osobisty. Klucze te nie są takie same, dlatego ta konfiguracja jest powszechnie nazywana „szyfrowaniem asymetrycznym”. Klucz prywatny jest generowany losowo, a klucz publiczny jest generowany przy użyciu klucza prywatnego. Bardzo łatwo jest stworzyć klucz publiczny z klucza prywatnego, ale bardzo trudno jest (wymaga czasu) znaleźć klucz prywatny z klucza publicznego. W przeciwnym razie byłoby to zbyt proste.
 
 ![](image1.png)
 
 </br>
 
-## A simple example: Alice and Bob
+## Prosty przykład: Alicja i Bartek
 
 ![](image4.png)
 
-The message receiver (Alice) generates a private key and a public key. The receiver of the message (Alice) sends his public key to a sender (Bob). The sender (Bob) encrypts his message with the public key of the receiver (Alice). The receiver (Alice) decrypts the sender's message (Bob) using her private key. Only the receiver (Alice) will be able to read the messages from the sender (Bob).
+Odbiornik wiadomości (Alicja) generuje klucz prywatny i klucz publiczny. Odbiorca wiadomości (Alicja) wysyła swój klucz publiczny nadawcy (Bartkowi). Nadawca (Bartek) zaszyfruje swoją wiadomość kluczem publicznym odbiorcy (Alicji). Odbiorca (Alicja) odszyfrowuje wiadomość nadawcy (Bartka) przy użyciu klucza prywatnego. Tylko odbiorca (Alicja) będzie mógł odczytać wiadomości nadawcy (Bartka).
 
-It is sufficient for the sender (Bob) to apply the same process as the receiver (Alice) and this public key exchange allows them to communicate securely in both directions.
+Wystarczy, aby nadawca (Bartek) stosował ten sam proces co odbiorca (Alicja), a ta wymiana klucza publicznego umożliwia im bezpieczną komunikację w obu kierunkach.
 
 </br>
 
-## ECDH: Diffie-Hellman key exchanges
+## ECDH: wymiana kluczy Diffie-Hellman
 
 ![](image2.png)
 
-That was for the theoretical part. In practice, it takes time to encrypt and decrypt with an algorithm based on asymmetric keys. Indeed, it is much easier to decipher a message from a symmetrical (identical) key. However, if a third party finds this key, the data exchange is no longer secure. You easily understand that it is very difficult to exchange a password on a public network - to exchange a symmetrical key on a network that is being monitored.
+To było dla części teoretycznej. W praktyce szyfrowanie i odszyfrowanie algorytmu opartego na kluczy asymetrycznych wymaga czasu. W rzeczywistości znacznie łatwiej jest odszyfrować przesłanie za pomocą symetrycznego (identycznego) klucza. Jeżeli jednak osoba trzecia uzyska ten klucz, wymiana danych nie jest już bezpieczna. Łatwo rozumieć, że bardzo trudno jest wymienić hasło w sieci publicznej - wymienić się kluczem symetrycznym w sieci, która jest monitorowana.
 
-This is where the key exchange developed by Diffie-Hellman comes in. This protocol is based on a rather complex mathematical algorithm, but its use is quite simple to understand. Imagine Bob and Alice are being spied on by a third party called Eve. The only way for Alice and Bob is to go through a third party who is not really trusted. They must therefore use deception to exchange their messages in a secure way. Diffie-Hellman's algorithm allows the creation of a private key between two parties, via the exchange of messages on an unsecured network. When establishing a key with Diffie-Hellman algorithm, messages are sent openly on the network, and anyone who intercepts the transmitted messages should not be able to deduce the generated key from it.
-
-
+W tym właśnie miejscu pojawia się kluczowa wymiana danych opracowana przez Diffie-Hellman. Protokół ten opiera się na dość skomplikowanym algorytmie matematycznym, ale jego użycie jest dość proste do zrozumienia. Wyobraź sobie że Bartek i Alicja są szpiegowani przez osobę trzecią o nazwie Ewa. Jedyny sposób na to, by Alicja i Bartek przechodzili przez stronę trzecią, która naprawdę nie ma zaufania. Muszą zatem stosować sztuczki w celu bezpiecznej wymiany swoich komunikatów. Algorytm Diffie-Hellman pozwala na stworzenie klucza prywatnego między dwiema stronami poprzez wymianę wiadomości w niezabezpieczonej sieci. Po stworzeniu klucza z algorytmem Diffie-Hellman, wiadomości są wysyłane otwarcie w sieci, i każdy, kto przechwytuje przesłane wiadomości, nie powinien być w stanie wywnioskować z niego wygenerowanego klucza.
 
 
 
--   Alice and Bob each choose a very large random number, which they keep secret. Let x be the number chosen by Alice, and y be the number chosen by Bob.
 
--   Alice calculates P1 = g^x mod p, and transmits the result to Bob
 
--   Bob calculates P2 = g^y mod p, and transmits the result to Alice
+-   Alicja i Bartek wybierają bardzo dużą liczbę losową, którą zachowują w tajemnicy. Niech x to liczba wybrana przez Alicje, a y to liczba wybrana przez Bartka.
+
+-   Alicja oblicza P1 = g^x mod p i przekazuje wynik do Bartka
+
+-   Bartek oblicza P2 = g^y mod p i przesyła wynik do Alicji
 
 ![](image10.png)
 
--   Alice calculates K1 = P2^x mod p, and Bob calculates K2 = P1^x mod p
+-   Alicja oblicza K1 = P2^x mod p, a Bartek oblicza K2 = P1^x mod p
 
 
-At this point, the value K1 calculated by Alice is therefore (g^y mod p)^x mod p. The value K2 calculated by Bob is (g^x mod p)^y mod p. The laws of arithmetic prove that the two values K1 and K2 are equal. Alice and Bob were able to agree on a common private key.
+W tym momencie wartość K1 obliczona przez Alicję jest równa (g^y mod p)^x mod p. Wartość K2 obliczona przez Bartka jest równa (g^x mod p)^y mod p. Prawa arytmetyczne dowodzą, że dwie wartości K1 i K2 są równe. Alicja i Bartek byli w stanie ustalić wspólny klucz prywatny.
 
 ![](image9.png)
 
-Confidentiality is guaranteed by the fact that a possible attacker, who would intercept communications between Alice and Bob, would have no way of finding the private key from the information transmitted publicly. x and y being very large numbers, it is indeed extremely complex to find their value from the information openly transmitted: p, g, P1 and P2. And without x and y, it is impossible to find the final key. You can check this excellent youtube video for further explanations. No one else but Alice and Bob knows this shared secret because no one else has a private key.
+Poufność jest zagwarantowana przez fakt, że potencjalny napastnik, który przechwyciłby komunikację Alicji i Bartka, nie miałby możliwości znalezienia klucza prywatnego na podstawie informacji przekazanych publicznie. x i y są bardzo dużymi liczbami, Niezwykle trudno jest znaleźć wartość tych informacji z jawnie przekazanych: p, g, P1 i P2. A bez x i y, niemożliwe jest znalezienie ostatniego klucza. Możesz sprawdzić ten wspaniały film z YouTube, aby uzyskać dalsze wyjaśnienia. Nikt inny niż Alicja i Bartek znają ten wspólny sekret, ponieważ nikt inny nie ma klucza prywatnego.
 
 {{< iframe src="https://www.youtube.com/embed/YEBfamv-_do" width="560" height="315" allowfullscreen="true" >}}
 
 </br>
 
-The greatest weakness of Diffie Hellman's exchange is that it alone does not establish the identity of the other party (lack of authentication), which makes it prone to an attack by the middle man.
+Największą słabością wymiany Diffie Hellman jest to, że sama nie ustala tożsamości drugiej strony (brak autentyczności), co sprawia, że jest podatny na atak ze środka.
 
-During the key exchange with Diffie-Hellman, each of the two parties has no proof that they are communicating with the appropriate interlocutor directly. An attacker, Eve, can very well intercept the messages exchanged, and rewrite them to pretend to be Bob to Alice, and Alice to Bob. Since Diffie Hellman doesn't establish an identity, when Alice thinks he's negotiating a key with Bob, he's actually negotiating with Eve, and the same (separately) for Bob, then everyone thinks he's communicating securely with the other, when in fact, they each have a secure single-key connection with the hacker who reads their messages, then re-encrypts them and sends them, or reads them and sends different messages instead.
+Podczas kluczowej wymiany z Diffie-Hellman każda ze stron nie ma dowodów na to, że komunikuje się bezpośrednio z odpowiednim partnerem. Atakujący, Ewa, może bardzo dobrze przechwycić wymieniane wiadomości i przepisać je, aby udawać, że są Bartkiem do Alicji i Alicją do Bartka. Ponieważ Diffie Hellman nie ustala tożsamości, kiedy Alicja uważa, że negocjuje klucz z Bartkiem, rzeczywiście negocjuje z Ewą i to samo (oddzielnie) dla Bartka, wtedy każdy uważa, że bezpiecznie komunikuje się z drugim, kiedy w rzeczywistości każdy z nich ma bezpieczne połączenie z hakerem, który odczytuje swoje wiadomości, następnie ponownie zaszyfrowuje je i wysyła lub odczytuje i wysyła różne wiadomości.
 
-Ideally, Diffie-Hellman should therefore be used with a recognized authentication method such as digital signatures. Maybe we'll talk about it in a future blogpost?
+W idealnym przypadku Diffie-Hellman powinien być zatem stosowany przy użyciu rozpoznanej metody uwierzytelniania, takiej jak podpisy cyfrowe. Może porozmawiamy o tym w przyszłym poście?
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫 </br>
  {{<tweet id="1143493043783372801">}}
