@@ -45,7 +45,7 @@ Pour la première session, s'il vous plaît, faites un tonnerre d'applaudissemen
 
 ### Qui est Djalouz ?
 
-**Djalouz**, Paris, France: Visual artist, illustrator and graffiti artist, Djalouz was born in 1985. Parallèlement à l'obtention de son diplôme en tant que dessinateur modèle, il a commencé le graffiti en 2003, inspirée par la jeune scène montante des graffitis français et européens (Marko 93, Dran, Daim, MTO, etc.). mais aussi par le monde de la bande dessinée (Enki Bilal, Frank Miller).
+**Djalouz**, Paris, France: Artiste visuel, illustrateur et artiste de graffiti, Djalouz est né en 1985. Parallèlement à l'obtention de son diplôme en tant que dessinateur modèle, il a commencé le graffiti en 2003, inspirée par la jeune scène montante des graffitis français et européens (Marko 93, Dran, Daim, MTO, etc.). mais aussi par le monde de la bande dessinée (Enki Bilal, Frank Miller).
 
 ![](https://i.imgur.com/qKbJXft.jpg)
 

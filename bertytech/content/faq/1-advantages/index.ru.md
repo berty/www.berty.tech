@@ -1,10 +1,10 @@
 ---
-title: "What are the advantages of Berty compared to the other messengers?"
+title: "Какие преимущества у Berty по сравнению с другими мессенджерами?"
 id: 1
 private: true
 ---
 
-With a strong encryption protocol (E2EE), communicating with Berty is as anonymous as possible (no email or phone number required, with a minimum of metadata). The application is designed to work even without the internet and without a SIM card, through a distributed network. Berty is an anti-surveillance communication tool and is very difficult to censor.
+С надёжным протоколом шифрования (E2EE), общение в Berty является настолько анонимным, насколько возможно (адрес электронной почты и номер телефона не требуются, количество метаданных сведено к минимуму). Приложение спроектировано для работы даже без подключения к сети Интернет и SIM карты, благодаря распределённой сети. Berty - инструмент для коммуникации который трудно отслеживать или подвергнуть цензуре.
 
-We have compiled this table of comparison of Berty to various other messengers. If you have information that could help update this table, feel free to edit it!
+Мы сформировали таблицу сравнений Berty со множеством других мессенджеров. Если у вас есть информация, которая может помочь обновить эту таблицу, не стесняйтесь отредактировать её!
 {{< compare-messenger-apps >}}

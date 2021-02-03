@@ -1,7 +1,8 @@
 ---
 title: "Berty News #32"
 date: 2020-03-20
-aliases: ["/newsletter/weekly-32"]
+aliases:
+  - "/newsletter/weekly-32"
 ---
 
 # Berty News #32
@@ -12,13 +13,13 @@ We're back!
 
 As you can imagine, we were pretty busy setting up a [Corona-Proof](https://berty.tech/blog/corona-berty/) new organization. We are all safe and full of hopes for the future. Stay safe and take care of yourself and your loved ones! 🧡
 
-This newsletter will be more about explaining what's going on at Berty right now. 
+This newsletter will be more about explaining what's going on at Berty right now.
 
 As you know, we are an NGO and we depend exclusively on donations. This means that we are not shielded from the current situation. We received heartwarming messages, thank you for caring. It means a lot to us. 🙏
 
 We are backed for the few next months. Nevertheless, we hope that our grant applications will be renewed once again. We know that the upcoming year will be very difficult for most people and companies. So, our plan is to increase the number of grant applications as well as to involve collaborative funding. Soon, we will put a donation page on the site and submit several _Request For Proposal (RFP)_. Our priorities are to take care of the team and then to make the Berty project keep going. Our ultime goal is to transfer the ownership of the project to the community to make it immortal. It's our commitment from day one! Finally, this pandemic will force us to deliver faster :)
 
-This being said... Happy Reading! 😷 
+This being said... Happy Reading! 😷
 
 ## 🚀 All Berty repositories will be opened!
 
@@ -34,17 +35,17 @@ We'll make a blogpost to explain in detail how it's going to happen. We are real
 
 ## 🗣️ The Berty Community
 
-More than ever, we are committed to grow our community. In the next few days, as Berty's original idea is to connect the free world(s), we're going to do a set of actions. We can't tell you more yet until we know for sure. Among other things, we're thinking about having ambassadors for each country and open task lists on which you can contribute. The goal is to help make Berty known as much as possible. What do you recommend? Do you have any insights?  
+More than ever, we are committed to grow our community. In the next few days, as Berty's original idea is to connect the free world(s), we're going to do a set of actions. We can't tell you more yet until we know for sure. Among other things, we're thinking about having ambassadors for each country and open task lists on which you can contribute. The goal is to help make Berty known as much as possible. What do you recommend? Do you have any insights?
 
-But first of all, thank you for reading this newsletter. It doesn't sound like anything, but we know you read it and that you're following our journey. It's amazing. It really is. 
+But first of all, thank you for reading this newsletter. It doesn't sound like anything, but we know you read it and that you're following our journey. It's amazing. It really is.
 
-We invite you to join our discord. Everything will happen there. It's a good way to centralize all our activities. 
+We invite you to join our discord. Everything will happen there. It's a good way to centralize all our activities.
 
 👉 Join Berty's discord: https://crpt.fyi/berty-discord
 
 ## 📚 Blogposts
 
-Since we joined the _Work From Home_ (forced) trend, we plan to publish more on our blog, and to keep you updated on Berty. 
+Since we joined the _Work From Home_ (forced) trend, we plan to publish more on our blog, and to keep you updated on Berty.
 
 👉 https://berty.tech/blog/corona-berty/
 
@@ -76,7 +77,7 @@ For the time being and until further notice, **we are cancelling all our venues 
 
 ## Weekly Syncs
 
-Read our Weekly Syncs: 
+Read our Weekly Syncs:
 
 * [2020-03-20](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-03-20--staff-team-weekly-sync.md)
 * [2020-03-06](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-03-06--staff-team-weekly-sync.md)

@@ -1,18 +1,7 @@
 ---
-title: "Hello clever you !"
-subtitle: Sadly you found this page too early, please come back in a few days...
+title: "¡Hola, listo!"
+subtitle: Lamentablemente has encontrado esta página demasiado pronto. Vuelve luego dentro de unos días...
 hclass: bg-jobs bg-blue
 private: true
 ---
-
-
-
-
-
-
-
-
-
-
-
 

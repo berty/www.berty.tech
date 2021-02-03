@@ -1,6 +1,6 @@
 ---
 title:
-subtitle: 'Open the Berty app on your phone and scan this code to make a contact request to <span class="c-name"></span>'
+subtitle: 'Abre la aplicación Berty en tu teléfono y escanea este código para hacer una solicitud de contacto a <span class="c-name"></span>'
 ---
 
 {{< display_section_id >}}

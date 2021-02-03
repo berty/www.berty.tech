@@ -1,95 +1,95 @@
 ---
 author: Pierre
-title: An Introduction to Cybersecurity Fundamentals
+title: साइबर स्पेस फंडामेंटल का एक परिचय
 date: 2020-11-06
 #image: "cybersecurity.jpg"
 image: "cybersecurity.jpg"
 categories:
-- freespeech
+  - freespeech
 tags:
-- surveillance
-- cybersecurity
-- privacy
+  - surveillance
+  - cybersecurity
+  - privacy
 description: "Introduction to Cybersecurity Fundamentals"
 ---
 
-# An Introduction to Cybersecurity Fundamentals
+# साइबर स्पेस फंडामेंटल का एक परिचय
 
-By 2023, the cybersecurity market is expected to grow to over 250 billion dollars. That makes it one of the fastest-growing and largest sectors in IT, globally.
+2023 तक, साइबर स्पेस मार्केट के 250 बिलियन डॉलर से अधिक होने की उम्मीद है। यह वैश्विक स्तर पर आईटी में सबसे तेजी से बढ़ते और सबसे बड़े क्षेत्रों में से एक है।
 
-Cybersecurity is a buzzword that's often heard, and most people have a notion about what it consists of. But the things you may not know are always the things others will try to exploit. In this article, you'll get a basic breakdown of what cybersecurity is and hopefully realize the onus is largely on you to stay safe.
+साइबरस्पेस एक चर्चा है जो अक्सर सुनी जाती है, और अधिकांश लोगों को इस बारे में धारणा है कि इसमें क्या शामिल है। लेकिन जिन चीजों को आप नहीं जानते हैं वे हमेशा ऐसी चीजें होती हैं जिनकी दूसरों द्वारा दोहन करने की कोशिश की जाएगी। इस लेख में, आपको साइबर सुरक्षा क्या है, इसका एक बुनियादी ब्रेकडाउन मिलेगा और उम्मीद है कि आपको एहसास है कि आप सुरक्षित रहने के लिए बड़े पैमाने पर हैं।
 
-## What Is Cybersecurity?
+## साइबर सुरक्षा क्या है?
 
-In the plainest possible sense, cybersecurity refers to the securing of data on a computer.
+सबसे सरल संभव अर्थों में, साइबर सुरक्षा एक कंप्यूटर पर डेटा की सुरक्षा को संदर्भित करता है।
 
-From a broader standpoint, cybersecurity encompasses all the processes, practices, programs, laws, devices, and tools used to preserve the integrity of data within a digital infrastructure. That may sound needlessly verbose, but the truth is that cybersecurity is an all-encompassing field.
+एक व्यापक दृष्टिकोण से, साइबर स्पेस एक डिजिटल बुनियादी ढांचे के भीतर डेटा की अखंडता को बनाए रखने के लिए उपयोग की जाने वाली सभी प्रक्रियाओं, प्रथाओं, कार्यक्रमों, कानूनों, उपकरणों और सधनो को शामिल करता है। यह अनावश्यक लग सकता है, लेकिन सच्चाई यह है कि साइबर सुरक्षा एक सर्वव्यापी क्षेत्र है।
 
-Anything you do to protect data on your computer or prevent events that compromise your processed, stored or transmitted data is part of cybersecurity. That can be hiring a world-class team of experts or it can be as simple as locking your mobile phone with a password.
+आपके कंप्यूटर पर डेटा की सुरक्षा या अपने संसाधित, संग्रहीत या प्रेषित डेटा से छेड़छाड़ करने वाली घटनाओं को रोकने के लिए आप जो कुछ भी करते हैं, वह साइबर सुरक्षा का हिस्सा है। यह विशेषज्ञों की विश्व स्तरीय टीम को काम पर रखने जैसा हो सकता है या यह एक पासवर्ड के साथ अपने मोबाइल फोन को लॉक करने जितना आसान हो सकता है।
 
 ![](https://i.imgur.com/5F7VYPj.jpg)
 
 
-## What Are You Protecting Against?
+## आप किससे बचाव कर रहे हैं?
 
-You've been reading about compromised data and keeping data safe, which begs the question. What are you trying to keep it safe from?
+आप समझौता किए गए डेटा और डेटा को सुरक्षित रखने के बारे में पढ़ रहे हैं, जो इस सवाल का जवाब देता है। आप इसे किस्से सुरक्षित रखने क्या प्रयास कर रहे हैं?
 
-In essence, it's any kind of attempt to damage or access information. This can include access that is ultimately benign or done without sinister motives. Any point of access that is unsecured opens up the possibility of major losses in the future.
+संक्षेप में, यह सूचना को नुकसान पहुंचाने या एक्सेस करने का किसी भी तरह का प्रयास है। इसमें वह एक्सेस शामिल हो सकता है जो अंततः सौम्य है या बिना किसी भयावह उद्देश्य के साथ किया गया है। असुरक्षित पहुंच का कोई भी बिंदु भविष्य में बड़े नुकसान की संभावना को खोलता है।
 
-Cyber-attacks can fall into one or more of the following categories:
+साइबर हमले निम्नलिखित श्रेणियों में से एक या अधिक में गिर सकते हैं:
 
-- Cybercrime – much like traditional crime, this type of cyber-attack is primarily motivated by financial gain. This can be any of a number of things, including credit card fraud and ransomware attacks. Experts estimate that up to six trillion dollars a year are lost to cybercrime attacks.
-- Cyber Warfare – this is another type of attack whose main goal is achieving a political end of some kind. It is now – and is expected to in the future – pose the biggest threat to national sovereignty.
-- Cyberterrorism – defined by Kevin G. Coleman as:
+- साइबर अपराध - पारंपरिक अपराध की तरह, इस प्रकार के साइबर हमले मुख्य रूप से वित्तीय लाभ से प्रेरित होते हैं। यह क्रेडिट कार्ड धोखाधड़ी और रैंसमवेयर हमलों सहित कई चीजों में से एक हो सकता है। विशेषज्ञों का अनुमान है कि एक वर्ष में छह ट्रिलियन डॉलर तक साइबर हमले में खो जाते हैं।
+- साइबर वारफेयर - यह एक अन्य प्रकार का हमला है जिसका मुख्य लक्ष्य किसी प्रकार का राजनीतिक अंत प्राप्त करना है। यह अब है - और भविष्य में उम्मीद की जाती है - राष्ट्रीय संप्रभुता के लिए यह सबसे बड़ा खतरा है।
+- साइबर अपराधवाद - केविन जी. कोलमैन द्वारा परिभाषित:
 
-"The premeditated use of, or threat of, disruptive activities against computers and/or networks, with intent to cause harm, be it social, ideological, religious, political or similar goals. Or to intimidate anyone in pursuit of such goals."
+"नुकसान पहुंचाने के इरादे से, कंप्यूटर और / या नेटवर्क के खिलाफ विघटनकारी गतिविधियों, का उपयोग, या खतरा, जैसे कि सामाजिक, वैचारिक, धार्मिक, राजनीतिक या समान लक्ष्य। या ऐसे लक्ष्यों की खोज में किसी को डराना। "
 
-Generally speaking, cybersecurity threats will have one or more of those three drivers. The consequences of cyberattacks will respond to their ultimate motivating factors.
+सामान्यतया, साइबर सुरक्षा की धमकी के उन तीन ड्राइवरों में से एक या अधिक होंगे। साइबर हमले के परिणाम उनके अंतिम प्रेरक कारकों का जवाब देंगे।
 
-To achieve their ends, cybercriminals use any of a number of techniques. Phishing scams, for instance, are quite popular. These refer to attempts to extract sensitive information by assuming the identity of a trusted individual or entity.
+अपने सिरों को प्राप्त करने के लिए, साइबर क्रिमिनल कई तकनीकों का उपयोग करते हैं। उदाहरण के लिए, फ़िशिंग घोटाले काफी लोकप्रिय हैं। ये एक विश्वसनीय व्यक्ति या संस्था की पहचान मानकर संवेदनशील जानकारी निकालने के प्रयासों का उल्लेख करते हैं।
 
-Viruses are still very much a weapon used by cybercriminals as well, as are trojans, spyware, and malware. For more political ends, they might use propaganda, misinformation, or any other avenue that allows them to penetrate ideological defenses.
+वायरस अभी भी साइबर अपराधियों द्वारा इस्तेमाल किए जाने वाले हथियार हैं, साथ ही ट्रोजन, स्पाइवेयर और मैलवेयर भी हैं। अधिक राजनीतिक छोर के लिए, वे प्रचार, गलत सूचना या किसी अन्य एवेन्यू का उपयोग कर सकते हैं जो उन्हें वैचारिक बचाव में प्रवेश करने की अनुमति देता है।
 
-## Notable Cases in the News
+## समाचार में उल्लेखनीय मामले
 
-Among the most alarming cases of cybercrime in the news recently was a ransomware attack on a hospital in Rouen, France. Ransomware attacks take over a system and essentially hold it hostage until the perpetrator's demands are met.
+खबरों में साइबर क्राइम के सबसे खतरनाक मामलों में हाल ही में फ्रांस के रूएन के एक अस्पताल में रैंसमवेयर का हमला हुआ था। रैंसमवेयर हमले एक प्रणाली पर कब्जा कर लेते हैं और अनिवार्य रूप से अपराधी की मांग पूरी होने तक उसे बंधक बना लेते हैं।
 
-The hospital was categorical in refusing to submit to the demands of the criminals and said it wouldn't pay for access to their files and systems. Instead, the hospital was forced to return to using pencil and paper.
+अस्पताल अपराधियों की मांगों को प्रस्तुत करने से इनकार करने में स्पष्ट था और कहा कि यह उनकी फ़ाइलों और प्रणालियों तक पहुंच के लिए भुगतान नहीं करेगा। इसके बजाय, अस्पताल को वापस पेंसिल और कागज का उपयोग करने के लिए मजबूर किया गया था।
 
 ![](https://i.imgur.com/JwEulj8.jpg)
 
 
-Hospitals have slowly become a favorite target of cybercriminals. Patient data is often of a very sensitive nature and hospitals tend to work with tightly-allocated budgets that don't leave much to deal with cybersecurity issues.
+अस्पताल धीरे-धीरे साइबर अपराधियों का पसंदीदा लक्ष्य बन गए हैं। रोगी डेटा अक्सर एक बहुत ही संवेदनशील प्रकृति का होता है और अस्पतालों को कसकर आवंटित बजट के साथ काम करना पड़ता है जो साइबर सुरक्षा के मुद्दों से निपटने के लिए ज्यादा बजट नहीं छोड़ते हैं।
 
-A similar case in February occurred in the U.K. at Redcar and Cleveland Borough Council. The authority's computers were reportedly locked by what experts are calling a probable ransomware attack. The council hasn't made an official statement about the nature of the attack, but their website could be down for weeks.
+फरवरी में इसी तरह का मामला यूनाइटेड किंगडम में हुआ था रेडकार और क्लीवलैंड बोरो काउंसिल में। प्राधिकार के कंप्यूटरों को कथित तौर पर बंद कर दिया गया था जिसे विशेषज्ञ एक संभावित रैंसमवेयर हमला कह रहे हैं। परिषद ने हमले की प्रकृति के बारे में आधिकारिक बयान नहीं दिया है, लेकिन उनकी वेबसाइट हफ्तों तक डाउन हो सकती है।
 
-These are just two examples that illustrate just how damaging a cyberattack can be. With so many systems entirely reliant on the underlying digital infrastructure, it's only a matter of time before such attacks end up endangering people's lives.
+ये सिर्फ दो उदाहरण हैं जो यह दर्शाते हैं कि साइबर हमले का नुकसान कितना खतरनाक हो सकता है। इतने सारे सिस्टम पूरी तरह से अंतर्निहित डिजिटल बुनियादी ढांचे पर निर्भर करते हैं, यह केवल समय की बात है, इससे पहले कि इस तरह के हमले लोगों के जीवन को खतरे में डाल दें।
 
-## Security by Design & Privacy by Design
+## डिजाइन द्वारा सुरक्षा और डिजाइन द्वारा गोपनीयता
 
-The urgent nature of cybersecurity coupled with the rapid rise of successful cyberattacks demands a fundamental reshaping of our design process.
+सफल साइबर हमले के तेजी से बढ़ने के साथ साइबर सुरक्षा की तत्काल प्रकृति हमारी डिजाइन प्रक्रिया के एक मौलिक पुनर्वसन की मांग करती है।
 
-For much of the history of systems design, privacy and security were issues to be tackled after the foundation was built. It's increasingly evident that locking the barn door after the horses have bolted is a poor way to handle security.
+सिस्टम डिजाइन के इतिहास के लिए, गोपनीयता और सुरक्षा मुद्दे थे नींव के निर्माण के बाद निपटने के लिए। यह तेजी से स्पष्ट हो रहा है कि घोड़ों के झुकने के बाद खलिहान के दरवाजे को बंद करना सुरक्षा को संभालने का एक खराब तरीका है।
 
-Instead, many experts advocate proactive and preventative measures rather than remedial ones in the design of systems. In other words, the privacy and security elements would be a fundamental part of the engineering process from start to finish.
+इसके बजाय, कई विशेषज्ञ सिस्टम के डिजाइन में उपचारात्मक के बजाय सक्रिय और निवारक उपायों की वकालत करते हैं। दूसरे शब्दों में, गोपनीयता और सुरक्षा तत्व शुरू से अंत तक इंजीनियरिंग प्रक्रिया का एक मूलभूत हिस्सा होंगे।
 
-One company that's implementing this approach is the 2.7 billion-dollar Akamai Technologies, a cybersecurity and Cloud service provider from Massachusetts. Their solutions are designed from the ground up with essential security tools for businesses.
+एक कंपनी जो इस दृष्टिकोण को लागू कर रही है, वह है 2.7 बिलियन-डॉलर की अकामाई टेक्नोलॉजीज, जो साइबरस्पेस और मेसाचुसेट्स से क्लाउड सेवा प्रदाता है। उनके समाधान व्यवसायों के लिए आवश्यक सुरक्षा उपकरणों के साथ जमीन से डिज़ाइन किए गए हैं।
 
-If the security tools are deployed at the architecture level in a carrier's network, it greatly increases that carrier's ability to repel and deal with threats. Rather than loading up on third-party products, this approach makes the entire process much more secure.
+यदि किसी कैरियर के नेटवर्क में आर्किटेक्चर स्तर पर सुरक्षा उपकरण तैनात किए जाते हैं, तो यह उस वाहक की क्षमता को बढ़ाता है और खतरों से निपटने में सक्षम होता है। तृतीय-पक्ष उत्पादों पर लोड करने के बजाय, यह दृष्टिकोण पूरी प्रक्रिया को और अधिक सुरक्षित बनाता है।
 
 ![](https://i.imgur.com/Yk1aoE4.jpg)
 
 
-## Protecting Yourself
+## अपनी रक्षा करना
 
-To reiterate, cybersecurity is any activity you do to safeguard your data. That can take the form of systemic prevention mechanisms, such as:
+अपने डेटा को सुरक्षित रखने के लिए आप किसी भी गतिविधि को दोहराते हैं। प्रणालीगत रोकथाम तंत्र का रूप ले सकते हैं, जैसे:
 
-* Two-factor authentication
-* Data encryption
-* Keeping your OS, browser, antivirus and other software up to date
-* Password managers that let you generate strong passwords and store them securely
+* दो तरीकों से प्रमाणीकरण
+* डेटा एन्क्रिप्शन
+* अपने OS, ब्राउज़र, एंटीवायरस और अन्य सॉफ्टवेयर को अपडेट रखें
+* पासवर्ड प्रबंधक जो आपको मजबूत पासवर्ड उत्पन्न करने और उन्हें सुरक्षित रूप से संग्रहीत करने की अनुमति देते हैं
 
-But it also involves certain habits and behaviors, such as:
+लेकिन इसमें कुछ आदतें और व्यवहार भी शामिल हैं, जैसे:
 
 * Caution when using unsecure networks, like WiFi in public areas
 * Making sure communications are coming from a trusted source

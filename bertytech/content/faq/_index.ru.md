@@ -1,8 +1,6 @@
 ---
-title: "FAQ"
-subtitle: Frequently asked questions
+title: "ЧАВО"
+subtitle: Часто задаваемые вопросы
 draft: false
-#menu:
-#    footer_col1:
-#        weight: -40
 ---
+

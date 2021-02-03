@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #11"
 date: 2019-08-30
-aliases: ["/newsletter/weekly-11"]
+aliases:
+  - "/newsletter/weekly-11"
 ---
 
 ## Current Work
@@ -19,12 +20,9 @@ In a nutshell, the main topics of this week were:
 ## Paris P2P #1
 
 
-We participated in the #0 edition of Paris P2P a month ago and that was nuts 🎉!
-The next edition is scheduled next Wednesday (Sep 4th).  We can't wait for it!
+We participated in the #0 edition of Paris P2P a month ago and that was nuts 🎉! The next edition is scheduled next Wednesday (Sep 4th).  We can't wait for it!
 
-🕓 6:30 PM - Sep 4th </br>
-📍 Ground Control (Paris, FR) </br>
-➡️ RSVP : https://www.meetup.com/fr-FR/Paris-P2P/events/263171540/ </br>
+🕓 6:30 PM - Sep 4th </br> 📍 Ground Control (Paris, FR) </br> ➡️ RSVP : https://www.meetup.com/fr-FR/Paris-P2P/events/263171540/ </br>
 
 You can suggest a talk and join the community on Matrix or Discord.
 

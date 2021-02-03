@@ -1,13 +1,13 @@
 ---
-title: 'What does "decentralized" and "distributed" mean?'
+title: 'Что означают слова "децентрализованный" и "распределённый"?'
 id: 2
 private: true
 ---
 
-A network is called **decentralized** when it doesn’t depend on a single entity, and thus does not pass through a central server where all of the resources are stored. A decentralized system gives the possibility to third parties to set up a server for a service and to transmit its data.
+Сеть называется **децентрализованной**, когда она не зависит от одного её участника, таким образом не работающая через центральный сервер, храня все данные в одном месте. Децентрализованная система даёт третьим лицам возможность создавать сервер для обслуживания и их передачи данных.
 
-A **distributed** network does not rely on any server. It’s a P2P system. Peers who communicate with each other and exchange data over the network.
+**Распределённая** сеть не зависит ни от каких серверов. Это P2P система. Она состоит из узлов, которые коммуницируют друг с другом и обмениваются данными в сети.
 
-To learn more on the topic you can read the dedicated blogpost: [Centralized vs Decentralized vs Distributed Systems](/blog/decentralized-distributed-centralized/).
+Если хотите узнать больше, вы можете прочитать статью об этой теме (на английском): [Centralized vs Decentralized vs Distributed Systems](/blog/decentralized-distributed-centralized/).
 
 {{< img src="centralized_decentralized_distributed.svg" width="1631" height="577" >}}

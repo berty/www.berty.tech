@@ -1,33 +1,33 @@
 ---
 author: manfred
-title: "Covid-19, The Berty Update"
+title: "कोविद -19, द बर्टी अपडेट"
 date: 2020-03-19
 #image: "corona.jpg"
 image: "corona.jpg"
 categories:
-- news
+  - news
 tags:
-- news
-description: Berty during Covid-19 
+  - news
+description: Berty during Covid-19
 ---
 
-Today, COVID-19 needs no introduction. It has affected the lives of millions of people worldwide, and sadly, it's only the beginning of it. So let's have a thought here for all those people.
+आज, कोविद -19 को किसी परिचय की आवश्यकता नहीं है। इसने दुनिया भर में लाखों लोगों के जीवन को प्रभावित किया है, और दुख की बात है कि यह केवल इसकी शुरुआत है। तो चलो उन सभी लोगों के लिए यहाँ एक विचार है।
 
-Particularly in Europe, since that is where we are based, and what we see around us today is unprecedented. Nobody wants it to become bigger than it is, so the governments took action. One of them is the ban on all air traffic, which several countries have put in place almost overnight. Many people are stranded thousands of miles away in foreign countries. And since then, the borders of the Schengen area have been closed and numerous containment measures have been taken (in Italy, Spain, France). 
+विशेष रूप से यूरोप में, क्योंकि यह वह जगह है जहां हम आधारित हैं, और आज हम अपने चारों ओर जो देखते हैं वह कभी नहीं हुआ है। कोई भी यह नहीं चाहता कि वह इससे बड़ा हो, इसलिए सरकारों ने कार्रवाई की। उनमें से एक सभी हवाई यातायात पर प्रतिबंध है, जो कई देशों ने अचानक से एक रात में लगाए हैं। कई लोग विदेशों में हजारों मील दूर फंसे हुए हैं। और तब से, शेंगेन क्षेत्र की सीमाओं को बंद कर दिया गया है और कई रोकथाम उपाय किए गए हैं (इटली, स्पेन, फ्रांस में)।
 
-We have therefore decided, in accordance with the measures of the French government, that the Berty team will work exclusively from home. 
+हमने इसलिए, फ्रांसीसी सरकार के उपायों के अनुसार, यह निर्णय लिया है कि बेरी टीम विशेष रूप से घर से काम करेगी।
 
-We are more motivated than ever to deliver the Berty application to you. Internet and WiFi are often taken for granted, but this is not the case in many places at the best of times, and in a state of emergency, the chances of someone connecting are even lower. It is therefore particularly important to have a means of communication that does not rely on a network connection. It is important to be able to connect people to each other, and that the uncensored exchange of information is maintained during these crises. 
+हम आपको बर्टी एप्लिकेशन देने के लिए पहले से कहीं अधिक प्रेरित हैं। इंटरनेट और वाईफाई को अक्सर सामान्य सेवा माना जाता है, लेकिन कई स्थानों पर यह सबसे अच्छा समय नहीं होता है, और आपातकालीन स्थिति में किसी के कनेक्ट होने की संभावना और भी कम हो जाती है। इसलिए संचार के साधनों का होना विशेष रूप से महत्वपूर्ण है जो एक नेटवर्क कनेक्शन पर निर्भर ना करता हो। लोगों को एक-दूसरे से जोड़ने में सक्षम होना महत्वपूर्ण है, और इन संकटों के दौरान बिना सेंसर सूचनाओं के आदान-प्रदान को बनाए रखा जाता है।
 
-We are going to open our repo very quickly, so that everyone can help Berty's fast development. If you are available, we will be more than happy to receive your contributions! We are committed to responding as quickly as possible. We will give you more details in an upcoming article. Stay tuned! 
+हम अपना रेपो बहुत जल्दी खोलने जा रहे हैं, ताकि हर कोई बर्टी के तेजी से विकास में मदद कर सके। यदि आप उपलब्ध हैं, तो हम आपके योगदानों को प्राप्त करने में अधिक खुश होंगे! हम जल्द से जल्द जवाब देने के लिए प्रतिबद्ध हैं। हम आपको आगामी लेख में अधिक जानकारी देंगे। बने रहें!
 
-And what about you, our readers - has the situation impacted your personal life, your work, your projects? 
+और आपके बारे में, हमारे पाठकों – क्या इस स्थिति ने आपके व्यक्तिगत जीवन, आपके काम, आपकी परियोजनाओं को प्रभावित किया है?
 
-[Let us know](https://berty.tech/contact/) how you are doing, and stay healthy!
+[हमें बताएं](https://berty.tech/contact/) कि आप कैसे हैं, और स्वस्थ रहें!
 
-Take care :) 
+ख्याल रखना :)
 
-The Berty team
+बेरी टीम
 
 {{<tweet id="1224339846333976577">}}
 

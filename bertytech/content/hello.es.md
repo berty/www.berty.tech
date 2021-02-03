@@ -1,6 +1,6 @@
 ---
-title: "Hello"
-subtitle: Berty is a secure peer-to-peer messaging app that works with or without internet access, cellular data or trust in the network.
+title: "Hola"
+subtitle: Berty es una aplicación segura de mensajería de igual a igual que funciona con o sin acceso a internet, datos móviles o confianza en la red.
 hclass: bg-blue gradient bg-docs
 ---
 

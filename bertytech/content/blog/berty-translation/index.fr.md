@@ -9,86 +9,86 @@ categories:
 tags:
   - how-to
   - berty
-description: "Help us to make Berty available in any language!"
+description: "Aidez-nous à rendre Berty disponible dans n'importe quelle langage !"
 ---
 
-TL; DR: Help us to translate the Berty app & website using a platform called Crowdin. https://translate.berty.community
+TL; DR: Avec Crowdin, aidez-nous à traduire l'application & le site web Berty. https://translate.berty.community
 
 
-# Why Translating?
+# Pourquoi traduire ?
 
-## You speak English? Lucky you!
+## Vous parlez anglais ? Veinard !
 
-According to [Babbel](https://www.babbel.com/en/magazine/how-many-people-speak-english-and-where-is-it-spoken#:~:text=Out%20of%20the%20world's%20approximately,English%20as%20their%20first%20language.), about 360 million people speak English as their first language. And many more people read/talk English: about 20% of the world's population or 1.5 billion people. It is one of the most widely spoken languages in the world.
+Selon [Babbel](https://www.babbel.com/en/magazine/how-many-people-speak-english-and-where-is-it-spoken#:~:text=Out%20of%20the%20world's%20approximately,English%20as%20their%20first%20language.), environ 360 millions de personnes parlent l'anglais comme langue maternelle. Et beaucoup plus de gens lisent/parlent l'anglais: environ 20 % de la population mondiale ou 1,5 milliard de personnes. C'est l'une des langues les plus parlées au monde.
 
-This is one of the reasons why we communicate almost exclusively in English. To spread our message massively. Whereas in real life, we are Frenchies, frogs and baguette eaters (#cliché).
+C'est une des raisons pour lesquelles nous communiquons presque exclusivement en anglais. Pour diffuser massivement notre message. Alors que dans la vie réelle, nous sommes des Français, mangeur de Grenouilles et de Baguettes (#cliché).
 
-However, be aware of one thing: If you read this article in its original version, i.e., in English, you are lucky! You have access to knowledge and information!
+Cependant, sachez une chose: Si vous lisez cet article dans sa version originale, c'est-à-dire en anglais, vous avez de la chance! Vous avez accès à la connaissance et à l'information !
 
-The other side of the coin is that 80% of the population will not have knowledge (of Berty, for example) simply because of the language.
+Le revers de la médaille est que 80 % de la population ne connaîtra pas (Berty par exemple) simplement à cause de la langue.
 
-Help us to change this!
+Aidez-nous à régler ça !
 
-> And the good news is you don't have to be a developer!
+> Et la bonne nouvelle, c'est que vous n'avez pas besoin d'être un développeur !
 
 
-# How To Contribute to Berty Translation?
+# Comment contribuer à la traduction de Berty ?
 
-As Berty continues to grow, it needs to support more and more languages. Managing all that in the source code will become very hard and prone to errors. Luckily there's an easy solution to that, and it's called Crowdin!
+Au fur et à mesure que Berty ne cesse de croître, il doit supporter de plus en plus de langues. Gérer tout cela dans le code source deviendrais très difficile et sujette aux erreurs. Heureusement, il y a une solution facile à cela, et cela s'appelle Crowdin !
 
-## Translate with Crowdin
+## Traduire avec Crowdin
 
 ![](https://i.imgur.com/tlpFc46.png)
 
 
-Crowdin is an online platform that allows you to do translations through a visual interface. It is possible to designate people as translators for any natural language. After downloading the source strings, the translators can get to work. They will be notified as soon as there is something new to translate. When they are finished, approvers can begin proofreading using some of the extensive quality assurance features. It is impossible to miss a translation, as it will be clearly marked as not translated. Strings that are removed from the source file will also be removed from all translations. Translated files can be uploaded at any time and will be in precisely the same format as the source file. In other words, clean and up-to-date translation files!
+Crowdin est une plateforme en ligne qui vous permet de faire des traductions via une interface visuelle simple. Il est possible de désigner des gens comme traducteurs pour n'importe quelle langue naturelle. Après avoir téléchargé les chaînes sources, les traducteurs peuvent se mettre au travail. Ils seront informés dès qu'il y aura quelque chose de nouveau à traduire. Lorsqu'ils sont terminés, les approbateurs peuvent commencer à relire leurs propositions en utilisant des fonctions d'assurance qualité étendues. Il vous sera impossible de rater une traduction, car dans ce cas elle sera clairement marquée comme non traduite. Les chaînes qui sont supprimées du fichier source seront également supprimées de toutes les traductions. Les fichiers traduits peuvent être téléchargés à tout moment et seront exactement converti dans le même format que le fichier source. En d'autres termes, des fichiers de traduction toujours propres et à jour !
 
-Small information for developers: integration with Git repository or a CLI tool can get the source strings in Crowdin.
+Petites informations pour les développeurs : l'intégration avec Git ou un outil CLI peuvent obtenir les chaînes sources dans Crowdin.
 
-> We take this opportunity to thank Crowdin from the bottom of our hearts because they offered us their solutions because we are an NGO and open source (and nope, this article is not sponsored!). 🧡🙏
+> Nous saisissons cette occasion pour remercier Crowdin du fond de nos cœurs parce qu'ils nous ont offert leurs solutions parce que nous sommes une ONG et open source (et non, cet article n'est pas sponsorisé !). 🧡🙏
 
-Fews others projects hosted on Crowdin:
+Quelques autres projets hébergés sur Crowdin :
 * [Minecraft](https://crowdin.com/project/minecraft)
 * [Factorio](https://crowdin.com/project/factorio)
 * [GitLab](https://crowdin.com/project/GitLab)
-* [Etherum Foundation](https://crowdin.com/project/ethereumfoundation)
+* [Fondation Etherum](https://crowdin.com/project/ethereumfoundation)
 * [Khan Academy](https://crowdin.com/project/khanacademy)
 
-## Getting started on Crowdin
+## Commencer sur Crowdin
 ![](https://i.imgur.com/su9Cz04.png)
 
 
-* Go on our dedicated page: https://translate.berty.community
-* Create an account by signing up.
-* Select berty/berty if you want to help with the app translation or on berty/www.berty.tech for website translation.
-* Select the language you wish to translate to.
-* Click on the branch you want to translate in the tree
-* On the left side, you will be able to pick a sentence
-* On the right side, you can add your translation in the "add  translation here" section
-* Don't forget to save before jumping on the next sentence
+* Allez sur notre page dédiée : https://translate.berty.community
+* Créez-vous un compte en vous inscrivant.
+* Sélectionnez berty/berty si vous voulez aider à la traduction de l'application ou sur berty/www.berty.tech pour traduire le site.
+* Sélectionnez la langue dans laquelle vous souhaitez traduire.
+* Cliquez sur la branche que vous souhaitez traduire dans l'arborescence
+* Sur la gauche, vous pourrez choisir une phrase
+* Sur le côté droit, vous pouvez ajouter votre traduction dans la section "ajouter la traduction ici"
+* N'oubliez pas de sauvegarder avant de passer à la phrase suivante
 
-👉 Read the full tutorial on the Crowdin Support page: https://support.crowdin.com/crowdin-intro/ 👉 Watch the video tutorial: https://www.youtube.com/watch?v=bxdC7MfrO7A
+👉 Lisez le tutoriel complet sur la page de support de Crowdin: https://support.crowdin.com/crowdin-intro/ 👉 Regardez le tutoriel vidéo: https://www.youtube.com/watch?v=bxdC7MfrO7A
 
-## Stucked?
+## Bloqué ?
 
 
 ![](https://i.imgur.com/PBEsg67.png)
 
 
-We're here to help! We set up a dedicated area for translation/translators: https://berty.community/c/translation
+Nous sommes là pour vous aider ! Nous avons créé un espace dédié pour les traducteurs : https://berty.community/c/translation
 
-If you don't find your language, request it there!
+Si vous ne trouvez pas votre langue, demandez-la nous !
 
 # Remerciements
 
 ![](https://i.imgur.com/X7v8NJq.jpg)
 
 
-Before letting you translating, we really want to thank you for your help. Trust us, it's really appreciated!
+Avant de commencez à traduire, nous tenons à vous remercier pour votre aide. Faites-nous confiance, c'est vraiment apprécié !
 
-We are a small team of 10 Frenchies, but we feel like being part of something huge because of you / your support / your every message. 🧡
+Nous sommes une petite équipe de 10 Français, mais nous avons le sentiment de faire partie de quelque chose de grand à cause de vous / votre soutien / votre chaque message. 🧡
 
-Help us to spread Berty and fight censorship/surveillance!
+Aidez-nous à diffuser Berty et à combattre la censure/surveillance !
 
  {{<tweet id="1324380426090270721">}}
 

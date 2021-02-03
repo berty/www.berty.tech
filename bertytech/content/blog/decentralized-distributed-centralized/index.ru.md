@@ -4,10 +4,10 @@ title: "Centralized vs Decentralized vs Distributed Systems"
 date: 2019-06-20
 image: "decentralized.jpeg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- Technical
-- Security
+  - Technical
+  - Security
 description: Centralized systems may have helped build the internet, but they have important disadvantages. That’s what decentralized and distributed systems try to address. Learn more about each type of system.
 ---
 
@@ -31,8 +31,7 @@ In a centralized system, all users are connected to a central network owner or �
 
 ![Photo by Jordan Harrison on Unsplash](decentralized3.jpg "Photo by Jordan Harrison on Unsplash")
 
-But this system has an important limitation. If the server crashes, the system no longer works properly and users cannot access the data. Because a centralized system needs a central owner to connect all the other users and devices, the availability of the network depends on this owner.
-Add to that the obvious security concerns that arise when one owner stores (and can access) user data, and it’s easy to understand why centralized systems are no longer the first choice for many organizations.
+But this system has an important limitation. If the server crashes, the system no longer works properly and users cannot access the data. Because a centralized system needs a central owner to connect all the other users and devices, the availability of the network depends on this owner. Add to that the obvious security concerns that arise when one owner stores (and can access) user data, and it’s easy to understand why centralized systems are no longer the first choice for many organizations.
 
 ### Pros
 - Simple deployment </br>
