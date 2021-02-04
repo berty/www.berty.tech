@@ -1,17 +1,17 @@
 ---
-title: "Skuttlebut"
-open_source: "?"
-no_runtime_fee:
-no_purchase_fee:
+title: "Scuttlebutt"
+open_source: true
+no_runtime_fee: true
+no_purchase_fee: true
 distributed: true
 decentralized: "-"
-no_phone_required: "?"
+no_phone_required: true
 anonymous:
 e2ee: "?"
 offline_messaging: true
-multi_device: "?"
-open_spec: "?"
+multi_device: true
+open_spec: true
 aosp: "?"
-privacy_respecting:
+privacy_respecting: true
 ---
 
