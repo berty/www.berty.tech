@@ -1,6 +1,6 @@
 ---
 author: Zooma
-title: "Blockchain & Berty"
+title: "ब्लॉकचेन और बर्टी"
 date: 2021-01-14
 #image: "2021-01-04-Berty-Blogpost-Blockchain.jpg"
 image: "2021-01-04-Berty-Blogpost-Blockchain.jpg"
@@ -13,51 +13,51 @@ tags:
 description: "Is Berty a blockchain?"
 ---
 
-# Blockchain & Berty: Glad you asked!
+# ब्लॉकचेन और बर्टी: खुशी है कि आपने पूछा!
 
-As we write these lines, Bitcoin's value has just surpassed its ATH (All Time High). Prepare yourself: In a few days, BTC will be trending everywhere – *again* – along with its more mysterious sibling, the **blockchain**.
+जैसा कि हम इन पंक्तियों को लिखते हैं, बिटकॉइन का मूल्य अभी अपने ए.टी.एच (ऑल टाइम हाई) से आगे निकल गया है। अपने आप को तैयार करें: कुछ दिनों में, बीटीसी हर जगह ट्रेंडिंग में होगा - *फिर से* - इसके अधिक रहस्यमय भाई-बहन के साथ, **ब्लॉकचेन**।
 
-Curious if Berty has anything to do with this shadowy figure? You won't be the first. This post is for you!
+जिज्ञासु यदि बर्टी का इस परछाई आकृति से कोई लेना-देना है या नहीं? आप पहले नहीं होंगे। यह पोस्ट आप के लिए है!
 
 ![](https://i.imgur.com/ckc7vlt.jpg)
 
-Since 2017, the term "blockchain" has been used to promote an image of radical innovation – and radical wealth. For proponents of decentralization, the benefits of using protocols like Bitcoin and Ethereum to disrupt monolithic, dysfunctional financial institutions haven't gone unnoticed, either.
+2017 के बाद से, "ब्लॉकचैन" शब्द का उपयोग कट्टरपंथी नवाचार की छवि को बढ़ावा देने के लिए किया गया है - और कट्टरपंथी धन। विकेंद्रीकरण के समर्थकों के लिए, बिटकॉइन और एथेरियम जैसे प्रोटोकॉल का उपयोग करने के लाभों ने अखंड, रोगग्रस्त वित्तीय संस्थानों को बाधित नहीं किया है।
 
-Berty, by nature of its decentralized protocol, is often assumed to be blockchain-based. Is it? **This is one of our most frequently asked questions**, especially at specialized events such as [Paris Blockchain Web Summit](https://berty.tech/blog/2020-talks/).
+बर्टी, अपने विकेंद्रीकृत प्रोटोकॉल की प्रकृति से, अक्सर ब्लॉकचेन-आधारित माना जाता है। यह है? **यह विशेष रूप से विशेष घटनाओं में हमारे सबसे अक्सर पूछे जाने वाले प्रश्नों** में से एक है जैसे[ पेरिस ब्लॉकचेन वेब समिट](https://berty.tech/blog/2020-talks/)।
 
-We'll set the record straight here, starting with a quick technical intro.
+हम यहां सीधे रिकॉर्ड स्थापित करेंगे, जिसकी शुरुआत एक त्वरित तकनीकी परिचय के साथ करेंगे।
 
-> 👉 Don't care? Skip to **Is Berty based on blockchain?**
+> आपको परवाह नहीं है? स्किप **क्या बर्टी ब्लॉकचेन पर आधारित है?**
 
-## What is a blockchain?
+## ब्लॉकचेन क्या है?
 
-No one wants their ignorance of technology to become the subject of an embarrassing news segment, but it does happen. <iframe width="560" height="315" src="https://www.youtube.com/embed/UlJku_CSyNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark">></iframe>
+कोई भी नहीं चाहता है कि तकनीक की उनकी अनदेखी एक शर्मनाक समाचार खंड का विषय बन जाए, लेकिन ऐसा होता है। <iframe width="560" height="315" src="https://www.youtube.com/embed/UlJku_CSyNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark">></iframe>
 
-(**tl;dw:** *What is the internet? Daytime talk show hosts have no answers for you, but a camera guy might.*)
+(**tl;dw:***इंटरनेट क्या है? डे टाइम टॉक शो मेजबानों के पास आपके लिए कोई जवाब नहीं है, लेकिन एक कैमरा आदमी के पास हो सकता है।*)
 
-Let's save ourselves from that fate and get caught up.
+चलो उस भाग्य से खुद को बचाते हैं और चलो पकड़े जाते हैं।
 
-A blockchain exists in a peer-to-peer network that self-authenticates the integrity of information that is forged in its blocks and connected via encrypted links.
+एक ब्लॉकचेन एक सहकर्मी से सहकर्मी नेटवर्क में मौजूद है जो अपने ब्लॉकों में जाली जानकारी के अखंडता को प्रमाणित करता है और एन्क्रिप्टेड लिंक के माध्यम से जुड़ा होता है।
 
-With the technology itself – ie, **no single entity**, like the government – responsible for its validity, it's useful for creating protocols to exchange verifiable, irreversible records of important information.
+प्रौद्योगिकी के साथ ही - यानी,**कोई एकल इकाई नहीं**, सरकार की तरह - इसकी वैधता के लिए जिम्मेदार, यह महत्वपूर्ण जानकारी के सत्यापन योग्य, अपरिवर्तनीय रिकॉर्ड का आदान-प्रदान करने के लिए प्रोटोकॉल बनाने के लिए उपयोगी है।
 
-A blockchain implementation is invariably based on **open source code**, exposing it to universal scrutiny.
+एक ब्लॉकचेन कार्यान्वयन हमेशा** खुले स्रोत कोड** के आधार पर होता है, जो इसे सार्वभौमिक जांच के लिए उजागर करता है।
 
-Even if blockchains and Bitcoin share an origin story, many players (companies, governments, etc.) are considering blockchain technology for use cases beyond digital currency.
+भले ही ब्लॉकचेन और बिटकॉइन एक मूल कहानी साझा करते हैं, कई खिलाड़ी (कंपनियां, सरकार, आदि) डिजिटल मुद्रा से परे मामलों के उपयोग के लिए ब्लॉकचेन तकनीक पर विचार कर रहे हैं।
 
-If you can keep the following principles in mind, you'll have a good starting point for understanding its appeal:
+यदि आप निम्नलिखित सिद्धांतों को ध्यान में रखते हैं, तो आपके पास इसकी अपील को समझने के लिए एक अच्छा प्रारंभिक स्थल होगा:
 
-* **Decentralization**
-* **Transparency**
-* **Immutability**
+* **विकेंद्रीकरण**
+* **पारदर्शिता**
+* **अपरिवर्तनशीलता**
 
-> 👉 Want more? Read ["What is Blockchain Technology?"](https://blockgeeks.com/guides/what-is-blockchain-technology/) or watch [Blockchain In 7 Minutes](https://www.youtube.com/watch?v=yubzJw0uiE4)).
+> और चाहिए? पढ़ें["ब्लॉकचेन टेक्नोलॉजी क्या है?"](https://blockgeeks.com/guides/what-is-blockchain-technology/) या देखें[ 7 मिनट में ब्लॉकचेन](https://www.youtube.com/watch?v=yubzJw0uiE4)).
 
 ![](https://i.imgur.com/aOxadUG.png)
 
-## Is Berty based on blockchain?
+## क्या बर्टी ब्लॉकचेन पर आधारित है?
 
-The Berty protocol is indeed a peer-to-peer protocol, therefore distributed and decentralized, but – *unlike blockchain* – **it requires no consensus and no validation by the network**.
+बेरी प्रोटोकॉल वास्तव में एक सहकर्मी से सहकर्मी प्रोटोकॉल है, इसलिए वितरित और विकेंद्रीकृत, लेकिन -* ब्लॉकचेन के विपरीत* - ** इसे नेटवर्क द्वारा कोई सर्वसम्मति और कोई सत्यापन की आवश्यकता नहीं है**।
 
 Within the Bitcoin protocol, for example, each wallet-to-wallet transaction must be validated, and then be certifed through the network of "miners" who will then "forge" (or mine) the currency.
 
