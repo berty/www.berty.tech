@@ -91,20 +91,20 @@ description: "Introduction to Cybersecurity Fundamentals"
 
 लेकिन इसमें कुछ आदतें और व्यवहार भी शामिल हैं, जैसे:
 
-* Caution when using unsecure networks, like WiFi in public areas
-* Making sure communications are coming from a trusted source
-* Regularly changing passwords
-* Doing regular data backups
-* Don't click on any links in emails, enter the official website in the browser and navigate from there
-* If someone contacts you claiming to be a certain person or entity, don't give out any information; first, contact them via a number you already know or an official email
+* सार्वजनिक क्षेत्रों में वाईफाई जैसे असुरक्षित नेटवर्क का उपयोग करते समय सावधानी
+* सुनिश्चित करें कि संचार एक विश्वसनीय स्रोत से आ रहे हैं
+* पासवर्ड लगातार बदलते रहें
+* नियमित डेटा बैकअप करना
+* ईमेल में किसी भी लिंक पर क्लिक न करें, ब्राउज़र में आधिकारिक वेबसाइट दर्ज करें और वहां से नेविगेट करें
+* यदि कोई व्यक्ति आपसे संपर्क करने का दावा करता है जो एक निश्चित व्यक्ति या संस्था है, तो कोई सूचना न दें; पहले, उन्हें एक नंबर के माध्यम से संपर्क करें जिसे आप पहले से जानते हैं या एक आधिकारिक ईमेल है
 
-## The Best Defense Is Awareness
+## सबसे अच्छा बचाव जागरूकता है
 
-Cybersecurity isn't a matter to be taken lightly. And it's certainly not something that only IT companies need to worry about.
+साइबरस्पेस एक मामला नहीं है जिसे हल्के में लिया जाना चाहिए। और यह निश्चित रूप से ऐसा कुछ नहीं है जिसके बारे में केवल आईटी कंपनियों को चिंता करने की आवश्यकता है।
 
-Just about every modern business relies on their digital infrastructure to the point that loss of access or security breaches could be catastrophic.
+बस हर आधुनिक व्यवसाय अपने डिजिटल बुनियादी ढांचे पर निर्भर करता है कि पहुंच या सुरक्षा उल्लंघनों का नुकसान भयावह हो सकता है।
 
-Cybersecurity is everyone's job and it starts with taking all the right precautions and making sure you're using safe methodologies.
+साइबर सुरक्षा हर किसी का काम है और यह सभी सही सावधानी बरतने के साथ शुरू होता है और सुनिश्चित करता है कि आप सुरक्षित तरीके का उपयोग कर रहे हैं।
 
 
  {{<tweet id="1324380426090270721">}}

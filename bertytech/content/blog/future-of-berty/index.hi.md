@@ -1,6 +1,6 @@
 ---
 author: zooma
-title: "How do we imagine the future?"
+title: "हम भविष्य की कल्पना कैसे करते हैं?"
 date: 2020-07-27
 image: "future-berty.jpg"
 categories:
@@ -11,101 +11,101 @@ tags:
 description: "At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project."
 ---
 
-# Berty: How do we imagine the future?
+# बर्टी: हम भविष्य की कल्पना कैसे करते हैं?
 
-*At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project.*
+*बर्टी में, हमारे पास क्रिस्टल बॉल नहीं है, और दुर्भाग्य से, हम अगले जीतने वाली लॉटरी संख्या नहीं जानते हैं। हालाँकि, हम अपने अंतर्ज्ञान का पालन करते हैं, और इनसे हमें कुछ साल पहले बर्टी परियोजना शुरू करने का मौका मिला।*
 
-We are part of those who have lived all our life with the Internet and with the new modern means of communication. They are an integral part of our daily lives and are anchored in our habits.
+हम उन लोगों का हिस्सा हैं जिन्होंने इंटरनेट के साथ और संचार के नए आधुनिक साधनों के साथ अपना सारा जीवन बिताया है। वे हमारे दैनिक जीवन का अभिन्न अंग हैं और हमारी आदतों में शामिल हैं।
 
-We are part of those who always try to remain positive, active, and wish to see the glass half full. However, many signals have alerted us and made us think about the future of the world, and particularly that of communications.
+हम उन लोगों का हिस्सा हैं जो हमेशा सकारात्मक, सक्रिय रहने की कोशिश करते हैं, और ग्लास को आधा भरा देखना चाहते हैं। हालांकि, कई संकेतों ने हमें सतर्क कर दिया है और हमें दुनिया के भविष्य और विशेष रूप से संचार के बारे में सोचने के लिए मजबूर कर दिया है।
 
 
-## How do we see the world of communications in 5 years?
-We very sincerely believe that great revolutions will take place, and may already be in the making. They are technical, technological, but also cultural revolutions and these are still very confidential as they are just beginning their way to the general public.
+## हम 5 साल में संचार की दुनिया को कैसे देखते हैं?
+हम बहुत ईमानदारी से मानते हैं कि महान क्रांतियां होंगी, और पहले से ही बनाने में हो सकती हैं। वे तकनीकी, प्रौद्योगिकी हैं, लेकिन सांस्कृतिक क्रांतियां भी हैं और ये अभी भी बहुत गोपनीय हैं क्योंकि वे अभी आम जनता के लिए अपना रास्ता बना रहे हैं।
 
-To make a comparison, we think that this period is comparable to the birth of the Internet. In the beginning, TCP/IP protocols were reserved for experts, enthusiasts, and the lucky ones who had the tools. Among the first major Internet players, very few have survived and are still there today.  When new players arrived, they imposed themselves for one simple reason: they responded to a need.
+तुलना करने के लिए, हम सोचते हैं कि यह अवधि इंटरनेट के जन्म के लिए तुलनीय है। शुरुआत में, टीसीपी / आईपी प्रोटोकॉल विशेषज्ञों, उत्साही लोगों और भाग्यशाली लोगों के लिए आरक्षित थे जिनके पास उपकरण थे। पहले प्रमुख इंटरनेट खिलाड़ियों में, बहुत कम बच गए हैं और आज भी हैं।  जब नए खिलाड़ी आए, तो उन्होंने खुद को एक साधारण कारण के लिए लगाया: उन्होंने एक आवश्यकता का जवाब दिया।
 
 ![](https://i.imgur.com/cgqbLJA.jpg)
 
-Over the past few years, we have been moving in a direction that suggests to governments around the world that they need to impose mass surveillance tools. Surveillance drones, surveillance cameras, surveillance of communication networks, various liberticidal laws... We believe that this battle of surveillance is one of the crucial issues for our future democracies.
+पिछले कुछ वर्षों में, हम एक ऐसी दिशा में आगे बढ़ रहे हैं जो दुनिया भर की सरकारों को सुझाव देती है कि उन्हें बड़े पैमाने पर निगरानी उपकरण लगाने की आवश्यकता है। निगरानी ड्रोन, निगरानी कैमरे, संचार नेटवर्क की निगरानी, ​​विभिन्न स्वतंत्रता कानून... हम मानते हैं कि निगरानी की यह लड़ाई हमारे भविष्य के लोकतंत्रों के लिए महत्वपूर्ण मुद्दों में से एक है।
 
-Leaving it in the hands of private corporations and governments is not an option for us.
-
-
+इसे निजी निगमों और सरकारों के हाथों में छोड़ना हमारे लिए कोई विकल्प नहीं है।
 
 
-### Our vision is that of an intuition that these needs have changed.
-For half a decade now, people around the world have observed that the power of the most prominent players on the Internet could be a real problem, with severe economic consequences, political crises, and real dangers for democracies.
 
-The fact is that today, in 2020, even if people have been made aware of the risks of this data centralization, to date, no reliable technical response is provided by civil society, nor democratized throughout the world.
+
+### हमारी दृष्टि एक अंतर्ज्ञान है कि ये जरूरतें बदल गई हैं।
+अब आधे दशक के लिए, दुनिया भर के लोगों ने देखा है कि इंटरनेट पर सबसे प्रमुख खिलाड़ियों की शक्ति एक वास्तविक समस्या हो सकती है, गंभीर आर्थिक परिणामों, राजनीतिक संकटों और लोकतंत्रों के लिए वास्तविक खतरों के साथ।
+
+तथ्य यह है कि आज, 2020 में, भले ही लोगों को इस डेटा केंद्रीकरण के जोखिमों के बारे में जागरूक किया गया हो, आज तक, नागरिक समाज द्वारा कोई विश्वसनीय तकनीकी प्रतिक्रिया नहीं दी गई है, और न ही दुनिया भर में लोकतांत्रित किया गया है।
 
 ![](https://i.imgur.com/cy8Aw0P.jpg)
 
 
-What we think at Berty is that our societies will observe new needs emerging. Anonymity, privacy, data protection, and communication is one of the significant issues of our century. If it is still poorly distinguished by the general public, it could become the primary concern in the coming years. To meet them, we will have to know how to promote them, but above all, we will need tools and services that mark a radical change from their predecessors.
+बर्टी में हम जो सोचते हैं, वह यह है कि हमारा समाज उभरती नई जरूरतों का पालन करेगा। गुमनामी, गोपनीयता, डेटा सुरक्षा और संचार हमारी शताब्दी के महत्वपूर्ण मुद्दों में से एक है। यदि यह अभी भी सामान्य जनता द्वारा खराब रूप से प्रतिष्ठित है, तो यह आने वाले वर्षों में प्राथमिक चिंता बन सकता है। उनसे मिलने के लिए, हमें यह जानना होगा कि उन्हें कैसे बढ़ावा देना है, लेकिन इन सबसे ऊपर, हमें ऐसे उपकरणों और सेवाओं की आवश्यकता होगी जो अपने पूर्ववर्तियों से आमूल-चूल परिवर्तन को चिह्नित करें।
 
-Our intuition leads us to believe that it is time for a new protocol to emerge, complementing the Internet and current communications networks with an independent, neutral, and autonomous infrastructure.
+हमारा अंतर्ज्ञान हमें विश्वास दिलाता है कि यह एक नए प्रोटोकॉल के उभरने का समय है, जो इंटरनेट और वर्तमान संचार नेटवर्क के पूरक हैं, एक स्वतंत्र, तटस्थ और स्वायत्त बुनियादी ढांचे के साथ
 
-## Yes, it is ambitious. Wasn't Internet ambitious?
+## हां, यह महत्वाकांक्षी है। क्या इंटरनेट महत्वाकांक्षी नहीं था?
 
-It will not be enough to be an Internet giant or even a start-up from the same incubators. It will be necessary to make a total break with the current Internet paradigm by offering a tool of collective interest, responding to a real and urgent need, and this in a disinterested way. It will be necessary to prove to its users that they are not mere consumers, but that they are both members of a community and actors of a common project.
+यह एक इंटरनेट विशाल या एक ही इन्क्यूबेटरों से एक स्टार्ट-अप बनने के लिए पर्याप्त नहीं होगा। यह जरूरी होगा सामूहिक रुचि के एक उपकरण की पेशकश करके वर्तमान इंटरनेट प्रतिमान के साथ कुल ब्रेक करने के लिए, एक वास्तविक और तत्काल आवश्यकता का जवाब देना, और यह एक उदासीन तरीके से। यह अपने उपयोगकर्ताओं को साबित करने के लिए आवश्यक होगा कि वे केवल उपभोक्ता नहीं हैं, लेकिन वे दोनों एक समुदाय के सदस्य हैं और एक आम परियोजना के अभिनेता हैं।
 
-A community-led project can be far more powerful than any multinational corporation. When it responds to a real need in a structured and organized way, a community can push the impossible limits.
+एक समुदाय के नेतृत्व वाली परियोजना किसी भी बहुराष्ट्रीय निगम की तुलना में कहीं अधिक शक्तिशाली हो सकती है। जब यह एक संरचित और संगठित तरीके से वास्तविक आवश्यकता का जवाब देता है, तो एक समुदाय असंभव सीमाओं को धक्का दे सकता है।
 
-We believe that this protocol should be open, free, and irreversibly belong to humanity. That is to say that everyone will have the inalienable right to use it, rework it, audit it, and verify its specificities.
+हमारा मानना ​​है कि यह प्रोटोकॉल खुला, स्वतंत्र होना चाहिए और अपरिवर्तनीय रूप से मानवता का होना चाहिए। कहने का तात्पर्य यह है कि सभी के पास इसका उपयोग करने का अयोग्य अधिकार होगा, इसे फिर से काम करना, इसकी ऑडिट करना और इसकी विशिष्टताओं को सत्यापित करना।
 
-### It is here that the notion of "common" is paramount.
-It is not a product or a service but a tool available to all. Does the Alphabet belong to a company? Can the Alphabet be banned or censored? No, and this is why Berty is imagined and designed with the idea that it can be used by everyone, integrated into an infinite number of applications.
+### यह यहां है कि "आम" की धारणा सर्वोपरि है।
+यह कोई उत्पाद या सेवा नहीं है, बल्कि सभी के लिए उपलब्ध एक उपकरण है। क्या वर्णमाला किसी कंपनी की है? क्या वर्णमाला को प्रतिबंधित या सेंसर किया जा सकता है? नहीं, और यही कारण है कि बर्टी की कल्पना की गई है और इसे इस विचार के साथ डिज़ाइन किया गया है कि इसे सभी के द्वारा उपयोग किया जा सकता है, जिसे कई अनंत अनुप्रयोगों में एकीकृत किया गया है।
 
-If we are working so hard on the Berty protocol, we believe that a new standard must emerge as soon as possible and that it must be gradually integrated into tomorrow's ecosystem by proving its robustness.
+अगर हम बर्टी प्रोटोकॉल पर इतनी मेहनत कर रहे हैं, हम मानते हैं कि एक नया मानक जल्द से जल्द उभरना चाहिए और इसकी मजबूती को साबित करके इसे कल के पारिस्थितिकी तंत्र में धीरे-धीरे एकीकृत किया जाना चाहिए।
 
-Like an alphabet, it takes time for it to spread everywhere. Then, little by little, its use becomes routine, and tools allow you to stop paying attention to it and concentrate on the rest.
+एक वर्णमाला की तरह, इसे हर जगह फैलने में समय लगता है। फिर, थोड़ा-थोड़ा करके, इसका उपयोग नियमित हो जाता है, और उपकरण आपको इस पर ध्यान देना बंद करने और बाकी पर ध्यान केंद्रित करने की अनुमति देते हैं।
 
 ![](https://i.imgur.com/BdcsgKG.jpg)
 
 
-At the dawn of a world that seems to have been undergoing stress tests for several years, we believe that the need for a new tool will grow and that it is now urgent to prepare for this radical break with centralized systems. Once this protocol is open and available, we believe that the majority of mainstream applications will no longer be able to assume commercially not to use it.
+ऐसा लगता है कि दुनिया में कई वर्षों से तनाव परीक्षण चल रहा है, हम मानते हैं कि एक नए उपकरण की आवश्यकता बढ़ेगी और केंद्रीकृत प्रणालियों के साथ इस कट्टरपंथी विराम के लिए तैयारी करना अब जरूरी है। एक बार जब यह प्रोटोकॉल खुला और उपलब्ध हो जाता है, तो हम मानते हैं कि मुख्यधारा के अधिकांश अनुप्रयोग अब व्यावसायिक रूप से इसका उपयोग नहीं करने के लिए मान नहीं पाएंगे।
 
-In 2010, a French cryptographic engineer specializing in the interception of communications, and the first director of the hacking section of the DGSE (*(French Foreign Intelligence Services)*), Bernard Barbier stated: **"The Internet was not designed to be secure"**.
-
-
-
-The introduction of technologies such as BLE (Bluetooth Low Energy) will create new uses and new applications using all forms of devices. Since the telephone is already ubiquitous worldwide, there is no doubt that they will be one of the components of tomorrow's networks.
-
-The user will be used to manage multiple devices, multiple accounts, and cryptography will have taken a turn based on the principles of Zero-Knowledge.
-
-It is this same vision that motivates us today to work on an off-line first protocol.
-
-We believe that developers around the world will see a keen interest in integrating our work into their applications, making secure communications accessible to citizens across the globe.
-
- We believe that developers around the world will see a keen interest in integrating our work into their applications, making secure communications accessible to citizens across the globe.
-
-Whether it is national institutions, public or private organizations, today's consumer applications, or the applications that will revolutionize the Internet tomorrow, they will have the opportunity to integrate the Berty protocol.
+2010 में, एक फ्रेंच क्रिप्टोग्राफिक इंजीनियर संचार के अवरोधन में विशेषज्ञता, और DGSE के हैकिंग अनुभाग के पहले निदेशक(*(फ्रेंच विदेशी खुफिया सेवाएँ)*), **बर्नार्ड बार्बियर ने कहा: "इंटरनेट को सुरक्षित करने के लिए डिज़ाइन नहीं किया गया था "**.
 
 
 
+BLE (ब्लूटूथ लो एनर्जी) जैसी प्रौद्योगिकियों की शुरूआत सभी प्रकार के उपकरणों के उपयोग से नए उपयोग और नए अनुप्रयोगों का निर्माण करेगी। चूंकि टेलीफोन दुनिया भर में पहले से ही सर्वव्यापी है, इसमें कोई संदेह नहीं है कि वे कल के नेटवर्क के घटकों में से एक होंगे।
 
-## What could happen?
+उपयोगकर्ता का उपयोग कई उपकरणों, कई खातों को प्रबंधित करने के लिए किया जाएगा, और क्रिप्टोग्राफी ने शून्य-ज्ञान के सिद्धांतों के आधार पर एक मोड़ लिया होगा।
 
-### Beginning of a crisis that lasts over time.
-- The COVID crisis has installed in people's minds the possibility that our societies could be paralyzed and destabilized at different levels: economic, political, and cultural.  For the first time in history, a whole generation is experiencing a massive "pause" in activities, isolation. It has to rethink its relationship to the globalized world or urban space.
+यह वही दृष्टि है जो आज हमें एक ऑफ-लाइन प्रथम प्रोटोकॉल पर काम करने के लिए प्रेरित करती है।
+
+हम मानते हैं कि दुनिया भर के डेवलपर्स हमारे काम को अपने अनुप्रयोगों में एकीकृत करने में गहरी दिलचस्पी दिखाते हैं, जिससे दुनिया भर में नागरिकों के लिए सुरक्षित संचार सुलभ हो जाता है।
+
+ हम मानते हैं कि दुनिया भर के डेवलपर्स हमारे काम को अपने अनुप्रयोगों में एकीकृत करने में गहरी दिलचस्पी दिखाते हैं, जिससे दुनिया भर में नागरिकों के लिए सुरक्षित संचार सुलभ हो जाता है।
+
+चाहे वह राष्ट्रीय संस्थाएं हों, सार्वजनिक या निजी संगठन, आज के उपभोक्ता अनुप्रयोग, या ऐसे अनुप्रयोग जो कल इंटरनेट पर क्रांति लाएंगे, उनके पास बेरी प्रोटोकॉल को एकीकृत करने का अवसर होगा।
+
+
+
+
+## क्या हो सकता है?
+
+### एक संकट की शुरुआत जो समय के साथ जो समय के साथ रहती है।
+- COVID संकट ने लोगों के दिमाग में इस संभावना को स्थापित किया है कि हमारे समाज को विभिन्न स्तरों पर लकवाग्रस्त और अस्थिर किया जा सकता है: आर्थिक, राजनीतिक और सांस्कृतिक स्तर।  इतिहास में पहली बार, एक पूरी पीढ़ी गतिविधियों, अलगाव में बड़े पैमाने पर "विराम" का अनुभव कर रही है। इसे वैश्विक दुनिया या शहरी अंतरिक्ष के साथ अपने संबंधों पर पुनर्विचार करना होगा।
 
 ![](https://i.imgur.com/tP2lm76.jpg)
 
 
-### Explosive context & global conflagration.
-- An extremely tense, even explosive, political context, both within states and at the geopolitical level, presenting as legitimate a significant increase in surveillance tools. The loss of confidence in institutions, states, or even the most extensive web platforms could lead to citizens' behavior changes. It could emerge in many countries and fester, taking the form of riots, social protests, and civil wars. _Examples of signals: Yellow Vests, Black Live Matters, Hong Kong, Chile,..._
+### विस्फोटक संदर्भ; वैश्विक टकराव।
+- एक अत्यंत तनावपूर्ण, यहां तक ​​कि विस्फोटक, राजनीतिक संदर्भ, दोनों राज्यों के भीतर और भू राजनीतिक स्तर पर, निगरानी उपकरणों में उल्लेखनीय वृद्धि के रूप में प्रस्तुत करते हैं। संस्थानों, राज्यों या यहां तक ​​कि सबसे व्यापक वेब प्लेटफार्मों में आत्मविश्वास की कमी नागरिकों के व्यवहार में बदलाव ला सकती है। यह कई देशों में हो सकता है और दंगों, सामाजिक विरोध और गृहयुद्धों का रूप ले सकता है। _संकेतों के उदाहरण: येल्लो वेस्ट, ब्लैक लाइव मैटर्स, हांगकांग, चिली,..._
 
 ![](https://i.imgur.com/ufI2b9W.jpg)
 
-### Paradigm shift & Decentralization.
-- Disruptors could be disrupted.  All that would be needed would be a "killer app," bringing to the general public a direct and intuitive understanding of the interest of decentralization, both technical and political. The biggest players on the Internet could lose their place as quickly as they have reached it. From the largest online platforms that we know of, to the roles of central banks, it is impossible to observe a total replacement of these structural benchmarks of our contemporary societies.
+### प्रतिमान विस्थापन; विकेंद्रीकरण।
+- गड़बड़ी करने वालों पर कार्रवाई की जा सकती है।  जरूरत है कि एक "हत्यारा एप्लीकेशन" की जो तकनीकी और राजनीतिक दोनों ही विकेंद्रीकरण के हित की प्रत्यक्ष और सहज समझ को आम जनता तक पहुंचाएगी। इंटरनेट पर सबसे बड़े खिलाड़ी उतनी जल्दी अपनी जगह खो सकते हैं जितनी जल्दी वे उस तक पहुँचे हैं। केंद्रीय बैंकों की भूमिकाओं के बारे में हम जो सबसे बड़ा ऑनलाइन प्लेटफॉर्म जानते हैं, उससे हमारे समकालीन समाजों के इन संरचनात्मक मानदंड के कुल प्रतिस्थापन का निरीक्षण करना असंभव है।
 
-### Democratization of New Organizational Methods and Philosophies
-- The massive emergence of tools, services, and protocols ensures the sovereignty of peoples and the protection of their methods of organization, communication, exchange, and collaboration. Leading to a kind of "reboot" of systems of thought, but also to the emergence of new political movements adapted to new methods of governance and decentralized organizations.
+### नए संगठनात्मक तरीकों और दर्शन का डेमोक्रेटाइजेशन
+- उपकरण, सेवाओं और प्रोटोकॉल का बड़े पैमाने पर उभरना, लोगों की संप्रभुता और संगठन, संचार, विनिमय और सहयोग के उनके तरीकों की सुरक्षा सुनिश्चित करता है। विचारों की प्रणालियों के एक प्रकार के "रिबूट" के लिए अग्रणी हैं, बल्कि शासन के नए तरीकों और विकेंद्रीकृत संगठनों के लिए नए राजनीतिक आंदोलनों के उद्भव के लिए भी।
 
-**Bonus**
+**बोनस**
 
 ![](https://i.imgur.com/vxzcfWM.jpg)
 
-In the 1990s, an article in Newsweek explained that the Internet was not exciting and would not be practical. What is certain is that the decentralized world is still in its infancy and that it will have to take up the most critical challenge: convincing people that it is there to help them.
+1990 के दशक में, न्यूज़वीक के एक लेख ने समझाया कि इंटरनेट रोमांचक नहीं था और उपयोगी नहीं होगा। यह निश्चित है कि विकेंद्रीकृत दुनिया अभी भी अपनी प्रारंभिक अवस्था में है और इसके लिए सबसे महत्वपूर्ण चुनौती उठानी होगी: लोगों को यह विश्वास दिलाना कि यह उनकी मदद करने के लिए है।
