@@ -7,6 +7,9 @@ HUGO_OPTS ?=
 dev: $(DEPS)
 	hugo server -D -F --disableFastRender --bind=0.0.0.0 $(SERVER_OPTS)
 
+fastdev: 
+	HUGO_DISABLELANGUAGES="ar cn eo es fr hi id-id pl pt pt-br ru sl uk" hugo server -D -F
+	
 deps:
 	brew reinstall node
 	brew install hugo
