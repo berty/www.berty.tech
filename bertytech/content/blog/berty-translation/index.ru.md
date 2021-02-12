@@ -12,36 +12,36 @@ tags:
 description: "Help us to make Berty available in any language!"
 ---
 
-TL; DR: Help us to translate the Berty app & website using a platform called Crowdin. https://translate.berty.community
+TL; DR: Помогите нам перевести приложение Berty и веб-сайт, используя платформу под названием Crowdin. https://translate.berty.community
 
 
-# Why Translating?
+# Зачем переводить?
 
-## You speak English? Lucky you!
+## Вы говорите по-английски? Счастливчик!
 
-According to [Babbel](https://www.babbel.com/en/magazine/how-many-people-speak-english-and-where-is-it-spoken#:~:text=Out%20of%20the%20world's%20approximately,English%20as%20their%20first%20language.), about 360 million people speak English as their first language. And many more people read/talk English: about 20% of the world's population or 1.5 billion people. It is one of the most widely spoken languages in the world.
+Согласно [ Babbel](https://www.babbel.com/en/magazine/how-many-people-speak-english-and-where-is-it-spoken#:~:text=Out%20of%20the%20world's%20approximately,English%20as%20their%20first%20language.), около 360 миллионов человек говорят на английском как на родном языке. И еще много людей читают/говорят по-английски: около 20% населения мира или 1,5 миллиарда человек. Это один из наиболее распространенных языков в мире.
 
-This is one of the reasons why we communicate almost exclusively in English. To spread our message massively. Whereas in real life, we are Frenchies, frogs and baguette eaters (#cliché).
+Это одна из причин, почему мы общаемся почти исключительно на английском языке. To spread our message massively. Whereas in real life, we are Frenchies, frogs and baguette eaters (#cliché).
 
-However, be aware of one thing: If you read this article in its original version, i.e., in English, you are lucky! You have access to knowledge and information!
+Однако, имейте в виду: Если вы читаете эту статью в своей оригинальной версии, то есть на английском языке, вам повезло! У вас есть доступ к знаниями и информации!
 
-The other side of the coin is that 80% of the population will not have knowledge (of Berty, for example) simply because of the language.
+Другая сторона монеты заключается в том, что 80% населения не знают (к примеру, Berty) просто из-за языка.
 
-Help us to change this!
+Помогите нам изменить это!
 
-> And the good news is you don't have to be a developer!
+> И хорошая новость - вам не нужно быть разработчиком!
 
 
-# How To Contribute to Berty Translation?
+# Как внести свой вклад в перевод Berty?
 
-As Berty continues to grow, it needs to support more and more languages. Managing all that in the source code will become very hard and prone to errors. Luckily there's an easy solution to that, and it's called Crowdin!
+По мере того, как Berty продолжает расти, ему необходимо поддерживать все больше и больше языков. Управление всем этим исходным кодом станет очень сложным и подверженным ошибкам. К счастью, есть простое решение, и это называется Crowdin!
 
-## Translate with Crowdin
+## Перевод с помощью Crowdin
 
 ![](https://i.imgur.com/tlpFc46.png)
 
 
-Crowdin is an online platform that allows you to do translations through a visual interface. It is possible to designate people as translators for any natural language. After downloading the source strings, the translators can get to work. They will be notified as soon as there is something new to translate. When they are finished, approvers can begin proofreading using some of the extensive quality assurance features. It is impossible to miss a translation, as it will be clearly marked as not translated. Strings that are removed from the source file will also be removed from all translations. Translated files can be uploaded at any time and will be in precisely the same format as the source file. In other words, clean and up-to-date translation files!
+Crowdin - это онлайн-платформа, позволяющая выполнять переводы через визуальный интерфейс. It is possible to designate people as translators for any natural language. After downloading the source strings, the translators can get to work. They will be notified as soon as there is something new to translate. When they are finished, approvers can begin proofreading using some of the extensive quality assurance features. It is impossible to miss a translation, as it will be clearly marked as not translated. Strings that are removed from the source file will also be removed from all translations. Translated files can be uploaded at any time and will be in precisely the same format as the source file. In other words, clean and up-to-date translation files!
 
 Small information for developers: integration with Git repository or a CLI tool can get the source strings in Crowdin.
 
