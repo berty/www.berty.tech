@@ -1,6 +1,6 @@
 ---
 author: aeddi
-title: "Berty, Libp2p and Bluetooth Low Energy"
+title: "Berty, Libp2p и Bluetooth Low Energy"
 date: 2020-04-08
 image: "2020-04-06-Berty-blogpost-Bluetooth-Low-Energy.jpg"
 categories:
@@ -12,49 +12,49 @@ tags:
   - ipfs
 ---
 
-# Berty, Libp2p and Bluetooth Low Energy
+# Berty, Libp2p и Bluetooth Low Energy
 
-As you probably know, we are developing Berty, a peer-to-peer messaging application with no regulatory authority and no metadata collection. It aims to preserve both the anonymity and the privacy of the users.
+Как вы, вероятно, знаете, мы разрабатываем Berty, приложение для однорангового обмена сообщениями без регулирующих органов и без сбора метаданных. Оно направлено на сохранение анонимности и конфиденциальности пользователей.
 
-One of the features that we feel is essential for a peer-to-peer messaging application worthy of the name is the ability to communicate directly between devices (off-grid communication without internet access).
+Одна из функций, которая, по нашему мнению, важна для приложения однорангового обмена сообщениями, достойного такого названия, - это возможность напрямую связываться между устройствами (автономная связь без доступа в Интернет).
 
-So yes, because we are sure that most (all?) of you are interested in this use case, with Berty,  you will have the opportunity to chat with your friends in the middle of the Sahara desert! :tada:
+Так что да, потому что мы уверены, что большинство (все?) из вас заинтересованы в этом варианте использования, с Berty у вас будет возможность пообщаться с друзьями посреди пустыни Сахара! :tada:
 
-Joking aside, to celebrate the fact that our first transport allowing direct connections between devices is about to be released (:champagne:), let's retrace the long chronology of our work on the development of this feature.
+Шутки в сторону, чтобы отметить тот факт, что скоро будет выпущен наш первый транспорт, позволяющий прямые соединения между устройствами (:champagne:), давайте проследим долгую хронологию нашей работы над разработкой этой функции.
 
-## Back to 2018: Birth of the Berty project
+## Назад в 2018: Рождение проекта Berty
 
 ![Back to the Future gif](rkbQMNjvI.gif)
 
-At that time, after about a month of research split in two teams, one team testing Peer-to-Peer networking technologies, and another one experimenting with direct transport technologies - more precisely Apple MultipeerConnectivity - we agreed on implementing the following stack for our chat application:
+В то время, примерно после месяца исследований, разделенных на две команды, одна группа тестировала сетевые технологии одноранговой сети, а другая экспериментировала с технологиями прямого транспорта - точнее, Apple MultipeerConnectivity - мы договорились о реализации следующего стека для нашего чата:
 
-- A [React Native](https://reactnative.dev/) UI.
-- A monolithic [gomobile](https://github.com/golang/go/wiki/Mobile) block including a custom [go-libp2p](https://docs.libp2p.io/introduction/) network, all the cryptography management and chat intelligence (database, contacts management, sending/receiving events, etc...).
-- Two native [Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) drivers for Android and iOS bound to a libp2p transport to enable communication without internet access.
+- [React Native](https://reactnative.dev/) UI.
+- Монолитный блок [gomobile](https://github.com/golang/go/wiki/Mobile), включающий пользовательский [go-libp2p](https://docs.libp2p.io/introduction/), всё управление криптографией и интеллектуальный чат (база данных, управление контактами, отправка/получение событий и т. д.).
+- Два встроенных драйвера[Bluetooth Low Energy](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) для Android и iOS, привязанные к транспорту libp2p, чтобы обеспечить связь без доступа в Интернет.
 
-So we quickly assigned the tasks to the different members of the team according to their affinities, rolled up our sleeves and started to work seriously.
+Поэтому мы быстро распределили задачи между разными членами команды в соответствии с их интересами, засучили рукава и приступили к серьезной работе.
 
-## Bluetooth Low what?
+## Bluetooth Low что?
 
-Okay, first of all, let's recall what Bluetooth Low Energy is.
+Хорошо, для начала давайте вспомним, что такое Bluetooth Low Energy.
 
-Bluetooth is a wireless technology standard for exchanging data between electronic devices in a short range. To put it simply, we can say that there are two variants, two different standards: Bluetooth Classic (BR/EDR) and Bluetooth Low Energy (BLE).
+Bluetooth - это стандарт беспроводной технологии для обмена данными между электронными устройствами на небольшом расстоянии. Проще говоря, мы можем сказать, что существует два варианта, два разных стандарта: Bluetooth Classic (BR/EDR) и Bluetooth Low Energy (BLE).
 
-Bluetooth Classic is designed to connect one master device with up to seven slave devices. The most relevant use case with this technology is to connect a headset, keyboard and mouse to one's computer. In this case, prior pairing is required on the part of the user.
+Bluetooth Classic предназначен для соединения одного ведущего устройства с семью ведомыми устройствами. Наиболее актуальный вариант использования этой технологии - подключение к компьютеру гарнитуры, клавиатуры и мыши. В этом случае от пользователя требуется предварительное сопряжение.
 
-Bluetooth Low Energy, as its name indicates, is more energy efficient, the downside being that it offers much less bandwidth (for example: impossible to transfer audio to headphones over BLE). The two main advantages of this technology in the context of a messaging application are:
+Bluetooth Low Energy, как следует из названия, более энергоэффективен, недостатком является то, что он предлагает гораздо меньшую пропускную способность (например: невозможно передавать звук на наушники через BLE). Два основных преимущества этой технологии в контексте приложения для обмена сообщениями:
 
-- Devices can act as both master and slave at the same time, which is very peer-to-peer friendly. Above all, the maximum number of simultaneous connections is not defined in the standard. So only the device's hardware (chip) and software (OS/driver) implementations can limit the number of simultaneous participants in a conversation over BLE.
-- It does not require prior pairing. Two users can simply open their application and start communicating without having to make any additional settings.
+- Устройства могут одновременно действовать как ведущие и ведомые, что очень удобно для одноранговой сети. Прежде всего, в стандарте не определено максимальное количество одновременных подключений. Таким образом, только аппаратная (чип) и программная (ОС/драйвер) реализации устройства могут ограничивать количество одновременных участников в разговоре по BLE.
+- Это не требует предварительного сопряжения. Два пользователя могут просто открыть свое приложение и начать общение без дополнительных настроек.
 
-Knowing that, we naturally decided to choose this technology to develop our first peer-to-peer transport.
+Зная это, мы, естественно, решили выбрать эту технологию для разработки нашего первого однорангового транспорта.
 
 
-## BLE Driver for go-libp2p: R&D
+## Драйвер BLE для go-libp2p: R&D
 
-### First prototype on Darwin: EZ WIN
+### Первый прототип на Darwin: "EZ WIN"
 
-In early fall 2018, we entrusted a member of our team with the implementation of the libp2p BLE transport.
+В начале осени 2018 года мы доверили одному из членов нашей команды внедрение транспорта libp2p BLE.
 
 The APIs made available by Apple for iOS and macOS (Darwin) were very easy to use, so we decided to start with this platform and managed to write a reliable transport for [go-libp2p](https://docs.libp2p.io/tutorials/getting-started/go/) and a native BLE driver within a few weeks.
 
