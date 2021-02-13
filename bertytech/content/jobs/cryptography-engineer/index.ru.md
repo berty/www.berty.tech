@@ -1,8 +1,8 @@
 ---
-title: "Cryptography Engineer"
+title: "Инженер по криптографии"
 image_bg: paris.png
-location: Paris, FRANCE
-contract: Full time
+location: Париж, ФРАНЦИЯ
+contract: Полное время
 date: "2019-09-23T09:58:25Z"
 employmentType: FULL_TIME
 ---
