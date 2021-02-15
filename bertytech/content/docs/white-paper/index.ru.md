@@ -1,5 +1,5 @@
 ---
-title: "Белая бумага"
+title: "Официальный документ"
 Description: Заявление о видении проекта Berty
 icon: fal fa-file-alt
 color: blue
@@ -8,6 +8,6 @@ draft: true
 private: true
 ---
 
-# Белая бумага
+# Официальный документ
 
 <span class="tag yellow"><i class="fal fa-exclamation-triangle"></i>СКОРО</span>
