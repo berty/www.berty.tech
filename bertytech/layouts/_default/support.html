@@ -1,4 +1,4 @@
-{{.Scratch.Set "body-class" "page-single wh"}}
+{{.Scratch.Set "body-class" "page-single wh support-page"}}
 {{ partial "head" . }}
 
 <header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).RelPermalink }}')"{{end}}>
@@ -16,7 +16,7 @@
       <div class="row">
 
         <!-- FAQ -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="block block-wi text-center bg-white">
             <div>
               <img class="img-fluid" src="{{ ((.Resources.GetMatch `books.png`).Resize `300x`).RelPermalink }}" />
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Community -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="block block-wi text-center bg-white">
             <div>
               <img class="img-fluid" src="{{ ((.Resources.GetMatch `house.png`).Resize `300x`).RelPermalink }}" />
@@ -42,7 +42,7 @@
         </div>
 
         <!-- Contact -->
-        <div class="col-lg-4">
+        <div class="col-lg-3">
           <div class="block block-wi text-center bg-white">
             <div>
               <img class="img-fluid" src="{{ ((.Resources.GetMatch `phone.png`).Resize `300x`).RelPermalink }}" />
@@ -53,6 +53,20 @@
             </a>
           </div>
         </div>
+
+        <!-- Feature Requests -->
+        <div class="col-lg-3">
+          <div class="block block-wi text-center bg-white">
+            <div>
+              <img class="img-fluid" src="{{ ((.Resources.GetMatch `feature_requests.png`).Resize `300x`).RelPermalink }}" />
+            </div>
+            <h2>Feature Requests</h2>
+            <a class="btn btn-bty btn-blue icon-right" target="_blank" rel="noopener" href="https://vote.berty.community/">
+              Go to requests page<i class="far fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   </div>
