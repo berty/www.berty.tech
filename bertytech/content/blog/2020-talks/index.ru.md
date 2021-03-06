@@ -37,7 +37,7 @@ Finally, we had a lot of questions about our distinguishing feature: the **optio
 
 So thanks Dietrich for the intro, thanks Thomas & Benoit from Medwish, and thanks all for your great interactions!
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🔴 We are LIVE on <a href="https://twitter.com/PBWSummit?ref_src=twsrc%5Etfw">@PBWSummit</a> with <a href="https://twitter.com/Medwish_io?ref_src=twsrc%5Etfw">@Medwish_io</a> talking about <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> &amp; <a href="https://twitter.com/hashtag/decentralization?src=hash&amp;ref_src=twsrc%5Etfw">#decentralization</a> <a href="https://t.co/z8upw8YvIH">pic.twitter.com/z8upw8YvIH</a></p>&mdash; Berty Technologies (@berty) <a href="https://twitter.com/berty/status/1337069216592236551?ref_src=twsrc%5Etfw">December 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{<tweet id="1337069216592236551">}}
 
 ## WRAP UP 2020 IPFS
 
@@ -51,7 +51,7 @@ The concept was simple: Get a bunch of IPFS' interactive speakers in one (virtua
 
 Everyone had the opportunity to present either a 15min presentation or a "lightning talk" to outline the major advances of their project. We chose the second option. ⚡️
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">What a year 2020 has been! We’ve made amazing progress with our friends <a href="https://twitter.com/Textile?ref_src=twsrc%5Etfw">@Textile</a>, <a href="https://twitter.com/3boxdb?ref_src=twsrc%5Etfw">@3boxdb</a>, <a href="https://twitter.com/IPFSPinata?ref_src=twsrc%5Etfw">@IPFSPinata</a>, <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a>, and <a href="https://twitter.com/FleekHQ?ref_src=twsrc%5Etfw">@FleekHQ</a>, and more. Register here to celebrate with us tomorrow: <a href="https://t.co/8ofo3xZQrx">https://t.co/8ofo3xZQrx</a> <a href="https://t.co/LffQ8Mn3M0">pic.twitter.com/LffQ8Mn3M0</a></p>&mdash; IPFS (@IPFS) <a href="https://twitter.com/IPFS/status/1337049716115247104?ref_src=twsrc%5Etfw">December 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{{<tweet id="1337049716115247104">}}
 
 Our most significant advances in 2020 are:
 
