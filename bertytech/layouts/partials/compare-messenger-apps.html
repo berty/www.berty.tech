@@ -7,7 +7,7 @@
   Because on the English page "$_apps" also contains files from other languages.
 -->
 {{ $apps := slice }}
-{{ if ne .Site.Language "en" }}
+{{ if ne (print .Site.Language) "en" }}
   {{$apps = $_apps}}
 {{ else }}
   {{ range $_apps }}
