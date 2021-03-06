@@ -5,7 +5,7 @@
 {{ $s.Set "currentPage" . }}
 {{ $s.Set "isEnglishCopy" false }}
 {{ $englishSite := .Sites.First }}
-{{ $ignoreCompareKeys := slice "date" "lastmod" "url" }}
+{{ $ignoreCompareKeys := slice "date" "lastmod" "url" "aliases" }}
 
 {{ if ne .Lang "en" }}
   <!-- Get English page -->
