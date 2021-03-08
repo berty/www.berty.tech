@@ -1,5 +1,22 @@
 {{ $table := .Site.GetPage "/compare-table-apps" }}
-{{ $apps := sort ($table.Resources.Match "*") ".Params.weight" }}
+{{ $_apps := sort ($table.Resources.Match "*") ".Params.weight" }}
+
+<!-- 
+  Make sure to ignore the translation files,
+  by checking if there is more than 1 dot in the filename.
+  Because on the English page "$_apps" also contains files from other languages.
+-->
+{{ $apps := slice }}
+{{ if ne (print .Site.Language) "en" }}
+  {{$apps = $_apps}}
+{{ else }}
+  {{ range $_apps }}
+    {{ $app := replace .File.Path "." "___" }}
+    {{ if lt (len (findRE "___" $app)) 2 }}
+      {{ $apps = $apps | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 
 <div class="row">
   <div class="col-md-12">
