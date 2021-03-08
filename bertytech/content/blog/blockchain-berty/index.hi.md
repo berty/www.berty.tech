@@ -31,7 +31,9 @@ description: "Is Berty a blockchain?"
 
 ## ब्लॉकचेन क्या है?
 
-कोई भी नहीं चाहता है कि तकनीक की उनकी अनदेखी एक शर्मनाक समाचार खंड का विषय बन जाए, लेकिन ऐसा होता है। <iframe width="560" height="315" src="https://www.youtube.com/embed/UlJku_CSyNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark">></iframe>
+कोई भी नहीं चाहता है कि तकनीक की उनकी अनदेखी एक शर्मनाक समाचार खंड का विषय बन जाए, लेकिन ऐसा होता है। 
+
+{{< youtube id="UlJku_CSyNg" >}}
 
 (**tl;dw:***इंटरनेट क्या है? डे टाइम टॉक शो मेजबानों के पास आपके लिए कोई जवाब नहीं है, लेकिन एक कैमरा आदमी के पास हो सकता है।*)
 
