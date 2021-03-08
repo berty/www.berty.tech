@@ -23,7 +23,7 @@ Why the urgency? Read on to learn about the inception of the gomobile-ipfs proje
 
 During the development of Berty v1 (2018-2019), we were using [LibP2P](https://libp2p.io/): the underlying [IPFS](https://ipfs.io/) library provided by the [Protocol Labs](https://protocol.ai/) team to easily develop distributed applications. At the time, we chose to develop a custom Berty node that was not fully compatible with a standard IPFS node.
 
-> More info about this technical choice in this blog post: [How Berty Works](TODO)
+> More info about this technical choice in this blog post: [How Berty Works](/blog/how-berty-works-ipfs)
 
 In June 2019, we met the IPFS community during our stay at [IPFS Camp](https://berty.tech/blog/ipfs-camp/), a hacker retreat organized by [Protocol Labs](https://protocol.ai/). It was an awesome opportunity to meet a experts in the field and banter about problems and solutions in our technical and philosophical roadmap.
 
