@@ -92,6 +92,10 @@ languages:
     languageName: Ukranian
     languageCode: uk-UA
     locale: uk_UA
+  ka:
+    languageName: Georgian
+    languageCode: ka-KA
+    locale: ka_KA
 
 params:
   #useSummaryIfNoDescription: true
