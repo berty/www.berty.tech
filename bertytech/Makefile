@@ -8,7 +8,7 @@ dev: $(DEPS)
 	hugo server -D -F --disableFastRender --bind=0.0.0.0 $(SERVER_OPTS)
 
 fastdev: 
-	HUGO_DISABLELANGUAGES="ar cn eo es fr hi id-id pl pt pt-br ru sl uk ka" hugo server -D -F
+	HUGO_DISABLELANGUAGES="ar cn eo es fr hi id-id pl pt pt-br ru sl uk ka te" hugo server -D -F
 	
 deps:
 	brew reinstall node
