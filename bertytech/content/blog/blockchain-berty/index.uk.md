@@ -31,7 +31,9 @@ We'll set the record straight here, starting with a quick technical intro.
 
 ## What is a blockchain?
 
-No one wants their ignorance of technology to become the subject of an embarrassing news segment, but it does happen. <iframe width="560" height="315" src="https://www.youtube.com/embed/UlJku_CSyNg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark">></iframe>
+No one wants their ignorance of technology to become the subject of an embarrassing news segment, but it does happen.
+
+{{< youtube id="UlJku_CSyNg" >}}
 
 (**tl;dw:** *What is the internet? Daytime talk show hosts have no answers for you, but a camera guy might.*)
 
