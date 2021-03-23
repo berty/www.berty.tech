@@ -1,5 +1,7 @@
 {{ $isExternal := strings.HasPrefix .Destination "http" }}
-{{ $href := cond $isExternal .Destination (relLangURL .Destination) }}
+{{ $isMailTo := strings.HasPrefix .Destination "mailto:" }}
+{{ $isTel := strings.HasPrefix .Destination "tel:" }}
+{{ $href := cond (or (or $isExternal $isMailTo) $isTel) .Destination (relLangURL .Destination) }}
 
 <a href="{{ $href | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if $isExternal }} target="_blank" rel="noopener"{{ end }}>
   {{ .Text | safeHTML }}
