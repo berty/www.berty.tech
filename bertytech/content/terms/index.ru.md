@@ -16,17 +16,17 @@ Berty technologies - французская некоммерческая орг�
 
 ### Предупреждение
 
-Any reproduction, representation, translation, adaptation, or quotation that it is integral or partial, whatever the process, is strictly prohibited without authorization of the association Berty technologies, except cases envisaged by the article L.112-5 of the intellectual property code. The brands mentioned are the property of their respective owners. Non-contractual pictures.
+Любое воспроизведение, представление, перевод, адаптация или цитирование, которое является неотъемлемым или частичным, независимо от процесса, строго запрещено без разрешения ассоциации Berty technologies, за исключением случаев, предусмотренных статьей L.112-5 кодекса интеллектуальной собственности. Упомянутые бренды являются собственностью их владельцев. Внедоговорные изображения.
 
 ### Персональная информация
 
-You can visit our site on the Internet without having to disclose your identity or to provide any personal information about you. However, we may sometimes ask you for information to identify a support request or apply for a position. You can learn more about this subject by reading our [privacy policy](/privacy-policy).
+Вы можете посещать наш сайт в Интернете без необходимости раскрывать свою личность или предоставлять какую-либо личную информацию о себе. Однако иногда мы можем запрашивать у вас информацию, чтобы идентифицировать запрос в службу поддержки или подать заявку на вакансию. Вы можете узнать больше по этой теме, прочитав нашу [политику конфиденциальности](/privacy-policy).
 
 ### Cookies
 
-We use a third party cookie to:
+Мы используем сторонние файлы cookie, чтобы:
 
-* follow your navigation during the session to ensure the quality and safety of navigation on our website,
-* obtain anonymous statistical data of attendance regarding the use of our website.
+* следовать за вашей навигацией во время сессии, чтобы гарантировать качество и безопасность навигации на нашем сайте,
+* получить анонимные статистические данные о посещаемости нашего веб-сайта.
 
-This entity is committed to complying with the legislation in force regarding cookies / tracers and guarantees the implementation of measures to protect and secure the data collected. You can allow, block or delete these cookies installed on your computer by setting your browser options.
+Эта организация обязуется соблюдать действующее законодательство в отношении файлов cookie / трассировщиков и гарантирует принятие мер по защите и безопасности собранных данных. Вы можете разрешить, заблокировать или удалить эти файлы cookie, установленные на вашем компьютере, настроив параметры своего браузера.
