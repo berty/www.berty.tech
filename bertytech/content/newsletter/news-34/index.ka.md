@@ -1,24 +1,25 @@
 ---
 title: "Berty News #34"
 date: 2020-04-17
-aliases: ["/newsletter/weekly-34"]
+aliases:
+  - "/newsletter/weekly-34"
 ---
 
 # News #34
 
-Dearly beloved, 
+Dearly beloved,
 
 Here we are again after two weeks of unbearable waiting!
 
-It's been five weeks since lockdown was established in France. President Macron has announced a gradual return to normal as of May 11. We are a little more than halfway there. 💪 
+It's been five weeks since lockdown was established in France. President Macron has announced a gradual return to normal as of May 11. We are a little more than halfway there. 💪
 
 
 
-A quick word on the team's morale: everyone is in a good mood. We're all impatient to get out. We're dying to have a beer with you! 🍻 In the meantime, we're trying to stay focused and rushing on our MVP. It helps to speed up the clock. 
+A quick word on the team's morale: everyone is in a good mood. We're all impatient to get out. We're dying to have a beer with you! 🍻 In the meantime, we're trying to stay focused and rushing on our MVP. It helps to speed up the clock.
 
 Without further ado, here is our newsletter #34!
 
-Happy reading & take care!  
+Happy reading & take care!
 
 
 ## 🗣️ Community
@@ -35,15 +36,15 @@ And yes, it's also to answer more easily to the question _what's your difference
 
 ### Good First Issue & Help Wanted
 
-If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). 
+If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
-You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏 
+You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
 
 
 
 ## 🚀 Open Source
 
-Sometimes a picture is worth a thousand words 😍😍😍 
+Sometimes a picture is worth a thousand words 😍😍😍
 
 ![](https://i.imgur.com/sfPOeXf.png)
 
@@ -53,11 +54,11 @@ If you paid attention, you spotted that [berty/www.berty.tech](https://github.co
 
 
 
-## Multipeer Connectivity driver 
+## Multipeer Connectivity driver
 
 One piece of good news from the past two weeks is...
 
-Rémi ([D4ryl00](https://github.com/D4ryl00)) managed to establish the first communication between two devices through `Multipeer Connectivity`! The road to Bluetooth communication is open! 
+Rémi ([D4ryl00](https://github.com/D4ryl00)) managed to establish the first communication between two devices through `Multipeer Connectivity`! The road to Bluetooth communication is open!
 
 ![](https://i.imgur.com/0jtQyS9.png)
 
@@ -67,9 +68,9 @@ _You can send your encouragement/love letters to Rémi as a comment in the issue
 
 ## 📚 Blog posts
 
-Last week we published a massive blog post about Berty's experience with Libp2p and Bluetooth Low Energy (BLE). 
+Last week we published a massive blog post about Berty's experience with Libp2p and Bluetooth Low Energy (BLE).
 
-It's a long article. It explains our choices, our tests, and mistakes, our successes.  We hope you like this kind of post and that it was informative for your projects. 
+It's a long article. It explains our choices, our tests, and mistakes, our successes.  We hope you like this kind of post and that it was informative for your projects.
 
 A ton of applause for Antoine and Camille who brilliantly retraced our history!
 
@@ -85,13 +86,11 @@ For the time being and until further notice, we are canceling all our venues to 
 
 ## ✨ Mentions
 
-
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> you had me at “ No concensus, no blockchain” 😍</p>&mdash; Cale (@OneWarmSpark) <a href="https://twitter.com/OneWarmSpark/status/1246133689731428354?ref_src=twsrc%5Etfw">April 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
--- 
+--
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Libp2p, IPFS and... Bluetooth 😳<br><br>Epic dive into a couple of years of painstaking work by the <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> team to get P2P messaging working cross-platform across mobile BLE stacks.<a href="https://t.co/4OeoSpWBdV">https://t.co/4OeoSpWBdV</a> <a href="https://t.co/lpQMWSOegU">pic.twitter.com/lpQMWSOegU</a></p>&mdash; dietrich (@dietrich) <a href="https://twitter.com/dietrich/status/1248716785077161984?ref_src=twsrc%5Etfw">April 10, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 Follow us on [Twitter](https://twitter.com/berty), we have 🍪!
 
@@ -99,7 +98,7 @@ Follow us on [Twitter](https://twitter.com/berty), we have 🍪!
 
 We have decided to add the contributors in this section of each of our newsletters. This is our way of publicly thanking them for their work. Thanks to all of them! 🙏
 
-Contribution: 
+Contribution:
 
 * [@fte378](https://github.com/fte378) improved install doc (https://github.com/berty/www.berty.tech/pull/20)
 
