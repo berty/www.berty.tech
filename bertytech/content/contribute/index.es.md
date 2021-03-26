@@ -1,5 +1,5 @@
 ---
-title: "Contribute to the Berty Project"
+title: "Contribuye al projecto Berty"
 hclass: bg-blue gradient bg-contribute
 image: "berty_contribute.png"
 menu:
