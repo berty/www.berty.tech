@@ -1,6 +1,6 @@
 ---
 title: "About us"
-subtitle: We build tools to enhance communication freedom
+subtitle: コミュニケーションの自由を強化するためのツールを構築します
 hclass: bg-blue gradient bg-about
 image: "berty_about.png"
 layout: about
