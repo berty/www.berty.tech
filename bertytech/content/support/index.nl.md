@@ -1,6 +1,6 @@
 ---
-title: "Support"
+title: "Ondersteuning"
 hclass: bg-blue gradient bg-support
-layout: "support"
+layout: "ondersteuning"
 ---
 
