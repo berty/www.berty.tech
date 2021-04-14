@@ -15,53 +15,53 @@ description: Meer informatie over 2FA
 # Basic #3: Tweestapsverificatie
 
 
-Tegenwoordig wordt de toegang tot een account steeds meer gecompromitteerd. Inderdaad, er is steeds meer krachtige software voor het testen van een wachtwoord. Dus hoe beveiligt u de toegang tot uw account? Have you ever heard of multi-step or multi-factor authentication?
+Tegenwoordig wordt de toegang tot een account steeds meer gecompromitteerd. Inderdaad, er is steeds meer krachtige software voor het testen van een wachtwoord. Dus hoe beveiligt u de toegang tot uw account? Heb je ooit gehoord van multistep of multi-factor authenticatie?
 
-Je hebt het misschien niet gemerkt, maar je gebruikt waarschijnlijk al tweestapsverificatie in de fysieke wereld. Herinner je je de door je bank gegeven kaart om een transactie te bevestigen op je account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Zonder 2FA, vul je gebruikersnaam en wachtwoord in en je bent klaar. Het wachtwoord is je enige verificatiefunctie. The second factor makes your account more secure, in a nutshell.
+Je hebt het misschien niet gemerkt, maar je gebruikt waarschijnlijk al tweestapsverificatie in de fysieke wereld. Herinner je je de door je bank gegeven kaart om een transactie te bevestigen op je account? Tweestapsaanmelding of 2FA zoals deze algemeen bekend is, is een extra stap in uw noodzakelijke inlogprocedure. Zonder 2FA, vul je gebruikersnaam en wachtwoord in en je bent klaar. Het wachtwoord is je enige verificatiefunctie. De tweede factor maakt je account veiliger, kort samengevat.
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+De 2FA moet niet verward worden met de mogelijkheid om verbinding te maken met een site via uw e-mailprovider ("Verbinden met Google"-achtig). Dit is strikt genomen geen 2FA maar soms is het beter om een veilig e-mailsysteem te hebben in plaats van een "beveiligde" website. Maar dat is een ander onderwerp.
 
-## What is two-factor authentification (2FA)?
+## Wat is twee factor authentificatie (2FA)?
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
-Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism.
+Tweestapsverificatie (2FA) is een verificatiemethode waarbij een computergebruiker alleen toegang krijgt nadat hij twee of meer bewijsstukken heeft ingediend in een verificatiemechanisme.
 
-For example, if you want to log in to your email account, you will need to present an additional method and your password. This may be a code received by SMS or code on an identification application.
+Als je bijvoorbeeld wilt inloggen op je e-mailaccount, moet je een extra methode en wachtwoord presenteren. Dit kan een code zijn die door SMS of code wordt ontvangen bij een identificatie-applicatie.
 
-Usually, the first authentication method is something you know (your password, a PIN code). The second one is information you don't know (code generated especially for authentication) but which is linked to you.
+Meestal is de eerste verificatiemethode iets dat u kent (uw wachtwoord, een pincode). De tweede is informatie die je niet kent (code die vooral voor authenticatie is gegenereerd), maar die aan u is gekoppeld.
 
-It is customary to divide into several types of information:
-- 🔑 something you have (an object like a USB key)
-- 🐾 something you are (fingerprint, facial recognition)
-- 🧠 something you know (a password)
-- 📍 somewhere you are (a GPS location)
+Het is gebruikelijk om op te splitsen in verschillende soorten informatie:
+- 🔑 iets dat je hebt (een object zoals een USB-sleutel)
+- 🐾 iets dat je bent (vingerafdruk, faciale herkenning)
+- 🧠 iets dat je weet (een wachtwoord)
+- 📍 ergens u bent (GPS-locatie)
 
 
-> You can check on https://twofactorauth.org/ is a website/app support 2FA or not.
+> Je kunt https://twofactorauth.org/ bekijken is een website/app die 2FA ondersteunt of niet.
 
-## 📞 Two Factor Authentication by SMS
+## 📞 Authenticatie in twee stappen via SMS
 
 ![](https://i.imgur.com/uuqGxCp.jpg)
 
 
-The second factor in identifying yourself is a code received by SMS. This is probably the method you are most familiar with.
+De tweede factor bij de identificatie is een sms-code. Dit is waarschijnlijk de methode waarmee u het meest vertrouwd bent.
 
-The code received by SMS differs each time, so if your password is stolen, it won't be enough to go further. The code is linked to your cell phone number, which is a powerful security feature - unless you have been physically stolen or hacked by a [Sim Swapping](https://berty.tech/blog/sim-swapping/).
+De code die via SMS wordt ontvangen veranderd, dus als je wachtwoord wordt gestolen, zal het niet genoeg zijn om verder te gaan. De code is gekoppeld aan je mobiele telefoonnummer, dit is een krachtige beveiligingsfunctie - tenzij je fysiek gestolen of gehacked bent door een [Sim Swapping](https://berty.tech/blog/sim-swapping/).
 
-A significant disadvantage of this 2FA is that if the mobile network does not work or is in a region without coverage, you will not receive the code allowing you to identify yourself. Another disadvantage is if you are using connected and centralized equipment (between your tablet and mobile), you will receive the code on these devices; your login codes are as much at risk as your passwords.
+Een aanzienlijk nadeel van deze 2FA is dat als het mobiele netwerk niet werkt of zich in een regio bevindt zonder dekking, je ontvangt geen code waarmee je jezelf kunt identificeren. Een ander nadeel is dat je verbonden en gecentraliseerde apparaten gebruikt (tussen je tablet en mobiel), de code op deze apparaten ontvangt; je inlogcodes zijn zo riskant als je wachtwoorden.
 
 
-## 📱 2FA by Authentificator App:
+## 📱 2FA door Authentificator App:
 
 ![](https://i.imgur.com/YuRNDY0.jpg)
 
 
-Authentication applications provide you with the same type of service as 2FA by SMS. However, instead of receiving the codes, they are generated locally within your smartphone or tablet. So, they offer flexibility when traveling to a location without cellular service.
+Verificatietoepassingen bieden u dezelfde service als 2FA door SMS. In plaats van de codes te ontvangen, worden ze lokaal gegenereerd op uw smartphone of tablet. Ze bieden dus flexibiliteit bij reizen naar een locatie zonder mobiele dienstverlening.
 
-The operation relies on cryptographic algorithms to generate single-use passwords that integrate the notion of time (Time-based One-time Password algorithm, TOTP).
+De bewerking is afhankelijk van cryptografische algoritmen voor het genereren van eenmalige wachtwoorden die het concept van tijd (Time-based One-time Password algorithm, TOTP) integreren.
 
-The 2FA application will first generate a start key called "seed". The latter will be derived and mixed with the time and date to make a one-time code, usually valid for 30 to 60 seconds.
+De 2FA-applicatie zal eerst een startsleutel genereren genaamd "seed". Deze laatste worden afgeleid en gemengd met de tijd en datum om een eenmalige code te maken, meestal voor 30 tot 60 seconden.
 
 > 💡 Een goed ding om te weten: er zijn [wachtwoordbeheerders](https://berty.tech/blog/best-password-manager/) die TOTPs beheren.
 
@@ -73,27 +73,27 @@ The 2FA application will first generate a start key called "seed". The latter wi
 
 👉 https://krypt.co/
 
-The major drawback of 2FA applications is that if a scammer grabs your seed (either from your equipment or by hacking the server), he can compute any future code. If you log in and use the authentication application on the same equipment, your authentication codes are as much at risk as your passwords.
+Het grootste nadeel van 2FA-toepassingen is dat als een zaag je seed grijpt (van je apparatuur of door de server te hacken), hij kan elke toekomstige code berekenen. Als u inlogt en de authenticatie applicatie gebruikt op dezelfde apparatuur, lopen uw authenticatie codes evenveel gevaar als uw wachtwoorden.
 
 
-## 🗝️ FIDO U2F hardware authenticators: YubiKey and others
+## 🗝️ FIDO U2F hardware-authenticatoren: YubiKey en anderen
 
 ![](https://i.imgur.com/ZzJa77a.png)
 
 
-If you are looking for a robust solution that fits your pocket, then look no further than hardware tokens based on the U2F (Universal 2nd Factor) standard, created by the FIDO Alliance. The most famous and typical example of U2F is YubiKey, made by Yubico.
+Als je op zoek bent naar een robuuste oplossing die bij je past kijk dan niet verder dan hardware tokens gebaseerd op de U2F (Universal 2F Factor) standaard, gemaakt door de FIDO Alliantie. Het beroemdste en typische voorbeeld van U2F is YubiKey, gemaakt door Yubico.
 
-Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
+Concreet is het een klein apparaat dat de grootte van een USB-sleutel heeft die lokaal de identificatiecode genereert. Steek gewoon de sleutel in om de juiste identificatiecode te maken. Het is dus een extra stap in de echte wereld: de U2F moet fysiek samen met u zijn.
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... Hope you have saved them well. Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+Maar u zult te maken krijgen met een aantal beperkingen: u zult deze moeten kopen en het systeem wordt niet ondersteund op alle sites die al 2FA ondersteunen door SMS/applicaties. Deze 2FA vereist fysieke toegang tot de USB-poort van de machine (vergeet dus het gebruik met externe toegang zoals TeamViewer). Tot slot, als u het verliest, zult u al uw rekeningen moeten herstellen met behulp van de herstelcodes van de 2FA ... Hoop dat u ze goed hebt bewaart. Anders bent u goed om contact op te nemen met de ondersteuning van elke site om de 2FA uit te schakelen op uw accounts!
 
 
-## Closing Thoughts
+## Sluitende Gedachtes
 
-To sum up, there is not ONE perfect and unique method. If we were to recommend something to you: mix and match methods. Don't be afraid to go further than two-factor authentication, opt for multiple factor authentication (MFA). Make access to your password manager as secure as possible and activate 2FA whenever possible.
+Samenvattend: er is niet EEN perfecte en unieke methode. Als we u iets zouden aanbevelen: mix en matchmethoden. Wees niet bang om verder te gaan dan tweestapsverificatie, kies voor meerdere factor authenticatie (MFA). Maak zo veilig mogelijk toegang tot uw wachtwoordbeheerder en activeer waar mogelijk 2FA.
 
-We hope you enjoyed this article. Any ideas and comments are welcome.
+We hopen dat dit artikel u beviel. Alle ideeën en opmerkingen zijn welkom.
 
-Cheers Internet!
+Proost Internet!
 {{<tweet id="1291024965630939136">}}
 
