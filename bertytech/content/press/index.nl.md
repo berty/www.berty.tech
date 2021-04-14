@@ -1,5 +1,5 @@
 ---
-title: "Press & Media"
+title: "Pers & Media"
 type: fakepost
 hclass: bg-blue gradient bg-press
 image: "berty_press.png"
@@ -11,16 +11,16 @@ menu:
 
 {{< display_section_press path="/docs/press/press_documents" >}}
 
-### Vector logos (.svg format)
+### Vectorlogo's (.svg formaat)
 {{< display_directory_images path="/docs/press/logos_svg" class="block bg-grid padding" >}}
 
-### Images logos (.png format)
+### Afbeeldingen logo's (.png formaat)
 {{< display_directory_images path="/docs/press/logos_png" class="block bg-grid padding" >}}
 
-### Screenshots
+### Schermafbeeldingen
 {{< display_directory_images path="/docs/press/screenshots" class="" >}}
 
-### Photos
+### Foto's
 {{< display_directory_images path="/docs/press/photos" class="block" >}}
 
-Photos by [Laura Gilli](https://www.lauragilli.com/)
+Foto's door [Laura Gilli](https://www.lauragilli.com/)
