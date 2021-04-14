@@ -16,7 +16,7 @@ description: This week, no news[letter] is good news! We participated in two imp
 # TALKS AT PBWS & IPFS WRAP UP 2020
 
 
-This week, no news[letter] is good news! We participated in two important events and were pretty busy. We'll give you a rundown here, as we recap how these exchanges have helped to move our mission forward in a much-changed social landscape.
+Deze week, geen nieuws[brief] is goed nieuws! We hebben deelgenomen aan twee belangrijke evenementen en hadden het behoorlijk druk. We zullen u hier een overzicht geven, als we bedenken hoe deze uitwisselingen hebben bijgedragen aan het bevorderen van onze missie in een sterk veranderd sociaal landschap.
 
 
 ## Paris Blockchain Week Summit 2020
@@ -25,7 +25,7 @@ This week, no news[letter] is good news! We participated in two important events
 
 
 
-Thanks to Dietrich from IPFS (Hi if you read us!), we were invited to talk about decentralization, Web3, and IPFS with Medwish.io at the **Paris Blockchain Week Summit (PBWS)**. We had already met the Medwish team at the [IPFS Camp in Barcelona](https://berty.tech/blog/ipfs-camp/) and were stoked to reunite.
+Dankzij Dietrich van IPFS (Hi als u ons leest!), werden we uitgenodigd om te praten over decentralisatie, Web3 en IPFS met Medwish.io op de **Parijs Blockchain Week Top (PBWS)**. We had already met the Medwish team at the [IPFS Camp in Barcelona](https://berty.tech/blog/ipfs-camp/) and were stoked to reunite.
 
 Important questions were raised in the hourlong+ exchange, pushing us to understand and clarify our position in the community. Crucially (and obviously): **"Why isn't Berty based on blockchain?"**. We confirmed that (1) we're not, but (2) we haven't ruled out or lost touch with these technologies. For example, we want to implement a DAO - which is based on a blockchain (for more info, read [DAO for Berty?](https://berty.tech/blog/dao-berty-1/)).
 
