@@ -1,6 +1,6 @@
 ---
 title: "Zero-Push"
-description: Zero-Push is a Berty component used to send push notifications from a server without a central token repository.
+description: Zero-Push is een Berty component die gebruikt wordt om push-meldingen te verzenden van een server zonder een centrale token repository.
 icon: fab fa-github
 color: black
 display_nav: false
@@ -12,7 +12,7 @@ menu:
 
 # Zero-Push
 
-**Zero-Push is a Berty component used to send push notifications from a server without a central token repository.**
+**Zero-Push is een Berty component die gebruikt wordt om push-meldingen te verzenden van een server zonder een centrale token repository.**
 
 ## Source code
 Source code is available on [github](https://github.com/berty/zero-push)
