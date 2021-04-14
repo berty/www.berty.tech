@@ -1,5 +1,5 @@
 ---
-title: 'What does "decentralized" and "distributed" mean?'
+title: 'Wat betekent ''gedecentraliseerd'' en ''gedistribueerd''?'
 id: 2
 private: true
 ---
