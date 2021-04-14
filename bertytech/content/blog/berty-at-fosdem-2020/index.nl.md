@@ -11,7 +11,7 @@ tags:
   - security
   - cybersecurity
   - privacy
-description: Let's meet at FOSDEM 2020 in Brussel!
+description: Ontmoet ons op FOSDEM 2020 in Brussel!
 ---
 
 # Ontmoet ons op FOSDEM 2020 in Brussel!
