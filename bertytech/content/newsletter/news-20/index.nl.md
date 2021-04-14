@@ -1,35 +1,35 @@
 ---
-title: "Berty Weekly #20"
+title: "Berty Wekelijks #20"
 date: 2019-11-08
 aliases:
   - "/newsletter/weekly-20"
 ---
 
-# Current Work
+# Huidig werk
 
 ## Tech:
 
 ### OrbitDB
-Guillaume finished writing the OrbitDB custom access controller and the store for the members of the Berty groups.
+Guillaume heeft het schrijven van de aangepaste toegang controller en de opslag voor de leden van de Berty groepen voltooid.
 
 ### Berty Protocol
-Antoine, Guillaume & Manfred continue working on the protocol and they have finished defining the missing bertyprotocol protobuf messages.
+Antoine, Guillaume & Manfred blijven werken aan het protocol en ze zijn klaar met het definiëren van de ontbrekende bertyprotocol protobuf berichten.
 
 ## Ops:
 
-### Paris P2P #3
-This week (just like every first Wednesday of the month) we went to [ParisP2P](https://p2p.paris/en/event/monthly-3/). It's really fantastic to meet passionate and exciting people every time.  P2P + Beer 🍺 + Pizza 🍕 is the perfect combo <3
+### Parijs P2P #3
+Deze week (net als elke eerste woensdag van de maand) gingen we naar [ParisP2P](https://p2p.paris/en/event/monthly-3/). Het is echt fantastisch om elke keer gepassioneerde en spannende mensen te ontmoeten.  P2P + Bier 🍺 + Pizza 🍕 is de perfecte combo <3
 
-We would like to take this opportunity to thank all the participants for their constructive feedback on Berty.
+We willen van deze gelegenheid gebruik maken om alle deelnemers te bedanken voor hun constructieve feedback over Berty.
 
-Thank you, ParisP2P, and see you next month!
+Dank u wel, ParisP2P, en zie u volgende maand!
 
 {{< tweet id="1192148421513302021" >}}
 
 ### Assets
-As we mentioned last week, Alex created a new repo with all our assets (logos, animations) and it's now available directly on our website</br> 👉 https://assets.berty.tech/
+Zoals we vorige week al noemden, heeft Alex een nieuwe repo gemaakt met al onze activa (logo's, animaties) en het is nu direct beschikbaar op onze website</br> 👉 https://assets.berty.tech/
 
 
-## Weekly Sync
+## Wekelijkse Sync
 
-Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-11-08--staff-team-weekly-sync.md)
+Lees onze [wekelijkse synchronisatie](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-11-08--staff-team-weekly-sync.md)
