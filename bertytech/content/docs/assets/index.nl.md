@@ -1,6 +1,6 @@
 ---
 title: "Assets"
-description: '🎨 Berty logos, icons, pictures, text, etc'
+description: '🎨 Berty logos, iconen, afbeeldingen, tekst, etc'
 icon: fab fa-github
 color: black
 open: true
@@ -11,7 +11,7 @@ menu:
 
 # Assets
 
-**🎨 Berty logos, icons, pictures, text, etc**
+**🎨 Berty logos, iconen, afbeeldingen, tekst, etc**
 
 ## Source code
 Source code is available on [github](https://github.com/berty/assets)
