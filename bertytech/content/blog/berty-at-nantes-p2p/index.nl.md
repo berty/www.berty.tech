@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: "Meet us at Nantes P2P #0!"
+title: "Ontmoet ons op Nantes P2P #0!"
 date: 2020-02-26
 #image: "nantes_cover_3.jpg"
 image: "nantes_cover_3.jpg"
@@ -12,26 +12,26 @@ tags:
   - technical
 ---
 
-# Berty will be at the Nantes P2P!
+# Berty zal zijn bij de Nantes P2P!
 
-As the readers of our newsletter and this blog, you are aware that we are co-organizers of the [FranceP2P](https://francep2p.org/) movement and, more precisely, of the Parisian branch [ParisP2P](https://p2p.paris/en/). These events are intended to gather all the things around _peer-to-peer_, including cryptography communities in various events (monthly meetings and festivals).
+Als lezers van onze nieuwsbrief en blog, weet u dat we co-organisatoren zijn van de [FranceP2P](https://francep2p.org/) beweging en preciezer gezegd van de Parisian branch [ParisP2P](https://p2p.paris/en/). Deze evenementen zijn bedoeld om alle dingen rond _peer-to-peer_te verzamelen, inclusief cryptografie gemeenschappen in verschillende evenementen (maandelijkse vergaderingen en festivals).
 
-These events are decentralized (forked in different cities) and operate locally. There is already a branch in Lyon, and here is the new one now: **Nantes**.
+Deze evenementen zijn gedecentraliseerd (overgenomen in verschillende steden) en werken lokaal. Er is al een branch in Lyon, en hier is de nieuwe nu: **Nantes**.
 
-Our friends from [CleverCloud](https://www.clever-cloud.com/en/) are currently bootstrapping this events. We are more than happy to support them opening this new chapter, Nantes P2P. So we have decided to go there for the zero edition. You will be able to meet Manfred, our founder, Antoine (our R&D lead), Guillaume (who works on the Berty Protocol part) and Pierre (our operations manager). Pierre has been based in Nantes for a year and a half now, full-time remote working. This is an opportunity for him to get closer to the Nantes peer-to-peer communities.
+Onze vrienden van [CleverCloud](https://www.clever-cloud.com/en/) zijn momenteel bezig deze evenementen op te starten. We steunen hen van harte het openen van dit nieuwe hoofdstuk, Nantes P2P. Daarom hebben wij besloten er voor de nuleditie heen te gaan. U zult Manfred, onze oprichter, Antoine (onze R&D lead), Guillaume (die werkt aan het deel van het Berty Protocol) en Pierre (onze operationele manager) kunnen ontmoeten. Pierre is nu anderhalf jaar gevestigd in Nantes, fulltime remote werk. Dit is een kans voor hem om dichter bij de peer-to-peer gemeenschappen van Nantes te komen.
 
-And for us, it's an opportunity to connect with "friendly companies" such as [CleverCloud](https://www.clever-cloud.com/en/) and [Owkin](https://owkin.com/).
+En voor ons is het een kans om te verbinden met "vriendelijke bedrijven" zoals [CleverCloud](https://www.clever-cloud.com/en/) en [Owkin](https://owkin.com/).
 
-To sum it up, we can't wait!
+Om het samen te vatten, kunnen we niet wachten!
 
-Yes, yes, you guys are waiting for the information:
+Ja, ja, jullie wachten op de informatie:
 
-- Location: Le Palace (Nantes)
-- Date: March 13, 2020
+- Locatie: Le Palace (Nantes)
+- Datum: 13 maart 2020
 - Agenda: https://github.com/francep2p/community/issues/69
 
-We hope to see you there if you are from Nantes! If you are not from Nantes, you can retweet this message to your friends or tell your friends, it will help us a lot to make the event known.
+We hopen u daar te zien als u van Nantes komt! Als je niet uit Nantes komt, kun je dit bericht aan je vrienden aanpassen of je vrienden vertellen. het helpt ons veel om het evenement bekend te maken.
 
  {{<tweet id="1230417314362904576">}}
 
-We wish a lot of success to this chapter! 
+Wij wensen dit hoofdstuk veel succes! 
