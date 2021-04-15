@@ -5,7 +5,7 @@ date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 categories:
-  - free-speech
+  - liberté d'expression
 tags:
   - sécurité
   - confidentialité

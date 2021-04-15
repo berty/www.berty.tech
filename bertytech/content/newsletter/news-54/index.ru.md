@@ -1,54 +1,55 @@
 ---
-title: "Berty News #54"
+title: "Новости Berty #54"
 date: 2021-02-12
-aliases: ["/newsletter/weekly-54"]
+aliases:
+  - "/newsletter/weekly-54"
 ---
 
-# News #54
+# Новость №54
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
-We hope you are doing well!
+Надеемся, у вас всё хорошо!
 
-Let's get it out of the way: How's your Bitcoin? We take this opportunity to place an ad: If anyone has the ear of Elon Musk, tell him to invest in Berty. Not necessarily 1.5 billion, but a few thousand-to-million (yanno, pocket change) would be welcome. 
+Давайте разберемся: как ваш биткойн? Мы пользуемся этой возможностью, чтобы разместить объявление: Если кто-то слышит Илона Маска, посоветуйте ему инвестировать в Berty. Не обязательно 1,5 миллиарда, но несколько тысяч к миллионам будут приветствоваться.
 
-A short word about the team as usual: Everybody's doing well, working hard, firing on all cylinders, etc. Check out the highlights below for a breakdown!
+Коротко о команде, как обычно: у всех всё хорошо, много работают, работают на полную мощность и т.д.  Посмотрите основные моменты ниже для перерыва!
 
-Don't forget your Valentine this weekend. 💕
+Не забудьте День Святого Валентина в эти выходные. 💕
 
-Cheers!
+Ура!
 
 
 ## 🚀 Open Source
 
-* 🎁 New app features:
-    * Berty's now running on gomobile-IPFS nodes! (https://github.com/ipfs-shipyard/gomobile-ipfs/pull/61)
-* 💻 New development features:
-    * Flipper logging tool
-    * New `Member.IsCreator` field in the messenger API to make life easier for non-Berty apps using our library (https://github.com/berty/berty/pull/3000)
-    * Multi-account debugging tool that inspects the file-system (https://github.com/berty/berty/pull/3013)
-* 🐜 Bug fixes:
-    * UI glitches from latest beta test sessions
-    * Multi-account mode regression after last release
-* 🔨 In progress:
-    * Generic bluetooth driver
+* 🎁 Новые возможности приложения:
+    * Berty теперь работает на узлах gomobile-IPFS! (https://github.com/ipfs-shipyard/gomobile-ipfs/pull/61)
+* 💻 Новые возможности разработки:
+    * Инструмент ведения логов
+    * Новое поле `Member.IsCreator` в API обмена сообщениями, чтобы упростить жизнь сторонним приложениям, использующим нашу библиотеку (https://github.com/berty/berty/pull/3000)
+    * Инструмент отладки с несколькими учетными записями, который проверяет файловую систему (https://github.com/berty/berty/pull/3013)
+* 🐜 Исправления ошибок:
+    * Сбои пользовательского интерфейса из последних сессий бета-тестирования
+    * Регресс режима работы с несколькими аккаунтами после последнего выпуска
+* 🔨 В процессе:
+    * Универсальный драйвер Bluetooth
     * DNS-over-Tor
-    * Protocol stability
-    * App Extensions & Push notification
-* 🌟 Improvements:
-    * Refactor of the Tor init/uninit to improve reliability of multi-account swithing
-* 🧠 Meta:
-    * Drafted our roadmap for future Tor improvements
-    * Drafted our roadmap about how we plan to share our bluetooth drivers with the libp2p & IPFS communities
+    * Стабильность протокола
+    * Расширения приложения и Push-уведомления
+* 🌟 Улучшения:
+    * Рефакторинг Tor init/uninit для повышения надёжности переключения нескольких аккаунтов
+* 🧠 Планы:
+    * Составили план будущих улучшений Tor
+    * Составлена "дорожная карта" того, как мы планируем делиться нашими драйверами bluetooth с libp2p и сообществом IPFS
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
-### New Backers
+### Новые спонсоры
 
-You now know it by heart: **Donations allow the Berty NGO to thrive free of government + profitability + your data!** We couldn't do this without your support!
+Теперь вы знаете это наизусть: **Пожертвования позволяют неправительственной организации Berty процветать вне зависимости от правительства + прибыльности + ваших данных!** Мы не смогли бы сделать это без вашей поддержки!
 
-We'll keep recognizing y'all in future newsletters, so watch this space! 🏆
+Мы будем продолжать упомянать вас в будущих новостях, так что следите за этим пространством! 🏆
 
 * [Gruber](https://github.com/CloudGruber)
 * [Bo](https://github.com/bjeanes)
@@ -57,30 +58,30 @@ We'll keep recognizing y'all in future newsletters, so watch this space! 🏆
 * [Spencer](https://github.com/stbrody)
 * [Kalle](https://github.com/jilleJr)
 
-Thanks a million. It really means a lot for us! 🧡 
+Бесконечно благодарны. Это действительно очень много значит для нас! 🧡
 
-👉 If you want to back us as well: https://github.com/sponsors/berty
+👉 Если вы тоже хотите нас поддержать: https://github.com/sponsors/berty
 
-### Translating 
+### Перевод
 
-You can help us by translating the Berty app + website. It will be much appreciated! 
+Вы можете помочь нам, переведя приложение Berty + сайт. Мы будем очень признательны!
 
-👉 https://translate.berty.community/  
+👉 https://translate.berty.community/
 
 ![](https://i.imgur.com/T4EPaJt.png)
 
-> Think your language won't have much of an impact? Berty wants to be accessible to everyone, including those who are marginalized from mainstream media. Please help us reach them!
+> Думаете, ваш язык не окажет большого влияния? Berty хочет быть доступным для всех, в том числе для тех, кто изолирован от основных СМИ. Пожалуйста, помогите нам связаться с ними!
 
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
-If you want to help us, we have two labels on GitHub to let you know where we need you: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers. Just saying 😏
+Если вы хотите нам помочь, у нас есть две метки на GitHub, чтобы вы знали, где вы нам нужны: [**Хороший первый вопрос**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) и [ **Требуется помощь**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). Вы будете получать нашу вечную благодарность и, возможно, несколько стикеров. Просто скажите 😏
 
-## Blog Post
+## Запись в блоге
 
-* [What a crazy week!](https://berty.tech/blog/hackernews-reddit-week/) 🚀
+* [Какая сумасшедшая неделя!](https://berty.tech/blog/hackernews-reddit-week/)🚀
 
-## 💌 Mentions
+## 💌 Упоминания
 
 
 {{<tweet id="1357732170194956290">}}
@@ -88,15 +89,15 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 {{<tweet id="1359809413129863173">}}
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
-* [Paris P2P](https://p2p.paris/)
+* [Париж P2P](https://p2p.paris/)
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2021-02-08](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-02-08--staff-team-weekly-sync.md)
     * [2021-02-01](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-02-01--staff-team-weekly-sync.md)
 
