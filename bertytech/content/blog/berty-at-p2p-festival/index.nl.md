@@ -1,6 +1,6 @@
 ---
 author: camille
-title: "Throwback from the first edition of P2P Festival!"
+title: "Throwback vanaf de eerste editie van P2P Festival!"
 date: 2020-01-27
 image: "festival.png"
 video: time_laps_festival.mp4
@@ -12,19 +12,19 @@ tags:
   - security
 ---
 
-# Berty at Paris P2P Festival #0
+# Berty op Parijs P2P Festival #0
 
 
-As announced in our previous [blog post](https://berty.tech/blog/paris-p2p-festival/), we had the pleasure to co-organize the very first [Paris P2P Festival](https://p2p.paris/fr/event/festival-0/) from January 8 to 12, 2020 in Paris. This event was a true opportunity to bring together peer-to-peer enthusiasts and people curious about open source in general. These were 5 intense days of sharing, learning and chance encounters!
+Zoals aangekondigd in onze vorige [blogpost](https://berty.tech/blog/paris-p2p-festival/), We hadden het genoegen om het allereerste [Parijs P2P Festival](https://p2p.paris/fr/event/festival-0/) van 8 tot en met 12 januari 2020 in Parijs te organiseren. Dit evenement was een echte kans om peer-to-peer enthousiastelingen en mensen te verenigen die nieuwsgierig zijn naar open source in het algemeen. Dit waren 5 intense dagen van delen, leren en kans ontmoetingen!
 
-TLDR: We had a blast! 🤩
+TLDR: We hadden een geweldige tijd! 🤩
 
 
 
 
 ## P2P Festival #0
 
-![](conference.jpg) We had the pleasure to welcome 73 speakers from all over the world to cover the 96 events of the festival. Topics ranged from secure communication, knowledge sharing, participative governance and digital currencies to art and mentalism.
+![](conference.jpg) We hadden het genoegen 73 sprekers uit de hele wereld welkom te mogen heten in het kader van de 96 gebeurtenissen van het festival. Onderwerpen variëren van veilige communicatie, het delen van kennis, participatieve governance en digitale valuta's tot kunst en mentalisme.
 
 What a line-up! 🤯 Have a glimpse below 👇
 
