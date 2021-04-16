@@ -7,9 +7,9 @@ HUGO_OPTS ?=
 dev: $(DEPS)
 	hugo server -D -F --disableFastRender --bind=0.0.0.0 $(SERVER_OPTS)
 
-fastdev: 
+fastdev:
 	HUGO_DISABLELANGUAGES="ar cn eo es fr hi id-id pl pt pt-br ru sl uk ka te" hugo server -D -F
-	
+
 deps:
 	brew reinstall node
 	brew install hugo
@@ -34,7 +34,7 @@ prod-build:
 	node ./validate-amp.js
 
 .PHONY: prod-build-ipfs
-prod-build-ipfs:  
+prod-build-ipfs:
 	./pre-build.sh
 	BERTY_IPFS=true hugo --gc $(HUGO_OPTS)
 	./go-get.sh
@@ -54,8 +54,8 @@ publish.github: build
 	cd public && git push -f origin gh-pages
 
 .PHONY: amp-validator
-amp-validator: node_modules build 
-	./post-build.sh 
+amp-validator: node_modules build
+	./post-build.sh
 
 .PHONY: image-optim
 image-optim:
@@ -82,3 +82,7 @@ sync-docs:
 	  $(GOPATH)/src/berty.tech/api/bertyprotocol.proto \
 	  content/docs/protocol/.index.md-suffix \
 	  > content/docs/protocol/index.md
+
+.PHONY: install-hugo
+install-hugo:
+	go install -v --tags extended github.com/gohugoio/hugo
