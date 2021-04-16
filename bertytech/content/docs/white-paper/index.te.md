@@ -6,6 +6,12 @@ color: blue
 display_nav: false
 draft: true
 private: true
+#menu:
+#    docs:
+#        weight: 30
+#    footer_col1:
+#        name: White Paper
+#        weight: -30
 ---
 
 # White Paper

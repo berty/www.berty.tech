@@ -1,5 +1,5 @@
 ---
-title: "¿Cuáles son las ventajas que tiene Berty sobre otras aplicaciones de mensajería?"
+title: "What are the advantages of Berty compared to the other messengers?"
 id: 1
 private: true
 ---

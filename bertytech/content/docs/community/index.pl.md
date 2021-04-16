@@ -11,8 +11,8 @@ menu:
   main:
     weight: 40
 aliases:
-  - /docs/community
-url: /community
+  - /pl/docs/community
+url: /pl/community
 ---
 
 # Welcome in Berty's community

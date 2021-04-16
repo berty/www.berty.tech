@@ -10,19 +10,19 @@ display_nav: false
 draft: true
 ---
 
-# Добро пожаловать
+# Welcome
 
-## Введение
+## Introduction
 
-Berty's Network Labs стремится предоставить набор руководств, примеров кода и библиотек, чтобы помочь разработчикам более легко реализовать сеть на основе libp2p.
+Berty's Network Labs aims to provide a set of guidelines, code examples and libraries to help developers implement a libp2p-based network more easily.
 
-Этот раздел все еще находится в разработке, и в настоящее время мы предоставляем доступ только к сырой версии нашей сетевой кодовой базы.
+This section is still under construction and we are currently only giving access to a raw version of our network codebase.
 
-Наш краткосрочный и среднесрочный план - предложить следующие инструменты/библиотеки/документацию:
+Our short to medium term plan is to propose the following tools/libraries/documentation:
 
-- Пользовательский узел IPFS для мобильных платформ, цель которого лучше всего адаптироваться к ограничениям, присущим этим устройствам:
-  - Низкие ресурсы ЦП / ОЗУ / пропускной способности / батареи
-  - Частое переключение между Wi-Fi и сотовой связью
-  - Проблемы с входящим доступом в сотовом режиме
-  - Управление жизненным циклом процессов ОС: переключение фона/переднего плана, закрытие соединений и т.д.
-- Транспорт BLE для libp2p, совместимый с Darwin (iOS / macOS) и Android
+- A custom IPFS node for mobile platforms, which aims to best adapt to the constraints inherent in these devices:
+  - Low CPU / RAM / Bandwidth / Battery resources
+  - Frequent connectivity switches between Wifi and Cellular
+  - Difficulties with incoming access in cellular mode
+  - OS processes lifecycle management: background/foreground switching, connections closing, etc...
+- A BLE transport for libp2p compatible with Darwin (iOS / macOS) and Android

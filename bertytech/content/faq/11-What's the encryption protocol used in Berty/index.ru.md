@@ -1,9 +1,9 @@
 ---
-title: "Какой протокол шифрования используется в Berty?"
+title: "What's the encryption protocol used in Berty?"
 id: 11
 private: true
 ---
 
-Мы разработали собственный протокол, частично основанный на симметричном ключе Signal и который полагается на NaCl Box (Curve25519, XSalsa20 и Poly1305) и NaCl SecretBox (XSalsa20 и Poly1305).
+We developed a custom protocol partly based on the symmetric key ratchet of Signal and which rely on NaCl Box (Curve25519, XSalsa20 and Poly1305) and NaCl SecretBox (XSalsa20 and Poly1305).
 
-Дополнительную информацию можно найти в [нашем техническом документе](https://berty.tech/docs/protocol).
+For more information, you can refer to [our whitepaper](https://berty.tech/docs/protocol).

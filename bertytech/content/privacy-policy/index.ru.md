@@ -1,38 +1,38 @@
 ---
-title: "Политика конфиденциальности"
+title: "Privacy Policy"
 type: fakepost
 image_bg: "privacy.png"
 ---
 
-В Berty, доступном с https://berty.tech, одним из наших главных приоритетов является конфиденциальность наших посетителей. Этот документ Политики конфиденциальности содержит типы информации, собираемой и записываемой Berty, а также способы её использования.
+At Berty, accessible from https://berty.tech, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Berty and how we use it.
 
-Если у вас есть дополнительные вопросы или вам нужна дополнительная информация о нашей Политике конфиденциальности, не стесняйтесь обращаться к нам по электронной почте по адресу {{< obscure "contact@berty.tech" >}}
+If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at {{< obscure "contact@berty.tech" >}}
 
-### Файлы журналов
-Berty придерживается стандартной процедуры использования файлов журналов. Эти файлы регистрируют посетителей, когда они посещают веб-сайты. Все хостинговые компании делают это и являются частью аналитики хостинговых услуг. Информация, собираемая файлами журналов, включает адреса интернет-протокола (IP), тип браузера, поставщика услуг Интернета (ISP), отметку даты и времени, страницы перехода/выхода и, возможно, количество кликов. Они не связаны с какой-либо информацией, позволяющей установить личность. Целью информации является анализ тенденций, администрирование сайта, отслеживание движения пользователей на сайте и сбор демографической информации.
+### Log Files
+Berty follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
 
-### Файлы cookie и веб-маяки
-Как и любой другой сайт, Berty использует 'cookies'. Эти файлы cookie используются для хранения информации, включая предпочтения посетителей, и страниц веб-сайта, к которым посетитель обращался или посещал. Информация используется для оптимизации работы пользователей путем настройки содержимого нашей веб-страницы на основе типа браузера посетителей и/или другой информации.
+### Cookies and Web Beacons
+Like any other website, Berty uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
 
-## Политика конфиденциальности
-Вы можете ознакомиться с этим списком, чтобы найти Политику конфиденциальности для каждого из рекламных партнеров Berty. Наша Политика конфиденциальности была создана с помощью Генератора Политики конфиденциальности.
+## Privacy Policies
+You may consult this list to find the Privacy Policy for each of the advertising partners of Berty. Our Privacy Policy was created with the help of the Privacy Policy Generator.
 
-Сторонние рекламные серверы или рекламные сети используют такие технологии, как файлы cookie, JavaScript или веб-маяки, которые используются в их соответствующих рекламных объявлениях и ссылках, которые появляются на Berty и отправляются непосредственно в браузер пользователя. Когда это происходит, они автоматически получают ваш IP-адрес. Эти технологии используются для измерения эффективности их рекламных кампаний и/или для персонализации рекламного контента, который вы видите на посещаемых вами веб-сайтах.
+Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Berty, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
 
-Обратите внимание, что Berty не имеет доступа к этим файлам cookie, которые используются сторонними рекламодателями, и не контролирует их.
+Note that Berty has no access to or control over these cookies that are used by third-party advertisers.
 
-## Политика конфиденциальности третьих лиц
-Политика конфиденциальности Berty не распространяется на других рекламодателей или веб-сайты. Поэтому мы советуем вам ознакомиться с соответствующими Политиками конфиденциальности этих сторонних рекламных серверов для получения более подробной информации. Это может включать в себя их методы и инструкции о том, как отказаться от определенных вариантов. Вы можете найти полный список этих политик конфиденциальности и их ссылки здесь: Ссылки на политику конфиденциальности.
+## Third Party Privacy Policies
+Berty's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.
 
-Вы можете отключить файлы cookie в настройках вашего браузера. Чтобы узнать более подробную информацию об управлении файлами cookie в определенных веб-браузерах, ее можно найти на соответствующих веб-сайтах браузеров. Что такое Cookies?
+You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. What Are Cookies?
 
-## Детская информация
-Еще одна часть нашего приоритета - это защита детей при использовании Интернета. Мы призываем родителей и опекунов наблюдать, участвовать и/или контролировать и направлять их действия в Интернете.
+## Children's Information
+Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
 
-Berty сознательно не собирает личную информацию от детей младше 13 лет. Если вы считаете, что ваш ребенок предоставил такую информацию на нашем веб-сайте, мы настоятельно рекомендуем вам немедленно связаться с нами, и мы сделаем все возможное, чтобы незамедлительно удалить такую информацию из наших записей.
+Berty does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
 
-## Только онлайн-политика конфиденциальности
-Настоящая Политика конфиденциальности применяется только к нашей онлайн-деятельности и действительна для посетителей нашего веб-сайта в отношении информации, которую они передали и/или собирают в Berty. Эта политика не применима к любой информации, собранной в автономном режиме или по каналам, отличным от этого веб-сайта.
+## Online Privacy Policy Only
+This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Berty. This policy is not applicable to any information collected offline or via channels other than this website.
 
-## Соглашение
-Используя наш веб-сайт, вы тем самым соглашаетесь с нашей Политикой конфиденциальности и соглашаетесь с её Положениями и условиями.
+## Consent
+By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.

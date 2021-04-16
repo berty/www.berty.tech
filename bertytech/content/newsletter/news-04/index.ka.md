@@ -1,8 +1,7 @@
 ---
 title: "Berty Weekly #04"
 date: 2019-07-12
-aliases:
-  - "/newsletter/weekly-04"
+aliases: ["/newsletter/weekly-04"]
 ---
 
 ## NETWORK, BLE, GO MOBILE IPFS

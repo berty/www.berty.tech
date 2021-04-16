@@ -14,4 +14,3 @@ open_spec: true
 aosp:
 privacy_respecting: true
 ---
-

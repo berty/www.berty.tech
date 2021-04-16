@@ -4,11 +4,11 @@ description: IPFS and libp2p on Mobile, with Gomobile
 icon: fab fa-github
 color: black
 display_nav: false
-ttags: <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">Gomobile</span>
+ttags:  <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">Gomobile</span>
 open: true
 menu:
-  repos:
-    weight: 4
+    repos:
+        weight: 4
 ---
 
 # Gomobile-IPFS

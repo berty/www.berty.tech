@@ -6,8 +6,8 @@ color: black
 open: true
 ttags: <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag yellow">Gomobile</span><span class="tag blue">React Native</span><span class="tag pink">Cryptography</span><span class="tag blue">Bluetooth</span>
 menu:
-  repos:
-    weight: 1
+    repos:
+        weight: 1
 ---
 
 <div align="center">
@@ -22,6 +22,7 @@ menu:
   <!--<a href="https://goreportcard.com/report/berty/berty"><img src="https://goreportcard.com/badge/berty/berty" alt="Go Report Card"></a>-->
   <a href="https://github.com/berty/berty/releases"><img src="https://badge.fury.io/gh/berty%2Fberty.svg" alt="GitHub version"></a>
 </p>
+
 
 ## Introduction
 
@@ -66,7 +67,8 @@ _We will open betas for the different packages and apps soon, so anyone will be 
 
 ### Berty Protocol
 
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/berty.tech/berty/v2) [![Code coverage](https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow)](https://codecov.io/gh/berty/berty)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/berty.tech/berty/v2)
+[![Code coverage](https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow)](https://codecov.io/gh/berty/berty)
 
 
 A generic SDK that allows developers to write P2P applications. It contains everything needed (encryption, identities, network routing, group management, account management, device management, application lifecycle) so you can just focus on the high-level features of your app.

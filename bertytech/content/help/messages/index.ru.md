@@ -1,10 +1,10 @@
 ---
-title: "Сообщения"
-description: Храните свои данные в безопасности, а свою жизнь - в тайне
+title: "Messages"
+description: Keep your data safe & your life private
 icon: fal fa-paper-plane
 color: pink
 ---
 
-# Сообщения
+# Messages
 
-<span class="tag yellow">Скоро</span>
+<span class="tag yellow">Coming soon</span>

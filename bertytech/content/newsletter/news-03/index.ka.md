@@ -1,8 +1,7 @@
 ---
 title: "Berty Weekly #03"
 date: 2019-07-05
-aliases:
-  - "/newsletter/weekly-03"
+aliases: ["/newsletter/weekly-03"]
 ---
 
 ## Feedback from IPFS Camp

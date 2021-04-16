@@ -1,10 +1,10 @@
 ---
-title: "Группы"
-description: Храните свои данные в безопасности, а свою жизнь - в тайне
+title: "Groups"
+description: Keep your data safe & your life private
 icon: fal fa-users
 color: pink
 ---
 
-# Группы
+# Groups
 
-<span class="tag yellow">Скоро</span>
+<span class="tag yellow">Coming soon</span>

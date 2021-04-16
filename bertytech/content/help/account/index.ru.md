@@ -1,10 +1,10 @@
 ---
-title: "Аккаунт и Berty ID"
-description: Открытый ключ, QR-код, аватар...
+title: "Account & Berty ID"
+description: Public key, QRcode, avatar...
 icon: fal fa-user-circle
 color: pink
 ---
 
-# Аккаунт и Berty ID
+# Account & Berty ID
 
-<span class="tag yellow">Скоро</span>
+<span class="tag yellow">Coming soon</span>

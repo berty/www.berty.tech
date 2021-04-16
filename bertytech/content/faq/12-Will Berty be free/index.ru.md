@@ -1,9 +1,9 @@
 ---
-title: "Это будет бесплатно?"
+title: "Will it be free?"
 id: 12
 private: true
 ---
 
-Да, и это будет всегда так.
+Yes, and it will always be.
 
-А кодовая база на 100% open-source: https://github.com/berty.
+And the code base is 100% open-source: https://github.com/berty.

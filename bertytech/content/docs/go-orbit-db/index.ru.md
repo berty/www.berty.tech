@@ -1,6 +1,6 @@
 ---
 title: "Go-Orbit-DB"
-description: Go версия одноранговых баз данных для децентрализованного Интернета
+description: Go version of Peer-to-Peer Databases for the Decentralized Web
 icon: fab fa-github
 color: black
 display_nav: false
@@ -13,15 +13,15 @@ menu:
 
 # Go-Orbit-DB
 
-**Go версия одноранговых баз данных для децентрализованного Интернета**
+**Go version of Peer-to-Peer Databases for the Decentralized Web**
 
-## Введение
+## Introduction
 
-[orbit-db](https://github.com/orbitdb/orbit-db) это распределенная одноранговая база данных на [IPFS](https://github.com/ipfs/ipfs). Эта библиотека намеревается предоставить полностью совместимый порт версии JavaScript в Go.
+[orbit-db](https://github.com/orbitdb/orbit-db) is a distributed peer-to-peer database on [IPFS](https://github.com/ipfs/ipfs). This library intends to provide a fully compatible port of the JavaScript version in Go.
 
-Большая часть этого кода была получена из JavaScript библиотеки [orbit-db](https://github.com/orbitdb/orbit-db).
+The majority of this code was vastly derived from the JavaScript's [orbit-db](https://github.com/orbitdb/orbit-db) library.
 
-## Исходный код
-Исходный код доступен на [GitHub](https://github.com/berty/go-orbit-db)
+## Source code
+Source code is available on [github](https://github.com/berty/go-orbit-db)
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/go-orbit-db"><i class="fab fa-github"></i>berty/go-orbit-db</a>

@@ -1,8 +1,7 @@
 ---
 title: "Berty News #44"
 date: 2020-09-04
-aliases:
-  - "/newsletter/weekly-44"
+aliases: ["/newsletter/weekly-44"]
 ---
 
 

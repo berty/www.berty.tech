@@ -1,6 +1,6 @@
 ---
 author: zooma
-title: "Arte de la privacidad #1"
+title: "Art for Privacy #1"
 date: 2020-11-05
 #image: "Djalouz-Art4Privacy1.png"
 image: "Djalouz-Art4Privacy1.png"
@@ -13,7 +13,7 @@ tags:
 description:
 ---
 
-# Arte de la privacidad
+# Art For Privacy
 
 As an NGO, we feel invested of a mission.  We strongly believe that there can be no change without education and awareness. We promote a free world without surveillance and censorship. So how do we do it? How do we make an impact on the causes we fight for? How can we alert on the current situation?
 
@@ -56,25 +56,25 @@ At ease on various media, we find his works on canvas as well as on Parisian wal
 ![](https://i.imgur.com/2qevch5.jpg)
 
 
-## ¡Apóyanos!
+## Support us!
 
-Hay muchas maneras de apoyarnos:
-* Puedes compartir el video
-* ¿Eres un artista callejero y estás interesado en este tipo de proyecto? ¡Contáctanos!
-* Habla sobre Berty a tus conocidos
+There are many ways to help us:
+* You can share the video
+* You are a street artist and you are interested in this type of project? Let's get in touch!
+* Talk about Berty around you
 
-En resumen, todas las acciones son buenas. 🧡
+In short, all actions are good. 🧡
 
-¡Comparte tu opinión sobre esta primera serie abajo!
+Share your opinion on this first serie below!
 
 ![](https://i.imgur.com/4J0UkGF.jpg)
 
 
-## Descubre las obras de Djalouz:
+## Discover Djalouz Works:
 * [Instagram](https://www.instagram.com/djalouz/)
 * [Facebook](https://www.facebook.com/pages/djalouz/262896791627)
 * [Twitter](https://twitter.com/djalouz)
-* [Email de contacto](mailto:dja.louz@gmail.com)
+* [Email contact](mailto:dja.louz@gmail.com)
 
 
 
