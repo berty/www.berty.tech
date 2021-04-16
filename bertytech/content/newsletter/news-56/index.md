@@ -40,8 +40,7 @@ We did a lot of games, swimming pool, sun, ping pong, pétanque, French gastromo
 In short, it was the opportunity to reconnect together and to be honest, it felt really good. 
 
 
-
-![](https://i.imgur.com/tuZVrbE.png)
+![](https://i.imgur.com/5l8trva.jpg)
 
 
 ### New Discord Onboarding
