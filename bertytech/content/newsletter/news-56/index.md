@@ -88,7 +88,7 @@ Until further notice, we are canceling all in-person events at public venues –
 
 * **Read our last weekly sync notes:**
     * [2021-03-29](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-03-29--staff-team-weekly-sync.md)
-    * [2021-04-12](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-04-12--staff-team-weekly-sync.md)
+    * [2021-04-12](https://github.com/berty/community/blob/master/meeting-notes/2021/Q2/2021-04-12--staff-team-weekly-sync.md)
 
     
 
