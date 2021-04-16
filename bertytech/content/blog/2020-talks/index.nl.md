@@ -25,17 +25,17 @@ Deze week, geen nieuws[brief] is goed nieuws! We hebben deelgenomen aan twee bel
 
 
 
-Dankzij Dietrich van IPFS (Hi als u ons leest!), werden we uitgenodigd om te praten over decentralisatie, Web3 en IPFS met Medwish.io op de **Parijs Blockchain Week Top (PBWS)**. We had already met the Medwish team at the [IPFS Camp in Barcelona](https://berty.tech/blog/ipfs-camp/) and were stoked to reunite.
+Dankzij Dietrich van IPFS (Hi als u ons leest!), werden we uitgenodigd om te praten over decentralisatie, Web3 en IPFS met Medwish.io op de **Parijs Blockchain Week Top (PBWS)**. We hadden het Medwish team al ontmoet in het [IPFS Camp in Barcelona](https://berty.tech/blog/ipfs-camp/) en werden teruggedreven tot hereniging.
 
-Important questions were raised in the hourlong+ exchange, pushing us to understand and clarify our position in the community. Crucially (and obviously): **"Why isn't Berty based on blockchain?"**. We confirmed that (1) we're not, but (2) we haven't ruled out or lost touch with these technologies. For example, we want to implement a DAO - which is based on a blockchain (for more info, read [DAO for Berty?](https://berty.tech/blog/dao-berty-1/)).
+Belangrijke vragen werden gesteld in de urenlange + beurs, waardoor we onze positie in de gemeenschap begrijpen en verduidelijken. Moeilijk (en klaarblijkelijk): **"Waarom is Berty niet gebaseerd op blockchain?"**. We hebben bevestigd dat (1) dit niet het geval is, maar (2) we hebben de contacten met deze technologieën niet uitgesloten of verloren. We willen bijvoorbeeld een DAO implementeren - die is gebaseerd op een blockchain (voor meer informatie, lees [DAO voor Berty?](https://berty.tech/blog/dao-berty-1/)).
 
-We also fielded broader security questions. For example, what are the differences between [Berty with Signal and Telegram](https://berty.tech/faq#what-are-the-advantages-of-berty-compared-to-the-other-messengers) and why do we [care about metadata so much](https://berty.tech/blog/metadata-mobile-messaging/)? These kinds of questions indicate that **privacy literacy is growing** – a core value of the Berty nonprofit.
+We hebben ook bredere veiligheidsvragen gesteld. Bijvoorbeeld, wat zijn de verschillen tussen [Berty met Signal en Telegram](https://berty.tech/faq#what-are-the-advantages-of-berty-compared-to-the-other-messengers) en waarom geven we [zoveel om metadata](https://berty.tech/blog/metadata-mobile-messaging/)? Dit soort vragen geven aan dat **privacy-geletterdheid** toeneemt – een kernwaarde van het Berty non-profit .
 
-We also talked about the IPFS protocol. (Why are we using IPFS instead of BitTorrent, by the way? We've got a [blogpost](https://berty.tech/blog/how-berty-works-ipfs/) for that.)
+We hebben ook gesproken over het IPFS-protocol. (Waarom gebruiken we trouwens IPFS in plaats van BitTorrent? Daarvoor hebben we een [blogpost](https://berty.tech/blog/how-berty-works-ipfs/).)
 
-Finally, we had a lot of questions about our distinguishing feature: the **optional use of the internet** in Berty. Sure, everyone is joined at the hip/pocket to the internet these days, but disconnecting from these central networks is critical to minimize their dangers to privacy and service unreliability. We talked about BLE and real-world offline use cases (tsunami, lost in the desert, a concert, in the subway...). There was real enthusiasm in the audience about this, and we're excited to be bringing this [privacy] gamechanger to life.
+Tot slot hadden we een heleboel vragen over onze onderscheidende functie: het **optioneel gebruik van het internet** in Berty. Natuurlijk, iedereen zit dezer dagen vast aan de nijl/zak op internet maar het verbreken van de verbinding met deze centrale netwerken is cruciaal om hun gevaren voor privacy en onbetrouwbaarheid van diensten te minimaliseren. We spraken over BLE en offline in de echte wereld gebruikte gevallen (tsunami, verloren in de woestijn, een concert, in de subweg...). Er was echt enthousiasme in het publiek hierover, en we zijn enthousiast om deze [privacy] gamechanger tot leven te brengen.
 
-So thanks Dietrich for the intro, thanks Thomas & Benoit from Medwish, and thanks all for your great interactions!
+Dus bedankt Dietrich voor de intro, bedankt Thomas & Benoit uit Medwens en bedankt iedereen voor je geweldige interacties!
 
 {{<tweet id="1337069216592236551">}}
 
@@ -45,51 +45,51 @@ So thanks Dietrich for the intro, thanks Thomas & Benoit from Medwish, and thank
 
 
 
-We were also invited to speak at the Wrap Up 2020 organized by IPFS tools are a cornerstone of our technology and ongoing participation in this project works out pretty well for everyone.
+We zijn ook uitgenodigd om te spreken in de Wrap Up 2020 georganiseerd door IPFS-instrumenten, vormen een hoeksteen van onze technologie en deelname aan dit project werkt redelijk goed voor iedereen.
 
-The concept was simple: Get a bunch of IPFS' interactive speakers in one (virtual) room to wrap the year 2020 (a pretty f*cking shit year 😆).
+Het concept was eenvoudig: Krijg een aantal interactieve sprekers van IPFS in één (virtuele) ruimte om het jaar 2020 te wikkelen (een behoorlijk f*kkend jaar 😆).
 
-Everyone had the opportunity to present either a 15min presentation or a "lightning talk" to outline the major advances of their project. We chose the second option. ⚡️
+Iedereen heeft de gelegenheid gehad om ofwel 15 minuten of een bliksempraatje te presenteren om de grote vooruitgang van zijn project te schetsen. We hebben voor de tweede optie gekozen. ⚡️
 
 {{<tweet id="1337049716115247104">}}
 
-Our most significant advances in 2020 are:
+Onze belangrijkste vooruitgang in 2020 is de volgende:
 
-* **Berty Protocol became a thing**: first release of specs (IPFS Node + Identities + Groups + Multi-Device + Low-Metadata)
-* **We went 100% open-source**: the protocol, the mobile app, some bots, a replication server, an RDVP server, etc
-* We **released our closed beta**... And soon, we'll open the beta 🎉
-* We **brought BLE features to life** (more to come). Meet our three BLE drivers 👋:
+* **Berty Protocol is iets**: eerste verspreiding van specs (IPFS Node + Identiteiten + Groepen + Multi-Apparaat + Low-Metadata)
+* **We gingen 100% open-source**: het protocol, de mobiele app, enkele bots, een replicatie server, een RDVP server, enz
+* We **hebben onze gesloten bèta** vrijgegeven... En binnenkort, openen we de beta 🎉
+* We **hebben BLE functies tot leven gebracht** (meer te komen). Ontmoet onze drie BLE drivers 👋:
     * Universal
-    * MPConnectivity (for iOS and macOS)
+    * MPConnectivity (voor iOS en macOS)
     * Android Nearby
-* `go-orbit-db` + `go-ipfs-log`: Ports of **OrbitDB and IPFS-Log in Go** (Pubsub, CRDT)
-* `go-libp2p-tor-transport`: we bootstrapped a generic libp2p onion transport on the **Tor network** to enhance privacy
-* `gomobile-ipfs`: a first version of a **framework to embed an IPFS node** in native iOS and Android apps
+* `go-orbit-db` + `go-ipfs-log`: Poorten van **OrbitDB en IPFS-Log in Go** (Pubsub, CRDT)
+* `go-libp2p-tor-transport`: we hebben een generiek libp2p transport op het **Tor-netwerk** gestart om privacy te verbeteren
+* `gomobile-ipfs`: een eerste versie van een **framework voor het embedden van een IPFS node** in native iOS en Android apps
 
 
 
 ![](https://i.imgur.com/ikhSKuU.jpg)
 
-Our 2021 goals are:
+Onze 2021 doelen zijn:
 
-* 🚀    Berty Public Release
-* 🧡     Enhance gomobile-ipfs for easier adoption, help developers put IPFS on mobile
-* 📱    Improve the go-ipfs’ CI to monitor the impact of code changes on mobile
-* 📡    Make it easy to integrate our BLE drivers on any libp2p/IPFS projects
-* 🔋    Continue improving stability and performance of IPFS on mobile (battery, speed, etc)
-
-
-[📽️  Our slidekit](https://docs.google.com/presentation/d/e/2PACX-1vSK1nI-9nxr1XseINqRsAow87AdxS2zIBgwY6ImXQ6tPm1tdgxqxmjU3NeOtx-WXnNzSRVc_1UCK3k6/pub?start=false&loop=false&delayms=3000)
+* 🚀 Berty Publieke Vrijgave
+* 🧡 Verbeter gomobile-ipfs voor gemakkelijker adoptie, help ontwikkelaars IPFS op mobiel te plaatsen
+* 📱 Verbeter de CI van go-ipfs om de impact van codewijzigingen op mobiel te controleren
+* 📡 Maak het gemakkelijk om onze BLE drivers te integreren op alle libp2p/IPFS projecten
+* 🔋 blijf de stabiliteit en prestaties van IPFS verbeteren op mobiel (batterij, snelheid, enz.)
 
 
-## 2020 Reflections 💭
+[📽️ Onze slidekit](https://docs.google.com/presentation/d/e/2PACX-1vSK1nI-9nxr1XseINqRsAow87AdxS2zIBgwY6ImXQ6tPm1tdgxqxmjU3NeOtx-WXnNzSRVc_1UCK3k6/pub?start=false&loop=false&delayms=3000)
 
 
-We would like to thank everyone who gives us the opportunity to make Berty known to as many people as possible. We know that a project like Berty is useless without supporters and curious onlookers. Your interactions gave us us strength! Thank you, sincerely, from the bottom of our hearts.
+## 2020 Reflecties 💭
 
-These two talks gave us time to appreciate how far Berty has come in the year 2020, and the dedication and adaptation this progress demanded. A look back on this year isn't so much a glance in a rear-view window as it is a glimpse in a fun-house mirror that's, well, anything but fun. We don't know how, but these once unimaginable challenges pushed us to move forward. Thank you folks for being here during this crazy year.
 
-We are ready for 2021. Tssh, we have a lot of surprises coming. Keep in touch. 🥂
+Wij willen iedereen bedanken die ons de gelegenheid biedt Berty bij zoveel mogelijk mensen bekend te maken. We weten dat een project als Berty nutteloos is zonder aanhangers en merkwaardige toeschouwers. Uw interactie heeft ons sterk gemaakt! Ik dank u hartelijk, uit de grond van onze harten.
+
+Deze twee gesprekken hebben ons de tijd gegeven om te weten te komen hoever Berty in het jaar 2020 is gekomen, en de toewijding en aanpassing die deze vooruitgang vereist hebben. Een blik terug op dit jaar is niet zozeer een blik in een achteruitzicht venster als wel een glimp in een fun-house spiegel die is, goed, alles behalve plezier. We weten niet hoe, maar deze ooit onvoorstelbare uitdagingen duwden ons om verder te gaan. Bedankt dat u hier bent tijdens dit gekke jaar.
+
+We zijn klaar voor 2021. Tssh, er komen veel verrassingen. Blijf met in contact. 🥂
 
 
 
