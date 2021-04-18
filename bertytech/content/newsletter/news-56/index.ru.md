@@ -88,7 +88,7 @@ Check this out! And if you are not yet on our Discord, join us: https://discord.
 
 * **Прочтите наши последние еженедельные примечания:**
     * [2021-03-29](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-03-29--staff-team-weekly-sync.md)
-    * [2021-04-12](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-04-12--staff-team-weekly-sync.md)
+    * [2021-04-12](https://github.com/berty/community/blob/master/meeting-notes/2021/Q2/2021-04-12--staff-team-weekly-sync.md)
 
     
 
