@@ -5,13 +5,13 @@ aliases:
   - "/newsletter/weekly-56"
 ---
 
-# News #56
+# Новость №56
 
 Ахой Бертизен! 🏴‍☠️
 
 Надеемся, у вас всё хорошо!
 
-As usual, a little word about the team: everyone is fine. We were at our offsite last week. It was great to see each other. 🌞
+Как обычно, небольшое слово о команде: всё хорошо. We were at our offsite last week. It was great to see each other. 🌞
 
 You know what? Let's jump in! here is your dose of info on Berty.
 
