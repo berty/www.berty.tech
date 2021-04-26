@@ -13,11 +13,11 @@ tags:
 description:
 ---
 
-# Art For Privacy
+# Kunst voor privacy
 
-As an NGO, we feel invested of a mission.  We strongly believe that there can be no change without education and awareness. We promote a free world without surveillance and censorship. So how do we do it? How do we make an impact on the causes we fight for? How can we alert on the current situation?
+Als NGO voelen wij ons verbonden met een missie.  Wij zijn er vast van overtuigd dat er geen verandering mogelijk is zonder onderwijs en bewustmaking. We bevorderen een vrije wereld zonder toezicht en censuur. Hoe doen we dat dan? Hoe kunnen we invloed uitoefenen op de oorzaken waarvoor we strijden? Hoe kunnen we waarschuwen voor de huidige situatie?
 
-We were looking for a low-cost communication (NGO power!), accessible, collaborative and free for interpretation campaign.  So, we opt for a slightly different communication channel. Something that belongs to everyone: our streets. For us at Berty, streets are metaphors. They are both a public place and a place of free expression. A bit like a free and limitless museum.
+We waren op zoek naar een goedkope communicatie (ngo-macht!), toegankelijke, collaboratieve en gratis tolkcampagne.  So, we opt for a slightly different communication channel. Something that belongs to everyone: our streets. For us at Berty, streets are metaphors. They are both a public place and a place of free expression. A bit like a free and limitless museum.
 
 So, we are delighted to present ART4PRIVACY.
 
