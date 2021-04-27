@@ -26,19 +26,19 @@ TLDR: We hadden een geweldige tijd! 🤩
 
 ![](conference.jpg) We hadden het genoegen 73 sprekers uit de hele wereld welkom te mogen heten in het kader van de 96 gebeurtenissen van het festival. Onderwerpen variëren van veilige communicatie, het delen van kennis, participatieve governance en digitale valuta's tot kunst en mentalisme.
 
-What a line-up! 🤯 Have a glimpse below 👇
+Wat een line-up! 🤯 Neem een glimp onder 👇
 
-* [The schedule](https://p2p.paris/en/event/festival-0/#schedule)
-* [List of speakers](https://p2p.paris/en/event/festival-0/#speakers)
-* [Videos](https://www.youtube.com/playlist?list=PLNeNFYqVeWnPCNQTD9Q_YLJkjWYw78Ia_)
-
-
-This festival was truly peer-to-peer!
+* [De planning](https://p2p.paris/en/event/festival-0/#schedule)
+* [Lijst van sprekers](https://p2p.paris/en/event/festival-0/#speakers)
+* [Video's](https://www.youtube.com/playlist?list=PLNeNFYqVeWnPCNQTD9Q_YLJkjWYw78Ia_)
 
 
-### Ground Control
+Dit festival was echt peer-to-peer!
 
-We benefited from an ideal setting located in a former postal sorting hall - [Ground Control](https://www.groundcontrolparis.com/), a food court offering a gigantic space! This site     allowed us to define all the different spaces needed for the event.
+
+### Grond controle
+
+We hebben geprofiteerd van een ideale instelling in een vorige postsorteerzaal - [Ground Control](https://www.groundcontrolparis.com/), een voedselrechtbank met een gigantische ruimte! Deze site stelde ons in staat om alle verschillende ruimtes te definiëren die nodig zijn voor het evenement.
 
 ![](ground_control_floor_plan.png) ![](parisp2pfestival.jpg)
 
