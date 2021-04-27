@@ -17,24 +17,24 @@ description:
 
 Als NGO voelen wij ons verbonden met een missie.  Wij zijn er vast van overtuigd dat er geen verandering mogelijk is zonder onderwijs en bewustmaking. We bevorderen een vrije wereld zonder toezicht en censuur. Hoe doen we dat dan? Hoe kunnen we invloed uitoefenen op de oorzaken waarvoor we strijden? Hoe kunnen we waarschuwen voor de huidige situatie?
 
-We waren op zoek naar een goedkope communicatie (ngo-macht!), toegankelijke, collaboratieve en gratis tolkcampagne.  So, we opt for a slightly different communication channel. Something that belongs to everyone: our streets. For us at Berty, streets are metaphors. They are both a public place and a place of free expression. A bit like a free and limitless museum.
+We waren op zoek naar een goedkope communicatie (ngo-macht!), toegankelijke, collaboratieve en gratis tolkcampagne.  We kiezen dus voor een iets ander communicatiekanaal. Iets dat aan iedereen toebehoort: onze straten. Voor ons bij Berty zijn de straten metaforen. Ze zijn zowel een openbare ruimte als een ruimte van vrije meningsuiting. Een beetje als een vrij en ongelimiteerd museum.
 
-So, we are delighted to present ART4PRIVACY.
+Het doet ons dus genoegen ART4PRIVACY te presenteren.
 
 
-## The Art4Privacy Project
+## Het Art4Privacy Project
 
-As we are not street artists, we have decided to open contributions to artists sensitive to this cause, and to create a series of works intended for the general public.
+Aangezien wij geen straatkunstenaars zijn, hebben wij besloten een bijdrage te leveren aan de kunstenaars die deze zaak ter harte gaan, en om een reeks werken te creëren die bedoeld zijn voor het grote publiek.
 
-This series entitled #Art4Privacy was to correspond to Berty's values of accessibility and free for all. It therefore takes the form of works in the street, and video formats that are then relayed on the networks.
+Deze serie getiteld #Art4Privacy was bedoeld om overeen te komen met Berty's waarden van toegankelijkheid en gratis voor iedereen. Het gaat dus om straatwerken en om video-formaten die vervolgens op de netwerken worden doorgegeven.
 
-We think that Berty has much better things to do than making soulless advertisements: letting real artists speak, rather than advertisers, is much more in line with our state of mind.
+Wij vinden dat Berty veel betere dingen te doen heeft dan zielloze advertenties te maken: laat echte kunstenaars spreken, In plaats van adverteerders komt het veel beter overeen met onze gemoedstoestand.
 
-To relay this series effectively, we chose the hashtag #Art4Privacy, on which all artists defending these same values are welcome to join the community.
+Om deze serie effectief door te geven, kozen we voor de hashtag #Art4Privacy, waarop alle artiesten die dezelfde waarden verdedigen welkom zijn om lid te worden van de community.
 
-The first serie, please give a big round of applause to Djalouz!
+De eerste serie, geeft een groot applaus voor Djalouz!
 
-## Art4Privacy #1 : "The girl being spied on." by Djalouz (Paris, France)
+## Art4Privacy #1 : "Het meisje wordt bespioneerd" door Djalouz (Parijs, Frankrijk)
 
 </br>
 
@@ -43,38 +43,38 @@ The first serie, please give a big round of applause to Djalouz!
 </br>
 
 
-### Who is Djalouz ?
+### Wie is Djalouz?
 
-**Djalouz**, Paris, France: Visual artist, illustrator and graffiti artist, Djalouz was born in 1985. Parallel to obtaining his diploma as a model draftsman, he started graffiti in 2003, inspired by the young rising scene of French and European graffiti (Marko 93, Dran, Daim, MTO, etc.) but also by the world of comics (Enki Bilal, Frank Miller).
+**Djalouz**, Parijs, Frankrijk: Visual artist, illustrator en graffiti artiest Djalouz werd geboren in 1985. Parallel aan het behalen van zijn diploma als model-tekenaar begon hij in 2003 met graffiti, geïnspireerd door de jonge opkomende scene van Franse en Europese graffiti (Marko 93, Dran, Daim, MTO, etc.) maar ook door de stripwereld (Enki Bilal, Frank Miller).
 
 ![](https://i.imgur.com/qKbJXft.jpg)
 
-At ease on various media, we find his works on canvas as well as on Parisian walls, wastelands and abandoned factories where nature has taken back its rights. He practices the art of lettering with 3D graffiti as well as figurative drawing.
+Op ons gemak vinden we zijn werken op verschillende media, zowel op canvas als op Parijse muren, woestenijen en verlaten fabrieken waar de natuur haar rechten heeft teruggenomen. Hij werkt met 3D-graffiti en met figuurlijke tekening.
 
- Recently, in his series of drawings "Je d'enfant, dessine moi en mouton", he sketches the evils of the world through a childish look. Beneath the apparent simplicity of the line there are actually multiple references that question the world around us and the often brutal current events: war, migration flows, pollution, ecology, surveillance...
+ Onlangs schetst hij in zijn serie tekeningen "Je d'enfant, dessine moi en mout" het kwaad van de wereld door een kinderachtig uiterlijk. Onder de ogenschijnlijke eenvoud van de lijn zijn er in werkelijkheid meerdere verwijzingen die de wereld om ons heen ter discussie stellen en de vaak wrede gebeurtenissen van dit moment: oorlog, migratiestromen, vervuiling, ecologie, bewaking...
 
 ![](https://i.imgur.com/2qevch5.jpg)
 
 
-## Support us!
+## Steun ons!
 
-There are many ways to help us:
-* You can share the video
-* You are a street artist and you are interested in this type of project? Let's get in touch!
-* Talk about Berty around you
+Er zijn veel manieren om ons te helpen:
+* U kunt de video delen
+* U bent een straatkunstenaar en bent geïnteresseerd in dit soort projecten? Neem contact op!
+* Praat over Berty om je heen
 
-In short, all actions are good. 🧡
+Kortom, alle acties zijn goed. 🧡
 
-Share your opinion on this first serie below!
+Deel je mening over deze eerste serie hieronder!
 
 ![](https://i.imgur.com/4J0UkGF.jpg)
 
 
-## Discover Djalouz Works:
+## Ontdek Djalouz werken:
 * [Instagram](https://www.instagram.com/djalouz/)
 * [Facebook](https://www.facebook.com/pages/djalouz/262896791627)
 * [Twitter](https://twitter.com/djalouz)
-* [Email contact](mailto:dja.louz@gmail.com)
+* [E-mail contact](mailto:dja.louz@gmail.com)
 
 
 
