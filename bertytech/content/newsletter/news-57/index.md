@@ -27,11 +27,11 @@ Here's what we've been up to the last few weeks:
 * Developing the Nearby driver for iOS
 * Tightening up logging and reducing verbosity on the different variants of Berty (daemon, bot, etc...)
 * Tor transport improvements and nixing crashes that occur on libp2p node restart
-* Continuing gomobile-ipfs integration in Berty 
-* Continuing tinder filtering and wiring on event bus + add unit tests
+* Improvements on gomobile-ipfs integration in Berty 
+* Refactor and improvements on tinder: filtering and wiring on event bus
 * Investigating some 4G performance issues with libp2p/IPFS
-* Performing some exploratory surgery to diagnose the very frequent freezes of the Android app
-* Augmenting error tracing for our Tyber custom debug tool
+* Performing some exploratory surgery to diagnose the frequent freezes of the Android app
+* Adding more error traces for our Tyber debugging tool
 
 
 ## 🗣️ Community
