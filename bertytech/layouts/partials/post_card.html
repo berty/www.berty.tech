@@ -9,23 +9,23 @@
   {{ if ne $img.MediaType.SubType "gif" }}
   {{ $img = $img.Resize "350x" }}
   {{ end }}
-  {{ $scratch.Set "img_path" $img.RelPermalink }}
+  {{ $scratch.Set "img" $img }}
   {{ $scratch.Set "img_width" $img.Width }}
   {{ $scratch.Set "img_height" $img.Height }}
   {{ $scratch.Set "img_mime" $img.MediaType }}
 {{ else }}
   {{ $img := resources.Get "/img/avatar_staff.png" }}
-  {{ $scratch.Set "img_path" $img.RelPermalink }}
+  {{ $scratch.Set "img" $img }}
   {{ $scratch.Set "img_width" "350" }}
   {{ $scratch.Set "img_height" "200" }}
   {{ $scratch.Set "img_mime" $img.MediaType }}
 {{ end }}
 
 {{ if .useAmpImg }}
-  {{ $scratch.Set "author_img" (partial "img" (dict "ctx" . "class" "avatar" "src" $authorImg.RelPermalink "width" "36" "height" "36")) }}
-  {{ $scratch.Set "card_img" (partial "img" (dict "ctx" . "src" ($scratch.Get "img_path") "width" ($scratch.Get "img_width") "height" ($scratch.Get "img_height"))) }}
+  {{ $scratch.Set "author_img" (partial "img" (dict "ctx" . "class" "avatar" "src" $authorImg "width" "36" "height" "36")) }}
+  {{ $scratch.Set "card_img" (partial "img" (dict "ctx" . "src" ($scratch.Get "img") "width" ($scratch.Get "img_width") "height" ($scratch.Get "img_height"))) }}
 {{ else }}
-  {{ $scratch.Set "author_img" (partial "picture" (dict "src" $authorImg.RelPermalink "mimeType" $authorImg.MediaType "class" "avatar")) }}
+  {{ $scratch.Set "author_img" (partial "picture" (dict "src" $authorImg "mimeType" $authorImg.MediaType "class" "avatar")) }}
   {{ $scratch.Set "card_img" (partial "picture" (dict "src"  ($scratch.Get "img_path") "mimeType" ($scratch.Get "img_mime") ))}}
 {{ end }}
 

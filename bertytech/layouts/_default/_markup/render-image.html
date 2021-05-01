@@ -8,6 +8,7 @@
 {{ $width := "" }}
 {{ $height := "" }}
 {{ $url := "" }}
+{{ $image := "" }}
 
 {{ if $is_remote }}
   {{ $layout = "fill" }}
@@ -23,13 +24,16 @@
     {{ end }}
     {{ $width = $image.Width }}
     {{ $height = $image.Height }}
-    {{ $url = $image.RelPermalink }}
   {{ end }}
 {{ end }}
 
 {{- if not (eq $url nil) -}}
 <figure class="md-image text-center {{ if $is_remote }}contain{{ end }}">
-  {{ partial "img" (dict "src" $url "width" $width "height" $height "layout" $layout "alt" .PlainText "title" (.Title | markdownify | plainify )) }}
+  {{ if $is_remote }}
+  <img class="img-fluid" src="{{$url}}" alt="{{.PlainText}}" title="{{(.Title | markdownify | plainify )}}" />
+  {{else}}
+  {{ partial "img" (dict "src" $image "width" $width "height" $height "layout" $layout "alt" .PlainText "title" (.Title | markdownify | plainify )) }}
+  {{end}}
   <figcaption>{{ .Title | markdownify }}</figcaption>
 </figure>
 {{ end }}

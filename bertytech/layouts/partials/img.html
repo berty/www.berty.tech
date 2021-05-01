@@ -1,9 +1,19 @@
 {{ $layout := .layout | default "responsive" }}
+
+{{- $canConvert := in (slice "jpg" "jpeg" "png") .src.MediaType.SubType -}}
+{{- $mainImg := .src -}}
+{{- if $canConvert -}}
+    {{/*  Have to use resize to convert to webp. See issue: https://discourse.gohugo.io/t/image-conversion-without-resizing/32429  */}}
+    {{- $mainImg = .src.Resize (printf "%sx webp" (.width | default "200")) -}}
+{{- end -}}
+
 <amp-img
-    class="_to-webp {{ with .class }}{{.}}{{end}}"
+    class="{{ with .class }}{{.}}{{end}}"
     {{ with .title }}title="{{.}}"{{end}}
     {{ with .alt }}alt="{{.}}"{{end}}
-    {{ with .src }}src="{{ . }}"{{end}}
+    {{ with .src }}
+    src="{{$mainImg.RelPermalink}}"
+    {{end}}
     {{ with .width }}width="{{.}}"{{end}}
     {{ with .height }}height="{{.}}"{{end}}
     layout="{{ $layout }}">
@@ -11,7 +21,7 @@
         fallback
         {{ with .title }}title="{{.}}"{{end}}
         {{ with .alt }}alt="{{.}}"{{end}}
-        {{ with .src }}src="{{ . }}"{{end}}
+        {{ with .src }}src="{{ .RelPermalink }}"{{end}}
         {{ with .width }}width="{{.}}"{{end}}
         {{ with .height }}height="{{.}}"{{end}}
         layout="{{ $layout }}">

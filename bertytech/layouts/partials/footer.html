@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row row-top">
 				<div class="col-md-5">
-					{{ partial "img" (dict "ctx" . "class" "img-fluid img-bt" "src" "/img/berty_technologies_logo.png" "alt" "Berty Technologies" "width" "352" "height" "145") }}
+					{{ partial "img" (dict "ctx" . "class" "img-fluid img-bt" "src" (resources.Get "/img/berty_technologies_logo.png") "alt" "Berty Technologies" "width" "352" "height" "145") }}
 					<br />
 					{{ $url := relLangURL "/about" }}
 					<p>The Berty app is developed by the NGO <a href="{{ cond $is_404 (absURL $url) $url }}">Berty Technologies</a>.</p>

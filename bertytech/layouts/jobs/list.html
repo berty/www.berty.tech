@@ -19,9 +19,9 @@
             {{- with $.Params.image_bg -}}
             {{- $img := $.Page.Resources.GetMatch $.Params.image_bg -}}
             {{- $resize := $img.Resize "300x" -}}
-            {{ partial "img" (dict "ctx" $ "src" $resize.RelPermalink "width" $resize.Width "height" $resize.Height) }}
+            {{ partial "img" (dict "ctx" $ "src" $resize "width" $resize.Width "height" $resize.Height) }}
             {{- else -}}
-            {{ partial "img" (dict "ctx" $ "class" "img-rounded" "src" "/img/paris.png" "width" "255" "height" "120") }}
+            {{ partial "img" (dict "ctx" $ "class" "img-rounded" "src" (resources.Get "/img/paris.png") "width" "255" "height" "120") }}
             {{- end -}}
           </div><!-- /.col -->
           <div class="col-md-5">

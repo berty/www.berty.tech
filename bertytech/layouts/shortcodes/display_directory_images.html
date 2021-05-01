@@ -21,7 +21,7 @@
     <div class="{{ $class }} block-dl-file">
       <a href="{{ $image.RelPermalink }}" download="">
         <div class="dl-img">
-          {{ partial "img" (dict "ctx" . "src" ($scratch.Get `thumbnail`).RelPermalink "width" ($scratch.Get `width`) "height" ($scratch.Get `height`) )}}
+          {{ partial "img" (dict "ctx" . "src" ($scratch.Get `thumbnail`) "width" ($scratch.Get `width`) "height" ($scratch.Get `height`) )}}
         </div>
         <div class="hover">
           <div class="btn btn-bty btn-blue">

@@ -7,15 +7,15 @@
 		<img src="/img/wave_blue.svg" class="img img-wave">
 		<div class="container">	
 			<div class="img img-planet-purple">
-				{{ partial "img" (dict "ctx" . "src" "/img/planet_purple.png" "layout" "fill")}}
+				{{ partial "img" (dict "ctx" . "src" (resources.Get "/img/planet_purple.png") "layout" "fill")}}
 			</div>
 			<div class="img img-planet-pink">
-				{{ partial "img" (dict "ctx" . "src" "/img/planet_pink.png" "layout" "fill")}}
+				{{ partial "img" (dict "ctx" . "src" (resources.Get "/img/planet_pink.png") "layout" "fill")}}
 			</div>
 		</div><!-- /.container -->
 		<img src="/img/wave_bottom.svg" class="img img-wave-bottom">
 		<div class="img img-planet-orange">
-			{{ partial "img" (dict "ctx" . "src" "/img/planet_orange.png" "layout" "fill")}}
+			{{ partial "img" (dict "ctx" . "src" (resources.Get "/img/planet_orange.png") "layout" "fill")}}
 		</div>
 	</div><!-- /.header-bg -->
 	<div class="section-content">

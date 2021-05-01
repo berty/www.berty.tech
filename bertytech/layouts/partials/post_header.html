@@ -9,11 +9,11 @@
 <amp-video width="700" height="400" layout="responsive" autoplay loop>
 	<source src="{{ ($current.Resources.GetMatch $current.Params.video).RelPermalink }}" type="video/mp4" />
 	<div fallback>
-		{{ partial "img" (dict "ctx" $current "class" "rounded" "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
+		{{ partial "img" (dict "ctx" $current "class" "rounded" "src" $img "width" $img.Width "height" $img.Height) }}
 	</div>
 </amp-video>
 {{ else }}
-	{{ partial "img" (dict "ctx" $current "class" "rounded" "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
+	{{ partial "img" (dict "ctx" $current "class" "rounded" "src" $img "width" $img.Width "height" $img.Height) }}
 {{ end }}
 
 {{- end -}}

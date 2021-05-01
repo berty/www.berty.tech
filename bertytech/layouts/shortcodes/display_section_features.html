@@ -17,7 +17,7 @@
     
               <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
                 {{ $img := .Page.Resources.GetMatch "noface-noname.png" }}
-                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+                {{ partial "img" (dict "ctx" . "src" $img "width" "200" "height" "62") }}
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@
     
               <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
                 {{ $img := .Page.Resources.GetMatch "secure-encryption.png" }}
-                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+                {{ partial "img" (dict "ctx" . "src" $img "width" "200" "height" "62") }}
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
       <div class="col-md-6 order-1 order-md-2">
         <div class="block-mixed-img">
           {{ $img := .Page.Resources.GetMatch "using_BLE.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
     </div><!--  /.row -->
@@ -104,7 +104,7 @@
       <div class="col-md-6">
         <div class="block-mixed-img">
           {{ $img := .Page.Resources.GetMatch "available-on-devices.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
       <div class="col-md-5">
@@ -127,7 +127,7 @@
       <div class="col-md-6 order-1 order-md-2">
         <div class="block-mixed-img">
           {{ $img := .Page.Resources.GetMatch "share-your-details.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" $img.Width "height" $img.Height) }}
+          {{ partial "img" (dict "ctx" . "src" $img  "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
     </div><!--  /.row -->
@@ -140,7 +140,7 @@
       <div class="col-md-6">
         <div class="block-mixed-img">
           {{ $img := .Page.Resources.GetMatch "no_servers.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" $img.Width "height" $img.Height) }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
       <div class="col-md-5">
@@ -165,7 +165,7 @@
       <div class="col-md-6 order-1 order-md-2 pl-3 pl-md-5">
         <div class="block-mixed-img">
           {{ $img := .Page.Resources.GetMatch "fully_distributed.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink  "width" $img.Width "height" $img.Height) }}
+          {{ partial "img" (dict "ctx" . "src" $img  "width" $img.Width "height" $img.Height) }}
         </div><!-- /.block-mixed-img -->
       </div><!-- /.col -->
     </div><!--  /.row -->

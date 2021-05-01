@@ -1,6 +1,6 @@
 <amp-sidebar id="sidebar" layout="nodisplay" side="left">
     <a class="nav-brand" href="/">
-        {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" "/img/berty_logo.svg")}}  
+        {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" (resources.Get "/img/berty_logo.svg"))}}  
     </a>
     <ul class="nav flex-column">
         <!--<li class="nav-section">

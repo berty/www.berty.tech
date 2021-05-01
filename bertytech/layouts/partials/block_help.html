@@ -1,6 +1,6 @@
 <div class="block block-wi text-center bg-white">
 	<div class="block-wi-img s">
-		{{ partial "img" (dict "ctx" . "src" "/img/icon_support.svg" "width" "120" "height" "120") }}
+		{{ partial "img" (dict "ctx" . "src" (resources.Get "/img/icon_support.svg") "width" "120" "height" "120") }}
 	</div><!-- /.block-f-img -->
 	<h2>Help & Support</h2>
 	<p>Need help with your app ?<br/>Consult our online guides</p>
