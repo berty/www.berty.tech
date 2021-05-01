@@ -1,7 +1,17 @@
-<picture class="_to-webp {{ .class }}">
+{{- $canConvert := in (slice "jpg" "jpeg" "png") .src.MediaType.SubType -}}
+{{- $mainImg := .src -}}
+{{- if $canConvert -}}
+    {{/*  Have to use resize to convert to webp. See issue: https://discourse.gohugo.io/t/image-conversion-without-resizing/32429  */}}
+    {{- $mainImg = .src.Resize (printf "%sx webp" (string .width | default "500")) -}}
+{{- end -}}
+
+<picture class="{{ .class }}">
     <source 
-        {{with .src}}data-srcset="{{.}}"{{end}} 
-        type="{{.mimeType}}"/> 
+        {{with .src}}data-srcset="{{$mainImg.RelPermalink}}"{{end}} 
+        type="{{$mainImg.MediaType}}"/> 
+    <source 
+        {{with .src}}data-srcset="{{.RelPermalink}}"{{end}} 
+        {{with .src}}type="{{.MediaType}}"{{end}}/> 
     <img 
         class="lazyload"
         {{with .src}}data-src="{{.}}"{{end}}

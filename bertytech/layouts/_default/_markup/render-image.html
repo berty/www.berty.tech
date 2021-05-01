@@ -16,7 +16,7 @@
   {{ $height = "500" }}
   {{ $url = $destination }}
 {{ else }}
-  {{ $image := (.Page.Resources.GetMatch $destination) }}
+  {{ $image = (.Page.Resources.GetMatch $destination) }}
   {{ if ne $image nil }}
     {{ $layout = "intrinsic" }}
     {{ if in $resizable $image.MediaType.SubType }}
