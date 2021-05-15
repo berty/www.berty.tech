@@ -1,11 +1,11 @@
 ---
 title: "Berty Weekly #25"
 date: 2019-12-13
-aliases: ["/newsletter/weekly-25"]
+aliases:
+  - "/newsletter/weekly-25"
 ---
 
-Hello to all!
-We hope you are well!
+Hello to all! We hope you are well!
 
 This week the newsletter is on **Friday the 13th**! Coincidence? We don't think so. 😅
 
