@@ -1,6 +1,6 @@
 ---
-title: "Hello clever you !"
-subtitle: Sadly you found this page too early, please come back in a few days...
+title: "Привет умник!"
+subtitle: К сожалению, вы нашли эту страницу слишком рано, пожалуйста, вернитесь через несколько дней...
 hclass: bg-jobs bg-blue
 private: true
 ---
