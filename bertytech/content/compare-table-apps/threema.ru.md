@@ -10,7 +10,7 @@ no_phone_required: true
 anonymous: true
 e2ee: true
 offline_messaging: false
-multi_device: Partially
+multi_device: Частично
 open_spec: false
 aosp: "?"
 privacy_respecting: true
