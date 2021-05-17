@@ -1,5 +1,5 @@
 ---
-title: "Help center"
+title: "Helpejo"
 draft: true
 private: true
 ---
