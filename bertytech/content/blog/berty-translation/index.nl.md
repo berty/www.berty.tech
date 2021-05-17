@@ -25,18 +25,18 @@ Dit is een van de redenen waarom we bijna uitsluitend in het Engels communiceren
 
 U moet echter één ding weten: als u dit artikel in zijn oorspronkelijke versie leest, d.w.z. in het Engels, dan heb je gelukkig! Je hebt toegang tot kennis en informatie!
 
-The other side of the coin is that 80% of the population will not have knowledge (of Berty, for example) simply because of the language.
+De andere kant van de munt is dat 80% van de bevolking geen kennis heeft (van Berty bijvoorbeeld) enkel en alleen vanwege de taal.
 
-Help us to change this!
+Help ons dit te veranderen!
 
-> And the good news is you don't have to be a developer!
+> En het goede nieuws is dat je geen ontwikkelaar hoeft te zijn!
 
 
-# How To Contribute to Berty Translation?
+# Hoe kan je bijdragen aan de vertaling van Berty?
 
-As Berty continues to grow, it needs to support more and more languages. Managing all that in the source code will become very hard and prone to errors. Luckily there's an easy solution to that, and it's called Crowdin!
+Naarmate Berty blijft groeien, moet hij steeds meer talen ondersteunen. Het beheren van alles wat in de broncode staat zal zeer moeilijk worden en risico op fouten maken. Gelukkig is er een makkelijke oplossing daarvoor, en het heet Crowdin!
 
-## Translate with Crowdin
+## Vertalen met Crowdin
 
 ![](https://i.imgur.com/tlpFc46.png)
 
