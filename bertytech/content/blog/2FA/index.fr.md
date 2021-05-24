@@ -19,9 +19,9 @@ De nos jours, l'accès à un compte est de plus en plus compromis. En effet, il 
 
 Vous n'avez peut-être pas fait attention mais vous utilisez probablement déjà une application d'authentification à deux facteurs. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. Mais c'est un autre sujet.
 
-## What is two-factor authentification (2FA)?
+## Qu’est-ce que l’authentification à deux facteurs (2FA) ?
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
@@ -32,7 +32,7 @@ For example, if you want to log in to your email account, you will need to prese
 Usually, the first authentication method is something you know (your password, a PIN code). The second one is information you don't know (code generated especially for authentication) but which is linked to you.
 
 It is customary to divide into several types of information:
-- 🔑 something you have (an object like a USB key)
+- 🔑 quelque chose que vous avez (un objet comme une clé USB)
 - 🐾 something you are (fingerprint, facial recognition)
 - 🧠 something you know (a password)
 - 📍 somewhere you are (a GPS location)
