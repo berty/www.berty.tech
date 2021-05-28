@@ -71,7 +71,7 @@ Stay tuned!
 
 We organized a first community meeting last month (thanks TheoXD) and we are planning to organize another one in June. The preset date is June 12th. We would like to do a general talk about the future of p2p. If you're interested, please let us know. All of this has to be confirmed of course. 🗓️
 
-To join the movement: you can register on meetup (https://www.meetup.com/berty-hq/). You will have access to future events. 
+To join the movement: you can register on meetup [https://www.meetup.com/berty-hq/](https://www.meetup.com/berty-hq/). You will have access to future events. 
 
 ![image alt](https://media.giphy.com/media/JOYGU96kS3oLJJtQGL/giphy.gif)
 
