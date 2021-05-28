@@ -41,7 +41,7 @@ But first, here's what we've been up to the last few weeks:
 
 
 
-Loading the upcoming open-beta:  ███████▒▒ %90
+Loading the upcoming open-beta:  ███████▒ %90
 
 We know that we have been teasing you for a long time about the release of the beta. Well, some lucky members have found the famous secret door on Discord that allows you to test the beta. 
 
@@ -58,7 +58,7 @@ As good news never comes alone: we have been promised a very significant donatio
 
 ![image alt](https://64.media.tumblr.com/84179caf824f5fbc1ca80a697af652eb/tumblr_mg6mc0wh9X1qegy8do1_500.gifv)
 
-We can't tell you who / how much / or how much for now. We'll do that through a blog post that will cover everything in great depth. But since we like to be transparent with you, you get the info first. 😉 
+We can't tell you who / how much / or how for now. We'll do that through a blog post that will cover everything in great depth. But since we like to be transparent with you, you get the info first. 😉 
 
 This donation will officially advance on the berty protocol. More broadly: this donation will secure the future of Berty. And that a f***cking huge news for berty!  
 
