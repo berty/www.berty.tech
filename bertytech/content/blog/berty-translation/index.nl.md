@@ -41,54 +41,54 @@ Naarmate Berty blijft groeien, moet hij steeds meer talen ondersteunen. Het behe
 ![](https://i.imgur.com/tlpFc46.png)
 
 
-Crowdin is een online platform waarmee u vertalingen kunt uitvoeren via een visuele interface. Het is mogelijk om mensen aan te wijzen als vertaler voor een natuurlijke taal. Na het downloaden van de brontekenreeksen kunnen de vertalers aan het werk gaan. They will be notified as soon as there is something new to translate. When they are finished, approvers can begin proofreading using some of the extensive quality assurance features. It is impossible to miss a translation, as it will be clearly marked as not translated. Strings that are removed from the source file will also be removed from all translations. Translated files can be uploaded at any time and will be in precisely the same format as the source file. In other words, clean and up-to-date translation files!
+Crowdin is een online platform waarmee u vertalingen kunt uitvoeren via een visuele interface. Het is mogelijk om mensen aan te wijzen als vertaler voor een natuurlijke taal. Na het downloaden van de brontekenreeksen kunnen de vertalers aan het werk gaan. Ze zullen worden ingelicht zodra er iets nieuws te vertalen is. Wanneer ze zijn afgerond, kunnen goedkeurders beginnen met het proeflezen van enkele van de uitgebreide eigenschappen van kwaliteitsborging. Het is onmogelijk om een vertaling te missen, aangezien deze duidelijk als niet vertaald zal worden aangemerkt. Tekenreeksen die verwijderd zijn uit het bronbestand zullen ook uit alle vertalingen worden verwijderd. Vertaalde bestanden kunnen op elk moment worden geüpload en zullen in precies hetzelfde formaat als het bronbestand worden geupload. Met andere woorden, schoon en up-to-date vertaalbestanden!
 
-Small information for developers: integration with Git repository or a CLI tool can get the source strings in Crowdin.
+Kleine informatie voor ontwikkelaars: integratie met Git repository of een CLI-tool kan de brontekenreeksen in Crowdin krijgen.
 
-> We take this opportunity to thank Crowdin from the bottom of our hearts because they offered us their solutions because we are an NGO and open source (and nope, this article is not sponsored!). 🧡🙏
+> We maken van deze gelegenheid gebruik om Crowdin uit de grond van ons hart te bedanken, omdat ze ons hun oplossingen aanboden omdat we een NGO en open source (en nee dit artikel is niet gesponsord!). 🧡🙏
 
-Fews others projects hosted on Crowdin:
+Een paar andere projecten die worden gehost op Crowdin:
 * [Minecraft](https://crowdin.com/project/minecraft)
 * [Factorio](https://crowdin.com/project/factorio)
 * [GitLab](https://crowdin.com/project/GitLab)
-* [Etherum Foundation](https://crowdin.com/project/ethereumfoundation)
+* [Etherum Fundament](https://crowdin.com/project/ethereumfoundation)
 * [Khan Academy](https://crowdin.com/project/khanacademy)
 
-## Getting started on Crowdin
+## Aan de slag op Crowdin
 ![](https://i.imgur.com/su9Cz04.png)
 
 
-* Go on our dedicated page: https://translate.berty.community
-* Create an account by signing up.
-* Select berty/berty if you want to help with the app translation or on berty/www.berty.tech for website translation.
-* Select the language you wish to translate to.
-* Click on the branch you want to translate in the tree
-* On the left side, you will be able to pick a sentence
-* On the right side, you can add your translation in the "add  translation here" section
-* Don't forget to save before jumping on the next sentence
+* Ga op onze speciale pagina: https://translate.berty.community
+* Maak een account aan door je aan te melden.
+* Selecteer besty/berty als u wilt helpen met de vertaling van de app of op berty/www.berty.tech voor website vertaling.
+* Selecteer de taal waarnaar u wilt vertalen.
+* Klik op de branch die u in de boom wilt vertalen
+* Aan de linkerkant kun je een zin kiezen
+* Aan de rechterkant kunt u uw vertaling toevoegen in de sectie "voeg vertaling hier toe"
+* Vergeet niet op te slaan voordat u op de volgende zin springt
 
-👉 Read the full tutorial on the Crowdin Support page: https://support.crowdin.com/crowdin-intro/ 👉 Watch the video tutorial: https://www.youtube.com/watch?v=bxdC7MfrO7A
+👉 Lees de volledige tutorial op de Crowdin Support pagina: https://support.crowdin.com/crowdin-intro/ 👉 Bekijk de video tutorial: https://www.youtube.com/watch?v=bxdC7MfrO7A
 
-## Stucked?
+## Vastgelopen?
 
 
 ![](https://i.imgur.com/PBEsg67.png)
 
 
-We're here to help! We set up a dedicated area for translation/translators: https://berty.community/c/translation
+We zijn hier om te helpen! We hebben een speciaal gebied ingesteld voor vertalingen/vertalers: https://berty.community/c/translation
 
-If you don't find your language, request it there!
+Als je jouw taal niet vindt, vraag hem dan hier!
 
-# Thanks
+# Bedankt
 
 ![](https://i.imgur.com/X7v8NJq.jpg)
 
 
-Before letting you translating, we really want to thank you for your help. Trust us, it's really appreciated!
+Voordat we je laten vertalen, willen we je echt bedanken voor je hulp. Vertrouw ons, het wordt echt gewaardeerd!
 
-We are a small team of 10 Frenchies, but we feel like being part of something huge because of you / your support / your every message. 🧡
+We zijn een klein team van tien Fransen, maar we hebben zin om deel uit te maken van iets groots als gevolg van u/uw steun / elk bericht. 🧡
 
-Help us to spread Berty and fight censorship/surveillance!
+Help ons Berty te verspreiden en te strijden met censuur/surveillance!
 
  {{<tweet id="1324380426090270721">}}
 
