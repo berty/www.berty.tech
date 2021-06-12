@@ -73,7 +73,7 @@ Here's what we've been up to the last few weeks:
 
 ### Berty Builders Meetings
 
-Our next meeting will be around the release of our alpha. It will be Wednesday June 16th at 7pm. We will give you more information on meetup (https://www.meetup.com/berty-hq/). Make sure to register to have access to future events. 
+Our next meeting will be around the release of our alpha. It will be Wednesday June 16th at 7pm. We will give you more information [on meetup](https://www.meetup.com/berty-hq). Make sure to register to have access to future events. 
 
 
 
