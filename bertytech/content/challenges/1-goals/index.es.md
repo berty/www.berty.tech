@@ -1,5 +1,5 @@
 ---
-title: "Goals of Berty"
+title: "Objetivos de Berty"
 id: 1
 icon: fal fa-rocket
 private: true
