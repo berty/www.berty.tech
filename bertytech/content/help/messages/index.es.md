@@ -1,10 +1,10 @@
 ---
-title: "Messages"
-description: Keep your data safe & your life private
+title: "Mensajes"
+description: Mantenga sus datos seguros & su vida privada
 icon: fal fa-paper-plane
 color: pink
 ---
 
-# Messages
+# Mensajes
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Próximamente</span>
