@@ -85,7 +85,7 @@ If you are looking for a robust solution that fits your pocket, then look no fur
 
 Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... 希望你很好地保存了他们。 Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). 最后，如果您丢失它，您将必须使用两步验证恢复码恢复您所有的帐户... 希望你很好地保存了他们。 Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
 
 
 ## Closing Thoughts
