@@ -4,7 +4,7 @@
       <div class="block bg-white block-wi text-center">
        <div class="block-wi-img m">
         {{ $img := .Page.Resources.GetMatch "icon_dev.png" }}
-         {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+         {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
        </div><!-- /.block-f-img -->
        <h2>Developers</h2>
        <p>
@@ -20,7 +20,7 @@
     <div class="block bg-white block-wi text-center">
      <div class="block-wi-img m">
       {{ $img := .Page.Resources.GetMatch "icon_translate.png" }}
-      {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+      {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
     </div><!-- /.block-f-img -->
     <h2>Translators</h2>
     <p>
@@ -34,7 +34,7 @@
   <div class="block bg-white block-wi text-center">
    <div class="block-wi-img m">
     {{ $img := .Page.Resources.GetMatch "icon_crypto.png" }}
-    {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+    {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
   </div><!-- /.block-f-img -->
   <h2>Crypto Specialists</h2>
   <p>

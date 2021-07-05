@@ -4,9 +4,9 @@
     {{- with $.Params.image -}}
     {{- $img := $.Page.Resources.GetMatch $.Params.image -}}
     {{- $resize := $img.Resize "1312x" -}}
-    {{ partial "img" (dict "ctx" $ "src" $resize.RelPermalink "width" $resize.Width "height" $resize.Height) }}
+    {{ partial "img" (dict "ctx" $ "src" $resize "width" $resize.Width "height" $resize.Height) }}
     {{- else -}}
-    {{ partial "img" (dict "ctx" $ "src" "/img/avatar_staff.png" "width" "350" "height" "200") }}
+    {{ partial "img" (dict "ctx" $ "src" (resources.Get "/img/avatar_staff.png") "width" "350" "height" "200") }}
     {{- end -}}
   </div>
   <div class="pc-middle">

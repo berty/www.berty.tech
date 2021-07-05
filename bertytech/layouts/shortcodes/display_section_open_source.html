@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-lg-5">
         {{ $img := .Page.Resources.GetMatch "computers.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "500" "height" "313" "class" "block-si-img left") }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" "500" "height" "313" "class" "block-si-img left") }}
       </div><!-- /.col -->
       <div class="col-lg-7">
         <div class="block-si-text">

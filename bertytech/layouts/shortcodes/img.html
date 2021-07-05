@@ -21,4 +21,4 @@
 {{ $scratch.Set "image" (($scratch.Get "image").Resize (print ($scratch.Get "width") "x" ($scratch.Get "height"))) }}
 {{ end }}
 
-{{ partial "img" (dict "ctx" . "class" $class "title" $title "alt" $alt "width" ($scratch.Get "width") "height" ($scratch.Get "height") "src" ($scratch.Get "image").RelPermalink )}}
+{{ partial "img" (dict "ctx" . "class" $class "title" $title "alt" $alt "width" ($scratch.Get "width") "height" ($scratch.Get "height") "src" ($scratch.Get "image") )}}

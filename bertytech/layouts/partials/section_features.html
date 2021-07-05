@@ -5,7 +5,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="block-wi text-center">
 						<div class="block-wi-img s c-yellow">
-							{{ partial "img" (dict "ctx" . "src" "/img/icon_private.svg" "width" "120" "height" "120") }}
+							{{ partial "img" (dict "ctx" . "src" (resources.Get "/img/icon_private.svg") "width" "120" "height" "120") }}
 						</div><!-- /.block-wi-img -->
 						<h2>Private</h2>
 						<ul class="list-unstyled">
@@ -33,7 +33,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="block-wi text-center">
 						<div class="block-wi-img s c-blue">
-							{{ partial "img" (dict "ctx" . "src" "/img/icon_distributed.svg" "width" "120" "height" "120") }}
+							{{ partial "img" (dict "ctx" . "src" (resources.Get "/img/icon_distributed.svg") "width" "120" "height" "120") }}
 						</div><!-- /.block-wi-img -->
 						<h2>Distributed</h2>
 						<ul class="list-unstyled">

@@ -15,7 +15,7 @@
 						<div class="text-center">
 							<div class="img-icon">
 								{{ $img := $.Page.Resources.GetMatch .image }}
-								{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+								{{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
 							</div>
 							<h4>{{ .title }}</h4>
 						</div>
@@ -48,7 +48,7 @@
 					<div class="col-md-5">
 						<div class="block-mixed-img">
 							{{ $img := .Page.Resources.GetMatch .Params.section_2.image }}
-							{{ partial "img" (dict "ctx" . "class" "img-blob-photo" "src" $img.RelPermalink "layout" "responsive" "width" "200" "height" "300") }}
+							{{ partial "img" (dict "ctx" . "class" "img-blob-photo" "src" $img "layout" "responsive" "width" "200" "height" "300") }}
 						</div>
 					</div>
 				</div>
@@ -63,7 +63,7 @@
 				<div class="row">
 					<div class="col-md-4">
 						<div class="block-mixed-img">
-						{{ partial "img" (dict "ctx" . "class" "img-open-source" "src" .Params.section_3.image "layout" "responsive" "width" "70" "height" "70") }}
+						{{ partial "img" (dict "ctx" . "class" "img-open-source" "src" (resources.Get .Params.section_3.image) "layout" "responsive" "width" "70" "height" "70") }}
 						</div>
 					</div>
 					<div class="col-md-7">

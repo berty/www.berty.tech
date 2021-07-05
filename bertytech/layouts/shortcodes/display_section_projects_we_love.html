@@ -5,7 +5,7 @@
       <div class="block bg-white post-card project">
         <div class="pc-top">
           {{ $img := .Page.Resources.GetMatch "project_ipfs.jpeg" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
         </div>
         <div class="pc-middle">
           IPFS is a peer-to-peer hypermedia protocol to make the web faster, safer, and more open. It is at the very heart of the berty project.
@@ -20,7 +20,7 @@
       <div class="block bg-white post-card project">
         <div class="pc-top">
           {{ $img := .Page.Resources.GetMatch "project_eff.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
         </div>
         <div class="pc-middle">
           The Electronic Frontier Foundation is the leading nonprofit defending digital privacy, free speech, and innovation.
@@ -34,7 +34,7 @@
       <div class="block bg-white post-card project">
         <div class="pc-top">
           {{ $img := .Page.Resources.GetMatch "project_42.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
         </div>
         <div class="pc-middle">
           42 is the first engineering program free and open to everyone. Education is based on peer-to-peer learning with no classes, no teachers.
@@ -48,7 +48,7 @@
       <div class="block bg-white post-card project">
         <div class="pc-top">
           {{ $img := .Page.Resources.GetMatch "project_paris_p2p.png" }}
-          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
+          {{ partial "img" (dict "ctx" . "src" $img "width" "120" "height" "120") }}
         </div>
         <div class="pc-middle">
           Paris P2P is the parisian community interested in P2P et Cryptography technologies. With monthly meetups and other ponctual events.
