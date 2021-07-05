@@ -5,10 +5,10 @@ date: 2020-01-02
 #image: "parisp2pfestival.png"
 image: "meet_us_paris_p2p_festival.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- technical
-- security
+  - technical
+  - security
 ---
 
 
