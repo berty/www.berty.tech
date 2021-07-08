@@ -1,7 +1,8 @@
 ---
 title: "Berty News #49"
 date: 2020-11-13
-aliases: ["/newsletter/weekly-49"]
+aliases:
+  - "/newsletter/weekly-49"
 ---
 
 # News #49
@@ -9,7 +10,7 @@ aliases: ["/newsletter/weekly-49"]
 Ahoy Bertizen! 🏴‍☠️
 
 
-The Berty newsletter comes out on Friday the 13th. Coincidence? Nope, we don't think so. 🙃 
+The Berty newsletter comes out on Friday the 13th. Coincidence? Nope, we don't think so. 🙃
 
 A little word about the team, as usual: Everybody is well. This second lockdown looks like an infinite Sunday, but the mood of the team is still good. We hope you're good too. 🧡
 
@@ -35,9 +36,9 @@ Highlights from the last two weeks:
 
 ## 🗣️ Community
 
-### Translating 
+### Translating
 
-We finally found a satisfactory translation solution: Crowdin! 
+We finally found a satisfactory translation solution: Crowdin!
 
 You all know how language can be a barrier to access. Help us translate the application and website to spread Berty's message!
 
@@ -55,13 +56,11 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 
 We released two blog posts this week. Please have a look!
 
-👉 [Art For Privacy](https://berty.tech/blog/art-for-privacy/)
-👉 [Introduction to Cybersecurity](https://berty.tech/blog/cybersecurity-fundamentals/)
+👉 [Art For Privacy](https://berty.tech/blog/art-for-privacy/) 👉 [Introduction to Cybersecurity](https://berty.tech/blog/cybersecurity-fundamentals/)
 
 ## 💌 Mention
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a>&#39;s latest news ❤️<br>Always interesting<a href="https://t.co/jzzBZjszf3">https://t.co/jzzBZjszf3</a></p>&mdash; Depado (@Depado_) <a href="https://twitter.com/Depado_/status/1307752027699720192?ref_src=twsrc%5Etfw">September 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ## 🎉 Meet the Berty Crew
 
