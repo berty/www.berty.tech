@@ -1,5 +1,5 @@
 ---
-title: "Press & Media"
+title: "Prensa & Multimedia"
 type: fakepost
 hclass: bg-blue gradient bg-press
 image: "berty_press.png"
@@ -11,16 +11,16 @@ menu:
 
 {{< display_section_press path="/docs/press/press_documents" >}}
 
-### Vector logos (.svg format)
+### Logos en Vector (formato .svg)
 {{< display_directory_images path="/docs/press/logos_svg" class="block bg-grid padding" >}}
 
-### Images logos (.png format)
+### Imágenes del Logo (formato .png)
 {{< display_directory_images path="/docs/press/logos_png" class="block bg-grid padding" >}}
 
-### Screenshots
+### Capturas de pantalla
 {{< display_directory_images path="/docs/press/screenshots" class="" >}}
 
-### Photos
+### Fotos
 {{< display_directory_images path="/docs/press/photos" class="block" >}}
 
-Photos by [Laura Gilli](https://www.lauragilli.com/)
+Fotos de [Laura Gilli](https://www.lauragilli.com/)
