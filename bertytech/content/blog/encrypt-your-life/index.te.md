@@ -5,12 +5,12 @@ date: 2020-11-25
 #image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 categories:
-- free-speech
+  - free-speech
 tags:
-- how-to
-- cybersecurity
-- privacy
-- surveillance
+  - how-to
+  - cybersecurity
+  - privacy
+  - surveillance
 description: Easy tips to protect yourself in 10min!
 ---
 
@@ -18,24 +18,24 @@ description: Easy tips to protect yourself in 10min!
 # How to encrypt your life in 10 minutes
 
 
-Before diving into the tools and methods to protect your privacy online, we encourage you to learn more about what privacy is all about. You can read this [article](https://berty.tech/blog/privacy-security-safety/) and also this one which will explain why [you should stop saying you have nothing to hide](https://berty.tech/blog/nothing-to-hide/). Being safe and secure isn't just for bad guys. 
+Before diving into the tools and methods to protect your privacy online, we encourage you to learn more about what privacy is all about. You can read this [article](https://berty.tech/blog/privacy-security-safety/) and also this one which will explain why [you should stop saying you have nothing to hide](https://berty.tech/blog/nothing-to-hide/). Being safe and secure isn't just for bad guys.
 
-Internet is a resource that allows us to have a vision and an exchange all over the world. But the threat is high. Cyber-attacks and data collection are real threats and can hit our private and professional lives with devastating force. Today, it would not be easy to reverse the trend, as the Internet is part of our daily lives and makes it much more comfortable. It also enables active social exchange. Internet is, moreover, an essential tool at work, even if only for email correspondence. Today's society tends to make the Internet a must. As a manner of fact, tax returns are exclusively be filed online. 
+Internet is a resource that allows us to have a vision and an exchange all over the world. But the threat is high. Cyber-attacks and data collection are real threats and can hit our private and professional lives with devastating force. Today, it would not be easy to reverse the trend, as the Internet is part of our daily lives and makes it much more comfortable. It also enables active social exchange. Internet is, moreover, an essential tool at work, even if only for email correspondence. Today's society tends to make the Internet a must. As a manner of fact, tax returns are exclusively be filed online.
 
-Today, living without the Internet is no longer possible. So, the aim here is not to exclude the Internet but to use it while preserving and securing your data. It is necessary to take specific actions. Get ready to be as secure as possible in 10 minutes! 
+Today, living without the Internet is no longer possible. So, the aim here is not to exclude the Internet but to use it while preserving and securing your data. It is necessary to take specific actions. Get ready to be as secure as possible in 10 minutes!
 
 
 
-## Login and password 
-First of all, to secure the connection to your different accounts (bank, professional and personal mailboxes, social networks, etc.), make sure you use a different password for each of them. The goal is to prevent a malicious hacker from accessing all your accounts.  Avoid choosing obvious passwords such as your birth dates, the first name of someone close to you, or the name of your pet. The more complex your password is, the harder it will be to hack it. You can also use a password manager to make it easier for you to log in to your different accounts. 
+## Login and password
+First of all, to secure the connection to your different accounts (bank, professional and personal mailboxes, social networks, etc.), make sure you use a different password for each of them. The goal is to prevent a malicious hacker from accessing all your accounts.  Avoid choosing obvious passwords such as your birth dates, the first name of someone close to you, or the name of your pet. The more complex your password is, the harder it will be to hack it. You can also use a password manager to make it easier for you to log in to your different accounts.
 
-Read our full article: 
+Read our full article:
 * [How to create a strong password](https://berty.tech/blog/create-strong-password/)
 * [Passwords manager](https://berty.tech/blog/best-password-manager/)
 
-## Set up Two-Factor Authentification 
+## Set up Two-Factor Authentification
 
-Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism. We highly recommend setting up 2FA as much as possible. 
+Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism. We highly recommend setting up 2FA as much as possible.
 
 Read our full article:
 * https://berty.tech/blog/2fa/
@@ -54,12 +54,12 @@ To avoid too much metadata collection, allow access to applications only if it's
 
 As far as web browsing is concerned, TOR is a useful tool to regain some privacy. It is free software that allows you to go on the Internet anonymously. The Tor network mainly protects you from "traffic analysis," which can reveal your identity and location by monitoring your data at various points between your PC and the websites you visit. This worldwide computer network is decentralized and is composed of different servers called "network nodes." The digital data generated by your Internet navigation passes through a circuit of servers distributed around the world. Your identity disappears in one "click". Your connection becomes Australian, American, Spanish. It thus becomes anonymous.
 
-Download Tor: 
+Download Tor:
 * https://www.torproject.org/
 
 ### VPN
 
-A VPN is a service that allows users to "borrow" the IP address of the VPN server and encrypt the connection between the user's computer and the VPN server. It acts primarily on behalf of your computer when you are online. 
+A VPN is a service that allows users to "borrow" the IP address of the VPN server and encrypt the connection between the user's computer and the VPN server. It acts primarily on behalf of your computer when you are online.
 
 However, it is much more secure than a proxy server because it encrypts your data, and some VPNs do not log browsing history.
 
@@ -73,9 +73,9 @@ Read our full article:
 
 ### Social Network
 
-Be careful on social networks by being aware that everyone will see everything that will be published. 
+Be careful on social networks by being aware that everyone will see everything that will be published.
 
-Read more: 
+Read more:
 * [How social Network affects our privacy](https://berty.tech/blog/privacy-social-network/)
 
 ## Email
@@ -89,21 +89,21 @@ But in the meantime, how can things be improved? It is entirely possible to add 
 
 ## Messaging
 
-Email is an essential part of our online communications. In everyday life, it's more about the messages we send. 
+Email is an essential part of our online communications. In everyday life, it's more about the messages we send.
 
-To be able to chat with confidence, it is necessary to use secure messaging systems. Not only is it necessary to use [end-to-end encryption](https://berty.tech/blog/e2e-encryption/), but you have to ask yourself who is behind the messaging. What is its purpose? Read expert reports. Is the data stored (and therefore vulnerable)? 
+To be able to chat with confidence, it is necessary to use secure messaging systems. Not only is it necessary to use [end-to-end encryption](https://berty.tech/blog/e2e-encryption/), but you have to ask yourself who is behind the messaging. What is its purpose? Read expert reports. Is the data stored (and therefore vulnerable)?
 
-As we are subjective on the subject, we let you do your research. For those who are interested, we build a decentralized messaging system that doesn't go through any intermediate server and doesn't store any information/data. Berty's goal is to preserve everyone's privacy and secure exchanges. 
+As we are subjective on the subject, we let you do your research. For those who are interested, we build a decentralized messaging system that doesn't go through any intermediate server and doesn't store any information/data. Berty's goal is to preserve everyone's privacy and secure exchanges.
 
 
 
-## We deserve privacy! 
+## We deserve privacy!
 
-Mass surveillance and censorship are not myths. There is an urgent need for the general population to protect itself a little more. Every freedom we neglect is freedom we will not see again. 
+Mass surveillance and censorship are not myths. There is an urgent need for the general population to protect itself a little more. Every freedom we neglect is freedom we will not see again.
 
-When we go home, we close the door. So why don't we do the same online and on our phones? 
+When we go home, we close the door. So why don't we do the same online and on our phones?
 
-So all the little actions we've just seen together are tiny small steps that look like nothing, but in reality, a big step towards our freedom. 
+So all the little actions we've just seen together are tiny small steps that look like nothing, but in reality, a big step towards our freedom.
 
 Cheers Internet!
 {{<tweet id="1324705378584637442">}}
