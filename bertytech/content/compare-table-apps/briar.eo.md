@@ -1,5 +1,5 @@
 ---
-title: "Briar"
+title: "Briaro"
 weight: -80
 open_source: true
 no_runtime_fee: true
