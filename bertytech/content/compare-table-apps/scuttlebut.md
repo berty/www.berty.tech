@@ -1,5 +1,5 @@
 ---
-title: "Skuttlebut"
+title: "Scuttlebut"
 open_source: "?"
 no_runtime_fee:
 no_purchase_fee:
