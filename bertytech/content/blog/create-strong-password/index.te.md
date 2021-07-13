@@ -25,22 +25,6 @@ But  what is a **strong password**? A password is strong if the most potent comp
 
 The password is the only protective barrier between your sensitive information and the rest of the world. It has to be hell strong!  If criminals get your password, they get bank accounts and private files and wreak havoc. That's why it's so important to have a strong and secure password.
 
-## Try your Password
-
-![](https://i.imgur.com/6iDMvY2.jpg)
-
-We know that you already have your password in mind (_which is not composed of your pet's first name followed by your year of birth... no-no). Right?_ 🤔
-
-Well, have you tested its strength? We suggest three tests check it:
-
-* Measure the strength: http://www.passwordmeter.com/
-* Calculate time to crack your password: https://howsecureismypassword.net/
-* Check if your password has been exposed in data breaches: https://haveibeenpwned.com/Passwords
-
-
-So what's the verdict? If you don't pass the tests, here is a method to create a strong and memorable password!
-
-
 ## Create a strong password
 
 
