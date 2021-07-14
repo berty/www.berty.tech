@@ -11,29 +11,29 @@ tags:
   - UI
 ---
 
-# What we did & Why we did it
+# Wat we gedaan hebben & Waarom we het gedaan hebben
 
-This article aims to provide a comprehensive tour of how Berty's app UI works and why we took some UX decisions.
+Dit artikel heeft als doel een uitgebreide rondleiding te geven over hoe Berty's app UI werkt en waarom we een aantal UX besluiten hebben genomen.
 
-_Disclaimer: This article shows prototype screens, while I'm writing these lines the app is still under active development, some visual elements or wording may change before the app is released. Also, some features displayed in the following screens may not be available on day 1._
+_Disclaimer: dit artikel toont prototype schermen, terwijl ik deze tekst schrijf, is de app nog in actieve ontwikkeling, sommige visuele elementen of formuleringen kunnen worden gewijzigd voordat de app wordt vrijgegeven. Ook zijn sommige functies die worden weergegeven op de volgende schermen mogelijk niet beschikbaar op dag 1._
 
-I've tried to make this simple, and you'll probably understand things on your own by watching the screens before I have time to start talking about a subject, if it's happens it means UI is designed well enough for you to get it without any explanation. 😀
+Ik heb geprobeerd dit eenvoudig te maken, en je zult waarschijnlijk dingen alleen begrijpen door de schermen te bekijken voordat ik tijd heb om over een onderwerp te beginnen praten, als dat gebeurt betekent dit dat de UI goed genoeg is ontworpen voor jou om het zonder enige verklaring te begrijpen. 😀
 
 <br/>
 <br/>
 
-## First, some background
+## Eerst, wat achtergrond
 
-Back in 2018, when we started working on the Berty project, the main goal was to have an MVP asap. Building a P2P chat was the priority, we spent almost no time on the design. At this point, I just made a few screens to help the team visualize how the app will work and answer some basic questions like "_which info is displayed on which screen?_" and "_where should I put this button?_."
+Toen we in 2018 met de werkzaamheden aan het Berty project begonnen, was het hoofddoel een MVP zsm. Het maken van een P2P-chat was de prioriteit, we hebben bijna geen tijd op het ontwerp doorgebracht. Op dit punt Ik heb net een paar schermen gemaakt om het team te helpen visualiseren hoe de app zal werken en enkele basisvragen te beantwoorden, zoals "_welke info wordt weergegeven op welk scherm?_" en "_waar moet ik deze knop plaatsen?_."
 
 ![Old app screens](berty_old_app.png)
 
-* This initial app worked, and we even had a few dozen beta users testing it for a few months.
-* They gave us precious feedbacks like:
-    * "_Where is my QR code?_."
-    * "_How do I start a conversation?_."
-    * "_Why don't you have a dark mode?_."
-* After a few months, we decided to trash V1 of the app. It had fulfilled its purpose: testing the theory. "Can we build a mobile chat app over IPFS ?"
+* Deze eerste app werkte en we hebben zelfs een paar dozijn bètagebruikers voor een paar maanden aan het testen.
+* Ze gaven ons waardevolle feedbacks als:
+    * "_Waar is mijn QR-code?_"
+    * "_Hoe start ik een gesprek?_"
+    * "_Waarom heb je geen donkere modus?_"
+* Na enkele maanden hebben we besloten V1 van de app naar de prullenbak te sturen. Het heeft zijn doel bereikt: het testen van de theorie. "Kunnen we een mobiele chat app bouwen via IPFS?"
 
 It was now time to start the real deal and for me the opportunity to start Berty's app UI from scratch
 
