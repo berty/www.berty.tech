@@ -35,14 +35,14 @@ Toen we in 2018 met de werkzaamheden aan het Berty project begonnen, was het hoo
     * "_Waarom heb je geen donkere modus?_"
 * Na enkele maanden hebben we besloten V1 van de app naar de prullenbak te sturen. Het heeft zijn doel bereikt: het testen van de theorie. "Kunnen we een mobiele chat app bouwen via IPFS?"
 
-It was now time to start the real deal and for me the opportunity to start Berty's app UI from scratch
+Het was nu tijd om de echte deal te starten en voor mij de mogelijkheid om Berty's app UI vanaf het begin te starten
 
 <br/>
 <br/>
 
-## Lessons we've learned from v1 (that defined v2 requirements):
+## Lessen die we van v1 hebben geleerd (die v2 vereisten hebben gedefinieerd):
 
-### Having zero contact to talk to is not funny
+### Geen contact hebben om mee te praten is niet grappig
 * Berty doesn't ask for your phone number, email or any personal information (i.e., Facebook account) and doesn't access to your contact list on your phone.
 * So when you land on the app for the first time, you have nobody to talk to.
 
