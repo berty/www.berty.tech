@@ -5,11 +5,11 @@ date: 2020-02-03
 #image: "fosdem-2020-logo.jpg"
 image: "fosdem_memories.jpg"
 categories:
-- freespeech
+  - freespeech
 tags:
-- meetup
-- privacy
-- open-source
+  - meetup
+  - privacy
+  - open-source
 description: Our memories from Fosdem 2020.
 ---
 
@@ -21,8 +21,7 @@ description: Our memories from Fosdem 2020.
 
 Berty was at FOSDEM! For those not familiar with [FOSDEM](https://fosdem.org/2020/), it's a completely free event that allows software developers to meet, share ideas and collaborate.
 
-FOSDEM was originally a gathering of open source hackers, and now it's one of the largest open source community events. This year was the twentieth edition. Every year, thousands of free and open source software developers from all over the world come together at this event in Brussels, and it's super cool!
-![](fosdem-cake.jpg)
+FOSDEM was originally a gathering of open source hackers, and now it's one of the largest open source community events. This year was the twentieth edition. Every year, thousands of free and open source software developers from all over the world come together at this event in Brussels, and it's super cool! ![](fosdem-cake.jpg)
 
 As announced in our previous blog [article](https://berty.tech/blog/berty-at-fosdem-2020/), we decided to join this event this year, and it was totally worth it! 🤩
 
@@ -51,7 +50,7 @@ We attended a lot of lectures (see the list below) and left the convention aroun
 
 After eating a Flemish Stew (a typical dish made of beef and beer) in town, we went to this party near the train station. We met friends and some people we had already seen at [Paris P2P](https://p2p.paris/) and from [IPFS Camp 2019](https://github.com/ipfs/camp). It's a small world!
 
-We saw a poster that said to follow the white rabbit 🐇. At Berty's, we like challenges, so we did it. We ended up in a hackerspace. It was really amazing and the people were super friendly. 
+We saw a poster that said to follow the white rabbit 🐇. At Berty's, we like challenges, so we did it. We ended up in a hackerspace. It was really amazing and the people were super friendly.
 
 ### Sunday Morning
 On Sunday morning, part of the team participated in a radio interview next to FOSDEM. *We will post it on our [Twitter](https://twitter.com/berty) when available, don't forget to suscribe.* 😇
@@ -85,15 +84,15 @@ This was pretty intense!
 - Empowering social scientists with web mining tools by [Guillaume Plique](https://medialab.sciencespo.fr/equipe/guillaume-plique/)
 
 
-**FYI**: All talks were recorded if you want to have a look (https://fosdem.org/2020/schedule/) 
+**FYI**: All talks were recorded if you want to have a look (https://fosdem.org/2020/schedule/)
 
-We were thrilled to see that the topics we care about at Berty, such as P2P, decentralized network, privacy, encryption, open source are trendy topics.  
+We were thrilled to see that the topics we care about at Berty, such as P2P, decentralized network, privacy, encryption, open source are trendy topics.
 
 ![An on-the-fly poster made by zôÖma](poster-berty.jpg "An on-the-fly poster made by zôÖma")
 
 ## Our Tips For The FOSDEM
 
-* Pack light for your trip, because you're going to be carrying your stuff on your last day. 
+* Pack light for your trip, because you're going to be carrying your stuff on your last day.
 * Find a hotel/Airbnb in the center, not far from the tram line.
 * If you're a company, bring some stickers and your job offers.
 * Wear comfortable shoes: Conferences are sometimes physically distant from each other and you have to run between the rooms. Don't worry if you have missed a lecture, they are recorded.
@@ -103,7 +102,7 @@ We were thrilled to see that the topics we care about at Berty, such as P2P, dec
 * Good to know: there are food trucks in the university, you don't have to go out. Of course, this includes traditionnal Belgian fries & waffles. By the way, most of them accept credit cards.
 * Get your liver ready for several beers.
 
-## Bye FOSDEM 2020, See You Next Year!  
+## Bye FOSDEM 2020, See You Next Year!
 
 ![You will get thousands of stickers and goodies 🤩](sticker-fosdem2020.jpg "You will get thousands of stickers and goodies 🤩")
 

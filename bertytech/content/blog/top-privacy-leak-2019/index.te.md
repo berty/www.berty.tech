@@ -1,13 +1,13 @@
 ---
 author: camille
-title: "Top Privacy Leaks from 2019 "
+title: "Top Privacy Leaks from 2019"
 date: 2020-03-06
 image: "leak-2019.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- privacy
-- security
+  - privacy
+  - security
 ---
 
 # Top 2019 Privacy Leaks
@@ -30,7 +30,7 @@ The information that was compromised includes email addresses, first and last na
 
 ## Facebook
 
-[Social networks](https://berty.tech/blog/privacy-social-network/) really changes our privacy. It's now obvious. We have left too much personal data and we continue to do so. Today, we are paying the price when we see our data exposed. 
+[Social networks](https://berty.tech/blog/privacy-social-network/) really changes our privacy. It's now obvious. We have left too much personal data and we continue to do so. Today, we are paying the price when we see our data exposed.
 
 At this point a usual suspect, Facebook [coyly announced](https://about.fb.com/news/2019/03/keeping-passwords-secure/) in March of 2019 that it had suffered a massive data breach. The leak mostly affected Instagram users whose passwords were being stored in plain text.
 
@@ -87,9 +87,9 @@ Most of the privacy leaks on this list, and indeed most privacy leaks in general
 The fact that people are an essential part of the process will always expose that process to vulnerabilities. Perhaps instead of designing better locks, security efforts in the future will focus on taking better care of who gets to hold the keys.
 
 
-You may be interested in how [the history of cryptography](https://berty.tech/blog/history-cryptography/), [how it works](https://berty.tech/blog/e2e-encryption/), [how we use it every day](https://berty.tech/blog/cryptography-daily-usage/) and [digital signatures](https://berty.tech/blog/digital_signature/) works. 
+You may be interested in how [the history of cryptography](https://berty.tech/blog/history-cryptography/), [how it works](https://berty.tech/blog/e2e-encryption/), [how we use it every day](https://berty.tech/blog/cryptography-daily-usage/) and [digital signatures](https://berty.tech/blog/digital_signature/) works.
 
-Finally, remember that we've only dealt with data leaks here. But there is some invisible data that we leave lying around, namely [metadata](https://berty.tech/blog/what-is-metadata). Maybe one day we can do an article on top metadata leak.... 
+Finally, remember that we've only dealt with data leaks here. But there is some invisible data that we leave lying around, namely [metadata](https://berty.tech/blog/what-is-metadata). Maybe one day we can do an article on top metadata leak....
 
 
  {{<tweet id="1224339846333976577">}}

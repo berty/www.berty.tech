@@ -4,12 +4,12 @@ title: "Berty, Libp2p and Bluetooth Low Energy"
 date: 2020-04-08
 image: "2020-04-06-Berty-blogpost-Bluetooth-Low-Energy.jpg"
 categories:
-- announcement
+  - announcement
 tags:
-- bluetooth
-- technical
-- open-source
-- ipfs
+  - bluetooth
+  - technical
+  - open-source
+  - ipfs
 ---
 
 # Berty, Libp2p and Bluetooth Low Energy
@@ -98,8 +98,7 @@ By working together on the subject, after a couple of weeks, they were able to s
 
 You can take a look at this old version of the driver here: [berty/v1/ble/driver](https://github.com/berty/berty/tree/v1/network/transport/ble/driver)
 
-![BLE dev setup](r17mW7jv8.jpg)
-*Four Android smartphones finally communicating through a ble-libp2p-transport*
+![BLE dev setup](r17mW7jv8.jpg) *Four Android smartphones finally communicating through a ble-libp2p-transport*
 
 We are now in January 2019, and even if we are happy with this first brick laid, we still have two major problems to solve:
 
@@ -118,8 +117,7 @@ You can take a look at the most relevant articles here:
 - [4 Tips to Make Android BLE Actually Work -- Chee Yi Ong](https://punchthrough.com/android-ble-development-tips)
 
 
-![Code sample](HydFvfow8.png)
-*Code sample from one of the best "make BLE on Android less painful" libs available out there*
+![Code sample](HydFvfow8.png) *Code sample from one of the best "make BLE on Android less painful" libs available out there*
 
 The main information we retained from this research is that there are race condition issues that can occur at a low level that are not directly handled by the Android APIs, so it's up to the developer to handle them (without any documentation to assist them).
 
@@ -216,8 +214,6 @@ Yup, we did! 😎
 
 For the curious (who are definitely very curious), our new developer has also developed a test app for Multipeer Connectivity: [multipeer-connectivity-prototype](https://github.com/berty/multipeer-connectivity-prototype)
 
-I'm told in my earpiece 👨‍💼 that while I'm writing this article, he has also just successfully wired his prototype with the v1 of Berty! Here is [the link](https://github.com/berty/berty/pull/1832#issuecomment-610859687).
-So all we have to do now is to tweak it and integrate it into gomobile-ipfs.
+I'm told in my earpiece 👨‍💼 that while I'm writing this article, he has also just successfully wired his prototype with the v1 of Berty! Here is [the link](https://github.com/berty/berty/pull/1832#issuecomment-610859687). So all we have to do now is to tweak it and integrate it into gomobile-ipfs.
 
-If you would like to lend a helping hand, we'd be delighted to receive assistance from our [community](https://berty.tech/community)!
-[![Contribute](r1VGRZsv8.gif)](https://berty.tech/contribute)
+If you would like to lend a helping hand, we'd be delighted to receive assistance from our [community](https://berty.tech/community)! [![Contribute](r1VGRZsv8.gif)](https://berty.tech/contribute)

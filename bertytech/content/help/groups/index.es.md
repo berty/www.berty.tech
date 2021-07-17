@@ -1,10 +1,10 @@
 ---
-title: "Groups"
-description: Keep your data safe & your life private
+title: "Grupos"
+description: Mantenga sus datos seguros & su vida privada
 icon: fal fa-users
 color: pink
 ---
 
-# Groups
+# Grupos
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Próximamente</span>

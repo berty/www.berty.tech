@@ -1,6 +1,6 @@
 ---
 title: "Go-IPFS-Log"
-description: Go version of append-only log CRDT on IPFS
+description: Go версия добавляемого журнала CRDT для IPFS
 icon: fab fa-github
 color: black
 display_nav: false
@@ -13,15 +13,15 @@ menu:
 
 # Go-IPFS-Log
 
-**Go version of append-only log CRDT on IPFS**
+**Go версия добавляемого журнала CRDT для IPFS**
 
-## Introduction
+## Введение
 
-[ipfs-log](https://github.com/orbitdb/ipfs-log/) was originally created for [orbit-db](https://github.com/orbitdb/orbit-db) - a distributed peer-to-peer database on [IPFS](https://github.com/ipfs/ipfs). This library intends to provide a fully compatible port of the JavaScript version in Go.
+[ipfs-log](https://github.com/orbitdb/ipfs-log/) был создан для [orbit-db](https://github.com/orbitdb/orbit-db) - распределенной базы данных одноранговой сети на [IPFS](https://github.com/ipfs/ipfs). Эта библиотека намеревается предоставить полностью совместимый порт JavaScript версии в Go.
 
-The majority of this code was vastly derived from the JavaScript's [ipfs-log](https://github.com/orbitdb/ipfs-log) library.
+Большая часть этого кода была получена из JavaScript библиотеки [orbit-db](https://github.com/orbitdb/ipfs-log).
 
-## Source code
-Source code is available on [github](https://github.com/berty/go-ipfs-log)
+## Исходный код
+Исходный код доступен на [GitHub](https://github.com/berty/go-ipfs-log)
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/go-ipfs-log"><i class="fab fa-github"></i>berty/go-ipfs-log</a>

@@ -2,7 +2,7 @@
 title: "Newsletter"
 subtitle: Previous issues
 menu:
-    footer_col4:
-        weight: 20
+  footer_col4:
+    weight: 20
 ---
 

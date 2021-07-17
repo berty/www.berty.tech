@@ -7,7 +7,7 @@ distributed: false
 decentralized: false
 no_phone_required: true
 anonymous:
-e2ee: Partially
+e2ee: Частично
 offline_messaging: false
 multi_device: true
 open_spec: "?"

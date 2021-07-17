@@ -4,11 +4,11 @@ description: IPFS and libp2p on Mobile, with Gomobile
 icon: fab fa-github
 color: black
 display_nav: false
-ttags:  <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">Gomobile</span>
+ttags: <span class="tag blue">Go</span><span class="tag yellow">IPFS</span><span class="tag blue">Libp2p</span><span class="tag pink">Gomobile</span>
 open: true
 menu:
-    repos:
-        weight: 4
+  repos:
+    weight: 4
 ---
 
 # Gomobile-IPFS
@@ -31,7 +31,7 @@ This repo aims to provide packages for Android, iOS and React-Native that allow 
 
 ## License
 
-Dual [MIT](./LICENSE-MIT)/[Apache-2.0](./LICENSE-APACHE) license
+Dual [MIT](https://github.com/berty/berty/blob/master/LICENSE-MIT)/[Apache-2.0](https://github.com/berty/berty/blob/master/LICENSE-APACHE) license
 
 
 ## Source code

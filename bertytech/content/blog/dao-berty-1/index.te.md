@@ -1,18 +1,18 @@
 ---
 author: philh
-title: "Why a DAO for Berty? (Part I)" 
+title: "Why a DAO for Berty? (Part I)"
 date: 2020-07-01
 image: "dao-berty.png"
 categories:
-- announcement
+  - announcement
 tags:
-- technical
-- security
+  - technical
+  - security
 ---
 
 # Why a DAO for Berty? (Part I)
 
-* **TLDR**: 
+* **TLDR**:
     * The Berty protocol will never depend on a Blockchain.
     * We plan to set up a DAO to secure governance of its development team.
 
@@ -88,7 +88,7 @@ What better way to protect a project like Berty?
 
 ## A DAO for Berty
 
-Should the Berty project have to face direct or indirect attacks from state actors in the future, we believe that it would be better protected by relying on decentralization and transparency, rather than hiding and secrecy. 
+Should the Berty project have to face direct or indirect attacks from state actors in the future, we believe that it would be better protected by relying on decentralization and transparency, rather than hiding and secrecy.
 
 As a non-profit, open-source project, our goal has always been to create a public good. Berty is rent-free, accessible by any individual, and forkable by any developer. It’s nothing but logical to hand over the control of the public good to the community, once it has been released.
 

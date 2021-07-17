@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #21"
 date: 2019-11-15
-aliases: ["/newsletter/weekly-21"]
+aliases:
+  - "/newsletter/weekly-21"
 ---
 
 Before starting with the news, we just wanted to tell you that Tuesday was the birthday of our lead dev & UX designer! Come on, sing it with us: "Happy birthday Alexandra". 🎉

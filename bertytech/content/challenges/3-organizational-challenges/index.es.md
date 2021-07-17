@@ -1,35 +1,35 @@
 ---
-title: "Organizational challenges"
+title: "Desafíos como Institución"
 id: 3
 icon: fal fa-heart
 private: true
 ---
 
 
-### Funding as an NGO
+### Financiación en calidad de ONG
 
-#### Constraints:
+#### Limitantes:
 
-* No selling user data (we don't want to and we can't).
-* Free & Open Source application - no revenue.
+* Sin vender los datos de los usuario (no queremos y no podemos hacerlo).
+* Aplicación gratuita & de código abierto - sin ingresos económicos.
 
-#### How Berty tackles it:
+#### Cómo lo afronta Berty:
 
-* We're getting donations from sponsors.
-* We plan to crowdfund some tasks, like security audits.
+* Estamos recibiendo donaciones de patrocinadores.
+* Planeamos financiar de forma colectiva (crowdfund) algunas tareas, como las auditorías de seguridad.
 
-### Being incorruptible / unkillable
+### Ser incorruptible / imposible de matar
 
-#### Constraints:
+#### Restricciones:
 
-* Government can force you to add a backdoor in your software.
-* Government can force you to give them metadata and messages. This is strictly framed by SBDU in France (anti-terrorism section) and Cloud Act in USA.
-* Government can force you to kill the project.
-* You must comply with the regulations so you can't be sued.
+* El gobierno puede obligarte a agregar una puerta trasera en tu software.
+* El gobierno puede obligarte a darles metadatos y mensajes. Esto está estrictamente establecido por la SBDU en Francia (sección antiterrorista) y la Ley de la Nube en Estados Unidos.
+* El gobierno puede obligarte a eliminar el proyecto.
+* Debe cumplir con las normas para que no lo demanden.
 
-#### How Berty plans to tackle it:
+#### Cómo planea Berty afrontarlo:
 
-* Being open-source, so community can freely audit the code to check if any backdoor was added to it.
-* Being transparent, not having any secrets that the community doesn't know, so even if Berty Technologies is killed, the community can continue the project.
-* Losing control of the release process: we're still thinking about it but the idea is to delegate the release process and validation to the community.
-* Allowing other projects to use our protocol: it will add more noise over the network, which is good to make the metadata less useful.
+* Siendo de código abierto, por lo que la comunidad puede auditar libremente el código para comprobar si se le agregó alguna puerta trasera.
+* Siendo transparente, sin tener ningún secreto que la comunidad no sepa, así que incluso si Berty Technologies es eliminado, la comunidad puede continuar el proyecto.
+* Perdiendo el control del proceso de publicación: todavía estamos pensandolo, pero la idea es delegar el proceso de liberación y validación a la comunidad.
+* Permitiendo que otros proyectos usen nuestro protocolo: agregará más ruido a través de la red, lo que es bueno para que los metadatos sean menos útiles.

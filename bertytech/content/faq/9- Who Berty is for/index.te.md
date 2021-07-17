@@ -1,5 +1,5 @@
 ---
-title: "Who Berty is for? "
+title: "Who Berty is for?"
 id: 9
 private: true
 ---

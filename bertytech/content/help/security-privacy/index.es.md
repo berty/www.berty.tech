@@ -1,11 +1,11 @@
 ---
-title: "Security & Privacy"
-description: Keep your data safe & your life private
+title: "Seguridad & Privacidad"
+description: Mantenga sus datos seguros & su vida privada
 icon: fal fa-lock-alt
 color: pink
 private: true
 ---
 
-# Security & Privacy
+# Seguridad & Privacidad
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Próximamente</span>

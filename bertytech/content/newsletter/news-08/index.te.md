@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #08"
 date: 2019-08-09
-aliases: ["/newsletter/weekly-08"]
+aliases:
+  - "/newsletter/weekly-08"
 ---
 
 ## Paris P2P
@@ -28,10 +29,9 @@ Many of us have gone on vacation. On the other hand, for the team members who ar
 * A blogpost containing our feedback on the IPFS Camp we attended last month
 * Still working on optimizing reliability of the Android BLE driver
 
-##  We're hiring!
+## We're hiring!
 
-We are still looking for the coolest React Native developer to work on Berty!
-Help us find the right person 👉 https://berty.tech/jobs/react-native-developer/
+We are still looking for the coolest React Native developer to work on Berty! Help us find the right person 👉 https://berty.tech/jobs/react-native-developer/
 
 
 [> More info on our staff Team Weekly Sync!](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-10-04--staff-team-weekly-sync.md)

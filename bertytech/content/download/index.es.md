@@ -1,5 +1,5 @@
 ---
-title: "Download the Berty App"
+title: "Descarga la aplicación Berty"
 hclass: bg-blue gradient bg-download
 image: "berty_download.png"
 draft: true

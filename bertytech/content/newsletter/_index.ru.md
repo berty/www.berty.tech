@@ -1,6 +1,6 @@
 ---
-title: "Newsletter"
-subtitle: Previous issues
+title: "Новостная рассылка"
+subtitle: Предыдущие выпуски
 menu:
   footer_col4:
     weight: 20

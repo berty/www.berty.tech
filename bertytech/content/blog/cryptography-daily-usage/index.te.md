@@ -4,12 +4,12 @@ title: "Cryptography In Our Daily Usage"
 date: 2019-10-16
 image: "cryptography-daily-usage.jpg"
 categories:
-- freespeech
+  - freespeech
 tags:
-- surveillance
-- security
-- cybersecurity
-- privacy
+  - surveillance
+  - security
+  - cybersecurity
+  - privacy
 description: One could refer to cryptography as being meta-cryptic. In its own way, cryptography is a bit mysterious and probably vague to many people. You may not notice it, but we all use it without actually being aware of it most of the time.
 ---
 
@@ -31,8 +31,7 @@ So, now you know that cryptography is widely used in the life of a modern-day hu
 
 Before learning what HTTPS is, you should know where it all started – HTTP. Short for HyperText Transfer Protocol, HTTP a basic internet protocol. It is used to transfer information across the World Wide Web, which is commonly referred to as “the internet.”
 
-Yes, we’ve been using the web as we know it ever since 1990, and most of us don’t even know why there’s an “HTTP” in front of the “www” part of some internet addresses.
-No one blames you if you don’t know the answer, though. It is something that helps set the information free on the web. A deeper and more thorough explanation would require an article of its own.
+Yes, we’ve been using the web as we know it ever since 1990, and most of us don’t even know why there’s an “HTTP” in front of the “www” part of some internet addresses. No one blames you if you don’t know the answer, though. It is something that helps set the information free on the web. A deeper and more thorough explanation would require an article of its own.
 
 So what’s HTTPS? Let’s just say that the plain old HTTP is more “plain” than you may suspect – the information stored in HTTP websites is transported as plain text. You don’t have to be an IT specialist to know that this isn’t particularly safe. It is fine for some websites, while it’s definitely not fine for eCommerce businesses. This latter also need to store relevant credit card information and other sensitive data.
 
@@ -52,7 +51,7 @@ This type of encryption is called HSM, or Hardware Security Module encryption. T
 
 Email apps and sites such as Hotmail and Gmail may not store sensitive credit card information but can serve as a gateway to it. In fact, your email address is often a unique piece of information that a cybercriminal needs to have in order to infect your computer or smartphone with adware, ransomware, or other types of malware. That’s why most webmail applications use SSL encryption, as well. But here’s a piece of bad news for your privacy: the HTTPS extension does not provide encryption for the text within your emails.
 
-If you don’t mind the NSA reading your email, though, you shouldn’t really care about encrypting your texts. On the other hand, if the NSA can do it, someone else might be able to do it, as well. 
+If you don’t mind the NSA reading your email, though, you shouldn’t really care about encrypting your texts. On the other hand, if the NSA can do it, someone else might be able to do it, as well.
 
 However, end-to-end email providers do exist. If you want to keep your information as safe as possible, maybe consider moving away from the typical email apps and sites.
 
@@ -60,7 +59,7 @@ However, end-to-end email providers do exist. If you want to keep your informati
 
 ![](tv.jpg)
 
-This might be the type of encryption that you aren’t a fan of (😅), but it is still present in your everyday life. The way pay-TV encryption works is it scrambles the data it sends to your receiver - in this case, video and audio. 
+This might be the type of encryption that you aren’t a fan of (😅), but it is still present in your everyday life. The way pay-TV encryption works is it scrambles the data it sends to your receiver - in this case, video and audio.
 
 The only way for your receiver to decrypt the data is to use the exact correct algorithm and security keys, made specifically for decrypting the program.
 
@@ -68,11 +67,11 @@ The only way for your receiver to decrypt the data is to use the exact correct a
 
 ![](bitcoin.jpg)
 
-When you say “cryptography,” one might raise an eyebrow. When you say “crypto,” you’ll probably get “Oh, Bitcoin?”. Yes, Bitcoin - and, thanks to it, other cryptocurrencies have struck fame as of recently. So, does Bitcoin use encryption to ensure security? 
+When you say “cryptography,” one might raise an eyebrow. When you say “crypto,” you’ll probably get “Oh, Bitcoin?”. Yes, Bitcoin - and, thanks to it, other cryptocurrencies have struck fame as of recently. So, does Bitcoin use encryption to ensure security?
 
-Here’s a shocker: no, it doesn’t, at least not in the traditional sense of the word. The term “cryptocurrency” comes from the fact that the digital signature algorithm that cryptocurrencies use is essentially based on certain math techniques that are also used for elliptic curve encryption. 
+Here’s a shocker: no, it doesn’t, at least not in the traditional sense of the word. The term “cryptocurrency” comes from the fact that the digital signature algorithm that cryptocurrencies use is essentially based on certain math techniques that are also used for elliptic curve encryption.
 
-Bitcoin, however, revolves around public and private keys, which can be considered a type of encryption. 
+Bitcoin, however, revolves around public and private keys, which can be considered a type of encryption.
 
 ## Secure Your House!
 
@@ -92,7 +91,7 @@ Finally, **use services such as ProtonMail and PGP** as your daily email address
 
 ## Use Cryptography More and Everywhere
 
-Cryptography and encryption are like locking the front door of your home. Most likely, no one will try to enter your home, but you’re doing it for the off-chance that someone might. 
+Cryptography and encryption are like locking the front door of your home. Most likely, no one will try to enter your home, but you’re doing it for the off-chance that someone might.
 
 If using cryptography and encryption means being paranoid, so does locking your front door 🤪.
 
@@ -100,8 +99,7 @@ Of course, this doesn’t mean that you are completely safe. Yes, the more crypt
 
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
-</br>
+Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
  {{<tweet id="1175014666310959104">}}
 
 Photo Credit: https://www.unsplash.com 

@@ -5,25 +5,25 @@ date: 2020-12-01
 #image: "2020-11-30-Berty-Blogpost-Watching-global-security-and-surveillance-in-france_copie.png"
 image: "2020-11-30-Berty-Blogpost-Watching-global-security-and-surveillance-in-france_copie.png"
 categories:
-- news
+  - news
 tags:
-- security
-- privacy
-- surveillance
-description: Global Security and Surveillance in France 
+  - security
+  - privacy
+  - surveillance
+description: Global Security and Surveillance in France
 ---
 
 # Why we need to radicalize.
 
 Berty was born in Paris, France :fr: but is growing up in the shared custody of contributors around the world. Not by accident — we've been making a conscious push for geographic decentralization from day one. Freedom from surveillance is an unalienable right, not bestowed by one government or societal norm.
 
-Maybe it's in our blood. Human rights have long been the keystone of the French people's expectations of (and tolerance for) its government. This has played out in walkouts, demonstrations, and, famously, violent upheaval. 
+Maybe it's in our blood. Human rights have long been the keystone of the French people's expectations of (and tolerance for) its government. This has played out in walkouts, demonstrations, and, famously, violent upheaval.
 
 "Land of strikes"? Yup. Sorry but not sorry.
 
 We're seeing protests across the world that share the urgency of access to fundamental human freedoms, from Chile to Hong Kong to France to the United States.
 
-Many of us are giving enormous time and energy to Berty because of how strongly aligned we feel with those fighting for these rights. 
+Many of us are giving enormous time and energy to Berty because of how strongly aligned we feel with those fighting for these rights.
 
 From our point of view, the situation is taking an alarming turn and we wanted to share with you a vision, which leads to debate, but which will have the merit of preparing "for the worst".
 
@@ -41,7 +41,7 @@ And what we are observing today is extremely serious.
 
 ![](https://i.imgur.com/SDkIy3S.jpg)
 
-The French National Assembly recently passed **a law entitled "Global Security"** which hides a true arsenal of the dictatorship in the name of security. 
+The French National Assembly recently passed **a law entitled "Global Security"** which hides a true arsenal of the dictatorship in the name of security.
 
 We can only assume that its passage late on a Friday night was not timed to catch the media's notice.
 
@@ -69,7 +69,7 @@ I'm writing this article today.
 
 Tomorrow, will I be under suspicion for having authored it?
 
-What if I were simply prevented from posting, from sounding the alarm on a liberticidal law that reduces the rights of citizens? 
+What if I were simply prevented from posting, from sounding the alarm on a liberticidal law that reduces the rights of citizens?
 
 We're talking about France because it's the climate we know, but governments on every continent are manufacturing their own brand of censorship Kool-aid, trusting that a tired and frightened population will drink it without question.
 
@@ -104,8 +104,7 @@ We think people need these tools as soon as possible, and here's how we're keepi
 
 - **Messaging over networks the government can't shut down** with a free open source app using peer-to-peer and autonomous networks to provide secure communications even if mainstream networks are shut down or under surveillance.
 
-- **An indestructible news feed**
-that can withstand censorship and all forms of suppression.  An official "feed" for journalists, witnesses, and activists who can post content (written, audio, video) and get this information instantly distributed throughout the network.
+- **An indestructible news feed** that can withstand censorship and all forms of suppression.  An official "feed" for journalists, witnesses, and activists who can post content (written, audio, video) and get this information instantly distributed throughout the network.
 
 
 To sum up, **now is the moment to get moving**, because our rights are under a type of threat without recent precedent.
@@ -118,25 +117,18 @@ Keep your eyes open and your spirits high.
 
 ---
 
-### :newspaper:  Sources & media links : 
+### :newspaper:  Sources & media links :
 
-> :link: [Courrier International - 
-> La France sera bientôt un pays “beaucoup moins libre”](https://www.courrierinternational.com/article/vu-des-etats-unis-la-france-sera-bientot-un-pays-beaucoup-moins-libre) 
+> :link: [Courrier International - La France sera bientôt un pays “beaucoup moins libre”](https://www.courrierinternational.com/article/vu-des-etats-unis-la-france-sera-bientot-un-pays-beaucoup-moins-libre)
+> :link:   [Le Monde - Loi « sécurité globale » : « Le ministère de l’intérieur a clairement affirmé qu’il ne modifierait pas le texte, et surtout pas l’article 24 »](https://www.lefigaro.fr/politique/loi-securite-globale-jean-castex-saisira-le-conseil-constitutionnel-sur-l-article-24-20201124)
 
->:link:   [Le Monde - Loi « sécurité globale » : 
-« Le ministère de l’intérieur a clairement affirmé qu’il ne modifierait pas le texte, et surtout pas l’article 24 »](https://www.lefigaro.fr/politique/loi-securite-globale-jean-castex-saisira-le-conseil-constitutionnel-sur-l-article-24-20201124)
+> :link:  [Philosophie Mag - La Revanche du Panoptique](https://www.philomag.com/articles/loi-sur-la-surveillance-globale-la-revanche-du-panoptique)
+> :link:  [LQDN - 24 novembre 2020 « SÉCURITÉ GLOBALE » : L’ASSEMBLÉE NATIONALE VOTE POUR LA TECHNOPOLICE](https://www.laquadrature.net/2020/11/24/securite-globale-lassemblee-nationale-vote-pour-la-technopolice/)
 
-> :link:  [Philosophie Mag - La Revanche du Panoptique](https://www.philomag.com/articles/loi-sur-la-surveillance-globale-la-revanche-du-panoptique) 
-
-
->:link:  [LQDN - 24 novembre 2020 « SÉCURITÉ GLOBALE » :
- L’ASSEMBLÉE NATIONALE VOTE POUR LA TECHNOPOLICE](https://www.laquadrature.net/2020/11/24/securite-globale-lassemblee-nationale-vote-pour-la-technopolice/)
-
-> :link:  [RadioCanada : 
-Couper Internet en cas de contestations, une pratique qui se répand](https://ici.radio-canada.ca/nouvelle/1410943/internet-couper-iran-chine-contestations-manifestations-censure)
+> :link:  [RadioCanada : Couper Internet en cas de contestations, une pratique qui se répand](https://ici.radio-canada.ca/nouvelle/1410943/internet-couper-iran-chine-contestations-manifestations-censure)
 
 
-> :link:  [Basta Mag - Entrave à la liberté de la presse et surveillance de masse : la nouvelle loi macroniste de « sécurité globale »](https://www.bastamag.net/Entrave-a-la-liberte-de-la-presse-et-surveillance-de-masse-loi-PPL-securite-globale-atteinte-vie-privee ) 
+> :link:  [Basta Mag - Entrave à la liberté de la presse et surveillance de masse : la nouvelle loi macroniste de « sécurité globale »](https://www.bastamag.net/Entrave-a-la-liberte-de-la-presse-et-surveillance-de-masse-loi-PPL-securite-globale-atteinte-vie-privee)
 
 
 > :link:  [ZDNet - Vidéo : Loi sur la sécurité globale, Darmanin veut « tenir sa promesse »](https://www.zdnet.fr/actualites/loi-sur-la-securite-globale-darmanin-veut-tenir-sa-promesse-39912411.htm)
@@ -145,14 +137,13 @@ Couper Internet en cas de contestations, une pratique qui se répand](https://ic
 > :link:  [Internet Society France (NGO) ](https://www.isoc.fr/)
 
 
-> :link:  [Livre Blanc de la Sécurité Intérieure -](https://www.interieur.gouv.fr/content/download/125071/1001195/file/livre-blanc-de-la-securite-interieure.pdf) 
+> :link:  [Livre Blanc de la Sécurité Intérieure -](https://www.interieur.gouv.fr/content/download/125071/1001195/file/livre-blanc-de-la-securite-interieure.pdf)
 
 > **Support it! LQDN needs us.** : https://www.laquadrature.net/en/support/
 
 ___
 
-![](https://i.imgur.com/8h8r8ub.png)
-![](https://i.imgur.com/0JFegff.png)
+![](https://i.imgur.com/8h8r8ub.png) ![](https://i.imgur.com/0JFegff.png)
 
 
 {{<tweet id="1332243266243358720">}}

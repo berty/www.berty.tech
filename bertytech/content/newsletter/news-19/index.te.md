@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #19"
 date: 2019-10-31
-aliases: ["/newsletter/weekly-19"]
+aliases:
+  - "/newsletter/weekly-19"
 ---
 
 
@@ -14,8 +15,7 @@ Oh by the way, Happy Halloween, guys! 🎃
 
 ## Bazel x IPFS:
 
-As we are building a decentralized/distributed software, we don't want to rely on centralized dependency management (e.g. if GitHub is down, most of the time we won't be able to build our app). That's why we're trying to fetch bazel dependencies from IPFS.
-Norman started an open-source repo. You can have a look here: https://github.com/n0izn0iz/bazel_ipfs
+As we are building a decentralized/distributed software, we don't want to rely on centralized dependency management (e.g. if GitHub is down, most of the time we won't be able to build our app). That's why we're trying to fetch bazel dependencies from IPFS. Norman started an open-source repo. You can have a look here: https://github.com/n0izn0iz/bazel_ipfs
 
 ## Tech:
 
@@ -38,8 +38,7 @@ Antoine & Guilhem worked on gomobile-ipfs proposal implementation
 We have decided to launch a new process dedicated to publishing content (blog posts, tweets, etc.) based on a [blogpost from Trello](https://blog.trello.com/moved-to-published-using-trello-as-an-editorial-calendar). We now have a quick and clear overview of our pending blog posts!
 
 ### Assets
-Alex started a new repo with all our assets (logos, animations)</br>
-👉 https://github.com/berty/assets
+Alex started a new repo with all our assets (logos, animations)</br> 👉 https://github.com/berty/assets
 
 
 ## Weekly Sync

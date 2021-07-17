@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #26"
 date: 2019-12-20
-aliases: ["/newsletter/weekly-26"]
+aliases:
+  - "/newsletter/weekly-26"
 ---
 
 Ho Ho 🎄

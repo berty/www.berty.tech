@@ -20,8 +20,7 @@ Any reproduction, representation, translation, adaptation, or quotation that it 
 
 ### Personal information
 
-You can visit our site on the Internet without having to disclose your identity or to provide any personal information about you. However, we may sometimes ask you for information to identify a support request or apply for a position.
-You can learn more about this subject by reading our [privacy policy](/privacy-policy).
+You can visit our site on the Internet without having to disclose your identity or to provide any personal information about you. However, we may sometimes ask you for information to identify a support request or apply for a position. You can learn more about this subject by reading our [privacy policy](/privacy-policy).
 
 ### Cookies
 

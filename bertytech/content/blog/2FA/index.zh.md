@@ -17,11 +17,11 @@ description: 学习两步验证
 
 现在，访问帐户变的越来越麻烦。 事实上，猜测一组密码的软件也越来越强大。 那么您如何保护您的账户的访问权？ 您是否曾听说过多步骤或多因素认证？
 
-您可能没有注意，但您可能已经在现实世界中使用了双重身份验证。 您是否记得您的银行给你的银行卡来确认您帐户上的交易？ 双重身份验证（2FA）是您登录账户的又一个必要步骤。 没有 2FA，请只需要输入您的用户名和密码。 The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+您可能没有注意，但您可能已经在现实世界中使用了双重身份验证。 您是否记得您的银行给你的银行卡来确认您帐户上的交易？ 双重身份验证（2FA）是您登录账户的又一个必要步骤。 没有 2FA，请只需要输入您的用户名和密码。 密码是您唯一的身份验证因素。 简而言之，两步验证会让你的账户更安全。
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+2FA不应与通过您的电子邮件提供商连接到站点的能力混淆(例如"连接Google" )。 This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. 但这是另一个主题。
 
-## What is two-factor authentification (2FA)?
+## 什么是两步验证(2FA)？
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
@@ -85,7 +85,7 @@ If you are looking for a robust solution that fits your pocket, then look no fur
 
 Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... Hope you have saved them well. Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). 最后，如果您丢失它，您将必须使用两步验证恢复码恢复您所有的帐户... 希望你很好地保存了他们。 Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
 
 
 ## Closing Thoughts

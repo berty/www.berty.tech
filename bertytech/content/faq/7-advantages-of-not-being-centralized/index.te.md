@@ -1,5 +1,5 @@
 ---
-title: "What are the advantages of not being centralized? "
+title: "What are the advantages of not being centralized?"
 id: 7
 private: true
 ---

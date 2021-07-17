@@ -4,11 +4,11 @@ description: Go and C tor binary builtin transport for libp2p.
 icon: fab fa-github
 color: black
 display_nav: false
-ttags:  <span class="tag blue">Go</span><span class="tag blue">Libp2p</span><span class="tag cyan">Anonymity</span><span class="tag tor">Tor</span>
+ttags: <span class="tag blue">Go</span><span class="tag blue">Libp2p</span><span class="tag cyan">Anonymity</span><span class="tag tor">Tor</span>
 open: true
 menu:
-    repos:
-        weight: 6
+  repos:
+    weight: 6
 ---
 
 # Go-Tor-Transport

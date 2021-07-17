@@ -1,23 +1,23 @@
 ---
 author: Camille
-title: "Basic #3: Two-Factor Authentification"
+title: "Базовое #3: Двухфакторная аутентификация"
 date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 categories:
   - free-speech
 tags:
-  - security
-  - privacy
-description: Learn about 2FA
+  - безопасность
+  - конфиденциальность
+description: Узнать о двухфакторной аутентификации
 ---
 
-# Basic #3: Two-Factor Authentication
+# Базовое #3: Двухфакторная аутентификация
 
 
-Nowadays, access to an account is more and more compromised. Indeed, there is more and more powerful software to test a set of passwords. So how do you protect access to your account? Have you ever heard of multi-step or multi-factor authentication?
+Nowadays, access to an account is more and more compromised. В самом деле, существует все больше и больше мощных программ для тестирования набора паролей. Так как вы защищаете доступ к своей учетной записи? Вы когда-нибудь слышали о многоэтапной или многофакторной аутентификации?
 
-You may not have paid attention, but you are probably already using two-factor authentication in the physical world. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+Вы могли не обратить внимание, но вы, вероятно, уже используете двухфакторную аутентификацию в физическом мире. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
 
 The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
 

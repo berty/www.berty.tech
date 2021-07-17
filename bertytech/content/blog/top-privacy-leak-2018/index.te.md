@@ -4,11 +4,11 @@ title: "Top 2018 Privacy Leaks"
 date: 2019-02-11
 image: "leak-2018.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- privacy
-- social-networks
-- internet
+  - privacy
+  - social-networks
+  - internet
 description: With 2018 now firmly in the rearview mirror, it’s a good time to set aside a moment and take stock of everything that had happened during those 12 months. Just like any other year, 2018 had its ups and downs. However, a notable trend among those low points was widespread in privacy leaks.
 ---
 
@@ -28,8 +28,7 @@ What is worse, these breaches will keep happening – there is just too much of 
 
 ![](Cambridge-Analytica-logo.png)
 
-</br>
-To be clear, this privacy leak did not happen in 2018 – it took place back in 2014 and 2015. However, the scandal broke last year, and Cambridge Analytica was undoubtedly one of the biggest stories regarding the privacy of 2018. In the end, it affected between **[50](https://www.nytimes.com/2018/03/19/technology/facebook-cambridge-analytica-explained.html) and [87](https://www.theguardian.com/technology/2018/apr/08/facebook-to-contact-the-87-million-users-affected-by-data-breach) million Facebook users**.
+</br> To be clear, this privacy leak did not happen in 2018 – it took place back in 2014 and 2015. However, the scandal broke last year, and Cambridge Analytica was undoubtedly one of the biggest stories regarding the privacy of 2018. In the end, it affected between **[50](https://www.nytimes.com/2018/03/19/technology/facebook-cambridge-analytica-explained.html) and [87](https://www.theguardian.com/technology/2018/apr/08/facebook-to-contact-the-87-million-users-affected-by-data-breach) million Facebook users**.
 
 This is what happened. Aleksandr Kogan, a psychology professor at the University of Cambridge, created a personality test app called “thisisyourdigitallife.” Using it, he started collecting data on Facebook users who had downloaded the app and their friends. The data included people’s locations and “likes.” The users consented to this, and it is important to note that this was legitimate at the time because the app was portrayed as having an academic purpose.
 
@@ -47,8 +46,7 @@ Once again, the leak itself happened before 2018, but this was yet another story
 
 ## 3- Facebook
 
-![](facebook1.png)
-</br>
+![](facebook1.png) </br>
 
 Despite the rise of other social media platforms such as Instagram, Facebook is still the dominant force in its field. That being said, 2018 was not a good year for the company in terms of privacy issues. Following the two highly publicized events we already covered, the platform suffered another breach later that year.
 
@@ -80,8 +78,7 @@ This was not the first problem of this nature as Google+ had already [faced a si
 
 ![](starwood-logo.png)
 
-</br>
-In November of 2018, Marriott International stated that Starwood, its subsidiary, had suffered a [massive data breach](http://news.marriott.com/2018/11/marriott-announces-starwood-guest-reservation-database-security-incident/). The company discovered this in 2018, but the unauthorized access had been taking place since 2014.
+</br> In November of 2018, Marriott International stated that Starwood, its subsidiary, had suffered a [massive data breach](http://news.marriott.com/2018/11/marriott-announces-starwood-guest-reservation-database-security-incident/). The company discovered this in 2018, but the unauthorized access had been taking place since 2014.
 
 This affected **500 million guests** who had visited Starwood properties. The hackers were able to copy the reservation database and gain access to various information. This included names, addresses, passport numbers, and even payment card info.
 
@@ -89,23 +86,22 @@ This affected **500 million guests** who had visited Starwood properties. The ha
 
 ![](exactis-logo.png)
 
-</br>
-In June of 2018, a cybersecurity researcher discovered that Exactis, a Florida firm which collects and aggregates personal data, left a database with over [**300 million records**](https://www.wired.com/story/exactis-database-leak-340-million-records/) on a public server. The data did not contain Social Security numbers or credit card info, but it was still very comprehensive.
+</br> In June of 2018, a cybersecurity researcher discovered that Exactis, a Florida firm which collects and aggregates personal data, left a database with over [**300 million records**](https://www.wired.com/story/exactis-database-leak-340-million-records/) on a public server. The data did not contain Social Security numbers or credit card info, but it was still very comprehensive.
 
 We do not know if anyone has managed to abuse the database. Still, the very fact it was out in the open is a significant privacy risk.
 
 ## Conclusion
 
 
-  Company  | Number of accounts leaked
-  ------------- | -------------
- Amazon  | not disclosed
-  mypersonality app  | 4M
-  Facebook  | 30M
-  Google+  | 52.5M
-Cambridge Analytica  | 87M
-Exactis | 300M
-Starwood Hotels and Resorts | 500M
+  | Company                     | Number of accounts leaked |
+  | --------------------------- | ------------------------- |
+  | Amazon                      | not disclosed             |
+  | mypersonality app           | 4M                        |
+  | Facebook                    | 30M                       |
+  | Google+                     | 52.5M                     |
+  | Cambridge Analytica         | 87M                       |
+  | Exactis                     | 300M                      |
+  | Starwood Hotels and Resorts | 500M                      |
 
 These were some of the most notable privacy leaks of 2018. Unfortunately, the list could be much longer. In today’s world, our privacy is in constant danger. Therefore, it pays to stay informed and do everything in your power to protect yourself.
 

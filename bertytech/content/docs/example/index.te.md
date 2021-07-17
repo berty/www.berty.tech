@@ -3,7 +3,7 @@ title: "Example doc"
 description: This page displays all styling options available
 icon: fal fa-pencil-ruler
 color: green-alt
-draft: True
+draft: true
 ---
 
 
@@ -27,26 +27,27 @@ Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius
 * Unordered list - item 4
 
 <div class="block-info blue">
-	<h5><i class="far fa-info-circle"></i>Important fact to know</h5>
-	<p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h5><i class="far fa-info-circle"></i>Important fact to know</h5>
+    <p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <div class="block-info pink">
-	<h5><i class="far fa-exclamation-circle"></i>Important fact to know</h5>
-	<p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h5><i class="far fa-exclamation-circle"></i>Important fact to know</h5>
+    <p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <div class="block-info yellow">
-	<h5><i class="far fa-exclamation-triangle"></i>Important fact to know</h5>
-	<p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h5><i class="far fa-exclamation-triangle"></i>Important fact to know</h5>
+    <p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 <div class="block-info green">
-	<h5><i class="far fa-check-circle"></i>Important fact to know</h5>
-	<p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <h5><i class="far fa-check-circle"></i>Important fact to know</h5>
+    <p>Paragraph - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 
 > Quoted text.
+> 
 > > Quoted quote.
 
 > * Quoted 

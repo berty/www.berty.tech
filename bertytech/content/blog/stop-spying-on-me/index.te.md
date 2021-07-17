@@ -4,10 +4,10 @@ title: "Stop spying on me!"
 date: 2020-06-16
 image: "stop-spying.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- Privacy
-- Security
+  - Privacy
+  - Security
 description:
 ---
 
@@ -16,31 +16,29 @@ description:
 
 ## The roadtrip example
 
-In the old days, your ancestors could spend a weekend by the sea without anyone knowing. Today, if you decide to go, you are monitored, no matter what happens, from the beginning to the end of your journey. 
+In the old days, your ancestors could spend a weekend by the sea without anyone knowing. Today, if you decide to go, you are monitored, no matter what happens, from the beginning to the end of your journey.
 
-* You let yourself be guided by your GPS, which records all the routes. 
-* Your cell phone indicates all the relays you pass by. 
-* You use your credit card to pay tolls. 
-* You decide to stop for a coffee break on the road, you connect to the free wifi service, which in terms of safety, is almost perfect! 
+* You let yourself be guided by your GPS, which records all the routes.
+* Your cell phone indicates all the relays you pass by.
+* You use your credit card to pay tolls.
+* You decide to stop for a coffee break on the road, you connect to the free wifi service, which in terms of safety, is almost perfect!
 * And when you finally arrive at your destination, you decide to publish on the networks a nice picture of you at the beach . At least we know where you are! 😝
 
 
 ![](https://i.imgur.com/xgSEwgq.jpg)
 
 
-Everything we do is recorded and stored. And the truth is: we (sadly) accept to be monitored for every detail. 
+Everything we do is recorded and stored. And the truth is: we (sadly) accept to be monitored for every detail.
 
 ## Watched like a hawk
 
 The chains are gradually wrapped around us without us being aware of it. We have lost this notion of freedom. This freedom to think, to express oneself, to move, to participate in events, to live simply without it generating a whole bunch of metadata - that are not without consequences:
 
-> _"We kill people based on metadata."_
-> -- <cite>Michael Hayden, former head of the CIA and NSA</cite>
+> _"We kill people based on metadata."_ -- <cite>Michael Hayden, former head of the CIA and NSA</cite>
 
 The sentence pronounced by the former head of the CIA and the NSA. Reference was made to Skynet, a program similar to Big Data, to collect and store millions of metadata. The only difference, instead of targeting and identifying potential consumers, Skynet's algorithm aims to target future targets of American drones to eliminate terrorists in Pakistan. Only, it turns out his algorithm was:
 
-> _"Screwed up and ineffective, causing the death of hundreds of innocent people."_
-> -- <cite> Patrick Ball, a scientific expert at the Human Rights Data Analysis Group.</cite>
+> _"Screwed up and ineffective, causing the death of hundreds of innocent people."_ -- <cite> Patrick Ball, a scientific expert at the Human Rights Data Analysis Group.</cite>
 
 
 ## Our data reveal a lot of information
@@ -75,11 +73,9 @@ We can also talk about cybercrime, for which connected devices are a real gold m
 
 On the other hand, when it comes to our connected devices, our vigilance dissipates. And yet the threat is there. Malicious hackers can subtract your banking, personal, and health information and use it for personal or other purposes, the primary purpose of which is, without a doubt, money. The more connected we are, the more vulnerable we are.
 
-You can also be the victim of a burglary. When you are on holiday, you post photos on social networks. This means that you are not at home—essential information for a malicious person. In the past, burglars had to walk the streets to find empty houses. Today, with just a few clicks, this information is at your fingertips!
-Besides, didn't you just post a picture of yourself at the beach?
+You can also be the victim of a burglary. When you are on holiday, you post photos on social networks. This means that you are not at home—essential information for a malicious person. In the past, burglars had to walk the streets to find empty houses. Today, with just a few clicks, this information is at your fingertips! Besides, didn't you just post a picture of yourself at the beach?
 
-The question arises: are privacy and the Internet-compatible?
-We will try to answer them in a future article.
+The question arises: are privacy and the Internet-compatible? We will try to answer them in a future article.
 
 
 

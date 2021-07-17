@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #27"
 date: 2020-01-03
-aliases: ["/newsletter/weekly-27"]
+aliases:
+  - "/newsletter/weekly-27"
 ---
 
 Dear Reader,

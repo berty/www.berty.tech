@@ -1,77 +1,77 @@
 ---
-title: "Berty News #53"
+title: "Новости Berty #53"
 date: 2021-01-29
 aliases:
   - "/newsletter/weekly-53"
 ---
 
-# News #53
+# Новость №53
 
-Ahoy Bertizen! 🏴‍☠️
-
-
-We've gotten a lot of new subscribers since [a Hacker News post on Wednesday](https://news.ycombinator.com/item?id=25926360) and in [Reddit/Open](https://www.reddit.com/r/opensource/comments/l67i0g/berty_a_secure_peertopeer_messaging_app_that/) - thanks to those who published us! Welcome aboard if you're among them! The waters are choppy, and the stronger our crew, the better. (A special toast for the familiar faces from the early days is in order, too! 🍻)
+Ахой Бертизен! 🏴‍☠️
 
 
-As usual, quick update about the Berty team. We're doing well and working hard. We did some team-building at the beginning of the year (no trust falls of course 😁). #TeamNewYork. We're excited to see what comes from this extra momentum.
+У нас появилось много новых подписчиков после [сообщения Hacker News в среду](https://news.ycombinator.com/item?id=25926360) и в [Reddit/Open](https://www.reddit.com/r/opensource/comments/l67i0g/berty_a_secure_peertopeer_messaging_app_that/) - спасибо тем, кто нас опубликовал! Добро пожаловать на борт, если вы среди них! Вода неспокойная, и чем сильнее наша команда, тем лучше. (Также уместен специальный тост за знакомые лица из первых дней жизни! 🍻)
 
 
-Happy reading and see you in two weeks :)
+Как обычно, быстрые новости о команде Berty. У нас всё хорошо, и мы много работаем. В начале года мы занимались сплочением команды (доверие, конечно, не падает 😁). #TeamNewYork. Мы рады видеть, что дает этот дополнительный импульс.
+
+
+Приятного чтения и до встречи через две недели :)
 
 
 ## 🚀 Open Source
 
-Highlights from the last 2 weeks:
+Основные моменты за последние 2 недели:
 
-* Made headway on some app extensions to test the push notifications
-* Used our new debugging tools to dig into stability issues
-* Finished gomobile-ipfs integration ([berty/berty#3024](https://github.com/berty/berty/pull/3024) + [ipfs-shipyard/gomobile-ipfs#61](https://github.com/ipfs-shipyard/gomobile-ipfs/pull/61))
-* Implement partial backup features on go-orbit-db
-* Adapted internal/tinder for p2p-circuit usage
-* Fixed recently broken attachments in conversations
-* Added a `Member.IsCreator` field to the messenger API to make life easier for non-Berty apps using our library ([berty/berty#3000](https://github.com/berty/berty/pull/3000))
-* Continue working on multi-account UX and flows ([berty/berty#3013](https://github.com/berty/berty/pull/3013))
-* Improved debugging by adding log management on Flipper
-* Merged Berty+gomobile-ipfs integration ([berty/berty#3024](https://github.com/berty/berty/pull/3024))
-* Continued working on custom BLE driver & stabilizing connections
-* Refactored the Tor init/uninit code to improve support account switching
-* Continued progress on the DNS over TLS over Tor ([berty/berty#2910](https://github.com/berty/berty/pull/2910))
-* Various UI small improvements
-* Various fixes from testers' feedback
+* Усовершенствованы некоторые расширения приложений для тестирования push-уведомлений
+* Использовали наши новые инструменты отладки, чтобы разобраться в проблемах со стабильностью
+* Завершена интеграция gomobile-ipfs ([berty/berty#3024](https://github.com/berty/berty/pull/3024) + [ipfs-shipyard/gomobile-ipfs#61](https://github.com/ipfs-shipyard/gomobile-ipfs/pull/61))
+* Реализована функция частичного резервного копирования на go-orbit-db
+* Адаптирован internal/tinder для использования p2p-цепи
+* Исправлены недавно сломанные вложения в разговорах
+* В API обмена сообщениями добавлено поле `Member.IsCreator`, чтобы упростить жизнь приложениям, не связанным с Berty, использующим нашу библиотеку ([berty/berty#3000](https://github.com/berty/berty/pull/3000))
+* Продолжена работа над UX и потоками для нескольких аккаунтов ([berty/berty#3013](https://github.com/berty/berty/pull/3013))
+* Улучшена отладка за счет добавления управления журналами на Flipper
+* Добавлена интеграция Berty+gomobile-ipfs ([berty/berty#3024](https://github.com/berty/berty/pull/3024))
+* Продолжена работа над кастомным драйвером BLE и стабилизацией связи
+* Реорганизован код инициализации/удаления Tor для улучшения переключения аккаунтов службы поддержки
+* Продолжена работа над DNS через TLS через Tor ([berty/berty#2910](https://github.com/berty/berty/pull/2910))
+* Различные небольшие улучшения пользовательского интерфейса
+* Различные исправления по отзывам тестировщиков
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
-We'll say it again – we've got a lot of new subscribers and couldn't be happier. Our [GitHub](https://github.com/berty/Berty) stars have more than doubled.
+Повторим ещё раз - у нас много новых подписчиков, и мы очень счастливы. Наши звёзды [GitHub](https://github.com/berty/Berty) выросли более чем вдвое.
 
-⭐️ Check it 👇  ⭐️
+⭐ Посмотрите 👇 ⭐
 
 ![](https://i.imgur.com/HghXvBL.png)
 
-The larger and more diverse our community and their needs+skillsets, the better Berty will be.
+Чем больше и разнообразнее будет наше сообщество и его потребности + набор навыков, тем лучше будет Berty.
 
-Several folks also hopped on to our Discord (come on in!) and compiled the code to test Berty. This gave rise to the kind of spontaneous, passionate conversation between strangers around the world that every digital revolutionary dreams of.
+Несколько человек также подключились к нашему Discord (заходите!) И скомпилировали код для тестирования Berty. Это породило спонтанный, страстный разговор между незнакомцами по всему миру, о котором мечтает каждый цифровой революционер.
 
-...Or just has fun in.
+...Или просто повеселиться.
 
 ![](https://i.imgur.com/eSbnGJE.png)
 
 
-### Translating
+### Перевод
 
-You can help us by translating the Berty app + website. It will be much appreciated! 🧡
+Вы можете помочь нам, переведя приложение Berty + сайт. Мы будем очень признательны! 🧡
 
 👉 https://translate.berty.community/
 
 ![](https://i.imgur.com/ns4qCxT.png)
 
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
-If you want to help us, we have two labels on GitHub to let you know where we need you: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers. Just saying 😏
+Если вы хотите нам помочь, у нас есть две метки на GitHub, чтобы вы знали, где вы нам нужны: [**Хороший первый вопрос**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) и [ **Требуется помощь**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). Вы будете получать нашу вечную благодарность и, возможно, несколько стикеров. Просто скажите 😏
 
 
 
-## 💌 Mentions
+## 💌 Упоминания
 
 
 {{<tweet id="1354253921083027456">}}
@@ -85,17 +85,17 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 ![](https://i.imgur.com/XEIXbhe.png)
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
-* [Paris P2P](https://p2p.paris/)
+* [Париж P2P](https://p2p.paris/)
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2021-01-18](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-01-18--staff-team-weekly-sync.md)
     * [2021-01-25](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-01-25--staff-team-weekly-sync.md)
-    * [SOW Report #5](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2021-01-29--sow-gomobile-ipfs.md)
+    * [SOW отчёт #5](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2021-01-29--sow-gomobile-ipfs.md)
 
   

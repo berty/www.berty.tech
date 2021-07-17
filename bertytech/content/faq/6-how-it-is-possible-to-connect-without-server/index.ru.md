@@ -1,7 +1,7 @@
 ---
-title: "Berty does not have a server, how is it possible to connect?"
+title: "Berty не имеет сервера, как можно подключаться?"
 id: 6
 private: true
 ---
 
-Berty uses a distributed peer-to-peer system.
+Berty использует распределенную одноранговую систему.

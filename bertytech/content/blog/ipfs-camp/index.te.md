@@ -4,10 +4,9 @@ title: "Berty team at IPFS Camp, June 2019"
 date: 2019-08-15
 image: "berty_at_ipfs_camp.jpg"
 categories:
-- crew
+  - crew
 tags:
-- meetup
-#description:
+  - meetup
 ---
 
 On June 27-30, 2019, Berty team visited the [IPFS Camp](https://camp.ipfs.io/), a hacker retreat organized by the people behind [IPFS](https://ipfs.io).
@@ -28,8 +27,7 @@ At Berty, we’ve made our proof of concept using [libp2p](https://libp2p.io), a
 
 One of the formats presented on the conference were [Deep Dives](https://github.com/ipfs/camp/tree/master/DEEP_DIVES) — tackling a common problem for a couple of hours and then presenting it to the other attendees. Here are a couple of dives in which the Berty team participated:
 
-**“How to optimize IPFS on mobile platform”**, led by [Carson Farmer](https://github.com/carsonfarmer) from [Textile](https://textile.io). Here’s the [video from the presentation](https://www.youtube.com/watch?v=RfXRn8RTLh4&feature=youtu.be). The purpose of this Deep Dive session was to list the problems encountered with IPFS on mobile and to think about possible solutions.
-Problems addressed:
+**“How to optimize IPFS on mobile platform”**, led by [Carson Farmer](https://github.com/carsonfarmer) from [Textile](https://textile.io). Here’s the [video from the presentation](https://www.youtube.com/watch?v=RfXRn8RTLh4&feature=youtu.be). The purpose of this Deep Dive session was to list the problems encountered with IPFS on mobile and to think about possible solutions. Problems addressed:
 
 - limited resources (CPU, RAM, data (3G/4G), battery)
 - app killed / put in background frequently

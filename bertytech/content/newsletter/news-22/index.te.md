@@ -1,11 +1,11 @@
 ---
 title: "Berty Weekly #22"
 date: 2019-11-22
-aliases: ["/newsletter/weekly-22"]
+aliases:
+  - "/newsletter/weekly-22"
 ---
 
-*A quick message:
-We would like to sincerely THANK YOU because we get a lot of feedback and new suscribers to our weekly newsletter. So, welcome to the new ones and thank you all for following our wild adventure!*
+*A quick message: We would like to sincerely THANK YOU because we get a lot of feedback and new suscribers to our weekly newsletter. So, welcome to the new ones and thank you all for following our wild adventure!*
 
 # Current Work
 
@@ -17,9 +17,6 @@ Antoine and Guilhem implemented a basic Unix domain socket system that will be u
 Guilhem also fixed gomobile-ipfs shell on the iOS simulator, where the absolute path was too long to use a shell over UDS, so we had to fall back on TCP. The thing is, a socket path length is limited to [108 chars](https://unix.stackexchange.com/questions/367008/why-is-socket-path-length-limited-to-a-hundred-chars) and the temporary directory absolute path on the iOS simulator looks like this:
 
 <code>/Users/aeddi/Library/Developer/CoreSimulator/Devices/DD757A2D-73E4-42FE-A652-482F314DC0C3/data/Containers/Data/Application/34589FE1-0BA9-44FC-9954-57CCB7D9F884/tmp/</code>
-
-
-
 
 ### First build
 This week, our front team was busy working on the first build of the app:

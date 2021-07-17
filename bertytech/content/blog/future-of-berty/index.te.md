@@ -4,10 +4,10 @@ title: "How do we imagine the future?"
 date: 2020-07-27
 image: "future-berty.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- privacy
-- security
+  - privacy
+  - security
 description: "At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project."
 ---
 
@@ -23,9 +23,7 @@ We are part of those who always try to remain positive, active, and wish to see 
 ## How do we see the world of communications in 5 years?
 We very sincerely believe that great revolutions will take place, and may already be in the making. They are technical, technological, but also cultural revolutions and these are still very confidential as they are just beginning their way to the general public.
 
-To make a comparison, we think that this period is comparable to the birth of the Internet. In the beginning, TCP/IP protocols were reserved for experts, enthusiasts, and the lucky ones who had the tools.
-Among the first major Internet players, very few have survived and are still there today.  When new players arrived, they imposed themselves for one simple reason:
-they responded to a need.
+To make a comparison, we think that this period is comparable to the birth of the Internet. In the beginning, TCP/IP protocols were reserved for experts, enthusiasts, and the lucky ones who had the tools. Among the first major Internet players, very few have survived and are still there today.  When new players arrived, they imposed themselves for one simple reason: they responded to a need.
 
 ![](https://i.imgur.com/cgqbLJA.jpg)
 
@@ -44,26 +42,20 @@ The fact is that today, in 2020, even if people have been made aware of the risk
 ![](https://i.imgur.com/cy8Aw0P.jpg)
 
 
-What we think at Berty is that our societies will observe new needs emerging.
-Anonymity, privacy, data protection, and communication is one of the significant issues of our century. If it is still poorly distinguished by the general public, it could become the primary concern in the coming years.
-To meet them, we will have to know how to promote them, but above all, we will need tools and services that mark a radical change from their predecessors.
+What we think at Berty is that our societies will observe new needs emerging. Anonymity, privacy, data protection, and communication is one of the significant issues of our century. If it is still poorly distinguished by the general public, it could become the primary concern in the coming years. To meet them, we will have to know how to promote them, but above all, we will need tools and services that mark a radical change from their predecessors.
 
 Our intuition leads us to believe that it is time for a new protocol to emerge, complementing the Internet and current communications networks with an independent, neutral, and autonomous infrastructure.
 
 ## Yes, it is ambitious. Wasn't Internet ambitious?
 
-It will not be enough to be an Internet giant or even a start-up from the same incubators. It will be necessary to make a total break with the current Internet paradigm by offering a tool of collective interest, responding to a real and urgent need, and this in a disinterested way.
-It will be necessary to prove to its users that they are not mere consumers, but that they are both members of a community and actors of a common project.
+It will not be enough to be an Internet giant or even a start-up from the same incubators. It will be necessary to make a total break with the current Internet paradigm by offering a tool of collective interest, responding to a real and urgent need, and this in a disinterested way. It will be necessary to prove to its users that they are not mere consumers, but that they are both members of a community and actors of a common project.
 
 A community-led project can be far more powerful than any multinational corporation. When it responds to a real need in a structured and organized way, a community can push the impossible limits.
 
 We believe that this protocol should be open, free, and irreversibly belong to humanity. That is to say that everyone will have the inalienable right to use it, rework it, audit it, and verify its specificities.
 
 ### It is here that the notion of "common" is paramount.
-It is not a product or a service but a tool available to all.
-Does the Alphabet belong to a company?
-Can the Alphabet be banned or censored?
-No, and this is why Berty is imagined and designed with the idea that it can be used by everyone, integrated into an infinite number of applications.
+It is not a product or a service but a tool available to all. Does the Alphabet belong to a company? Can the Alphabet be banned or censored? No, and this is why Berty is imagined and designed with the idea that it can be used by everyone, integrated into an infinite number of applications.
 
 If we are working so hard on the Berty protocol, we believe that a new standard must emerge as soon as possible and that it must be gradually integrated into tomorrow's ecosystem by proving its robustness.
 
@@ -72,16 +64,13 @@ Like an alphabet, it takes time for it to spread everywhere. Then, little by lit
 ![](https://i.imgur.com/BdcsgKG.jpg)
 
 
-At the dawn of a world that seems to have been undergoing stress tests for several years, we believe that the need for a new tool will grow and that it is now urgent to prepare for this radical break with centralized systems.
-Once this protocol is open and available, we believe that the majority of mainstream applications will no longer be able to assume commercially not to use it.
+At the dawn of a world that seems to have been undergoing stress tests for several years, we believe that the need for a new tool will grow and that it is now urgent to prepare for this radical break with centralized systems. Once this protocol is open and available, we believe that the majority of mainstream applications will no longer be able to assume commercially not to use it.
 
-In 2010, a French cryptographic engineer specializing in the interception of communications, and the first director of the hacking section of the DGSE (*(French Foreign Intelligence Services)*), Bernard Barbier stated:
-**"The Internet was not designed to be secure"**.
+In 2010, a French cryptographic engineer specializing in the interception of communications, and the first director of the hacking section of the DGSE (*(French Foreign Intelligence Services)*), Bernard Barbier stated: **"The Internet was not designed to be secure"**.
 
 
 
-The introduction of technologies such as BLE (Bluetooth Low Energy) will create new uses and new applications using all forms of devices.
-Since the telephone is already ubiquitous worldwide, there is no doubt that they will be one of the components of tomorrow's networks.
+The introduction of technologies such as BLE (Bluetooth Low Energy) will create new uses and new applications using all forms of devices. Since the telephone is already ubiquitous worldwide, there is no doubt that they will be one of the components of tomorrow's networks.
 
 The user will be used to manage multiple devices, multiple accounts, and cryptography will have taken a turn based on the principles of Zero-Knowledge.
 
@@ -105,9 +94,7 @@ Whether it is national institutions, public or private organizations, today's co
 
 
 ### Explosive context & global conflagration.
-- An extremely tense, even explosive, political context, both within states and at the geopolitical level, presenting as legitimate a significant increase in surveillance tools.
-The loss of confidence in institutions, states, or even the most extensive web platforms could lead to citizens' behavior changes. It could emerge in many countries and fester, taking the form of riots, social protests, and civil wars.
-_Examples of signals: Yellow Vests, Black Live Matters, Hong Kong, Chile,..._
+- An extremely tense, even explosive, political context, both within states and at the geopolitical level, presenting as legitimate a significant increase in surveillance tools. The loss of confidence in institutions, states, or even the most extensive web platforms could lead to citizens' behavior changes. It could emerge in many countries and fester, taking the form of riots, social protests, and civil wars. _Examples of signals: Yellow Vests, Black Live Matters, Hong Kong, Chile,..._
 
 ![](https://i.imgur.com/ufI2b9W.jpg)
 

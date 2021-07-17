@@ -1,11 +1,11 @@
 ---
-title: "Will it have features such as self-destructing messages and BOR?"
+title: "Будет ли он иметь такие функции, как самоуничтожающиеся сообщения и уничтожение после прочтения?"
 id: 13
 private: true
 ---
 
-Currently the Berty Protocol won't allow Burn on Read messages. While it is conceptually possible to ask other peers to delete the encryption keys after a message being read, you won't have any guarantee that the other party is not using a modified client, those clients may not comply with those requests.
+В настоящее время протокол Berty не позволяет уничтожать сообщения после прочтения. Хотя концептуально возможно попросить другие одноранговые узлы удалить ключи шифрования после прочтения сообщения, у вас не будет никакой гарантии, что другая сторона не использует модифицированный клиент, эти клиенты могут не выполнять эти запросы.
 
-We will make those features available for people chatting with other normal people, but as soon as you are talking with potentially bad people, you can't have any guarantees.
+Мы сделаем эти функции доступными для людей, которые общаются с другими нормальными людьми, но если вы разговариваете с потенциально плохими людьми, у вас не может быть никаких гарантий.
 
-If you trust your friends, this feature will be useful, else, consider that it's just a visual feature, but not something secure.
+Если вы доверяете своим друзьям, эта функция будет полезна, иначе считайте, что это просто визуальная функция, а не что-то безопасное.

@@ -1,6 +1,6 @@
 ---
-title: "Assets"
-description: '🎨 Berty logos, icons, pictures, text, etc'
+title: "Материалы"
+description: '🎨 Логотипы Berty, иконки, картинки, текст и т.д.'
 icon: fab fa-github
 color: black
 open: true
@@ -9,11 +9,11 @@ menu:
     weight: 7
 ---
 
-# Assets
+# Материалы
 
-**🎨 Berty logos, icons, pictures, text, etc**
+**🎨 Логотипы Berty, иконки, картинки, текст и т.д.**
 
-## Source code
-Source code is available on [github](https://github.com/berty/assets)
+## Исходный код
+Исходный код доступен на [GitHub](https://github.com/berty/assets)
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/assets"><i class="fab fa-github"></i>berty/assets</a>

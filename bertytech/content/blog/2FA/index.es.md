@@ -1,6 +1,6 @@
 ---
 author: Camille
-title: "Basic #3: Two-Factor Authentification"
+title: "Fundamento #3: Autenticación de dos factores"
 date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
@@ -12,7 +12,7 @@ tags:
 description: Aprende sobre 2FA
 ---
 
-# Basic #3: Two-Factor Authentication
+# Fundamento #3: Autenticación de dos factores
 
 
 Hoy en día, el acceso a una cuenta está cada vez más comprometido. De hecho, hay cada vez más softwares que permiten probar un conjunto de contraseñas. Entonces, ¿cómo proteges el acceso a tu cuenta? ¿Has oído hablar de autenticación de múltiples pasos o múltiples factores?

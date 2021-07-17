@@ -1,26 +1,26 @@
 ---
-title: "Press & Media"
+title: "Пресса и Медиа"
 type: fakepost
 hclass: bg-blue gradient bg-press
 image: "berty_press.png"
 menu:
   footer_col4:
     weight: 40
-    name: Press
+    name: Пресса
 ---
 
 {{< display_section_press path="/docs/press/press_documents" >}}
 
-### Vector logos (.svg format)
+### Векторные логотипы (.svg формат)
 {{< display_directory_images path="/docs/press/logos_svg" class="block bg-grid padding" >}}
 
-### Images logos (.png format)
+### Изображения логотипов (.png формат)
 {{< display_directory_images path="/docs/press/logos_png" class="block bg-grid padding" >}}
 
-### Screenshots
+### Скриншоты
 {{< display_directory_images path="/docs/press/screenshots" class="" >}}
 
-### Photos
+### Фотографии
 {{< display_directory_images path="/docs/press/photos" class="block" >}}
 
-Photos by [Laura Gilli](https://www.lauragilli.com/)
+Фото от [Laura Gilli](https://www.lauragilli.com/)

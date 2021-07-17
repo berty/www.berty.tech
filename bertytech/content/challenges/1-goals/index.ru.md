@@ -1,17 +1,17 @@
 ---
-title: "Goals of Berty"
+title: "Цели Berty"
 id: 1
 icon: fal fa-rocket
 private: true
 ---
 
-* Provide a secure messenger that would preserve privacy and anonymity of its users
-* Create a chat application that works over P2P network on desktop and mobile platforms
-* Provide an easy to use Protocol, so that developers can create secure applications over P2P networks on desktop and mobile
-* Improve the strengths and entropy of P2P networks by adding a lot of new peers
-* Be able to do off-grid communication (offline-first)
-* Be resilient against censorship
-* Be resilient against mass surveillance by minimizing metadata leakage
-* Being an alternative to the existing models powered by GAFAM or controlled/controllable by the government
+* Предоставить безопасный мессенджер, который сохранит конфиденциальность и анонимность своих пользователей
+* Создать приложение чата, которое работает через сеть P2P на настольных и мобильных платформах
+* Обеспечить простой в использовании протокол, чтобы разработчики могли создавать безопасные приложения в сетях P2P на настольных компьютерах и мобильных устройствах
+* Улучшить прочность и энтропию сетей P2P, добавив много новых пиров
+* Уметь общаться вне сети (в первую очередь в автономном режиме)
+* Быть устойчивым к цензуре
+* Быть устойчивым к массовой слежке за счет минимизации утечки метаданных
+* Быть альтернативой существующим моделям, основанным GAFAM или контролируемым государством
 
-In working towards those goals, Berty is facing certain challenges.
+Работая над достижением этих целей, Berty сталкивается с определенными проблемами.

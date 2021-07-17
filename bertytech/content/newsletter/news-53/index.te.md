@@ -1,7 +1,8 @@
 ---
 title: "Berty News #53"
 date: 2021-01-29
-aliases: ["/newsletter/weekly-53"]
+aliases:
+  - "/newsletter/weekly-53"
 ---
 
 # News #53
@@ -15,7 +16,7 @@ We've gotten a lot of new subscribers since [a Hacker News post on Wednesday](ht
 As usual, quick update about the Berty team. We're doing well and working hard. We did some team-building at the beginning of the year (no trust falls of course 😁). #TeamNewYork. We're excited to see what comes from this extra momentum.
 
 
-Happy reading and see you in two weeks :) 
+Happy reading and see you in two weeks :)
 
 
 ## 🚀 Open Source
@@ -55,11 +56,11 @@ Several folks also hopped on to our Discord (come on in!) and compiled the code 
 ![](https://i.imgur.com/eSbnGJE.png)
 
 
-### Translating 
+### Translating
 
 You can help us by translating the Berty app + website. It will be much appreciated! 🧡
 
-👉 https://translate.berty.community/  
+👉 https://translate.berty.community/
 
 ![](https://i.imgur.com/ns4qCxT.png)
 
