@@ -32,7 +32,7 @@ They are great talks (check the [agenda](https://ethcc.io/agenda)). To name a fe
 * "CATCH ME IF .. THEN .. ELSE" (REGULATORY ENFORCEMENT AND COMPLIANCE)
 
 
-Small precision: we will not be present during the official EthCC. We were too late to get tickets... Shame on us.  On the other hand, we will be on several side events. So it's possible that we'll see each other if you go to the parallel events. 
+Small precision: we are not be present during the official EthCC. We were too late to get tickets... Shame on us.  On the other hand, we are on several side events. So it's possible that we'll see each other if you go on those parallel events. 
 
 Here is the list of the event we are sure to go:
 * [DAOist](https://www.thedaoist.co/schedule)
