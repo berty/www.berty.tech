@@ -46,7 +46,7 @@ Here's what we've been up to the last few weeks:
 
 This week was held the EthCC in Paris. The Ethereum Community Conference (EthCC) is considered the biggest Ethereum event in Europe. The EthCC is organized every year by Ethereum France's association, aiming to promote the understanding and development of Ethereum blockchain technology and, more broadly, blockchain, peer-to-peer, and cryptography technologies.
 
-We were able to participate in several side events like those organized by our friends from Skillz. It was of very high quality. We'll tell you more about it in a future blog post! 
+We were able to participate in several side events like those organized by our friends from SkillZ. It was of very high quality. We'll tell you more about it in a future blog post! 
 
 
 ### Berty Builders Meetings
@@ -54,8 +54,10 @@ We were able to participate in several side events like those organized by our f
 
 ![](https://i.imgur.com/DJgQqTO.png)
 
-After Steeve from Zenly, we are pleased to have Dietrich from Protocol Lab as our next guest.  His talk is entitled "No Bigger Ship: IPFS and Strategies for Leverage in
-World-Scale Technology Adoption". It's quite a topic! 
+After [Steeve](https://twitter.com/steeve) from Zenly, we are pleased to have [Dietrich](https://twitter.com/dietrich) from Protocol Labs as our next guest.  His talk is entitled "**No Bigger Ship: IPFS and Strategies for Leverage in
+World-Scale Technology Adoption**". It's quite a topic! 
+
+As usual, this event will be live on our [Discord](https://crpt.fyi/berty-discord). Make sure to join!  
 
 Here is all the info: https://www.meetup.com/fr-FR/berty-hq/events/279417128/
 
