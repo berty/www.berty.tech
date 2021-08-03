@@ -26,7 +26,7 @@ Thank you, ParisP2P, and see you next month!
 
 {{< tweet id="1192148421513302021" >}}
 
-### Assets
+### Материалы
 As we mentioned last week, Alex created a new repo with all our assets (logos, animations) and it's now available directly on our website</br> 👉 https://assets.berty.tech/
 
 
