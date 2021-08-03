@@ -23,7 +23,7 @@ menu:
   <a href="https://github.com/berty/berty/releases"><img src="https://badge.fury.io/gh/berty%2Fberty.svg" alt="GitHub version"></a>
 </p>
 
-## Introduction
+## Введение
 
 **Berty** is an anonymous, secure, peer-to-peer protocol that doesn't need an internet connection to function.
 
@@ -130,7 +130,7 @@ Read our [contribute page](https://berty.tech/contribute).
 Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) ([`LICENSE-APACHE`](https://github.com/berty/berty/blob/master/LICENSE-APACHE)) or the [MIT license](https://opensource.org/licenses/MIT) ([`LICENSE-MIT`](https://github.com/berty/berty/blob/master/LICENSE-MIT)), at your option. See the [`COPYRIGHT`](https://github.com/berty/berty/blob/master/COPYRIGHT) file for more details.
 
 
-## Source code
+## Исходный код
 Source code is available on [github](https://github.com/berty/berty)
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/berty"><i class="fab fa-github"></i>berty/berty</a>
