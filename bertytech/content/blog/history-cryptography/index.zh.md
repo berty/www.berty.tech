@@ -4,10 +4,10 @@ title: "History of Cryptography"
 date: 2019-06-26
 image: "2020-07-29-Berty-Blogpost-History_of_cryptography.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - technical
-  - security
+  - 技术方面
+  - 安全
 description: Cryptography in one form or other is everywhere online, from banking sites to personal communication apps. But it’s not a modern invention. When exactly did it arise? And what developments has it undergone over the years? The history of cryptography runs parallel to the development of new communication methods and safer transactions. Learn more about it to understand just how important it has become.
 aliases:
   - blog/history-cryptology
