@@ -7,7 +7,7 @@ image: "corona.jpg"
 categories:
   - news
 tags:
-  - news
+  - Actualités
 description: Berty during Covid-19
 ---
 
