@@ -4,9 +4,9 @@ title: "Why You Should Stop Saying You Have Nothing To Hide!"
 date: 2018-12-13
 image: "nothing-to-hide.jpg"
 categories:
-  - "free-speech"
+  - "wolność mowy"
 tags:
-  - privacy
+  - prywatność
   - cybersecurity
   - surveillance
 description: So you are being watched online. Why should you care? After all, you are doing nothing wrong. You have nothing to hide, right? You just go online to chat with your friends, maybe argue with…
@@ -77,7 +77,7 @@ If you have time (1h30), I recommend that you watch this wonderful online docume
 
 {{< vimeo id="189016018" >}}
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{< tweet id="1073318619260571649" >}}
 
