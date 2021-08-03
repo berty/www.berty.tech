@@ -9,7 +9,7 @@ categories:
   - free-speech
 tags:
   - technical
-  - security
+  - безопасность
 ---
 
 # Berty at Paris P2P Festival #0
@@ -80,7 +80,7 @@ For those of you who couldn't make it to this Paris P2P festival, no worries, it
 We organize Paris P2P Monthly meetings every first Wednesday of the month at Ground Control (https://p2p.paris/en/) If you would like to be informed of the upcoming dates, sign up for our [Newsletter](https://crpt.fyi/berty-news) to make sure you don't miss anything.
 
 
-### Thanks
+### Спасибо
 
 We would like to thank our co-organizers ([Osmose Collective](https://osmose.world/), PhilH, Louise, Gorhgorh and all the people who contributed in any way to the organization of this festival), and all people who proposed talks, workshops and sessions. So many enriching meeting points that allowed P2P communities to come together, in such a beautiful setting! So, thank you all  👏
 
