@@ -7,8 +7,8 @@ image: "create-strong-password.jpg"
 categories:
   - news
 tags:
-  - security
-  - privacy
+  - 安全
+  - 隐私
   - how-to
 description: Learn how to create a strong password!
 ---
