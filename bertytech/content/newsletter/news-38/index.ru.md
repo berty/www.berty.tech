@@ -52,19 +52,19 @@ IPFS WebUI is a web interface to IPFS where you can check on your node stats, ex
 
 ![](https://i.imgur.com/VdSp0zM.png)
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 * **SignalCommunity**: We're listed on the [SignalCommunity website](https://community.signalusers.org/t/who-knows-berty/14544). We're excited to see that more people are becoming interested in Berty. We don't know the people who wrote on this topic read this newsletter. If they do, thank you for subscribing and welcome! 🧡 Thanks to those who answered the thread. Feel free to reply to this post or any other! In general, if you spot a Berty mention somewhere, please drop us an email, it's always a pleasure ;)
 
 * **ProductHunt**: Just to let you know that we are on ProductHunt in the upcoming category. https://www.producthunt.com/upcoming/berty
 
-* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * July 1st, 2020: [Paris P2P #11](https://p2p.paris/en/event/monthly-11/) (Paris, FR 🇫🇷) - _replaced by an online event_
 
@@ -76,10 +76,10 @@ Until further notice, we are canceling all in-person events at public venues –
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hi <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@Berty</a>, will you support mesh networking messaging in the future? I always wondered why we don&#39;t see more of those..🙏🌻</p>&mdash; enjoypolo✊ (@enjoypolosfu) <a href="https://twitter.com/enjoypolosfu/status/1271160492279635970?ref_src=twsrc%5Etfw">June 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-06-02](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-06-02--staff-team-weekly-sync.md)
     * [2020-06-08](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-06-08--staff-team-weekly-sync.md)
 
