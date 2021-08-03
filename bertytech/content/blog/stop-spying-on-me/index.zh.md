@@ -4,7 +4,7 @@ title: "Stop spying on me!"
 date: 2020-06-16
 image: "stop-spying.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
   - Privacy
   - Security
