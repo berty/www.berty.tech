@@ -6,8 +6,8 @@ image: "future-berty.jpg"
 categories:
   - free-speech
 tags:
-  - privacy
-  - security
+  - конфиденциальность
+  - безопасность
 description: "At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project."
 ---
 
