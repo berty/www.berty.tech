@@ -79,4 +79,4 @@ In every emergency context, whether it is an attack or a pandemic, new tools are
 
  {{<tweet id="1240668694310793216">}}
 
-Photo Credit: [undraw](https://undraw.co/illustrations) 
+चित्र का श्रेय :[ undraw](https://undraw.co/illustrations) 
