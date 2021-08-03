@@ -5,11 +5,11 @@ date: 2020-11-25
 #image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - how-to
   - cybersecurity
-  - privacy
+  - prywatność
   - surveillance
 description: Easy tips to protect yourself in 10min!
 ---
@@ -35,7 +35,7 @@ Read our full article:
 
 ## Set up Two-Factor Authentification
 
-Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism. We highly recommend setting up 2FA as much as possible.
+Uwierzytelnianie dwuskładnikowe (2FA) to metoda uwierzytelniania, w ramach której użytkownik komputera uzyskuje dostęp wyłącznie po pomyślnym przesłaniu dwóch lub więcej dowodów do mechanizmu uwierzytelniania. We highly recommend setting up 2FA as much as possible.
 
 Read our full article:
 * https://berty.tech/blog/2fa/
@@ -105,5 +105,5 @@ When we go home, we close the door. So why don't we do the same online and on ou
 
 So all the little actions we've just seen together are tiny small steps that look like nothing, but in reality, a big step towards our freedom.
 
-Cheers Internet!
+Pozdrowienia dla internetu!
 {{<tweet id="1324705378584637442">}}
