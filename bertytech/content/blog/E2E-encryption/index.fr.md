@@ -1,13 +1,13 @@
 ---
-author: camille
+author: Camille
 title: "What is E2E Encryption?"
 date: 2019-09-05
 image: "E2EE-encryption.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
-  - technical
-  - security
+  - technique
+  - sécurité
 description: You have probably already heard about cryptography and, more specifically, about end-to-end encryption. But do you know what it really is?
 ---
 
