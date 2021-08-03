@@ -6,8 +6,8 @@ image: "gomobile_ipfs_logo.jpg"
 categories:
   - announcement
 tags:
-  - technical
-  - security
+  - techniczne
+  - bezpieczeństwo
 ---
 
 # Berty releases gomobile-ipfs
