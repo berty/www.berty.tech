@@ -8,7 +8,7 @@ categories:
   - freespeech
 tags:
   - meetup
-  - privacy
+  - prywatność
   - open-source
 description: Our memories from Fosdem 2020.
 ---
@@ -110,7 +110,7 @@ Fosdem is a super social event. It goes super fast. We would like to thank all t
 
 See you next year at FOSDEM2021.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 
  {{<tweet id="1223526319511801856">}}
