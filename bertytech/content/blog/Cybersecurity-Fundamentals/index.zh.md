@@ -9,7 +9,7 @@ categories:
 tags:
   - surveillance
   - cybersecurity
-  - privacy
+  - 隐私
 description: "Introduction to Cybersecurity Fundamentals"
 ---
 
