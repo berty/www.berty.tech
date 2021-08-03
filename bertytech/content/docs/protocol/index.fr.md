@@ -56,7 +56,7 @@ However it also brings several technical constraints:
 * **Asynchrony**: there is no central server to rule over the timeline, and therefore timestamps cannot be used for any purpose other than non-critical tasks like displaying messages in a certain order. For example: expiration time cannot be used to revoke access to a resource, it is impossible to determine with certainty the order in which operations occurred within a group of peers, etc...
 * **Authority**: there is no central authority to arbitrate operations and any resulting conflicts or to manage user identity and permissions.
 
-> :warning: Warning
+> :warning: Avertissement
 > 
 > For the moment, IPFS is not privacy-focused and since it is a peer-to-peer network, any peer can for instance resolve a peerID to its associated public IP address. On the protocol layer, we can only mitigate this problem by rotating the peerID of the user regularly, rotating rendezvous points that peers use to meet and synchronize with each other and by making it difficult to establish a relationship between the data shared by users.
 > 
@@ -478,7 +478,7 @@ For example, if Alice and Bob are contacts, they will both listen on the RDV Poi
 
 Thus direct transports are not using a DHT like IPFS and this is a synchronous communication protocol since both devices need to be connected to each other in order to exchange messages. This aside, the Berty Protocol works exactly the same way.
 
-> :warning: Warning
+> :warning: Avertissement
 > 
 > If Alice sends all her RDV Points to Bob, he could make deductions on her true identity in Multi-Member Groups. Bob will indeed know all the Groups to which he and Alice belong and may be able to link different Member IDs in different Groups to Alice.
 
