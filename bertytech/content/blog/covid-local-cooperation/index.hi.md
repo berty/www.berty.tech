@@ -10,7 +10,7 @@ tags:
   - surveillance
   - security
   - privacy
-description: "Time: March 2020. Place: planet Earth. Containment rules are disrupting lives in many countries, and social relations between individuals are reduced to a minimum."
+description: "समय: मार्च 2020 स्थान: ग्रह पृथ्वी। कंटेनर नियम कई देशों में जीवन को बाधित कर रहे हैं, और व्यक्तियों के बीच सामाजिक संबंध न्यूनतम हो गए हैं।"
 ---
 
 # COVID-19 के सामने बर्टी माइक्रो-स्थानीय सहयोग के नए रूपों की अनुमति क्यों दे सकता है?
