@@ -4,10 +4,10 @@ title: "How to set up a VPN on your phone in less than 10 minutes"
 date: 2019-06-05
 image: "vpn-phone.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
   - how-to
-  - security
+  - 安全
   - censorship
 description: At this particular point in time, it’s occurred to you that it might be a good idea to set up a VPN (Virtual Private Network) on your mobile phone. However, the problem is that you don’t have any idea of where to begin. Well, the good news is thatyou’ve come to the right place. We’re here to tell you how to set up your new VPN in just a few minutes on either your iPhone or your Android device.
 ---
