@@ -25,7 +25,7 @@ We are delighted to see that more and more of us are meeting at these monthly ev
 
 ![](parisp2p.jpg)
 
-## React Native Developer
+## React Native разработчик
 
 As a reminder, we are still looking for a great React Native developer to work with us! Thank you for sharing this information with others!
 
