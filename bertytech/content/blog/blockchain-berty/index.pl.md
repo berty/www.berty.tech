@@ -9,7 +9,7 @@ categories:
 tags:
   - berty
   - internet
-  - privacy
+  - prywatność
 description: "Is Berty a blockchain?"
 ---
 
