@@ -8,7 +8,7 @@ categories:
 tags:
   - privacy
   - security
-description: "At Berty's, we don't have a crystal ball, and unfortunately, we don't know the next winning lottery numbers. However, we do follow our intuitions, and these led us a few years ago to start the Berty project."
+description: "बर्टी में, हमारे पास क्रिस्टल बॉल नहीं है, और दुर्भाग्य से, हम अगले जीतने वाली लॉटरी संख्या नहीं जानते हैं। हालाँकि, हम अपने अंतर्ज्ञान का पालन करते हैं, और इनसे हमें कुछ साल पहले बर्टी परियोजना शुरू करने का मौका मिला।"
 ---
 
 # बर्टी: हम भविष्य की कल्पना कैसे करते हैं?
