@@ -4,7 +4,7 @@ title: "Digital Signature"
 date: 2019-10-17
 image: "digital-signature.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
   - Technical
   - Security
