@@ -64,7 +64,7 @@ _We will open betas for the different packages and apps soon, so anyone will be 
 **Note: this is an ongoing work. The repos are being opened progressively, and there will be more changes and updates.**
 
 
-### Berty Protocol
+### Berty 协议
 
 <a href="https://pkg.go.dev/berty.tech/berty/v2"><img src="https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white" alt="go.dev reference"></a>
 <a href="https://codecov.io/gh/berty/berty"><img src="https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow" alt="Code coverage"></a>
