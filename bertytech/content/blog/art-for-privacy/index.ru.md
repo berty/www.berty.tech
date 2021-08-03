@@ -7,7 +7,7 @@ image: "Djalouz-Art4Privacy1.png"
 categories:
   - free-speech
 tags:
-  - privacy
+  - конфиденциальность
   - surveillance
   - art
 description:
