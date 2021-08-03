@@ -4,7 +4,7 @@ title: "Arrêtez de m'espionner !"
 date: 2020-06-16
 image: "stop-spying.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
   - Privacy
   - Security
