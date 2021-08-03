@@ -9,7 +9,7 @@ Hello from Belgium! 🇧🇪
 
 As [announced](https://berty.tech/blog/berty-at-fosdem-2020/), we are live from Brussels for the FOSDEM 2020 edition. We are so excited to be a part of this congress! 🤩
 
-We'll try to give you live news as much as possible on our [Twitter](https://twitter.com/berty). Stay tuned!
+We'll try to give you live news as much as possible on our [Twitter](https://twitter.com/berty). बने रहें!
 
 
 By the way, we're still on for a nice beer, just give us a shout! 🍻
