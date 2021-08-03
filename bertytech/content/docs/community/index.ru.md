@@ -1,5 +1,5 @@
 ---
-title: "Berty Community"
+title: "Сообщество Berty"
 description: How to become a member and start contributing
 image: "berty_community.png"
 icon: fal fa-users
