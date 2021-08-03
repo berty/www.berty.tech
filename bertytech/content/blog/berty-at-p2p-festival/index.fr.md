@@ -6,7 +6,7 @@ image: "festival.png"
 video: time_laps_festival.mp4
 video_thumbnail: time_laps_festival_350x200.mp4
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
   - technique
   - sécurité
