@@ -7,7 +7,7 @@ aliases:
 
 *A quick message: We would like to sincerely THANK YOU because we get a lot of feedback and new suscribers to our weekly newsletter. So, welcome to the new ones and thank you all for following our wild adventure!*
 
-# Current Work
+# Huidig werk
 
 ## Tech:
 
@@ -64,6 +64,6 @@ If you come, drop us a message so we can enjoy a local brew together. 🍻
 - 1 & 2 February - Brussels, Belgium 🇧🇪: [FOSDEM 2020](https://fosdem.org/2020/)
 
 ![](fosdem.png)
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-11-22--staff-team-weekly-sync.md)
