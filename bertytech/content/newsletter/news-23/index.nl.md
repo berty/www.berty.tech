@@ -7,7 +7,7 @@ aliases:
 
 Hello dear friends from all over the globe 🧤 We hope you are doing well and that you had a good thanksgiving! 🦃🍁 Happy reading!
 
-# Current Work
+# Huidig werk
 
 ## Tech:
 
@@ -47,6 +47,6 @@ You can come and meet us there, we'd be delighted to see you!
 
 ![](paris-p2p-4.png)
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-11-29--staff-team-weekly-sync.md)
