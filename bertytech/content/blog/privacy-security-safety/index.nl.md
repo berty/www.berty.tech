@@ -32,7 +32,7 @@ Individual freedom is an integral part of everyone’s private life. It stops wh
 
 > _"Liberty requires security without intrusion, security plus privacy."_ --  Bruce Schneier
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Proost Internet, voel je vrij om te klappen & onze verhalen te volgen, zie je de volgende keer. 🤫
 
 {{< tweet id="1077254213045026816" >}}
 
