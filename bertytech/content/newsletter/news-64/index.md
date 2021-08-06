@@ -26,6 +26,7 @@ Here's what we've been up to the last few weeks:
     * Fix the release system by replacing Bintray with another platform 
     * Continue the integration in Berty
 * App: 
+    * We are actively working on push notifications. This will allow to test berty in more daily conditions rather than only in quick test mode
     * Make all Berty services optional in-app
     * Fix various bugs found by beta-testers
     * investigate and fix the misconfiguration of both Shakebugs and Crashlytics
