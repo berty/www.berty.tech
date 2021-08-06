@@ -10,7 +10,7 @@ tags:
   - announcement
   - berty
   - news
-description: This week, no news[letter] is good news! We participated in two important events and were pretty busy. We'll give you a rundown here, as we recap how these exchanges have helped to move our mission forward in a much-changed social landscape.
+description: Deze week, geen nieuws[brief] is goed nieuws! We hebben deelgenomen aan twee belangrijke evenementen en hadden het behoorlijk druk. We zullen u hier een overzicht geven, als we bedenken hoe deze uitwisselingen hebben bijgedragen aan het bevorderen van onze missie in een sterk veranderd sociaal landschap.
 ---
 
 # TALKS AT PBWS & IPFS WRAP UP 2020
