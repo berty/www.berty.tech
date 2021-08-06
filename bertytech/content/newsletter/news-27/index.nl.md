@@ -16,7 +16,7 @@ We would like to take this time to thank you sincerely for following our journey
 Cheers, friends!
 
 
-# Current Work
+# Huidig werk
 
 A lot of our team members were on vacation but we still have a lot to tell you :smirk:
 
@@ -87,6 +87,6 @@ Are any of you coming? If so, let us know, we'll be hanging around together  :sm
 * 5 February 2020: [Paris P2P #6](https://p2p.paris/en/event/monthly-6/) (Paris, FR 🇫🇷)
 * 23-25 April 2020: [PWG 2020](https://www.worldgathering.planetiers.com/) (Lisbon, PT 🇵🇹)
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-03--staff-team-weekly-sync.md)
