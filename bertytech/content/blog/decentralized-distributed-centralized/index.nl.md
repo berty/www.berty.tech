@@ -137,6 +137,6 @@ Less prone to failure and offering faster access times, decentralized systems ha
 
 However, it’s only distributed systems that allocate resources and rights across the whole network. By doing so, they are not only remarkably tolerant to faults but also more transparent than other systems. As the adoption of distributed systems lowers their deployment and maintenance costs, these systems will likely prove an inspired choice in the years to come.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Proost Internet, voel je vrij om te klappen & onze verhalen te volgen, zie je de volgende keer. 🤫
 
 {{<tweet id="1143493043783372801">}}
