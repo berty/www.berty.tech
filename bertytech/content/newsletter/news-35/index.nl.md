@@ -61,7 +61,7 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 ### Yolo is out!
  ![](https://i.imgur.com/dd8mQie.png)
 
-Yolo is a one-stop real-time feed of ready-to-install releases and tests for your apps. We're using it at berty to make releases and test branches ready to download and use on a developer's device within minutes after passing our CI.
+Yolo is a one-stop real-time feed of ready-to-install releases and tests for your apps. We gebruiken het op de vloer om releases en testbranches te maken, klaar om te downloaden en te gebruiken op het apparaat van een ontwikkelaar binnen enkele minuten na het passeren van onze CI.
 
 We created Yolo to implement the critical features missing from Apple's TestFlight.
 
