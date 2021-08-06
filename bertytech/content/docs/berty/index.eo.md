@@ -1,5 +1,5 @@
 ---
-title: "Berty"
+title: "Berteto"
 description: A mobile & desktop app
 icon: fab fa-github
 color: black
@@ -11,7 +11,7 @@ menu:
 ---
 
 <div align="center">
-  <img src="https://berty.tech/img/berty.svg" alt="Berty" title="Berty" height="200px" />
+  <img src="https://berty.tech/img/berty.svg" alt="Berteto" title="Berteto" height="200px" />
 </div>
 
 <h3 align="center">🤝 Anti-censorship and anti-surveillance communication protocol</h3>
