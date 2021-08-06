@@ -99,7 +99,7 @@ Of course, this doesn’t mean that you are completely safe. Yes, the more crypt
 
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
+Proost Internet, voel je vrij om te klappen & onze verhalen te volgen, zie je de volgende keer. 🤫 </br>
  {{<tweet id="1175014666310959104">}}
 
 Photo Credit: https://www.unsplash.com 
