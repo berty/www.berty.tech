@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-16"
 ---
 
-## Current Work
+## Huidig werk
 
 * Berty V2: This week, we are still working on refactoring the application to present you with a nice V2. We integrated IPFS into Berty, as well as the handshake on the network, the crypto implementation and a bridge between "gomobile" and Berty (Whoo!).
 * Gomobile-ipfs: As announced in our previous newsletters, the first version of the repo is complete. We are therefore preparing for participation in the debate on the gomobile-ipfs architecture and start working on integrating gomobile on Berty.
