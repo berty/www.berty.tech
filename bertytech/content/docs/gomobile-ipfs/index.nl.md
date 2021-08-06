@@ -29,7 +29,7 @@ This repo aims to provide packages for Android, iOS and React-Native that allow 
 * Improve this README
 
 
-## License
+## Licentie
 
 Dual [MIT](https://github.com/berty/berty/blob/master/LICENSE-MIT)/[Apache-2.0](https://github.com/berty/berty/blob/master/LICENSE-APACHE) license
 
