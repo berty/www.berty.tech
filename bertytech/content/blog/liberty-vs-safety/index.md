@@ -58,6 +58,8 @@ And we don't like the growing tendency of governments to think that "everyone is
 
 ![https://i.imgur.com/7O5MYfT.png](https://i.imgur.com/7O5MYfT.png)
 
+ If we had to make an extreme choice for Berty, we would prefer an extreme freedom. However, this does not mean that we are not considering other possibilities. For example, what the DAO's are doing is quite promising. We haven't found (yet) an alternative or a robust and resilient model that fits with Berty state of mind. If you have ideas, please share them with us. 
+
 ## Liberty vs Safety
 
 Since our creation, our team has obviously been thinking about these issues, and we regularly reinforce our conviction when we observe all the laws evolving towards generalized surveillance and censorship. This radically new positioning of the Berty protocol is encouraged every day by recent announcements, and our watch encourages us to continue on this path.
