@@ -12,7 +12,7 @@ We're delivering your dose of Berty information! :100:
 Happy reading :)
 
 
-# Current Work
+# Huidig werk
 
 
 ## Tech
@@ -118,7 +118,7 @@ Alex also added a few fun posters made by zöÔma to [assets.berty.tech](https:/
 * April 23-25, 2020: [PWG 2020](https://www.worldgathering.planetiers.com/) (Lisbon, PT 🇵🇹)
 
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our Weekly Sync:
 
