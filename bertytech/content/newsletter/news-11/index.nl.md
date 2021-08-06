@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-11"
 ---
 
-## Current Work
+## Huidig werk
 
 In a nutshell, the main topics of this week were:
 
