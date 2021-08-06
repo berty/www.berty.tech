@@ -33,7 +33,7 @@ In our previous newsletter, we mentioned that we were looking for people who cou
 
 We'll contact the people you recommended! We'll keep you informed.
 
-### Berty Protocol
+### Le protocole Berty
 Manfred, our founder, released the *bertyprotocol.proto*. You can have a look here:
 
 > https://berty.tech/docs/protocol/#bertyprotocol-proto
@@ -46,7 +46,7 @@ This week, we published a new blog post on why smartphones are the best surveill
 ### FOSDEM 2020 🇧🇪
 Fresh news: we will be attending the FOSDEM 2020 convention.  Every year, thousands of free and open-source software developers from all over the world meet in Brussels. We'll be happy to meet you there in February.
 
-If you come, drop us a message so we can enjoy a local brew together. 🍻
+If you come, drop us a message so we can enjoy a local brew together. 🤫
 
 > https://fosdem.org/2020/
 
