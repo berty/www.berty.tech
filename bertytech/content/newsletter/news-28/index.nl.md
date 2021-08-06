@@ -17,7 +17,7 @@ However, here we are, we're back. Ready to share the team's achievements.
 
 Enjoy your 2 weeks' recap, kids! 😘
 
-# Current Work
+# Huidig werk
 
 ## Tech
 
@@ -104,6 +104,6 @@ Manfred, Zooma, Alex, Antoine, Zaraki, Phil, and many others participated in the
 * 4 March 2020: [Paris P2P #7](https://p2p.paris/en/event/monthly-7/) (Paris, FR 🇫🇷)
 * 23-25 April 2020: [PWG 2020](https://www.worldgathering.planetiers.com/) (Lisbon, PT 🇵🇹)
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our Weekly Sync: [2020-01-10](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-10--staff-team-weekly-sync.md) [2020-01-17](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-17--staff-team-weekly-sync.md)
