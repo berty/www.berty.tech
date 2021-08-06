@@ -7,7 +7,7 @@ aliases:
 
 As promised last week, we have some great news to announce today 😉! Happy reading!
 
-# Current Work
+# Huidig werk
 
 ## Tech:
 
@@ -63,6 +63,6 @@ This free festival will be over 5 days long, including a conference, hackathon, 
 👉 More info about the festival: https://p2p.paris/festival
 
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-12-06--staff-team-weekly-sync.md)
