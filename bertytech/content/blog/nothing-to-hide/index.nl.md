@@ -77,7 +77,7 @@ If you have time (1h30), I recommend that you watch this wonderful online docume
 
 {{< vimeo id="189016018" >}}
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Proost Internet, voel je vrij om te klappen & onze verhalen te volgen, zie je de volgende keer. 🤫
 
 {{< tweet id="1073318619260571649" >}}
 
