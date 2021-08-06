@@ -12,7 +12,7 @@ aliases:
 ### OrbitDB
 Guillaume finished writing the OrbitDB custom access controller and the store for the members of the Berty groups.
 
-### Berty Protocol
+### Le protocole Berty
 Antoine, Guillaume & Manfred continue working on the protocol and they have finished defining the missing bertyprotocol protobuf messages.
 
 ## Ops:
