@@ -77,7 +77,7 @@ We hope you understand why we tend to drastically reduce their collection in Ber
 
 If you liked this article, please let us know in the comments section below. It's mean a lot. 🧡
 
-Cheers Internet!
+¡Saludos, internet!
 
 
 
