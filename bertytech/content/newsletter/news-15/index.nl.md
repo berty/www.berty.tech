@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-15"
 ---
 
-## Current Work
+## Huidig werk
 
 * **V2**: The intermediate layer between the front and the protocol is currently being developed. This layer is called "**Berty Chat**".
 * **Crypto**: We started to work on groups communications and handshakes.
