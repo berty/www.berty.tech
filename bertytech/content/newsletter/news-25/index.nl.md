@@ -11,7 +11,7 @@ This week the newsletter is on **Friday the 13th**! Coincidence? We don't think 
 
 Happy reading, folks!
 
-# Current Work
+# Huidig werk
 
 ## Tech
 
@@ -73,6 +73,6 @@ You guys rock 🤘
 * 1-2 February 2020 : [FOSDEM](https://fosdem.org/2020/) (Brussel, BE 🇧🇪)
 * 5 February 2020: [Paris P2P #6](https://p2p.paris/en/event/monthly-6/) (Paris, FR 🇫🇷)
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-12-13--staff-team-weekly-sync.md)
