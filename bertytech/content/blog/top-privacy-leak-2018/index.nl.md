@@ -105,7 +105,7 @@ We do not know if anyone has managed to abuse the database. Still, the very fact
 
 These were some of the most notable privacy leaks of 2018. Unfortunately, the list could be much longer. In today’s world, our privacy is in constant danger. Therefore, it pays to stay informed and do everything in your power to protect yourself.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Proost Internet, voel je vrij om te klappen & onze verhalen te volgen, zie je de volgende keer. 🤫
 
 {{< tweet id="1103959084900986881" >}}
 
