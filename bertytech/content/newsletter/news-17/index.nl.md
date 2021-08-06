@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-17"
 ---
 
-# Current Work
+# Huidig werk
 
 ## Berty V2:
 We keep on working on the new Berty. This week, we have finished defining the database models for Berty Protocol, as well as the internal proto of the different payloads and their envelopes.
