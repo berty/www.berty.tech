@@ -12,7 +12,7 @@ We are delighted to meet you again. A lot has happened in the last two weeks. So
 Happy reading & happy valentine's day!
 
 
-# Current Work
+# Huidig werk
 
 
 ## Tech
@@ -110,6 +110,6 @@ Sacré blue (...tooth)! 🙂
 * 23-25 April 2020: [PWG 2020](https://www.worldgathering.planetiers.com/) (Lisbon, PT 🇵🇹)
 
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our Weekly Sync: [2020-02-14](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-02-14--staff-team-weekly-sync.md) [2020-02-07](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-02-07--staff-team-weekly-sync.md)
