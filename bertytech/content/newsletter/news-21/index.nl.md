@@ -8,7 +8,7 @@ aliases:
 Before starting with the news, we just wanted to tell you that Tuesday was the birthday of our lead dev & UX designer! Come on, sing it with us: "Happy birthday Alexandra". 🎉
 
 
-# Current Work
+# Huidig werk
 
 ## Tech:
 
@@ -25,6 +25,6 @@ Guilhem and Antoine found the best approach to allow gomobile-ipfs to handle inc
 ### Audits
 This week, Pierre looked for people who could audit Berty from a cryptography/security point of view. It is important for us to have external advice and other ideas for improvement. If you know people who can perform audits of either the code or the architecture, please send us an email! 😉
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-11-15--staff-team-weekly-sync.md)
