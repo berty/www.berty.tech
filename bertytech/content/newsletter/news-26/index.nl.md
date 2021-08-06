@@ -12,7 +12,7 @@ This newsletter is an opportunity for us to wish a Merry Christmas to our entire
 Merry Christmas and happy holidays to you all! 🎁
 
 
-# Current Work
+# Huidig werk
 
 ## Tech
 
@@ -68,6 +68,6 @@ Did we mention that it's totally free? You don't have any good reasons not to sh
 * 1-2 February 2020: [FOSDEM](https://fosdem.org/2020/) (Brussel, BE 🇧🇪)
 * 5 February 2020: [Paris P2P #6](https://p2p.paris/en/event/monthly-6/) (Paris, FR 🇫🇷)
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-12-20--staff-team-weekly-sync.md)
