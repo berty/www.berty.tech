@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-12"
 ---
 
-## Current Work
+## Huidig werk
 
 
 First of all, you can update your version of Berty via Yolo. Our update platform has just been repaired. Sorry for the inconvenience.
