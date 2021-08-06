@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-13"
 ---
 
-## Current Work
+## Huidig werk
 
 After a week of our annual closure: we are back to work 💪 We have a couple of nice news to share with you:
 
