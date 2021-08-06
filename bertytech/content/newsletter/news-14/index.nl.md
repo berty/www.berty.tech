@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-14"
 ---
 
-## Current Work
+## Huidig werk
 
 ### V2 Berty:
 
