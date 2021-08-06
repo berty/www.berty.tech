@@ -11,7 +11,7 @@ This week is quite special: we did a full team training on Monday and Friday is 
 Oh by the way, Happy Halloween, guys! 🎃
 
 
-# Current Work
+# Huidig werk
 
 ## Bazel x IPFS:
 
@@ -41,6 +41,6 @@ We have decided to launch a new process dedicated to publishing content (blog po
 Alex started a new repo with all our assets (logos, animations)</br> 👉 https://github.com/berty/assets
 
 
-## Weekly Sync
+## Wekelijkse Sync
 
 👻 Read our [Weekly Sync](https://github.com/berty/mgmt/blob/master/meeting-notes/2019/Q4/2019-10-31--staff-team-weekly-sync.md) 👻
