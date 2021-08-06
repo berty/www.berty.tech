@@ -110,7 +110,7 @@ Fosdem is a super social event. It goes super fast. We would like to thank all t
 
 See you next year at FOSDEM2021.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Proost Internet, voel je vrij om te klappen & onze verhalen te volgen, zie je de volgende keer. 🤫
 
 
  {{<tweet id="1223526319511801856">}}
