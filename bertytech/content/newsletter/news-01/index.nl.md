@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-01"
 ---
 
-## Current Work
+## Huidig werk
 
 ### Website
 
