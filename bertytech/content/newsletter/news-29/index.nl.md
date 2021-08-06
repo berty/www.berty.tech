@@ -16,7 +16,7 @@ By the way, we're still on for a nice beer, just give us a shout! 🍻
 
 In this meantime, happy reading!
 
-# Current Work
+# Huidig werk
 
 ## Tech
 
@@ -64,7 +64,7 @@ He then went on to implement the actual iOS build on buildkite, but was stuck at
 
 We have published two new articles on our website:
 * Here are our [takeaways from Paris P2P Festival](https://berty.tech/blog/berty-at-p2p-festival/)
-* [Meet us at FOSDEM 2020!](https://berty.tech/blog/berty-at-fosdem-2020/)
+* [Ontmoet ons op FOSDEM 2020!](https://berty.tech/blog/berty-at-fosdem-2020/)
 
 
 ### Collaboration
@@ -112,7 +112,7 @@ We're delighted to have her on the team! Welcome, Morgane!
 * 4 March 2020: [Paris P2P #7](https://p2p.paris/en/event/monthly-7/) (Paris, FR 🇫🇷)
 * 23-25 April 2020: [PWG 2020](https://www.worldgathering.planetiers.com/) (Lisbon, PT 🇵🇹)
 
-## Weekly Sync
+## Wekelijkse Sync
 
 Read our Weekly Sync: [2020-01-31](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-31--staff-team-weekly-sync.md) [2020-01-24](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-24--staff-team-weekly-sync.md)
 
