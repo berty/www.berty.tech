@@ -1,22 +1,22 @@
 ---
-title: "Privacy Policy"
+title: "隐私政策"
 type: fakepost
 image_bg: "privacy.png"
 ---
 
-# Berty Application
+# Berty 应用程序
 
-    `Last updated: June 23, 2021`
+    `最后更新：2021年6月23日`
 
-The Application is currently in a beta stage and additional services, adjustment of behavior or clarifications will be added very soon to this Privacy Policy.
+该应用程序目前处于测试阶段，额外的服务、行为调整或澄清将很快被添加到本隐私政策中。
 
-This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+本隐私政策描述了我们在您使用服务时收集、使用和披露您的信息的政策和程序，并告诉您您的隐私权利以及法律如何保护您。
 
-At Berty, one of our main priorities is privacy. This Privacy Policy document contains types of information that is collected and recorded by Berty and how we use it.
+在Berty，我们的主要优先事项之一是隐私。 本隐私政策文件包含Berty收集和记录的信息类型以及我们如何使用这些信息。
 
-> To put it very clear: * We will NEVER monetize or sell Your Personal Data * We ALWAYS seek to minimize data collection. The collection or use of your personal data is kept to a minimum on our Websites or Apps. * We ALWAYS maximize security. It is a priority. This also applies when we use third party products or services.
+> 非常明确： * 我们永远不会将您的个人数据商业化或出售 * 我们一直在寻求最大限度地减少数据收集。 您个人数据的收集或使用在我们的网站或应用上保持在最低限度。 * 我们最大限度地保障安全。 这是一项优先事项。 这也适用于我们使用第三方产品或服务的情况。
 
-If You have additional questions or require more information about our Privacy Policy, do not hesitate to [contact us](https://berty.tech/contact).
+如果您有其他问题或需要更多关于我们隐私政策的信息，请毫不犹豫地 [联系我们](https://berty.tech/contact)。
 
 ## Interpretation and Definitions
 
