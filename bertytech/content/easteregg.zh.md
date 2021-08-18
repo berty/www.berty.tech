@@ -1,6 +1,6 @@
 ---
-title: "Hello clever you !"
-subtitle: Sadly you found this page too early, please come back in a few days...
+title: "你好聪明！"
+subtitle: 遗憾的是，你发现这个页面太早了，请几天后再回来...
 hclass: bg-jobs bg-blue
 private: true
 ---
