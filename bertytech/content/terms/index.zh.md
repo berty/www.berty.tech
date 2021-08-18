@@ -1,32 +1,32 @@
 ---
-title: "Terms & Conditions"
+title: "条款和条件"
 type: fakepost
 image_bg: "terms.png"
 ---
 
 <!-- template: layouts/_default/single.html -->
 
-Berty technologies is a french non-profit organization, defined by the law 1901 and registered with the RNA number W751245498.
+Berty Technology是一家法国非营利组织，根据第1901号法律定义，并以RNA编号W751245498注册。
 
-The organization is represented by M. Manfred Touron.
+该组织由M. Manfred Touron代表。
 
-Telephone: +33 805 08 2000.
+联系电话: +33 805 08 2000.
 
-Postal address: Berty Technologies, 96 Boulevard Bessières, 75017 Paris, FRANCE.
+邮政地址：Berty Technologies, 96 Boulevard Bessiegures, 75017 Paris, FRANCE。
 
-### Warning
+### 警告
 
-Any reproduction, representation, translation, adaptation, or quotation that it is integral or partial, whatever the process, is strictly prohibited without authorization of the association Berty technologies, except cases envisaged by the article L.112-5 of the intellectual property code. The brands mentioned are the property of their respective owners. Non-contractual pictures.
+除知识产权法第L.112-5条规定的情况外，未经Berty technologies授权，严禁任何复制、陈述、翻译、改编或引用，无论其是整体还是部分，都是如此。 所提到的品牌是其各自所有人的财产。 Non-contractual pictures.
 
-### Personal information
+### 个人信息
 
-You can visit our site on the Internet without having to disclose your identity or to provide any personal information about you. However, we may sometimes ask you for information to identify a support request or apply for a position. You can learn more about this subject by reading our [privacy policy](/privacy-policy).
+您可以在互联网上访问我们的网站而不必透露您的身份或提供有关您的任何个人信息。 然而，我们有时可能要求你提供信息，以确定支持请求或申请职位。 您可以通过阅读我们的 [隐私政策](/privacy-policy) 了解更多关于这个主题的信息。
 
 ### Cookies
 
-We use a third party cookie to:
+我们使用第三方cookie来：
 
-* follow your navigation during the session to ensure the quality and safety of navigation on our website,
-* obtain anonymous statistical data of attendance regarding the use of our website.
+* 在会话期间跟踪你的浏览，以确保我们网站浏览的质量和安全。
+* 获得有关我们网站使用情况的匿名统计数据。
 
-This entity is committed to complying with the legislation in force regarding cookies / tracers and guarantees the implementation of measures to protect and secure the data collected. You can allow, block or delete these cookies installed on your computer by setting your browser options.
+该实体承诺遵守有关cookies/追踪器的现行法律，并保证实施保护和保障所收集数据的措施。 您可以通过设置您的浏览器选项来允许、阻止或删除这些安装在您计算机上的cookie。
