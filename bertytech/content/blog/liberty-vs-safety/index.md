@@ -1,7 +1,7 @@
 ---
 author: Manfred
 title: "What do we think about the potential criminal uses of Berty?"
-date: 2021-07-27
+date: 2021-08-25
 #image: "liberty-vs-safety.png"
 image: "liberty-vs-safety.png"
 categories:
@@ -64,9 +64,8 @@ And we don't like the growing tendency of governments to think that "everyone is
 
 Since our creation, our team has obviously been thinking about these issues, and we regularly reinforce our conviction when we observe all the laws evolving towards generalized surveillance and censorship. This radically new positioning of the Berty protocol is encouraged every day by recent announcements, and our watch encourages us to continue on this path.
 
-> "Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety."
+> "Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety." *Benjamin Franklin*
 
-*Benjamin Franklin*
 
 ## Some resources:
 
@@ -92,6 +91,9 @@ Since our creation, our team has obviously been thinking about these issues, and
 📖🗺️ [Electronic Frountier Foundation - Ressources About Privacy](https://www.eff.org/issues/privacy)
 
 📖🗺️ [https://ieeexplore.ieee.org/document/8443344](https://ieeexplore.ieee.org/document/8443344)
+
 📖🗺️ [https://www.aclu.org/issues/national-security/privacy-and-surveillance/nsa-surveillance](https://www.aclu.org/issues/national-security/privacy-and-surveillance/nsa-surveillance)
+
 📖🗺️ [https://www.wired.com/2017/03/mass-spying-isnt-just-intrusive-ineffective/](https://www.wired.com/2017/03/mass-spying-isnt-just-intrusive-ineffective/)
+
 📖🗺️ [https://en.wikipedia.org/wiki/Mass_surveillance](https://en.wikipedia.org/wiki/Mass_surveillance)
