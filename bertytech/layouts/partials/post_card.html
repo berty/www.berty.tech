@@ -6,6 +6,11 @@
 
 {{ if ne .ctx.Params.image nil }}
   {{ $img := .ctx.Page.Resources.GetMatch .ctx.Params.image }}
+
+  {{ if (eq $img nil) }}
+    {{ errorf "Referenced image not found in permalink: %q, image: %q" .ctx.Permalink .ctx.Params.image }}
+  {{ end }}
+
   {{ if ne $img.MediaType.SubType "gif" }}
   {{ $img = $img.Resize "350x" }}
   {{ end }}
