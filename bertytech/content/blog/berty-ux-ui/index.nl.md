@@ -43,12 +43,12 @@ Het was nu tijd om de echte deal te starten en voor mij de mogelijkheid om Berty
 ## Lessen die we van v1 hebben geleerd (die v2 vereisten hebben gedefinieerd):
 
 ### Geen contact hebben om mee te praten is niet grappig
-* Berty doesn't ask for your phone number, email or any personal information (i.e., Facebook account) and doesn't access to your contact list on your phone.
-* So when you land on the app for the first time, you have nobody to talk to.
+* Berty vraagt niet om je telefoonnummer, e-mail of persoonlijke gegevens (d.w.z. Facebook-account) en heeft geen toegang tot je adresboek op je telefoon.
+* Dus als je voor het eerst in de app belandt, heb je niemand om mee te praten.
 
 ![Old app empty screens](berty_old_empty.png)
 
-👉 We need to make it feel like you're not lonely out there.
+👉 We moeten ervoor zorgen dat het gevoel heeft dat je daar niet alleen bent.
 
 ### Having an easy contact request process is not simple
 
