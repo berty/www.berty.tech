@@ -23,6 +23,23 @@
 
       </div>
     </section>
+
+    <!-- Vision -->
+    <section id="vision">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12 text-center">
+          <h3>{{ upper .Params.vision_title }}</h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-6 text-justify">
+          {{ .Params.vision_body | markdownify }}
+        </div>
+      </div>
+    </section>
   </div>
 </div>
 
