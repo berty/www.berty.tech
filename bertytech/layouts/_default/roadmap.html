@@ -1,0 +1,29 @@
+{{.Scratch.Set "body-class" "page-single wh support-page"}}
+{{ partial "head" . }}
+
+{{ $hero_card_colors := slice "#486aea" "#ffbf47" "#f54967" "#51cfa4"}}
+
+<header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).RelPermalink }}')"{{end}}>
+
+</header>
+
+<div class="content">
+  <div class="container">
+    <section class="section-blocks-3">
+      <div class="row">
+
+        <!-- Hero cards -->
+        {{ range $i, $el := .Params.hero_cards }}
+        <div class="col-lg-3">
+          <div class="block block-wi" style="background: {{ index $hero_card_colors $i }}; border-radius: 0;">
+            <h1 style="color: #fff; text-align: left; font-weight: bold;">{{$el | safeHTML }}</h1>
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+    </section>
+  </div>
+</div>
+
+{{ partial "footer" . }}
