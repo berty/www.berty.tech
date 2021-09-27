@@ -40,6 +40,51 @@
         </div>
       </div>
     </section>
+
+    <!-- Previous phases -->
+    <section id="previous-phases">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12 text-center">
+          <h3>{{ upper .Params.previous_phases_title }}</h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        {{ range .Params.previous_phases_items }}
+        <div class="col-lg-3">
+          <div class="block block-wi text-center bg-white">
+            <div>
+              <img class="img-fluid" src="{{ ($.Resources.GetMatch .icon).RelPermalink }}" />
+            </div>
+            <p>{{.title}}</p>
+            <p>{{.subtitle}}</p>
+          </div>
+        </div>
+       {{ end }}
+      </div>
+    </section>
+
+    <!-- Upcoming phases -->
+    <section id="upcoming-phases">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12 text-center">
+          <h3>{{ upper .Params.upcoming_phases_title }}</h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        {{ range .Params.upcoming_phases_items }}
+        <div class="col-lg-3">
+          <div class="block block-wi text-center bg-white">
+            <div>
+              <img class="img-fluid" src="{{ ($.Resources.GetMatch .icon).RelPermalink }}" />
+            </div>
+            <p>{{.title}}</p>
+            <p>{{.subtitle}}</p>
+          </div>
+        </div>
+       {{ end }}
+      </div>
+    </section>
+
   </div>
 </div>
 
