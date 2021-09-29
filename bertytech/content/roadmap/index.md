@@ -44,4 +44,27 @@ upcoming_phases_items:
   - icon: icon-public-launch.svg
     title: PUBLIC LAUNCH
     subtitle: Official Public Launch Public Communication
+roadmap_title: ROADMAP
+roadmap_card: 
+  title:
+  subtitle:
+  intro_title:
+  intro_body: |
+challenges_title: CHALLENGES
+challenges_items:
+  - Push-Notifications
+  - 4G == connexion via relay (p2p-circuit) / stable
+  - Proximity == BLE / MPConnectivity / Nearby 
+  - Ephemeral Message (7days) for Beta Version
+  - 4G == connexion via relay (p2p-circuit) / stable
+  - Resources optimizations (battery, cpu)
+  - Directory Service
+  - TOR implementation 
+android_bugs_title: ANDROID_BUGS
+android_bugs_items: 
+  - Android version wihout major bugs
+documentation_title: DOCUMENTATION
+documentation_items:
+  - Documentation for Expert Configurations
+  - Dev Documentation
 ---
