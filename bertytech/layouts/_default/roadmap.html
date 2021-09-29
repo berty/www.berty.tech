@@ -2,6 +2,7 @@
 {{ partial "head" . }}
 
 {{ $hero_card_colors := slice "#486aea" "#ffbf47" "#f54967" "#51cfa4"}}
+{{ $active_index := 5 }}
 
 <header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).RelPermalink }}')"{{end}}>
 
@@ -49,11 +50,12 @@
         </div>
       </div>
       <div class="row justify-content-between">
-        {{ range .Params.previous_phases_items }}
+        {{ range $i, $el := .Params.previous_phases_items }}
         <div class="col-lg-3">
-          <div class="block block-wi text-center bg-white">
+          <div class="block block-wi text-center bg-white {{ if le $i $active_index }}active{{end}}">
+            <div style="position: absolute; left: 5px; top: 5px;">{{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}</div>
             <div>
-              <img class="img-fluid" src="{{ ($.Resources.GetMatch .icon).RelPermalink }}" />
+              {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
             </div>
             <p>{{.title}}</p>
             <p>{{.subtitle}}</p>
@@ -71,11 +73,12 @@
         </div>
       </div>
       <div class="row justify-content-between">
-        {{ range .Params.upcoming_phases_items }}
+        {{ range $i, $el := .Params.upcoming_phases_items }}
         <div class="col-lg-3">
-          <div class="block block-wi text-center bg-white">
+          <div class="block block-wi text-center bg-white {{ if le (add $i 4) $active_index }}active{{end}}">
+            <div style="position: absolute; left: 5px; top: 5px;">{{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}</div>
             <div>
-              <img class="img-fluid" src="{{ ($.Resources.GetMatch .icon).RelPermalink }}" />
+              {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
             </div>
             <p>{{.title}}</p>
             <p>{{.subtitle}}</p>

@@ -24,7 +24,7 @@ previous_phases_items:
   - icon: icon-lab.svg
     title: LAB PHASE
     subtitle: Research & Development 2019
-  - icon: icon-lab.svg
+  - icon: icon-ble-research.svg
     title: BLE RESEARCH
     subtitle: Hacking BLE & Proximity Drivers 2019-2020
   - icon: icon-mvp.svg
@@ -38,7 +38,7 @@ upcoming_phases_items:
   - icon: icon-open-beta.svg
     title: OPEN BETA PHASE
     subtitle: BETA VERSION Open testing for all
-  - icon: icon-open-beta.svg
+  - icon: icon-soft-launch.svg
     title: SOFT LAUNCH
     subtitle: Public Access Open for all
   - icon: icon-public-launch.svg
