@@ -62,7 +62,7 @@ challenges_items:
   - Resources optimizations (battery, cpu)
   - Directory Service
   - TOR implementation 
-android_bugs_title: ANDROID_BUGS
+android_bugs_title: ANDROID BUGS
 android_bugs_items: 
   - Android version wihout major bugs
 documentation_title: DOCUMENTATION

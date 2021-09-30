@@ -3,7 +3,10 @@
 
 {{ $all_phases := .Params.previous_phases_items | append .Params.upcoming_phases_items }}
 {{ $hero_card_colors := slice "#272FCC" "#ffbf47" "#f54967" "#51cfa4"}}
-{{ $active_index := 5 }}
+{{ $active_phase := 5 }}
+{{ $active_challenge := 4 }}
+{{ $active_android_bug := 0 }}
+{{ $active_documentation := -1 }}
 
 <header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).RelPermalink }}')"{{end}}>
 
@@ -69,7 +72,7 @@
       </div>
       <div class="row justify-content-between">
         {{ range $i, $el := .Params.previous_phases_items }}
-        {{ $is_active := le $i $active_index }}
+        {{ $is_active := le $i $active_phase }}
         <div class="col-lg-3">
           <div class="block block-wi text-center bg-white phase_cards__item {{ if $is_active }}active{{end}}">
             {{ if $is_active }}
@@ -101,7 +104,7 @@
       </div>
       <div class="row justify-content-between">
         {{ range $i, $el := .Params.upcoming_phases_items }}
-        {{ $is_active := le (add $i 4) $active_index }}
+        {{ $is_active := le (add $i 4) $active_phase }}
         <div class="col-lg-3">
           <div class="block block-wi text-center bg-white phase_cards__item {{ if $is_active }}active{{end}}">
             {{ if $is_active }}
@@ -136,67 +139,76 @@
         </div>
       </div>
       <div class="row justify-content-between">
-        <div class="col-lg-6">
-          <div class="block block-wi bg-white h-100" style="padding-left: 60px; padding-right: 60px;">
+
+        <!-- Left -->
+        <div class="col-lg-6 roadmap__left">
+          <div class="block block-wi bg-white h-100">
             {{with .Params.roadmap_card}}
             <div class="text-center mb-4">
-              {{ ($.Resources.GetMatch "graph.svg").Content | safeHTML }}
-              <h2>{{.title}}</h2>
-              <h4>{{.subtitle}}</h4>
-              <h4>{{.intro_title}}</h4>
-              {{.intro_body|markdownify}}
+              <div class="roadmap__left__graph">
+                {{ ($.Resources.GetMatch "graph.svg").Content | safeHTML }}
+              </div>
+              <h2 class="roadmap__left__title">{{.title}}</h2>
+              <h5 class="roadmap__left__subtitle">{{.subtitle}}</h5>
+              <h6 class="roadmap__left__intro_title">{{.intro_title}}</h6>
+              <div class="roadmap__left__intro_body">{{.intro_body|markdownify}}</div>
             </div>
             {{end}}
 
-            <!-- Challenges -->
-            <div class="mb-5">
-              <div class="text-white py-2 text-center mb-4" style="background: #272FCC; border-radius: 4px;">
-                {{ .Params.challenges_title }}
-              </div>
-              {{range $i, $el := .Params.challenges_items}}
-              <div style="display: flex; align-items: center; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
-                <div style="width: 30px; height: 30px; border: 1px solid #22AA21;border-radius: 4px; color: #22AA21; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                  <i class="far fa-check"></i>
+            <div class="roadmap__left__sections">
+              <!-- Challenges -->
+              <div class="mb-5">
+                <div class="roadmap__left__sections__title mb-4">
+                  {{ .Params.challenges_title }}
                 </div>
-                <p class="mb-0">{{.}}</p>
-              </div>
-              {{end}}
-            </div>
-
-            <!-- Android bugs -->
-            <div class="mb-5">
-              <div class="text-white py-2 text-center mb-4" style="background: #4044C1; border-radius: 4px;">
-                {{ .Params.android_bugs_title }}
-              </div>
-              {{range $i, $el := .Params.android_bugs_items}}
-              <div style="display: flex; align-items: center; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
-                <div style="width: 30px; height: 30px; border: 1px solid #22AA21;border-radius: 4px; color: #22AA21; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                  <i class="far fa-check"></i>
+                {{range $i, $el := .Params.challenges_items}}
+                {{ $is_active := le $i $active_challenge }}
+                <div class="roadmap__left__sections__item {{if $is_active}}active{{end}}">
+                  <div class="roadmap__left__sections__item__check">
+                    {{if $is_active}}<i class="far fa-check"></i>{{end}}
+                  </div>
+                  <p class="mb-0">{{.}}</p>
                 </div>
-                <p class="mb-0">{{.}}</p>
+                {{end}}
               </div>
-              {{end}}
-            </div>
 
-            <!-- Documentation -->
-            <div class="mb-5">
-              <div class="text-white py-2 text-center mb-4" style="background: #303354; border-radius: 4px;">
-                {{ .Params.documentation_title }}
-              </div>
-              {{range $i, $el := .Params.documentation_items}}
-              <div style="display: flex; align-items: center; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
-                <div style="width: 30px; height: 30px; border: 1px solid #22AA21;border-radius: 4px; color: #22AA21; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
-                  <i class="far fa-check"></i>
+              <!-- Android bugs -->
+              <div class="mb-5">
+                <div class="roadmap__left__sections__title mb-4">
+                  {{ .Params.android_bugs_title }}
                 </div>
-                <p class="mb-0">{{.}}</p>
+                {{range $i, $el := .Params.android_bugs_items}}
+                {{ $is_active := le $i $active_android_bug }}
+                <div class="roadmap__left__sections__item {{if $is_active}}active{{end}}">
+                  <div class="roadmap__left__sections__item__check">
+                    {{if $is_active}}<i class="far fa-check"></i>{{end}}
+                  </div>
+                  <p class="mb-0">{{.}}</p>
+                </div>
+                {{end}}
               </div>
-              {{end}}
-            </div>
 
-            <div class="text-center">
-              <a class="btn btn-bty btn-yellow" href="https://github.com/sponsors/berty" target="_blank">
-                <i class="fab fa-github"></i> {{.Params.roadmap_card.button_text}}
-              </a>
+              <!-- Documentation -->
+              <div class="mb-5">
+                <div class="roadmap__left__sections__title mb-4">
+                  {{ .Params.documentation_title }}
+                </div>
+                {{range $i, $el := .Params.documentation_items}}
+                {{ $is_active := le $i $active_documentation }}
+                <div class="roadmap__left__sections__item {{if $is_active}}active{{end}}">
+                  <div class="roadmap__left__sections__item__check">
+                    {{if $is_active}}<i class="far fa-check"></i>{{end}}
+                  </div>
+                  <p class="mb-0">{{.}}</p>
+                </div>
+                {{end}}
+              </div>
+
+              <div class="roadmap__left__sections__join">
+                <a class="btn btn-bty btn-yellow" href="https://github.com/sponsors/berty" target="_blank">
+                  <i class="fab fa-github"></i> {{.Params.roadmap_card.button_text}}
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -206,7 +218,7 @@
             <div class="row">
               {{ range $i, $el := $all_phases }}
                 <div class="col-lg-12" style="margin-bottom: 80px;">
-                  <div class="bg-white d-flex align-items-center justify-content-between {{ if le $i $active_index }}active{{end}}">
+                  <div class="bg-white d-flex align-items-center justify-content-between {{ if le $i $active_phase }}active{{end}}">
                     <div style="width: 64px; height: 64px; background: #272FCC; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
                       {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
                     </div>

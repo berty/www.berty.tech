@@ -3905,7 +3905,7 @@ $table-first-column-width-mobile: 115px;
       }
       &.active {
         .phase_cards__item__icon {
-          fill: $color-blue;
+          fill: #272FCC;
         }
       }
     }
@@ -3916,5 +3916,88 @@ $table-first-column-width-mobile: 115px;
     margin-top: -280px; 
     padding-top: 350px; 
     padding-bottom: 200px;
+
+    &__left {
+      > .block {
+        padding-left: 60px; 
+        padding-right: 60px;
+      }
+      &__graph {
+        margin-bottom: 15px;
+      }
+      &__title {
+        font-weight: bold;
+        color: #272FCC;
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      &__subtitle {
+        color: #272FCC;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      &__intro_title {
+        color: #272FCC;
+        font-size: 16px;
+      }
+      &__intro_body {
+        font-size: 15px;
+      }
+      &__sections {
+        > div:first-child {
+          .roadmap__left__sections__title {
+            background: #272FCC;
+          }
+          
+        }
+        > div:nth-child(2) {
+          .roadmap__left__sections__title {
+            background: #4044C1;
+          }
+        }
+        > div:nth-child(3) {
+          .roadmap__left__sections__title {
+            background: #303354;
+          }
+        }
+        &__title {
+          color: #fff;
+          border-radius: 4px;
+          text-align: center;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+        &__item {
+          display: flex;
+          align-items: center; 
+          margin-bottom: 20px; 
+          padding-left: 20px;
+          padding-right: 20px;
+          &__check {
+            width: 30px; 
+            height: 30px; 
+            border: 1px solid #C4CDD5;
+            border-radius: 4px; 
+            color: #22AA21; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin-right: 10px;
+          }
+          &.active {
+            .roadmap__left__sections__item__check {
+              border: 1px solid #22AA21;
+            }
+          }
+        }
+        &__join {
+          text-align: center;
+          .btn {
+            color: #000;
+            background-color: $color-yellow;
+          }
+        }
+      }
+    }
   }
 }
