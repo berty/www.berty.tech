@@ -21,6 +21,7 @@
         <div class="col-lg-3">
           <div class="block block-wi hero-card" style="background: {{ index $hero_card_colors $i }};">
             <h1>{{$el | safeHTML }}</h1>
+            <img class="berty-logo" src="{{ ((resources.Get "img/bertytext_mono.png").Resize "75x").RelPermalink }}" />
           </div>
         </div>
         {{ end }}
