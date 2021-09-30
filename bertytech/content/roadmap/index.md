@@ -46,10 +46,12 @@ upcoming_phases_items:
     subtitle: Official Public Launch Public Communication
 roadmap_title: ROADMAP
 roadmap_card: 
-  title:
-  subtitle:
-  intro_title:
+  title: BERTY PUBLIC BETA
+  subtitle: CURRENT VERSION
+  intro_title: "MAIN FOCUS : STABILITY"
   intro_body: |
+    This new phase introduce a new step on the road to the main stream. This Beta Version will available on stores for all.
+  button_text: Join contributors on current challenges
 challenges_title: CHALLENGES
 challenges_items:
   - Push-Notifications

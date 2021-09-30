@@ -1,4 +1,4 @@
-{{.Scratch.Set "body-class" "page-single wh support-page"}}
+{{.Scratch.Set "body-class" "page-single wh roadmap-page"}}
 {{ partial "head" . }}
 
 {{ $hero_card_colors := slice "#486aea" "#ffbf47" "#f54967" "#51cfa4"}}
@@ -93,6 +93,81 @@
           </div>
         </div>
        {{ end }}
+      </div>
+    </section>
+
+    <!-- Previous phases -->
+    <section id="roadmap">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12 text-center">
+          <h3>{{ upper .Params.roadmap_title }}</h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-lg-6">
+          <div class="block block-wi bg-white" style="padding-left: 60px; padding-right: 60px;">
+            {{with .Params.roadmap_card}}
+            <div class="text-center mb-4">
+              {{ ($.Resources.GetMatch "graph.svg").Content | safeHTML }}
+              <h2>{{.title}}</h2>
+              <h4>{{.subtitle}}</h4>
+              <h4>{{.intro_title}}</h4>
+              {{.intro_body|markdownify}}
+            </div>
+            {{end}}
+
+            <!-- Challenges -->
+            <div class="mb-5">
+              <div class="text-white py-2 text-center mb-4" style="background: #272FCC; border-radius: 4px;">
+                {{ .Params.challenges_title }}
+              </div>
+              {{range $i, $el := .Params.challenges_items}}
+              <div style="display: flex; align-items: center; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                <div style="width: 30px; height: 30px; border: 1px solid #22AA21;border-radius: 4px; color: #22AA21; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                  <i class="far fa-check"></i>
+                </div>
+                <p class="mb-0">{{.}}</p>
+              </div>
+              {{end}}
+            </div>
+
+            <!-- Android bugs -->
+            <div class="mb-5">
+              <div class="text-white py-2 text-center mb-4" style="background: #4044C1; border-radius: 4px;">
+                {{ .Params.android_bugs_title }}
+              </div>
+              {{range $i, $el := .Params.android_bugs_items}}
+              <div style="display: flex; align-items: center; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                <div style="width: 30px; height: 30px; border: 1px solid #22AA21;border-radius: 4px; color: #22AA21; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                  <i class="far fa-check"></i>
+                </div>
+                <p class="mb-0">{{.}}</p>
+              </div>
+              {{end}}
+            </div>
+
+            <!-- Documentation -->
+            <div class="mb-5">
+              <div class="text-white py-2 text-center mb-4" style="background: #303354; border-radius: 4px;">
+                {{ .Params.documentation_title }}
+              </div>
+              {{range $i, $el := .Params.documentation_items}}
+              <div style="display: flex; align-items: center; margin-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                <div style="width: 30px; height: 30px; border: 1px solid #22AA21;border-radius: 4px; color: #22AA21; display: flex; align-items: center; justify-content: center; margin-right: 10px;">
+                  <i class="far fa-check"></i>
+                </div>
+                <p class="mb-0">{{.}}</p>
+              </div>
+              {{end}}
+            </div>
+
+            <div class="text-center">
+              <a class="btn btn-bty btn-yellow" href="https://github.com/sponsors/berty" target="_blank">
+                <i class="fab fa-github"></i> {{.Params.roadmap_card.button_text}}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
