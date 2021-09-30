@@ -61,7 +61,7 @@
   <!-- Previous phases -->
   <section id="previous-phases" class="phase_cards pb-5">
     <div class="container">
-      <div class="row justify-content-center mb-5">
+      <div class="row justify-content-center mb-4">
         <div class="col-lg-12 text-center">
           <h3 class="section-title">
             {{ upper .Params.previous_phases_title }}
@@ -71,8 +71,14 @@
       <div class="row justify-content-between">
         {{ range $i, $el := .Params.previous_phases_items }}
         {{ $is_active := le $i $active_phase }}
-        <div class="col-lg-3">
-          <div class="block block-wi text-center bg-white phase_cards__item {{ if $is_active }}active{{end}}">
+        {{ $is_last := eq $i 3 }}
+        <div class="col-lg-3 phase_cards__item {{ if $is_active }}active{{end}}">
+          {{ if not $is_last }}
+          <div class="phase_cards__item__arrow">
+            <i class="far fa-arrow-right"></i>
+          </div>
+          {{ end }}
+          <div class="block block-wi text-center bg-white">
             {{ if $is_active }}
             <div class="phase_cards__item__check">
               {{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}
@@ -93,7 +99,7 @@
   <!-- Upcoming phases -->
   <section id="upcoming-phases" class="phase_cards">
     <div class="container">
-      <div class="row justify-content-center mb-5">
+      <div class="row justify-content-center mb-4">
         <div class="col-lg-12 text-center">
           <h3 class="section-title">
             {{ upper .Params.upcoming_phases_title }}
@@ -103,8 +109,14 @@
       <div class="row justify-content-between">
         {{ range $i, $el := .Params.upcoming_phases_items }}
         {{ $is_active := le (add $i 4) $active_phase }}
-        <div class="col-lg-3">
-          <div class="block block-wi text-center bg-white phase_cards__item {{ if $is_active }}active{{end}}">
+        {{ $is_last := eq $i 3 }}
+        <div class="col-lg-3 phase_cards__item {{ if $is_active }}active{{end}}">
+          {{ if not $is_last }}
+          <div class="phase_cards__item__arrow">
+            <i class="far fa-arrow-right"></i>
+          </div>
+          {{ end }}
+          <div class="block block-wi text-center bg-white">
             {{ if $is_active }}
             <div class="phase_cards__item__check">
               {{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}

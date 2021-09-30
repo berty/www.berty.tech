@@ -3883,6 +3883,26 @@ $table-first-column-width-mobile: 115px;
   .phase_cards {
     &__item {
       padding: 20px;
+      > div {
+        margin-bottom: 0;
+      }
+      &__arrow {
+        width: 51px;
+        height: 51px;
+        color: #E0E2E4;
+        border: 2px solid #E0E2E4;
+        border-radius: 100%;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        right: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
       &__check {
         width: 36px;
         position: absolute; 
@@ -3916,8 +3936,8 @@ $table-first-column-width-mobile: 115px;
 
   // Roadmap
   .roadmap {
-    margin-top: -280px; 
-    padding-top: 350px; 
+    margin-top: -250px; 
+    padding-top: 320px; 
     padding-bottom: 200px;
 
     &__left {
