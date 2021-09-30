@@ -3832,6 +3832,9 @@ $table-first-column-width-mobile: 115px;
 
 /* ROADMAP PAGE */
 .roadmap-page {
+  .content {
+    margin-bottom: -225px;
+  }
   .hero-card {
     border-radius: 0;
     color: #fff; 
@@ -3995,6 +3998,75 @@ $table-first-column-width-mobile: 115px;
           .btn {
             color: #000;
             background-color: $color-yellow;
+          }
+        }
+      }
+    }
+
+    &__right {
+      > div {
+        padding-left: 60px; 
+        padding-right: 60px;
+      }
+      &__phases {
+        margin-top: 10px;
+        &__item {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          &:not(:last-child) {
+            margin-bottom: 50px;
+          }
+          &__icon {
+            width: 64px; 
+            height: 64px; 
+            background: #C4CDD5;
+            border-radius: 4px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            fill: #fff;
+            svg {
+              max-width: 50px;
+              max-height: 50px;
+            }
+          }
+          &__title {
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          &__subtitle {
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+          &__check {
+            svg {
+              width: 28px;
+            }
+          }
+          &.active {
+            &:not(.current) {
+              .roadmap__right__phases__item {
+                &__icon {
+                  &::after {
+                    content: " ";
+                    width: 3px;
+                    background: #272fcc;
+                    height: 100px;
+                    position: absolute;
+                    bottom: -80px;
+                  }
+                }
+              }
+            }
+            .roadmap__right__phases__item {
+              &__icon {
+                background: #272FCC;
+              }
+            }
+          }
+          &.current {
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(171, 174, 209, .3);
           }
         }
       }
