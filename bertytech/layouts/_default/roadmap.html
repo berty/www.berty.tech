@@ -2,7 +2,7 @@
 {{ partial "head" . }}
 
 {{ $all_phases := .Params.previous_phases_items | append .Params.upcoming_phases_items }}
-{{ $hero_card_colors := slice "#486aea" "#ffbf47" "#f54967" "#51cfa4"}}
+{{ $hero_card_colors := slice "#272FCC" "#ffbf47" "#f54967" "#51cfa4"}}
 {{ $active_index := 5 }}
 
 <header class="header-rounded large {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}" {{ with .Params.image_bg }}style="background-image:url('{{ ($.Page.Resources.GetMatch .).RelPermalink }}')"{{end}}>
@@ -10,100 +10,129 @@
 </header>
 
 <div class="content" style="margin-bottom: -225px;">
-  <div class="container">
-    <section class="section-blocks-3">
+  
+  <section class="section-blocks-3">
+    <div class="container">
       <div class="row">
 
         <!-- Hero cards -->
         {{ range $i, $el := .Params.hero_cards }}
         <div class="col-lg-3">
-          <div class="block block-wi" style="background: {{ index $hero_card_colors $i }}; border-radius: 0;">
-            <h1 style="color: #fff; text-align: left; font-weight: bold;">{{$el | safeHTML }}</h1>
+          <div class="block block-wi hero-card" style="background: {{ index $hero_card_colors $i }};">
+            <h1>{{$el | safeHTML }}</h1>
           </div>
         </div>
         {{ end }}
 
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Vision -->
-    <section id="vision">
+  <!-- Vision -->
+  <section id="vision" class="vision" style="background-image: url({{($.Resources.GetMatch `curve_bg.svg`).RelPermalink}});">
+    <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-12 text-center">
-          <h3>{{ upper .Params.vision_title }}</h3>
+          <h3 class="section-title">
+            {{ upper .Params.vision_title }}
+          </h3>
         </div>
       </div>
       <div class="row justify-content-between align-items-center">
-        <div class="col-lg-3">
-          <div>
+        <div class="col-lg-5">
+          <div class="vision__image">
             <img src="1_berty_rocket.svg" class="img-fluid" />
           </div>
         </div>
-        <div class="col-lg-6 text-justify">
+        <div class="col-lg-6 vision__text">
           {{ .Params.vision_body | markdownify }}
           <div class="d-flex justify-content-end">
-            <div class="text-center text-small">
-              <span style="color: #4AD5F6">Berty Core Crew</span><br/>
-              Paris, France
+            <div class="vision__text__signature">
+              <span class="vision__text__signature__name">Berty Core Crew</span><br/>
+              <span class="vision__text__signature__place">Paris, France</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Previous phases -->
-    <section id="previous-phases">
+  <!-- Previous phases -->
+  <section id="previous-phases" class="phase_cards pb-5">
+    <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-12 text-center">
-          <h3>{{ upper .Params.previous_phases_title }}</h3>
+          <h3 class="section-title">
+            {{ upper .Params.previous_phases_title }}
+          </h3>
         </div>
       </div>
       <div class="row justify-content-between">
         {{ range $i, $el := .Params.previous_phases_items }}
+        {{ $is_active := le $i $active_index }}
         <div class="col-lg-3">
-          <div class="block block-wi text-center bg-white {{ if le $i $active_index }}active{{end}}">
-            <div style="position: absolute; left: 5px; top: 5px;">{{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}</div>
-            <div>
+          <div class="block block-wi text-center bg-white phase_cards__item {{ if $is_active }}active{{end}}">
+            {{ if $is_active }}
+            <div class="phase_cards__item__check">
+              {{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}
+            </div>
+            {{ end }}
+            <div class="phase_cards__item__icon">
               {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
             </div>
-            <p>{{.title}}</p>
-            <p>{{.subtitle}}</p>
+            <h6 class="phase_cards__item__title">{{.title}}</h6>
+            <p class="phase_cards__item__subtitle">{{.subtitle | safeHTML}}</p>
           </div>
         </div>
        {{ end }}
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Upcoming phases -->
-    <section id="upcoming-phases">
+  <!-- Upcoming phases -->
+  <section id="upcoming-phases" class="phase_cards">
+    <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-12 text-center">
-          <h3>{{ upper .Params.upcoming_phases_title }}</h3>
+          <h3 class="section-title">
+            {{ upper .Params.upcoming_phases_title }}
+          </h3>
         </div>
       </div>
       <div class="row justify-content-between">
         {{ range $i, $el := .Params.upcoming_phases_items }}
+        {{ $is_active := le (add $i 4) $active_index }}
         <div class="col-lg-3">
-          <div class="block block-wi text-center bg-white {{ if le (add $i 4) $active_index }}active{{end}}">
-            <div style="position: absolute; left: 5px; top: 5px;">{{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}</div>
-            <div>
+          <div class="block block-wi text-center bg-white phase_cards__item {{ if $is_active }}active{{end}}">
+            {{ if $is_active }}
+            <div class="phase_cards__item__check">
+              {{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}
+            </div>
+            {{ end }}
+            <div class="phase_cards__item__icon">
               {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
             </div>
-            <p>{{.title}}</p>
-            <p>{{.subtitle}}</p>
+            <h6 class="phase_cards__item__title">
+              {{.title}}
+            </h6>
+            <p class="phase_cards__item__subtitle">
+              {{.subtitle | safeHTML}}
+            </p>
           </div>
         </div>
        {{ end }}
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
   <!-- Roadmap -->
-  <section id="roadmap" style="background: url({{($.Resources.GetMatch "background_jungle.svg").RelPermalink}}); margin-top: -330px; padding-top: 350px; padding-bottom: 200px;">
+  <section id="roadmap" class="roadmap" style="background: url({{($.Resources.GetMatch "background_jungle.svg").RelPermalink}});">
     <div class="container">
       <div class="row justify-content-center mb-5">
         <div class="col-lg-12 text-center">
-          <h3 class="text-white">{{ upper .Params.roadmap_title }}</h3>
+          <h3 class="text-white font-weight-bold">
+            {{ upper .Params.roadmap_title }}
+          </h3>
         </div>
       </div>
       <div class="row justify-content-between">

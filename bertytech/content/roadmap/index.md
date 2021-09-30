@@ -9,7 +9,7 @@ hero_cards:
   - WE<br/> HAVE AN<br/> EXCITING<br/> QUEST!
 vision_title: Berty vision
 vision_body: |
-  " Berty Protocol is a huge challenge, and an exciting project for all of us, as citizens, and as developers. 
+  "Berty Protocol is a huge challenge, and an exciting project for all of us, as citizens, and as developers. 
 
   We’re working hard to create the most open and community driven project, even if we started as a small team, we have to think it, design, and organize it for a civilization! 
 
@@ -20,30 +20,30 @@ previous_phases_title: PREVIOUS PHASES
 previous_phases_items:
   - icon: icon-brainstorming.svg
     title: BRAINSTORMING PHASE
-    subtitle: Giving Birth to Berty Core team 2018
+    subtitle: Giving Birth to Berty Core team <br /> 2018
   - icon: icon-lab.svg
     title: LAB PHASE
-    subtitle: Research & Development 2019
+    subtitle: Research & Development <br /> 2019
   - icon: icon-ble-research.svg
     title: BLE RESEARCH
-    subtitle: Hacking BLE & Proximity Drivers 2019-2020
+    subtitle: Hacking BLE & Proximity Drivers <br /> 2019-2020
   - icon: icon-mvp.svg
     title: MVP PHASE
-    subtitle: Berty Protocol Ready 2020-2021
+    subtitle: Berty Protocol Ready <br /> 2020-2021
 upcoming_phases_title: UPCOMING PHASES
 upcoming_phases_items:
   - icon: icon-community-access.svg
     title: COMMUNITY ACCESS PHASE
-    subtitle: ALPHA VERSION Restricted to community 
+    subtitle: ALPHA VERSION <br /> Restricted to community 
   - icon: icon-open-beta.svg
     title: OPEN BETA PHASE
-    subtitle: BETA VERSION Open testing for all
+    subtitle: BETA VERSION <br /> Open testing for all
   - icon: icon-soft-launch.svg
     title: SOFT LAUNCH
-    subtitle: Public Access Open for all
+    subtitle: Public Access <br /> Open for all
   - icon: icon-public-launch.svg
     title: PUBLIC LAUNCH
-    subtitle: Official Public Launch Public Communication
+    subtitle: Official Public Launch <br /> Public Communication
 roadmap_title: ROADMAP
 roadmap_card: 
   title: BERTY PUBLIC BETA
