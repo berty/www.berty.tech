@@ -3863,8 +3863,18 @@ $table-first-column-width-mobile: 115px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    @media (max-width:768px){
+      background-size: 140%;
+      background-position: center 98%;
+      padding-bottom: 150px;
+    }
     &__image {
       padding-left: 70px;
+      @media (max-width:768px){
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 25px;
+      }
     }
     &__text {
       font-size: 22px;
@@ -3902,6 +3912,13 @@ $table-first-column-width-mobile: 115px;
         right: -25px;
         top: 50%;
         transform: translateY(-50%);
+        @media (max-width:768px){
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+          top: initial;
+          right: initial;
+          bottom: -25px;
+        }
       }
       &__check {
         width: 36px;
@@ -3941,9 +3958,14 @@ $table-first-column-width-mobile: 115px;
     padding-bottom: 200px;
 
     &__left {
-      > .block {
-        padding-left: 60px; 
-        padding-right: 60px;
+      @media (min-width:768px){
+        > div {
+          padding-left: 60px; 
+          padding-right: 60px;
+        }
+      }
+      @media (max-width:768px){
+        margin-bottom: 25px;
       }
       &__graph {
         margin-bottom: 15px;
@@ -3997,7 +4019,7 @@ $table-first-column-width-mobile: 115px;
           padding-left: 20px;
           padding-right: 20px;
           &__check {
-            width: 30px; 
+            min-width: 30px; 
             height: 30px; 
             border: 1px solid #C4CDD5;
             border-radius: 4px; 
@@ -4024,9 +4046,14 @@ $table-first-column-width-mobile: 115px;
     }
 
     &__right {
-      > div {
-        padding-left: 60px; 
-        padding-right: 60px;
+      @media (min-width:768px){
+        > div {
+          padding-left: 60px; 
+          padding-right: 60px;
+        }
+      }
+      @media (max-width:768px){
+        margin-bottom: 50px;
       }
       &__phases {
         margin-top: 10px;
