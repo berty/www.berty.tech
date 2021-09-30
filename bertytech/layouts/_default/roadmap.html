@@ -1,6 +1,7 @@
 {{.Scratch.Set "body-class" "page-single wh roadmap-page"}}
 {{ partial "head" . }}
 
+{{ $all_phases := .Params.previous_phases_items | append .Params.upcoming_phases_items }}
 {{ $hero_card_colors := slice "#486aea" "#ffbf47" "#f54967" "#51cfa4"}}
 {{ $active_index := 5 }}
 
@@ -165,6 +166,27 @@
               <a class="btn btn-bty btn-yellow" href="https://github.com/sponsors/berty" target="_blank">
                 <i class="fab fa-github"></i> {{.Params.roadmap_card.button_text}}
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="block block-wi bg-white" style="padding-left: 60px; padding-right: 60px;">
+            <div class="row">
+              {{ range $i, $el := $all_phases }}
+                <div class="col-lg-12" style="margin-bottom: 80px;">
+                  <div class="bg-white d-flex align-items-center justify-content-between {{ if le $i $active_index }}active{{end}}">
+                    <div style="width: 64px; height: 64px; background: #272FCC; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+                      {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
+                    </div>
+                    <div class="text-center">
+                      <p class="mb-0">{{.title}}</p>
+                      <p>{{.subtitle}}</p>
+                    </div>
+                    <div>{{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}</div>
+                  </div>
+                </div>
+              {{ end }}
             </div>
           </div>
         </div>
