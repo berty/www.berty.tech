@@ -51,7 +51,7 @@ const toChunks = (arr, size) => {
 const main = async () => {
   const files = glob.sync(`${publicDir}/**/*.html`);
   // Split the array into chunks, else it will throw a memory error
-  const chunks = toChunks(files, 750);
+  const chunks = toChunks(files, 500);
   for (let i = 0; i < chunks.length; i++) {
     const chunk = chunks[i];
     await Promise.all(chunk.map(optimizePage));
