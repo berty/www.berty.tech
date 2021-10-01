@@ -58,7 +58,6 @@ challenges_items:
   - 4G == connexion via relay (p2p-circuit) / stable
   - Proximity == BLE / MPConnectivity / Nearby 
   - Ephemeral Message (7days) for Beta Version
-  - 4G == connexion via relay (p2p-circuit) / stable
   - Resources optimizations (battery, cpu)
   - Directory Service
   - TOR implementation 
