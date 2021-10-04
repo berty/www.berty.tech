@@ -21,7 +21,9 @@
         <div class="col-lg-3">
           <div class="block block-wi hero-card" style="background: {{ index $hero_card_colors $i }};">
             <h1>{{$el | safeHTML }}</h1>
-            <img class="berty-logo" src="{{ ((resources.Get "img/bertytext_mono.png").Resize "75x").RelPermalink }}" />
+            <div class="berty-logo">
+              {{ partial "img" (dict "ctx" $ "src" ((resources.Get "img/bertytext_mono.png").Resize "75x").RelPermalink "width" "75" "height" "32" "layout" "fixed") }}
+            </div>
           </div>
         </div>
         {{ end }}
@@ -43,7 +45,7 @@
       <div class="row justify-content-between align-items-center">
         <div class="col-lg-5">
           <div class="vision__image">
-            <img src="{{($.Resources.GetMatch "1_berty_rocket.svg").RelPermalink}}" class="img-fluid" />
+            {{ partial "img" (dict "ctx" $ "src" ($.Resources.GetMatch "1_berty_rocket.svg").RelPermalink "width" "375" "height" "591") }}
           </div>
         </div>
         <div class="col-lg-6 vision__text">
