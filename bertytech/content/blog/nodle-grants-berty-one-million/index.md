@@ -9,25 +9,23 @@ categories:
 tags:
 - security
 - privacy
-description: "Nodle grants Berty Technologies 1 millions in $Nodl Cash" 
+description: "Nodle grants Berty Technologies 1 million in $Nodl Cash." 
 ---
 
 
 # Nodle grants Berty $1 million to advance its privacy-first communication protocol
 
 
-![](https://i.imgur.com/e8j4Jap.png)
-
 
 **TLDR;**
-* Today, we're excited to announce that we will get a donation worth $1 million, led by Nodle.io to push forward the Berty Protocol. 
+* Today, we're excited to announce that we will get a donation worth $1 million, led by Nodle.io, to push forward the Berty Protocol. 
 
 
 ---
 
 Yes, you read the headline correctly: We're going to get **a million dollar in NodleCash ($NODL) to advance on the Berty protocol**.  🚀
 
-All of this is possible because of the people at Nodle. They believe in our mission and the tools we are developing - so much so that Nodle.io join our NGO donators list with a $1million grant to push forward Berty Protocol. It's a big step forward for Berty as it will protect the future of our NGO. 
+All of this is possible because of the people at Nodle. They believe in our mission and the tools we are developing - so much so that Nodle.io joins our NGO donators list with a $1million grant to push forward Berty Protocol. It's a big step forward for Berty as it will protect the future of our NGO. 
  
  
 ## Who is Nodle?
@@ -35,11 +33,11 @@ All of this is possible because of the people at Nodle. They believe in our miss
 ![](https://i.imgur.com/dJJa4mK.png)
 
 
-Maybe, you don't know who is Nodle. As advertised on their website, Nodle claims to be the world's largest connected device ecosystem, providing infrastructure, software, and access to IoT data (IoT). Nodle is a connectivity provider for the IoT. The company has built a robust Bluetooth Low Energy-powered network to help companies and cities connect and collect data from their devices, sensors, and tags.
+Maybe, you don't know who is Nodle. As advertised on their website, Nodle claims to be the world's largest connected device ecosystem, providing infrastructure, software, and IoT data (IoT) access. Nodle is a connectivity provider for the IoT. The company has built a robust Bluetooth Low Energy-powered network to help companies and cities connect and collect data from their devices, sensors, and tags.
 
 As you can read, we share a great passion for the BLE. 😉
 
-Micha (Nodle's CEO) also founded Firechat. The app was a radio mesh-based messaging to allow a smartphone to establish connectivity in the absence of internet access via the cellular network, using Bluetooth, Wi-Fi, or Apple's multi peer interface. It is, therefore, natural that we exchanged with them at that time. 
+Micha (Nodle's CEO) also founded Firechat. The app was a radio mesh-based messaging to allow a smartphone to establish connectivity without internet access via the cellular network, using Bluetooth, Wi-Fi, or Apple's multi-peer interface. It is, therefore, natural that we exchanged with them at that time. 
 
 
 ## $1M in $NODL for Berty!
@@ -52,21 +50,21 @@ Hence, our crypto donation strategy is **Hodl & Build the future**. Each crypto 
 
 Please note that all donations received in crypto-currencies are locked in for a minimum period of 2 years. Thus, crypto-currency projects that wish to support us know that the NGO will never "dump" their tokens and only use them from a long-term perspective.
 
-> We will write a dedicated blog post on Donation at Berty iin a near future. 
+> We will write a dedicated blog post on Donation at Berty soon. 
 
 So, this donation is no exception. 
 
 * These funds are frozen for a minimum of 2 years. 
 * These funds will be used to finance Berty's future. 
 
-The donation will be received in NodleCash ($NODL). The funds are expected to arrive gradually by Q4 of this year.  Please note that $NODL is not listed on major CEX (yet!) and therefore its valuation is not assured. 
+The donation will be received in NodleCash ($NODL). The funds are expected to arrive gradually by Q4 of this year.  Please note that $NODL is not listed on major CEX (yet!), and therefore its valuation is not assured. 
 
 
 ### A big thank you Nodle 
 
 Raising money as an NGO is no small feat & quite frankly. We've been working hard behind the scenes to secure Berty's future.  We are more than thrilled to have been supported by technology giants like IPFS. This is a big step forward for Berty, the team, and the whole ecosystem.
 
-Nodle does not ask us for anything in return for this donation. No patent, no extra work, just to keep on publishing our work in an open source manner. So, we sincerely would like to thank Nodle for its commitment to us with this donation. 
+Nodle does not ask us for anything in return for this donation. No patent, no extra work, to keep on publishing our work in an open-source manner. So, we sincerely would like to thank Nodle for its commitment to us with this donation. 
 
 ![](https://media.giphy.com/media/xSM46ernAUN3y/giphy.gif)
 
