@@ -10,9 +10,9 @@ Hey
 
 Today we have prepared a newsletter with a lot of information... because we have a lot of news (and juicy information) to share with you. 
 
-So no long introduction, let's dive in for your dose of info on Berty. 
+So no lengthy introduction; let's dive in for your dose of info on Berty. 
 
-Just to tease you to click: among other things, a huge donation to advance our protocol, a video shoot, and the progress on the application. 
+To tease you into clicking: among other things, a considerable donation to advance our protocol, a video shoot, and the progress on the application. 
 
 ⏬⏬⏬
 
@@ -20,27 +20,27 @@ Just to tease you to click: among other things, a huge donation to advance our p
 ## 📱 App progress recap
 
 Here's what we've been up to over the past few weeks: 
-* Integrate push notif to protocol
+* Integrate the push notif to protocol
 * Keep on working on BLE driver iOS/Android
 * Define front issues lifecycle
 * Work on iOS app extension
 * Reduce log verbosity
 * Investigate 4G poor performance on libp2p
 * Integrate gomobile-ipfs with modularity in mind
-* Setup zeropush server infra
+* Setup zero push server infra
 * Fix Tor node restart
 * Write High-Level Documentation
 
 
 ## 🚀 About the Berty ecosystem
  
-### 🗣️ Annoucement: NODLE GRANTS BERTY 1 MILLION IN NODLE CASH
+### 🗣️ Announcement: NODLE GRANTS BERTY 1 MILLION IN NODLE CASH
 
-We mentionned about it in one of our previous newsletters, but this time, we can officially tell you: **Berty has received a donation of one million dollars from [Nodle](https://nodle.io/)**. 🎉
+We mentioned it in one of our previous newsletters, but we can officially tell you: **Berty has received a donation of one million dollars from [Nodle](https://nodle.io/)**. 🎉
 
-After IPFS, Nodle joins Berty's official donor list. Nodle's teams have decided to support Berty to advance our p2p communication protocol. As we share a common interest in BLE, we're excited to work together to build a new p2p standard for privacy! Needless to say, this is great news for our organization, for the whole ecosystem, and for the community. 🔥
+After IPFS, Nodle joins Berty's official donor list. Nodle's teams have decided to support Berty to advance our p2p communication protocol. As we share a common interest in BLE, we're excited to work together to build a new p2p standard for privacy! Needless to say, this is excellent news for our organization, for the whole ecosystem, and the community. 🔥
 
-> 💡 Funds will be locked for 2 years, and will be dedicated to the future of the foundation development.
+> 💡 Funds will be locked for 2 years and will be dedicated to the future of the foundation development.
 
 * Read our blog post: https://berty.tech/blog/nodle-grants-berty-one-million/
 * Read the Press Release: https://www.crypto-news.net/nodle-grants-berty-foundation-1-million-in-nodle-cash-to-advance-its-privacy-communication-protocol/
@@ -52,7 +52,7 @@ After IPFS, Nodle joins Berty's official donor list. Nodle's teams have decided 
 
 ### 🎥 Video Shoot
 
-Last week we had the opportunity to shoot a short documentary about Berty. We can't tell you more for now, nor when it will be released. The only thing we can tell you is that it was an awesome experience. The shooting crew was incredibly nice. It allowed us all to get together in Paris for a couple of days. We hadn't seen each other for a long time and it was dope. 🔥
+Last week we had the opportunity to shoot a short documentary about Berty. We can't tell you more for now, nor when it will be released. The only thing we can say to you is that it was a fantastic experience. The shooting crew was incredibly nice. It allowed us all to get together in Paris for a couple of days. We hadn't seen each other for a long time, and it was so dope. 🔥
 
 ![](https://i.imgur.com/fDkv5ni.jpg)
 
@@ -60,7 +60,7 @@ Last week we had the opportunity to shoot a short documentary about Berty. We ca
 
 {{<tweet id="1444949969123823618">}}
 
-The Paris P2P (reborn edition) took place last week. It was the occasion to see the friend IRL again. The program was simple: free for all and beer2beer. We took the opportunity to do a testing session of the Berty application and to shoot some nice images for the documentary. Thanks to those who came. We'll try to do it again next month! [Here you'll find the aftermovie](https://youtu.be/LThccQYrhS8) of the previous festival in 2020.
+The Paris P2P (reborn edition) took place last week. It was the occasion to see friends IRL again. The program was simple: free for all and beer2beer. We took the opportunity to do a testing session of the Berty application and shoot some nice images for the documentary. We'll try to do it again next month! Thanks to those who came.
 
 ![](https://i.imgur.com/mdlpr1F.jpg)
 
