@@ -4,9 +4,9 @@ type: fakepost
 image_bg: "privacy.png"
 ---
 
-# Berty Application
+# Приложение Berty
 
-    `Last updated: June 23, 2021`
+    `Последнее обновление: 23 июня, 2021`
 
 The Application is currently in a beta stage and additional services, adjustment of behavior or clarifications will be added very soon to this Privacy Policy.
 
