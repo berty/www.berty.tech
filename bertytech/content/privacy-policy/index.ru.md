@@ -8,23 +8,23 @@ image_bg: "privacy.png"
 
     `Последнее обновление: 23 июня, 2021`
 
-The Application is currently in a beta stage and additional services, adjustment of behavior or clarifications will be added very soon to this Privacy Policy.
+В настоящее время приложение находится на стадии бета-тестирования, и дополнительные службы, корректировка поведения или уточнения будут добавлены в эту Политику конфиденциальности.
 
-This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
+Настоящая Политика конфиденциальности описывает нашу политику и процедуры по сбору, использованию и раскрытию вашей информации, когда вы пользуетесь Службой, а также рассказывает вам о ваших правах на конфиденциальность и о том, как закон защищает вас.
 
-At Berty, one of our main priorities is privacy. Этот документ Политики конфиденциальности содержит типы информации, собираемой и записываемой Berty, а также способы её использования.
+В Berty одним из наших главных приоритетов является конфиденциальность. Этот документ Политики конфиденциальности содержит типы информации, собираемой и записываемой Berty, а также способы её использования.
 
-> To put it very clear: * We will NEVER monetize or sell Your Personal Data * We ALWAYS seek to minimize data collection. The collection or use of your personal data is kept to a minimum on our Websites or Apps. * We ALWAYS maximize security. It is a priority. This also applies when we use third party products or services.
+> Для ясности: * Мы НИКОГДА не будем монетизировать или продавать ваши личные данные. * Мы ВСЕГДА стремимся минимизировать сбор данных. Сбор или использование ваших личных данных на наших веб-сайтах или в приложениях сведены к минимуму. * Мы ДОЛЖНЫ обеспечить максимальную безопасность. Это является приоритетом. Это также относится к случаям, когда мы используем продукты или службы третьих лиц.
 
-If You have additional questions or require more information about our Privacy Policy, do not hesitate to [contact us](https://berty.tech/contact).
+Если у Вас возникли дополнительные вопросы или Вам требуется дополнительная информация о нашей Политике конфиденциальности, не стесняйтесь [свяжитесь с нами](https://berty.tech/contact).
 
-## Interpretation and Definitions
+## Толкование и условия
 
-### Interpretation
+### Толкование
 
-The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+Слова, начальная буква которых написана с заглавной буквы, имеют значения, определенные при следующих условиях. Следующие условия имеют одинаковое значение, независимо от того, в единственном или множественном числе они даны.
 
-### Definitions
+### Условия
 
 For the purposes of this Privacy Policy:
 
