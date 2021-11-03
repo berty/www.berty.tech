@@ -1,0 +1,260 @@
+{{.Scratch.Set "body-class" "page-single wh roadmap-page"}}
+{{ partial "head" . }}
+
+{{ $all_phases := .Params.previous_phases_items | append .Params.upcoming_phases_items }}
+{{ $hero_card_colors := slice "#272FCC" "#ffbf47" "#f54967" "#51cfa4"}}
+{{ $active_phase := 5 }}
+{{ $active_challenge := 3 }}
+{{ $active_android_bug := 0 }}
+{{ $active_documentation := -1 }}
+
+<header class="header-rounded large bg-blue gradient"></header>
+
+<div class="content">
+  
+  <section class="section-blocks-3">
+    <div class="container">
+      <div class="row">
+
+        <!-- Hero cards -->
+        {{ range $i, $el := .Params.hero_cards }}
+        <div class="col-lg-3">
+          <div class="block block-wi hero-card" style="background: {{ index $hero_card_colors $i }};">
+            <h1>{{$el | safeHTML }}</h1>
+            <div class="berty-logo">
+              {{ partial "img" (dict "ctx" $ "src" ((resources.Get "img/bertytext_mono.png").Resize "75x").RelPermalink "width" "75" "height" "32" "layout" "fixed") }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision" class="vision" style="background-image: url({{($.Resources.GetMatch `curve_bg.svg`).RelPermalink}});">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-title">
+            {{ upper .Params.vision_title }}
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-5">
+          <div class="vision__image">
+            {{ partial "img" (dict "ctx" $ "src" ($.Resources.GetMatch "1_berty_rocket.svg").RelPermalink "width" "375" "height" "591") }}
+          </div>
+        </div>
+        <div class="col-lg-6 vision__text">
+          {{ .Params.vision_body | markdownify }}
+          <div class="d-flex justify-content-end">
+            <div class="vision__text__signature">
+              <span class="vision__text__signature__name">Berty Core Crew</span><br/>
+              <span class="vision__text__signature__place">Paris, France</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Previous phases -->
+  <section id="previous-phases" class="phase_cards pb-5">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-title">
+            {{ upper .Params.previous_phases_title }}
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        {{ range $i, $el := .Params.previous_phases_items }}
+        {{ $is_active := le $i $active_phase }}
+        {{ $is_last := eq $i 3 }}
+        <div class="col-lg-3 phase_cards__item {{ if $is_active }}active{{end}}">
+          {{ if not $is_last }}
+          <div class="phase_cards__item__arrow">
+            <i class="far fa-arrow-right"></i>
+          </div>
+          {{ end }}
+          <div class="block block-wi text-center bg-white">
+            {{ if $is_active }}
+            <div class="phase_cards__item__check">
+              {{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}
+            </div>
+            {{ end }}
+            <div class="phase_cards__item__icon">
+              {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
+            </div>
+            <h6 class="phase_cards__item__title">{{.title}}</h6>
+            <p class="phase_cards__item__subtitle">{{.subtitle | safeHTML}}</p>
+          </div>
+        </div>
+       {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming phases -->
+  <section id="upcoming-phases" class="phase_cards">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-lg-12 text-center">
+          <h3 class="section-title">
+            {{ upper .Params.upcoming_phases_title }}
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        {{ range $i, $el := .Params.upcoming_phases_items }}
+        {{ $is_active := le (add $i 4) $active_phase }}
+        {{ $is_last := eq $i 3 }}
+        <div class="col-lg-3 phase_cards__item {{ if $is_active }}active{{end}}">
+          {{ if not $is_last }}
+          <div class="phase_cards__item__arrow">
+            <i class="far fa-arrow-right"></i>
+          </div>
+          {{ end }}
+          <div class="block block-wi text-center bg-white">
+            {{ if $is_active }}
+            <div class="phase_cards__item__check">
+              {{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}
+            </div>
+            {{ end }}
+            <div class="phase_cards__item__icon">
+              {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
+            </div>
+            <h6 class="phase_cards__item__title">
+              {{.title}}
+            </h6>
+            <p class="phase_cards__item__subtitle">
+              {{.subtitle | safeHTML}}
+            </p>
+          </div>
+        </div>
+       {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Roadmap -->
+  <section id="roadmap" class="roadmap" style="background: url({{($.Resources.GetMatch "background_jungle.svg").RelPermalink}});">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-12 text-center">
+          <h3 class="text-white font-weight-bold">
+            {{ upper .Params.roadmap_title }}
+          </h3>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+
+        <!-- Left -->
+        <div class="col-lg-6 roadmap__left">
+          <div class="block block-wi bg-white h-100">
+            {{with .Params.roadmap_card}}
+            <div class="text-center mb-4">
+              <div class="roadmap__left__graph">
+                {{ ($.Resources.GetMatch "graph.svg").Content | safeHTML }}
+              </div>
+              <h2 class="roadmap__left__title">{{.title}}</h2>
+              <h5 class="roadmap__left__subtitle">{{.subtitle}}</h5>
+              <h6 class="roadmap__left__intro_title">{{.intro_title}}</h6>
+              <div class="roadmap__left__intro_body">{{.intro_body|markdownify}}</div>
+            </div>
+            {{end}}
+
+            <div class="roadmap__left__sections">
+              <!-- Challenges -->
+              <div class="mb-5">
+                <div class="roadmap__left__sections__title mb-4">
+                  {{ .Params.challenges_title }}
+                </div>
+                {{range $i, $el := .Params.challenges_items}}
+                {{ $is_active := le $i $active_challenge }}
+                <div class="roadmap__left__sections__item {{if $is_active}}active{{end}}">
+                  <div class="roadmap__left__sections__item__check">
+                    {{if $is_active}}<i class="far fa-check"></i>{{end}}
+                  </div>
+                  <p class="mb-0">{{.}}</p>
+                </div>
+                {{end}}
+              </div>
+
+              <!-- Android bugs -->
+              <div class="mb-5">
+                <div class="roadmap__left__sections__title mb-4">
+                  {{ .Params.android_bugs_title }}
+                </div>
+                {{range $i, $el := .Params.android_bugs_items}}
+                {{ $is_active := le $i $active_android_bug }}
+                <div class="roadmap__left__sections__item {{if $is_active}}active{{end}}">
+                  <div class="roadmap__left__sections__item__check">
+                    {{if $is_active}}<i class="far fa-check"></i>{{end}}
+                  </div>
+                  <p class="mb-0">{{.}}</p>
+                </div>
+                {{end}}
+              </div>
+
+              <!-- Documentation -->
+              <div class="mb-5">
+                <div class="roadmap__left__sections__title mb-4">
+                  {{ .Params.documentation_title }}
+                </div>
+                {{range $i, $el := .Params.documentation_items}}
+                {{ $is_active := le $i $active_documentation }}
+                <div class="roadmap__left__sections__item {{if $is_active}}active{{end}}">
+                  <div class="roadmap__left__sections__item__check">
+                    {{if $is_active}}<i class="far fa-check"></i>{{end}}
+                  </div>
+                  <p class="mb-0">{{.}}</p>
+                </div>
+                {{end}}
+              </div>
+
+              <div class="roadmap__left__sections__join">
+                <a class="btn btn-bty btn-yellow" href="https://github.com/berty/berty" target="_blank">
+                  <i class="fab fa-github"></i> {{.Params.roadmap_card.button_text}}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="col-lg-6 roadmap__right">
+          <div class="block block-wi bg-white h-100">
+            <div class="row roadmap__right__phases">
+              {{ range $i, $el := $all_phases }}
+                {{ $is_active := le $i $active_phase }}
+                {{ $is_current := eq $i $active_phase }}
+                <div class="col-lg-12 roadmap__right__phases__item {{ if $is_active }}active{{end}} {{ if $is_current }}current{{end}}">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="roadmap__right__phases__item__icon">
+                      {{ ($.Resources.GetMatch .icon).Content | safeHTML }}
+                    </div>
+                    <div class="text-center">
+                      <p class="roadmap__right__phases__item__title">{{.title}}</p>
+                      <p class="roadmap__right__phases__item__subtitle">{{.subtitle | safeHTML}}</p>
+                    </div>
+                    <div class="roadmap__right__phases__item__check">
+                      {{ if and ($is_active) (not $is_current) }}{{ ($.Resources.GetMatch "check-green.svg").Content | safeHTML }}{{end}}
+                    </div>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+{{ partial "footer" . }}

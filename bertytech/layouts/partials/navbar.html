@@ -34,6 +34,12 @@
                         <span class="title">White Paper</span>
                         <span class="subtitle">The vision behind the Berty project</span>
                       </a>-->
+                      {{ $url := relLangURL "/about" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                        <i class="fal fa-home c-blue"></i>
+                        <span class="title">About us</span>
+                        <span class="subtitle">We're a small NGO</span>
+                      </a>
                       {{ $url := relLangURL "/features" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-stars c-blue"></i>
@@ -45,12 +51,6 @@
                         <i class="fal fa-rocket c-blue"></i>
                         <span class="title">Challenges</span>
                         <span class="subtitle">Technicals, humans and more</span>
-                      </a>
-                      {{ $url := relLangURL "/faq" }}
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
-                        <i class="fal fa-question-circle c-blue"></i>
-                        <span class="title">FAQ</span>
-                        <span class="subtitle">Frequently asked questions</span>
                       </a>
                     </div>
                 </li>
@@ -95,11 +95,17 @@
                         Resources<i class="far fa-chevron-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="d-resources">
-                      {{ $url := relLangURL "/about" }}
+                      {{ $url := relLangURL "/roadmap" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-home c-blue"></i>
-                        <span class="title">About us</span>
-                        <span class="subtitle">We're a small NGO</span>
+                        <span class="title">Roadmap</span>
+                        <span class="subtitle">Lorum ipsum</span>
+                      </a>
+                      {{ $url := relLangURL "/faq" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                        <i class="fal fa-question-circle c-blue"></i>
+                        <span class="title">FAQ</span>
+                        <span class="subtitle">Frequently asked questions</span>
                       </a>
                       {{ $url := relLangURL "/jobs" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">

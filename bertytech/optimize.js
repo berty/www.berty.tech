@@ -12,6 +12,18 @@ const options = {
     tool: "purgeCSS",
     ...postcss.purgeCssWhitelist,
   },
+  minifySvg: {
+    plugins: [
+      {
+        name: "preset-default",
+        params: {
+          overrides: {
+            removeViewBox: false
+          },
+        },
+      },
+    ],
+  },
 };
 
 const optimizePage = async (file) => {

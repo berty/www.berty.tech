@@ -3829,3 +3829,300 @@ $table-first-column-width-mobile: 115px;
     padding: 20px;
   }
 }
+
+/* ROADMAP PAGE */
+.roadmap-page {
+  .content {
+    margin-bottom: -225px;
+  }
+  .hero-card {
+    border-radius: 0;
+    color: #fff; 
+    text-align: left; 
+    h1 {
+      font-weight: bold;
+    }
+    .berty-logo {
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+      opacity: .2;
+    }
+  }
+  .section-title {
+    font-weight: bold;
+    position: relative;
+    &::after {
+      content: " ";
+      height: 2px;
+      background: #C4CDD5;
+      width: 66px;
+      position: absolute;
+      bottom: -25px;
+      left: calc(50% - 33px);
+    }
+  }
+
+  // Vision
+  .vision {
+    padding-bottom: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    @media (max-width:768px){
+      background-size: 140%;
+      background-position: center 98%;
+      padding-bottom: 150px;
+    }
+    &__image {
+      padding-left: 70px;
+      @media (max-width:768px){
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 25px;
+      }
+    }
+    &__text {
+      font-size: 22px;
+      text-align: justify;
+      &__signature {
+        text-align: center;
+        font-size: 14px;
+        &__name {
+          color: $color-cyan;
+        }
+      }
+    }
+  }
+
+  // Phase cards
+  .phase_cards {
+    &__item {
+      padding: 20px;
+      > div {
+        margin-bottom: 0;
+      }
+      &__arrow {
+        width: 51px;
+        height: 51px;
+        color: #E0E2E4;
+        border: 2px solid #E0E2E4;
+        border-radius: 100%;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        position: absolute;
+        z-index: 1;
+        right: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        @media (max-width:768px){
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+          top: initial;
+          right: initial;
+          bottom: -25px;
+        }
+      }
+      &__check {
+        width: 36px;
+        position: absolute; 
+        left: 5px; 
+        top: 5px;
+      }
+      &__icon {
+        fill: #d5d5d5;
+        height: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+      &__title {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &__subtitle {
+        color: #6A7C92;
+        font-size: 14px;
+      }
+      &.active {
+        .phase_cards__item__icon {
+          fill: #272FCC;
+        }
+      }
+    }
+  }
+
+  // Roadmap
+  .roadmap {
+    margin-top: -250px; 
+    padding-top: 320px; 
+    padding-bottom: 200px;
+
+    &__left {
+      @media (min-width:768px){
+        > div {
+          padding-left: 60px; 
+          padding-right: 60px;
+        }
+      }
+      @media (max-width:768px){
+        margin-bottom: 25px;
+      }
+      &__graph {
+        margin-bottom: 15px;
+      }
+      &__title {
+        font-weight: bold;
+        color: #272FCC;
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+      &__subtitle {
+        color: #272FCC;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      &__intro_title {
+        color: #272FCC;
+        font-size: 16px;
+      }
+      &__intro_body {
+        font-size: 15px;
+      }
+      &__sections {
+        > div:first-child {
+          .roadmap__left__sections__title {
+            background: #272FCC;
+          }
+          
+        }
+        > div:nth-child(2) {
+          .roadmap__left__sections__title {
+            background: #4044C1;
+          }
+        }
+        > div:nth-child(3) {
+          .roadmap__left__sections__title {
+            background: #303354;
+          }
+        }
+        &__title {
+          color: #fff;
+          border-radius: 4px;
+          text-align: center;
+          padding-top: 8px;
+          padding-bottom: 8px;
+        }
+        &__item {
+          display: flex;
+          align-items: center; 
+          margin-bottom: 20px; 
+          padding-left: 20px;
+          padding-right: 20px;
+          &__check {
+            min-width: 30px; 
+            height: 30px; 
+            border: 1px solid #C4CDD5;
+            border-radius: 4px; 
+            color: #22AA21; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            margin-right: 10px;
+          }
+          &.active {
+            .roadmap__left__sections__item__check {
+              border: 1px solid #22AA21;
+            }
+          }
+        }
+        &__join {
+          text-align: center;
+          .btn {
+            color: #000;
+            background-color: $color-yellow;
+          }
+        }
+      }
+    }
+
+    &__right {
+      @media (min-width:768px){
+        > div {
+          padding-left: 60px; 
+          padding-right: 60px;
+        }
+      }
+      @media (max-width:768px){
+        margin-bottom: 50px;
+      }
+      &__phases {
+        margin-top: 10px;
+        &__item {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          &:not(:last-child) {
+            margin-bottom: 50px;
+          }
+          &__icon {
+            width: 64px; 
+            height: 64px; 
+            background: #C4CDD5;
+            border-radius: 4px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            fill: #fff;
+            svg {
+              max-width: 50px;
+              max-height: 50px;
+            }
+          }
+          &__title {
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          &__subtitle {
+            font-size: 14px;
+            margin-bottom: 0;
+          }
+          &__check {
+            svg {
+              width: 28px;
+            }
+          }
+          &.active {
+            &:not(.current) {
+              .roadmap__right__phases__item {
+                &__icon {
+                  &::after {
+                    content: " ";
+                    width: 3px;
+                    background: #272fcc;
+                    height: 100px;
+                    position: absolute;
+                    bottom: -80px;
+                  }
+                }
+              }
+            }
+            .roadmap__right__phases__item {
+              &__icon {
+                background: #272FCC;
+              }
+            }
+          }
+          &.current {
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(171, 174, 209, .3);
+          }
+        }
+      }
+    }
+  }
+}
