@@ -175,7 +175,7 @@ Password managers can also put passwords at risk. You probably know the old adag
 * What solution will you use to send a password to someone? If you're looking for a secure messenger you can trust, take a look at our solution: [Berty](https://berty.tech).
 * Tell us below if you liked this article, or which password manager you recommend and why. We'll be happy to hear your feedback!
 
-Cheers Internet!
+¡Saludos, internet!
 
 
 

@@ -31,7 +31,7 @@ We'll set the record straight here, starting with a quick technical intro.
 
 ## What is a blockchain?
 
-No one wants their ignorance of technology to become the subject of an embarrassing news segment, but it does happen. 
+No one wants their ignorance of technology to become the subject of an embarrassing news segment, but it does happen.
 
 {{< youtube id="UlJku_CSyNg" >}}
 

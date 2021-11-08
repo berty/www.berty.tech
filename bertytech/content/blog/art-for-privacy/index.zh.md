@@ -5,9 +5,9 @@ date: 2020-11-05
 #image: "Djalouz-Art4Privacy1.png"
 image: "Djalouz-Art4Privacy1.png"
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - privacy
+  - 隐私
   - surveillance
   - art
 description:

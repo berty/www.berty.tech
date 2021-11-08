@@ -194,5 +194,5 @@ We hope to unite many people around this project and we believe that the NGO sta
 
 **If by any chance, you wanna support our work, visit our [community page!](https://berty.tech/community)! It means a lot 🧡**
 
-Cheers Internet!
+चीयर्स इंटरनेट!
 

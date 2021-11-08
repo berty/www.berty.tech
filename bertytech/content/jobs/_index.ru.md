@@ -1,6 +1,6 @@
 ---
-title: "Jobs"
-subtitle: Help build the tools that make a difference
+title: "Работа"
+subtitle: Помогите создать инструменты, которые приведут к изменениям
 menu:
   footer_col4:
     weight: 20

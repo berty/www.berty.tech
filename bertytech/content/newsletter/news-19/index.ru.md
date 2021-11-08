@@ -37,7 +37,7 @@ Antoine & Guilhem worked on gomobile-ipfs proposal implementation
 ### New Editorial Calendar
 We have decided to launch a new process dedicated to publishing content (blog posts, tweets, etc.) based on a [blogpost from Trello](https://blog.trello.com/moved-to-published-using-trello-as-an-editorial-calendar). We now have a quick and clear overview of our pending blog posts!
 
-### Assets
+### Материалы
 Alex started a new repo with all our assets (logos, animations)</br> 👉 https://github.com/berty/assets
 
 

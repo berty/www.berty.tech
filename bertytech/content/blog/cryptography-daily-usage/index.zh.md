@@ -7,9 +7,9 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
+  - 安全
   - cybersecurity
-  - privacy
+  - 隐私
 description: One could refer to cryptography as being meta-cryptic. In its own way, cryptography is a bit mysterious and probably vague to many people. You may not notice it, but we all use it without actually being aware of it most of the time.
 ---
 

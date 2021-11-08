@@ -110,7 +110,7 @@ Fosdem is a super social event. It goes super fast. We would like to thank all t
 
 See you next year at FOSDEM2021.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫
 
 
  {{<tweet id="1223526319511801856">}}

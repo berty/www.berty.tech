@@ -1,7 +1,8 @@
 ---
 title: "Berty News #54"
 date: 2021-02-12
-aliases: ["/newsletter/weekly-54"]
+aliases:
+  - "/newsletter/weekly-54"
 ---
 
 # News #54
@@ -10,7 +11,7 @@ Ahoy Bertizen! 🏴‍☠️
 
 We hope you are doing well!
 
-Let's get it out of the way: How's your Bitcoin? We take this opportunity to place an ad: If anyone has the ear of Elon Musk, tell him to invest in Berty. Not necessarily 1.5 billion, but a few thousand-to-million (yanno, pocket change) would be welcome. 
+Let's get it out of the way: How's your Bitcoin? We take this opportunity to place an ad: If anyone has the ear of Elon Musk, tell him to invest in Berty. Not necessarily 1.5 billion, but a few thousand-to-million (yanno, pocket change) would be welcome.
 
 A short word about the team as usual: Everybody's doing well, working hard, firing on all cylinders, etc. Check out the highlights below for a breakdown!
 
@@ -57,15 +58,15 @@ We'll keep recognizing y'all in future newsletters, so watch this space! 🏆
 * [Spencer](https://github.com/stbrody)
 * [Kalle](https://github.com/jilleJr)
 
-Thanks a million. It really means a lot for us! 🧡 
+Thanks a million. It really means a lot for us! 🧡
 
 👉 If you want to back us as well: https://github.com/sponsors/berty
 
-### Translating 
+### Translating
 
-You can help us by translating the Berty app + website. It will be much appreciated! 
+You can help us by translating the Berty app + website. It will be much appreciated!
 
-👉 https://translate.berty.community/  
+👉 https://translate.berty.community/
 
 ![](https://i.imgur.com/T4EPaJt.png)
 

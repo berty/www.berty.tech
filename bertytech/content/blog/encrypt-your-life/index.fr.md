@@ -1,6 +1,6 @@
 ---
 author: Camille
-title: "How to encrypt your life in 10 minutes."
+title: "Comment chiffrer votre vie en dix minutes."
 date: 2020-11-25
 #image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
@@ -11,11 +11,11 @@ tags:
   - cybersécurité
   - privacy
   - surveillance
-description: Easy tips to protect yourself in 10min!
+description: Conseils faciles pour vous protéger en 10 minutes !
 ---
 
 
-# How to encrypt your life in 10 minutes
+# Comment chiffrer votre vie en dix minutes
 
 
 Before diving into the tools and methods to protect your privacy online, we encourage you to learn more about what privacy is all about. You can read this [article](https://berty.tech/blog/privacy-security-safety/) and also this one which will explain why [you should stop saying you have nothing to hide](https://berty.tech/blog/nothing-to-hide/). Being safe and secure isn't just for bad guys.

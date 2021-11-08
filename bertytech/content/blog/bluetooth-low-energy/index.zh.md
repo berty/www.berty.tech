@@ -7,7 +7,7 @@ categories:
   - announcement
 tags:
   - bluetooth
-  - technical
+  - 技术方面
   - open-source
   - ipfs
 ---

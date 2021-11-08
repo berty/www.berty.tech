@@ -1,12 +1,12 @@
 ---
 title: "Assets"
-description: 🎨 Berty logos, icons, pictures, text, etc
+description: '🎨 Berty logos, icons, pictures, text, etc'
 icon: fab fa-github
 color: black
 open: true
 menu:
-    repos:
-        weight: 7
+  repos:
+    weight: 7
 ---
 
 # Assets

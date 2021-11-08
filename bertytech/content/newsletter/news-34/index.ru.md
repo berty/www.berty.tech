@@ -22,7 +22,7 @@ Without further ado, here is our newsletter #34!
 Happy reading & take care!
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 Over the past few weeks, we have received more messages from you than ever before. We just wanted to take a moment to thank you. It warms the mind and the heart. 🧡
 
@@ -34,11 +34,11 @@ And yes, it's also to answer more easily to the question _what's your difference
 
 👉 https://github.com/berty/community/issues/67
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
 If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22).
 
-You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 
@@ -76,7 +76,7 @@ A ton of applause for Antoine and Camille who brilliantly retraced our history!
 
 👉 Read it: https://berty.tech/blog/bluetooth-low-energy/
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
 For the time being and until further notice, we are canceling all our venues to physical events. 🚧🚧
 
@@ -94,7 +94,7 @@ For the time being and until further notice, we are canceling all our venues to 
 
 Follow us on [Twitter](https://twitter.com/berty), we have 🍪!
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 We have decided to add the contributors in this section of each of our newsletters. This is our way of publicly thanking them for their work. Thanks to all of them! 🙏
 

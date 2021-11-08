@@ -10,7 +10,7 @@ categories:
 tags:
   - news
   - announcement
-description: We released our closed beta!
+description: हमने अपना बंद बीटा जारी किया!
 ---
 
 # हमने अपना बंद बीटा जारी किया!

@@ -3,12 +3,12 @@ title: "Contribute to the Berty Project"
 hclass: bg-blue gradient bg-contribute
 image: "berty_contribute.png"
 menu:
-    main:
-        name: Contribute
-        weight: -20
-    footer_col2:
-        name: Contribute
-        weight: 30
+  main:
+    name: Contribute
+    weight: -20
+  footer_col2:
+    name: Contribute
+    weight: 30
 ---
 
 {{< display_section_contribute >}}

@@ -4,7 +4,7 @@ title: "Centralized vs Decentralized vs Distributed Systems"
 date: 2019-06-20
 image: "decentralized.jpeg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - Technical
   - Security
@@ -137,6 +137,6 @@ Less prone to failure and offering faster access times, decentralized systems ha
 
 However, it’s only distributed systems that allocate resources and rights across the whole network. By doing so, they are not only remarkably tolerant to faults but also more transparent than other systems. As the adoption of distributed systems lowers their deployment and maintenance costs, these systems will likely prove an inspired choice in the years to come.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{<tweet id="1143493043783372801">}}

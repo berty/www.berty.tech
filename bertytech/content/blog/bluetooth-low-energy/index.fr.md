@@ -4,10 +4,10 @@ title: "Berty, Libp2p and Bluetooth Low Energy"
 date: 2020-04-08
 image: "2020-04-06-Berty-blogpost-Bluetooth-Low-Energy.jpg"
 categories:
-  - announcement
+  - annonce
 tags:
   - bluetooth
-  - technical
+  - technique
   - open-source
   - ipfs
 ---

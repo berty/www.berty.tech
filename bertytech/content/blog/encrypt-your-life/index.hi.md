@@ -105,5 +105,5 @@ When we go home, we close the door. So why don't we do the same online and on ou
 
 So all the little actions we've just seen together are tiny small steps that look like nothing, but in reality, a big step towards our freedom.
 
-Cheers Internet!
+चीयर्स इंटरनेट!
 {{<tweet id="1324705378584637442">}}

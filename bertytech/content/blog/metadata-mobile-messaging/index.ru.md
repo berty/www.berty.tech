@@ -8,7 +8,7 @@ categories:
   - technical
 tags:
   - surveillance
-  - privacy
+  - конфиденциальность
   - cybersecurity
 description: "Wanna learn more on metadata in mobile messaging? Check this article!"
 ---

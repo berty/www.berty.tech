@@ -1,10 +1,10 @@
 ---
-title: "Contacts & Requests"
-description: Keep your data safe & your life private
+title: "Contactos & Solicitudes"
+description: Mantenga sus datos seguros & su vida privada
 icon: fal fa-user-plus
 color: pink
 ---
 
-# Contacts & Requests
+# Contactos & Peticiones
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Próximamente</span>

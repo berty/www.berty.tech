@@ -27,7 +27,7 @@ Without further ado, here's your digest of berty's shiny new things for the last
 
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 * **Community Forum**: It may be a little early to tell you about it, but since you're our favorites, we can't resist. We are currently adding a forum for the community. It is directly linked to the berty website and allows us to have a comment system (blog/newsletter). Sign up and give us your feedback. It will be very much appreciated!
 
@@ -36,14 +36,14 @@ The forum is here: 👉 https://berty.community/ _(it couldn't be simpler: berty
 
 
 
-* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * October 21-23, 2020: [PWG 2020](https://www.planetiers.com/worldgathering/)
 
@@ -60,10 +60,10 @@ There is a brand new article on the blog! We just published it today. Our friend
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Messaging in Hong Kong at the time of China&#39;s &quot;National Security Law&quot; - an update by <a href="https://twitter.com/zo_oma_?ref_src=twsrc%5Etfw">@zo_oma_</a> on <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a>&#39;s blog<a href="https://t.co/5LIfYP6ryC">https://t.co/5LIfYP6ryC</a></p>&mdash; phil_h (@phil_h) <a href="https://twitter.com/phil_h/status/1282711183766806528?ref_src=twsrc%5Etfw">July 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-07-13](https://github.com/berty/community/blob/master/meeting-notes/2020/Q3/2020-07-13--staff-team-weekly-sync.md)
     * [2020-07-20](https://github.com/berty/community/blob/master/meeting-notes/2020/Q3/2020-07-20--staff-team-weekly-sync.md)
 

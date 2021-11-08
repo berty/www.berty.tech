@@ -18,7 +18,7 @@ Also worth a mention: we would like to give a big shout out to the **IPFS team**
 All of this being said, happy reading & stay safe.
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 💥 The Berty community is officially opened!
 
@@ -70,7 +70,7 @@ The last one is part of a series that Zooma called 'Watching'. The concept is to
 If, like Zooma, you are interested in publishing an article or two on our blog, please contact us. We'll be happy to help you do so!
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
 For the time being and until further notice, we are canceling all our venues to physical events. 🚧🚧
 
@@ -78,7 +78,7 @@ For the time being and until further notice, we are canceling all our venues to 
 * May 6th, 2020: [Paris P2P #9](https://p2p.paris/fr/event/monthly-9/) (Paris, FR 🇫🇷) - _probably replaced by an online event_
 
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 > We have decided to add in this section the contributors in each of our newsletters. This is our way of publicly thanking them for their work. Thanks to all of them! 🙏
 

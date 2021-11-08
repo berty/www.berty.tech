@@ -94,6 +94,6 @@ To sum up, there is not ONE perfect and unique method. If we were to recommend s
 
 We hope you enjoyed this article. Any ideas and comments are welcome.
 
-Cheers Internet!
+चीयर्स इंटरनेट!
 {{<tweet id="1291024965630939136">}}
 

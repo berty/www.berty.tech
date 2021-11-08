@@ -4,9 +4,9 @@ title: "Why You Should Stop Saying You Have Nothing To Hide!"
 date: 2018-12-13
 image: "nothing-to-hide.jpg"
 categories:
-  - "free-speech"
+  - "自由发言"
 tags:
-  - privacy
+  - 隐私
   - cybersecurity
   - surveillance
 description: So you are being watched online. Why should you care? After all, you are doing nothing wrong. You have nothing to hide, right? You just go online to chat with your friends, maybe argue with…

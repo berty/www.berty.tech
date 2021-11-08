@@ -1,19 +1,19 @@
 ---
 author: Pierre
-title: "Best Password Manager in 2020."
-date: 2020-08-07
+title: "Le meilleur gestionnaire de mots de passe en 2020."
+date: 07-08-2020
 #image: "password-manager.jpg"
 image: "password-manager.jpg"
 categories:
   - news
 tags:
-  - security
-  - privacy
+  - sécurité
+  - confidentialité
   - how-to
-description: Best password manager of 2020!
+description: Le meilleur gestionnaire de mots de passe en 2020 !
 ---
 
-# Basic #2: Password Manager
+# Basique n°2 : Les gestionnaires de mots de passe
 
 In our previous article, we taught you [how to create a strong password](https://berty.tech/blog/create-strong-password/) and also mentioned the **passwords management systems**. A promise is a promise: we said we would write an article about it, and here it is!
 

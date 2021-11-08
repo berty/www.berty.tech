@@ -28,10 +28,10 @@ Take care of yourselves and each other. 🧡
 
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 
-* **Good First Issue & Help Wanted** If you want to help us, we have two labels on GitHub to let you know where we need help: Good First Issue & Help Wanted. You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted** If you want to help us, we have two labels on GitHub to let you know where we need help: Good First Issue & Help Wanted. You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 * **Contributors:**
     * [Mentos1386](https://github.com/berty/go-orbit-db/pull/36) 🙏
@@ -52,7 +52,7 @@ Here's the latest from the Berty blog!
 
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
 For the time being and until further notice, we are canceling all in-person events at public venues. 🚧🚧
 
@@ -60,11 +60,11 @@ For the time being and until further notice, we are canceling all in-person even
 * July 1st, 2020: [Paris P2P #11](https://p2p.paris/en/event/monthly-11/) (Paris, FR 🇫🇷)
 
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-05-18](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-05-18--staff-team-weekly-sync.md)
     * [2020-05-25](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-05-25--staff-team-weekly-sync.md)
 

@@ -6,8 +6,8 @@ image: "gomobile-ipfs.jpg"
 categories:
   - announcement
 tags:
-  - technical
-  - security
+  - 技术方面
+  - 安全
 ---
 
 # Gomobile-IPFS

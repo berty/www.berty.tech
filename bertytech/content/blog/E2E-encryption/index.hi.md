@@ -105,5 +105,5 @@ During the key exchange with Diffie-Hellman, each of the two parties has no proo
 Ideally, Diffie-Hellman should therefore be used with a recognized authentication method such as digital signatures. Maybe we'll talk about it in a future blogpost?
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
+चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫 </br>
  {{<tweet id="1143493043783372801">}}
