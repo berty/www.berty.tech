@@ -36,6 +36,9 @@ GIT_LFS_ENABLED = "true"
 HUGO_ENABLEGITINFO = "true"
 
 [[plugins]]
+  package = "/plugins/verify-pages"
+
+[[plugins]]
   package = "netlify-plugin-submit-sitemap"
 
 [[plugins]]
