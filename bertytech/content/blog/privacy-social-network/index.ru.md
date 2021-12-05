@@ -6,7 +6,7 @@ image: "social-media.jpg"
 categories:
   - free-speech
 tags:
-  - privacy
+  - конфиденциальность
   - social-networks
   - internet
 description: Privacy is a difficult concept to grasp. Our world is changing from day to day, and it is sometimes difficult to define what is on the private side or public side. Is putting a beautiful photograph on Instagram, something private?
