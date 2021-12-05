@@ -1,7 +1,7 @@
 ---
-title: "How can I get Berty?"
+title: "Как я могу получить Berty?"
 id: 8
 private: true
 ---
 
-The Berty application is not available yet. However, we will open our preview version soon. If you are interested in testing our Beta “yolo”, send your request using the following form: https://crpt.fyi/berty-preview Your feedback will help us greatly in our development process.
+Приложение Berty все еще находится в стадии активной разработки. Однако наша ранняя версия уже доступна. Присоединяйтесь к нам в Discord, чтобы получить больше информации и попробовать! Ваши отзывы очень помогут нам в процессе разработки.
