@@ -1,38 +1,194 @@
 ---
-title: "Privacy Policy"
+title: "Политика конфиденциальности"
 type: fakepost
 image_bg: "privacy.png"
 ---
 
-At Berty, accessible from https://berty.tech, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Berty and how we use it.
+# Приложение Berty
 
-If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email at {{< obscure "contact@berty.tech" >}}
+    `Последнее обновление: 23 июня, 2021`
 
-### Log Files
-Berty follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.
+В настоящее время приложение находится на стадии бета-тестирования, и дополнительные службы, корректировка поведения или уточнения будут добавлены в эту Политику конфиденциальности.
 
-### Cookies and Web Beacons
-Like any other website, Berty uses 'cookies'. These cookies are used to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+Настоящая Политика конфиденциальности описывает нашу политику и процедуры по сбору, использованию и раскрытию вашей информации, когда вы пользуетесь Службой, а также рассказывает вам о ваших правах на конфиденциальность и о том, как закон защищает вас.
 
-## Privacy Policies
-You may consult this list to find the Privacy Policy for each of the advertising partners of Berty. Our Privacy Policy was created with the help of the Privacy Policy Generator.
+В Berty одним из наших главных приоритетов является конфиденциальность. Этот документ Политики конфиденциальности содержит типы информации, собираемой и записываемой Berty, а также способы её использования.
 
-Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Berty, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+> Для ясности: * Мы НИКОГДА не будем монетизировать или продавать ваши личные данные. * Мы ВСЕГДА стремимся минимизировать сбор данных. Сбор или использование ваших личных данных на наших веб-сайтах или в приложениях сведены к минимуму. * Мы ДОЛЖНЫ обеспечить максимальную безопасность. Это является приоритетом. Это также относится к случаям, когда мы используем продукты или службы третьих лиц.
 
-Note that Berty has no access to or control over these cookies that are used by third-party advertisers.
+Если у Вас возникли дополнительные вопросы или Вам требуется дополнительная информация о нашей Политике конфиденциальности, не стесняйтесь [свяжитесь с нами](https://berty.tech/contact).
 
-## Third Party Privacy Policies
-Berty's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. You may find a complete list of these Privacy Policies and their links here: Privacy Policy Links.
+## Толкование и условия
 
-You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites. What Are Cookies?
+### Толкование
 
-## Children's Information
-Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+Слова, начальная буква которых написана с заглавной буквы, имеют значения, определенные при следующих условиях. Следующие условия имеют одинаковое значение, независимо от того, в единственном или множественном числе они даны.
 
-Berty does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+### Условия
 
-## Online Privacy Policy Only
-This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Berty. This policy is not applicable to any information collected offline or via channels other than this website.
+For the purposes of this Privacy Policy:
 
-## Consent
-By using our website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.
+*   **Account** means a unique account created for You to access our Service or parts of our Service.
+*   **Application** means the software program provided by the Organization downloaded by You on any electronic device, named Berty
+*   **Organization** (referred to as either "the Organization", "We", "Us" or "Our" in this Agreement) refers to the NGO "Berty Technologies" located at 96 Boulevard Bessières, 75017 Paris, France. For the purpose of the GDPR, the Organization is the Data Controller.
+*   **Device** means any device that can access the Service such as a computer, a cellphone or a digital tablet.
+*   **Personal Data** is any information that relates to an identified or identifiable individual. For the purposes for GDPR, Personal Data means any information relating to You such as a name, an identification number, location data, online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity. For the purposes of the CCPA, Personal Data means any information that identifies, relates to, describes or is capable of being associated with, or could reasonably be linked, directly or indirectly, with You.
+*   **Service** refers to the Application or the Website or both.
+*   **Service Provider** means any natural or legal person who processes the data on behalf of the Organization. It refers to third-party companies or individuals employed by the Organization to facilitate the Service, to provide the Service on behalf of the Organization, to perform services related to the Service or to assist the Organization in analyzing how the Service is used. For the purpose of the GDPR, Service Providers are considered Data Processors.
+*   **Usage Data** refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).
+*   **You** means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable. Under GDPR (General Data Protection Regulation), You can be referred to as the Data Subject or as the User as you are the individual using the Service.
+
+## Collecting and Using Your Personal Data
+
+### Types of Data Collected
+
+#### Personal Data
+
+The Berty Application does not require any personal data to work: no phone number, email, name, first name, address, date of birth...
+
+
+#### Usage Data
+
+Usage Data is collected automatically when using the Service.
+
+Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.
+
+When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.
+
+We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.
+
+
+#### Proximity Communication
+
+You can use Proximity Communication (also referred to by other names in the Application such as Bluetooth® Low Energy, Bluetooth® LE, BLE or Android Nearby) to avoid using an internet connection to send messages. Your Android phone might warn You that Berty wants to access Your location, however this is a technical requirement and Berty does not collect or share Your location data.
+
+When enabling Proximity Communication Your Device will automatically connect with other Devices running Berty, but no identifying information will be shared unless You are participating in a common conversation or Accounts on both devices are mutual contacts.
+
+Your Device will broadcast that You are using Berty, this can be sensitive information depending on Your own privacy needs.
+
+
+### Use of Your Personal Data
+
+The Organization may use Personal Data for the following purposes:
+
+*   **To provide and maintain our Service**, including to monitor the usage of our Service.
+*   **To contact You:** To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.
+*   **To manage Your requests:** To attend and manage Your requests to Us.
+
+
+### Disclosure of Your Personal Data
+
+
+#### Law enforcement
+
+Under certain circumstances, the Organization may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).
+
+#### Other legal requirements
+
+The Organization may disclose Your Personal Data in the good faith belief that such action is necessary to:
+
+*   Comply with a legal obligation
+*   Protect and defend the rights or property of the Organization
+*   Prevent or investigate possible wrongdoing in connection with the Service
+*   Protect the personal safety of Users of the Service or the public
+*   Protect against legal liability
+
+### Security of Your Personal Data
+
+The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.
+
+## Detailed Information on the Processing of Your Personal Data
+
+The Service Providers We use may have access to Your Personal Data. These third-party vendors collect, store, use, process and transfer information about Your activity on Our Service in accordance with their Privacy Policies.
+
+## GDPR Privacy
+
+### Legal Basis for Processing Personal Data under GDPR
+
+We may process Personal Data under the following conditions:
+
+*   **Consent:** You have given Your consent for processing Personal Data for one or more specific purposes.
+*   **Performance of a contract:** Provision of Personal Data is necessary for the performance of an agreement with You and/or for any pre-contractual obligations thereof.
+*   **Legal obligations:** Processing Personal Data is necessary for compliance with a legal obligation to which the Organization is subject.
+*   **Vital interests:** Processing Personal Data is necessary in order to protect Your vital interests or of another natural person.
+*   **Public interests:** Processing Personal Data is related to a task that is carried out in the public interest or in the exercise of official authority vested in the Organization.
+*   **Legitimate interests:** Processing Personal Data is necessary for the purposes of the legitimate interests pursued by the Organization.
+
+In any case, the Organization will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.
+
+### Your Rights under the GDPR
+
+The Organization undertakes to respect the confidentiality of Your Personal Data and to guarantee You can exercise Your rights.
+
+You have the right under this Privacy Policy, and by law if You are within the EU, to:
+
+*   **Request access to Your Personal Data.** The right to access, update or delete the information We have on You. Whenever made possible, You can access, update or request deletion of Your Personal Data directly within Your account settings section. If You are unable to perform these actions Yourself, please contact Us to assist You. This also enables You to receive a copy of the Personal Data We hold about You.
+*   **Request correction of the Personal Data that We hold about You.** You have the right to have any incomplete or inaccurate information We hold about You corrected.
+*   **Object to processing of Your Personal Data.** This right exists where We are relying on a legitimate interest as the legal basis for Our processing and there is something about Your particular situation, which makes You want to object to our processing of Your Personal Data on this ground. You also have the right to object where We are processing Your Personal Data for direct marketing purposes.
+*   **Request erasure of Your Personal Data.** You have the right to ask Us to delete or remove Personal Data when there is no good reason for Us to continue processing it.
+*   **Request the transfer of Your Personal Data.** We will provide to You, or to a third-party You have chosen, Your Personal Data in a structured, commonly used, machine-readable format. Please note that this right only applies to automated information which You initially provided consent for Us to use or where We used the information to perform a contract with You.
+*   **Withdraw Your consent.** You have the right to withdraw Your consent on using Your Personal Data. If You withdraw Your consent, We may not be able to provide You with access to certain specific functionalities of the Service.
+
+### Exercising of Your GDPR Data Protection Rights
+
+You may exercise Your rights of access, rectification, cancellation and opposition by contacting Us. Please note that we may ask You to verify Your identity before responding to such requests. If You make a request, We will try our best to respond to You as soon as possible.
+
+You have the right to complain to a Data Protection Authority about Our collection and use of Your Personal Data. For more information, if You are in the European Economic Area (EEA), please contact Your local data protection authority in the EEA.
+
+## Children's Privacy
+
+Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.
+
+If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.
+
+
+## Links to Other Websites
+
+Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.
+
+We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.
+
+## Changes to this Privacy Policy
+
+We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+## Contact Us
+
+If You have any questions about this Privacy Policy, You can [contact us](https://berty.tech/contact).
+
+# Website
+
+В Berty, доступном с https://berty.tech, одним из наших главных приоритетов является конфиденциальность наших посетителей. Этот документ Политики конфиденциальности содержит типы информации, собираемой и записываемой Berty, а также способы её использования.
+
+Если у вас есть дополнительные вопросы или вам нужна дополнительная информация о нашей Политике конфиденциальности, не стесняйтесь обращаться к нам по электронной почте по адресу {{< obscure "contact@berty.tech" >}}
+
+### Файлы журналов
+Berty придерживается стандартной процедуры использования файлов журналов. Эти файлы регистрируют посетителей, когда они посещают веб-сайты. Все хостинговые компании делают это и являются частью аналитики хостинговых услуг. Информация, собираемая файлами журналов, включает адреса интернет-протокола (IP), тип браузера, поставщика услуг Интернета (ISP), отметку даты и времени, страницы перехода/выхода и, возможно, количество кликов. Они не связаны с какой-либо информацией, позволяющей установить личность. Целью информации является анализ тенденций, администрирование сайта, отслеживание движения пользователей на сайте и сбор демографической информации.
+
+### Файлы cookie и веб-маяки
+Как и любой другой сайт, Berty использует 'cookies'. Эти файлы cookie используются для хранения информации, включая предпочтения посетителей, и страниц веб-сайта, к которым посетитель обращался или посещал. Информация используется для оптимизации работы пользователей путем настройки содержимого нашей веб-страницы на основе типа браузера посетителей и/или другой информации.
+
+## Политика конфиденциальности
+Вы можете ознакомиться с этим списком, чтобы найти Политику конфиденциальности для каждого из рекламных партнеров Berty. Наша Политика конфиденциальности была создана с помощью Генератора Политики конфиденциальности.
+
+Сторонние рекламные серверы или рекламные сети используют такие технологии, как файлы cookie, JavaScript или веб-маяки, которые используются в их соответствующих рекламных объявлениях и ссылках, которые появляются на Berty и отправляются непосредственно в браузер пользователя. Когда это происходит, они автоматически получают ваш IP-адрес. Эти технологии используются для измерения эффективности их рекламных кампаний и/или для персонализации рекламного контента, который вы видите на посещаемых вами веб-сайтах.
+
+Обратите внимание, что Berty не имеет доступа к этим файлам cookie, которые используются сторонними рекламодателями, и не контролирует их.
+
+## Политика конфиденциальности третьих лиц
+Политика конфиденциальности Berty не распространяется на других рекламодателей или веб-сайты. Поэтому мы советуем вам ознакомиться с соответствующими Политиками конфиденциальности этих сторонних рекламных серверов для получения более подробной информации. Это может включать в себя их методы и инструкции о том, как отказаться от определенных вариантов. Вы можете найти полный список этих политик конфиденциальности и их ссылки здесь: Ссылки на политику конфиденциальности.
+
+Вы можете отключить файлы cookie в настройках вашего браузера. Чтобы узнать более подробную информацию об управлении файлами cookie в определенных веб-браузерах, ее можно найти на соответствующих веб-сайтах браузеров. Что такое Cookies?
+
+## Детская информация
+Еще одна часть нашего приоритета - это защита детей при использовании Интернета. Мы призываем родителей и опекунов наблюдать, участвовать и/или контролировать и направлять их действия в Интернете.
+
+Berty сознательно не собирает личную информацию от детей младше 13 лет. Если вы считаете, что ваш ребенок предоставил такую информацию на нашем веб-сайте, мы настоятельно рекомендуем вам немедленно связаться с нами, и мы сделаем все возможное, чтобы незамедлительно удалить такую информацию из наших записей.
+
+## Только онлайн-политика конфиденциальности
+Настоящая Политика конфиденциальности применяется только к нашей онлайн-деятельности и действительна для посетителей нашего веб-сайта в отношении информации, которую они передали и/или собирают в Berty. Эта политика не применима к любой информации, собранной в автономном режиме или по каналам, отличным от этого веб-сайта.
+
+## Соглашение
+Используя наш веб-сайт, вы тем самым соглашаетесь с нашей Политикой конфиденциальности и соглашаетесь с её Положениями и условиями.
