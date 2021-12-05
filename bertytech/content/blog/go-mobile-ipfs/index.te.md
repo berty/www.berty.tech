@@ -1,19 +1,18 @@
 ---
 author: manfred
-title: "Berty releases gomobile-ipfs!! "
+title: "Berty releases gomobile-ipfs!!"
 date: 2020-02-12
 image: "gomobile_ipfs_logo.jpg"
 categories:
-- announcement
+  - announcement
 tags:
-- technical
-- security
+  - technical
+  - security
 ---
 
 # Berty releases gomobile-ipfs
 
-IPFS is a peer-to-peer hypermedia protocol and a network for storing and sharing data in a distributed file system. To do so, it offers a number of features such as peers discovery, multiple transports, pubsub, DHT and so on.
-At Berty we have chosen to use IPFS as the base layer in our stack.
+IPFS is a peer-to-peer hypermedia protocol and a network for storing and sharing data in a distributed file system. To do so, it offers a number of features such as peers discovery, multiple transports, pubsub, DHT and so on. At Berty we have chosen to use IPFS as the base layer in our stack.
 
 But there's a little problem: as of today, most of the P2P networks are based on desktop computers or even servers with static IP addresses, with 24/7 uptime and powerful CPU. However, running a P2P network on mobile presents its challenges: just a few minutes per day of CPU availability, unreliable network, limited battery life, limited parallel connections, etc... P2P network are slow to start, first calls on a DHT ([Distributed Hash Table](https://www.cs.princeton.edu/courses/archive/fall18/cos418/docs/L6-dhts.pdf)) usually take time, then it becomes faster.
 
