@@ -1,5 +1,5 @@
 ---
-title: "Berty"
+title: "Berteto"
 description: A mobile & desktop app
 icon: fab fa-github
 color: black
@@ -11,7 +11,7 @@ menu:
 ---
 
 <div align="center">
-  <img src="https://berty.tech/img/berty.svg" alt="Berty" title="Berty" height="200px" />
+  <img src="https://berty.tech/img/berty.svg" alt="Berteto" title="Berteto" height="200px" />
 </div>
 
 <h3 align="center">🤝 Anti-censorship and anti-surveillance communication protocol</h3>
@@ -66,7 +66,10 @@ _We will open betas for the different packages and apps soon, so anyone will be 
 
 ### Berty Protocol
 
-[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/berty.tech/berty/v2) [![Code coverage](https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow)](https://codecov.io/gh/berty/berty)
+<a href="https://pkg.go.dev/berty.tech/berty/v2"><img src="https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white" alt="go.dev reference"></a>
+<a href="https://codecov.io/gh/berty/berty"><img src="https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow" alt="Code coverage"></a>
+<!-- [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/berty.tech/berty/v2)
+[![Code coverage](https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow)](https://codecov.io/gh/berty/berty) -->
 
 
 A generic SDK that allows developers to write P2P applications. It contains everything needed (encryption, identities, network routing, group management, account management, device management, application lifecycle) so you can just focus on the high-level features of your app.
@@ -124,7 +127,7 @@ Read our [contribute page](https://berty.tech/contribute).
 
 © 2018-2020 [Berty Technologies](https://berty.tech)
 
-Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) ([`LICENSE-APACHE`](LICENSE-APACHE)) or the [MIT license](https://opensource.org/licenses/MIT) ([`LICENSE-MIT`](LICENSE-MIT)), at your option. See the [`COPYRIGHT`](COPYRIGHT) file for more details.
+Licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) ([`LICENSE-APACHE`](https://github.com/berty/berty/blob/master/LICENSE-APACHE)) or the [MIT license](https://opensource.org/licenses/MIT) ([`LICENSE-MIT`](https://github.com/berty/berty/blob/master/LICENSE-MIT)), at your option. See the [`COPYRIGHT`](https://github.com/berty/berty/blob/master/COPYRIGHT) file for more details.
 
 
 ## Source code
