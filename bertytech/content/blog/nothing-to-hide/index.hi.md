@@ -9,7 +9,7 @@ tags:
   - privacy
   - cybersecurity
   - surveillance
-description: So you are being watched online. Why should you care? After all, you are doing nothing wrong. You have nothing to hide, right? You just go online to chat with your friends, maybe argue with…
+description: अगर आपको ऑनलाइन देखा जा रहा है। आपको क्यों परवाह करनी चाहिए? आखिरकार, आप कुछ भी गलत नहीं कर रहे हैं। आपके पास छिपाने के लिए कुछ भी नहीं है, है ना? You just go online to chat with your friends, maybe argue with…
 medium_url: https://medium.com/berty-tech/nothing-to-hide-5d4ef25cf271
 ---
 
