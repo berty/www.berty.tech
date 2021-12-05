@@ -7,8 +7,8 @@ categories:
   - announcement
 tags:
   - surveillance
-  - privacy
-  - security
+  - 隐私
+  - 安全
 ---
 
 # Watching :eye: :  Hong-kong Updates - China scares the world.
