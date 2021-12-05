@@ -4,13 +4,13 @@ title: "Are smartphones the best surveillance devices?"
 date: 2019-11-15
 image: "smartphone-surveillance.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 description: "What's sitting in your pocket is the most powerful tracking device ever made: localization, habits, communication. Everything can be monitored from your smartphone!"
 tags:
-  - security
+  - bezpieczeństwo
   - censorship
   - surveillance
-  - privacy
+  - prywatność
 ---
 
 # Are Smartphones the best surveillance devices?
