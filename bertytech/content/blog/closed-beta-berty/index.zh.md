@@ -1,21 +1,21 @@
 ---
 author: Manfred
-title: "We released our closed beta"
+title: "我们发布了预览测试版本"
 date: 2020-10-30
 #image: "2020-09-28-Berty-Blogpost-Release-closed-Beta.png"
 image: "2020-09-28-Berty-Blogpost-Release-closed-Beta.png"
 categories:
   - berty
-  - announcement
+  - 通知
 tags:
-  - news
-  - announcement
-description: We released our closed beta!
+  - 新闻
+  - 通知
+description: 我们发布了预览测试版本!
 ---
 
-# We released our closed beta!
+# 我们发布了预览测试版本!
 
-Yup, you read the headline correctly! We're slowly opening access to our beta version. Although we've been working in our cave for two years with no public release on the shelf, more people follow the Berty project every day. It's incredible. We thank you for that from the bottom of our hearts. Sincerely.
+是的，你正确阅读了标题！ We're slowly opening access to our beta version. Although we've been working in our cave for two years with no public release on the shelf, more people follow the Berty project every day. It's incredible. We thank you for that from the bottom of our hearts. Sincerely.
 
 If you're here, you understand the project's philosophy and the technological challenges it implies. It's truly astounding to feel as supported as we are. We have the best community!
 
