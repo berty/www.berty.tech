@@ -33,7 +33,7 @@ In our previous newsletter, we mentioned that we were looking for people who cou
 
 We'll contact the people you recommended! We'll keep you informed.
 
-### Berty Protocol
+### Berty 协议
 Manfred, our founder, released the *bertyprotocol.proto*. You can have a look here:
 
 > https://berty.tech/docs/protocol/#bertyprotocol-proto
