@@ -1,5 +1,5 @@
 ---
-title: "Features"
+title: "Avantaĝoj"
 hclass: bg-blue gradient bg-features
 image: "berty_features.png"
 #menu:
