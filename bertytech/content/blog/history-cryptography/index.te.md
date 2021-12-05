@@ -4,13 +4,13 @@ title: "History of Cryptography"
 date: 2019-06-26
 image: "2020-07-29-Berty-Blogpost-History_of_cryptography.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- technical
-- security
+  - technical
+  - security
 description: Cryptography in one form or other is everywhere online, from banking sites to personal communication apps. But it’s not a modern invention. When exactly did it arise? And what developments has it undergone over the years? The history of cryptography runs parallel to the development of new communication methods and safer transactions. Learn more about it to understand just how important it has become.
 aliases:
-- blog/history-cryptology
+  - blog/history-cryptology
 ---
 
 ## The History  Of Cryptography
@@ -18,15 +18,13 @@ aliases:
 Does the word “cryptography” conjure for you images of British mathematicians working hard to decipher coded German messages during WWII? Perhaps. But to find its origins, we have to go back in time a few thousand years. :hourglass_flowing_sand:
 
 ### Origins of Cryptography
-Over 5600 years ago, the Sumerians and the Egyptians needed a better way to record transactions. So they invented cuneiform and hieroglyphics, two of the oldest forms of writing.
-These writing systems may not look much like the words that you are reading now, but they combine simple logographic, alphabetic, and syllabic elements.
+Over 5600 years ago, the Sumerians and the Egyptians needed a better way to record transactions. So they invented cuneiform and hieroglyphics, two of the oldest forms of writing. These writing systems may not look much like the words that you are reading now, but they combine simple logographic, alphabetic, and syllabic elements.
 
 While the Sumerians and the Egyptians of old were familiar with these elements, to an outsider they would have been puzzling. No surprise then that it wasn’t until the 19th century that both of these languages were finally deciphered.
 
 ![Photo by Ali Hegazy on Unsplash](crypto2.jpg "Photo by Ali Hegazy on Unsplash")
 
-Cryptography, then, began in ancient times as a simplified system of notation. However, it wasn’t until Roman times that it engendered a more widely used encryption technique. Julius Caesar and other Roman emperors used simple ciphers to protect their private correspondence.
-At the time, letters and messages passed on by hand carried important information that could decide the fate of an army. But these could be easily intercepted and were not safe from prying eyes.
+Cryptography, then, began in ancient times as a simplified system of notation. However, it wasn’t until Roman times that it engendered a more widely used encryption technique. Julius Caesar and other Roman emperors used simple ciphers to protect their private correspondence. At the time, letters and messages passed on by hand carried important information that could decide the fate of an army. But these could be easily intercepted and were not safe from prying eyes.
 
 A simple substitution cipher like Caesar’s cipher encrypted messages by replacing a letter with another letter located a fixed number of places – say 3 – down the alphabet. In this way, “G” became “D” and “P” became “M”. It was painstaking at first, but it worked.
 
@@ -46,8 +44,7 @@ To create this cipher, a spy would have first written the letters in a grid and 
 Reading the letters horizontally, the encrypted message becomes clear :tada::
 <p align="center"> <b>THE TROOPS HAVE GATHERED ATTACK</b> </p>
 
-Over the centuries, ciphers became increasingly sophisticated, as did the methods that tried to decipher them, collectively known as cryptanalysis.
-A particularly effective form of cryptanalysis which was already known in the 9th century is frequency analysis. This studies how often letters and groups of letters repeat themselves in an encrypted text.
+Over the centuries, ciphers became increasingly sophisticated, as did the methods that tried to decipher them, collectively known as cryptanalysis. A particularly effective form of cryptanalysis which was already known in the 9th century is frequency analysis. This studies how often letters and groups of letters repeat themselves in an encrypted text.
 
 ### Modern Age Cryptography
 
