@@ -33,7 +33,7 @@ Guillaume and Manfred have made an initial event-sourcing-friendly version of th
 ## Ops
 
 ### FAQ
-Camille has finished the first round of writing the FAQ. It's almost complete, some information is still missing before putting it online. Stay tuned!
+Camille has finished the first round of writing the FAQ. It's almost complete, some information is still missing before putting it online. बने रहें!
 
 ### Golang Paris
 
