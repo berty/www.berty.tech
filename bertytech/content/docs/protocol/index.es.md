@@ -176,7 +176,7 @@ In the Berty Protocol, a user can use multiple devices within the same account, 
 
 ![handshake-sequence](./SkWZnyPOU.png)
 
-#### Challenges
+#### Desafíos
 
 There are three different types of challenges that A can send to B:
 
@@ -278,7 +278,7 @@ To inform the Responder that the Requester has not encountered any errors while 
 
 * **Device availability:** Please note that the Handshake is the only synchronous operation of the Berty Protocol: in order to succeed, both devices need to be online at the same time, which is usually the case if the Requester has scanned a QRCode on the Responder's Device, but which may also not be the case if the Requester has clicked on a URL received by message. In the case none of the Responder's devices are available, the Requester must wait and initiate a handshake later.
 
-## Groups
+## Grupos
 
 ### Concept
 
@@ -346,7 +346,7 @@ The Alias Key Pair is generated at the creation of the Account and the Alias Pub
 
 Please note that whenever an Alias Entry is disclosed in a Multi-Member Group, it cannot be undone. An Alias Entry can only be used to identify a member in one particular Multi-Member Group, since the Alias Resolver is derived from the Group ID.
 
-## Messages
+## Mensajes
 
 ### Encryption
 
