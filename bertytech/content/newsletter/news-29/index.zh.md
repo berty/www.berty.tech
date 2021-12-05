@@ -34,7 +34,7 @@ The repo is brand new: check it out, give feedback and contribute!
 Enjoy, guys! 💙
 
 
-### Berty Protocol
+### Berty 协议
 
 Antoine and Morgane are writing a new documentation for the protocol. This is a mandatory step in order to be reviewed by the community or audited. We'll keep you informed 🙂
 
