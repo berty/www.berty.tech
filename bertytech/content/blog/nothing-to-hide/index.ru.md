@@ -6,7 +6,7 @@ image: "nothing-to-hide.jpg"
 categories:
   - "free-speech"
 tags:
-  - privacy
+  - конфиденциальность
   - cybersecurity
   - surveillance
 description: So you are being watched online. Why should you care? After all, you are doing nothing wrong. You have nothing to hide, right? You just go online to chat with your friends, maybe argue with…
