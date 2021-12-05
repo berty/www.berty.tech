@@ -7,7 +7,7 @@ categories:
   - announcement
 tags:
   - technical
-  - security
+  - безопасность
 ---
 
 # Gomobile-IPFS
