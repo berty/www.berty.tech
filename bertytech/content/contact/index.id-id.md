@@ -1,5 +1,5 @@
 ---
-title: "Contact us"
+title: "Hubungi Kami"
 hclass: bg-blue gradient bg-contact
 image: "berty_contact.png"
 menu:
