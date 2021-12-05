@@ -3,8 +3,8 @@ title: "Olvid"
 open_source: false
 no_runtime_fee:
 no_purchase_fee:
-distributed: 
-decentralized: 
+distributed:
+decentralized:
 no_phone_required: false
 anonymous: false
 e2ee: true
@@ -14,3 +14,4 @@ open_spec: true
 aosp: "?"
 privacy_respecting:
 ---
+
