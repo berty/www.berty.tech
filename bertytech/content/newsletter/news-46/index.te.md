@@ -1,7 +1,8 @@
 ---
 title: "Berty News #46"
 date: 2020-10-02
-aliases: ["/newsletter/weekly-46"]
+aliases:
+  - "/newsletter/weekly-46"
 ---
 
 
@@ -19,7 +20,7 @@ Cheers!
 
 ## 🚀 Open Source
 
-We have been working on a lot of different topics over the last two weeks: 
+We have been working on a lot of different topics over the last two weeks:
 * Integrate replication servers in the mobile app
 * Nearly finished the orbitdb replay system, to reconstruct the sqlite projection in the mobile app
 * Switch to GitHub Actions to build the mobile apps and move the signing step into yolo as an async task
