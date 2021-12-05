@@ -1,99 +1,98 @@
 ---
 author: Pierre
-title: "What a crazy week" 
+title: "Какая сумасшедшая неделя"
 date: 2021-02-08
 #image: "image.png"
 image: "image.png"
 categories:
-- news
+  - news
 tags:
-- announcement
-- news
-description: "A massive THANK YOU. We had a crazy week!" 
+  - announcement
+  - news
+description: "Огромное СПАСИБО. У нас была сумасшедшая неделя!"
 ---
 
-# What a crazy week! 
+# Какая сумасшедшая неделя!
 
-That's the gist of it, really. We received a lot of exposure following two posts in particular - one in [HackerNews](https://news.ycombinator.com/item?id=25926360) and one on [Reddit Opensource](https://www.reddit.com/r/opensource/comments/l67i0g/berty_a_secure_peertopeer_messaging_app_that/). As we noted in our [newsletter](https://berty.tech/newsletter/news-53/), many of you joined us following these articles. 
+На самом деле, в этом суть. В частности, мы получили много внимания после двух сообщений - одного в [HackerNews](https://news.ycombinator.com/item?id=25926360) и одного на [Reddit Opensource](https://www.reddit.com/r/opensource/comments/l67i0g/berty_a_secure_peertopeer_messaging_app_that/). Как мы отмечали в нашей [новостной рассылке](https://berty.tech/newsletter/news-53/), многие из вас присоединились к нам после этих статей.
 
-It's not just these mentions amplifying this momentum – it's the curiosity and passion of the people who saw them, or who're already signed on. People like you, dare we say.
-
-
-Here's some data: 
-* Newsletter subscriptions are up almost +200%. You are now several thousand people to follow our adventures. ⚔️ 
-* We saw our website's normal *monthly* traffic exceeded in just 3 days. 
-* It's raining stars: from 700 to more than 3.5k GitHub stars at the time of writing. ⭐️
-* The community on Discord has over 400 members. 
+Не только эти упоминания усиливают этот импульс - это любопытство и страсть людей, которые их видели или уже подписались. Осмелюсь сказать, что такие люди, как ты.
 
 
+Вот некоторые данные:
+* Подписки на рассылку новостей выросли почти на + 200%. Теперь за нашими приключениями следят несколько тысяч человек. ⚔️
+* Мы увидели, что нормальный *ежемесячный* трафик нашего веб-сайта превышен всего за 3 дня.
+* Дождь звёзд: от 700 до более 3,5 тысяч звезд на GitHub на момент написания. ⭐️
+* Сообщество Discord насчитывает более 400 участников.
 
 
 
-## Instant outreach
 
-As you can imagine, this has had a real impact on us and the community! Let's see in detail what this translates to. 
+
+## Мгновенный визит
+
+Как вы понимаете, это оказало реальное влияние на нас и сообщество! Давайте посмотрим подробно, к чему это приводит.
 
 ### GitHub
 
-Our GitHub `berty/berty` repo has been promoted to #1 trending in GitHub/Go and reached global Top 5. GG to you! 🖐
+Наш репозиторий GitHub `berty/berty` был переведён на первое место в рейтинге GitHub/Go и вошел в пятерку мировых лидеров. "GG" вам! 🖐
 
 ![](https://i.imgur.com/dRoavKD.png)
 
 
-### Interview requests 
+### Запросы на интервью
 
-We have received several requests for interviews. One of them has already been published. *Console* delivers a weekly showcase of emerging open source projects, curated by an Amazon software engineer.
+Мы получили несколько запросов на интервью. Один из них уже опубликован. *Console* еженедельно предоставляет демонстрацию новых проектов с открытым исходным кодом, курируемых инженером-программистом Amazon.
 
-👉 Read the Berty interview in Console: https://console.substack.com/p/console-38
+👉 Прочтите интервью Berty в Console: https://console.substack.com/p/console-38
 
-We'll keep you informed of future releases. (We'll probably announce them on Twitter, too, so don't hesitate to follow us @berty)
+Мы будем держать вас в курсе будущих релизов. (Вероятно, мы также объявим о них в Twitter, так что не стесняйтесь подписываться на нас @berty)
 
 
 
-### Translation
+### Переводы
 
-There are now **more than 50 contributors** translating the Berty application and website word-for-word. **This work is critical for Berty to cross borders.** Language is a huge barrier to adoption. You guys are terrific.  🗯
+Сейчас **более 50 участников** дословно переводят приложение и веб-сайт Berty. **Эта работа критически важна для Берти, чтобы пересечь границы.** Язык - огромный барьер для принятия. Вы, ребята, потрясающие.  🗯
 
-Please take some time to translate a few strings. It's fast and super simple.
+Пожалуйста, найдите время, чтобы перевести несколько строк. Это быстро и очень просто.
 
 http://translate.berty.community/
 
-### Berty Community
+### Сообщество Berty
 
-As noted, we're 400+ on Discord. We're seeing great discussions on the General forum, and getting some good questions via private message. We are responding to each of you. Please be kind and patient. 💛
+Как уже отмечалось, на Discord нас уже более 400 человек. Мы видим отличные обсуждения на общем форуме и получаем хорошие вопросы в личных сообщениях. Мы отвечаем каждому из вас. Пожалуйста, будьте добры и терпеливы. 💛
 
-Quick usage note:
+Примечание по быстрому использованию:
 
-> We do not use Discord for support purposes. We use Discord as an easy and direct connection with our community. **Our official support links** are:
-> >
-> Twitter (https://twitter.com/berty)
+> Мы не используем Discord в целях поддержки. Мы используем Discord как простую и прямую связь с нашим сообществом. **Наши официальные ссылки на службу поддержки**:
+> 
+> > Twitter (https://twitter.com/berty)
 > 
 > PGP/ProtonMail (https://berty.tech/contact)
 > 
-> Support page: https://berty.tech/support
-> >
-> Forum (https://berty.community/) - Not yet launched; it's coming!
->
+> Страница поддержки: https://berty.tech/support
+> 
+> > Форум (https://berty.community/) - Ещё не запущен; скоро!
 
-### Sponsorship
+### Спонсорство
 
-We have received messages from our sponsors to congratulate us. It doesn't seem like much, but as we are an NGO and rely on donations, trust is essential. 
+Мы получили сообщения от наших спонсоров, чтобы поздравить нас. Кажется, это не так уж и много, но поскольку мы являемся неправительственной организацией и полагаемся на пожертвования, доверие необходимо.
 
-Until now, we've been funded solely by important donations from private and public sponsors like IPFS/Protocol Labs. We're currently working on a campaign to integrate our sponsorship and donation system, and we want to do it well. 
+До сих пор мы финансировались исключительно за счет важных пожертвований от частных и государственных спонсоров, таких как IPFS/Protocol Labs. В настоящее время мы работаем над кампанией по интеграции нашей системы спонсорства и пожертвований, и мы хотим сделать это хорошо.
 
-In the meantime, you can donate here and support the project: https://github.com/sponsors/berty
+А пока вы можете сделать пожертвование здесь и поддержать проект: https://github.com/sponsors/berty
 
-We hope it goes without saying that you'll get a shoutout for doing so!
+Мы надеемся, что само собой разумеется, что вы получите благодарность за это!
 
-## Conclusion
+## Заключение
 
-A huge **THANK YOU**. 😊 This unprecedented support has been an important reminder to us about how much this project is needed. We sixth-sensed that a turning point was coming in terms of messaging apps and privacy, but we don't think it was already upon us. No worries, though – we're hurrying. 
+Огромное **СПАСИБО**. 😊 Эта беспрецедентная поддержка стала для нас важным напоминанием о том, насколько нужен этот проект. Мы почувствовали, что наступает поворотный момент с точки зрения приложений для обмена сообщениями и конфиденциальности, но мы не думаем, что он уже наступил. Но не беспокойтесь - мы спешим.
 
-For skeptics (and the idly curious): You can track our progress (and contribute to it) anytime – our code is open source. We're an NGO deeply committed to transparency, and our mission + the quality of the work we do in its service. 
+Для скептиков (и просто любопытных): вы можете отслеживать наш прогресс (и вносить в него свой вклад) в любое время - наш код имеет открытый исходный код. Мы - неправительственная организация, которая глубоко привержена принципам прозрачности и нашей миссии + качество работы, которую мы выполняем для ее обслуживания.
 
-You are now the ambassadors of Berty. Take care of this little colorful parrot.
+Теперь вы послы Berty. Позаботьтесь об этом маленьком красочном попугае.
 
-We'll keep you informed of what's next, folks!
+Мы будем держать вас в курсе, ребята!
 
 
 
