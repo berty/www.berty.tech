@@ -118,6 +118,6 @@ Consider the following when choosing a VPN service. Casual browsing. For secure 
 
 VPN started out as a means for remote workers to access their company’s core networks. It has grown into a necessary tool for today’s internet users who want to keep some semblance of privacy on the World Wide Web. Choose wisely and stay safe.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫
 
 {{<tweet id="1142099377546244098">}}
