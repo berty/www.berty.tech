@@ -8,9 +8,10 @@ decentralized: "-"
 no_phone_required: true
 anonymous: true
 e2ee: true
-offline_messaging: 
+offline_messaging:
 multi_device: true
-open_spec: 
+open_spec:
 aosp:
 privacy_respecting: true
 ---
+
