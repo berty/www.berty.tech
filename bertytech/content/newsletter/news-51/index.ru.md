@@ -7,7 +7,7 @@ aliases:
 
 # News #51
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
 Yes, we know, no newsletter last week. We can explain!
 - We gave two talks last week — not much time to properly prepare your dose of berty updates.
@@ -40,7 +40,7 @@ Highlights from the last three weeks:
 * Added **new target languages** for i18n, based on demands from the community + switch to full local names instead of two-letter codes
 * Fixed various issues identified by testers
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 ### Donating
 
@@ -56,9 +56,9 @@ If our work is important to you, you're welcome to send us a donation any time. 
 
 
 
-### Translating
+### Перевод
 
-You can help us by translating the Berty app + website. It will be much appreciated! 🧡
+Вы можете помочь нам, переведя приложение Berty + сайт. Мы будем очень признательны! 🧡
 
 Interested? Check out our dedicated blog post to help you get started:
 
@@ -69,9 +69,9 @@ Latest languages added:
 * ✅ Esperanto
 * ✅ Slovenian
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
-If you want to help us, we have two labels on GitHub to let you know where we need you: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+Если вы хотите нам помочь, у нас есть две метки на GitHub, чтобы вы знали, где вы нам нужны: [**Хороший первый вопрос**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) и [ **Требуется помощь**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 ## 📚 Blogpost
@@ -79,7 +79,7 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 * 👉 [Help us to translate Berty](https://berty.tech/blog/berty-translation/)
 * 👉 [Our talks at PBWS & IPFS 2020 Wrap Up](https://berty.tech/blog/2020-talks/)
 
-## 💌 Mentions
+## 💌 Упоминания
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m pretty sure, surveillance offices over the world will *hate* <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> for creating an uncompromisable, world scale distributed, locally encrypted messaging protocol on top of <a href="https://twitter.com/hashtag/ipfs?src=hash&amp;ref_src=twsrc%5Etfw">#ipfs</a> and <a href="https://twitter.com/hashtag/web3?src=hash&amp;ref_src=twsrc%5Etfw">#web3</a> tech. Falls back to BLE if China or <a href="https://twitter.com/hashtag/Turkey?src=hash&amp;ref_src=twsrc%5Etfw">#Turkey</a> pull the IP plug! <a href="https://t.co/PfpHgtSQ4Q">https://t.co/PfpHgtSQ4Q</a></p>&mdash; Stefan Adolf (elmariachi) 🧔 (@stadolf) <a href="https://twitter.com/stadolf/status/1337462369295994883?ref_src=twsrc%5Etfw">December 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -87,15 +87,15 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Very cool WIP from <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> on Bluetooth <a href="https://twitter.com/libp2p?ref_src=twsrc%5Etfw">@libp2p</a> transports, <a href="https://twitter.com/tor?ref_src=twsrc%5Etfw">@tor</a> transport for increased privacy, and using <a href="https://twitter.com/IPFS?ref_src=twsrc%5Etfw">@IPFS</a> on mobile!! Everything OSS and improving the experience for all devs 🙏🎉❤️ <a href="https://t.co/M5M1UtvxiL">pic.twitter.com/M5M1UtvxiL</a></p>&mdash; Molly (@momack28) <a href="https://twitter.com/momack28/status/1337461437401235456?ref_src=twsrc%5Etfw">December 11, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * [Paris P2P #13](https://p2p.paris/en/event/monthly-13/) (_online_)
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-12-14](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-12-14--staff-team-weekly-sync.md)
     * [2020-11-30](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-30--staff-team-weekly-sync.md)
   
