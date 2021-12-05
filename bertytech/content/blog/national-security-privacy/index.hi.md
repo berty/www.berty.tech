@@ -52,7 +52,7 @@ These statements make us think about the real reasons for this security because 
 Based on these statements, and now, with full knowledge of the facts, we let you think about what is the most substantial thing to do for you at 🤔.
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫
 
 {{< tweet id="1081206212191010817" >}}
 
