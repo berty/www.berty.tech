@@ -4,10 +4,10 @@ title: "How to set up a VPN on your phone in less than 10 minutes"
 date: 2019-06-05
 image: "vpn-phone.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - how-to
-  - security
+  - bezpieczeństwo
   - censorship
 description: At this particular point in time, it’s occurred to you that it might be a good idea to set up a VPN (Virtual Private Network) on your mobile phone. However, the problem is that you don’t have any idea of where to begin. Well, the good news is thatyou’ve come to the right place. We’re here to tell you how to set up your new VPN in just a few minutes on either your iPhone or your Android device.
 ---
@@ -118,6 +118,6 @@ Consider the following when choosing a VPN service. Casual browsing. For secure 
 
 VPN started out as a means for remote workers to access their company’s core networks. It has grown into a necessary tool for today’s internet users who want to keep some semblance of privacy on the World Wide Web. Choose wisely and stay safe.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{<tweet id="1142099377546244098">}}
