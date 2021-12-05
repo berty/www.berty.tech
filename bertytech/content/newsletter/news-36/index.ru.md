@@ -18,13 +18,13 @@ We hope you're all doing well too, whatever you are on the globe! Stay safe! �
 3...2...1...Boom newsletter #36! 🔥
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 * **IPFS Mobile Design Guideline Workshop** We participated in a workshop on mobile designs in the IPFS ecosystem. It was super interesting and great to share experiences. Thanks to Jim, Dietrich, Aaron, and Paul for thinking of us! Let's do it again sometime!
 
 * **Adding document store (WIP)** We have received an external [contribution](https://github.com/berty/go-orbit-db/pull/36) for the implementation of a document store on go-orbit-db. Thanks @mentos1386!
 
-* **Good First Issue & Help Wanted** If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted** If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 * **Contributors:**
     * [@connerteneery](https://github.com/connertennery) 🙏
@@ -50,7 +50,7 @@ Two articles have been published on the blog. Trust us; they're dope!
 
 * Can you guess the next one? Clue: `25.15.12.15`. _Got it?_
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
 For the time being and until further notice, we are canceling all in-person events at public venues. 🚧🚧
 
@@ -58,11 +58,11 @@ For the time being and until further notice, we are canceling all in-person even
 * June 3rd, 2020: [Paris P2P #10](https://p2p.paris/en/event/monthly-10/) (Paris, FR 🇫🇷) - _probably replaced by an online event_
 
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-05-04](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-05-04--staff-team-weekly-sync.md)
     * [2020-05-11](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-05-11--staff-team-weekly-sync.md)
 
