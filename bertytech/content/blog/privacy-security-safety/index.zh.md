@@ -4,11 +4,11 @@ title: "Differences Between Safety, Security, Private, Privacy and Intimacy"
 date: 2018-12-24
 image: "privacy-security-safety.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
   - safety
-  - security
-  - privacy
+  - 安全
+  - 隐私
   - intimacy
 description: Security, safety, privacy, and intimacy are closely related terms. They respectively define very different specific nuances, and yet we regularly mix them up. This blog post will aim to study each of these terms and try to understand better how they may or may not associate with each other.
 medium_url: https://medium.com/berty-tech/security-privacy-safety-7050168d5453-d29fd57f5b20
