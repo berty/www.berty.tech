@@ -4,7 +4,7 @@ title: "What Is Metadata?"
 date: 2019-12-20
 image: "blogpost-metadata.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
   - Privacy
   - Security
