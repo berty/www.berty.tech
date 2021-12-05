@@ -1,6 +1,6 @@
 ---
 title: "Gomobile-IPFS"
-description: IPFS and libp2p on Mobile, with Gomobile
+description: IPFS и libp2p на мобильных устройствах с Gomobile
 icon: fab fa-github
 color: black
 display_nav: false
@@ -13,30 +13,30 @@ menu:
 
 # Gomobile-IPFS
 
-This repo aims to provide packages for Android, iOS and React-Native that allow one to run and use an IPFS node on mobile devices. It is also a place to discuss the constraints of running IPFS on mobile in order to find solutions and exchange tips.
+Этот репозиторий направлен на предоставление пакетов для Android, iOS и React-Native, которые позволяют запускать и использовать узел IPFS на мобильных устройствах. Это также место для обсуждения ограничений использования IPFS на мобильных устройствах, чтобы найти решения и обменяться советами.
 
-<blockquote class="yellow"><i class="far fa-exclamation-triangle"></i>This repo is still experimental, contributions are very welcome</blockquote>
+<blockquote class="yellow"><i class="far fa-exclamation-triangle"></i>Этот репозиторий всё ещё экспериментальный, вклады очень приветствуются</blockquote>
 
-## Roadmap
+## "Дорожная карта"
 
-* Basic Java/Swift <-> go-ipfs bindings  <span class="tag green"><i class="far fa-check"></i>DONE</span>
-* InputStream as request body and request response  <span class="tag yellow">IN PROGRESS</span>
-* Unit tests using Android/iOS testing frameworks
-* `SetStreamHandler(protocolID, handler)` and `NewStream(peerID, protocolID)` bindings
-* Packages built and published using CI
-* Android/iOS lifecycle management
-* React-Native module  <span class="tag yellow">IN PROGRESS</span>
-* Improve this README
-
-
-## License
-
-Dual [MIT](./LICENSE-MIT)/[Apache-2.0](./LICENSE-APACHE) license
+* Базовый Java/Swift <-> go-ipfs bindings <span class="tag green"><i class="far fa-check"></i>ГОТОВО</span>
+* InputStream в качестве тела запроса и ответа на запрос  <span class="tag yellow">в ПРОЦЕССЕ</span>
+* Модульные тесты с использованием платформ тестирования Android/iOS
+* `SetStreamHandler(protocolID, handler)` и `NewStream(peerID, protocolID)` bindings
+* Пакеты, созданные и опубликованные с использованием CI
+* Управление жизненным циклом Android/iOS
+* Модуль React-Native  <span class="tag yellow">В ПРОЦЕССЕ</span>
+* Улучшите этот README
 
 
-## Source code
+## Лицензия
 
-Source code is available on [github](https://github.com/ipfs-shipyard/gomobile-ipfs)
+Dual [MIT](https://github.com/berty/berty/blob/master/LICENSE-MIT)/[Apache-2.0](https://github.com/berty/berty/blob/master/LICENSE-APACHE) license
+
+
+## Исходный код
+
+Исходный код доступен на [GitHub](https://github.com/ipfs-shipyard/gomobile-ipfs)
 
 <a class="btn btn-bty btn-grack" href="https://github.com/ipfs-shipyard/gomobile-ipfs"><i class="fab fa-github"></i>ipfs-shipyard/gomobile-ipfs</a>
 
