@@ -8,7 +8,7 @@ categories:
   - freespeech
 tags:
   - meetup
-  - privacy
+  - конфиденциальность
   - open-source
 description: Our memories from Fosdem 2020.
 ---
