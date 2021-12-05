@@ -15,7 +15,7 @@ As usual, fresh news from the team: Everyone's fine. We hope you're okay too! We
 
 Here is goes for News #35!
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 ### IPFS Community Call
 
@@ -48,11 +48,11 @@ Thanks to PhilH for its help, and thanks to all those who will take the time to 
 👉 https://github.com/berty/community/issues/72
 
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
 Hey folks, we still need some help on this (👉 https://github.com/berty/community/issues/67), anyone willing to help?
 
-If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+If you want to help us, we have two labels on GitHub to let you know where we need help: [Good First Issue](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) & [Help Wanted](https://github.com/berty/berty/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 
@@ -61,7 +61,7 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 ### Yolo is out!
  ![](https://i.imgur.com/dd8mQie.png)
 
-Yolo is a one-stop real-time feed of ready-to-install releases and tests for your apps. We're using it at berty to make releases and test branches ready to download and use on a developer's device within minutes after passing our CI.
+Yolo is a one-stop real-time feed of ready-to-install releases and tests for your apps. Мы используем его на предприятии, чтобы подготовить выпуски и тестовые ветки для загрузки и использования на устройстве разработчика в течение нескольких минут после прохождения нашего CI.
 
 We created Yolo to implement the critical features missing from Apple's TestFlight.
 
@@ -77,7 +77,7 @@ Last [news](https://berty.tech/newsletter/news-34/), we told you that Remi linke
 This news, we are pleased to tell you: he strikes again! He made the same thing for the current codebase 🎉
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
 For the time being and until further notice, we are canceling all our venues to real events. 🚧🚧
 
@@ -96,9 +96,9 @@ For the time being and until further notice, we are canceling all our venues to 
 
 Follow us on [Twitter](https://twitter.com/berty), we have 🍪!
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-Read our last weekly sync notes:
+Прочтите наши последние еженедельные примечания:
 
 * [2020-04-27](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-04-27--staff-team-weekly-sync.md)
 * [2020-04-20](https://github.com/berty/community/blob/master/meeting-notes/2020/Q2/2020-04-20--staff-team-weekly-sync.md)
