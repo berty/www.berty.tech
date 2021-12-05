@@ -5,10 +5,10 @@ date: 2020-08-13
 #image: "metadata-mobile-messaging.jpg"
 image: "metadata-mobile-messaging.jpg"
 categories:
-  - technical
+  - 技术方面
 tags:
   - surveillance
-  - privacy
+  - 隐私
   - cybersecurity
 description: "Wanna learn more on metadata in mobile messaging? Check this article!"
 ---
@@ -77,7 +77,7 @@ We hope you understand why we tend to drastically reduce their collection in Ber
 
 If you liked this article, please let us know in the comments section below. It's mean a lot. 🧡
 
-Cheers Internet!
+为互联网干杯！
 
 
 
