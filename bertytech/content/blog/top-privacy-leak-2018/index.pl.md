@@ -4,9 +4,9 @@ title: "Top 2018 Privacy Leaks"
 date: 2019-02-11
 image: "leak-2018.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
-  - privacy
+  - prywatność
   - social-networks
   - internet
 description: With 2018 now firmly in the rearview mirror, it’s a good time to set aside a moment and take stock of everything that had happened during those 12 months. Just like any other year, 2018 had its ups and downs. However, a notable trend among those low points was widespread in privacy leaks.
@@ -105,7 +105,7 @@ We do not know if anyone has managed to abuse the database. Still, the very fact
 
 These were some of the most notable privacy leaks of 2018. Unfortunately, the list could be much longer. In today’s world, our privacy is in constant danger. Therefore, it pays to stay informed and do everything in your power to protect yourself.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{< tweet id="1103959084900986881" >}}
 
