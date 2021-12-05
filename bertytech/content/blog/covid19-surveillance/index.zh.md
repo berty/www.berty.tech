@@ -8,8 +8,8 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
-  - privacy
+  - 安全
+  - 隐私
 description: "Today, we are focusing on the various announcements passed under the radar in France and almost not relayed by the media, which are nevertheless of major importance. However, similar directives are already operational in Italy, Israel, South Korea, China, the United States and Belgium."
 ---
 
