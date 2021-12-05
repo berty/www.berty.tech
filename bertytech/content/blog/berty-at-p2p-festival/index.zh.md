@@ -6,10 +6,10 @@ image: "festival.png"
 video: time_laps_festival.mp4
 video_thumbnail: time_laps_festival_350x200.mp4
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - technical
-  - security
+  - 技术方面
+  - 安全
 ---
 
 # Berty at Paris P2P Festival #0
