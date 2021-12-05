@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #01"
 date: 2019-06-21
-aliases: ["/newsletter/weekly-01"]
+aliases:
+  - "/newsletter/weekly-01"
 ---
 
 ## Current Work
@@ -15,7 +16,7 @@ aliases: ["/newsletter/weekly-01"]
 ### Black Pearl
 
  The Black Pearl is actually a dashboard that allows us to visualize all our peers on a world map 🗺️. And of course, the statistics evolve in real time. It's great to see!
- 
+
 ![Lady & Gentleman 'The Black Pearl'!](image02.png "Lady & Gentleman 'The Black Pearl'!")
 
 ### And Currently
