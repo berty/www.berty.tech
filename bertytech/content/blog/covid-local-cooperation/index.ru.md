@@ -8,8 +8,8 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
-  - privacy
+  - безопасность
+  - конфиденциальность
 description: "Time: March 2020. Place: planet Earth. Containment rules are disrupting lives in many countries, and social relations between individuals are reduced to a minimum."
 ---
 
