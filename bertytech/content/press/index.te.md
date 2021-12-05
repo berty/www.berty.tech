@@ -4,9 +4,9 @@ type: fakepost
 hclass: bg-blue gradient bg-press
 image: "berty_press.png"
 menu:
-    footer_col4:
-        weight: 40
-        name: Press
+  footer_col4:
+    weight: 40
+    name: Press
 ---
 
 {{< display_section_press path="/docs/press/press_documents" >}}
