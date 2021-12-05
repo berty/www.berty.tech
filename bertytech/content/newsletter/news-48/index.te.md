@@ -1,20 +1,21 @@
 ---
 title: "Berty News #48"
 date: 2020-10-30
-aliases: ["/newsletter/weekly-48"]
+aliases:
+  - "/newsletter/weekly-48"
 ---
 
 # News #48
 
 Ahoy Bertizen! 🏴‍☠️
 
-We are delighted to see you again for this newsletter. On the program this week: Update on the beta progress, PWG event debrief, and a citation on Reddit! 
+We are delighted to see you again for this newsletter. On the program this week: Update on the beta progress, PWG event debrief, and a citation on Reddit!
 
 Speaking of Reddit, many of you joined us after our mention on the sub r/PrivacytoolIO. If this is the case, hello and welcome! 🧡
 
 Little ritual: A few words about the team. Overall, everyone is doing well. Elizabeth/@ekelen, one of our front developers, has finished her mission with us. She is in Canada and we bid her a fond farewell. She's still insistent on adding a bunch of emojis to our newsletters though. 🙄
 
-Another important point to mention: The French government has announced a new lockdown starting yesterday. It's not great for the mood but it's just the way it is. Health above all. 💪 We've already been working remotely since March, so we consider ourselves old hands at long-distance productivity. 
+Another important point to mention: The French government has announced a new lockdown starting yesterday. It's not great for the mood but it's just the way it is. Health above all. 💪 We've already been working remotely since March, so we consider ourselves old hands at long-distance productivity.
 
 Take care, see u in 2 weeks!
 
@@ -42,24 +43,24 @@ Highlights from the last two weeks:
 
 ## 💌 Mention
 
-* [Reddit PrivacyToolsIO](https://www.reddit.com/r/privacytoolsIO/comments/jhyenh/sent_a_friend_signal_they_replied_with_this_link/): 
+* [Reddit PrivacyToolsIO](https://www.reddit.com/r/privacytoolsIO/comments/jhyenh/sent_a_friend_signal_they_replied_with_this_link/):
 
 ![](https://i.imgur.com/ysKSKZZ.png)
 
 ## 🗣️ Community
 
-### PWG 2020 
+### PWG 2020
 We participated in the Planetiers World Gathering 2020. This annual event brings together the actors of tomorrow's world – those who think long term + sustainability. We participated from Paris as the event was hosted live from Lisbon. Such are the times. 😷
 
 We've been eagerly anticipating this congress and its opportunities for exchange and some (we think) well justified self-promotion. A messenger like Berty must be "ready for tomorrow", looking beyond the headlines for the needs of the future.
 
-We dropped in on some great talks: "Can technology save us?"; "Human rights: we must fight for each other". Manfred also presented Berty during a start up pitch session: 
+We dropped in on some great talks: "Can technology save us?"; "Human rights: we must fight for each other". Manfred also presented Berty during a start up pitch session:
 
 ![](https://i.imgur.com/uRj3Nnk.jpg)
 
 ### Reddit
 
-We were quoted in Reddit (see above). Several people discovered Berty and made interesting remarks about Berty. We took the opportunity to make an issue gathering all the comments in the repo /community. We say it every time: thank you for your feedback and advice. We're takers! 
+We were quoted in Reddit (see above). Several people discovered Berty and made interesting remarks about Berty. We took the opportunity to make an issue gathering all the comments in the repo /community. We say it every time: thank you for your feedback and advice. We're takers!
 
 👉 https://github.com/berty/community/issues/108
 
@@ -70,7 +71,7 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 
 ## 📚 Blogposts
 
-A new article arrived on the blog! We talk about the closed beta and our progress. 
+A new article arrived on the blog! We talk about the closed beta and our progress.
 
 👉 [We released our closed beta!](https://berty.tech/blog/closed-beta-berty)
 
