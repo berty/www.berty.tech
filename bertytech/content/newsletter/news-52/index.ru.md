@@ -7,7 +7,7 @@ aliases:
 
 # News #52
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
 And here we are in 2021! Happy New Year to all. We wish you happiness and health, free speech, privacy and love.
 
@@ -48,10 +48,10 @@ Highlights from the last few weeks:
 * Wrote a Flipper logging plugin to speedup development
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 
-### Translating
+### Перевод
 
 Last month, we wrote a blog article (https://berty.tech/blog/berty-translation/) to explain how to translate Berty. And...
 
@@ -70,16 +70,16 @@ There are still many more, so if your language has not been mentioned above, tak
 
 
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
-If you want to help us, we have two labels on GitHub to let you know where we need you: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers. Just saying 😏
+Если вы хотите нам помочь, у нас есть две метки на GitHub, чтобы вы знали, где вы нам нужны: [**Хороший первый вопрос**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) и [ **Требуется помощь**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). Вы будете получать нашу вечную благодарность и, возможно, несколько стикеров. Просто скажите 😏
 
 
 ## 📚 Blogpost
 
 👉 [Berty & Blockchain](https://berty.tech/blog/blockchain-berty)
 
-## 💌 Mentions
+## 💌 Упоминания
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">For those who are looking for <a href="https://twitter.com/hashtag/WhatsApp?src=hash&amp;ref_src=twsrc%5Etfw">#WhatsApp</a> alternatives, here you are a comparative from the <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> folks:<a href="https://t.co/80yxVdWlIO">https://t.co/80yxVdWlIO</a><a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> is my go-to <a href="https://twitter.com/hashtag/dweb?src=hash&amp;ref_src=twsrc%5Etfw">#dweb</a> powered messaging app, but it&#39;s not released yet. Meanwhile, I use <a href="https://twitter.com/session_app?ref_src=twsrc%5Etfw">@session_app</a> for my family group and <a href="https://twitter.com/signalapp?ref_src=twsrc%5Etfw">@signalapp</a> elsewhere</p>&mdash; Carles Muiños (@zuzudev) <a href="https://twitter.com/zuzudev/status/1347502722174627842?ref_src=twsrc%5Etfw">January 8, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -87,15 +87,15 @@ If you want to help us, we have two labels on GitHub to let you know where we ne
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">And when is done: <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a></p>&mdash; Godefroy Ponsinet (@gponsinet) <a href="https://twitter.com/gponsinet/status/1347290629483749376?ref_src=twsrc%5Etfw">January 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * [Paris P2P #14](https://p2p.paris/en/event/monthly-14/) (_online_)
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2021-01-11](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-01-11--staff-team-weekly-sync.md)
     * [2021-01-04](https://github.com/berty/community/blob/master/meeting-notes/2021/Q1/2021-01-04--staff-team-weekly-sync.md)
 
