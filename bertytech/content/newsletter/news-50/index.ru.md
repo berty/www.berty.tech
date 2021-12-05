@@ -7,7 +7,7 @@ aliases:
 
 # News #50
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
 Today is newsletter #50! Yeah, *fifty*. 😮  It's a perfect opportunity to tell you how much we sincerely think we have a great community. Thanks for everything. We really appreciate it. 🧡
 
@@ -46,38 +46,38 @@ Highlights from the last two weeks:
 
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
-### Translating
+### Перевод
 
-You can help us by translating the Berty app + website. It will be much appreciated! 🧡
+Вы можете помочь нам, переведя приложение Berty + сайт. Мы будем очень признательны! 🧡
 
 👉 http://translate.berty.community/
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
-If you want to help us, we have two labels on GitHub to let you know where we need you: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+Если вы хотите нам помочь, у нас есть две метки на GitHub, чтобы вы знали, где вы нам нужны: [**Хороший первый вопрос**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) и [ **Требуется помощь**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 ## 📚 Blogpost
 
 👉 [How To Encrypt Your Life in 10min!](https://berty.tech/blog/encrypt-your-life/)
 
-## 💌 Mentions
+## 💌 Упоминания
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Happy Monday!☕️<br><br>Catch up on the latest <a href="https://twitter.com/hashtag/IPFS?src=hash&amp;ref_src=twsrc%5Etfw">#IPFS</a> weekly to learn about all the cool new innovative projects like <a href="https://twitter.com/vocdoni?ref_src=twsrc%5Etfw">@vocdoni</a> &amp; <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a>, and don&#39;t miss out on the special interviewee featured on the latest <a href="https://twitter.com/NEARProtocol?ref_src=twsrc%5Etfw">@NEARProtocol</a>&#39;s Whiteboard Series! <a href="https://t.co/jHBbxBgpNt">https://t.co/jHBbxBgpNt</a> <a href="https://t.co/6cP0HhWz1P">https://t.co/6cP0HhWz1P</a></p>&mdash; IPFSMain (@IPFSMain) <a href="https://twitter.com/IPFSMain/status/1328469634895343616?ref_src=twsrc%5Etfw">November 16, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">soon <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a> could be in! ✌️<br>And you should have a look at protocol doc here:<a href="https://t.co/H0w4AoeDfn">https://t.co/H0w4AoeDfn</a></p>&mdash; zôÖma (@zo_oma_) <a href="https://twitter.com/zo_oma_/status/1332024265311391747?ref_src=twsrc%5Etfw">November 26, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * [Paris P2P #12](https://p2p.paris/en/event/monthly-12/) (_online_): @Jorropo from Berty will give a talk called `IPFS from A to Y`
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-11-16](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-16--staff-team-weekly-sync.md)
     * [2020-11-23](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-23--staff-team-weekly-sync.md)
     * [SOW Update - Gomobile IPFS - 11/27](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-27--sow-gomobile-ipfs.md)
