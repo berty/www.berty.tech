@@ -99,6 +99,6 @@ In the blockchain, asymmetric cryptography links blocks of data to create one of
 
 In the end, the history of cryptography is the history of human kind’s relentless drive to find better ways to protect information and secure communications. Without it, the internet as we know it, and the digital age, would not be possible.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫
 
  {{<tweet id="1144582620501729280">}}
