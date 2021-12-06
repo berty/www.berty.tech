@@ -1,6 +1,6 @@
 ---
 author: Pierre
-title: Translate Berty!
+title: Traduisez Berty !
 date: 2020-12-09
 #image: "2020-04-12-Berty-BlogPost-translate-Berty.png"
 image: "2020-04-12-Berty-BlogPost-translate-Berty.png"
