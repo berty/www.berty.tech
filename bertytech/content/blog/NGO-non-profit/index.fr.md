@@ -12,7 +12,7 @@ tags:
 
 # Advantages of being an NGO
 
-NGOs are often of interest to the general population. However, little is known about their work, and the very term NGO is a very vague concept for most people. In this article, we will explore why they are so popular when we know so little about them. We will also look at an emerging notion called 'Tech-NGOs' and why Berty chose this very special status.
+NGOs are often of interest to the general population. Cependant, on sait peu de choses sur leur travail et le terme même ONG est un concept très vague pour la plupart des gens. In this article, we will explore why they are so popular when we know so little about them. We will also look at an emerging notion called 'Tech-NGOs' and why Berty chose this very special status.
 
 
 ## 🤝 What is an NGO?
