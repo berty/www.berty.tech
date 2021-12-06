@@ -1,10 +1,10 @@
 ---
-author: camille
+author: Camille
 title: "Digital Signature"
 date: 2019-10-17
 image: "digital-signature.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
   - Technical
   - Security
