@@ -31,7 +31,7 @@ This repo aims to provide packages for Android, iOS and React-Native that allow 
 
 ## License
 
-Dual [MIT](./LICENSE-MIT)/[Apache-2.0](./LICENSE-APACHE) license
+Dual [MIT](https://github.com/berty/berty/blob/master/LICENSE-MIT)/[Apache-2.0](https://github.com/berty/berty/blob/master/LICENSE-APACHE) license
 
 
 ## Source code
