@@ -1,5 +1,5 @@
 ---
-author: ninel
+author: Ninel
 title: "Cryptography In Our Daily Usage"
 date: 2019-10-16
 image: "cryptography-daily-usage.jpg"
@@ -7,7 +7,7 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
+  - sécurité
   - cybersecurity
   - privacy
 description: One could refer to cryptography as being meta-cryptic. In its own way, cryptography is a bit mysterious and probably vague to many people. You may not notice it, but we all use it without actually being aware of it most of the time.
