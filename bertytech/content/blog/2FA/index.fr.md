@@ -5,7 +5,7 @@ date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 categories:
-  - free-speech
+  - liberté d'expression
 tags:
   - sécurité
   - confidentialité
@@ -17,11 +17,11 @@ description: En savoir plus sur l'A2F
 
 De nos jours, l'accès à un compte est de plus en plus compromis. En effet, il existe des logiciels de plus en plus puissant pour tester un ensemble de mots de passe. Alors, comment protéger l'accès à votre compte ? Avez-vous déjà entendu parler de l'authentification multi-étapes ou multi-facteurs ?
 
-Vous n'avez peut-être pas fait attention mais vous utilisez probablement déjà une application d'authentification à deux facteurs. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+Vous n'avez peut-être pas fait attention mais vous utilisez probablement déjà une application d'authentification à deux facteurs. Vous souvenez-vous de cette carte donnée par votre banque pour confirmer une transaction sur votre compte ? L'authentification à deux facteurs, ou A2F comme on l'appelle couramment, est une étape supplémentaire de votre procédure de connexion. Sans A2F, vous renseignez votre nom d'utilisateur et votre mot de passe et l'accès vous est accordé. Le mot de passe est votre seul facteur d'authentification. En un mot, le second facteur renforce la sécurité de votre compte.
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+L'A2F ne doit pas être confondue avec la possibilité de se connecter à un site via votre fournisseur de messagerie ("connectez-vous avec Google"). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. Mais c'est un autre sujet.
 
-## What is two-factor authentification (2FA)?
+## Qu’est-ce que l’authentification à deux facteurs (2FA) ?
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
@@ -32,9 +32,9 @@ For example, if you want to log in to your email account, you will need to prese
 Usually, the first authentication method is something you know (your password, a PIN code). The second one is information you don't know (code generated especially for authentication) but which is linked to you.
 
 It is customary to divide into several types of information:
-- 🔑 something you have (an object like a USB key)
-- 🐾 something you are (fingerprint, facial recognition)
-- 🧠 something you know (a password)
+- 🔑 quelque chose que vous avez (un objet comme une clé USB)
+- 🐾 quelque chose que vous êtes (empreinte digitale, reconnaissance faciale)
+- 🧠 quelque chose que vous connaissez (un mot de passe)
 - 📍 somewhere you are (a GPS location)
 
 
