@@ -12,7 +12,7 @@ As [announced](https://berty.tech/blog/berty-at-fosdem-2020/), we are live from 
 We'll try to give you live news as much as possible on our [Twitter](https://twitter.com/berty). Stay tuned!
 
 
-By the way, we're still on for a nice beer, just give us a shout! 🍻
+By the way, we're still on for a nice beer, just give us a shout! 🤫
 
 In this meantime, happy reading!
 
@@ -34,7 +34,7 @@ The repo is brand new: check it out, give feedback and contribute!
 Enjoy, guys! 💙
 
 
-### Berty Protocol
+### Le protocole Berty
 
 Antoine and Morgane are writing a new documentation for the protocol. This is a mandatory step in order to be reviewed by the community or audited. We'll keep you informed 🙂
 
@@ -64,7 +64,7 @@ He then went on to implement the actual iOS build on buildkite, but was stuck at
 
 We have published two new articles on our website:
 * Here are our [takeaways from Paris P2P Festival](https://berty.tech/blog/berty-at-p2p-festival/)
-* [Meet us at FOSDEM 2020!](https://berty.tech/blog/berty-at-fosdem-2020/)
+* [Rencontrez nous au FOSDEM 2020 !](https://berty.tech/blog/berty-at-fosdem-2020/)
 
 
 ### Collaboration
