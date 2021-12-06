@@ -8,7 +8,7 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
+  - sécurité
   - privacy
 description: "Today, we are focusing on the various announcements passed under the radar in France and almost not relayed by the media, which are nevertheless of major importance. However, similar directives are already operational in Italy, Israel, South Korea, China, the United States and Belgium."
 ---
@@ -79,4 +79,4 @@ In every emergency context, whether it is an attack or a pandemic, new tools are
 
  {{<tweet id="1240668694310793216">}}
 
-Photo Credit: [undraw](https://undraw.co/illustrations) 
+Crédit photo: [undraw](https://undraw.co/illustrations) 
