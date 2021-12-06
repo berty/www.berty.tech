@@ -1,5 +1,5 @@
 ---
-title: "Contact us"
+title: "Nous contacter"
 hclass: bg-blue gradient bg-contact
 image: "berty_contact.png"
 menu:
