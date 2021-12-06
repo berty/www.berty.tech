@@ -8,7 +8,7 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
+  - sécurité
   - privacy
 description: "Time: March 2020. Place: planet Earth. Containment rules are disrupting lives in many countries, and social relations between individuals are reduced to a minimum."
 ---
@@ -82,4 +82,4 @@ Don't forget to subscribe to our newsletter if you want more reads like this, or
 
  {{<tweet id="1240668694310793216">}}
 
-Photo Credit: [undraw](https://undraw.co/illustrations) 
+Crédit photo: [undraw](https://undraw.co/illustrations) 
