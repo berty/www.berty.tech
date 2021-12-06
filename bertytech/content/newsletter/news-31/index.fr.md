@@ -51,7 +51,7 @@ Manfred has added support for Bintray as a CI backend to Yolo. This adds up to B
 It needs a few more refinements to be shared, but we hope to do it asap!
 
 
-### Berty Protocol
+### Le protocole Berty
 
 Guillaume completed the message store, with messages being encrypted according to the protocol specifications. His main focus now is on having the account key store persistent.
 
