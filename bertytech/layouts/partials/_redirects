@@ -5,6 +5,7 @@ https://{{.}}/* https://berty.tech/:splat 301!
 
 /doc /docs
 /art/* https://bertyart.netlify.com/:splat 200!
+/discord/ https://discord.com/invite/mVfsEUmgSf 301!
 
 ## hugo aliases
 {{- range $p := .Site.Pages -}}
