@@ -26,10 +26,10 @@ The Berty application can be used with different sets of functionalities and in 
 
 Some of the functionalities that users can choose to toggle on or off will allow for a smoother experience but will impact their privacy and personal data.
 
-We will be detailing in the following sections all the data prone to be shared by the Berty application:
+We will detail in the following sections all the data prone to be shared by the Berty application:
 
-- In its most privacy-friendly configuration
-- Incrementally, for each feature that is toggled on
+- In its most privacy-friendly configuration.
+- Incrementally, for each feature that is toggled on.
 
 
 ## Glossary
@@ -50,7 +50,7 @@ The discovery of new peers will then be made through the already connected ones,
 
 ### Contact
 
-A **contact** is another [account](privacy-policy/#account) which accepted a contact request sent to them or the other way around.
+A **contact** is another [account](privacy-policy/#account) that accepted a contact request sent to them or the other way around.
 
 Locating another account to send a contact request is done via a [rendezvous point](privacy-policy/#rendezvous-point) on the network.
 
@@ -76,7 +76,7 @@ Due to the append-only requirements of a peer-to-peer application, messages and 
 
 ### IPFS
 
-**InterPlanetary File System** or **IPFS**, it is a system that allows users to share authenticated content, guaranteed to be untampered through peer-to-peer protocols. It relies on libp2p, a modular peer-to-peer networking stack.
+**InterPlanetary File System** or **IPFS** is a system that allows users to share authenticated content, guaranteed to be untampered through peer-to-peer protocols. It relies on libp2p, a modular peer-to-peer networking stack.
 
 ### mDNS
 
@@ -135,7 +135,7 @@ To restrict tracking, rendezvous point identifier rotate regularly, and someone 
 
 A **rendezvous point node** is a key-value store that users can add to or access records of their addresses on a given rendezvous point identifier.
 
-A user who wishes to communicate with other members of a [group](privacy-policy/#group) will first start by asking a list of all the addresses associated with a group's rendezvous point identifier and will then be adding its own address to the list in order to be reachable by other group members subsequently.
+A user who wishes to communicate with other members of a [group](privacy-policy/#group) will first start by asking a list of all the addresses associated with a group’s rendezvous point identifier and will then be adding its own address to the list in order to be reachable by other group members subsequently.
 
 ### Relay node
 
@@ -169,11 +169,11 @@ For more information about Tor, please visit the [project's homepage](https://ww
 
 ## Most privacy-focused setup
 
-In its most minimalist form of use, users of the Berty application simply need an [account](privacy-policy/#account).
+In its most minimalist form of use, users of the Berty application only requires an [account](privacy-policy/#account).
 
 No email addresses or phone numbers are needed to create an [account](privacy-policy/#account). Cryptographic keys will be locally generated on the user's device used to create the account and shared only with the devices on which the user will choose to use their account.
 
-In this configuration, no data is sent to any servers, and Berty Technologies will not even be aware of the existence of the user.
+In this configuration, no data is sent to any servers, and Berty Technologies will not even be aware of the user's existence.
 
 The Berty application will first need to connect to the [swarm](privacy-policy/#swarm) by using a [bootstrapping node](privacy-policy/#bootstrapping-node). The default ones are operated by both Berty Technologies and Protocol Labs (IPFS). However, users can configure their application to use any other nodes they feel comfortable using.
 
@@ -198,13 +198,13 @@ The use of [rendezvous point nodes](privacy-policy/#rendezvous-point-node) impro
 
 This solution is much less resilient than the [DHT](privacy-policy/#dht) as governments, other infrastructures, or attackers could opt to block access to those nodes at any given time. Someone with malicious intentions will more easily be able to block access to these nodes than on the [DHT](privacy-policy/#dht) nodes that are only composed of random peers on the network.
 
-Centralizing the data on an [rendezvous point node](privacy-policy/#rendezvous-point-node) can also make it a prime target for anyone who wants to obtain this data.
+Centralizing the data on a [rendezvous point node](privacy-policy/#rendezvous-point-node) can also make it a prime target for anyone who wants to obtain this data.
 
 Knowing that a [rendezvous point node](privacy-policy/#rendezvous-point-node) will store:
 - the rendezvous point rotating identifiers
 - the associated addresses
 
-[Rendezvous point nodes](privacy-policy/#rendezvous-point-node) are by default operated by Berty Technologies but can also be set up by a [third party](privacy-policy/#third-party-hosted-services).
+By default, [rendezvous point nodes](privacy-policy/#rendezvous-point-node) are operated by Berty Technologies but can also be set up by a [third party](privacy-policy/#third-party-hosted-services).
 
 ### Relay node
 
@@ -220,7 +220,7 @@ The [relay node](privacy-policy/#relay-node) will have the public IP addresses o
 
 The relay node will also know the amount of data exchanged by the connected peers.
 
-[Relay nodes](privacy-policy/#relay-node) are by default operated by both Berty Technologies and Protocol Labs (IPFS) but can also be set up by a [third party](privacy-policy/#third-party-hosted-services).
+By default, [relay nodes](privacy-policy/#relay-node) are operated by both Berty Technologies and Protocol Labs (IPFS) but can also be set up by a [third party](privacy-policy/#third-party-hosted-services).
 
 ### Replication node
 
@@ -228,9 +228,9 @@ The relay node will also know the amount of data exchanged by the connected peer
 
 This service allows messages and attachments to be sent by a user while other conversation members are offline by storing messages on a highly available node.
 
-A [replication nodes](privacy-policy/#replication-node) only acts as a pass-through and never has access to the secrets allowing to decrypt the messages, the metadata, or the attachments.
+A [replication nodes](privacy-policy/#replication-node) only acts as a pass-through and never has access to the secrets that decrypt the messages, the metadata, or the attachments.
 
-[Replication nodes](privacy-policy/#replication-node) are by default operated by Berty Technologies but can also be set up by a [third party](privacy-policy/#third-party-hosted-services).
+By default, [replication nodes](privacy-policy/#replication-node) are operated by Berty Technologies but can also be set up by a [third party](privacy-policy/#third-party-hosted-services).
 
 #### Drawbacks
 
@@ -258,7 +258,7 @@ The user's [peer ID](privacy-policy/#peer-id) will then be disclosed, and so wil
 
 #### Android permissions
 
-On Android 11 or lower, to use the Bluetooth API, an application [must ask for location permission](https://developer.android.com/guide/topics/connectivity/bluetooth/permissions#declare-android11-or-lower), even if the application does not seek to locate the user.
+On Android 11 or lower, an application [must ask for location permission](https://developer.android.com/guide/topics/connectivity/bluetooth/permissions#declare-android11-or-lower) to use the Bluetooth API, even if the application does not seek to locate the user.
 
 In the case of the Berty application, to use the Proximity transport on Android, the user will need to grant the location permission event if Berty Technologies does not collect nor share the user's location data in any way.
 
@@ -268,7 +268,7 @@ In the case of the Berty application, to use the Proximity transport on Android,
 
 Users can use [mDNS](privacy-policy/#mdns) (multicast DNS) to discover devices using the Berty application within the same local network and establish a direct connection with them.
 
-This can be useful if the user is on an internet restricted network (e.g., a company network)  or in any case where a local connection would be desirable.
+This can be useful if the user is on a restricted internet network (e.g., a company network) or in any case where a local connection would be desirable.
 
 #### Drawbacks
 
@@ -299,7 +299,7 @@ Any servers through which the pushed notification will get through have the know
 
 It will hold users' public IP addresses unless they are using [Tor](privacy-policy/#tor) or any other IP hiding solution.
 
-No personal information is stored by Berty Technologies.
+Berty Technologies stores no personal information.
 
 You should refer to your operating system privacy policies to know how your data will be handled by these companies when this feature is enabled.
 
@@ -327,7 +327,7 @@ Berty Technologies does not share personal or usage data with third parties. Ber
 
 ## Contacts
 
-If you want to reach us, or you have questions about our Privacy Policy, please contact us at
+If you want to reach us, or you have questions about our Privacy Policy, please get in touch with us at:
 
 - Email: contact@berty.tech
 - Postal mail: Berty Technologies, 96 Boulevard Bessières, 75017 Paris, FRANCE
