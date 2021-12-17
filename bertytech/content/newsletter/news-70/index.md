@@ -8,22 +8,22 @@ aliases: ["/newsletter/weekly-70"]
 
 Hey
 
-How are you doing? Are you slowly getting ready for Christmas or is it the traditional end of year rush? 
+How are you doing? Are you slowly getting ready for Christmas, or is it the traditional end-of-year rush? 
 
 At Berty, things are getting faster! We still have in mind to be ready for release at the beginning of Q1 2022. We are on the right track. 😉
 
-Without going into too much technical details, the Berty application has presently some minor stability issues over time. For example when a conversation is too important (=with a lot of texts & data), the loadiing time is quite slow to be usable for a daily basis. We are fixing this in the next couple of days. 
+Without too many technical details, the Berty application presently has some minor stability issues over time. For example, when a conversation is too important (=with a lot of texts & data), the loading time is relatively slow to be usable on a daily basis. We are fixing this in the next couple of days. 
 
 
 ## 📱 App progress recap
 
 Here's what we've been up to over the past few weeks: 
 - Set up an automatic build and upload on stores
-- Keep on integreting push notification in Berty mobile apps
-- Fix gomobile-ipfs release system by replacing Bintray by another platform
+- Keep on integrating push notification in Berty mobile apps
+- Fix gomobile-ipfs release system by replacing Bintray with another platform
 - Fix various bugs found by beta-testers
 - Implement iOS<->Android BLE driver
-- Improve logging and reducing verbosity on the different variants of Berty (daemon, bot, etc...)
+- Improve logging and reduce verbosity on the different variants of Berty (daemon, bot, etc...)
 
 ## 🚀 About the Berty ecosystem
 
