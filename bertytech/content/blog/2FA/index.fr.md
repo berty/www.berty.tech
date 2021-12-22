@@ -38,7 +38,7 @@ On sépare généralement différents types d'informations :
 - 📍 là où vous vous trouvez (une position GPS)
 
 
-> You can check on https://twofactorauth.org/ is a website/app support 2FA or not.
+> Vous pouvez vérifier sur https://twofactorauth.org/ si un site web/application supporte l'authentification 2FA ou pas.
 
 ## 📞 Authentification à deux facteurs par SMS
 
