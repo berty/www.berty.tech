@@ -81,11 +81,11 @@ Le principal inconvénient des applications 2FA est que si un attaquant se saisi
 ![](https://i.imgur.com/ZzJa77a.png)
 
 
-If you are looking for a robust solution that fits your pocket, then look no further than hardware tokens based on the U2F (Universal 2nd Factor) standard, created by the FIDO Alliance. The most famous and typical example of U2F is YubiKey, made by Yubico.
+Si vous cherchez une solution robuste qui tient dans la poche, ne cherchez pas plus loin que les jetons matériels basés sur la norme U2F (Universal 2nf Factor), créée par l'alliance FIDO. Le plus célèbre et typique exemple de U2F est YubiKey, fait par Yubico.
 
-Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
+Concrètement, il s'agit d'un petit appareil de la taille d'une clé USB qui génère le code d'identification localement. Il suffit de brancher la clé pour créer le bon code d’identification. Il s'agit donc d'une étape supplémentaire dans le monde réel : l'U2F doit être physiquement avec vous.
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... Hope you have saved them well. Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+Néanmoins, vous serez confronté à quelques contraintes : vous devrez l’acheter et le système n’est pas pris en charge sur tous les sites qui supportent déjà la 2FA par SMS/Applications. Cette 2FA nécessite un accès physique au port USB de la machine (donc oubliez l'utilisation avec un accès à distance comme TeamViewer). Enfin, si vous le perdez, vous devrez récupérer tous vos comptes en utilisant les codes de récupération 2FA ... J'espère que vous les avez bien sauvegardés. Sinon, vous pouvez contacter le support de chaque site pour que le 2FA soit désactivé sur vos comptes !
 
 
 ## Closing Thoughts
