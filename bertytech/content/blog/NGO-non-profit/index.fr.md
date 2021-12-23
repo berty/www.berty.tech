@@ -1,7 +1,7 @@
 ---
 author: pierre
 title: "Advantages of being an NGO"
-date: 2020-05-26
+date: 26-05-2020
 image: "ngo-non-profit.png"
 categories:
   - berty
@@ -12,19 +12,19 @@ tags:
 
 # Advantages of being an NGO
 
-NGOs are often of interest to the general population. Cependant, on sait peu de choses sur leur travail et le terme même ONG est un concept très vague pour la plupart des gens. In this article, we will explore why they are so popular when we know so little about them. We will also look at an emerging notion called 'Tech-NGOs' and why Berty chose this very special status.
+Les ONG présentent souvent un intérêt pour la population en général. Cependant, on sait peu de choses sur leur travail et le terme même ONG est un concept très vague pour la plupart des gens. In this article, we will explore why they are so popular when we know so little about them. We will also look at an emerging notion called 'Tech-NGOs' and why Berty chose this very special status.
 
 
-## 🤝 What is an NGO?
+## 🤝 Qu'est-ce qu'une ONG ?
 
 A non-governmental organization (NGO) is a group of persons brought together in the form of a legal association to help others and which operates autonomously for a governmental authority, including an international one.
 
-* The two main criteria defining an NGO are as follows:
-    * It must be politically independent;
-    * Serve the public interest.
-* In practice, two other criteria are often associated with this:
-    * the non-profit nature of its work;
-    * financial independence
+* Les deux principaux critères définissant une ONG sont les suivants :
+    * Elle doit être indépendante politiquement ;
+    * Servir l'intérêt général.
+* En pratique, deux autres critères sont souvent associés à cela:
+    * la nature à but non lucratif de son travail ;
+    * indépendance financière
 
 ![](https://i.imgur.com/xMOehHZ.jpg)
 
@@ -84,23 +84,23 @@ This definition makes it possible to differentiate between "NGOs" such as pure g
 * An NGO can provide a means for people at the local level to communicate with those at the highest level of government administration. Besides, professionals working for the NGO are not hindered by the same types of restrictions that a government position would impose on their work.
 
 
-### 💯 Trust
+### 💯 Confiance
 * NGOs are very effective in raising donations, especially from northern populations. They enjoy an excellent level of trust. They are generally perceived as transparent and this builds trust. NGOs show a sense of closeness and mobilization. NGOs are generally well supported by supporters and donors.
 
 
 
-## Why you should choose NGO status
+## Pourquoi choisir le statut d'ONG
 
 ![](https://i.imgur.com/MeeubjA.jpg)
 
 
-As you can see, the creation of an NGO can offer your organization several benefits. It will help you to achieve your goals of delivering your local community program and building credibility.
+Comme vous pouvez le voir, la création d'une ONG peut offrir à votre organisation plusieurs avantages. Il vous aidera à atteindre vos objectifs de réalisation de votre programme communautaire local et de renforcement de votre crédibilité.
 
-### 👍 You will be able to do good for those around you.
+### 👍 Vous pourrez faire le bien autour de vous.
 
 * NGOs are more advantageous than government programmes because they are part of the local community in terms of their structure. They can be involved in more than one project that is designed to support positive change in the lives of local people. This is also possible because of the NGO's ability to integrate into each area of the local community to determine what is needed to facilitate positive change. One area that can be addressed is the reduction of local illiteracy rates.
 
-### 💸 You can obtain funding
+### 💸 Vous pouvez obtenir du financement
 
 * Once your NGO has been established, you are now able to obtain grants from various financial institutions. Here you can use loans to obtain assets such as land. You can also use the funds to finance activities that your NGO needs to maintain.
 
@@ -110,15 +110,15 @@ As you can see, the creation of an NGO can offer your organization several benef
 
 * It is easy to understand that a bank is necessary to establish your finances in a way that indicates your transparency. Consider the fact that your funding comes from private donors and not just government sources. You would want any potential donor to feel more comfortable giving you money that is not in your own name. Your bank account will show that your NGO is indeed a corporation created to honestly receive the donations you receive. It will also demonstrate the viability of the organisation, as it must be registered with the General Affairs Commission to open a bank account in its name.
 
-### ⏱️ Unlimited life span
+### ⏱️ Durée de vie illimitée
 * An NGO will have what is called "perpetual succession". Therefore, your NGO will continue to exist if the directors or founder leave the organization or die. For the NGO to be terminated, a formal decision must be made through a court order. In this way, your NGO can continue to exist after your death and for future generations.
 
 
-### 🛡️ You protect your responsibility
+### 🛡️ Vous protégez votre responsabilité
 
 * This is the least glamorous part, but if you're hesitating between several legal statuses, it's good to know. Under the name of an NGO, you can make acquisitions related to financial matters and assets. This is a very clever way to protect yourself from liabilities related to situations such as divorce, judgments, seizures and bankruptcies. Property or assets that are listed under the name of an NGO cannot be targeted by legal means when it comes to settling a debt. This is a common and very practical way to enable you to carry out your NGO activities without having to worry about financial "attacks" from outside.
 
-### 👷 Beware of
+### 👷 Méfiez-vous de
 
 * **Having an Indication of Stable Leadership** - by registering your organization as an NGO, you have indicated that your organization has stable and cohesive leadership. This means much more to the public than having an organization that is not registered. Also, your organization will be better able to secure partnerships with charities, donor agencies, government entities and financial organizations if it is registered.
 
@@ -134,7 +134,7 @@ As you can see, the creation of an NGO can offer your organization several benef
 
 If you can see that technology can change the world, you should seriously consider opting for NGO status!
 
-### 🔎 Challenges and Opportunities
+### 🔎 Défis et opportunités
 
 If you have a tech idea that can change the world? a committed idea? a challenging idea? Well, go for NGO status, aim higher. Dare to have a societal dimension.
 
