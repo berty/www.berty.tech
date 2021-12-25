@@ -1,5 +1,5 @@
 ---
-title: "About us"
+title: "私たちについて"
 subtitle: コミュニケーションの自由を強化するためのツールを構築します
 hclass: bg-blue gradient bg-about
 image: "berty_about.png"
@@ -11,25 +11,25 @@ menu:
 section_1:
   - 
     image: icon_spock.svg
-    title: a non-profit organisation
+    title: 非営利団体
   - 
     image: icon_team.svg
-    title: with a team of 10 people
+    title: 10人チーム
   - 
     image: icon_paris.svg
-    title: based in Paris, France
+    title: フランスのパリを拠点にしています
 section_2:
   image: blob_censorship.png
   items:
     - 
-      title: We bypass internet censorship
+      title: インターネットの不当な検閲を回避
       items:
-        - The great benefit of a peer to peer network, is that it's very hard to prevent it from spreading
+        - P2P ネットワークの大きな利点は、その広がりを防ぐことが非常に難しいことです。
     - 
-      title: We protect your privacy
+      title: 私たちはあなたのプライバシーを保護します
       items:
-        - Accounts are fully anonymous
-        - All conversations are end to end encrypted, by default
+        - アカウントは完全に匿名です
+        - デフォルトで、すべての会話はエンド・ツー・エンドで暗号化されます
     - 
       title: We don't rely on a heavy infrastructure
       items:
