@@ -1,6 +1,6 @@
 ---
 author: Camille
-title: "Basic #3: Two-Factor Authentification"
+title: "基本3：2 ファクタ認証（2 要素認証）"
 date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
@@ -9,63 +9,63 @@ categories:
 tags:
   - security
   - privacy
-description: Learn about 2FA
+description: 2FA（2 要素認証）について知ろう
 ---
 
-# Basic #3: Two-Factor Authentication
+# 基本3：2 ファクタ認証（2 要素認証）
 
 
-Nowadays, access to an account is more and more compromised. Indeed, there is more and more powerful software to test a set of passwords. So how do you protect access to your account? Have you ever heard of multi-step or multi-factor authentication?
+昨今、アカウントへのアクセスはますます危うくなっています。 実際、一連のパスワードを試すような強力なソフトウェアが増えています。 では、どのようにして自分のアカウントへのアクセスを守ればいいのでしょう。 「多段階認証」や「多要素認証」という言葉を聞いたことがありますでしょうか？
 
-You may not have paid attention, but you are probably already using two-factor authentication in the physical world. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+意識していなかったかもしれませんが、この物理的な世界で、すでに 2 ファクタ認証を利用しています。 このカードは、あなたの口座での取引を確認するために銀行から渡されたものですが、このカードを覚えていますか？ 実は、2 要素認証（2FA）とは、ログインに必要な手順に追加されるものです。 2FA を持っていない場合、通常はユーザー名とパスワードを入力すれば完了です。 この場合、パスワードが唯一の認証要素です。 言ってしまえば、「2 つ目のファクタ（要素）」とはユーザーのアカウントをより安全にするものです。
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+「2FA」と混同してはいけないのが、メールプロバイダーを経由してサイトに接続する（「Google で接続」のような）機能です。 これは厳密には 2FA ではありません。確かに「安全な」ウェブサイトを信用するよりも、安全なメール・システムを利用した方が良い場合もあります。 しかし、それはまた別の問題です。2FA に話を戻しましょう。
 
-## What is two-factor authentification (2FA)?
+## 2 ファクタ認証 (2FA) とは
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
-Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism.
+2 要素認証 (2FA) とは、ユーザーが 2 つ以上の証拠を認証機構へ提出して、成功した場合にのみアクセスが許可される認証方法です。
 
-For example, if you want to log in to your email account, you will need to present an additional method and your password. This may be a code received by SMS or code on an identification application.
+例えば、ユーザーの電子メール・アカウントにログインする場合、パスワード以外にも追加情報を提出する必要があります。 これは、SMS で受信したコードであったり、認証アプリ上のコードやワンタイム・パスワードであったりします。
 
-Usually, the first authentication method is something you know (your password, a PIN code). The second one is information you don't know (code generated especially for authentication) but which is linked to you.
+通常、1 つ目の要素は、あなたが知っているもの（パスワード、PINコード）による認証です。 2 つ目は、あなたが知らない情報（認証のために特別に生成されたコード）ですが、あなたにリンクされている情報です
 
-It is customary to divide into several types of information:
-- 🔑 something you have (an object like a USB key)
-- 🐾 something you are (fingerprint, facial recognition)
-- 🧠 something you know (a password)
-- 📍 somewhere you are (a GPS location)
+この情報は、いくつかのタイプに分けられますが一般的に以下があります：
+- 🔑 あなたが所持しているもの（USB キーのような物理的なもの）
+- 🐾 あなた自身の何か（指紋や顔認証など）
+- 🧠 あなたしか知らない何か（パスワードなど）
+- 📍 あなたのいる場所（GPS のロケーションなど）
 
 
-> You can check on https://twofactorauth.org/ is a website/app support 2FA or not.
+> お使いのウェブサイトやアプリが 2FA をサポートしているかどうかは https://twofactorauth.org/ で確認できます。
 
-## 📞 Two Factor Authentication by SMS
+## 📞 SMS による 2 ファクタ認証
 
 ![](https://i.imgur.com/uuqGxCp.jpg)
 
 
-The second factor in identifying yourself is a code received by SMS. This is probably the method you are most familiar with.
+この場合、ID 認証に必要な 2 つ目の要素は SMS で送られてくるコードです。 おそらく、これが皆さんが一番よく知っている方法だと思います。
 
-The code received by SMS differs each time, so if your password is stolen, it won't be enough to go further. The code is linked to your cell phone number, which is a powerful security feature - unless you have been physically stolen or hacked by a [Sim Swapping](https://berty.tech/blog/sim-swapping/).
+もしパスワードが盗まれても、SMS で送られてくるコードは毎回違うため、それ以上先へは進めなくなります。 携帯電話が物理的に盗まれたり、[Sim Swapping](https://berty.tech/blog/sim-swapping/) で Sim カードがハッキングされたりしない限り、このコードはユーザーの携帯電話番号と連動しているため、強力なセキュリティ機能となります。
 
-A significant disadvantage of this 2FA is that if the mobile network does not work or is in a region without coverage, you will not receive the code allowing you to identify yourself. Another disadvantage is if you are using connected and centralized equipment (between your tablet and mobile), you will receive the code on these devices; your login codes are as much at risk as your passwords.
+このタイプの 2FA の大きな欠点は、携帯電話のネットワークが機能していない場合や、電波の届かない場所にいる場合、本人確認のためのコードを受け取ることができないことです。 もう一つのデメリットは、（例えばタブレットとモバイルが接続されているなど）集中管理されたデバイスを使用している場合、これらのデバイスでもコードを受け取れることになります。この場合、ログイン・コードは、パスワードと同様にリスクが高くなります。
 
 
-## 📱 2FA by Authentificator App:
+## 📱 認証アプリケーションによる 2 ファクタ認証
 
 ![](https://i.imgur.com/YuRNDY0.jpg)
 
 
-Authentication applications provide you with the same type of service as 2FA by SMS. However, instead of receiving the codes, they are generated locally within your smartphone or tablet. So, they offer flexibility when traveling to a location without cellular service.
+認証アプリケーションは、SMS による 2FA と同様のサービスを提供します。 しかし、コードを受け取るのではなく、スマートフォンやタブレットの中でコードを生成します。 そのため携帯電話 (SMS) が使えない場所でも認証できるので、柔軟性があります。
 
-The operation relies on cryptographic algorithms to generate single-use passwords that integrate the notion of time (Time-based One-time Password algorithm, TOTP).
+このタイプは、時間をベースに暗号アルゴリズムを用いてワンタイム・パスワードを生成します。(Time-based One-time Password algorithm、略して TOTP)
 
-The 2FA application will first generate a start key called "seed". The latter will be derived and mixed with the time and date to make a one-time code, usually valid for 30 to 60 seconds.
+2FA 側のアプリケーションは、まず「シード」と呼ばれる開始キーを生成します。 認証アプリケーションは、このキーと、日付や時刻を混合させて一定時間（通常30～60秒）のあいだ有効なワンタイムコードを作成します。
 
-> 💡 A good thing to know: there are [password managers](https://berty.tech/blog/best-password-manager/) that manage TOTPs.
+> 💡 便利情報：この TOTP を管理できる[パスワードマネージャー](https://berty.tech/blog/best-password-manager/)もあります。
 
-***Open Source TOTP:***
+***オープンソースの TOTP：***
 
 👉 https://awesomeopensource.com/projects/totp
 
@@ -73,27 +73,27 @@ The 2FA application will first generate a start key called "seed". The latter wi
 
 👉 https://krypt.co/
 
-The major drawback of 2FA applications is that if a scammer grabs your seed (either from your equipment or by hacking the server), he can compute any future code. If you log in and use the authentication application on the same equipment, your authentication codes are as much at risk as your passwords.
+認証アプリケーションによる 2FA の主な欠点は、スキャマーが（あなたのデバイス、もしくはサーバーをハッキングして）シードを掴んだ場合、彼らはいつでもコードを計算できてしまうということです。 そのため、ログインする端末と同じ端末で認証アプリケーションを使用している場合、認証コードはパスワードと同様のリスクを持つことになります。
 
 
-## 🗝️ FIDO U2F hardware authenticators: YubiKey and others
+## 🗝️ FIDO U2F ハードウェアによる 2 ファクタ認証（YubiKey など）
 
 ![](https://i.imgur.com/ZzJa77a.png)
 
 
-If you are looking for a robust solution that fits your pocket, then look no further than hardware tokens based on the U2F (Universal 2nd Factor) standard, created by the FIDO Alliance. The most famous and typical example of U2F is YubiKey, made by Yubico.
+ポケットに収まるサイズの堅牢なソリューションをお探しなら、FIDO アライアンスが開発した U2F (Universal 2nd Factor) 規格に基づいたハードウェア・トークンが最適です。 最も有名で典型的な U2F は Yubico 社製の YubiKey です。
 
-Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
+具体的には、USB キー・サイズの小さなデバイスで、内部で識別コードが生成できます。 正しいコードを作成するには、キーを挿入するだけです。 このため、現実の世界では「U2F が物理的に手元になければならない」という追加のステップ（2 つ目の要素）が必要になります。
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... Hope you have saved them well. Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+ただし、デバイスを別途購入する必要があることや、すでに SMS や認証アプリによる 2FA に対応しているサイトのすべてが、このシステムに対応しているわけではないことなど、いくつかの制約を受けることになります。 また、このタイプの 2FA は、マシンの USB ポートに物理的にアクセスできる必要があります。そのため、TeamViewer といったリモート・アクセスでは使用することはできません。 最後に、もしデバイスを紛失した場合 ... 2FA のリカバリー・コードを使ってすべてのアカウントを回復していかなければなりません。 しっかり保存していることを願っています。 リカバリー・コードを紛失していた場合は、各サイトのサポートに連絡して 2FA を無効にしてください。
 
 
-## Closing Thoughts
+## さいごに
 
-To sum up, there is not ONE perfect and unique method. If we were to recommend something to you: mix and match methods. Don't be afraid to go further than two-factor authentication, opt for multiple factor authentication (MFA). Make access to your password manager as secure as possible and activate 2FA whenever possible.
+結論を言うと「銀の弾丸」のような、完璧で唯一の方法はありません。 敢えてお勧めするとすれば「種々さまざまな物を、うまく組み合わせる」です。 2 ファクタ（要素）認証だけでなく、多要素認証（MFA）を採用することをお勧めします。 そして、パスワード・マネージャーへのアクセスは可能な限り堅牢にし、 2FA が使えるなら可能な限り有効にしましょう。
 
-We hope you enjoyed this article. Any ideas and comments are welcome.
+この記事を楽しんでいただけましたら幸いです。 アイデアやコメントをお待ちしています。
 
-Cheers Internet!
+インタネットに乾杯！
 {{<tweet id="1291024965630939136">}}
 
