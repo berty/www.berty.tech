@@ -1,6 +1,6 @@
 ---
 title: "Go-Orbit-DB"
-description: Go version of Peer-to-Peer Databases for the Decentralized Web
+description: 分散 Web のための Go 版 P2P 型データベース
 icon: fab fa-github
 color: black
 display_nav: false
@@ -13,15 +13,15 @@ menu:
 
 # Go-Orbit-DB
 
-**Go version of Peer-to-Peer Databases for the Decentralized Web**
+**分散 Web のための Go 版 P2P 型データベース**
 
-## Introduction
+## はじめに
 
-[orbit-db](https://github.com/orbitdb/orbit-db) is a distributed peer-to-peer database on [IPFS](https://github.com/ipfs/ipfs). This library intends to provide a fully compatible port of the JavaScript version in Go.
+[orbit-db](https://github.com/orbitdb/orbit-db) は、[IPFS](https://github.com/ipfs/ipfs) 向けのピア・ツー・ピア型の分散データベースです。 このライブラリは、JavaScript 版と完全互換のある Go の移植版として提供することを目的としています。
 
-The majority of this code was vastly derived from the JavaScript's [orbit-db](https://github.com/orbitdb/orbit-db) library.
+コードの大部分は、JavaScript 版の [orbit-db](https://github.com/orbitdb/orbit-db) ライブラリから派生しています。
 
-## Source code
-Source code is available on [github](https://github.com/berty/go-orbit-db)
+## ソース コード
+ソースコードは [GitHub](https://github.com/berty/go-orbit-db) で公開されています。
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/go-orbit-db"><i class="fab fa-github"></i>berty/go-orbit-db</a>
