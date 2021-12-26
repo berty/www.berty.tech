@@ -26,26 +26,26 @@ section_2:
       items:
         - P2P ネットワークの大きな利点は、その広がりを防ぐことが非常に難しいことです。
     - 
-      title: 私たちはあなたのプライバシーを保護します
+      title: プライバシーの保護
       items:
         - アカウントは完全に匿名です
         - デフォルトで、すべての会話はエンド・ツー・エンドで暗号化されます
     - 
-      title: We don't rely on a heavy infrastructure
+      title: 重いインフラに依存しません
       items:
-        - We are fully distributed
-        - To escape from major companies we are also fully decentralized
-        - Anyone can host a Berty node & become a part of the Berty Network
+        - 完全に分散化されています
+        - また、大企業から逃れるために、私たちも非中央集権化しています。
+        - 誰でも Berty ノードを立ち上げたり Berty ネットワークの一員となることができます。
 section_3:
   image: /img/icon_dev.png
-  title: The Berty project is fully open source
+  title: Berty プロジェクトは完全なオープンソースです
   items:
-    - Everyone can access the source code of the project
-    - Anyone can consult, review, submit changes or enhancements, report a bug, perform a security audit...
-    - We have an open roadmap and anyone can propose a new feature
-    - Wanna get involved ?
-    - As a non-profit organization, we are, by essence incapable of making profit
-    - We are not selling a product
-    - We just build tools to improve peoples lives
+    - 誰でもプロジェクトのソースコードにアクセスできます
+    - 誰もが相談、レビュー、変更や拡張機能の提案、バグの報告、セキュリティ監査を行うことができます
+    - ロードマップは公開されており、誰でも新しい機能を提案することができます
+    - あなたも参加してみませんか?
+    - 私たちは非営利団体であるため、基本的に利益を上げることはできません
+    - 私たちは製品を販売しません
+    - 私たちは人々の生活を向上させるためのツールを、ただただ作っています
 ---
 
