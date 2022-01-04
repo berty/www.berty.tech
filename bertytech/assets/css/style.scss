@@ -210,7 +210,8 @@ amp-img {
 .bg-contribute:before,
 .bg-contact:before,
 .bg-press:before,
-.bg-challenges:before {
+.bg-challenges:before,
+.bg-compare:before {
   content:"";
   position:absolute;
   top:-40px;
@@ -267,6 +268,37 @@ amp-img {
   background-image:url(../img/bg_challenges.svg);
   width:500px;
   height:500px;
+}
+.bg-compare:before {
+  background-image: url(../img/bg_compare_d20.svg);
+  width: 270px;
+  height: 270px;
+  background-size: contain;
+  background-position: center;
+  opacity: 0.2;
+  top: 30px;
+  @media (max-width:991px){
+    width: 400px;
+    height: 400px;
+    top: 0;
+    right: 0;
+  }
+}
+.bg-compare:after {
+  content: "";
+  background-image: url(../img/bg_compare_d6.svg);
+  width: 270px;
+  height: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+  position: absolute;
+  left: 40px;
+  top: 30px;
+  @media (max-width:991px){
+    display: none;
+  }
 }
 /* BACKGROUNDS */
 
@@ -675,6 +707,7 @@ header.header-rounded {
   overflow:hidden;
   >.container {
     position:relative;
+    z-index: 2;
   }
   .subtitle {
     margin-top:20px;
@@ -2542,6 +2575,10 @@ a.block-action {
   }
 }
 
+.block-side-header{
+  padding-top: 50px;
+}
+
 /* BLOCK SIDE */
 
 /* FOOTER */
@@ -3578,7 +3615,7 @@ footer {
     justify-content: flex-end;
   }
   .page-single .content .block-side-content h2 {
-    padding-right:10px;
+    padding-right:45px;
     i {
       position: absolute;
       right: 0;
