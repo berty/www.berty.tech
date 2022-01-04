@@ -1,7 +1,7 @@
 ---
 title: "Berty does NOT need a KYC (Know Your Customer)."
 id: 3
-icon: far fa-id-card
+icon: fad fa-user-secret
 private: true
 ---
 
