@@ -54,13 +54,11 @@ roadmap_card:
   button_text: Join contributors on current challenges
 challenges_title: CHALLENGES
 challenges_items:
+  - Improve Stability
   - Push-Notifications
   - 4G == connexion via relay (p2p-circuit) / stable
   - Proximity == BLE / MPConnectivity / Nearby 
-  - Ephemeral Message (7days) for Beta Version
   - Resources optimizations (battery, cpu)
-  - Directory Service
-  - TOR implementation 
 android_bugs_title: ANDROID BUGS
 android_bugs_items: 
   - Android version wihout major bugs
