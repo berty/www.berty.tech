@@ -2,7 +2,7 @@
 
 <div id="{{ $id }}" class="block-faq-wrapper">
 	<div  class="block block-faq bg-white">
-		<a href="#{{ $id }}" class="block-faq-q collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="faq-{{.Params.Id}}">
+		<a href="#{{ $id }}" class="block-faq-q collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="faq-{{.Params.Id}}" onclick="event.preventDefault()">
 			<h4>{{ .Page.Title }}
 			<i class="far fa-chevron-down"></i></h4>
 			</a><!-- /.block-faq-q -->

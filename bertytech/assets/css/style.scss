@@ -2422,8 +2422,11 @@ a.block-action {
   }
   .block-faq-a {
     max-height: 0;
-		transition: max-height .5s ease-out;
+    // transition: max-height .5s ease-out;
 		overflow: hidden;
+  }
+  .block-faq-a.faq-collapsing {
+    transition: max-height .5s ease-out;
   }
   .block-faq-a.show {
     max-height: 1800px;
