@@ -14,7 +14,7 @@
     "htmlnano": "^0.2.5",
     "netlify-plugin-hugo-cache-resources": "^0.1.4",
     "netlify-plugin-submit-sitemap": "^0.1.4",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^3.1.1",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "postcss-purifycss": "^1.1.0",
