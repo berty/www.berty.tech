@@ -1,7 +1,7 @@
 ---
 title: "Threema"
 weight: -60
-open_source: false
+open_source: true
 no_runtime_fee: true
 no_purchase_fee: false
 distributed: false
