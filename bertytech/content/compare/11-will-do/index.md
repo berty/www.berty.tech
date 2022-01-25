@@ -5,8 +5,8 @@ icon:
 private: true
 ---
 
-Beyond all classic features of an instant messaging (Audio, Video, Stickers...), Berty will: 
+Beyond all classic features of instant messaging (Audio, Video, Stickers...), Berty will: 
 
 - relinquish control over Berty and to make it become a truly global community project
-- decentralize his governance thought a DAO
-- keep on implementing awesome features to be future ready
+- decentralize his governance through a DAO
+- keep on implementing awesome features to be future-ready

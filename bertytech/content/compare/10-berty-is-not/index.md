@@ -13,5 +13,5 @@ So Berty is not:
 - an unsecured app (ie: Facebook Messenger)
 - a proprietary software (ie: WhatsApp)
 - a paid app (ie: Threema)
-- a based blockchain project (ie: Session, Status.im)
+- a blockchain project (ie: Session, Status.im)
 - a commercial project (ie: Olvid)

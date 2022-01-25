@@ -7,19 +7,19 @@ private: true
 
 ![Berty does NOT need a KYC (Know Your Customer).](photo-1545569310-f6d4b4d7ede9.jpeg)
 
-Berty does not need your email address, your phone number, or even your real name (unlike Telegram, Signal, WhatsApp...). To use Berty, all you need is a nickname that will allow you to create a digital self through a Berty ID that is totally disconnected from the physical self.
+Berty does not need your email address, your phone number, or even your real name (unlike Telegram, Signal, WhatsApp...). To use Berty, all you need is a nickname that will allow you to create a digital self through a Berty ID that is disconnected from the physical self.
 
 🚀 **Benefits:**
 
 - Easy sign in
-- Real anonymity
+- Anonymity
 - No identity theft issues
 - No account hacking issues (email account hack, SIM swapping...)
 
 🤨 **Cons:**
 
 - No easy adding thought email/phone number
-- Regulation
+- It is not possible to link a Berty ID to a physical person in a compliance context.
 
  💪 **Associated Challenges:**
 

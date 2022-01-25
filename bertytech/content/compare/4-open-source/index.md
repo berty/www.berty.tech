@@ -7,7 +7,7 @@ private: true
 
 ![Berty is fully open-source.](photo-1516259762381-22954d7d3ad2.jpeg)
 
-Open-source refers to the software whose source code is available for anybody to access and modify, while proprietary software refers to the software which is solely owned by the individual or publisher who developed it. And for once, we are happy to say that we have nothing to hide! 
+Open-source refers to the software whose source code is available for anybody to access and modify, while proprietary software refers to the software which is solely owned by the individual or publisher who developed it. And for once, we are happy to say that we have nothing to hide!
 
 🚀 **Benefits:**
 

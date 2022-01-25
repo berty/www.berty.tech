@@ -13,7 +13,7 @@ This is an important commitment for us: we think that privacy is a fundamental r
 
 - Berty is free and will always be!
 - Privacy-focused, without ANY concession.
-- Build for the community, not for a shareholder.
+- Berty is truly built for the community.
 
 🤨 **Cons:**
 

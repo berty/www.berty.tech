@@ -1,11 +1,11 @@
 ---
-title: "Berty is decentralized."
+title: "Berty is distributed."
 id: 1
 icon: fad fa-server
 private: true
 ---
 
-![Berty is decentralized.](photo-1451187580459-43490279c0fa.jpeg)
+![Berty is distributed.](photo-1451187580459-43490279c0fa.jpeg)
 
 Unlike other mainstream applications (e.g. WhatsApp or Signal), Berty does not rely on central servers to operate.
 
@@ -23,7 +23,7 @@ Unlike other mainstream applications (e.g. WhatsApp or Signal), Berty does not r
 
  💪 **Associated Challenges:**
 
-- [https://berty.tech/challenges#implementing-p2p-networking-on-mobile-devices](https://berty.tech/challenges#implementing-p2p-networking-on-mobile-devices)
+- [Implementing p2p networking on mobile devices](https://berty.tech/challenges#implementing-p2p-networking-on-mobile-devices)
 
 ✨ **Going further:**
 

@@ -23,7 +23,7 @@ Berty was created to withstand extreme conditions and be bulletproof to the futu
 
 - Interoperability between Android and iOS
 - BLE limited performance
-- Asynchronous communication (off grid communication)
+- Asynchronous communication (off-grid communication)
 
 **✨ Going further:**
 

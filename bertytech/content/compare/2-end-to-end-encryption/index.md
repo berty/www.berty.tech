@@ -1,5 +1,5 @@
 ---
-title: Berty uses End To End Encryption (E2EE) by default."
+title: "Berty uses End To End Encryption (E2EE) by default."
 id: 2
 icon: fad fa-user-shield
 private: true
@@ -16,7 +16,7 @@ End-to-end encryption (E2EE) is intended to prevent data from being read or sec
 
 🤨 **Cons:**
 
-- Compliance and regulatory requirements for content inspection
+- It is not possible to inspect the content, even in the context of regulations and compliance.
 
  💪 **Associated Challenges:**
 
