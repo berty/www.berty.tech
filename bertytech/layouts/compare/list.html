@@ -1,0 +1,78 @@
+{{.Scratch.Set "body-class" "page-single wh"}}
+{{ partial "head" . }}
+
+<header class="header-rounded large bg-fakeblack gradient bg-compare">
+  <div class="container text-center">
+    <h1 class="text-shadow">{{.Title}}</h1>
+    {{/*  <h3 class="text-shadow subtitle">{{.Params.Subtitle}}</h3>  */}}
+  </div><!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+  
+    <section class="section-challenges">
+      <div class="row">
+          
+            <div class="col-md-4 ">
+              <div class="block-side-left block-doc-nav">
+                <div class="js-toc"></div>
+              </div>
+            </div><!-- /.col -->
+            <div class="col-md-8 block-side-right js-toc-content">
+              
+                {{ partial "block_side_header" . }} 
+
+                {{ range sort .Pages "Params.id" }}
+                {{ partial "block_side_content" . }}
+                {{ end }}
+            </div><!-- /.col -->
+         
+      </div><!-- /.row -->
+    </section>
+
+    <section class="section-actions">
+      <h2>{{ T "didnt_find_what_you_were_looking_for" . }}</h2>
+      <div class="row">
+        <div class="col-md-4">
+          {{ partial "block_action_read_faq" . }}
+        </div><!-- /.col -->
+        <div class="col-md-4">
+           {{ partial "block_action_read_docs" . }}
+        </div><!-- /.col -->
+        <div class="col-md-4">
+           {{ partial "block_action_contact_us" . }}
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </section>
+
+  </div><!-- /.container -->
+</div><!-- /.content -->
+
+<!-- for docs single pages -->
+<script src="{{ (resources.Get `js/tocbot.min.js`).RelPermalink }}"></script>
+<script type="text/javascript">
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    //generate toc
+      tocbot.init({
+      tocSelector: '.js-toc',
+      contentSelector: '.js-toc-content',
+      headingSelector: 'h2, h3',
+      hasInnerContainers: false,
+      orderedList: false,
+    });
+    //add anchor links
+    document.querySelectorAll('.block-side-content h2, .block-side-content h3').forEach($heading => {
+      var id = $heading.getAttribute("id");
+      $heading.classList.add('anchor-heading');
+      $anchor = document.createElement('a');
+      $anchor.className = 'anchor-link toc-link';
+      $anchor.href = '#' + id;
+      $anchor.innerText = '#';
+      $heading.appendChild($anchor);
+    });
+  });
+</script>
+
+{{ partial "footer" . }}
