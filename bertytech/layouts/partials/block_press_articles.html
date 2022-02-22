@@ -1,0 +1,81 @@
+{{ $allArticles :=  .Params.press_articles }}
+{{ $lastArticle := index (last 1 $allArticles) 0 }}
+
+
+<section class="press_articles">
+  <div class="row">
+    <div class="col-lg-7">
+      <h3>Other articles + videos about Berty:</h3>
+      <div class="press_articles--list" id="tabs_articles">
+        <ul class="tabs_articles_nav" id="tabs_articles_nav">
+          {{ range $allArticles }}
+          <li>
+            <a href="#year-{{ .year }}" class="tabs_articles-link {{ if eq $lastArticle.year .year }} active{{ end }}">{{ .year }}</a>
+          </li>
+          {{ end }}
+        </ul>
+        <div class="tabs_articles-body">
+          {{ range $allArticles }}
+          <div class="tabs_articles-group {{ if eq $lastArticle.year .year }} active{{ end }}" id="year-{{ .year }}">
+            {{ range .articles }}
+            {{ $typeText := "" }}
+            {{ if eq .type "press" }} 
+              {{ $typeText := "Press article" }}
+            {{ else if eq .type "video" }} 
+              {{ $typeText := "Video" }}
+            {{ end }}
+
+            <div class="press_articles-item">
+              <div class="press_articles-item--header">
+                <div class="press_articles-item--from">
+                  {{ .resource }}
+                </div>
+                <div class="separator"></div>
+                <div class="press_articles-item--date">
+                  {{ .date }}
+                </div>
+                <div class="separator"></div>
+                <div class="press_articles-item--category {{ .type }}">
+                  <span>
+                    {{ .type }}
+                  </span>
+                </div>
+              </div>
+              <div class="press_articles-item--body">
+                <a href="{{ .link }}" target="_blank" rel="noopener">
+                  <h4>
+                    {{ .title }}
+                  </h4>
+                </a>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  // remove all active classes
+  function removeActive(element) {
+    const activeEl = element.querySelectorAll('.active');
+    for (let i = 0; i < activeEl.length; i++) activeEl[i].classList.remove('active');
+  }
+  function toggleArticles(e) {
+    const tabs_articles = document.getElementById('tabs_articles');
+    const elementControl = e.target.closest('.tabs_articles-link');
+    if (elementControl) {
+      e.preventDefault();
+      removeActive(tabs_articles);
+      const tabId = e.target.getAttribute('href');
+      const activeTab = tabs_articles.querySelector(tabId);
+      elementControl.classList.add('active');
+      activeTab.classList.add('active');
+    }
+  }
+
+  tabs_articles.addEventListener('click', toggleArticles)
+
+</script>

@@ -3869,3 +3869,352 @@ $table-first-column-width-mobile: 115px;
     padding: 20px;
   }
 }
+
+
+
+/* PRESS PAGE */
+
+// press page global
+.page-press{
+  h2{
+    line-height: 1.2em;
+    font-weight: 600;
+    letter-spacing: .8px;
+    margin-bottom: 30px;
+    
+  }
+}
+// ———— press page global
+
+// header press
+.header-press{
+  .subtitle{
+    a{
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+// ————— header press
+
+// section top
+
+.press_top{
+  margin-top: -90px;
+  &-block{
+    padding: 50px 0;
+    &:last-child{
+      padding-bottom: 0;
+    }
+    &--header{
+      p{
+        font-size: 19px;
+        letter-spacing: 0.02em;
+        @media (max-width: 768px){
+          font-size: 17px;
+        }
+      }
+      .block-img{
+        border-radius: 12px;
+      }
+    }
+  }
+}
+
+// ————  section top
+
+
+// BLOCK NOTICE QUESTION
+.block_notice{
+  display: flex;
+  border-left: 5px solid #FFD557;
+  background-color: #FFE7A1;
+  color: #383B62;
+  padding: 10px 20px 10px 0px;
+  border-radius: 3px 5px 5px 3px;
+  &--icon{
+    min-width: 100px;
+    padding: 10px 0;
+    text-align: center;
+  }
+  &--content{
+    p{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// ———— BLOCK NOTICE QUESTION
+
+
+// SECTION: Privacy at your fingertips. 
+.press_privacy{
+  padding: 150px 0;
+}
+// ————SECTION: Privacy at your fingertips. 
+
+// BLOCK: PRESS TABS
+.press_tabs{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 150px 0 0;
+  &--item{
+    display: inline-block;
+    background-color: #FFFFFF;
+    box-shadow: 0px 6px 15px rgba(171, 174, 209, 0.3);
+    border-radius: 12px;
+    margin: 10px;
+    padding: 15px 20px;
+    max-width: 100%;
+    &.active{
+      .press_tabs--button{
+        strong, b {
+          color: #FFAE3A;
+        }
+      }
+      .press_tabs--body{
+        max-width: 1500px;
+        max-height: 1500px;
+        transition: all 1.4s ease;
+      }
+    }
+  }
+  &--button{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: $color-fakeblack;
+    b, strong{
+      color: $color-blue;
+    }
+    .icon{
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 21px;
+    }
+  }
+  &--body{
+    max-width: 0;
+    max-height: 0;
+    // height: max-content;
+    // width: 0;
+    overflow: hidden;
+    transition: all 1.2s ease;
+    &-inner{
+      padding: 30px 20px 15px;
+    }
+  }
+}
+
+.press_about{
+  padding: 0 0 150px;
+  .section-title{
+    p{
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &-box{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 15px rgba(171, 174, 209, 0.3);
+    border-radius: 12px;
+    margin-bottom: 80px;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    &--header{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-width: 300px;
+      padding: 40px 35px;
+      min-height: 100%;
+    }
+    &--title{
+      margin-bottom: 30px;
+    }
+    &--body{
+      padding: 40px 35px;
+    }
+  }
+}
+// ———— BLOCK: PRESS TABS
+
+
+// BLOCK: RESOURCES
+.press_resources{
+  &--block{
+    padding: 50px 0;
+    h3{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.press_card{
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(171,174,209,.3);
+  font-weight: 400;
+  color: #383b62;
+  display: block;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  &--image{
+    .img-cover{
+      img{
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+  &--inner{
+    padding: 25px;
+  }
+  &--desc{
+    opacity: .7;
+  }
+  &--button{
+    opacity: 0;
+    text-align: right;
+    margin-top: 5px;
+    transition: all .3s;
+    i{
+      margin-left: 8px;
+      font-size: 90%;
+    }
+  }
+  &.press_card--animate:hover{
+    color: #383b62;
+    text-decoration: none;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 18px rgba(171,174,209,.45);
+    .press_card--button{
+      opacity: 1;
+    }
+  }
+}
+.press_card--links_inline{
+  padding-bottom: 50px;
+}
+.press_card--links{
+  list-style-type: none;
+  padding: 20px 0 0;
+  li{
+    margin-bottom: 15px;
+  }
+}
+
+.press_card--header{
+  h4{
+    display: flex;
+    i{
+      margin-right: 10px;
+    }
+  }
+}
+
+  
+
+// ———— BLOCK: RESOURCES
+
+
+//  SECTION: RESOURCES
+
+.press_articles{
+  padding: 80px 0;
+  &-item{
+    padding: 50px 0 13px;
+    border-bottom: 2px solid $color-fakeblack;
+    color: $color-fakeblack;
+    &--header{
+      display: flex;
+      align-items: center;
+      padding-bottom: 15px;
+      .separator{
+        width: 1px;
+        height: 14px;
+        background-color: $color-fakeblack;
+
+      }
+    }
+    &--from{
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 1em;
+      letter-spacing: 0.06em;
+      color: #5F67D5;
+      padding-right: 15px;
+    }
+    &--date{
+      font-size: 17px;
+      line-height: 1em;
+      letter-spacing: 0.06em;
+      padding: 0 15px;
+    } 
+    &--category{
+      padding: 0 15px;
+      span{
+        display: inline-block;
+        background: rgba(255, 174, 59, 0.6);
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 1em;
+        letter-spacing: 0.06em;
+        padding: 4px 5px;
+      }
+      &.video span{
+        background-color: #8CC1F2;
+      }
+    }
+    &--body{
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
+      h4{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.45em;
+        letter-spacing: 0.01em;
+      }
+    }
+  }
+}
+
+.tabs_articles{
+  &_nav{
+    display: flex;
+    list-style-type: none;
+    padding: 30px 0 0;
+    li{
+      margin-right: 10px;
+      a{
+        font-size: 17px;
+        color: #6A6C89;
+        &.active, &:hover{
+          text-decoration: underline;
+          color: #383B62;
+        }
+      }
+    }
+  }
+  &-group{
+    max-height: 0;
+    overflow: hidden;
+    &.active{
+      max-height: max-content;
+    }
+  }
+}
+// ———— SECTION: RESOURCES

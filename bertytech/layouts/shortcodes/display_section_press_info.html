@@ -1,0 +1,23 @@
+<div class="block block-post bg-white press_top">
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Do Today’s Messenger Apps Guarantee Privacy?</h2>
+      <p>New instant messaging applications appear on the market every day. Developers and application owners usually focus on commercial gains, while user anonymity and privacy take a backseat. Most consumer messaging applications now use encryption in an effort to preserve user privacy, but in 2022, that's simply not enough.</p>
+    </div>
+    <div class="col-md-6">
+      {{ $img := .Page.Resources.GetMatch "Guarantee_Privacy.png" }}
+      {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "500" "height" "313" "class" "block-si-img left") }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>The Achilles’ Heel: Central Servers</h3>
+      <p>The weak point of all these messengers is that they rely on the use of central servers. These servers can be monitored, hacked, and shut down, compromising encryption when poorly implemented.</p>
+      <p>Since the Snowden revelation, the world has been faced with a sad reality. All citizens can be subjected to mass surveillance and, even worse, censorship.</p>
+
+      <p>This surveillance and censorship are a result of the poor data protection of central servers. When you send a message, it’s channeled through the central server. The company that owns that central server can impose regulations on the data that’s passing through or being stored in it, like accepting or rejecting messages on certain topics, analyzing files, and even prohibiting certain data.</p>
+        
+      <p>These companies can also be pressured by the government, who ask for - or demand - backdoor access to the central server’s data. It’s unsurprising that there are complex and heated debates about this topic, with most governments arguing that surveillance is critical for national security. However, there are growing fears across the world that governments will exploit this justification to obtain unlimited access to our private lives.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="press_tabs" id="press_tabs">
+  {{ range .Params.press_tabs }}
+  <div class="press_tabs--item">
+    <div class="press_tabs--header">
+      <button class="press_tabs--button">
+        <span class="icon">
+          <i class="{{ .iconClass }}"></i>
+        </span>
+        {{ .title | markdownify }}
+      </button>
+    </div>
+    <div class="press_tabs--body">
+      <div class="press_tabs--body-inner">
+        {{ .text | markdownify }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+
+<script>
+  const tabs = document.getElementById('press_tabs');
+
+  const showItem = (element) => {
+    const getBody = element.querySelector('.press_tabs--body');
+    element.classList.add('active');
+  }
+
+  const hideItem = () => {
+    const activeElement = tabs.querySelector('.active');
+    if (activeElement) {
+      const getBody = activeElement.querySelector('.press_tabs--body');
+      activeElement.classList.remove('active');
+    }
+  }
+
+  const toggleTabs = (event) => {
+    const button = event.target.closest('.press_tabs--button');
+    if (button) {
+      const item = button.closest('.press_tabs--item');
+
+      if (!item.classList.contains('active')) {
+        hideItem();
+        showItem(item);
+      } else {
+        hideItem();
+      }
+    }
+  }
+  tabs.addEventListener('click', (e) => {
+    toggleTabs(e);
+  })
+</script>
