@@ -82,7 +82,7 @@ blockquote {
   border-radius: 3px 5px 5px 3px;
   margin-top: 20px;
   p {
-    margin:0;
+    margin: 0;
     margin-bottom: 0;
   }
 }
@@ -4012,13 +4012,40 @@ $table-first-column-width-mobile: 115px;
     &-inner{
       padding: 30px 20px 15px;
     }
+    ul{
+      list-style: none;
+      padding-left: 35px;
+      li{
+        &:before{
+          content: "\2022";
+          color: $color-blue;
+          font-weight: 700;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+          font-size: 22px;
+          line-height: 22px;
+        }
+      }
+      a{
+        &:hover{
+          color: $color-blue;
+        }
+      }
+      code{
+        color: #3f49ea;
+        background-color: #eff0ff;
+        padding: 3px 6px;
+        border-radius: 4px;
+      }
+    }
   }
 }
 
 .press_about{
   padding: 0 0 150px;
   .section-title{
-    p{
+    .subtitle{
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
@@ -4037,14 +4064,42 @@ $table-first-column-width-mobile: 115px;
       flex-direction: column;
       justify-content: space-between;
       min-width: 300px;
-      padding: 40px 35px;
+      padding: 70px 35px 40px;
       min-height: 100%;
     }
     &--title{
       margin-bottom: 30px;
     }
     &--body{
-      padding: 40px 35px;
+      padding: 70px 35px 40px;
+      ul{
+        list-style: none;
+        padding-left: 35px;
+        li{
+          margin-bottom: 10px;
+          &:before{
+            content: "\2022";
+            color: $color-blue;
+            font-weight: 700;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            font-size: 22px;
+            line-height: 22px;
+          }
+        }
+        a{
+          &:hover{
+            color: $color-blue;
+          }
+        }
+        code{
+          color: #3f49ea;
+          background-color: #eff0ff;
+          padding: 3px 6px;
+          border-radius: 4px;
+        }
+      }
     }
   }
 }
@@ -4070,6 +4125,7 @@ $table-first-column-width-mobile: 115px;
   position: relative;
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
+  margin-bottom: 30px;
   &--image{
     .img-cover{
       img{
@@ -4106,6 +4162,10 @@ $table-first-column-width-mobile: 115px;
 }
 .press_card--links_inline{
   padding-bottom: 50px;
+  .btn{
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
 }
 .press_card--links{
   list-style-type: none;

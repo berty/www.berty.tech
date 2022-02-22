@@ -144,133 +144,57 @@
 				</div>
 
 				{{ partial "block_press_tabs.html" . }}
-
 		</section>
 
+		{{ with .Params.section_press_about }}
 		<section class="press_about">
-			<div class="section-title text-center">
-				<h2>Berty Technologies</h2>
-				<p>TLDR: Berty Technologies is a non-profit NGO. Founded in Paris in July 2018, the organization has grown to a
-					team of 12, half of whom are talented developers. Berty Technologies’ vision is to create secure communication
-					tools and fight censorship in order to create opportunities to connect with people all across a free world.
-				</p>
-			</div>
-
-			<div class="press_about-box">
-				<div class="press_about-box--header">
-					<h3 class="press_about-box--title">About</h3>
-
-					{{ $img := .Page.Resources.GetMatch "home-logorefresh-gifbertyanim.gif" }}
-					{{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" "108" "height"
-					"83") }}
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>{{ .title }}</h2>
+					<div class="subtitle">
+						{{ .subtitle | markdownify }}
+					</div>
 				</div>
-				<div class="press_about-box--body">
-					<p>Berty Technologies is a French non-profit and NGO founded in July 2018 in response to the urgent need for
-						truly secure, readily usable online messaging. Berty Technologies built Berty, a full-featured mobile
-						messaging application, and Berty Protocol, the freestanding secure messaging technology behind it.</p>
-
-					<p>Berty Technologies collaborates with like-minded advocacy and engineering movements to fight back against
-						threats to online privacy. Surveillance and personal data collection technologies are constantly evolving,
-						and so must Berty.</p>
+				{{ range .about_list }}
+				<div class="press_about-box">
+					<div class="press_about-box--header">
+						<h3 class="press_about-box--title">{{ .title }}</h3>
+						{{ $imgPath := .image.path }}
+						{{ $img := $.Page.Resources.GetMatch $imgPath }}
+						{{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" .image.width
+						"height"
+						.image.height) }}
+					</div>
+					<div class="press_about-box--body">
+						{{ .text | markdownify }}
+					</div>
 				</div>
-			</div>
-
-
-			<div class="press_about-box">
-				<div class="press_about-box--header">
-					<h3 class="press_about-box--title">Beliefs</h3>
-
-					{{ $img := .Page.Resources.GetMatch "beliefs.svg" }}
-					{{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" "111" "height"
-					"102") }}
-
-				</div>
-				<div class="press_about-box--body">
-					- **The right to private digital communication is universal.** Berty’s tools are offered freely, with no
-					distinction between individuals, groups, public organizations, or private organizations.
-					- **Privacy should be the easy option.** Berty must be as easy to use as, if not easier than, competitors.
-					- **Transparency is a strength that no secretive authority can outpace.** The code behind Berty is 100%
-					open-source, and anyone with the right skills and mindset can follow, test, and contribute to codebase and
-					advocacy work. The integrity of Berty lies in the fact that power sits firmly in the hands of contributors and
-					users.
-					- **No voice should be lost to censorship.** Berty Technologies develops for extremely adverse use cases.
-					Whether it’s internet blackouts, autocratic regimes, or civilian street protest suppression, Berty works.
-					Reliably. With or without an internet connection. Always.
-					- **The decentralized “future” starts today.** Central relay points, be they governments or big tech server
-					farms, keep power concentrated at the top. The technology to decentralize this power exists today - the Berty
-					Protocol is peer-to-peer, guaranteeing that authorities can’t gain access to your personal information.
-					- **You should steal this code.** Any organization or individual that wants to support user anonymity can, and
-					should, use the Berty Protocol.
-					- **France is a thriving hub of security technology.** Berty Technologies is committed to increasing the
-					dynamism and competitiveness of the French technology sector, particularly in cryptography, distributed
-					networks, cybersecurity, and emerging protocols.
-				</div>
-			</div>
-
-
-			<div class="press_about-box">
-				<div class="press_about-box--header">
-					<h3 class="press_about-box--title">Team</h3>
-
-					{{ $img := .Page.Resources.GetMatch "team.svg" }}
-					{{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" "93" "height" "92")
-					}}
-
-				</div>
-				<div class="press_about-box--body">
-					<p>Berty Technologies was founded by Manfred Touron, a cybersecurity specialist, cryptography engineer, and
-						authority on decentralization technologies and internet privacy rights. Observing the dangers to civilian
-						privacy posed by the use of current messaging applications, Berty was created to stand up to these threats.
-					</p>
-
-					<p>In the organization’s early days, engineers worked to understand where they could make the biggest impact,
-						conducting research and intentional outreach. As a result, Berty Technologies grew a reputation as an
-						exciting, up-and-coming player in the decentralized Web3 movement, winning the OMG feature @ IPFS Camp
-						(Barcelona, 2018). Berty Technologies now stands as a talented, remote-first team of 12.</p>
-				</div>
-			</div>
-
-			<div class="press_about-box">
-				<div class="press_about-box--header">
-					<h3 class="press_about-box--title">Operations</h3>
-
-					{{ $img := .Page.Resources.GetMatch "operations.svg" }}
-					{{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" "92" "height" "84")
-					}}
-
-				</div>
-				<div class="press_about-box--body">
-					<p>Committed to the principles of open-source and decentralization, Berty values transparency and collective
-						interest, rejecting the traditional hierarchical model adopted by most commercial enterprises. They
-						spearhead this culture of decentralized innovation, meeting external challenges and opportunities as soon as
-						they emerge, rather than waiting until they reach company executives.</p>
-				</div>
+				{{ end }}
 			</div>
 		</section>
-
-
+		{{ end }}
 
 		<section class="press_resources">
 			<div class="section-title text-center">
 				<h2>Resources</h2>
 			</div>
-
+			{{ with .Params.section_photos }}
 			<div class="press_resources--block press_resources--photos">
-				<h3>Photos:</h3>
+				<h3>{{ .title }}</h3>
 				<div class="row">
+					{{ range .photo_boxes }}
 					<div class="col-md-4">
-						<a href="#" class="press_card press_card--animate">
+						<a href="{{ .link }}" class="press_card press_card--animate">
 							<div class="press_card--image">
-								{{ $img := .Page.Resources.GetMatch "T9Fs4r9g.jpeg" }}
+								{{ $img := $.Page.Resources.GetMatch .image }}
 								{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "layout" "responsive" "width" "380" "height"
 								"200" "class" "img-cover")
 								}}
 							</div>
 							<div class="press_card--inner">
-								<h4>"Laura Gilli" + “Berty”</h4>
+								<h4>{{ .title }}</h4>
 								<div class="press_card--desc">
-									You can freely use the photos below, under the condition of mentioning the author "Laura Gilli" +
-									“Berty”.
+									{{ .descr }}
 								</div>
 								<div class="press_card--button c-blue">
 									View photos
@@ -279,119 +203,59 @@
 							</div>
 						</a>
 					</div>
+					{{ end }}
 				</div>
 			</div>
+			{{ end }}
+
+
+			{{ with .Params.section_links }}
 			<div class="press_resources--block press_resources--links">
-
-				<h3>Usefull Links:</h3>
-
+				<h3>{{ .title }}</h3>
+				{{ with .top_links }}
 				<div class="press_card--links_inline">
-					<a href="" class="btn btn-bty btn-blue">
-						<i class="far fa-globe"></i>
-						website berty.tech
+					{{ range . }}
+					<a href="{{ .link }}" class="btn btn-bty btn-blue">
+						<i class="{{ .icon }}"></i>
+						{{ .title }}
 					</a>
-
-					<a href="" class="btn btn-bty btn-blue">
-						<i class="far fa-file-image"></i>
-						Assets (logo & screenshot)
-					</a>
+					{{ end }}
 				</div>
-
+				{{ end }}
+				{{ with .cards }}
 				<div class="row">
+					{{ range . }}
 					<div class="col-md-4">
 						<div class="press_card">
 							<div class="press_card--inner">
 								<div class="press_card--header">
 									<h4>
-										<i class="far fa-laptop-code"></i>Code:
+										<i class="{{ .icon }}"></i>
+										{{ .card_title }}
 									</h4>
 								</div>
 								<ul class="press_card--links">
+									{{ range .links }}
 									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="fab fa-github"></i>
-											Berty’s Source Code
+										<a href="{{ .link }}" class="btn btn-bty btn-blue">
+											<i class="{{ .icon }}"></i>
+											{{ .title }}
 										</a>
 									</li>
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="far fa-book"></i>
-											Documentation
-										</a>
-									</li>
+									{{ end }}
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="press_card">
-							<div class="press_card--inner">
-								<div class="press_card--header">
-									<h4>
-										<i class="fas fa-user-friends"></i>
-										Community:
-									</h4>
-								</div>
-
-								<ul class="press_card--links">
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="fad fa-code"></i>
-											Berty’s Source Code
-										</a>
-									</li>
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="far fa-book"></i>
-											Documentation
-										</a>
-									</li>
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="fad fa-code"></i>
-											Berty’s Source Code
-										</a>
-									</li>
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="far fa-book"></i>
-											Documentation
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="press_card">
-							<div class="press_card--inner">
-								<div class="press_card--header">
-									<h4><i class="fas fa-hashtag"></i>Social:</h4>
-								</div>
-								<ul class="press_card--links">
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="fad fa-code"></i>
-											Berty’s Source Code
-										</a>
-									</li>
-									<li>
-										<a href="" class="btn btn-bty btn-blue">
-											<i class="far fa-book"></i>
-											Documentation
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					{{ end }}
 				</div>
+				{{ end }}
 			</div>
-		</section>
+			{{ end }}
 
 
-		{{ partial "block_press_articles.html" . }}
-		
+			{{ partial "block_press_articles.html" . }}
+
 	</div>
 </div>
 
