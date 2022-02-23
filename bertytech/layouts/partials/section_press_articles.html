@@ -1,0 +1,70 @@
+{{ with .Params.section_articles }}
+{{ $allArticles := .press_articles }}
+{{ $lastArticle := index (last 1 $allArticles) 0 }}
+
+{{ $res := resources.Get "js/amp-articles.js" }}
+{{ $src := cond (eq (getenv "BERTY_IPFS") "true") $res.RelPermalink $res.Permalink }}
+
+<section class="press_articles">
+  <div class="row">
+    <div class="col-md-10 col-lg-7">
+      <h3>{{ .title }}</h3>
+      <amp-script src="{{ $src }}">
+        <div class="press_articles--list" id="tabs_articles">
+          <ul class="tabs_articles_nav" id="tabs_articles_nav">
+            {{ range $allArticles }}
+            <li>
+              <a data-href="#year-{{ .year }}" tabindex
+                class="tabs_articles-link {{ if eq $lastArticle.year .year }} active{{ end }}">{{ .year }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          <div class="tabs_articles-body">
+            {{ range $allArticles }}
+            <div class="tabs_articles-group {{ if eq $lastArticle.year .year }} active{{ end }}" id="year-{{ .year }}">
+
+
+              {{ range .articles }}
+              {{ $typeText := newScratch }}
+              {{ if eq .type "press" }}
+              {{ $typeText.Set "type" "Press article" }}
+              {{ else if eq .type "video" }}
+              {{ $typeText.Set "type" "Video" }}
+              {{ end }}
+
+              <div class="press_articles-item">
+                <div class="press_articles-item--header">
+                  <div class="press_articles-item--from">
+                    {{ .resource }}
+                  </div>
+                  <div class="separator"></div>
+                  <div class="press_articles-item--date">
+                    <!-- {{ .date }} -->
+                    {{ .date | time.Format ":date_medium"  }}
+                  </div>
+                  <div class="separator"></div>
+                  <div class="press_articles-item--category {{ .type }}">
+                    <span>
+                      {{ $typeText.Get "type" }}
+                    </span>
+                  </div>
+                </div>
+                <div class="press_articles-item--body">
+                  <a href="{{ .link }}" target="_blank" rel="noopener">
+                    <h4>
+                      {{ .title }}
+                    </h4>
+                  </a>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </amp-script>
+    </div>
+  </div>
+</section>
+
+{{ end }}

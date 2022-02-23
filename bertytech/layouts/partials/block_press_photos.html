@@ -1,0 +1,29 @@
+{{ with .Params.section_photos }}
+<div class="press_resources--block press_resources--photos">
+  <h3>{{ .title }}</h3>
+  <div class="row">
+    {{ range .photo_boxes }}
+    <div class="col-md-6 col-lg-4">
+      <a href="{{ .link }}" class="press_card press_card--animate">
+        <div class="press_card--image">
+          {{ $img := $.Page.Resources.GetMatch .image }}
+          {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "layout" "responsive" "width" "380" "height"
+          "200" "class" "img-cover")
+          }}
+        </div>
+        <div class="press_card--inner">
+          <h4>{{ .title }}</h4>
+          <div class="press_card--desc">
+            {{ .descr }}
+          </div>
+          <div class="press_card--button c-blue">
+            View photos
+            <i class="far fa-chevron-right"></i>
+          </div>
+        </div>
+      </a>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -7,18 +7,18 @@
 	<div class="container">
 
 		{{/* section 1 */}}
-		<section class="block block-post bg-white press_top">
+		<section class="block bg-white press_top">
 
 			<div class="press_top-block press_top-block--header">
 				<div class="row align-items-center">
-					<div class="col-md-6">
+					<div class="col-lg-6">
 						<h2>Do Today’s Messenger Apps Guarantee Privacy?</h2>
 						<p>New instant messaging applications appear on the market every day. Developers and application owners
 							usually focus on commercial gains, while user anonymity and privacy take a backseat. <b>Most consumer
 								messaging applications now use encryption in an effort to preserve user privacy, but in 2022, that's
 								simply not enough.</b></p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-lg-6">
 						{{ $img := .Page.Resources.GetMatch "Guarantee_Privacy.png" }}
 						{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "500" "height" "352" "class" "block-img")
 						}}
@@ -146,115 +146,18 @@
 				{{ partial "block_press_tabs.html" . }}
 		</section>
 
-		{{ with .Params.section_press_about }}
-		<section class="press_about">
-			<div class="container">
-				<div class="section-title text-center">
-					<h2>{{ .title }}</h2>
-					<div class="subtitle">
-						{{ .subtitle | markdownify }}
-					</div>
-				</div>
-				{{ range .about_list }}
-				<div class="press_about-box">
-					<div class="press_about-box--header">
-						<h3 class="press_about-box--title">{{ .title }}</h3>
-						{{ $imgPath := .image.path }}
-						{{ $img := $.Page.Resources.GetMatch $imgPath }}
-						{{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" .image.width
-						"height"
-						.image.height) }}
-					</div>
-					<div class="press_about-box--body">
-						{{ .text | markdownify }}
-					</div>
-				</div>
-				{{ end }}
-			</div>
-		</section>
-		{{ end }}
+
+		{{ partial "section_press_about.html" . }}
 
 		<section class="press_resources">
 			<div class="section-title text-center">
 				<h2>Resources</h2>
 			</div>
-			{{ with .Params.section_photos }}
-			<div class="press_resources--block press_resources--photos">
-				<h3>{{ .title }}</h3>
-				<div class="row">
-					{{ range .photo_boxes }}
-					<div class="col-md-4">
-						<a href="{{ .link }}" class="press_card press_card--animate">
-							<div class="press_card--image">
-								{{ $img := $.Page.Resources.GetMatch .image }}
-								{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "layout" "responsive" "width" "380" "height"
-								"200" "class" "img-cover")
-								}}
-							</div>
-							<div class="press_card--inner">
-								<h4>{{ .title }}</h4>
-								<div class="press_card--desc">
-									{{ .descr }}
-								</div>
-								<div class="press_card--button c-blue">
-									View photos
-									<i class="far fa-chevron-right"></i>
-								</div>
-							</div>
-						</a>
-					</div>
-					{{ end }}
-				</div>
-			</div>
-			{{ end }}
-
-
-			{{ with .Params.section_links }}
-			<div class="press_resources--block press_resources--links">
-				<h3>{{ .title }}</h3>
-				{{ with .top_links }}
-				<div class="press_card--links_inline">
-					{{ range . }}
-					<a href="{{ .link }}" class="btn btn-bty btn-blue">
-						<i class="{{ .icon }}"></i>
-						{{ .title }}
-					</a>
-					{{ end }}
-				</div>
-				{{ end }}
-				{{ with .cards }}
-				<div class="row">
-					{{ range . }}
-					<div class="col-md-4">
-						<div class="press_card">
-							<div class="press_card--inner">
-								<div class="press_card--header">
-									<h4>
-										<i class="{{ .icon }}"></i>
-										{{ .card_title }}
-									</h4>
-								</div>
-								<ul class="press_card--links">
-									{{ range .links }}
-									<li>
-										<a href="{{ .link }}" class="btn btn-bty btn-blue">
-											<i class="{{ .icon }}"></i>
-											{{ .title }}
-										</a>
-									</li>
-									{{ end }}
-								</ul>
-							</div>
-						</div>
-					</div>
-					{{ end }}
-				</div>
-				{{ end }}
-			</div>
-			{{ end }}
-
-
-			{{ partial "block_press_articles.html" . }}
+			{{ partial "block_press_photos.html" . }}
+			{{ partial "block_press_links.html" . }}
+		</section>
+		
+		{{ partial "section_press_articles.html" . }}
 
 	</div>
 </div>

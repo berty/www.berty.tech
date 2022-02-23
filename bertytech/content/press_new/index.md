@@ -9,7 +9,8 @@ image: "berty_press.png"
 #         weight: 40
 #         name: Press
 
-# Section: Berty: Privacy at your fingertips.
+
+# Section: Berty: Privacy at your fingertips. tabs
 press_tabs:
   - tab_item:
     iconClass: "fad fa-server"
@@ -36,8 +37,7 @@ press_tabs:
       ✨ **Going further:**
       
       - [Learn how E2EE works](https://berty.tech/blog/e2e-encryption/)
-
-
+      
 
   - tab_item:
     iconClass: "fad fa-user-secret"
@@ -126,6 +126,7 @@ press_tabs:
       - Discover Berty Technologies’ donors: [Protocol Labs](https://protocol.ai/), [IPFS](https://ipfs.io/), and [Nodle](https://berty.tech/blog/nodle-grants-berty-one-million/)"
 
 
+
 # Section: Berty Technologies
 section_press_about:
   title: Berty Technologies
@@ -197,6 +198,7 @@ section_press_about:
         Committed to the principles of open-source and decentralization, Berty values transparency and collective interest, rejecting the traditional hierarchical model adopted by most commercial enterprises. They spearhead this culture of decentralized innovation, meeting external challenges and opportunities as soon as they emerge, rather than waiting until they reach company executives.
 
 
+
 # Section: Photos
 section_photos:
   title: "Photos:"
@@ -206,6 +208,8 @@ section_photos:
         You can freely use the photos below, under the condition of mentioning the author "Laura Gilli" + “Berty”.
       link: https://airtable.com/shr3BTigjsEOaOnVE
       image: T9Fs4r9g.jpeg
+
+
 
 # Section: Usefull Links
 section_links:
@@ -280,7 +284,7 @@ section_articles:
         - title: Berty Technologies interview at IPFS Camp SciFi Fair
           link: https://www.youtube.com/watch?v=p2ZAm2fAvUo
           resource: IPFS
-          date: October 7, 2019
+          date: 2019-10-07
           type: video
 
     - year: 2020
@@ -288,7 +292,7 @@ section_articles:
         - title: Berty Protocol Introduction
           link: https://www.youtube.com/watch?v=fnl7Omsbpbw
           resource: "Paris P2P Festival #0"
-          date: January 11, 2020
+          date: 2020-01-11
           type: video
 
     - year: 2021
@@ -296,31 +300,31 @@ section_articles:
         - title: "Berty Foundation Receives $1 Million in Nodle Cash from Nodle to Advance Its Privacy Communication Protocol"
           link: https://thenewscrypto.com/berty-foundation-receives-1-million-in-nodle-cash-from-nodle-to-advance-its-privacy-communication-protocol/
           resource: Newscrypto.com
-          date: October 13, 2021
+          date: 2021-10-13
           type: press
 
         - title: Nodle Fosters Private Messaging With a $1 Million Grant To Berty Foundation
           link: "https://thenewscrypto.com/berty-foundation-receives-1-million-in-nodle-cash-from-nodle-to-advance-its-privacy-communication-protocol/"
           resource: coinquora
-          date: October 13, 2021
+          date: 2021-10-13
           type: press
 
         - title: Decentralized IoT Network Nodle Grants $1 Million to Private Messaging Project Berty
           link: "https://coincodex.com/article/12592/decentralized-iot-network-nodle-grants-1-million-to-private-messaging-project-berty/"
           resource: coincodex
-          date: October 13, 2021
+          date: 2021-10-13
           type: press
         
         - title: "Berty Foundation Receives $1 Million in Nodle Cash from Nodle to Advance its Privacy Communication Protocol"
           link: "https://cryptoslate.com/press-releases/berty-foundation-receives-1-million-in-nodle-cash-from-nodle-to-advance-its-privacy-communication-protocol/"
           resource: cryptoslate
-          date: October 13, 2021
+          date: 2021-10-13
           type: press
 
         - title: "Berty Foundation Gets $1 Million Nodle Cash Grant to Bolster Its Communication Protocol"
           link: "https://www.investing.com/news/cryptocurrency-news/berty-foundation-gets-1-million-nodle-cash-grant-to-bolster-its-communication-protocol-2642691"
           resource: investing.com
-          date: October 13, 2021
+          date: 2021-10-13
           type: press
 
       

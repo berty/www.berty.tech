@@ -1,0 +1,27 @@
+{{ with .Params.section_press_about }}
+<section class="press_about">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>{{ .title }}</h2>
+      <div class="subtitle">
+        {{ .subtitle | markdownify }}
+      </div>
+    </div>
+    {{ range .about_list }}
+    <div class="press_about-box">
+      <div class="press_about-box--header">
+        <h3 class="press_about-box--title">{{ .title }}</h3>
+        {{ $imgPath := .image.path }}
+        {{ $img := $.Page.Resources.GetMatch $imgPath }}
+        {{ partial "img" (dict "ctx" . "class" "" "src" $img.RelPermalink "layout" "fixed" "width" .image.width
+        "height"
+        .image.height) }}
+      </div>
+      <div class="press_about-box--body">
+        {{ .text | markdownify }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
