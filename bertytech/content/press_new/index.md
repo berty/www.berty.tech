@@ -211,9 +211,9 @@ section_photos:
 
 
 
-# Section: Usefull Links
+# Section: Useful Links
 section_links:
-  title: "Usefull Links:"
+  title: "Useful Links:"
   top_links:
     - title: "Website"
       icon: far fa-globe
