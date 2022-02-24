@@ -1,0 +1,26 @@
+{{ $res := resources.Get "js/amp-press_tabs.js" }}
+{{ $src := cond (eq (getenv "BERTY_IPFS") "true") $res.RelPermalink $res.Permalink }}
+
+<amp-script src="{{ $src }}">
+  <div class="press_tabs" id="press_tabs">
+    {{ range .Params.press_tabs }}
+    <div class="press_tabs--item">
+      <div class="press_tabs--header">
+        <button class="press_tabs--button">
+          <span class="icon">
+            <i class="{{ .iconClass }}"></i>
+          </span>
+          <div>
+            {{ .title | markdownify }}
+          </div>
+        </button>
+      </div>
+      <div class="press_tabs--body">
+        <div class="press_tabs--body-inner">
+          {{ .text | markdownify }}
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</amp-script>

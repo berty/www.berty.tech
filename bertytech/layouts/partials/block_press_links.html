@@ -1,0 +1,43 @@
+{{ with .Params.section_links }}
+<div class="press_resources--block press_resources--links">
+  <h3>{{ .title }}</h3>
+  {{ with .top_links }}
+  <div class="press_card--links_inline">
+    {{ range . }}
+    <a href="{{ .link }}" class="btn btn-bty btn-blue">
+      <i class="{{ .icon }}"></i>
+      {{ .title }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+  {{ with .cards }}
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    {{ range . }}
+    <div class="col-md-12 col-lg-4">
+      <div class="press_card">
+        <div class="press_card--inner">
+          <div class="press_card--header">
+            <h4>
+              <i class="{{ .icon }}"></i>
+              {{ .card_title }}
+            </h4>
+          </div>
+          <ul class="press_card--links">
+            {{ range .links }}
+            <li>
+              <a href="{{ .link }}" class="btn btn-bty btn-blue">
+                <i class="{{ .icon }}"></i>
+                {{ .title }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,167 @@
+{{.Scratch.Set "body-class" "page-press wh"}}
+{{ partial "head" . }}
+
+{{ partial "page_title" . }}
+
+<div class="content">
+	<div class="container">
+
+		{{/* section 1 */}}
+		<section class="block bg-white press_top">
+
+			<div class="press_top-block press_top-block--header">
+				<div class="row align-items-center">
+					<div class="col-lg-6">
+						<h2>Do Today’s Messenger Apps Guarantee Privacy?</h2>
+						<p>New instant messaging applications appear on the market every day. Developers and application owners
+							usually focus on commercial gains, while user anonymity and privacy take a backseat. <b>Most consumer
+								messaging applications now use encryption in an effort to preserve user privacy, but in 2022, that's
+								simply not enough.</b></p>
+					</div>
+					<div class="col-lg-6">
+						{{ $img := .Page.Resources.GetMatch "Guarantee_Privacy.png" }}
+						{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "500" "height" "352" "class" "block-img")
+						}}
+					</div>
+				</div>
+			</div>
+
+			<div class="press_top-block">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>The Achilles’ Heel: Central Servers</h2>
+						<p><b>The weak point of all these messengers is that they rely on the use of central servers.</b> These
+							servers can
+							be monitored, hacked, and shut down, compromising encryption when poorly implemented.</p>
+
+						{{ $img := .Page.Resources.GetMatch "central_servers.png" }}
+						{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "914" "height" "345" "class" "block-si-img")
+						}}
+
+						<p>Since the Snowden revelation, the world has been faced with a sad reality. All citizens can be subjected
+							to
+							mass surveillance and, even worse, censorship.</p>
+
+						<p>This surveillance and censorship are a result of the poor data protection of central servers. <b>When you
+								send
+								a message, it’s channeled through the central server.</b> The company that owns that central server can
+							impose
+							regulations on the data that’s passing through or being stored in it, like accepting or rejecting messages
+							on certain topics, analyzing files, and even prohibiting certain data.</p>
+
+						<p><b>These companies can also be pressured by the government, who ask for - or demand - backdoor access to
+								the
+								central server’s data.</b> It’s unsurprising that there are complex and heated debates about this topic,
+							with
+							most governments arguing that surveillance is critical for national security. However, there are growing
+							fears across the world that governments will exploit this justification to obtain unlimited access to our
+							private lives.</p>
+
+						<div class="block_notice question">
+							<div class="block_notice--icon">
+								<svg width="25" height="34" viewBox="0 0 32 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M16.4796 34.8295H14.3762C12.8948 34.8295 11.6909 36.0181 11.6909 37.4808V40.3486C11.6909 41.8113 12.8948 43 14.3762 43H16.4796C17.961 43 19.1648 41.8113 19.1648 40.3486V37.4808C19.1648 36.0138 17.961 34.8295 16.4796 34.8295Z"
+										fill="#383B62" />
+									<path
+										d="M1.64798 12.6291L5.52816 13.1064C6.7589 13.2566 7.92698 12.5584 8.37005 11.4139C8.92947 9.96896 9.7082 8.8289 10.7062 7.99815C12.1205 6.82273 13.8793 6.2306 15.9827 6.2306C18.1622 6.2306 19.8987 6.79622 21.1876 7.92303C22.4765 9.05426 23.1165 10.4064 23.1165 11.9928C23.1165 13.1329 22.754 14.1757 22.029 15.1214C21.5591 15.7223 20.1135 16.9861 17.7013 18.9172C15.2846 20.8482 13.6779 22.5892 12.8724 24.1358C12.0489 25.7178 11.7625 27.472 11.6908 29.2308C11.6282 30.7376 12.8455 31.9926 14.3761 31.9926H16.569C17.9654 31.9926 19.12 30.9365 19.2453 29.5666C19.3348 28.5813 19.5004 27.8345 19.7511 27.3263C20.1717 26.4558 21.2593 25.3069 23.0047 23.8752C26.3836 21.1133 28.5855 18.9304 29.6193 17.322C30.6487 15.7179 31.1678 14.0166 31.1678 12.2182C31.1678 8.9703 29.767 6.12013 26.9609 3.67208C24.1593 1.22403 20.3821 0 15.6382 0C11.1269 0 7.48844 1.20635 4.71368 3.62347C2.35067 5.68266 0.91406 8.12188 0.408339 10.9367C0.251654 11.7586 0.820032 12.5275 1.64798 12.6291Z"
+										fill="#383B62" />
+								</svg>
+
+							</div>
+							<div class="block_notice--content">
+								<p>Operating a server is expensive. So why are most popular apps that use central servers free? <br>
+									Have you ever wondered how they make money? <br>
+									Unfortunately, the saying holds true here: when it’s free, you’re the product.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="press_top-block">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>The Fingerprint: Metadata</h2>
+						<blockquote>
+							<p><i><strong>We kill based on metadata.</strong></i></p>
+							<p>- Michael Hayden, Former CIA and FBI Director</p>
+						</blockquote>
+
+						<p>Surveillance, censorship, tracking, hacking, and all sorts of blatant invasions of privacy are directed
+							and
+							focused: everything you say online can be seen, recorded, and used. <b>This is the result of putting your
+								data
+								in the hands of third parties, like internet service providers and servers.</b></p>
+						<p>Metadata is a powerful bank of information. It’s simply data collected between data, and this kind of
+							data
+							usually reveals little or nothing on its own. However, as data points are combined, <b>hackers, companies,
+								organizations, and governments can essentially create a unique fingerprint of your digital life.</b> In
+							fact,
+							metadata contains as much information as the data it’s based on itself. To quote NSA General Counsel,
+							Stewart Baker, “metadata tells you absolutely everything about someone’s life. If you have enough
+							metadata,
+							you don’t really need content.”</p>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		{{/* section 2 */}}
+
+		<section class="press_privacy">
+			<div class="container">
+				<div class="section-title text-center">
+					<h2>Berty: Privacy at your fingertips.</h2>
+					<p>Berty is a privacy-first messaging application built on top of the Berty Protocol.</p>
+				</div>
+				<div class="press_text_img--block">
+					<div class="row align-items-center">
+						<div class="col-md-7">
+							<p><b>Berty Technologies is on a mission to solve today’s privacy crisis, developing Berty, a messenger
+									solution based on peer-to-peer communication, distributed data storage, and end-to-end encryption.</b>
+								It’s
+								one easy-to-use application that guarantees users privacy, through a network that’s free of servers and
+								third parties.</p>
+							<p>Whether you’re traveling and need to share sensitive data over untrusted networks, you’re in a region
+								with
+								a government that actively censors content on networks, or you have no internet connection at all,
+								<b>Berty
+									is the ultimate everyday messaging app.</b>
+							</p>
+						</div>
+						<div class="col-md-5">
+							{{ $img := .Page.Resources.GetMatch "icon_dev.png" }}
+							{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "441" "height" "450" "class"
+							"block-si-img")
+							}}
+						</div>
+					</div>
+				</div>
+
+				{{ partial "block_press_tabs.html" . }}
+		</section>
+
+
+		{{ partial "section_press_about.html" . }}
+
+		<section class="press_resources">
+			<div class="section-title text-center">
+				<h2>Resources</h2>
+			</div>
+			{{ partial "block_press_photos.html" . }}
+			{{ partial "block_press_links.html" . }}
+		</section>
+		
+		{{ partial "section_press_articles.html" . }}
+
+	</div>
+</div>
+
+
+
+{{ partial "footer" . }}

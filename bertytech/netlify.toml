@@ -5,7 +5,7 @@ base = "bertytech/"
 ignore = "./ignore-build.sh"
 
 [context.production.environment]
-HUGO_VERSION = "0.73.0"
+HUGO_VERSION = "0.91.2"
 HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 GIT_LFS_ENABLED = "true"
@@ -14,7 +14,7 @@ GIT_LFS_ENABLED = "true"
 command = 'make prod-build HUGO_OPTS="--enableGitInfo"'
 
 [context.split1.environment]
-HUGO_VERSION = "0.73.0"
+HUGO_VERSION = "0.91.2"
 HUGO_ENV = "production"
 GIT_LFS_ENABLED = "true"
 
@@ -22,14 +22,14 @@ GIT_LFS_ENABLED = "true"
 command = 'make prod-build HUGO_OPTS="-b $DEPLOY_PRIME_URL --enableGitInfo -v"'
 
 [context.deploy-preview.environment]
-HUGO_VERSION = "0.73.0"
+HUGO_VERSION = "0.91.2"
 GIT_LFS_ENABLED = "true"
 
 [context.branch-deploy]
 command = 'make prod-build HUGO_OPTS="-b $DEPLOY_PRIME_URL -v"'
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.73.0"
+HUGO_VERSION = "0.91.2"
 GIT_LFS_ENABLED = "true"
 
 [context.next.environment]
