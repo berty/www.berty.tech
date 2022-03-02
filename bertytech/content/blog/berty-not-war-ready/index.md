@@ -22,7 +22,6 @@ For two major reasons, it’s sadly too early for Berty to be deployed for crisi
 
 {{<tweet id="1497542570137825280">}}
 
-[https://twitter.com/berty/status/1497542570137825280?s=20&t=ARiJAL-cfhig9xIK5NUpHA](https://twitter.com/berty/status/1497542570137825280?s=20&t=ARiJAL-cfhig9xIK5NUpHA)
 
 ## Berty Protocol has not yet been audited.
 
