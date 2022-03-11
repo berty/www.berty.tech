@@ -24,6 +24,8 @@ Before the shooting, Protocol Labs sent us a great questionnaire to write the sc
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cC-tXnMyiBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+
 ## What is the problem Berty is solving?
 
 There is more and more evidence of global mass surveillance and censorship thread over the world. This ultimately leads to an alarming threat to our privacy and freedom for every Earth citizen. Two observations can be made (and need to be solved!):
@@ -70,21 +72,20 @@ Berty Protocol ensures that your messages are:
 
 **Regarding censorship bypass:** it is much more complicated to block the connection to a swarm of IPFS peers than to block access to the central servers of a company. We allow the Berty app to customize the address of Bootstrap nodes (as well as p2p-circuit relays and all the rest of the infrastructure). By doing so, a user in a country where official IPFS and Berty bootstrap nodes are blocked could use a custom unblocked bootstrap node to connect to the swarm. His device could then be used as a bootstrap node by the surrounding peers via mDNS or proximity transport. Talking about proximity transport, people in a context of a protest for example could exchange messages directly without having to go through an internet connection or any network equipment, so it is almost impossible to censor their communications.
 
-**In a context without or with a very limited internet connection** as you can see on this documentary ([https://www.youtube.com/watch?v=lEplzHraw3c](https://www.youtube.com/watch?v=lEplzHraw3c)) it would be possible via Berty to imagine that the city / the district which is connected through this giant LAN could exchange messages (using mDNS and proximity transport) simply with their phones which is today impossible for them via a traditional messaging like Signal.
+**In a context without or with a very limited internet connection** as you can see on this [documentary](https://www.youtube.com/watch?v=lEplzHraw3c) it would be possible via Berty to imagine that the city / the district which is connected through this giant LAN could exchange messages (using mDNS and proximity transport) simply with their phones which is today impossible for them via a traditional messaging like Signal.
 
 ## IPFS x Berty
 
-[https://berty.tech/blog/how-berty-works-ipfs/](https://berty.tech/blog/how-berty-works-ipfs/)
+Read our [blogpost](https://berty.tech/blog/how-berty-works-ipfs/)
 
 ## About Berty
 
-- [https://berty.tech](https://berty.tech/)
 - Documentation
-    - Protocol paper: [https://berty.tech/protocol](https://berty.tech/protocol)
-    - General presentation of Berty: [https://www.youtube.com/watch?v=fnl7Omsbpbw](https://www.youtube.com/watch?v=fnl7Omsbpbw) (French, English subtitles available)
-    - Berty Protocol & IPFS [https://www.youtube.com/watch?v=jtAtIsyUn0A](https://www.youtube.com/watch?v=jtAtIsyUn0A) (French, English subtitles available)
-        - Blog: [https://berty.tech/blog](https://berty.tech/blog)[https://berty.tech/blog/how-berty-works-ipfs/](https://berty.tech/blog/how-berty-works-ipfs/)
-        - [https://berty.tech/blog/gomobile-ipfs/](https://berty.tech/blog/gomobile-ipfs/)
-    - [https://berty.tech/blog/bluetooth-low-energy/](https://berty.tech/blog/bluetooth-low-energy/)
-    - Berty Challenges: [https://berty.tech/challenges](https://berty.tech/challenges)
-    - Features (uniqueness): [https://berty.tech/compare](https://berty.tech/compare)
+    - [Protocol paper](https://berty.tech/protocol)
+    - [General presentation of Berty](https://www.youtube.com/watch?v=fnl7Omsbpbw) (French, English subtitles available)
+    - [Berty Protocol & IPFS](https://www.youtube.com/watch?v=jtAtIsyUn0A) (French, English subtitles available)
+    - [Blogpost about How Berty Works #1: IPFS](https://berty.tech/blog/how-berty-works-ipfs/)
+    - [Blogpost about Gomobile-IPFS](https://berty.tech/blog/gomobile-ipfs/)
+    - [Blogpost about BLE](https://berty.tech/blog/bluetooth-low-energy/)
+    - [Berty's Challenges](https://berty.tech/challenges)
+    - [Berty's Features (uniqueness)](https://berty.tech/compare)
