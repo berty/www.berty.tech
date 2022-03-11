@@ -1,6 +1,6 @@
 ---
 title: "Olvid"
-open_source: true
+open_source: Partially
 no_runtime_fee:
 no_purchase_fee:
 distributed: 
