@@ -5,6 +5,7 @@ location: "Paris, FRANCE / Remote"
 contract: "Part Time / Freelance"
 date: "2019-09-23T09:58:25Z"
 employmentType: PART_TIME
+jobURL: https://berty.crew.work/jobs/621f4b79ace679e4cf8ed81a
 ---
 
 ## Outcomes
