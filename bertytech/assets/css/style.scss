@@ -4356,3 +4356,22 @@ $table-first-column-width-mobile: 115px;
   }
 }
 // ———— SECTION: RESOURCES
+.download-button {
+  margin-bottom: 20px;
+  img {
+    width: 45%;
+    display: block;
+    margin-top: 15px;
+    @media (max-width:991px){
+      width: 60%;
+    }
+    @media (max-width:767px){
+      width: 45%;
+      margin-top: 0;
+      display: inline-block;
+    }
+  }
+  a:last-child {
+    margin-left: 20px;
+  }
+}
