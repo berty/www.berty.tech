@@ -101,8 +101,8 @@
                         <span class="title">About us</span>
                         <span class="subtitle">We're a small NGO</span>
                       </a>
-                      {{ $url := relLangURL "/jobs" }}
-                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                      {{ $url := relLangURL "https://berty.crew.work/jobs" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}"  target="_blabk">
                         <i class="fal fa-laptop-code c-blue"></i>
                         <span class="title">Jobs</span>
                         <span class="subtitle">Our open positions</span>

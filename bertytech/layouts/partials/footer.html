@@ -41,8 +41,8 @@
 							{{ $url := relLangURL "/about" }}
 							<h5><a href="{{ cond $is_404 (absURL $url) $url }}">About us</a></h5>
 							<ul class="list-unstyled text-small">
-								{{ $url := relLangURL "/jobs" }}
-								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Jobs</a></li>
+								{{ $url := relLangURL "https://berty.crew.work/jobs" }}
+								<li><a href="{{ cond $is_404 (absURL $url) $url }}" target="_blabk">Jobs</a></li>
 								{{ $url := relLangURL "/newsletter" }}
 								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Newsletter</a></li>
 								{{ $url := relLangURL "/contact" }}

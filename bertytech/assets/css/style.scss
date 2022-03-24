@@ -908,7 +908,10 @@ a.block.post-card,
 
 /* SECTIONS */
 section.section-jobs {
-  margin:-60px 0 50px;
+  margin:60px 0 50px;
+}
+section.section-jobs-info {
+  margin: 50px 0;
 }
 section.section-posts {
   margin:-100px 0 50px;
@@ -4374,4 +4377,7 @@ $table-first-column-width-mobile: 115px;
   a:last-child {
     margin-left: 20px;
   }
+}
+.mt-30 {
+  margin-top: 30px;
 }
