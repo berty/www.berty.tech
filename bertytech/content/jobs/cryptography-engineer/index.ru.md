@@ -5,6 +5,7 @@ location: Париж, ФРАНЦИЯ
 contract: Полное время
 date: "2019-09-23T09:58:25Z"
 employmentType: FULL_TIME
+jobURL: https://berty.crew.work/jobs/621f4ac2ace679e4cf8ed818
 ---
 
 ## Обязанности
