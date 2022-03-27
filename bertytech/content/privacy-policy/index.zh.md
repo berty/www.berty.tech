@@ -6,19 +6,19 @@ image_bg: "privacy.png"
 
 # Berty 应用程序
 
-Last updated: December 14, 2021
+最后更新：2021年12月14日
 
-## Foreword
+## 前言
 
-Berty is an open-source messaging application designed by the NGO Berty Technologies, relying on a peer-to-peer network and cryptography to provide a secure and resilient way of communicating. The application is designed to minimize the amount of data collected and services accessed.
+Berty 是由非政府组织“Berty Technologies”设计的开源信息应用程序。 依靠对等网络和加密技术提供安全和有弹性的通信方式。 The application is designed to minimize the amount of data collected and services accessed.
 
 This privacy policy covers the usage of the Berty application and the services available within it.
 
-Please ensure that you download the app from a trusted source, as this privacy policy doesn't apply to Berty applications created by third parties.
+请确保您从信任的来源下载应用程序，因为这个隐私政策不适用于第三方创建的berty应用程序。
 
 The Berty application is currently being actively developed, and additional services, adjustment of behavior, or clarifications could be added to this privacy policy.
 
-### Explaining the Privacy Policy structure
+### 说明隐私政策结构
 
 In the glossary, users will find technical definitions of keywords to understand better how the Berty application works and its technical challenges.
 
