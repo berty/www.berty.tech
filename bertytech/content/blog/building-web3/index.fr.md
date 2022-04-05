@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: "[VIDEO] Building Web3: Berty"
+title: "[VIDEO] Construire le Web3 : Berty"
 date: 2022-03-11
 #image: "building-web3.png"
 image: "building-web3.png"
@@ -11,20 +11,22 @@ tags:
   - sécurité
   - cybersecurity
   - privacy
-description: "A few months ago, Protocol Labs contacted us to shoot a documentary about Berty as part of a series on Web3 builders. We were super honored and proud that they thought of us!"
+description: "Il y a quelques mois, Protocol Labs nous a contacté pour filmer un documentaire sur Berty dans le cadre d'une série de vidéo sur les constructeurs Web3. Nous avons été super honorés et fiers qu'ils aient pensé à nous!"
 ---
 
-A few months ago, Protocol Labs contacted us to shoot a documentary about Berty as part of a series on Web3 builders. We were super honored and proud that they thought of us!
+Il y a quelques mois, Protocol Labs nous a contacté pour filmer un documentaire sur Berty dans le cadre d'une série de vidéo sur les constructeurs Web3. Nous avons été super honorés et fiers qu'ils aient pensé à nous!
 
-Even if Berty is not based on a blockchain, we feel close and connected to this Web3 ecosystem. We share a lot of essential values such as privacy, data ownership, decentralization (just to name a few). So it was a real pleasure to be part of this film and to take time to think about the messages we wanted to convey. All the Protocol Labs and IPFS teams were great and we thank them a lot! We are super happy with how they captured these moments of daily life in Berty.
+Même si Berty n'est pas basée sur une blockchain, nous nous sentons proches et connectés à cet écosystème dit "Web3". Nous partageons beaucoup de valeurs essentielles telles que la vie privée, la propriété des données, la décentralisation (pour n'en nommer que quelques-uns). Ce fut donc un réel plaisir de faire partie de ce film et de prendre le temps de réfléchir aux messages que nous voulions transmettre. Toutes les équipes de Protocol Labs et IPFS ont été excellentes et nous les remercions beaucoup ! Nous sommes très heureux de la façon dont ils ont capturé ces moments de la vie quotidienne à Berty.
 
-*(Maria, Zak if you're reading this, thank you so much for your patience and all the energy you put into it! We are truly grateful).*
+*(Maria, Zak si vous lisez ceci, merci beaucoup pour votre patience et toute l'énergie que vous y avez consacrées! Nous en sommes vraiment reconnaissants).*
 
-Before the shooting, Protocol Labs sent us a great questionnaire to write the script for the video. We thought we would share our answers with you here. We hope it can serve as a complementary resource to this video and perhaps add some insight to our approach. <iframe width="560" height="315" src="https://www.youtube.com/embed/cC-tXnMyiBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+Avant le tournage, Protocol Labs nous a envoyé un grand questionnaire pour écrire le script pour la vidéo. Nous avons pensé que nous partagerions nos réponses avec vous ici. Nous espérons qu'il pourra servir de ressource complémentaire à cette vidéo et peut-être ajouter un peu de compréhension à notre approche.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cC-tXnMyiBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
-## What is the problem Berty is solving?
+## Quel est le problème que Berty est en train de résoudre ?
 
 There is more and more evidence of global mass surveillance and censorship thread over the world. This ultimately leads to an alarming threat to our privacy and freedom for every Earth citizen. Two observations can be made (and need to be solved!):
 
