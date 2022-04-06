@@ -1,6 +1,6 @@
 ---
 title: "Berty"
-description: A mobile & desktop app
+description: モバイル & デスクトップ アプリ
 icon: fab fa-github
 color: black
 open: true
@@ -14,7 +14,7 @@ menu:
   <img src="https://berty.tech/img/berty.svg" alt="Berty" title="Berty" height="200px" />
 </div>
 
-<h3 align="center">🤝 Anti-censorship and anti-surveillance communication protocol</h3>
+<h3 align="center">🤝 検閲と監視に耐性がある通信プロトコル</h3>
 
 <p align="center">
   <a href="https://buildkite.com/berty/main"><img src="https://badge.buildkite.com/331d828ccb643f90f6302b13ea77ab716ec78d6631af54c987.svg?branch=master" alt="Build Status"></a>
@@ -23,45 +23,45 @@ menu:
   <a href="https://github.com/berty/berty/releases"><img src="https://badge.fury.io/gh/berty%2Fberty.svg" alt="GitHub version"></a>
 </p>
 
-## Introduction
+## はじめに
 
-**Berty** is an anonymous, secure, peer-to-peer protocol that doesn't need an internet connection to function.
+**Berty** は、匿名で安全なP2Pのインターネット接続を必要としない通信プロトコルです。
 
-There is a **protocol** that uses advanced cryptography and a **messenger app** that is built on top of the protocol.
+高度な暗号化をつかった**プロトコル** と、そのプロトコルの上に構築された **メッセンジャーアプリ** があります。
 
-- No phone number or email required to create an account
-- End-to-end encryption used to encrypt all conversations
-- Focus on leaking as little metadata as possible
-- Decentralized, distributed, serverless
+- アカウントを作成するために電話番号やメールアドレスは必要ありません
+- すべての会話にエンドツーエンド暗号化を使用しています
+- できるだけメタデータを少なくすることに焦点を当ています
+- 非中央集権的で、分散化されており、サーバーレスです
 - No concensus, no blockchain
-- No internet connection required (uses the [BLE technology](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) and mDNS)
-- Free forever, no data stored, transparent code, open-source
+- インターネットに接続している必要はありません（ [BLE technology](https://en.wikipedia.org/wiki/Bluetooth_Low_Energy) と mDNSを利用しています）
+- 永久に無料で、データを保存せず、透明性のあるコードで、オープンソースです
 
-Berty is currently developed by **Berty Technologies**, a French non-profit organization.
+Bertyは現在、フランスの非営利団体 **Berty Technologies**によって開発されています。
 
-Usages:
-- When you need to share sensitive information.
-- If you want to communicate with good anonymity.
-- If you don't want to use servers, because you want full control of your data.
-- In countries that have censorship and restrict network access and usage.
-- In areas with weak or no connection or cell reception.
-- When you travel and you want to communicate safely through insecure public connections.
+使い道
+- 機密情報を共有する必要があるとき。
+- あなたが高い匿名性でチャットをしたいとき。
+- サーバーを使用せず、あなたのデータを完全に制御したいとき
+- 検閲がある国にいて、ネットワークへのアクセスが制限されているとき
+- 電波が弱かったり、インターネット接続がない場所にいるとき
+- 旅行中などで、安全ではないかもしれないネットワークを通してチャットをしたいとき
 
-**Note: the project is made by a small team of humans who are not experts and who make mistakes. Please, do not hesitate to point out if you notice a bug or something missing.** _See the [contribute section](#contributing) below._
+**注意: このプロジェクトは、専門家ではなく、何かミスをするかもしれない少数の人間のチームによって行われています。 バグや何かおかしいことに気づいた場合は、遠慮せずに** _以下の [貢献セクション](#contributing) を参照してください。_
 
-> We cannot promise to give you the best app, but we can commit to doing our best in that direction.
+> 私たちはあなたに最高のアプリを提供することを約束することはできませんが、 私たちはそのためにベストを尽くすことを約束することができます。
 
-## Development Status
+## 開発状況
 
-**Berty is still under active development and should not be used to exchange important data**.
+**Bertyはまだ積極的な開発中であり、重要なデータを交換するために使用すべきではありません**。
 
-The current Berty Messenger implementation is not using the Berty Protocol yet, but OrbitDB directly. Which means the encryption is not safe, but the good news is that the current Berty Messenger app is already a P2P one!
+現在のBerty Messengerの実装は、まだBertyプロトコルを使用していませんが、OrbitDBを直接使用しています。 これは暗号化が完全ではないということですが、良いニュースは、現在のBerty MessengerはすでにP2Pアプリであることです。
 
-The current Berty Protocol is _partially implemented_. The API will certainly change in a near future, so be prepared to have breaking changes if you start using it right now.
+現在、 Berty Protocol は_部分的 _に実装されています。 そのためAPIは安定していません、使用する場合は破壊的変更があることを計画に入れておいてください
 
-_We will open betas for the different packages and apps soon, so anyone will be able to give it a try even without the coding skills. Subscribe to our newsletter if you want to be notified._
+_We will open betas for the different packages and apps soon, so anyone will be able to give it a try even without the coding skills. 通知を受けたい場合は、ニュースレターを購読してください。_
 
-**Note: this is an ongoing work. The repos are being opened progressively, and there will be more changes and updates.**
+**Note: this is an ongoing work. リポジトリは徐々に開かれており、より多くの変更や更新が行われます。**
 
 
 ### Berty Protocol
@@ -72,19 +72,19 @@ _We will open betas for the different packages and apps soon, so anyone will be 
 [![Code coverage](https://codecov.io/gh/berty/berty/branch/master/graph/badge.svg?token=rBPpNHNNow)](https://codecov.io/gh/berty/berty) -->
 
 
-A generic SDK that allows developers to write P2P applications. It contains everything needed (encryption, identities, network routing, group management, account management, device management, application lifecycle) so you can just focus on the high-level features of your app.
+開発者がP2Pアプリケーションを書くことを可能にするSDK 必要なすべてが含まれています (暗号化、同一性、ネットワークルーティング、グループ管理、アカウント管理 デバイス管理、アプリケーションのライフサイクル)、これによってあなたは重要な機能の開発に集中できます
 
-The main concept of the _Berty Protocol_ is the "group", a virtual place where multiple devices can share messages and metadata using [OrbitDB](https://github.com/orbitdb), which itself relies on [IPFS](https://ipfs.io/).
+_Berty Protocol_のメインコンセプトは"グループ"です。 [OrbitDB](https://github.com/orbitdb)を利用した、複数のデバイスがメッセージやデータを交換できる架空の場所であり、 それ自体は [IPFS](https://ipfs.io/) に依存するものである。
 
 Get it: `go get -u berty.tech/berty/v2`
 
 ### Berty Messenger
 
-A messenger application written in [React Native](https://reactnative.dev/), that uses the Berty Protocol using [gomobile-ipfs](https://github.com/ipfs-shipyard/gomobile-ipfs), which, in its turn, is using [gomobile](https://github.com/golang/mobile).
+[React Native](https://reactnative.dev/)で書かれたメッセンジャーアプリケーションで、[gomobile-ipfs](https://github.com/ipfs-shipyard/gomobile-ipfs)や[gomobile](https://github.com/golang/mobile) を利用してBerty Protocolを使用します。
 
-## Main items in the repo
+## リポジトリの主な項目
 
-* [./go](https://github.com/berty/berty/tree/master/go): Where all the Golang code belongs.
+* [./go](https://github.com/berty/berty/tree/master/go): すべてのGolangコードが属する場所。
     * [./go/pkg/**bertyprotocol**](https://github.com/berty/berty/tree/master/go/pkg/bertyprotocol): **Berty Protocol** _Golang SDK_ to create secure and autonomous groups using _IPFS_.
     * [./go/framework/bertybridge](https://github.com/berty/berty/tree/master/go/framework/bertybridge): gomobile entrypoint.
     * [./go/cmd/**berty**](https://github.com/berty/berty/tree/master/go/cmd/berty): Main **Berty CLI**, containing:
