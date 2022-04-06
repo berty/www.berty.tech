@@ -28,12 +28,12 @@ Avant le tournage, Protocol Labs nous a envoyé un grand questionnaire pour écr
 
 ## Quel est le problème que Berty est en train de résoudre ?
 
-There is more and more evidence of global mass surveillance and censorship thread over the world. This ultimately leads to an alarming threat to our privacy and freedom for every Earth citizen. Two observations can be made (and need to be solved!):
+Il existe de plus en plus de preuves de la surveillance de masse et la censure sont une réalité. En fin de compte, cela constitue une menace alarmante pour notre vie privée et notre liberté pour chaque citoyen de la Terre. Deux observations peuvent être faites (et doivent être résolues !) :
 
-1. Current public awareness of **threats to privacy** in digital communications is insufficient.
-2. Fighting censorship and surveillance effectively requires **innovative new tools** ready for wide adoption.
+1. La prise de conscience publique actuelle de**menaces à la vie privée**dans les communications numériques est insuffisante.
+2. La lutte contre la censure et la surveillance nécessite**de nouveaux outils innovants**prêts à être adoptés à grande échelle.
 
-That's why Berty was created as a decentralized unmonitorable, untraceable, and uncensorable messaging application. Berty and its protocol are intended for anyone concerned about their freedom. Certain groups of people are at higher risk because of their activity: journalists, military personnel, government officials, activists, corporate members, lawyers, whistleblowers. Berty was designed with them in mind.
+C'est pourquoi Berty a été créé comme une application de messagerie décentralisée non surveillable, intraçable et non censurable. Berty and its protocol are intended for anyone concerned about their freedom. Certain groups of people are at higher risk because of their activity: journalists, military personnel, government officials, activists, corporate members, lawyers, whistleblowers. Berty was designed with them in mind.
 
 ## What is the impact of your project on the ecosystem/world?
 
