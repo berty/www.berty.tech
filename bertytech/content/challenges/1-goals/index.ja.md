@@ -1,17 +1,17 @@
 ---
-title: "Goals of Berty"
+title: "Bertyの目標"
 id: 1
 icon: fal fa-rocket
 private: true
 ---
 
-* Provide a secure messenger that would preserve privacy and anonymity of its users
-* Create a chat application that works over P2P network on desktop and mobile platforms
-* Provide an easy to use Protocol, so that developers can create secure applications over P2P networks on desktop and mobile
-* Improve the strengths and entropy of P2P networks by adding a lot of new peers
-* Be able to do off-grid communication (offline-first)
-* Be resilient against censorship
-* Be resilient against mass surveillance by minimizing metadata leakage
-* Being an alternative to the existing models powered by GAFAM or controlled/controllable by the government
+* ユーザーのプライバシーと匿名性を維持する安全なメッセンジャーを提供すること
+* モバイル、PCプラットフォームで動作する、P2Pチャットアプリケーションをつくること
+* 開発者がP2Pネットワーク経由でセキュアなアプリケーションを作成できるように、使いやすいプロトコルを提供すること
+* 新しいピアをたくさん増やすことで、P2Pネットワークの強度とエントロピーを改善すること
+* オフグリッド通信が可能であること (オフラインファースト) (訳注: ここではWifiやモバイル通信を使わないローカルな通信を指しています)
+* 検閲に強いこと
+* メタデータ漏洩を最小限に抑えることにより、大規模監視に対する耐性を持つこと
+* 巨大な単一のIT企業によって提供される、または政府によって制御可能である既存のモデルに代わるものであること
 
-In working towards those goals, Berty is facing certain challenges.
+これらの目標に向けて取り組む上で、Bertyはいくつかの課題に直面しています。
