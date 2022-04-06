@@ -1,6 +1,6 @@
 ---
-title: "Assets"
-description: '🎨 Berty logos, icons, pictures, text, etc'
+title: "アセット"
+description: '🎨 Bertyのロゴ、アイコン、写真、テキストなど'
 icon: fab fa-github
 color: black
 open: true
@@ -9,11 +9,11 @@ menu:
     weight: 7
 ---
 
-# Assets
+# アセット
 
-**🎨 Berty logos, icons, pictures, text, etc**
+**🎨 Bertyのロゴ、アイコン、写真、テキストなど**
 
-## Source code
-Source code is available on [github](https://github.com/berty/assets)
+## ソース コード
+ソースコードは [github](https://github.com/berty/assets) で公開されています。
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/assets"><i class="fab fa-github"></i>berty/assets</a>
