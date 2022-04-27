@@ -68,7 +68,7 @@ Top Web3 players decided to support the event:
 * [Berty](https://berty.tech)
 * [Fluence](https://fluence.network/)
 * [StakeLab](https://www.stakelab.fr/)
-* [Samourai Coop](https://samourai.world]
+* [Samourai Coop](https://samourai.world)
 
 ## 🗣️ OUR TALKS
 
@@ -88,6 +88,6 @@ The topic given by Berty is a « Game Jam » where participant have to build a
 
 # IF YOU ARE IN PARIS: 
 
-We are super excited to meet you all again after this long period of time. If you are around, drop us a message on Discord to meet. Follow our journey on [Twitter](https://twitter.com/berty) and the one of [ParisP2P](https://twitter.com/parisp2p).
+We are super excited to meet you all again after this long period of time. If you are around, drop us a message on Discord to meet. Follow our journey on [Twitter](https://twitter.com/berty) and on the one of [ParisP2P](https://twitter.com/parisp2p). Cheers! 
 
 
