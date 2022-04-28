@@ -53,7 +53,9 @@ Yes, we are working on a desktop version. This is probably the first time it has
 
 We recently met with Alec M. Wantoch, the cofounder of Valist.io.
 
-For those who are interested in what Valist does, we put you the (very good) presentation made by IPFS:  <iframe width="560" height="315" src="https://www.youtube.com/embed/7ak6PQPDBkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+For those who are interested in what Valist does, we put you the (very good) presentation made by IPFS: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ak6PQPDBkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 We had a great exchange, and we invited him to speak at an upcoming Berty Builders Meeting so that he could introduce you to Valist.
 
