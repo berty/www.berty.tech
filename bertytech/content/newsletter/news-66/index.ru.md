@@ -58,7 +58,9 @@ Finally, we're getting ready for the release. But we'll talk about that later :D
 
 After Dietrich from Protocol Labs, we had the pleasure to host Holmes Wilson from [@zbayapp](https://twitter.com/ZbayApp). He discussed the new thing he's working on, a TOR and IPFS based p2p team chat app called Quiet. We had a blast!
 
-Holmes faces the same difficulties and challenges as we do. It was a great presentation with a very interesting final conversation.  <iframe width="560" height="315" src="https://www.youtube.com/embed/TZaa0CUyBaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+Holmes faces the same difficulties and challenges as we do. It was a great presentation with a very interesting final conversation. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZaa0CUyBaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 👉 Make sure you join our Meetup to know upcoming meeting: https://www.meetup.com/berty-hq
 
