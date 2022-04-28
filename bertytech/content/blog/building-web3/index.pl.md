@@ -20,7 +20,9 @@ Even if Berty is not based on a blockchain, we feel close and connected to this 
 
 *(Maria, Zak if you're reading this, thank you so much for your patience and all the energy you put into it! We are truly grateful).*
 
-Before the shooting, Protocol Labs sent us a great questionnaire to write the script for the video. We thought we would share our answers with you here. We hope it can serve as a complementary resource to this video and perhaps add some insight to our approach. <iframe width="560" height="315" src="https://www.youtube.com/embed/cC-tXnMyiBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+Before the shooting, Protocol Labs sent us a great questionnaire to write the script for the video. We thought we would share our answers with you here. We hope it can serve as a complementary resource to this video and perhaps add some insight to our approach.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cC-tXnMyiBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
