@@ -40,7 +40,10 @@ Here's what we've been up to over the past few weeks:
 
 ### Berty Builders Meetings
 
-A few weeks ago, we had the pleasure of welcoming Dietrich from Protocol Labs. If you have missed it, we uploaded his lecture online a few days ago.  It's the perfect opportunity to learn a lot about internet browsers, web3, IPFS, and a lot of other exciting things. (oh, and if you have seen it, don't hesitate to watch it again 😉) <iframe width="560" height="315" src="https://www.youtube.com/embed/CTiTiNqe7x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen mark="crwd-mark"></iframe>
+A few weeks ago, we had the pleasure of welcoming Dietrich from Protocol Labs. If you have missed it, we uploaded his lecture online a few days ago.  It's the perfect opportunity to learn a lot about internet browsers, web3, IPFS, and a lot of other exciting things. (oh, and if you have seen it, don't hesitate to watch it again 😉)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CTiTiNqe7x0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ### Перевод
