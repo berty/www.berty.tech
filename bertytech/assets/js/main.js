@@ -70,14 +70,15 @@ $(function() {
     if (window.location.hash.length > 1) {
       var qrcode = new QRCode("id-qrcode", {
         text: "https://berty.tech/id#" + window.location.hash.substr(1),
-        width: 290,
-        height: 290,
-        colorDark : "#000000",
+        width: 180,
+        height: 180,
+        colorDark : "#3F49EA",
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.L
       });
       $('#id-block-loader').remove();
       $('#id-block-id').removeClass('display-none');
+      $('.qr-logo').removeClass('display-none');
 
       var parts = window.location.hash.substr(1).split("/");
       if (parts.length == 3) {
