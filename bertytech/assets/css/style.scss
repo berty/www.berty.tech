@@ -4394,10 +4394,10 @@ header.small.id {
   margin: 0;
   align-items: center;
   box-shadow: none;
-  background-image: url('../img/iphone.png');
+  background-image: url('../img/iPhone_12_Pro-doublemock.png');
   background-repeat: no-repeat;
-    background-position: right;
-    background-size: 509px;
+  background-position: 110%;
+  background-size: 559px;
 }
 .open-app-button {
   max-width: 244px;
@@ -4542,6 +4542,10 @@ header.small.id {
   .mob {
     display: flex;
     margin-top: 25px;
+
+    .mockup {
+      width: 100%;
+    }
   }
  .block-id {
   margin-top: 50px;
