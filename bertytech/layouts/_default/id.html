@@ -1,0 +1,12 @@
+{{.Scratch.Set "body-class" "page-single wh id"}}
+{{ partial "head" . }}
+
+<header class="small id"></header>
+
+<div class="content id">
+  <div class="container">
+    {{.Content}}
+  </div><!-- /.container -->
+</div>
+
+{{ partial "script" . }}
