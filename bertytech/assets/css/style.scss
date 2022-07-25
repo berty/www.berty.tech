@@ -4387,6 +4387,13 @@ header.small.id {
   padding-top: 100px;
   margin-bottom: 0;
 }
+.id .navbar-dark .navbar-nav .nav-link {
+  color: #393C63;
+  transition: all .3s;
+  &:hover {
+    color: #fff;
+  }
+}
 .content.id {
   background: #1B1C2B;
   height: calc(100vh - 100px);

@@ -17,8 +17,8 @@ function getQueryVariable(query, variable) {
     }
   }
 }
-
 $(function() {
+  $('body.id .navbar-brand img').attr('src', '../img/Berty-dark-logo.svg');
   // blog articles on homepage
   if($('.slick-carousel').length){
     $('.slick-carousel').slick({
@@ -110,4 +110,5 @@ $(function() {
       $('#id-block-error').removeClass('display-none');
     }
   }
+  
 });
