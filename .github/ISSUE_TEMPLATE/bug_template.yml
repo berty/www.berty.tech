@@ -1,0 +1,58 @@
+name: "Bug report"
+description: Report a bug found while using Berty.tech website.
+labels: ["bug", "🔍 Ready for Review"]
+assignees:
+- peletron
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: input
+    id: Environment
+    attributes:
+      label: Environment
+      description: What is the Environment you are using?
+      placeholder: e.g. MacOS Monterey 12.4 + Google Chrome 104.0.5112.79
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      placeholder: e.g. iPhone 12 Pro Max or Macbook Pro 16'' M1 Pro
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+       1. Navigate to the ...
+       2. Click on the link ...
+       3. Change name of ...
+       4. Click Save button ...
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior
+      description: A description including screenshots, stack traces etc.
+      placeholder: Currently ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Please provide what would be your expectation to happen.
+      placeholder: In this situation, website should ...
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      placeholder: Any other details?
