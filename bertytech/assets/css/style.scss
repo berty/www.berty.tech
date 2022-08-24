@@ -4536,6 +4536,7 @@ header.small.id {
   display: none;
 }
 .block-id {
+  margin-left: 0;
   max-width: 328px;
 }
 .block-id-qrcode img.qr-logo {
@@ -4549,13 +4550,13 @@ header.small.id {
   .mob {
     display: flex;
     margin-top: 25px;
-
     .mockup {
       width: 100%;
     }
   }
  .block-id {
   margin-top: 50px;
+  margin-left: auto;
  }
  .content.id {
   height: auto;
@@ -4569,5 +4570,8 @@ header.small.id {
  }
  .mob .qr-ore-btn {
   display: flex;
+ }
+ .block-id-qrcode img.qr-logo {
+  left: calc(50% - 20px);
  }
 }
