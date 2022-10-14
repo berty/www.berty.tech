@@ -36,7 +36,7 @@ This repo contains static websites, built with `hugo`. We use `node`, `npm` and 
 Before you clone this repository ensure you have the following software installed:
 
 - [git](https://git-scm.com) - the used source code management software
-- [git-lfs](https://git-lfs.github.com) - git add on for management of large files
+- [git-lfs](https://git-lfs.github.com) - git add-on for management of large files
 
 For building the websites the following software is necessary:
 
@@ -50,7 +50,7 @@ _TODO: generic contribute intro_
 
 ### Translating 🌐✍️
 
-_TODO: add special instrutions for translating_
+_TODO: add special instructions for translating_
 
 ## Maintainers
 
