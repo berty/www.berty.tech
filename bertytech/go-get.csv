@@ -9,5 +9,6 @@ yolo                    https://github.com/berty/yolo
 ipfs-webui-packed       https://github.com/berty/ipfs-webui-packed
 go-libp2p-tor-transport https://github.com/berty/go-libp2p-tor-transport
 go-ipfs-repo-encrypted  https://github.com/berty/go-ipfs-repo-encrypted
+weshnet                 https://github.com/berty/weshnet
 # Might be temporary if the main repo is not dead :
 go-libtor               https://github.com/berty/go-libtor
