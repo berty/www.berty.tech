@@ -50,7 +50,16 @@ _TODO: generic contribute intro_
 
 ### Translating 🌐✍️
 
-_TODO: add special instructions for translating_
+- Go on our dedicated page: https://translate.berty.community
+- Create an account by signing up.
+- Select `berty/berty` if you want to help with the app translation or on `berty/www.berty.tech` for website translation.
+- Select the language you wish to translate to.
+- Click on the branch you want to translate in the tree.
+- On the left side, you will be able to pick a sentence.
+- On the right side, you can add your translation in the “add translation here” section.
+- Don’t forget to save before jumping on the next sentence.
+
+For more context read [This blog post](https://berty.tech/blog/berty-translation).
 
 ## Maintainers
 
