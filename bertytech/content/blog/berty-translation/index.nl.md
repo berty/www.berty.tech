@@ -1,6 +1,6 @@
 ---
 author: Pierre
-title: Translate Berty!
+title: Vertaal Berty!
 date: 2020-12-09
 #image: "2020-04-12-Berty-BlogPost-translate-Berty.png"
 image: "2020-04-12-Berty-BlogPost-translate-Berty.png"
@@ -9,7 +9,7 @@ categories:
 tags:
   - how-to
   - berty
-description: "Help us to make Berty available in any language!"
+description: "Help ons Berty beschikbaar te maken in elke taal!"
 ---
 
 TL; DR: Help ons de Berty app & website te vertalen via een platform genaamd Crowdin. https://translate.berty.community
