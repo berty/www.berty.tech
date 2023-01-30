@@ -1,6 +1,6 @@
 ---
 author: pierre
-title: "Berty is NOT war-ready (yet)"
+title: "Berty is (nog) niet klaar voor oorlog"
 date: 2022-03-01
 #image: "berty-updates-cover.png"
 image: "berty-updates-cover.png"
@@ -12,46 +12,46 @@ tags:
 description: "When Russia invaded Ukraine, Berty was downloaded as a “war-proof” messenger alternative. Berty should not yet be used as such. Here is why."
 ---
 
-# Berty is NOT war-ready (yet).
+# Berty is (nog) niet klaar voor oorlog.
 
-*Paris, March 1st.*
+*Parijs, 1 maart.*
 
-When Russia invaded Ukraine, Berty was downloaded as a “war-proof” messenger alternative. **Berty should not yet be used as such.** It is our duty to be extremely transparent about Berty's state of development in this context. This is a serious set of circumstances and there are human lives involved.
+Toen Rusland Oekraïne binnenviel, werd Berty gedownload als een "oorlogsbestendig" alternatieve messenger. **Berty moet nog niet zo gebruikt worden.** Het is onze plicht om in deze context uiterst transparant te zijn over de stand van zaken in Berty. Het gaat hier om ernstige omstandigheden en daarbij gaat het om mensenlevens.
 
-For two major reasons, it’s sadly too early for Berty to be deployed for crisis use.
+Om twee belangrijke redenen is het jammer genoeg nog te vroeg om Berty voor crisisgebruik in te zetten.
 
 {{<tweet id="1497542570137825280">}}
 
 
-## Berty Protocol has not yet been audited.
+## Het Berty Protocol is nog niet gecontroleerd.
 
-This project is run by a small team of humans. And as you know, humans are prone to making mistakes. Although we have put immeasurable caution and effort into building a secure, decentralized communication protocol, it is possible that there are still unidentified vulnerabilities.
+Dit project wordt uitgevoerd door een klein team mensen. En zoals u weet zijn mensen geneigd fouten te maken. Hoewel we onmeetbare voorzichtigheid en inspanning hebben getoond om een veilig, gedecentraliseerd communicatieprotocol op te stellen, het mogelijk dat er nog steeds onherkenbare kwetsbaarheden zijn.
 
-We are considering an audit that the community will fund in the near future. To be meaningful, this audit must be independently conducted and verified.
+Wij overwegen momenteel een audit die de community binnenkort zal financieren. Om zinvol te zijn, moet deze audit onafhankelijk uitgevoerd en geverifieerd worden.
 
-## Berty V1 is still under active development.
+## Berty V1 is nog steeds in actieve ontwikkeling.
 
-In late 2021, we published Berty unannounced on the App Store and Play Store to test out the release process. As a result, we uncovered several stability problems on 4G networks (cf [our latest newsletter](https://berty.tech/newsletter/news-71/)).  We decided to postpone our public launch announcement to a future date.
+Eind 2021 publiceerden we Berty onaangekondigd in de App Store en Play Store om het uitgavenproces te testen. Als gevolg daarvan hebben we verschillende stabiliteitsproblemen ontdekt op 4G-netwerken (cf [onze laatste nieuwsbrief](https://berty.tech/newsletter/news-71/)).  We hebben besloten om onze openbaarmaking tot een latere datum uit te stellen.
 
-There’s a significant chance that, depending on their 4G provider, users will encounter inconsistent behavior adding contacts and exchanging messages, or their app may be prone to crashing. We have identified the cause and are actively working on it. The next update should address it.
+Er is een grote kans dat, afhankelijk van hun 4G-provider, gebruikers zullen te maken krijgen met inconsistent gedrag door contacten toe te voegen en berichten uit te wisselen, of hun app kan mogelijk vatbaar zijn om te crashen. We hebben de oorzaak vastgesteld en werken er actief aan. De volgende update moet daar aandacht aan besteden.
 
-There are also device performance concerns that would particularly affect users in adverse use environments. Berty v1 consumes the battery quickly. We’re working hard on this, recognizing that battery life is critical in these scenarios. In the meantime, please keep this issue in mind if your access to electricity is limited.
+Er zijn ook zorgen over de prestaties van het apparaat die met name gevolgen zouden hebben voor gebruikers in slechte omgevingen. Besty v1 verbruikt de batterij snel. We werken hier hard aan, in het besef dat de levensduur van de batterij in deze scenario's cruciaal is. In de tussentijd moet u dit probleem in gedachten houden als uw toegang tot elektriciteit beperkt is.
 
-If you are looking for a secure messaging alternative, we recommend using Signal, despite its lack of p2p or offline communication functionality.
+Als je op zoek bent naar een veilig bericht-alternatief, raden we het gebruik van Signal, ondanks het feit dat p2p of offline communicatiefunctionaliteit ontbreekt.
 
-## How to help
+## Hoe help je
 
-Since all our work is public & free & open source, everyone can [contribute](https://berty.tech/contribute) to get things done faster.
+Aangezien al ons werk openbaar & gratis & open source is, kan iedereen [bijdragen](https://berty.tech/contribute) om dingen sneller af te ronden.
 
-We encourage you to:
+We moedigen je aan om:
 
-- check out all of our code here: [https://github.com/berty/berty](https://github.com/berty/berty)
-- get in touch with us and the community on Discord: [https://crpt.fyi/berty-discord](https://crpt.fyi/berty-discord)
+- al onze code hier: [https://github.com/berty/berty](https://github.com/berty/berty) te bekijken
+- neem contact met ons en de community op Discord: [https://crpt.fyi/berty-discord](https://crpt.fyi/berty-discord)
 
-## Concluding notes
+## Notities afrondingen
 
-This dramatic event reinforces the belief that we are right to build a future-proof messenger for all adverse communication situations. We wish to extend our sympathy to everyone who has been affected by this situation, particularly those who have experienced violence, loss, or displacement.
+Deze dramatische gebeurtenis sterkt ons in onze overtuiging dat we terecht een toekomstbestendige messenger moeten bouwen voor alle ongewenste communicatiesituaties. Wij willen ons medeleven betuigen aan iedereen die door deze situatie is getroffen, met name aan degenen die te maken hebben gehad met geweld, verlies of ontheemd.
 
-Our goal is to provide the necessary tools to enable communication in any situation. War is one of them. We regret that despite already having Bluetooth communication, Berty is not yet ready for immediate use, but our duty is to be transparent and honest with you. Please continue to use Berty for development and experimentation. We’ll keep you updated in the newsletter and on social media about Berty’s limitations and recommended use.
+Ons doel is om in alle situaties de nodige hulpmiddelen aan te reiken om communicatie mogelijk te maken. Oorlog is er een van. We betreuren dat, ondanks dat we al Bluetooth-communicatie hebben. Berty is nog niet klaar voor onmiddellijk gebruik, maar het is onze plicht om transparant en eerlijk tegen u te zijn. Blijf Berty gebruiken voor ontwikkeling en expirimenteren alstublief. We houden u op de hoogte in de nieuwsbrief en op sociale media over de beperkingen van Berty en het aanbevolen gebruik.
 
-Take care.
+Het beste.
