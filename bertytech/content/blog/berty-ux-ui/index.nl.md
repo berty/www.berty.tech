@@ -50,39 +50,39 @@ Het was nu tijd om de echte deal te starten en voor mij de mogelijkheid om Berty
 
 👉 We moeten ervoor zorgen dat het gevoel heeft dat je daar niet alleen bent.
 
-### Having an easy contact request process is not simple
+### Een eenvoudig contact verzoek proces is niet eenvoudig
 
-* The more significant struggle our users faced was adding a new contact. We get a lot of questions like:
+* Een belangrijkere probleem waar onze gebruikers tegen aan liepen was het toevoegen van een nieuw contact. We krijgen veel vragen zoals:
 
-    * _How do I add a contact?_
-    * _Why do I need to send an invite?_
-    * _Where is my key?_
-    * _What is my key?_
-    * _Why do I need a key?_
+    * _Hoe voeg ik een contact toe?_
+    * _Waarom moet ik een uitnodiging sturen?_
+    * _Waar is mijn sleutel?_
+    * _Wat is mijn sleutel?_
+    * _Waarom heb ik een sleutel nodig?_
 
-👉 We need to make it super easy and efficient
+👉 We moeten het super eenvoudig en efficiënt maken
 
-### "Message received acknowledgment."
+### "Bericht ontvangen bevestiging"
 
-* Users are used to the little checkmark next to a message (✔️).
-* If there is nothing, they thought something wrong happened.
+* Gebruikers zijn gewend aan een kleine vink naast het bericht (✔️).
+* Als er niets is, dachten ze dat er iets verkeerd gebeurde.
 
-👉 We need to 'visually prove' to the user it's working fine
+👉 We moeten 'visueel bewijs' geven aan de gebruiker dat het goed werkt
 
-### Contact list vs. Conversation list
+### Lijst met contactpersonen vs. Lijst met gesprekken
 
-* In v1, we had a contact list and a conversation list. They looked quite the same.
-    * 50% of the users found it confusing.
-    * 50% didn't get why we bothered with the contact list in the first place 😀
+* In v1 hadden we een contactenlijst en een gesprekslijst. Ze zagen er vrijwel hetzelfde uit.
+    * 50% van de gebruikers vond het verwarrend.
+    * 50% begreep niet waarom we de moeite deden voor de contactenlijst op de eerste plaats 😀
 
 ![Old app screens](berty_old_contact.png)
 
-👉 We got rid of the contact list and have to make it clear and usable
+👉 We hebben de contactlijst verwijderd en moeten het duidelijk en bruikbaar maken
 
 <br/>
 <br/>
 
-## New UI: the team's expectations
+## Nieuwe UI: de verwachtingen van het team
 
 We are a new app, nobody knows us.
 
