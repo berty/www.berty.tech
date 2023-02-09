@@ -84,7 +84,7 @@ Het was nu tijd om de echte deal te starten en voor mij de mogelijkheid om Berty
 
 ## Nieuwe UI: de verwachtingen van het team
 
-We are a new app, nobody knows us.
+We zijn een nieuwe app, niemand kent ons.
 
 * We don't have a second chance to make a first impression.
 * We are building an app that will launch in 2020, let's make it look like it.
