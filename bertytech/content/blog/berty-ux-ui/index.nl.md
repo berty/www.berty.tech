@@ -86,7 +86,7 @@ Het was nu tijd om de echte deal te starten en voor mij de mogelijkheid om Berty
 
 We zijn een nieuwe app, niemand kent ons.
 
-* We don't have a second chance to make a first impression.
+* We hebben geen tweede kans om een eerste indruk te maken.
 * We are building an app that will launch in 2020, let's make it look like it.
 * On the bright side, we don't have to deal with design or code legacy (for now).
 
