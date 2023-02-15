@@ -87,7 +87,7 @@ Het was nu tijd om de echte deal te starten en voor mij de mogelijkheid om Berty
 We zijn een nieuwe app, niemand kent ons.
 
 * We hebben geen tweede kans om een eerste indruk te maken.
-* We are building an app that will launch in 2020, let's make it look like it.
+* We zijn een app aan het bouwen die in 2020 van start gaat, laten we het er zo uitzien.
 * On the bright side, we don't have to deal with design or code legacy (for now).
 
 Good UX can solve many problems:
