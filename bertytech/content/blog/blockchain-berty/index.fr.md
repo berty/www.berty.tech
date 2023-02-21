@@ -1,7 +1,7 @@
 ---
 author: Zooma
 title: "Blockchain & Berty"
-date: 2021-01-14
+date: 14/01/2021
 #image: "2021-01-04-Berty-Blogpost-Blockchain.jpg"
 image: "2021-01-04-Berty-Blogpost-Blockchain.jpg"
 categories:
@@ -10,7 +10,7 @@ tags:
   - berty
   - internet
   - vie privée
-description: "Is Berty a blockchain?"
+description: "Berty est-elle une blockchain?"
 ---
 
 # Blockchain & Berty: Glad you asked!
