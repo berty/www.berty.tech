@@ -1,6 +1,6 @@
 ---
-title: "Berty Protocol"
-description: The offline-first P2P alternative to the Signal Protocol
+title: "Wesh Protocol"
+description: The decentralized offline-first communication protocol
 icon: fal fa-book
 color: blue
 display_nav: true
@@ -11,17 +11,17 @@ aliases:
     - /protocol
 ---
 
-# Berty protocol
+# Wesh protocol
 
 ## Introduction
 
-This document provides a technical description of the Berty Protocol.
-The Berty Protocol provides secure communication between devices owned by the
+This document provides a technical description of the Wesh protocol.
+The Wesh protocol provides secure communication between devices owned by the
 same account, communication between contacts in one-to-one conversations,
 as well as communication between several users in multi-member groups. This
 paper will explain how those points are implemented in a distributed and
 asynchronous way, both with or without internet access using IPFS and direct
-transports such as BLE. It will also describe how the Berty Protocol provides
+transports such as BLE. It will also describe how the Wesh protocol provides
 end-to-end encryption and perfect forward secrecy for all the exchanged messages.
 
 > :warning: Warning
@@ -39,6 +39,7 @@ end-to-end encryption and perfect forward secrecy for all the exchanged messages
 > feedback, we look forward to reading it. Please contact us using one of the
 > means listed on this page: [berty.tech/community#-how-to-contact-us](https://berty.tech/community#-how-to-contact-us)
 
+The Wesh protocol is part of the Wesh Network product and was previously named Berty Protocol.
 
 ## Protocol Stack
 
@@ -65,7 +66,7 @@ PubSub, Nat Traversal, a collection of transports, etc...
 
 #### Implications
 
-Berty uses IPFS for the specific purpose of instant messaging. The utilization
+The Wesh protocol uses IPFS for the specific purpose of instant messaging. The utilization
 of a peer-to-peer network for instant messages provides two main advantages:
 
 * **It is virtually impossible to block it or take it down**: anyone can launch a
@@ -76,7 +77,7 @@ concerned, or even to force it to shut down its servers and stop its activity.
 * **It is difficult to monitor**: there is no central server to spy on nor central
 directory to compromise, thus metadata collection is greatly minimized. Instead
 of a directory linking public keys to personal data such as telephone numbers,
-the Berty Protocol uses a combination of TOTP and a public key to generate
+the Wesh protocol uses a combination of TOTP and a public key to generate
 rendezvous point addresses and register its users on IPFS, who can later be
 contacted by peers wishing to communicate.
 
@@ -118,7 +119,7 @@ could find each other.
 Peers need to be able to generate on their own, the same address for a given
 rendezvous using previously shared secrets.
 
-In the Berty Protocol, the address of a rendezvous point is generated from two
+In the Wesh protocol, the address of a rendezvous point is generated from two
 values:
 
 * A resource ID
@@ -143,14 +144,14 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
 }
 ```
 
-There are two types of rendezvous points in the Berty Protocol:
+There are two types of rendezvous points in the Wesh protocol:
 
-* [**Public rendezvous point:**](#contact-request) This rendezvous point is
+* [**Public rendezvous point:**](docs/protocol/#contact-request) This rendezvous point is
 used by an account to receive contact requests. The resource ID used here is
 the Account ID and the seed can be renewed at will by the user, so it is
 possible to revoke the ability to send contact requests to users having only
 the previous seed.
-* [**Group rendezvous point:**](#invitation) This rendezvous point is used to
+* [**Group rendezvous point:**](docs/protocol/#invitation) This rendezvous point is used to
 exchange messages within a group. The resource ID used here is the Group ID,
 and the seed cannot be changed.
 
@@ -166,7 +167,7 @@ is sending its rendezvous point list to the peers it connects to via a direct
 transport. The advantage is that it works in this particular case with almost
 instantaneous results, but the disadvantage is that it raises privacy
 concerns. We are still working on this process to improve this point.
-More info in [Specificities of direct transport](#specificities-of-direct-transport)
+More info in [Specificities of direct transport](docs/protocol/#specificities-of-direct-transport)
 section.
 
 ### Direct Transport
@@ -183,9 +184,9 @@ for inter-OS communications. With Android Nearby and Multipeer Connectivity,
 messages can be exchanged over a Wi-Fi direct connection instead of BLE which
 is much faster and reliable.
 
-It is possible to fully use the Berty Protocol without ever accessing the
+It is possible to fully use the Wesh protocol without ever accessing the
 Internet: create an account, add contacts to it, join conversations and send
-messages as long as there are Berty users within a Bluetooth range.
+messages as long as there are Wesh users within Bluetooth range.
 
 ### Conflict-free Replicated Data Type
 
@@ -202,7 +203,7 @@ once synchronized, have exactly the same sorted list of messages.
 
 The solution to this problem is [Conflict-free Replicated Data Type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
 (CRDT), which is a data structure allowing a consistent ordering of the
-messages on a distributed system. Berty relies on [OrbitDB](https://github.com/berty/go-orbit-db)
+messages on a distributed system. Wesh relies on [OrbitDB](https://github.com/berty/go-orbit-db)
 which implements CRDT. The CRDT provides optimistic replication and strong
 eventual consistency, which assures that once synchronized, every peer will
 have the same version of the message list.
@@ -254,10 +255,10 @@ func compareClock(a, b lamportClock) int {
 
 ### Account Creation
 
-In order to use the Berty Protocol, a user will have to create an account. No
+In order to use the Wesh protocol, a user will have to create an account. No
 personal data is required for the Account Creation. Please note that in the
-whole Berty Protocol, all key pairs will be X25519 for encryption and Ed25519
-for signature. See the [Cryptography](#cryptography) section for more details
+whole Wesh protocol, all key pairs will be X25519 for encryption and Ed25519
+for signature. See the [Cryptography](docs/protocol/#cryptography) section for more details
 about this choice.
 
 **Account creation steps:**
@@ -265,13 +266,13 @@ about this choice.
 1. Generate Account ID Key Pair. This operation will not be repeated. This key
 pair is the identity of the account, hence it is not possible to change it.
 2. Generate Alias Key Pair. Operation will not be repeated. More details on
-Alias Key Pair in [*Alias Identity*](#alias-identity).
+Alias Key Pair in [*Alias Identity*](docs/protocol/#alias-identity).
 3. Generate Device ID Key Pair on device used for account creation. This
 operation will be repeated on every new device.
-See [*Linking Devices*](#linking-devices) for more information. This key pair
+See [*Linking Devices*](docs/protocol/#linking-devices) for more information. This key pair
 is the identity of the device.
 4. Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to
-receive a Contact Request. See [*Adding Contacts*](#adding-contacts) for more
+receive a Contact Request. See [*Adding Contacts*](docs/protocol/#adding-contacts) for more
 information. This operation can be repeated anytime.
 
 Since there is no central directory, it is not required to have access to the
@@ -284,7 +285,7 @@ and will therefore be able to add each other as a contact.
 
 ### Linking Devices
 
-In the Berty Protocol, a user can use multiple devices within the same
+In the Wesh protocol, a user can use multiple devices within the same
 account, which means that those devices need to be linked with each other in
 order to synchronize the Account's contact list, group list, settings, etc...
 To add a device B, to an existing Account on a device A, the linking steps
@@ -324,8 +325,8 @@ shall not be proposed to the user, unless they want to automate this process,
 for example, in the context of linking a range of servers to an Account with a
 script that could automatically check that the fingerprints match.
 
-We recommend to developers implementing an application using the Berty
-Protocol to follow this state diagram to choose a challenge on Device A:
+We recommend to developers implementing an application using the Wesh
+protocol to follow this state diagram to choose a challenge on Device A:
 
 ![challenge-choice](./SJ6dgzaiU.png)
 
@@ -337,12 +338,12 @@ secrets as every other device. Hence it has the same capabilities as every
 other device, for example the capability to link other devices, send messages,
 join groups or add contacts. There is no hierarchy between devices linked to
 an account.
-* **Device synchronization:** Since Berty is an asynchronous protocol, two
+* **Device synchronization:** Since Wesh is an asynchronous protocol, two
 devices need to be online at the same time to be synchronized. However, it is
 possible to palliate this problem using replication devices, whose sole
 purpose is to provide high availability for content. Those devices are not
 able to decrypt messages and all they can do is verify their authenticity
-(see [*High Availability*](#high-availability) for more information).
+(see [*High Availability*](docs/protocol/#high-availability) for more information).
 
 ### Adding Contacts
 
@@ -355,7 +356,7 @@ the conversation can begin
 
 When an Account A (the Requester) wants to add an Account B (the Responder) to
 its contacts, it needs to know the Responder's Public rendezvous point. This
-[rendezvous point](#rendezvous-points) is derived from the RDV Seed and the
+[rendezvous point](docs/protocol/#rendezvous-points) is derived from the RDV Seed and the
 Account ID. Thus the Responder first needs to share his RDV Seed and his
 Account ID with the Requester, so that the latter can compute the RDV Point.
 This information can be sent by different means: an URL sent by message, a
@@ -469,7 +470,7 @@ Requester or the Responder.
 ##### Limitations
 
 * **Device availability:** Please note that the Handshake is the only
-synchronous operation of the Berty Protocol: in order to succeed, both devices
+synchronous operation of the Wesh protocol: in order to succeed, both devices
 need to be online at the same time, which is usually the case if the Requester
 has scanned a QRCode on the Responder's Device, but which may also not be the
 case if the Requester has clicked on a URL received by message. In the case
@@ -497,20 +498,20 @@ A Group is divided into two logs: a message log and a metadata log.
 of the group can download only a part of the message log if they want to (for
 example only the 1000 last messages). Besides, members cannot decrypt messages
 sent before their arrival due to the Symmetric Ratchet Protocol
-(see [*Encryption*](#encryption) for more information).
+(see [*Encryption*](docs/protocol/#encryption) for more information).
 * **Metadata log:** Contains all the metadata of the Group. Since it contains
 essential information, members of the group shall download the whole metadata
 log. Secrets are exchanged on this log.
-[Arrivals of new members](#joining-a-group) are also announced on this log, so
+[Arrivals of new members](docs/protocol/#joining-a-group) are also announced on this log, so
 if a new member does not download the whole metadata log they will not know
 the full list of members, thus they will not be able to exchange secrets with
 them and therefore, they will not be able to decrypt their messages.
 
 ### Types of Groups
 
-In the Berty Protocol, there are three different types of Groups: Account
-Group, Contact Group, and Multi-Member Group. A Group Member is a Berty user
-(an account) in a Group. Groups are essential for communication in Berty, and
+In the Wesh protocol, there are three different types of Groups: Account
+Group, Contact Group, and Multi-Member Group. A Group Member is a Wesh user
+(an account) in a Group. Groups are essential for communication in the Wesh protocol, and
 they have their own keys and secrets shared between all the Group Members:
 
 * **Group Secret:** The Group Secret is a symmetric key used to
@@ -572,7 +573,7 @@ ID, specific to this Group (derived from the Group ID and some secret
 accounts). Similarly their devices will use a Member Device ID (randomly
 generated). Hence users knowing each other’s Account ID (namely contacts) will
 not be able to recognize each other in Multi-Member Groups, unless they want
-to (see [Alias Identity](#alias-identity)).
+to (see [Alias Identity](docs/protocol/#alias-identity)).
 
 ![multi-member-group](./HyEDRMvO8.png)
 
@@ -632,7 +633,7 @@ the Group ID.
 
 ### Encryption
 
-In the Berty Protocol, all communications are fully end-to-end encrypted using
+In the Wesh protocol, all communications are fully end-to-end encrypted using
 [Symmetric-key Ratchet](https://signal.org/docs/specifications/doubleratchet/#symmetric-key-ratchet).
 Every time a user wants to send a message to someone, a Message Key is derived
 from their Chain Key using [HKDF](https://tools.ietf.org/html/rfc5869).
@@ -644,7 +645,7 @@ then used to encrypt the message and will not be reused to encrypt other message
 Each member's device within a group has a different Chain Key. The Group ID is
 included in the parameters of the HKDF to make the derived keys
 [context-specific](https://tools.ietf.org/html/rfc5869#section-3.2). At the
-beginning of the conversation members [share their device's Chain Key](#new-member-arrival)
+beginning of the conversation members [share their device's Chain Key](docs/protocol/#new-member-arrival)
 with the other participants. To decrypt messages sent by other participants,
 they have to follow the same process and derive the Message Key from the Chain
 Key of the sender with the HKDF for every message they receive.
@@ -679,7 +680,7 @@ an invitation.
 
 An invitation is composed of the Group ID, the Group Secret, the Group Secret
 Sig and the Attachment Key. An invitation can thus be created by any member of
-the Group. With the invitation, a Berty user can compute the [Rendezvous Point](#rendezvous-points)
+the Group. With the invitation, a Wesh user can compute the [Rendezvous Point](docs/protocol/#rendezvous-points)
 of the Group, which is derived from the Group ID.
 
 Once the RDV Point has been computed, the user is able to download the
@@ -729,7 +730,7 @@ current chain key of every member of the group.
 Now that every member of the group has the chain key of the new member and the
 new member has the chain key of every member of the group, everyone is able to
 send and receive messages. To do so, they have to first derive a Message Key
-from their Chain Key following the [symmetric ratchet protocol](#encryption).
+from their Chain Key following the [symmetric ratchet protocol](docs/protocol/#encryption).
 
 A Member who wants to send messages to the group has to post a Message Entry
 on the Message Log:
@@ -766,7 +767,7 @@ obtain a Message Key older than the current Chain Key.
 #### Limitations
 
 * **Invitation expiration:** As discussed earlier, there is no expiration time
-in the Berty Protocol due to its asynchronous nature. Thus invitations do not
+in the Wesh protocol due to its asynchronous nature. Thus invitations do not
 expire, are not nominative and can be used any number of times. Furthermore,
 contrary to the Account RDV Point, the Group RDV Point cannot be renewed at
 will by the Members and thus cannot be used to escape unwanted arrivals.
@@ -784,15 +785,15 @@ member of the group and then have to receive a secret entry from every member
 of the group, a new arrival in a Multi-Member Group can become a very
 expensive process as the Group acquires more and more members. Thus it may be
 required to set a member limit in Multi-Member Groups to ensure the effective
-functioning of the applications using the Berty Protocol.
+functioning of the applications using the Wesh protocol.
 * **Post-compromise secrecy:** There is currently no post-compromise secrecy
-in the Berty Protocol for the same reason there is no member removal. However,
+in the Wesh protocol for the same reason there is no member removal. However,
 it could be feasible to renew all the members’ Chain Keys, for example every
 hundred messages sent to mitigate an eventual unnoticed compromise.
 
 ## High Availability
 
-Since there is no central server in the Berty Protocol, messages and files are
+Since there is no central server in the Wesh protocol, messages and files are
 only stored on users devices. Thus, if a certain device has some information
 and is offline, other devices will not be able to get this information. For
 example, if a user adds a contact with its device A, and turns device A
@@ -850,7 +851,7 @@ to the groups, and are thus unable to decrypt the messages.
 
 ### Specificities of direct transport
 
-When a Berty user connects to another Berty user with direct transports, the
+When a Wesh user connects to another Wesh user with direct transports, the
 first thing they do is send a list of all the RDV Points on which they are
 listening: their Public RDV Point (for contact requests) and all RDV Points of
 Groups to which they belong. If the second user is already listening on some
@@ -865,7 +866,7 @@ Multi-Member Groups.
 
 Thus direct transports are not using a DHT like IPFS and this is a synchronous
 communication protocol since both devices need to be connected to each other
-in order to exchange messages. This aside, the Berty Protocol works exactly
+in order to exchange messages. This aside, the Wesh protocol works exactly
 the same way.
 
 > :warning: Warning
@@ -879,7 +880,7 @@ the same way.
 
 #### Key Types
 
-All key pairs used in the Berty Protocol are X25519 for encryption and Ed25519
+All key pairs used in the Wesh protocol are X25519 for encryption and Ed25519
 for signature, for two main reasons:
 
 * These are [smaller](http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8951-CryptoAuth-RSA-ECC-Comparison-Embedded-Systems-WhitePaper.pdf)
@@ -891,7 +892,7 @@ CPU consumption and thus a longer battery life on mobile devices.
 
 #### Golang Packages
 
-Most of the crypto libs used in the Berty Protocol are packages included in
+Most of the crypto libs used in the Wesh protocol are packages included in
 the standard Go library:
 
 * [crypto/sha256](https://pkg.go.dev/crypto/sha256)
@@ -901,7 +902,7 @@ the standard Go library:
 * [x/crypto/hkdf](https://pkg.go.dev/golang.org/x/crypto/hkdf)
 * [x/crypto/ed25519](https://pkg.go.dev/golang.org/x/crypto/ed25519)
 
-The only non-standard packages used in the Berty Protocol are the following
+The only non-standard packages used in the Wesh protocol are the following
 two, although they have been written by experts are widely reviewed by the
 community:
 
