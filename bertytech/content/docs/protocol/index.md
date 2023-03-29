@@ -146,12 +146,12 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
 
 There are two types of rendezvous points in the Wesh protocol:
 
-* [**Public rendezvous point:**](#contact-request) This rendezvous point is
+* [**Public rendezvous point:**](docs/protocol/#contact-request) This rendezvous point is
 used by an account to receive contact requests. The resource ID used here is
 the Account ID and the seed can be renewed at will by the user, so it is
 possible to revoke the ability to send contact requests to users having only
 the previous seed.
-* [**Group rendezvous point:**](#invitation) This rendezvous point is used to
+* [**Group rendezvous point:**](docs/protocol/#invitation) This rendezvous point is used to
 exchange messages within a group. The resource ID used here is the Group ID,
 and the seed cannot be changed.
 
@@ -167,7 +167,7 @@ is sending its rendezvous point list to the peers it connects to via a direct
 transport. The advantage is that it works in this particular case with almost
 instantaneous results, but the disadvantage is that it raises privacy
 concerns. We are still working on this process to improve this point.
-More info in [Specificities of direct transport](#specificities-of-direct-transport)
+More info in [Specificities of direct transport](docs/protocol/#specificities-of-direct-transport)
 section.
 
 ### Direct Transport
@@ -258,7 +258,7 @@ func compareClock(a, b lamportClock) int {
 In order to use the Wesh protocol, a user will have to create an account. No
 personal data is required for the Account Creation. Please note that in the
 whole Wesh protocol, all key pairs will be X25519 for encryption and Ed25519
-for signature. See the [Cryptography](#cryptography) section for more details
+for signature. See the [Cryptography](docs/protocol/#cryptography) section for more details
 about this choice.
 
 **Account creation steps:**
@@ -266,13 +266,13 @@ about this choice.
 1. Generate Account ID Key Pair. This operation will not be repeated. This key
 pair is the identity of the account, hence it is not possible to change it.
 2. Generate Alias Key Pair. Operation will not be repeated. More details on
-Alias Key Pair in [*Alias Identity*](#alias-identity).
+Alias Key Pair in [*Alias Identity*](docs/protocol/#alias-identity).
 3. Generate Device ID Key Pair on device used for account creation. This
 operation will be repeated on every new device.
-See [*Linking Devices*](#linking-devices) for more information. This key pair
+See [*Linking Devices*](docs/protocol/#linking-devices) for more information. This key pair
 is the identity of the device.
 4. Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to
-receive a Contact Request. See [*Adding Contacts*](#adding-contacts) for more
+receive a Contact Request. See [*Adding Contacts*](docs/protocol/#adding-contacts) for more
 information. This operation can be repeated anytime.
 
 Since there is no central directory, it is not required to have access to the
@@ -343,7 +343,7 @@ devices need to be online at the same time to be synchronized. However, it is
 possible to palliate this problem using replication devices, whose sole
 purpose is to provide high availability for content. Those devices are not
 able to decrypt messages and all they can do is verify their authenticity
-(see [*High Availability*](#high-availability) for more information).
+(see [*High Availability*](docs/protocol/#high-availability) for more information).
 
 ### Adding Contacts
 
@@ -356,7 +356,7 @@ the conversation can begin
 
 When an Account A (the Requester) wants to add an Account B (the Responder) to
 its contacts, it needs to know the Responder's Public rendezvous point. This
-[rendezvous point](#rendezvous-points) is derived from the RDV Seed and the
+[rendezvous point](docs/protocol/#rendezvous-points) is derived from the RDV Seed and the
 Account ID. Thus the Responder first needs to share his RDV Seed and his
 Account ID with the Requester, so that the latter can compute the RDV Point.
 This information can be sent by different means: an URL sent by message, a
@@ -498,11 +498,11 @@ A Group is divided into two logs: a message log and a metadata log.
 of the group can download only a part of the message log if they want to (for
 example only the 1000 last messages). Besides, members cannot decrypt messages
 sent before their arrival due to the Symmetric Ratchet Protocol
-(see [*Encryption*](#encryption) for more information).
+(see [*Encryption*](docs/protocol/#encryption) for more information).
 * **Metadata log:** Contains all the metadata of the Group. Since it contains
 essential information, members of the group shall download the whole metadata
 log. Secrets are exchanged on this log.
-[Arrivals of new members](#joining-a-group) are also announced on this log, so
+[Arrivals of new members](docs/protocol/#joining-a-group) are also announced on this log, so
 if a new member does not download the whole metadata log they will not know
 the full list of members, thus they will not be able to exchange secrets with
 them and therefore, they will not be able to decrypt their messages.
@@ -573,7 +573,7 @@ ID, specific to this Group (derived from the Group ID and some secret
 accounts). Similarly their devices will use a Member Device ID (randomly
 generated). Hence users knowing each other’s Account ID (namely contacts) will
 not be able to recognize each other in Multi-Member Groups, unless they want
-to (see [Alias Identity](#alias-identity)).
+to (see [Alias Identity](docs/protocol/#alias-identity)).
 
 ![multi-member-group](./HyEDRMvO8.png)
 
@@ -645,7 +645,7 @@ then used to encrypt the message and will not be reused to encrypt other message
 Each member's device within a group has a different Chain Key. The Group ID is
 included in the parameters of the HKDF to make the derived keys
 [context-specific](https://tools.ietf.org/html/rfc5869#section-3.2). At the
-beginning of the conversation members [share their device's Chain Key](#new-member-arrival)
+beginning of the conversation members [share their device's Chain Key](docs/protocol/#new-member-arrival)
 with the other participants. To decrypt messages sent by other participants,
 they have to follow the same process and derive the Message Key from the Chain
 Key of the sender with the HKDF for every message they receive.
@@ -680,7 +680,7 @@ an invitation.
 
 An invitation is composed of the Group ID, the Group Secret, the Group Secret
 Sig and the Attachment Key. An invitation can thus be created by any member of
-the Group. With the invitation, a Wesh user can compute the [Rendezvous Point](#rendezvous-points)
+the Group. With the invitation, a Wesh user can compute the [Rendezvous Point](docs/protocol/#rendezvous-points)
 of the Group, which is derived from the Group ID.
 
 Once the RDV Point has been computed, the user is able to download the
@@ -730,7 +730,7 @@ current chain key of every member of the group.
 Now that every member of the group has the chain key of the new member and the
 new member has the chain key of every member of the group, everyone is able to
 send and receive messages. To do so, they have to first derive a Message Key
-from their Chain Key following the [symmetric ratchet protocol](#encryption).
+from their Chain Key following the [symmetric ratchet protocol](docs/protocol/#encryption).
 
 A Member who wants to send messages to the group has to post a Message Entry
 on the Message Log:
