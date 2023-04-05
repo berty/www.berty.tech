@@ -52,6 +52,12 @@
                         <span class="title">FAQ</span>
                         <span class="subtitle">Frequently asked questions</span>
                       </a>
+                      {{ $url := relLangURL "/compare" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                        <i class="fal fa-laptop-code c-blue"></i>
+                        <span class="title">Compare</span>
+                        <span class="subtitle">Why Berty is different</span>
+                      </a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
