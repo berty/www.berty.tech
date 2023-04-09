@@ -68,8 +68,9 @@ $(function() {
   //Check if there is QRCode to display on page
   if ($('#id-qrcode').length) {
     if (window.location.hash.length > 1) {
+      const newUrl = "https://berty.tech/id#" + window.location.hash.substr(1);
       var qrcode = new QRCode("id-qrcode", {
-        text: "https://berty.tech/id#" + window.location.hash.substr(1),
+        text: newUrl,
         width: 180,
         height: 180,
         colorDark : "#3F49EA",
@@ -79,6 +80,7 @@ $(function() {
       $('#id-block-loader').remove();
       $('#id-block-id').removeClass('display-none');
       $('.qr-logo').removeClass('display-none');
+      $("#id-app-link").attr("href", newUrl);
 
       var parts = window.location.hash.substr(1).split("/");
       if (parts.length == 3) {
@@ -110,5 +112,5 @@ $(function() {
       $('#id-block-error').removeClass('display-none');
     }
   }
-  
+
 });
