@@ -94,14 +94,14 @@ func rendezvousPoint(id, seed []byte, date time.Time) []byte {
 
 There are two types of rendezvous points in the Wesh protocol:
 
-* [**Public rendezvous point:**](#contact-request) This rendezvous point is used by an account to receive contact requests. The resource ID used here is the Account ID and the seed can be renewed at will by the user, so it is possible to revoke the ability to send contact requests to users having only the previous seed.
-* [**Group rendezvous point:**](#invitation) This rendezvous point is used to exchange messages within a group. The resource ID used here is the Group ID, and the seed cannot be changed.
+* [**Public rendezvous point:**](docs/protocol/#contact-request) This rendezvous point is used by an account to receive contact requests. The resource ID used here is the Account ID and the seed can be renewed at will by the user, so it is possible to revoke the ability to send contact requests to users having only the previous seed.
+* [**Group rendezvous point:**](docs/protocol/#invitation) This rendezvous point is used to exchange messages within a group. The resource ID used here is the Group ID, and the seed cannot be changed.
 
 The protocol relies on three different rendezvous point systems:
 
 * **DHT-based**: fully distributed, virtually impossible to shutdown, can operate without internet access but can be slow, especially for mobile usage.
 * **Decentralized servers**: not p2p / distributed, can be shut down easier than a DHT, can't be reached offline but is a lot faster.
-* **Local record**: used in combination with direct transports such as Bluetooth Low Energy. To make it simple, it consists of a process where a peer is sending its rendezvous point list to the peers it connects to via a direct transport. The advantage is that it works in this particular case with almost instantaneous results, but the disadvantage is that it raises privacy concerns. We are still working on this process to improve this point. More info in [Specificities of direct transport](#specificities-of-direct-transport) section.
+* **Local record**: used in combination with direct transports such as Bluetooth Low Energy. To make it simple, it consists of a process where a peer is sending its rendezvous point list to the peers it connects to via a direct transport. The advantage is that it works in this particular case with almost instantaneous results, but the disadvantage is that it raises privacy concerns. We are still working on this process to improve this point. More info in [Specificities of direct transport](docs/protocol/#specificities-of-direct-transport) section.
 
 ### Direct Transport
 
@@ -152,14 +152,14 @@ func compareClock(a, b lamportClock) int {
 
 ### Account Creation
 
-In order to use the Wesh protocol, a user will have to create an account. No personal data is required for the Account Creation. Please note that in the whole Wesh protocol, all key pairs will be X25519 for encryption and Ed25519 for signature. See the [Cryptography](#cryptography) section for more details about this choice.
+In order to use the Wesh protocol, a user will have to create an account. No personal data is required for the Account Creation. Please note that in the whole Wesh protocol, all key pairs will be X25519 for encryption and Ed25519 for signature. See the [Cryptography](docs/protocol/#cryptography) section for more details about this choice.
 
 **Account creation steps:**
 
 1. Generate Account ID Key Pair. This operation will not be repeated. This key pair is the identity of the account, hence it is not possible to change it.
-2. Generate Alias Key Pair. Operation will not be repeated. More details on Alias Key Pair in [*Alias Identity*](#alias-identity).
-3. Generate Device ID Key Pair on device used for account creation. This operation will be repeated on every new device. See [*Linking Devices*](#linking-devices) for more information. This key pair is the identity of the device.
-4. Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to receive a Contact Request. See [*Adding Contacts*](#adding-contacts) for more information. This operation can be repeated anytime.
+2. Generate Alias Key Pair. Operation will not be repeated. More details on Alias Key Pair in [*Alias Identity*](docs/protocol/#alias-identity).
+3. Generate Device ID Key Pair on device used for account creation. This operation will be repeated on every new device. See [*Linking Devices*](docs/protocol/#linking-devices) for more information. This key pair is the identity of the device.
+4. Generate Public RDV Seed. The RDV Seed is used to generate an RDV Point to receive a Contact Request. See [*Adding Contacts*](docs/protocol/#adding-contacts) for more information. This operation can be repeated anytime.
 
 Since there is no central directory, it is not required to have access to the Internet in order to create an Account and send/receive a contact request. If two users create their Account offline and then connect via direct transport, they will exchange their public rendezvous points (used for contact requests) and will therefore be able to add each other as a contact.
 
@@ -192,7 +192,7 @@ We recommend to developers implementing an application using the Wesh protocol t
 #### Limitations
 
 * **Device revocation:** Please note that it is impossible to revoke a device. Once a device has been linked, it is in possession of the same information and secrets as every other device. Hence it has the same capabilities as every other device, for example the capability to link other devices, send messages, join groups or add contacts. There is no hierarchy between devices linked to an account.
-* **Device synchronization:** Since Wesh is an asynchronous protocol, two devices need to be online at the same time to be synchronized. However, it is possible to palliate this problem using replication devices, whose sole purpose is to provide high availability for content. Those devices are not able to decrypt messages and all they can do is verify their authenticity (see [*High Availability*](#high-availability) for more information).
+* **Device synchronization:** Since Wesh is an asynchronous protocol, two devices need to be online at the same time to be synchronized. However, it is possible to palliate this problem using replication devices, whose sole purpose is to provide high availability for content. Those devices are not able to decrypt messages and all they can do is verify their authenticity (see [*High Availability*](docs/protocol/#high-availability) for more information).
 
 ### Adding Contacts
 
@@ -200,7 +200,7 @@ If an Account A wants to start a one-to-one conversation with an Account B, it w
 
 #### Contact Request
 
-When an Account A (the Requester) wants to add an Account B (the Responder) to its contacts, it needs to know the Responder's Public rendezvous point. This [rendezvous point](#rendezvous-points) is derived from the RDV Seed and the Account ID. Thus the Responder first needs to share his RDV Seed and his Account ID with the Requester, so that the latter can compute the RDV Point. This information can be sent by different means: an URL sent by message, a QRCode displayed on the Responder's device and scanned by the Requester's smartphone, etc...
+When an Account A (the Requester) wants to add an Account B (the Responder) to its contacts, it needs to know the Responder's Public rendezvous point. This [rendezvous point](docs/protocol/#rendezvous-points) is derived from the RDV Seed and the Account ID. Thus the Responder first needs to share his RDV Seed and his Account ID with the Requester, so that the latter can compute the RDV Point. This information can be sent by different means: an URL sent by message, a QRCode displayed on the Responder's device and scanned by the Requester's smartphone, etc...
 
 The Responder can renew their RDV Seed at any time. If it does so, the Requester will not be able to send a contact request anymore unless the Responder shares its new RDV Seed. The Responder can also completely disable incoming contact requests by unregistering its devices from its public rendezvous point.
 
@@ -289,8 +289,8 @@ The protocol is strongly based on the concept of group. A group is a logical str
 
 A Group is divided into two logs: a message log and a metadata log.
 
-* **Message log:** Contains all the messages exchanged within a Group. Members of the group can download only a part of the message log if they want to (for example only the 1000 last messages). Besides, members cannot decrypt messages sent before their arrival due to the Symmetric Ratchet Protocol (see [*Encryption*](#encryption) for more information).
-* **Metadata log:** Contains all the metadata of the Group. Since it contains essential information, members of the group shall download the whole metadata log. Secrets are exchanged on this log. [Arrivals of new members](#joining-a-group) are also announced on this log, so if a new member does not download the whole metadata log they will not know the full list of members, thus they will not be able to exchange secrets with them and therefore, they will not be able to decrypt their messages.
+* **Message log:** Contains all the messages exchanged within a Group. Members of the group can download only a part of the message log if they want to (for example only the 1000 last messages). Besides, members cannot decrypt messages sent before their arrival due to the Symmetric Ratchet Protocol (see [*Encryption*](docs/protocol/#encryption) for more information).
+* **Metadata log:** Contains all the metadata of the Group. Since it contains essential information, members of the group shall download the whole metadata log. Secrets are exchanged on this log. [Arrivals of new members](docs/protocol/#joining-a-group) are also announced on this log, so if a new member does not download the whole metadata log they will not know the full list of members, thus they will not be able to exchange secrets with them and therefore, they will not be able to decrypt their messages.
 
 ### Types of Groups
 
@@ -317,7 +317,7 @@ If the secrets were generated the same way as in a Multi-Member Group and Accoun
 
 #### Multi-Member Group
 
-A Multi-Member Group is a group of several Group Members who may or may not be Contacts. A particularity of a Multi-Member Group is that users will not be using their Account ID in the Group, instead they will use a distinct Member ID, specific to this Group (derived from the Group ID and some secret accounts). Similarly their devices will use a Member Device ID (randomly generated). Hence users knowing each other’s Account ID (namely contacts) will not be able to recognize each other in Multi-Member Groups, unless they want to (see [Alias Identity](#alias-identity)).
+A Multi-Member Group is a group of several Group Members who may or may not be Contacts. A particularity of a Multi-Member Group is that users will not be using their Account ID in the Group, instead they will use a distinct Member ID, specific to this Group (derived from the Group ID and some secret accounts). Similarly their devices will use a Member Device ID (randomly generated). Hence users knowing each other’s Account ID (namely contacts) will not be able to recognize each other in Multi-Member Groups, unless they want to (see [Alias Identity](docs/protocol/#alias-identity)).
 
 ![multi-member-group](./HyEDRMvO8.png)
 
@@ -355,7 +355,7 @@ In the Wesh protocol, all communications are fully end-to-end encrypted using [S
 
 ![symmetric-ratchet](./BJAQwQP_I.png)
 
-Each member's device within a group has a different Chain Key. The Group ID is included in the parameters of the HKDF to make the derived keys [context-specific](https://tools.ietf.org/html/rfc5869#section-3.2). At the beginning of the conversation members [share their device's Chain Key](#new-member-arrival) with the other participants. To decrypt messages sent by other participants, they have to follow the same process and derive the Message Key from the Chain Key of the sender with the HKDF for every message they receive.
+Each member's device within a group has a different Chain Key. The Group ID is included in the parameters of the HKDF to make the derived keys [context-specific](https://tools.ietf.org/html/rfc5869#section-3.2). At the beginning of the conversation members [share their device's Chain Key](docs/protocol/#new-member-arrival) with the other participants. To decrypt messages sent by other participants, they have to follow the same process and derive the Message Key from the Chain Key of the sender with the HKDF for every message they receive.
 
 ```go
 // golang
@@ -383,7 +383,7 @@ To communicate with other devices (or users), a device (or a user) has to join a
 
 #### Invitation
 
-An invitation is composed of the Group ID, the Group Secret, the Group Secret Sig and the Attachment Key. An invitation can thus be created by any member of the Group. With the invitation, a Wesh user can compute the [Rendezvous Point](#rendezvous-points) of the Group, which is derived from the Group ID.
+An invitation is composed of the Group ID, the Group Secret, the Group Secret Sig and the Attachment Key. An invitation can thus be created by any member of the Group. With the invitation, a Wesh user can compute the [Rendezvous Point](docs/protocol/#rendezvous-points) of the Group, which is derived from the Group ID.
 
 Once the RDV Point has been computed, the user is able to download the metadata log on the group and decrypt part of its entries with the Group Secret. He will namely obtain the list of all the Group members, which is essential to exchange secrets with them and be able to decrypt their messages.
 
@@ -413,7 +413,7 @@ This operation is bilateral, once a member has fetched a Secret Entry on the met
 
 #### Exchanging messages
 
-Now that every member of the group has the chain key of the new member and the new member has the chain key of every member of the group, everyone is able to send and receive messages. To do so, they have to first derive a Message Key from their Chain Key following the [symmetric ratchet protocol](#encryption).
+Now that every member of the group has the chain key of the new member and the new member has the chain key of every member of the group, everyone is able to send and receive messages. To do so, they have to first derive a Message Key from their Chain Key following the [symmetric ratchet protocol](docs/protocol/#encryption).
 
 A Member who wants to send messages to the group has to post a Message Entry on the Message Log:
 
