@@ -1,0 +1,91 @@
+name: "Bug report"
+description: Report a bug found while using the Berty web site (not the Berty app).
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the bug you encountered.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: What browser are you using to view the web site?
+      options:
+        - Firefox
+        - Chrome
+        - Brave
+        - Edge
+        - Safari
+        - Other (please specify below)
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser version
+      description: What is the version of your browser?
+      placeholder: e.g. 112.0.5615.49
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: What OS are you seeing the problem on?
+      options:
+        - iOS
+        - Android
+        - Linux
+        - macOS
+        - Windows
+        - Other (please specify below)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: OS version
+      description: What is the version of the OS you are using?
+      placeholder: e.g. iOS 15.4 or Android 11.0 or Ubuntu 20.04.4
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: What device are you using?
+      placeholder: e.g. macOS 13.3.1 or iPhone 12 Pro Max
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+       1. Navigate to the page ...
+       2. Click on drop down ...
+       3. Click item ...
+    validations:
+      required: true
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current behavior
+      description: A description including screenshots, stack traces, debug logs, etc.
+      placeholder: Currently ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: Please provide what would be your expectation to happen.
+      placeholder: In this situation, Berty should ...
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      placeholder: Any other details?
