@@ -123,7 +123,7 @@ Proximity transport can also be referred to as Bluetooth Low Energy, Bluetooth, 
 
 A **rendezvous point** is a volatile address on a peer-to-peer network where two devices can meet. Peers can register their [peer IDs](privacy-policy/#peer-id) using a given rendezvous point identifier and get the list of already registered peers.
 
-There are two types of rendezvous points used in the Berty Protocol:
+There are two types of rendezvous points used in the Wesh Protocol:
 
 * A user rendezvous point, which is dedicated to locating an [account](privacy-policy/#account) to send a contact request to it. If this [rendezvous point](privacy-policy/#rendezvous-point) is too widely available (leaked by mistake, for example), a user can reset its value, preventing any further incoming requests.
 * A [group](privacy-policy/#group) rendezvous point, which is dedicated to locating group members in order to exchange messages with them. This rendezvous point can't be reset.
