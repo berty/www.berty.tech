@@ -7,7 +7,7 @@ private: true
 
 ![Berty in a nutshell.](animation--1_berty_animation_white_bg.gif)
 
-**[Berty](https://berty.tech/)** is a privacy-first messaging application built on top of [the Berty Protocol](https://berty.tech/docs/protocol/).
+**[Berty](https://berty.tech/)** is a privacy-first messaging application built on top of [the Wesh Protocol](https://berty.tech/docs/protocol/).
 
 - Secure and private :
     - Messages are end-to-end encrypted by default
