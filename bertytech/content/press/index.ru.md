@@ -61,13 +61,13 @@ press_tabs:
       Unlike other apps, Berty’s not interested in your private life - in fact, Berty doesn’t want to know anything about you. That’s why Berty reduces metadata collection to the minimum possible amount.
 
       **✨ Going further:**
-      - [Learn what metadata is](https://berty.tech/blog/what-is-metadata/) - [Understand how metadata affects mobile messaging](https://berty.tech/blog/metadata-mobile-messaging/) - [Read the Berty Protocol](https://berty.tech/docs/protocol/)
+      - [Learn what metadata is](https://berty.tech/blog/what-is-metadata/) - [Understand how metadata affects mobile messaging](https://berty.tech/blog/metadata-mobile-messaging/) - [Read the Wesh Protocol](https://berty.tech/docs/protocol/)
   - 
     tab_item: [ ]
     iconClass: "fas fa-cubes"
     title: "Berty is&nbsp;**not based on a blockchain**."
     text: >
-      Like blockchain, the Berty Protocol is peer-to-peer, and therefore distributed and decentralized. However, unlike blockchain, the Berty Protocol doesn’t require a consensus or validation by the network. That’s because data on the Berty Protocol is all stored locally, and there’s no historic recording in an open ledger. It also means there aren’t any transaction fees for each data exchange.
+      Like blockchain, the Wesh Protocol is peer-to-peer, and therefore distributed and decentralized. However, unlike blockchain, the Wesh Protocol doesn’t require a consensus or validation by the network. That’s because data on the Wesh Protocol is all stored locally, and there’s no historic recording in an open ledger. It also means there aren’t any transaction fees for each data exchange.
 
       **✨ Going further:**
       - [Uncover more about Berty vs Blockchain](https://berty.tech/blog/blockchain-berty/)
@@ -104,7 +104,7 @@ section_press_about:
         width: 109
         height: 111
       text: >
-        Berty Technologies is a French non-profit and NGO founded in July 2018 in response to the urgent need for truly secure, readily usable online messaging. **Berty Technologies built Berty, a full-featured mobile messaging application, and Berty Protocol, the freestanding secure messaging technology behind it.**
+        Berty Technologies is a French non-profit and NGO founded in July 2018 in response to the urgent need for truly secure, readily usable online messaging. **Berty Technologies built Berty, a full-featured mobile messaging application, and Wesh Protocol, the freestanding secure messaging technology behind it.**
 
         Berty Technologies collaborates with like-minded advocacy and engineering movements to fight back against threats to online privacy. Surveillance and personal data collection technologies are constantly evolving, and so must Berty.
     - 
@@ -119,8 +119,8 @@ section_press_about:
         - **Privacy should be the easy option.** Berty must be as easy to use as, if not easier than, competitors.
         - **Transparency is a strength that no secretive authority can outpace.** The code behind Berty is 100% open-source, and anyone with the right skills and mindset can follow, test, and contribute to codebase and advocacy work. The integrity of Berty lies in the fact that power sits firmly in the hands of contributors and users.
         - **No voice should be lost to censorship.** Berty Technologies develops for extremely adverse use cases. Whether it’s internet blackouts, autocratic regimes, or civilian street protest suppression, Berty works. Reliably. With or without an internet connection. Always.
-        - **The decentralized “future” starts today.** Central relay points, be they governments or big tech server farms, keep power concentrated at the top. The technology to decentralize this power exists today - the Berty Protocol is peer-to-peer, guaranteeing that authorities can’t gain access to your personal information.
-        - **You should steal this code.** Any organization or individual that wants to support user anonymity can, and should, use the Berty Protocol.
+        - **The decentralized “future” starts today.** Central relay points, be they governments or big tech server farms, keep power concentrated at the top. The technology to decentralize this power exists today - the Wesh Protocol is peer-to-peer, guaranteeing that authorities can’t gain access to your personal information.
+        - **You should steal this code.** Any organization or individual that wants to support user anonymity can, and should, use the Wesh Protocol.
         - **France is a thriving hub of security technology.** Berty Technologies is committed to increasing the dynamism and competitiveness of the French technology sector, particularly in cryptography, distributed networks, cybersecurity, and emerging protocols.
     - 
       title: Team
