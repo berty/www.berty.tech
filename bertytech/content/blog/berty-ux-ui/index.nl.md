@@ -88,7 +88,7 @@ We zijn een nieuwe app, niemand kent ons.
 
 * We hebben geen tweede kans om een eerste indruk te maken.
 * We zijn een app aan het bouwen die in 2020 van start gaat, laten we het er zo uitzien.
-* On the bright side, we don't have to deal with design or code legacy (for now).
+* Aan de goede kant hoeven we niet om te gaan met ontwerp- of code-legacy (voor nu).
 
 Good UX can solve many problems:
 
