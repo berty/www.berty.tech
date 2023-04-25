@@ -90,11 +90,11 @@ We zijn een nieuwe app, niemand kent ons.
 * We zijn een app aan het bouwen die in 2020 van start gaat, laten we het er zo uitzien.
 * Aan de goede kant hoeven we niet om te gaan met ontwerp- of code-legacy (voor nu).
 
-Good UX can solve many problems:
+Goede UX kan veel problemen oplossen:
 
-* No need for a tutorial/home tour
-* Fewer support requests
-* Handle nicely the fact it doesn't correctly work at first
+* Geen behoefte aan een tutorial/home rondleiding
+* Minder aanvragen voor ondersteuning
+* Leg mooi het feit uit dat het niet correct werkt de eerste keer
 * Fix the UX problems users faced for the v1 of the app
 * Fits all screen sizes naturally
 
