@@ -95,50 +95,50 @@ Goede UX kan veel problemen oplossen:
 * Geen behoefte aan een tutorial/home rondleiding
 * Minder aanvragen voor ondersteuning
 * Leg mooi het feit uit dat het niet correct werkt de eerste keer
-* Fix the UX problems users faced for the v1 of the app
-* Fits all screen sizes naturally
+* Los de UX problemen op waar gebruikers van de v1 versie van de app tegenaan liepen
+* Past natuurlijk op alle schermgroottes
 
 ![Old screen](screen_simulator.jpg)
 
-Because Berty is a fully encrypted and distributed messaging app, people tend to assume it's complicated and will need a long setup or a tech background to be able to use it. They firmly believe this before they even installed the app on their smartphone.
+Omdat Berty een volledig versleutelde en gedistribueerde berichten-app is, denken mensen dat het ingewikkeld is en hebben een lange setup of een technische achtergrond nodig om het te kunnen gebruiken. Ze geloven dit stellig voordat ze de app zelfs op hun smartphone hebben geïnstalleerd.
 
-To reach global adoption, it's imperative that anyone can use the app quickly and feel comfortable with it within a few seconds... and start to recommend it to their friends.
+Om wereldwijde adoptie te bereiken, is het noodzakelijk dat iedereen de app snel kan gebruiken en zich er binnen enkele seconden comfortabel mee kan voelen... en begint met het aanbevelen aan hun vrienden.
 
-And what about a pretty UI?
+En hoe zit het met een mooie UI?
 
-> "If it looks nice, people think it works well."
-
-
+> "Als het er goed uitziet, denken mensen dat het goed werkt."
 
 
-<br/>
-<br/>
 
-## What I think the new UI should be
-
-* **Simple**: Not too much information displayed at once, all unnecessary stuff removed.
-* **Intuitive**: Easy to use. Info/buttons displayed at the logical place.
-* **Clear**: Only one possible interpretation for each button.
-* **Unified**:
-    * Only one way to do something.
-    * One way to display a kind of information.
-    * One place to find something.
-* **Modern**: We are a new app, let's do something cool
-* **Nice, colorful, playful** to match Berty's identity
-* **Memorable**: As there are many messaging apps out there, we need to make sure when users open the app, they know where they are.
-
-**Most important, I wanted to conceive the app I would want to use daily and enjoy it.**
-
-To achieve this goal: I decided to go for bold colors, everything rounded, adopt this new modal trend. When I started working on it, it was entirely new, now we've seen it everywhere.
-
-> "People will download the app for the promise, they will use it if it's enjoyable."
 
 <br/>
 <br/>
 
-## However
+## Wat ik denk dat de nieuwe UI moet zijn
 
-... we do need to comply with some industry standards, users already use messengers and have unconscious expectations.
+* **Eenvoudig**: Niet te veel informatie in één keer, alle onnodige dingen verwijderd.
+* **Intuïtief**: Eenvoudig te gebruiken. Info/knoppen weergegeven op de logische plek.
+* **Duidelijk**: Slechts één mogelijke interpretatie voor elke knop.
+* **Verenigd**:
+    * Slechts één manier om iets te doen.
+    * Eén manier om een soort informatie weer te geven.
+    * Eén plek om iets te vinden.
+* **Modern**: Wij zijn een nieuwe app, laten we iets koels doen
+* **Leuk, kleurrijk, speel** om de Berty's identiteit te tonen
+* **Memorabel**: Er zijn veel berichten apps, we moeten ervoor zorgen dat gebruikers die de app openen weten waar ze zijn.
+
+**Het allerbelangrijkste, ik wilde me voorstellen welke app ik dagelijks wil gebruiken en ervan genieten.**
+
+Om dit doel te bereiken: heb ik heb besloten voor vette kleuren te gaan, alles rond, deze nieuwe modale trend over te nemen. Toen ik eraan begon te werken, was het helemaal nieuw, nu hebben we het overal gezien.
+
+> "Mensen downloaden de app voor de belofte, ze gebruiken deze als het leuk is."
+
+<br/>
+<br/>
+
+## Echter
+
+... we moeten voldoen aan enkele industriële normen, gebruikers die al een messenger gebruiken en onbewuste verwachtingen koesteren.
 
 We believe a messaging app chore screens "conversation list" and "conversation messages" need to feel familiar, that's why we went for round avatars, put names next to them, used the right side, and left side bubbles for messages, etc.
 
