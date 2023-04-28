@@ -42,7 +42,7 @@ For building the websites the following software is necessary:
 
 - [node and npm](https://nodejs.org/) - Javascript runtime and packet manager
 - [GNU make](https://www.gnu.org/software/make/) - build tool
-- [Hugo Extended](https://gohugo.io) - generator for static websites
+- [Hugo Extended v0.91.2](https://github.com/gohugoio/hugo/releases/tag/v0.91.2) - generator for static websites. You must install **Hugo Extended 0.91.2** (hugo_extended_0.91.2_xxx) manually and make it available in your bash.
 
 ## Contribute
 
