@@ -61,10 +61,6 @@ _TODO: generic contribute intro_
 
 For more context read [This blog post](https://berty.tech/blog/berty-translation).
 
-## Maintainers
-
-The [berty-staff](https://github.com/orgs/berty/teams/staff) team.
-
 ## License
 
 © [Berty Technologies](https://berty.tech) | Code is licensed with the [MIT](./LICENSE) License. Except as noted, other content licensed [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/us/).
