@@ -81,6 +81,7 @@ $(function() {
       $('#id-block-id').removeClass('display-none');
       $('.qr-logo').removeClass('display-none');
       $("#id-app-link").attr("href", newUrl);
+      console.log('xxxx')
 
       var parts = window.location.hash.substr(1).split("/");
       if (parts.length == 3) {
