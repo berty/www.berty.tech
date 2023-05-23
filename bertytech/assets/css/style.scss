@@ -1076,6 +1076,11 @@ section.section-features-detail img {
     letter-spacing: 0.6px;
     line-height: 34px;
     opacity:0.8;
+    font-size: 1.2rem;
+    a {
+        color: #f64278;
+        font-weight: bold;
+    }
   }
 }
 
@@ -2459,7 +2464,7 @@ a.block-action {
   .block-faq-a {
     max-height: 0;
     // transition: max-height .5s ease-out;
-		overflow: hidden;
+        overflow: hidden;
   }
   .block-faq-a.faq-collapsing {
     transition: max-height .5s ease-out;
@@ -3542,7 +3547,7 @@ footer {
   }
   .section-header {
     h1 {
-      font-size: 3.5rem;
+      font-size: 2.4rem;
       letter-spacing: 1.5px;
     }
     .img-phone {
@@ -3968,11 +3973,11 @@ $table-first-column-width-mobile: 115px;
 // ———— BLOCK NOTICE QUESTION
 
 
-// SECTION: Privacy at your fingertips. 
+// SECTION: Privacy at your fingertips.
 .press_privacy{
   padding: 150px 0;
 }
-// ————SECTION: Privacy at your fingertips. 
+// ————SECTION: Privacy at your fingertips.
 
 // BLOCK: PRESS TABS
 .press_tabs{
@@ -4249,7 +4254,7 @@ $table-first-column-width-mobile: 115px;
   }
 }
 
-  
+
 
 // ———— BLOCK: RESOURCES
 
@@ -4292,7 +4297,7 @@ $table-first-column-width-mobile: 115px;
       @media (max-width: 768px) {
         font-size: 12px;
       }
-    } 
+    }
     &--category{
       padding: 0 15px;
       font-size: 12px;
