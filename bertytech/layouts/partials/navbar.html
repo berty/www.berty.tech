@@ -16,14 +16,14 @@
             <ul class="navbar-nav">
               <li class="nav-item dropdown"> 
                   <a class="nav-link" href="#" id="d-difference" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      The difference<i class="far fa-chevron-down"></i>
+                      Our products<i class="far fa-chevron-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="d-difference">
+                      <!--
                       <div class="dropdown-item h">
                         <span class="title">The privacy-first messenger</span>
                       </div>
                       <div class="dropdown-divider"></div>
-                      <!--
                       <a class="dropdown-item l" href="#">
                         <i class="fal fa-lock-alt c-blue"></i>
                         <span class="title">Security</span>
@@ -34,7 +34,19 @@
                         <span class="title">White Paper</span>
                         <span class="subtitle">The vision behind the Berty project</span>
                       </a>-->
-                      {{ $url := relLangURL "/features" }}
+                      {{ $url := relLangURL "/wesh" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                        <img src="/img/wesh.svg" alt="Wesh Network">
+                        <span class="title">Wesh Network</span>
+                        <span class="subtitle">Wesh Network is an open source, wild & asynchronous mesh network protocol powered<br> by Berty Technologies’ non-profit organisation.</span>
+                      </a>
+                      {{ $url := relLangURL "/messenger" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                        <img src="/img/berty-messenger.svg" alt="Berty Messenger">
+                        <span class="title">Berty messenger</span>
+                        <span class="subtitle">Built on the protocole Wesh Network, is a concrete demonstration of Berty Technologies’<br> pledge to privacy in the realm of decentralization.</span>
+                      </a>
+                      <!-- {{ $url := relLangURL "/features" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-stars c-blue"></i>
                         <span class="title">Features</span>
@@ -57,7 +69,7 @@
                         <i class="fal fa-laptop-code c-blue"></i>
                         <span class="title">Compare</span>
                         <span class="subtitle">Why Berty is different</span>
-                      </a>
+                      </a> -->
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -65,12 +77,12 @@
                         Developers<i class="far fa-chevron-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="d-developers">
-                      {{ $url := relLangURL "/docs" }}
+                      <!-- {{ $url := relLangURL "/docs" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-book c-blue"></i>
                         <span class="title">Docs</span>
                         <span class="subtitle">Technical documentations</span>
-                      </a>
+                      </a> -->
                       {{ $url := relLangURL "/docs#projects" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="far fa-cubes c-blue"></i>
@@ -83,12 +95,12 @@
                         <span class="title">Contribute</span>
                         <span class="subtitle">Developer, crypto specialist, translator...</span>
                       </a>
-                      {{ $url := relLangURL "/contribute#projects-we-love" }}
+                      <!-- {{ $url := relLangURL "/contribute#projects-we-love" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-heart c-blue"></i>
                         <span class="title">Projects we love</span>
                         <span class="subtitle">IPFS, 42, Paris P2P...</span>
-                      </a>
+                      </a> -->
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item f" href="https://github.com/berty" target="_blank" rel="noopener">
                         <i class="fab fa-github c-fakeblack"></i>
@@ -101,12 +113,36 @@
                         Resources<i class="far fa-chevron-down"></i>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="d-resources">
-                      {{ $url := relLangURL "/about" }}
+                      <!-- {{ $url := relLangURL "/about" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
                         <i class="fal fa-home c-blue"></i>
                         <span class="title">About us</span>
                         <span class="subtitle">We're a small NGO</span>
+                      </a> -->
+                       {{ $url := relLangURL "/contribute#projects-we-love" }}
+                      <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}">
+                        <img src="/img/icon-partners.svg" alt="Partners">
+                        <span class="title">Partners</span>
+                        <span class="subtitle">They trusted us</span>
                       </a>
+                      <div class="d-flex nav-block-partners">
+                        <a href="https://ipfs.tech/" target="_blank" rel="noopener noreferrer">
+                          <img src="/img/img-ipsf.png" alt="IPSF">
+                          <p>IPSF</p>
+                        </a>
+                        <a href="https://42.fr/" target="_blank" rel="noopener noreferrer">
+                          <img src="/img/img-42.png" alt="42">
+                          <p>42</p>
+                        </a>
+                        <a href="https://p2p.paris/en/" target="_blank" rel="noopener noreferrer">
+                          <img src="/img/img-paris-p2p.png" alt="ParisP2P">
+                          <p>ParisP2P</p>
+                        </a>
+                        <a href="https://protocol.ai/" target="_blank" rel="noopener noreferrer">
+                          <img src="/img/img-protocol-labs.png" alt="Protocol Labs">
+                          <p>Protocol Labs</p>
+                        </a>
+                      </div>
                       {{ $url := relLangURL "https://berty.crew.work/jobs" }}
                       <a class="dropdown-item l" href="{{ cond $is_404 (absURL $url) $url }}"  target="_blabk">
                         <i class="fal fa-laptop-code c-blue"></i>

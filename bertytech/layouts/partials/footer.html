@@ -27,20 +27,20 @@
 						<div class="col-4 col-links">
 							<h5>Developers</h5>
 							<ul class="list-unstyled text-small">
-								{{ $url := relLangURL "/docs" }}
-								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Docs</a></li>
+								<!-- {{ $url := relLangURL "/docs" }}
+								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Docs</a></li> -->
 								{{ $url := relLangURL "/docs#projects" }}
 								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Our projects</a></li>
 								{{ $url := relLangURL "/contribute" }}
 								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Contribute</a></li>
-								{{ $url := relLangURL "/contribute#projects-we-love" }}
-								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Projects we love</a></li>
 							</ul>
 						</div><!-- /.col -->
 						<div class="col-4 col-links">
 							{{ $url := relLangURL "/about" }}
 							<h5><a href="{{ cond $is_404 (absURL $url) $url }}">About us</a></h5>
 							<ul class="list-unstyled text-small">
+								{{ $url := relLangURL "/contribute#projects-we-love" }}
+								<li><a href="{{ cond $is_404 (absURL $url) $url }}">Partners</a></li>
 								{{ $url := relLangURL "https://berty.crew.work/jobs" }}
 								<li><a href="{{ cond $is_404 (absURL $url) $url }}" target="_blabk">Jobs</a></li>
 								{{ $url := relLangURL "/newsletter" }}
