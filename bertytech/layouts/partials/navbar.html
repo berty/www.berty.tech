@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-md navbar-dark{{with .Scratch.Get "navbar-class"}} {{.}}{{end}}">
     <div class="container">
         <a class="navbar-brand" href="{{ cond $is_404 (absURL `/`) `/` }}">
-            {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" "/img/berty_mono.svg")}}  
+            {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" "/img/berty_mono.svg")}}
         </a>
         <button on="tap:sidebar.open" class="navbar-toggler" type="button" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
             <i class="far fa-bars"></i>
@@ -11,10 +11,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
 
           {{ $res := resources.Get "js/amp-navbar.js" }}
-          {{ $src := cond (eq (getenv "BERTY_IPFS") "true") $res.RelPermalink $res.Permalink }} 
-          <amp-script layout="container" src="{{ $src }}">
+          {{ $src := cond (eq (getenv "BERTY_IPFS") "true") $res.RelPermalink $res.Permalink }}
+          <amp-script layout="container" src="{{ $src }}" style="opacity: 1;">
             <ul class="navbar-nav">
-              <li class="nav-item dropdown"> 
+              <li class="nav-item dropdown">
                   <a class="nav-link" href="#" id="d-difference" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Our products<i class="far fa-chevron-down"></i>
                     </a>
@@ -108,7 +108,7 @@
                       </a>
                     </div>
                 </li>
-                <li class="nav-item dropdown"> 
+                <li class="nav-item dropdown">
                     <a class="nav-link" href="#" id="d-resources" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Resources<i class="far fa-chevron-down"></i>
                     </a>
