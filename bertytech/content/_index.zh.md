@@ -1,11 +1,11 @@
 ---
 title: "Berty"
 section_1:
-    - image: /img/icon_spock.svg
+    - image: icon_spock.svg
       title: 非营利组织
-    - image: /img/icon_team.svg
+    - image: icon_team.svg
       title: 与一个由10人组成的团队
-    - image: /img/icon_paris.svg
+    - image: icon_paris.svg
       title: 总部设在法国巴黎
 section_3:
     image: /img/icon_dev.png

@@ -1,11 +1,11 @@
 ---
 title: "Berty"
 section_1:
-    - image: /img/icon_spock.svg
+    - image: icon_spock.svg
       title: некоммерческая организация
-    - image: /img/icon_team.svg
+    - image: icon_team.svg
       title: с командой из 10 человек
-    - image: /img/icon_paris.svg
+    - image: icon_paris.svg
       title: базирующаяся в Париже, Франция
 section_3:
     image: /img/icon_dev.png
