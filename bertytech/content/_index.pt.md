@@ -1,11 +1,11 @@
 ---
 title: "Berty"
 section_1:
-    - image: icon_spock.svg
+    - image: /img/icon_spock.svg
       title: uma organização sem lucros
-    - image: icon_team.svg
+    - image: /img/icon_team.svg
       title: com uma equipa de 10 pessoas
-    - image: icon_paris.svg
+    - image: /img/icon_paris.svg
       title: sediado em Paris, França
 section_3:
     image: /img/icon_dev.png

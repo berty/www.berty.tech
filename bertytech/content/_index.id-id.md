@@ -1,11 +1,11 @@
 ---
 title: "Berty"
 section_1:
-    - image: icon_spock.svg
+    - image: /img/icon_spock.svg
       title: sebuah organisasi nirlaba
-    - image: icon_team.svg
+    - image: /img/icon_team.svg
       title: dengan tim yang terdiri dari 10 orang
-    - image: icon_paris.svg
+    - image: /img/icon_paris.svg
       title: berbasis di Paris, Prancis
 section_3:
     image: /img/icon_dev.png
