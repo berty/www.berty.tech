@@ -6,7 +6,7 @@ header:
     button:
         link: https://berty-handles.netlify.app/vision
         text: Berty handles
-hclass: bg-blue gradient bg-wesh
+hclass: bg-blue gradient bg-messenger
 image: "berty_about.png"
 layout: products
 bodyClass: messenger
