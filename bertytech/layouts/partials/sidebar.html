@@ -1,24 +1,23 @@
 <amp-sidebar id="sidebar" layout="nodisplay" side="left">
-    <a class="nav-brand" href="/">
-        {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height" "45" "alt" "Berty Technologies" "src" "/img/berty_logo.svg")}}  
-    </a>
-    <ul class="nav flex-column">
-        <!--<li class="nav-section">
-            The difference
-        </li>-->
-        <li class="nav-item">
-            <a class="nav-link" href="/features">
-                <i class="fal fa-stars c-blue"></i>
-                <span class="title">Features</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/challenges">
-                <i class="fal fa-rocket c-blue"></i>
-                <span class="title">Challenges</span>
-            </a>
-        </li>
-        <li class="nav-item">
+  <a class="nav-brand" href="/">
+    {{ partial "img" (dict "ctx" . "class" "img-berty" "width" "150" "height"
+    "45" "alt" "Berty Technologies" "src" "/img/berty_logo.svg")}}
+  </a>
+  <ul class="nav flex-column">
+    <li class="nav-section">Our products</li>
+    <li class="nav-item">
+      <a class="nav-link" href="/wesh">
+        <img src="/img/wesh.svg" alt="Wesh Network" />
+        <span class="title">Wesh network</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/messenger">
+        <img src="/img/berty-messenger.svg" alt="Berty Messenger" />
+        <span class="title">Berty messenger</span>
+      </a>
+    </li>
+    <!-- <li class="nav-item">
             <a class="nav-link" href="/faq">
                 <i class="fal fa-question-circle c-blue"></i>
                 <span class="title">FAQ</span>
@@ -41,103 +40,86 @@
                 <i class="fal fa-rss-square c-blue"></i>
                 <span class="title">Blog</span>
             </a>
-        </li>
-        <!--<li class="nav-item">
-            <a class="nav-link" href="#">
-                <i class="fal fa-lock-alt c-blue"></i>
-                <span class="title">Security</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/docs/white-paper">
-                <i class="fal fa-file-alt c-blue"></i>
-                <span class="title">White Paper</span>
-            </a>
-        </li>
-        -->
-        <li class="nav-section">
-            Developers
-        </li>
-        <li class="nav-item">
+        </li> -->
+    <li class="nav-section">Developers</li>
+    <!-- <li class="nav-item">
             <a class="nav-link" href="/docs">
                 <i class="fal fa-book c-blue"></i>
                 <span class="title">Docs</span>
             </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/docs#projects">
-                <i class="far fa-cubes c-blue"></i>
-                <span class="title">Our Projects</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contribute">
-                <i class="fal fa-code-branch c-blue"></i>
-                <span class="title">Contribute</span>
-            </a>
-        </li>
-        <li class="nav-item">
+        </li> -->
+    <li class="nav-item">
+      <a class="nav-link" href="/docs#projects">
+        <i class="far fa-cubes c-blue"></i>
+        <span class="title">Our Projects</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contribute">
+        <i class="fal fa-code-branch c-blue"></i>
+        <span class="title">Contribute</span>
+      </a>
+    </li>
+    <!-- <li class="nav-item">
             <a class="nav-link" href="/contribute#projects-we-love">
                 <i class="fal fa-heart c-blue"></i>
                 <span class="title">Projects we love</span>
             </a>
-        </li>
-        <li class="nav-section">
-            Resources
-        </li>
-        <li class="nav-item">
+        </li> -->
+    <li class="nav-section">Resources</li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contribute#projects-we-love">
+        <img src="/img/icon-partners.svg" alt="Partners" />
+        <span class="title">Partners</span>
+      </a>
+    </li>
+    <!-- <li class="nav-item">
             <a class="nav-link" href="/about">
                 <i class="fal fa-home c-blue"></i>
                 <span class="title">About us</span>
             </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/jobs">
-                <i class="fal fa-laptop-code c-blue"></i>
-                <span class="title">Jobs</span>
-            </a>
-        </li>
-        <!--<li class="nav-item">
-            <a class="nav-link" href="/help">
-                <i class="fal fa-life-ring c-pink"></i>
-                <span class="title">Help center</span>
-            </a>
-        </li>-->
-        <li class="nav-item">
-            <a class="nav-link" href="/newsletter">
-                <i class="fal fa-envelope-open-text c-blue"></i>
-                <span class="title">Newsletter</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/contact">
-                <i class="fal fa-paper-plane c-blue"></i>
-                <span class="title">Contact</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/press">
-                <i class="fal fa-newspaper c-blue"></i>
-                <span class="title">Press</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://berty-tech.myshopify.com/">
-                <i class="fal fa-store c-blue"></i>
-                <span class="title">Boutique</span>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="https://assets.berty.tech/">
-                <i class="fal fa-photo-video c-blue"></i>
-                <span class="title">Assets</span>
-            </a>
-        </li>
-        <!--<li class="nav-item">
+        </li> -->
+    <li class="nav-item">
+      <a class="nav-link" href="/jobs">
+        <i class="fal fa-laptop-code c-blue"></i>
+        <span class="title">Jobs</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/newsletter">
+        <i class="fal fa-envelope-open-text c-blue"></i>
+        <span class="title">Newsletter</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">
+        <i class="fal fa-paper-plane c-blue"></i>
+        <span class="title">Contact</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/press">
+        <i class="fal fa-newspaper c-blue"></i>
+        <span class="title">Press</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://berty-tech.myshopify.com/">
+        <i class="fal fa-store c-blue"></i>
+        <span class="title">Boutique</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://assets.berty.tech/">
+        <i class="fal fa-photo-video c-blue"></i>
+        <span class="title">Assets</span>
+      </a>
+    </li>
+    <!--<li class="nav-item">
             <a class="nav-link" href="/download">
                 <i class="fal fa-arrow-circle-down c-blue"></i>
                 <span class="title">Download app</span>
             </a>
         </li>-->
-    </ul>
+  </ul>
 </amp-sidebar>
