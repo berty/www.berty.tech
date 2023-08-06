@@ -9,7 +9,6 @@ image: "berty_features.png"
 #weight: -50
 aliases:
   - /Chat
-  - /Mensageria
 ---
 
 {{< display_section_features >}}
