@@ -1,0 +1,58 @@
+{{.Scratch.Set "body-class" "page-single wh"}} {{ partial "head" . }}
+
+<header
+  class="header-rounded large products {{ if .Params.Hclass }}{{.Params.Hclass}}{{ else }}bg-blue gradient{{ end }}"
+>
+  <div class="container text-center">
+    <div class="d-flex flex-row align-items-center justify-content-center">
+      {{ partial "img" (dict "ctx" . "class" "img-header-products" "src"
+      .Params.header.img "width" "10" "height" "10" "layout" "responsive") }}
+      <h1 class="text-shadow">{{.Title}}</h1>
+    </div>
+    <h3 class="text-shadow subtitle mb-4">{{.Params.Subtitle}}</h3>
+    <a
+      href="{{.Params.header.button.link}}"
+      class="btn btn-white btn-bty"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {{.Params.header.button.text}}
+      <i class="far fa-arrow-right"></i>
+    </a>
+  </div>
+  <!-- /.container -->
+</header>
+
+<div class="content">
+  <div class="container">
+    <section class="section-info">
+      <div class="block block-products bg-white {{ .Params.bodyClass }}">
+        <div class="row">
+          <div class="col-lg-6">
+            {{ range .Params.body.text }}
+            <p>{{.}}</p>
+            {{ end }}
+            <a
+              href="{{ .Params.body.button.link }}"
+              class="btn btn-bty btn-reverse-blue mt-4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ .Params.body.button.text }}
+              <i class="far fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <div class="block-mixed-img">
+              {{ partial "img" (dict "ctx" . "class" "img-block-products" "src"
+              .Params.body.img "layout" "responsive" "width" "80" "height"
+              "80")}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{{ partial "footer" . }}

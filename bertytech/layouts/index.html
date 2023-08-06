@@ -1,69 +1,116 @@
-{{.Scratch.Set "navbar-class" "navbar-home" }}
-{{ partial "head" . }}
+{{.Scratch.Set "navbar-class" "navbar-home" }} {{ partial "head" . }}
 
 <section class="section-header">
-	<div class="section-bg bg-purple gradient">
-		<div class="particles" id="particles-js-1"></div>
-		<img src="/img/wave_blue.svg" class="img img-wave">
-		<div class="container">	
-			<div class="img img-planet-purple">
-				{{ partial "img" (dict "ctx" . "src" "/img/planet_purple.png" "layout" "fill")}}
-			</div>
-			<div class="img img-planet-pink">
-				{{ partial "img" (dict "ctx" . "src" "/img/planet_pink.png" "layout" "fill")}}
-			</div>
-		</div><!-- /.container -->
-		<img src="/img/wave_bottom.svg" class="img img-wave-bottom">
-		<div class="img img-planet-orange">
-			{{ partial "img" (dict "ctx" . "src" "/img/planet_orange.png" "layout" "fill")}}
-		</div>
-	</div><!-- /.header-bg -->
-	<div class="section-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 header-left">
-					<h1>Pioneering Decentralized Communication Tools</h1>
-					<br>
-          <h4><a href="https://github.com/berty/berty">Berty Messenger</a>, built on <a href="https://wesh.network">Wesh Network</a>, is a concrete demonstration of Berty Technologies' pledge to privacy in the realm of decentralization</h4>
-					<div class="download-button">
-						<a href="https://play.google.com/store/apps/details?id=tech.berty.android" target="_blank" rel="noopener noreferrer">
-							<img src="/img/google-play-logo.png" alt="Google play store">
-						</a>
-						<a href="https://apps.apple.com/tt/app/berty/id1535500412" target="_blank" rel="noopener noreferrer">
-							<img src="/img/app-store-logo.png" alt="Apple store">
-						</a>
-					</div>
-				</div><!-- /.col /.header-left -->
-	      		<div class="col-md-6 header-right">
-	      			<div class="img-phone phone-right android">
-						<img src="/img/screen_android.svg" class="img">
-					</div> 
-					<div class="img-phone phone-left ios">
-						<img src="/img/screen_ios.svg" class="img">
-					</div>
-				</div><!-- /.col /.header-right -->
-	    	</div><!-- /.row -->
-	  	</div><!-- /.container -->
-  	</div><!-- /.header-content -->
+  <div class="section-bg bg-purple gradient">
+    <div class="particles" id="particles-js-1"></div>
+    <img src="/img/wave_blue.svg" class="img img-wave" />
+    <div class="container">
+      <div class="img img-planet-purple">
+        {{ partial "img" (dict "ctx" . "src" "/img/planet_purple.png" "layout"
+        "fill")}}
+      </div>
+      <div class="img img-planet-pink">
+        {{ partial "img" (dict "ctx" . "src" "/img/planet_pink.png" "layout"
+        "fill")}}
+      </div>
+    </div>
+    <!-- /.container -->
+    <img src="/img/wave_bottom.svg" class="img img-wave-bottom" />
+    <div class="img img-planet-orange">
+      {{ partial "img" (dict "ctx" . "src" "/img/planet_orange.png" "layout"
+      "fill")}}
+    </div>
+  </div>
+  <!-- /.header-bg -->
+  <div class="section-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 header-left">
+          <h1>Unstoppable P2P Communication</h1>
+          <br />
+          <h4>
+            Berty NGO’s aim is to facilitate open and free communication without
+            any limitations imposed by centralized systems.
+          </h4>
+        </div>
+        <!-- /.col /.header-left -->
+        <div class="col-md-6 header-right">
+          <div class="img-phone phone-right android">
+            <img src="/img/screen_android.svg" class="img" />
+          </div>
+          <div class="img-phone phone-left ios">
+            <img src="/img/screen_ios.svg" class="img" />
+          </div>
+        </div>
+        <!-- /.col /.header-right -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.header-content -->
 </section>
 
-{{ partial "section_features" . }}
-
-{{ partial "section_more" . }}
-
-{{ partial "section_articles" . }}
-
-{{ partial "section_newsletter" . }}
-
-{{ partial "footer" . }}
+<!-- {{ partial "section_features" . }}  -->
+{{/* Section 1 */}}
+<div class="container">
+  <section class="section-about top home">
+    <div class="block block-about bg-white">
+      <div class="row">
+        {{ range .Params.section_1 }}
+        <div class="col-lg-4">
+          <div class="text-center">
+            <div class="img-icon">
+              {{ $img := $.Page.Resources.GetMatch .image }} {{ partial "img"
+              (dict "ctx" . "src" .image "width" "120" "height" "120") }}
+            </div>
+            <h4>{{ .title }}</h4>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <div class="block-mixed-img">
+            {{ partial "img" (dict "ctx" . "class" "img-open-source" "src"
+            .Params.section_3.image "layout" "responsive" "width" "70" "height"
+            "70") }}
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="block-mixed-text">
+            <h3>{{ .Params.section_3.title }}</h3>
+            <ul>
+              {{ range $index, $el := .Params.section_3.items }}
+              <li>
+                {{.}} {{ if eq $index 3 }} &nbsp;&nbsp;<a
+                  class="btn btn-bty btn-blue icon-right"
+                  href="{{ relLangURL `/contribute` }}"
+                  role="button"
+                  >{{ T "go_to_contribute_page" . }}<i
+                    class="far fa-arrow-right"
+                  ></i
+                ></a>
+                {{ end }}
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{{ partial "section_more" . }} {{ partial "section_articles" . }} {{ partial
+"section_newsletter" . }} {{ partial "footer" . }}
 
 <script src="{{ (resources.Get `js/lottie.js` | resources.Minify | fingerprint).RelPermalink }}"></script>
 <script>
-	lottie.loadAnimation({
-		container: document.getElementById('distributed_web_anim'),
-		renderer: 'svg',
-		loop: true,
-		autoplay: true,
-		path: '.{{ (resources.Get "animations/distributed_web_anim.json").RelPermalink }}'
-	});
+  lottie.loadAnimation({
+    container: document.getElementById("distributed_web_anim"),
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: '.{{ (resources.Get "animations/distributed_web_anim.json").RelPermalink }}',
+  });
 </script>

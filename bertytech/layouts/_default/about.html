@@ -1,91 +1,97 @@
-{{.Scratch.Set "body-class" "page-single wh"}}
-{{ partial "head" . }}
-
-{{ partial "page_title" . }}
+{{.Scratch.Set "body-class" "page-single wh"}} {{ partial "head" . }} {{ partial
+"page_title" . }}
 
 <div class="content">
-
-	{{/*  Section 1  */}}
+  {{/* Section 1 */}}
   <div class="container">
-		<section class="section-about top">
-			<div class="block block-about bg-white">
-				<div class="row">
-					{{ range .Params.section_1 }}
-					<div class="col-lg-4">
-						<div class="text-center">
-							<div class="img-icon">
-								{{ $img := $.Page.Resources.GetMatch .image }}
-								{{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "120" "height" "120") }}
-							</div>
-							<h4>{{ .title }}</h4>
-						</div>
-					</div>
-					{{ end }}
-				</div>
-			</div>
-		</section>
-	</div>
+    <section class="section-about top">
+      <div class="block block-about bg-white">
+        <div class="row">
+          {{ range .Params.section_1 }}
+          <div class="col-lg-4">
+            <div class="text-center">
+              <div class="img-icon">
+                {{ $img := $.Page.Resources.GetMatch .image }} {{ partial "img"
+                (dict "ctx" . "src" $img.RelPermalink "width" "120" "height"
+                "120") }}
+              </div>
+              <h4>{{ .title }}</h4>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  </div>
 
-	{{/*  Section 2  */}}
-	<section class="section-hwbg bg-grey">
-		<div class="container">
-			<div class="block-mixed">
-				<div class="row">
-					<div class="col-md-7">
-						<div class="block-mixed-text">
-							{{ range .Params.section_2.items }}
-							<h3>{{ .title }}</h3>
-							<ul>
-								{{ range .items }}
-								<li>{{.}}</li>
-								{{ end }}
-							</ul>
-							<br />
-							<br />
-							{{ end }}
-						</div>
-					</div>
-					<div class="col-md-5">
-						<div class="block-mixed-img">
-							{{ $img := .Page.Resources.GetMatch .Params.section_2.image }}
-							{{ partial "img" (dict "ctx" . "class" "img-blob-photo" "src" $img.RelPermalink "layout" "responsive" "width" "200" "height" "300") }}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  {{/* Section 2 */}}
+  <section class="section-hwbg bg-grey">
+    <div class="container">
+      <div class="block-mixed">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="block-mixed-text">
+              {{ range .Params.section_2.items }}
+              <h3>{{ .title }}</h3>
+              <ul>
+                {{ range .items }}
+                <li>{{.}}</li>
+                {{ end }}
+              </ul>
+              <br />
+              <br />
+              {{ end }}
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="block-mixed-img">
+              {{ $img := .Page.Resources.GetMatch .Params.section_2.image }} {{
+              partial "img" (dict "ctx" . "class" "img-blob-photo" "src"
+              $img.RelPermalink "layout" "responsive" "width" "200" "height"
+              "300") }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	{{/*  Section 3  */}}
-	<div class="container">
-		<section class="section-about bottom">
-			<div class="block block-mixed bg-white">
-				<div class="row">
-					<div class="col-md-4">
-						<div class="block-mixed-img">
-						{{ partial "img" (dict "ctx" . "class" "img-open-source" "src" .Params.section_3.image "layout" "responsive" "width" "70" "height" "70") }}
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="block-mixed-text">
-							<h3>{{ .Params.section_3.title }}</h3>
-							<ul>
-								{{ range $index, $el := .Params.section_3.items }}
-								<li>
-									{{.}}
-									{{ if eq $index 3 }}
-									&nbsp;&nbsp;<a class="btn btn-bty btn-blue icon-right" href="{{ relLangURL `/contribute` }}" role="button">{{ T "go_to_contribute_page" . }}<i class="far fa-arrow-right"></i></a>
-									{{ end }}
-								</li>
-								{{ end }}
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
-
+  {{/* Section 3 */}}
+  <div class="container">
+    <section class="section-about bottom">
+      <div class="block block-mixed bg-white">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="block-mixed-img">
+              {{ partial "img" (dict "ctx" . "class" "img-open-source" "src"
+              .Params.section_3.image "layout" "responsive" "width" "70"
+              "height" "70") }}
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="block-mixed-text">
+              <h3>{{ .Params.section_3.title }}</h3>
+              <ul>
+                {{ range $index, $el := .Params.section_3.items }}
+                <li>
+                  {{.}} {{ if eq $index 3 }} &nbsp;&nbsp;<a
+                    class="btn btn-bty btn-blue icon-right"
+                    href="{{ relLangURL `/contribute` }}"
+                    role="button"
+                    >{{ T "go_to_contribute_page" . }}<i
+                      class="far fa-arrow-right"
+                    ></i
+                  ></a>
+                  {{ end }}
+                </li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
 
 {{ partial "footer" . }}
