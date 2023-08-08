@@ -4,7 +4,7 @@ subtitle: Berty messenger is a privacy-first messaging application built on top 
 header:
     img: icon-messenger.svg
     button:
-        link: [https://berty-handles.netlify.app/vision](https://berty.app)
+        link: https://berty.app
         text: Berty Messenger
 hclass: bg-blue gradient bg-messenger
 image: "berty_about.png"
