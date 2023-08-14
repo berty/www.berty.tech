@@ -6,7 +6,7 @@
   <div class="container text-center">
     <div class="d-flex flex-row align-items-center justify-content-center">
       {{ partial "img" (dict "ctx" . "class" "img-header-products" "src"
-      .Params.header.img "width" "10" "height" "10" "layout" "responsive") }}
+      .Params.header.image "width" "10" "height" "10" "layout" "responsive") }}
       <h1 class="text-shadow">{{.Title}}</h1>
     </div>
     <h3 class="text-shadow subtitle mb-4">{{.Params.Subtitle}}</h3>
@@ -45,7 +45,7 @@
           <div class="col-lg-6">
             <div class="block-mixed-img">
               {{ partial "img" (dict "ctx" . "class" "img-block-products" "src"
-              .Params.body.img "layout" "responsive" "width" "80" "height"
+              .Params.body.image "layout" "responsive" "width" "80" "height"
               "80")}}
             </div>
           </div>
