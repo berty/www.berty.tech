@@ -2,7 +2,7 @@
 title: "Berty Messenger"
 subtitle: Berty messenger is a privacy-first messaging application built on top of the protocol Wesh Network.
 header:
-    img: icon-messenger.svg
+    image: icon_messenger.svg
     button:
         link: https://berty.app
         text: Berty Messenger
@@ -18,5 +18,5 @@ body:
     button:
         text: Berty Messenger
         link: https://berty.app
-    img: img-messenger.png
+    image: img_messenger.png
 ---
