@@ -2,7 +2,7 @@
 title: "Wesh Network"
 subtitle: An open source, wild & asynchronous mesh network protocol powered by Berty Technologies.
 header:
-  img: icon-wesh.svg
+  image: icon_wesh.svg
   button:
     link: https://wesh.network/
     text: Wesh.network
@@ -17,6 +17,6 @@ body:
   button:
     text: Wesh.network
     link: https://wesh.network/
-  img: img-wesh.png
+  image: img_wesh.png
 ---
 
