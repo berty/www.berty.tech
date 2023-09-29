@@ -4,11 +4,11 @@ title: "Digital Signature"
 date: 2019-10-17
 image: "digital-signature.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- Technical
-- Security
-description: 
+  - Technical
+  - Security
+description:
 ---
 
 # Digital Signatures
@@ -33,7 +33,7 @@ Hashing is a principle that’s used to transform a certain string of characters
 ### Preparation of the Signed Message
 First, the data for the hash that needs to be signed is calculated. The produced one-way hash function minimizes the chances of getting the same value from different texts. The signer then encrypts the hash calculation with their private key which is specific to each signer. This key shouldn’t be shared with anyone.
 
-The pair, comprising a document and a signature, is then sent to the receiver. The document is shown to the recipient in clear text (not encrypted), but it can’t be altered or edited, as it has the original signature attached to it. 
+The pair, comprising a document and a signature, is then sent to the receiver. The document is shown to the recipient in clear text (not encrypted), but it can’t be altered or edited, as it has the original signature attached to it.
 
 ### Verification of the Signed Message
 Every digitally-signed document can be checked for authenticity. In order to do this, the receiving party decrypts the hash with the signer’s public key. Then, the original hashing algorithm is used to create a brand new one-way hash that contains the identical data.
@@ -49,41 +49,28 @@ Digital signatures come with one rule that ensures total protection: never, ever
 
 Every digital signature aims to fulfill the following three requirements: authentication, integrity, and non-repudiation. This is known as digital signature application and is the basis of how digital signatures work and what they do.
 
-* ### Authentication
-Most messages include the sender’s information. However, the senders of the majority of illegitimate, harmful messages will do their best to make sure that this information is accurate, to gain your trust. This is where the digital signatures kick in.
-With this technology, the message source can be authenticated easily, providing an additional layer of online safety. Keep in mind that impersonation is one of the most common methods of data theft.
+* ### Authentication Most messages include the sender’s information. However, the senders of the majority of illegitimate, harmful messages will do their best to make sure that this information is accurate, to gain your trust. This is where the digital signatures kick in. With this technology, the message source can be authenticated easily, providing an additional layer of online safety. Keep in mind that impersonation is one of the most common methods of data theft.
 
-* ### Integrity
-Even in a scenario where it is confirmed that the sender is who they claim to be, there is no guarantee that message in question hasn’t been altered somewhere down the line. Think of it as a receipt of sorts – you’ll want to make sure that the content of the message is the same as it was in the original version. This is yet another thing that digital signatures can be used for - checking the message’s integrity.
+* ### Integrity Even in a scenario where it is confirmed that the sender is who they claim to be, there is no guarantee that message in question hasn’t been altered somewhere down the line. Think of it as a receipt of sorts – you’ll want to make sure that the content of the message is the same as it was in the original version. This is yet another thing that digital signatures can be used for - checking the message’s integrity.
 
-* ### Non-Repudiation
-Finally, non-repudiation is another vitally important step in ensuring the safety of a digital signature. Even with an authenticated message and proven message integrity, the sender can claim that they didn’t sign the message when they actually have.
-This is another thing that the digital signature technology brings to the table – with the sender’s private and public keys, there is no hiding – the sender can never deny sending a digital document.
+* ### Non-Repudiation Finally, non-repudiation is another vitally important step in ensuring the safety of a digital signature. Even with an authenticated message and proven message integrity, the sender can claim that they didn’t sign the message when they actually have. This is another thing that the digital signature technology brings to the table – with the sender’s private and public keys, there is no hiding – the sender can never deny sending a digital document.
 
 ## Examples of digital signatures
 Digital signatures can be applied in a wide variety of fields. Although listing all digital signature examples would be nearly impossible, there are a few noteworthy ones.
 
 ![](code.jpg)
 
-* ### RSA-PSS
-RSA-PSS is an RSA-based signature scheme allows more modern security analysis methods. RSA is short for Rivest-Shamir-Adleman and was among the first public-key cryptosystems in the world.
+* ### RSA-PSS RSA-PSS is an RSA-based signature scheme allows more modern security analysis methods. RSA is short for Rivest-Shamir-Adleman and was among the first public-key cryptosystems in the world.
 
-* ### ECDSA
-ECDSA, short for Elliptic Curve Signature Algorithm, is essentially a DSA (Digital Signature Algorithm) variant that uses the specific, elliptic-curve cryptography. This form of cryptography revolves around elliptic curves of algebraic structure over finite fields.
+* ### ECDSA ECDSA, short for Elliptic Curve Signature Algorithm, is essentially a DSA (Digital Signature Algorithm) variant that uses the specific, elliptic-curve cryptography. This form of cryptography revolves around elliptic curves of algebraic structure over finite fields.
 
-* ### EdDSA
-EdDSA is short for Edwards-curve Digital Signature Algorithm. Essentially, it is designed to be faster than other digital signature schemes, but without compromising security. Some still swear by this algorithm. One of its most popular variants is called Ed25519.
+* ### EdDSA EdDSA is short for Edwards-curve Digital Signature Algorithm. Essentially, it is designed to be faster than other digital signature schemes, but without compromising security. Some still swear by this algorithm. One of its most popular variants is called Ed25519.
 
-* ### ElGamal Signature Scheme
-This digital signature scheme is DSA’s predecessor and it is used for computing discrete logarithms. Its main variations are the Schnorr and Pointcheval-Stern signature algorithms.
+* ### ElGamal Signature Scheme This digital signature scheme is DSA’s predecessor and it is used for computing discrete logarithms. Its main variations are the Schnorr and Pointcheval-Stern signature algorithms.
 
-* ### Rabin Signature Algorithm
-This is one of the first digital signature schemes ever proposed. It’s simple, valuable, and it played an important role in the development of the digital signature technology.
-Pairing-Based Schemes
-The BLS, or Boneh-Lynn-Shacham, pairing-based scheme is used to verify the authenticity of the signer.
+* ### Rabin Signature Algorithm This is one of the first digital signature schemes ever proposed. It’s simple, valuable, and it played an important role in the development of the digital signature technology. Pairing-Based Schemes The BLS, or Boneh-Lynn-Shacham, pairing-based scheme is used to verify the authenticity of the signer.
 
-* ### Aggregate Signatures
-Essentially, this scheme aggregates the n-number of user keys, in n-number of messages, from n-number of users into one signature. Scalability makes this scheme particularly useful in the world of crypto currencies.
+* ### Aggregate Signatures Essentially, this scheme aggregates the n-number of user keys, in n-number of messages, from n-number of users into one signature. Scalability makes this scheme particularly useful in the world of crypto currencies.
 
 ## Digital Signature are crucial in the Modern World
 Digital signatures are very important in modern-day online computing. This technology makes sure that the sent messages are authentic and their integrity and non-repudiation are not compromised. It speeds up each of these three processes and makes them available world-wide. Without the digital signature technology, it would be very hard to establish trust and confidentiality on the web.
