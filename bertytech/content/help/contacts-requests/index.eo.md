@@ -7,4 +7,4 @@ color: pink
 
 # Contacts & Requests
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Baldaŭ novaĵoj</span>
