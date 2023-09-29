@@ -1,7 +1,7 @@
 ---
-title: "What are the advantages of not being centralized?"
+title: "Каковы преимущества отсутствия централизации?"
 id: 7
 private: true
 ---
 
-A centralized model cannot work without a server. It belongs to and depends on an entity that controls all the information that passes through it. What happens if this identity is malicious? Or if it is threatened by a third party or simply hacked? Our personal data cannot be truly protected if it is dependent on a single identity. If a government decides to isolate a country and cut off the internet, the centralized system becomes non-functional. To avoid all this, for Berty we have chosen a free network which does not depend on any entity or government.
+Централизованная модель не может работать без сервера. Он принадлежит и зависит от объекта, который контролирует всю информацию, проходящую через него. Что произойдет, если эта личность является злонамеренной? Или если ему угрожает третья сторона или просто взломали? Наши личные данные не могут быть по-настоящему защищены, если они зависят от одной личности. Если правительство решает изолировать страну и отключить Интернет, централизованная система перестает работать. Чтобы избежать всего этого, для Berty мы выбрали свободную сеть, которая не зависит от какой-либо организации или правительства.
