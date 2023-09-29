@@ -1,13 +1,13 @@
 ---
-title: "What does Peer-To-Peer (P2P) mean?"
+title: "Что значит Peer-To-Peer (P2P)?"
 id: 3
 private: true
 ---
 
-There are different models for establishing a connection between two programs.
+Существуют разные модели установления связи между двумя программами.
 
-One is called a "client", and the other is a "server". In general, the “client” program makes a request and the “server” responds to this request. It is an “asymmetrical” architecture which passes through a central server.
+Один называется "клиентом", а другой - "сервером". Обычно "клиентская" программа делает запрос, а "сервер" отвечает на этот запрос. Это "асимметричная" архитектура, которая проходит через центральный сервер.
 
-Berty uses a symmetrical model called peer-to-peer (P2P), in which it is the responsibility of both programs to play the roles of both the client and the server. Giving each program both roles allows an anonymous exchange between them, without personal information passing through a server.
+Berty использует симметричную модель, называемую одноранговой (P2P), в которой обе программы несут ответственность за выполнение ролей как клиента, так и сервера. Предоставление каждой программе обеих ролей позволяет осуществлять анонимный обмен между ними без прохождения личной информации через сервер.
 
 {{< img src="client_server_p2p.svg" width="1531" height="505" >}}
