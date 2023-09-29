@@ -1,14 +1,15 @@
 ---
 title: "Berty News #39"
 date: 2020-06-26
-aliases: ["/newsletter/weekly-39"]
+aliases:
+  - "/newsletter/weekly-39"
 ---
 
 # News #39
 
 Howdy!
 
-Welcome back! We hope you're good! 
+Welcome back! We hope you're good!
 
 As usual, a word about the team: Everything's going well and we're happy with our progress. We're very focused on the stability of our beta. We're keeping pace. 💪
 
@@ -18,17 +19,17 @@ Without further ado, here's your digest of berty's shiny new things for the last
 ## 🚀 Open Source
 
 
-* **Testing Parties**: 
-    * 🎉 Our testing parties are a blast, even if this week we're getting serious. We're extra focused on stability, because, well, we want the app to be stable (who wouldn't?!). Because we're implementing our own protocol, it is important that each step is well done. First impressions count! 
-    * 🔨 The front team is still adding new features every week for us to check out together. It's a really big job.  Keep it up guys! 
-    * 🆕 We're also testing the "berty mini" part which will be the desktop version. It allows to have conversations between an iPhone and a laptop. It's very handy. 
-    * 📈 To sum up: We're moving forward every week. We don't want to break things and have a party that's over before it begins! Next week will most likely be devoted to stability/reliability again. Then we'll see if/how we can get you involved if you're interested. 
+* **Testing Parties**:
+    * 🎉 Our testing parties are a blast, even if this week we're getting serious. We're extra focused on stability, because, well, we want the app to be stable (who wouldn't?!). Because we're implementing our own protocol, it is important that each step is well done. First impressions count!
+    * 🔨 The front team is still adding new features every week for us to check out together. It's a really big job.  Keep it up guys!
+    * 🆕 We're also testing the "berty mini" part which will be the desktop version. It allows to have conversations between an iPhone and a laptop. It's very handy.
+    * 📈 To sum up: We're moving forward every week. We don't want to break things and have a party that's over before it begins! Next week will most likely be devoted to stability/reliability again. Then we'll see if/how we can get you involved if you're interested.
 
 
-* **Local Discovery**: 
+* **Local Discovery**:
     * [@D4ryl](https://github.com/D4ryl00) set up local discovery which allows you to discover peers on a local network, without going through the DHT (a heavy lookup service) or the Rendezvous Point (which is otherwise a necessary detour for our protocol's network traffic).
 
-* **Search UX/UI**: 
+* **Search UX/UI**:
     * [@ekelen](https://github.com/ekelen) added a search screen to the mobile app, so now you can instantly find the embarrassing message where your friend asked you if the world is really flat.
 
 * **HTTP support**:
@@ -39,7 +40,7 @@ Without further ado, here's your digest of berty's shiny new things for the last
 
 
 * **Readme update:**
-    * We updated our README on berty/berty repo 
+    * We updated our README on berty/berty repo
       * 👉 https://github.com/berty/berty/blob/master/README.md
 
 
@@ -71,10 +72,9 @@ Until further notice, we are canceling all in-person events at public venues –
     * [How Berty Works #1: IPFS](https://berty.tech/blog/how-berty-works-ipfs/)
     * [Stop spying on me!](https://berty.tech/blog/stop-spying-on-me/)
 
-## 💌 Mention 
+## 💌 Mention
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Pretty soon it will be <a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a></p>&mdash; [ X_J ]⚡ (@X_J) <a href="https://twitter.com/X_J/status/1275061318374944768?ref_src=twsrc%5Etfw">June 22, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ## ⚙️ Recent Changes
 
