@@ -1,6 +1,6 @@
 ---
-title: "Challenges"
-subtitle: Technicals, humans and more
+title: "Desafíos"
+subtitle: Tecnológicos, humanos y más
 draft: false
 ---
 
