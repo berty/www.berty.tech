@@ -8,7 +8,7 @@ categories:
   - news
 tags:
   - liberty
-  - announcement
+  - Annonce
   - news
 description: "All Berty's repos will be open-sourced!"
 ---
