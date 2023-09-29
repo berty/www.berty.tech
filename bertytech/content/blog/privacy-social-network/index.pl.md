@@ -4,9 +4,9 @@ title: "How Social Networks Affect Our Privacy?"
 date: 2019-01-07
 image: "social-media.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
-  - privacy
+  - prywatność
   - social-networks
   - internet
 description: Privacy is a difficult concept to grasp. Our world is changing from day to day, and it is sometimes difficult to define what is on the private side or public side. Is putting a beautiful photograph on Instagram, something private?
@@ -60,7 +60,7 @@ Moreover, yet, many whistleblowers have shown us the opposite. We have all, as b
 
 A simple question to conclude those simple tests: **which situation is the worst?**
 
- None is the correct answer. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+ None is the correct answer. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{< tweet id="1082309056050671617" >}}
 
