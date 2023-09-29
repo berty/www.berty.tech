@@ -7,7 +7,7 @@ categories:
   - free-speech
 tags:
   - how-to
-  - security
+  - безопасность
   - censorship
 description: At this particular point in time, it’s occurred to you that it might be a good idea to set up a VPN (Virtual Private Network) on your mobile phone. However, the problem is that you don’t have any idea of where to begin. Well, the good news is thatyou’ve come to the right place. We’re here to tell you how to set up your new VPN in just a few minutes on either your iPhone or your Android device.
 ---
