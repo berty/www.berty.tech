@@ -1,6 +1,6 @@
 ---
 author: manfred
-title: "Berty is opening its code! 📢"
+title: "Berty открывает свой код! 📢"
 date: 2020-03-25
 #image: "opensource.png"
 image: "opensource.png"
@@ -10,102 +10,102 @@ tags:
   - liberty
   - announcement
   - news
-description: "All Berty's repos will be open-sourced!"
+description: "Все репозитории Berty будут с открытым исходным кодом!"
 ---
 
 
 **TL;DR:**
 
-* **All Berty's repos will be open-sourced: https://github.com/berty/**
-* **Join the Berty community on [Discord](https://crpt.fyi/berty-discord)**
+* **Все репозитории Berty будут с открытым исходным кодом: https://github.com/berty/**
+* **Присоединяйтесь к сообществу Berty в [Discord](https://crpt.fyi/berty-discord)**
 
-# Berty is opening its code!
+# Berty открывает свой код!
 
-Since its inception, Berty was meant to be completely open source. And we're finally putting all our work at your disposal! This includes both the work in progress and the finished work. In this blog post, we will explain why we decided to open-source everything and how to get access.
+С момента своего создания Berty был задуман как полностью с открытым исходным кодом. И мы наконец-то предоставляем всю нашу работу в ваше распоряжение! Это касается как незавершенной, так и законченной работы. В этой статье блога мы объясним, почему мы решили сделать всё с открытым исходным кодом и как получить доступ.
 
-Keep in mind that all the repos will be opened progressively. It's a real challenge, but we're hopeful we'll be able to start sharing today.
+Имейте в виду, что все репозитории будут открываться постепенно. Это действительно сложная задача, но мы надеемся, что сможем начать совместную работу уже сегодня.
 
 
 
-## 🤔 Why going open source?
+## 🤔 Зачем переходить на открытый исходный код?
 
-At Berty's, we're big fans of using metaphors. So, here's our _DaftPunk_ arguments in favor of opening up our work! 😀
+В Berty мы большие поклонники использования метафор. Итак, вот наши _DaftPunk_ аргументы в пользу открытия наших работ! 😀
 
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/gAjR4_CbPpQ/0.jpg)](https://www.youtube.com/watch?v=gAjR4_CbPpQ)
 
-_Click to listen to Harder, Better, Stronger song 🎵_
+_Нажмите, чтобы прослушать песню Harder, Better, Stronger (Сложнее, лучше, сильнее) 🎵_
 
 
-### Harder 🏋️
+### Сложнее 🏋️
 
-Harder, because we know that open source will force us to outdo ourselves! We are committed to working harder to release Berty as soon as possible with your help. Let's get this thing done together!
-
-
-### Better 🔨
-
-Better, because we know you're going to read the code carefully and help us and the community. We have nothing to hide. This is the one and only time you'll hear us say we have [nothing to hide](https://berty.tech/blog/nothing-to-hide/)! We're sure you will help us improve it and create the best possible application.
+Сложнее, потому что мы знаем, что открытый исходный код заставит нас превзойти самих себя! Мы намерены приложить все усилия, чтобы с вашей помощью выпустить Berty как можно скорее. Давайте сделаем это вместе!
 
 
-### Faster 🏎️
+### Лучше 🔨
 
-Faster, because everyone can repair, update, and upgrade free software faster than proprietary software. We are currently a small team of a dozen people doing a pretty big & challenging project. We're doing our best, but we wouldn't mind a little help to go faster! Let's take this opportunity!
-
-
-### Stronger 💪
+Лучше, потому что мы знаем, что вы внимательно прочитаете код и поможете нам и сообществу. Нам нечего скрывать. Это единственный раз, когда вы услышите от нас, что нам [нечего скрывать](https://berty.tech/blog/nothing-to-hide/)! Мы уверены, что вы поможете нам улучшить его и создать лучшее из возможных приложений.
 
 
-Stronger, because everyone can audit Berty's code and is allowed to verify it without trusting someone else. Berty is meant to be completely transparent. There's no secret agenda - the thing we care about is your security and privacy. Open-sourcing up is the best way to prove that there is no backdoor or bad things hidden in the code.
+### Быстрее 🏎️
 
-And we're sure that the community can come up with great ideas that will make the project stronger!
-
-
-## 🙌 We need you
-
-We truly need you. The Berty team is focused on the parts that are complicated and require deep knowledge of this project, but some parts are more readily accessible to people who are just getting on the board. Anyone could help, and it's greatly appreciated! So if you have the soul of a warrior, join us and help us create the messaging application of tomorrow as soon as possible!
-
-Non-programmers can also help. We know that there are a lot of designers and other creative people who are interested in privacy and security. We hope they will take some time to contribute to projects like Berty.
-
-We started with a DaftPunk comparison, so we will end by quoting one of their albums, _Human after all_. Since the software is written by humans, it's highly unlikely to be perfect, and even if it's great, it's unlikely to satisfy every use case.
-
-* Maybe you thought about things we didn't
-* Maybe you have a better idea to write a specific piece of code
-* Maybe you have some tools to share
-* Maybe you want to share a good practice
-* Maybe ...
-
-There are so many reasons to contribute! With your help, we hope to build the best private instant messaging app ever!
+Быстрее, потому что каждый может ремонтировать, обновлять и модернизировать свободное программное обеспечение быстрее, чем несвободное. В настоящее время мы - небольшая команда из дюжины человек, выполняющая довольно большой и сложный проект. Мы делаем все, что в наших силах, но мы бы не отказались от небольшой помощи, чтобы двигаться быстрее! Давайте воспользуемся этой возможностью!
 
 
-
-## 🔑 How to get access?
-
-Most of our repos will be available on our main [Berty organization](http://github.com/berty/) on GitHub.
-
-Even if we may split most of our work in dedicated repositories, we currently focus the majority of our work on the [berty/berty](https://github.com/berty/) monorepo.
-
-We also make contributions to external repos or even transfer some of our repos to other organizations, we try to keep an up-to-date list of forked repos in the same GitHub organization.
-
-Another good way to be informed about what we do in Open Source is to subscribe to our newsletter or read or weekly debriefs ([MGMT](https://github.com/berty/mgmt/tree/master/meeting-notes)).
-
-Hot news will be annoucement on our [Discord](https://crpt.fyi/berty-discord) / [Twitter](https://twitter.com/berty)
-
-👉 [Learn More](https://github.com/berty/berty)
-
-## 🛡️ Berty Licence
-
-* *Berty will NEVER be proprietary software.*
-
-We strongly believe that secure messaging cannot be proprietary and has to be open source. In a manner of fact, we have opted for a permissible license. An [Apache 2](https://www.apache.org/licenses/LICENSE-2.0) + [MIT](https://en.wikipedia.org/wiki/MIT_License), to be precise.
-
-The execution of the software for any kind of use will be free. This will allow you to review its source code as often as you wish, at any development stage.
+### Сильнее 💪
 
 
-## 👊 Berty is truly yours!
+Сильнее, потому что каждый может провести аудит кода Berty и имеет возможность проверить его, не доверяя кому-то другому. Berty призван быть полностью прозрачными. У нас нет никаких тайных замыслов - мы заботимся только о вашей безопасности и конфиденциальности. Открытый исходный код - это лучший способ доказать, что в коде не спрятан бэкдор или что-то плохое.
 
-By going open source, we want YOU to own Berty. Its code will be yours: _own it, use it, test it, fix it_. From now on, we're going to do everything we can to be as responsive as possible and to give you as much material as we can.
+И мы уверены, что сообщество может предложить отличные идеи, которые сделают проект еще сильнее!
 
-The community is more than open now. We know that we are can achieve great things. Take care of yourself and your loved ones. We are together! 🧡
+
+## 🙌 Вы нам нужны
+
+Мы действительно нуждаемся в вас. Команда Berty сосредоточена на тех частях, которые сложны и требуют глубоких знаний этого проекта, но некоторые части более доступны для людей, которые только вступают на борт. Любой может помочь, и это будет очень ценно! Так что если у вас есть душа воина, присоединяйтесь к нам и помогите нам как можно скорее создать приложение для обмена сообщениями завтрашнего дня!
+
+Помощь могут также оказать и непрограммисты. Мы знаем, что есть много дизайнеров и других творческих людей, которые интересуются вопросами конфиденциальности и безопасности. Мы надеемся, что они найдут время, чтобы внести свой вклад в такие проекты, как Berty.
+
+Мы начали со сравнения с DaftPunk, поэтому закончим цитатой одного из их альбомов, _Human after all (Все-таки люди)_. Поскольку программное обеспечение написано людьми, очень маловероятно, что оно будет совершенным, и даже если оно великолепно, оно вряд ли удовлетворит все случаи использования.
+
+* Может быть, вы думали о том, о чём не думали мы
+* Может быть, у вас есть лучшая идея написать конкретный фрагмент кода
+* Может быть, у вас есть инструменты, которыми вы можете поделиться
+* Может быть, вы хотите поделиться передовым опытом
+* Может быть...
+
+Есть так много причин внести свой вклад! С вашей помощью мы надеемся создать лучшее приложение для обмена мгновенными сообщениями!
+
+
+
+## 🔑 Как получить доступ?
+
+Большинство наших репозиториев будет доступно в нашей основной [Организации Berty](http://github.com/berty/) на GitHub.
+
+Даже если мы можем разделить большую часть нашей работы по отдельным репозиториям, в настоящее время мы сосредоточили большую часть нашей работы на [berty/berty](https://github.com/berty/) едином реозитории.
+
+Мы также делаем вклад во внешние репозитории или даже передаем некоторые из наших репозиториев другим организациям, мы стараемся поддерживать актуальный список форкнутых репозиториев в той же организации на GitHub.
+
+Еще один хороший способ быть в курсе того, что мы делаем в Open Source - это подписаться на нашу рассылку или читать еженедельные обзоры ([MGMT](https://github.com/berty/mgmt/tree/master/meeting-notes)).
+
+Горячие новости будут объявляться на нашем [Discord](https://crpt.fyi/berty-discord) / [Twitter](https://twitter.com/berty)
+
+👉 [Узнайте больше](https://github.com/berty/berty)
+
+## 🛡️ Лицензия Berty
+
+* *Berty НИКОГДА не будет несвободным программным обеспечением.*
+
+Мы твердо убеждены, что безопасный обмен сообщениями не может быть проприетарным и должен быть с открытым исходным кодом. По сути, мы выбрали разрешенную лицензию. Точнее, [Apache 2](https://www.apache.org/licenses/LICENSE-2.0) + [MIT](https://en.wikipedia.org/wiki/MIT_License).
+
+Выполнение данного программного обеспечения для любого вида использования будет свободным. Это позволит вам просматривать его исходный код так часто, как вы пожелаете, на любой стадии разработки.
+
+
+## 👊 Berty по-настоящему ваш!
+
+Перейдя на открытый исходный код, мы хотим, чтобы Berty принадлежал ВАМ. Его код станет вашим: _владейте им, используйте его, тестируйте его, исправляйте его_. С этого момента мы сделаем все возможное, чтобы быть максимально отзывчивыми и предоставить вам как можно больше материала.
+
+Сейчас сообщество более чем открыто. Мы знаем, что можем достичь великих свершений. Берегите себя и своих близких. Мы вместе! 🧡
 
 
 
