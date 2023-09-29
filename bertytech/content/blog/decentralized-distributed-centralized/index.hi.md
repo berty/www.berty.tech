@@ -8,7 +8,7 @@ categories:
 tags:
   - Technical
   - Security
-description: Centralized systems may have helped build the internet, but they have important disadvantages. That’s what decentralized and distributed systems try to address. Learn more about each type of system.
+description: सेंट्रलाइज्ड सिस्टम ने इंटरनेट बनाने में मदद की हो सकती है, लेकिन उनके महत्वपूर्ण नुकसान हैं। यही डिसेंट्रलाइज्ड और डिस्ट्रीब्यूटेड प्रणालियां संबोधित करने की कोशिश करती हैं। प्रत्येक प्रकार की प्रणाली के बारे में अधिक जानें।
 ---
 
 # आपको कौन सा चुनना चाहिए?
