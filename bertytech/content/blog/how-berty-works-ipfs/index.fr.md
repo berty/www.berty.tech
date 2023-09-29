@@ -5,7 +5,7 @@ date: 2020-06-23
 #image: "HBW1.jpg"
 image: "HBW1.jpg"
 categories:
-  - technical
+  - technique
 tags:
   - technical
   - ipfs
