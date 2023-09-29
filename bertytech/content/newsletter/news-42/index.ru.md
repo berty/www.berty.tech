@@ -36,15 +36,15 @@ As you can see, we've got stuff on the grill. 🔥
  We hope that we'll have a "closed" version during September that we'll be able to test with our very close friends to get the first feedback. We hope everything goes well and that we can open the beta to everyone willing to look.
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
-* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * October 7th, 2020: [Paris P2P #12](https://p2p.paris/en/event/monthly-12/)
 * October 21-23, 2020: [PWG 2020](https://www.planetiers.com/worldgathering/)
@@ -63,10 +63,10 @@ Here are the articles published since the last newsletter. Don't forget to follo
 ![](https://i.imgur.com/0VDM1lV.png) (_seen on our Discord, join us!_)
 
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-08-33](https://github.com/berty/community/blob/master/meeting-notes/2020/Q3/2020-08-03--staff-team-weekly-sync.md)
     * [2020-07-27](https://github.com/berty/community/blob/master/meeting-notes/2020/Q3/2020-07-27--staff-team-weekly-sync.md)
 
