@@ -1,5 +1,5 @@
 ---
-title: "Berty Community"
+title: "Сообщество Berty"
 description: How to become a member and start contributing
 image: "berty_community.png"
 icon: fal fa-users
@@ -11,8 +11,8 @@ menu:
   main:
     weight: 40
 aliases:
-  - /ru/docs/community
-url: /ru/community
+  - /docs/community
+url: /community
 ---
 
 # Welcome in Berty's community
