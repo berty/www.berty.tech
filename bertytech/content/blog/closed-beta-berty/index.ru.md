@@ -1,6 +1,6 @@
 ---
 author: Manfred
-title: "We released our closed beta"
+title: "Мы выпустили закрытую бета-версию"
 date: 2020-10-30
 #image: "2020-09-28-Berty-Blogpost-Release-closed-Beta.png"
 image: "2020-09-28-Berty-Blogpost-Release-closed-Beta.png"
@@ -10,51 +10,51 @@ categories:
 tags:
   - news
   - announcement
-description: We released our closed beta!
+description: Мы выпустили закрытую бета-версию!
 ---
 
-# We released our closed beta!
+# Мы выпустили закрытую бета-версию!
 
-Yup, you read the headline correctly! We're slowly opening access to our beta version. Although we've been working in our cave for two years with no public release on the shelf, more people follow the Berty project every day. It's incredible. We thank you for that from the bottom of our hearts. Sincerely.
+Ух, вы правильно прочитали заголовок! Мы медленно открываем доступ к бета-версии. Несмотря на то, что мы работаем в нашей пещере в течение двух лет, а публичных релизов на полке нет, каждый день за проектом Berty следят всё больше людей. Это невероятно. Мы благодарим вас за это от всего сердца. Искренне.
 
-If you're here, you understand the project's philosophy and the technological challenges it implies. It's truly astounding to feel as supported as we are. We have the best community!
+Если вы здесь, вы понимаете философию проекта и связанные с ним технологические проблемы. Это действительно потрясающе - чувствовать такую поддержку, как мы. У нас самое лучшее сообщество!
 
-## Done is better than perfect
+## Сделано лучше, чем идеально
 
-Today, Berty's development has reached the stage where a release is necessary. Sharing with you is about getting as much feedback as possible so we can move in the right direction. For this, we'll need all of you.
+Сегодня развитие Berty достигло стадии, в которой требуется освобождение. Поделиться с вами - это получить как можно больше обратной связи, чтобы мы могли двигаться в правильном направлении. Для этого нам понадобятся все вы.
 
-Our philosophy has always been "done is better than perfect." If you tinker with the best product out there forever in your secret workshop, it's useless!
+Наша философия всегда заключалась в том, что "сделано лучше, чем идеально." Если вы вечно возитесь с лучшим продуктом в своей секретной мастерской, это бесполезно!
 
-> If you're the team member that makes things happen, you become indispensable. If you and your organization are the ones (the only ones) that can get things done, close the sale, ship the product and make a difference, you're the linchpins—the ones we can't live without. Author: Seth Godin
+> Если вы являетесь членом команды, то вы становитесь незаменимым. Если вы и ваша организация - те (единственные), кто может выполнить работу, закрыть продажу, отгрузить продукт и изменить ситуацию, вы - "стержни", без которых мы не можем жить. Автор: Seth Godin
 
-So, it's now time to face the outside world! Let's be honest: It's still a development version with lots of things to improve, change, remove, keep. We'll proceed in two stages:
+Итак, пришло время столкнуться с внешним миром! Давайте будем честными: это все еще находящаяся в стадии разработки версия, которую нужно улучшить, изменить, удалить и сохранить. Мы будем действовать в два этапа:
 
-1. Have the application tested by a small circle of friends and contributors
-2. Invite each person who tells us they want in
+1. Протестировать приложение в небольшом кругу друзей и участников
+2. Пригласить каждого человека, которые желают попробовать
 
-## Why a closed rather than a public beta?
+## Почему закрытая, а не публичная бета-версия?
 
-We know you can't wait to try Berty, and believe us, neither can we! But we have some important reasons for waiting a little longer.
+Мы знаем, что вам не терпится попробовать Berty, и, поверьте, мы тоже! Но у нас есть несколько важных причин, чтобы подождать ещё немного.
 
-First, an initial, closed beta lets us establish that Berty's handling is decisively intuitive before inviting other testers. Our first preview is available to a restricted circle, including our closest friends. This allows us to get a realtime first impression of the application's use. (It's easier to organize face-to-face test sessions with friends in our office.)
+Во-первых, начальная закрытая бета-версия позволяет нам установить, что Berty интуитивно понятен, прежде чем приглашать других тестеров. Наш первый предварительный просмотр доступен ограниченному кругу лиц, включая наших ближайших друзей. Это позволяет нам получить первое впечатление об использовании приложения в реальном времени. (В нашем офисе проще организовать личные тесты с друзьями.)
 
-We want to tackle any problems that come up in this initial stage (plus some recurring bugs) before we open testing to everyone to get more concise feedback and discover less common bugs.
+Мы хотим решить любые проблемы, возникающие на этом начальном этапе (плюс некоторые повторяющиеся ошибки), прежде чем мы откроем тестирование для всех, чтобы получить более краткие отзывы и обнаружить менее распространенные ошибки.
 
-Second, you probably know that we are a small team (a tiny one even!). We think a two-stage opening is an excellent way to pace ourselves and keep focus.
+Во-вторых, вы, наверное, знаете, что мы небольшая команда (даже крошечная!). Мы думаем, что двухэтапный дебют - отличный способ ускорить темп и сосредоточиться.
 
-Finally, we also know that many people need Berty (activists, journalists, lawyers, internet citizens...). We have you in mind. We're uncompromising on protecting your anonymity, data, and privacy. We know what's at stake.
+Наконец, мы также знаем, что Berty нужен многим (активистам, журналистам, юристам, интернет-гражданам...). Мы имеем в виду вас. Мы бескомпромиссны в защите вашей анонимности, данных и конфиденциальности. Мы знаем, что поставлено на карту.
 
-We're doing what we can to make this the most secure messenging application ever designed - and we don't take this assignment lightly. This takes time. That's why we'll need you: Your feedback, your ideas, your app review. We need you on board.
+Мы делаем всё, что в наших силах, чтобы сделать это приложение для обмена сообщениями с максимальной безопасностью из когда-либо созданных - и мы не относимся к этому заданию легкомысленно. На это нужно время. Вот почему вы нам понадобитесь: ваши отзывы, идеи, обзор приложения. Мы нуждаемся в вас.
 
-To this end, we're working hard to release it openly, asap. We know that some of you have been following us for over two years and are really looking forward to this moment.
+С этой целью мы прилагаем все усилия, чтобы опубликовать его как можно скорее. Мы знаем, что некоторые из вас следят за нами более двух лет и очень ждут этого момента.
 
-## Your mission, should you accept
+## Ваша миссия, если вы согласитесь
 
 ![image alt](https://media.giphy.com/media/U6pXdeEVb4fEfzZg0R/giphy.gif)
 
-For the curious (especially for those who would like to take part in Berty's progress), we will announce Yolo's public opening through a blog post *very soon*. We'll give you all the instructions to get Berty's beta therein.
+Для любопытных (особенно для тех, кто хотел бы принять участие в развитии Berty) мы *очень скоро* объявим об открытии Yolo в блоге. Мы дадим вам все инструкции, чтобы получить бета-версию Berty.
 
-So, if you accept it, your mission will be to share anything and everything of your experience using Yolo to help us build a better application!
+Итак, если вы примете это, ваша миссия будет заключаться в том, чтобы поделиться всем своим опытом использования Yolo, чтобы помочь нам создать лучшее приложение!
 
 
 
