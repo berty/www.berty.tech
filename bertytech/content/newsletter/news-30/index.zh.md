@@ -36,7 +36,7 @@ Today's focus is on having a complete implementation of what we call the "group 
 
 Guilhem finished fixing the iOS build on buildkite! This will allow us to have regular releases of the app published on Yolo (our internal release system, more info soon™) and to be able to easily have a new version of the application tested by the team members and friends. 🎉
 
-### Berty Protocol
+### Berty 协议
 
 Guillaume finished the initial implementation of the message store! Well done!
 
