@@ -4,10 +4,10 @@ title: "What is E2E Encryption?"
 date: 2019-09-05
 image: "E2EE-encryption.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- technical
-- security
+  - technical
+  - security
 description: You have probably already heard about cryptography and, more specifically, about end-to-end encryption. But do you know what it really is?
 ---
 
@@ -46,8 +46,7 @@ Conceptually, it is a unique code. In end-to-end encryption, it is mandatory to 
 - a public key, which will be used for encryption
 
 - a private key that will be used for decryption
-- 
-![](image5.png)
+- ![](image5.png)
 
 
 As their names suggest: the public key is visible to everyone and the private key is personal. These keys are not the same, which is why this setup is commonly referred to as “asymmetric encryption”. The private key is generated randomly and the public key is generated using the private key. It is very simple to create the public key from the private key but it is very hard (takes time) to find the private key from the public key. Otherwise it would be too straightforward.
@@ -106,6 +105,5 @@ During the key exchange with Diffie-Hellman, each of the two parties has no proo
 Ideally, Diffie-Hellman should therefore be used with a recognized authentication method such as digital signatures. Maybe we'll talk about it in a future blogpost?
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
-</br>
+Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
  {{<tweet id="1143493043783372801">}}
