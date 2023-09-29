@@ -1,35 +1,35 @@
 ---
-title: "Organizational challenges"
+title: "Организационные задачи"
 id: 3
 icon: fal fa-heart
 private: true
 ---
 
 
-### Funding as an NGO
+### Финансирование в качестве НПО
 
-#### Constraints:
+#### Ограничения:
 
-* No selling user data (we don't want to and we can't).
-* Free & Open Source application - no revenue.
+* Никаких продаж пользовательских данных (мы не хотим и не можем).
+* Бесплатное и с открытым исходным кодом приложение - дохода нет.
 
-#### How Berty tackles it:
+#### Как Berty решает это:
 
-* We're getting donations from sponsors.
-* We plan to crowdfund some tasks, like security audits.
+* Мы получаем пожертвования от спонсоров.
+* Мы планируем краудфандинговать некоторые задачи, например, аудит безопасности.
 
-### Being incorruptible / unkillable
+### Быть неподкупным / неубиваемым
 
-#### Constraints:
+#### Ограничения:
 
-* Government can force you to add a backdoor in your software.
-* Government can force you to give them metadata and messages. This is strictly framed by SBDU in France (anti-terrorism section) and Cloud Act in USA.
-* Government can force you to kill the project.
-* You must comply with the regulations so you can't be sued.
+* Правительство может заставить вас добавить бэкдор в ваше программное обеспечение.
+* Правительство может заставить вас предоставить им метаданные и сообщения. Это строго регламентировано SBDU во Франции (антитеррористическая секция) и Закон об Облаке в США.
+* Правительство может заставить вас убить проект.
+* Вы должны соблюдать правила, чтобы на вас не подавали в суд.
 
-#### How Berty plans to tackle it:
+#### Как Berty планирует решить это:
 
-* Being open-source, so community can freely audit the code to check if any backdoor was added to it.
-* Being transparent, not having any secrets that the community doesn't know, so even if Berty Technologies is killed, the community can continue the project.
-* Losing control of the release process: we're still thinking about it but the idea is to delegate the release process and validation to the community.
-* Allowing other projects to use our protocol: it will add more noise over the network, which is good to make the metadata less useful.
+* Имея открытый исходный код, сообщество может свободно проверять код, чтобы проверить, добавлен ли в него какой-либо бэкдор.
+* Будучи прозрачным, не имея никаких секретов, о которых сообщество не знает, даже если Berty Technologies будет убита, сообщество может продолжить проект.
+* Потеря контроля над процессом выпуска: мы все еще думаем об этом, но идея состоит в том, чтобы делегировать процесс выпуска и валидацию сообществу.
+* Разрешение другим проектам использовать наш протокол: это добавит больше шума в сети, что хорошо, чтобы сделать метаданные менее полезными.
