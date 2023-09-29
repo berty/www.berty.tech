@@ -1,78 +1,78 @@
 ---
-title: "Technical challenges"
+title: "Технические трудности"
 id: 2
 icon: fal fa-laptop-code
 private: true
 ---
 
-### Implementing P2P networking on mobile devices
+### Внедрение P2P-сети на мобильных устройствах
 
-#### Constraints on mobile platforms:
+#### Ограничения на мобильных платформах:
 
-* Cellular connections are more problematic:
-    * NAT traversal is more difficult to achieve
-    * Connections are less reliable
-    * Connections are generally slower with a higher ping
-    * Data plans have limited daily/monthly quotas
-* Less CPU power
-* Smaller maximum amount of concurrent networking connections
-* Limited battery life
-* Smaller amount of CPU time allocated to the app (app in the background)
+* Сотовая связь более проблематична:
+    * Обход NAT труднее достичь
+    * Соединения менее надежны
+    * Соединения обычно медленнее с более высоким пингом
+    * Тарифы на передачу данных имеют ограниченные дневные/ежемесячные квоты
+* Меньше мощности процессора
+* Меньшее максимальное количество одновременных сетевых подключений
+* Ограниченное время автономной работы
+* Меньшее количество процессорного времени, выделенного приложению (приложение в фоновом режиме)
 
-#### Some projects that implement P2P on mobile
+#### Некоторые проекты, реализующие P2P на мобильных устройствах
 
-* `Textile.io` is probably the most well-known project that builds mobile applications over IPFS by running a full node on mobile devices using gomobile. They already have several apps released (including pure-demo applications) and a SDK.
-* `Jami.net` is doing P2P on mobile, they are focused on delivering a direct Skype competitor, including the features like audio call.
-* `status.im`: Status brings the power of Ethereum into the user's pocket by combining a messenger, a crypto-wallet, and a Web3 browser.
-* `matrix.org`:  Matrix owes its name to its ability to bridge existing platforms into a global open matrix of communication. Matrix is more of a decentralised conversation store rather than a messaging protocol.
+* `Textile.io`, вероятно, самый известный проект, который создает мобильные приложения через IPFS путем запуска полного узла на мобильных устройствах с помощью gomobile. У них уже выпущено несколько приложений (включая чисто демонстрационные) и SDK.
+* `Jami.net` делает P2P на мобильных устройствах, они сосредоточены на предоставлении прямого конкурента Skype, включая такие функции, как аудиовызов.
+* `status.im`: Status приносит мощь Ethereum в карман пользователя, объединяя мессенджер, криптокошелек и Web3 браузер.
+* `matrix.org`: Matrix обязана своим названием своей способности объединять существующие платформы в глобальную открытую матрицу коммуникации. Matrix - это скорее децентрализованное хранилище разговоров, чем протокол обмена сообщениями.
 
-#### How Berty tackles it
+#### Как Berty решает это
 
-* `Gomobile-IPFS`: a repo created by Berty Technologies that aims to provide packages for Android, iOS and React Native that allow one to run and use an IPFS node on mobile devices.
-* `Berty Protocol`: we are currently designing a protocol that can be used by everyone in their projects to create secure P2P applications that run on both desktop and mobile.
-* `Berty Messenger`: a concrete example of a simple app that is built on top of Berty Protocol, designed with non-tech people in mind, trying to get P2P on mobile to the mass user.
+* `Gomobile-IPFS`: репозиторий, созданный Berty Technologies, целью которого является предоставление пакетов для Android, iOS и React Native, которые позволяют запускать и использовать узел IPFS на мобильных устройствах.
+* `Berty Protocol`: в настоящее время мы разрабатываем протокол, который может использовать каждый в своих проектах для создания безопасных P2P-приложений, работающих как на настольных компьютерах, так и на мобильных устройствах.
+* `Berty Messenger`: конкретный пример простого приложения, построенного на основе Berty Protocol, разработанного для нетехнических специалистов, пытающегося донести P2P на мобильных устройствах до массового пользователя.
 
-### Preserving Privacy and Securing Communication in a Distributed Environment
+### Сохранение конфиденциальности и безопасность связи в распределенной среде
 
-#### Constraints
+#### Ограничения
 
-Making sure "you are who you claim to be" is a fundamental cybersecurity challenge. In a centralized environment, there's an authority that can validate the identities, signatures, encryption keys and so on. In a distributed environment, we need to find ways to achieve trust between peers without a central authority.
+Убедиться, что "вы такой, каким вы себя называете" - это фундаментальная проблема кибербезопасности. В централизованной среде есть орган, который может проверять удостоверения, подписи, ключи шифрования и так далее. В распределенной среде нам нужно найти способы достижения доверия между одноранговыми узлами без центральной власти.
 
-In a distributed system, we cannot ensure the message arrival order. This becomes a particular issue with an offline-first messenger, because messages that were sent off-grid might not be synced correctly when the device goes online again. This can cause problems, mainly when encrypting messages with Perfect Forward Secrecy algorithms that use rotating encryption keys.
+В распределенной системе мы не можем гарантировать порядок поступления сообщений. Это становится особой проблемой для мессенджера, работающего в автономном режиме, поскольку сообщения, которые были отправлены вне сети, могут некорректно синхронизироваться, когда устройство снова выходит в онлайн. Это может вызвать проблемы, в основном при шифровании сообщений с помощью алгоритмов Perfect Forward Secrecy, использующих ротацию ключей шифрования.
 
-Metadata are required to operate a messaging system. However, they could be an important source of information if they were collected and analyzed.
+Метаданные необходимы для работы системы обмена сообщениями. Однако они могли бы стать важным источником информации, если бы были собраны и проанализированы.
 
-#### Related
+#### Похожие
 
-* `Signal.org`: the gold standard for any centralized environment. Berty uses many of its cryptographic algorithms/protocols, having them adapted for distributed environment. They work hard to limit their metadata footprint as much as possible, but their servers are still hosted on Google Cloud and are automatically subject to the Cloud Act.
-* `Messaging Layer Security`: MLS offers a more scalable alternative to Signal Protocol. This solution still requires a central server in order to work.
-* `Olvid.io`: Olvid claims to be the only messaging service that also encrypts metadata. They are centralized and host their servers on AWS, which also belongs to the Cloud Act.
-* `status.im`: Status designed Whisper to overcome some of the above shortcomings AND be configurable to the end user, who ought to be able to specify what trade-offs they are willing to make between battery life and mobile data charges, privacy and possible metadata leakage.
+* `Signal.org`: золотой стандарт для любой централизованной среды. Berty использует многие из своих криптографических алгоритмов/протоколов, адаптировав их для распределенной среды. Они прилагают все усилия для того, чтобы максимально ограничить свои метаданные, но их серверы по-прежнему хранятся в Google Cloud и автоматически подпадают под действие закона об Облаке.
+* `Messaging Layer Security`: MLS предлагает более масштабируемую альтернативу протоколу Signal. Для работы этого решения по-прежнему требуется центральный сервер.
+* `Olvid.io`: Olvid утверждает, что является единственной службой обмена сообщениями, которая также шифрует метаданные. Они централизованы и размещают свои серверы на AWS, что также относится к закону об Облаках.
+* `status.im`: Status разработан Whisper для преодоления некоторых из вышеперечисленных недостатков и может быть настроен для конечного пользователя, который должен иметь возможность указать, какой компромисс между временем автономной работы и мобильным устройством, платой за данные, конфиденциальностью и возможной утечкой метаданных.
 
-#### How Berty tackles it
+#### Как Berty решает это
 
-* `go-ipfs-log`: ipfs-log - the base layer of orbit-db - is a distributed peer-to-peer message log on IPFS using CRDT for message order consistency. This open-source library intends to provide a fully compatible port of the JavaScript version in Go.
-* `go-orbit-db`: orbit-db is a distributed peer-to-peer database on IPFS built on top of go-ipfs-log. The majority of its code has derived from the JavaScript's orbit-db project. This project intends to provide a fully compatible port of the JavaScript version in Go.
-* `Berty-Protocol`: the protocol is using, among other things, NaCl and Signal's Symmetric-ratchet to ensure the reliability of identities on the network and encrypt messages with Perfect Forward Secrecy. In addition to searching for a way to hide public IPs on IPFS, we are trying to reduce metadata leakage as much as possible:
-    * No phone/email required for registration
-    * Optional zero-knowledge replication servers
-    * Rotating rendezvous points and peerIDs
-    * Metadata encryption (as much as possible)
-    * Noise generation
+* `go-ipfs-log`: ipfs-log - базовый уровень orbit-db - это распределенный одноранговый журнал сообщений в IPFS, использующий CRDT для согласованности порядка сообщений. Эта библиотека с открытым исходным кодом намеревается предоставить полностью совместимую версию JavaScript в Go.
+* `go-orbit-db`: orbit-db - это распределенная одноранговая база данных в IPFS, построенная на основе go-ipfs-log. Большая часть его кода взята из проекта JavaScript orbit-db. Этот проект намеревается предоставить полностью совместимую версию JavaScript в Go.
+* ` Berty-Protocol `: протокол использует, среди прочего, NaCl и Symmetric-ratchet Signal для обеспечения надежности идентификации в сети и шифрования сообщений с помощью Perfect Forward Secrecy. Помимо поиска способа скрыть публичные IP-адреса в IPFS, мы пытаемся максимально уменьшить утечку метаданных:
+    * Для регистрации не требуется телефон/электронная почта
+    * Опциональные серверы репликации с нулевым разглашением
+    * Вращение точек встречи и идентификаторов пиров
+    * Шифрование метаданных (насколько это возможно)
+    * Генерация шумов
 
-### Offline communication between different types of devices
+### Офлайн-связь между разными типами устройств
 
-#### Constraints
-To achieve off-grid communication (Berty is an offline-first messaging app), there are two types of technology we consider using:
-- Bluetooth Low Energy is an energy-efficient technology, but it offers only limited performance (just enough to send text). It is difficult to implement, especially with Android APIs. It has, however, the advantage of working between different platforms (Darwin (iOS, macOS), Android and others).
-- Apple Multipeer Connectivity (AirDrop) and Android Nearby allow peers to set up a direct WiFi connection using BLE, which offers much greater performance than BLE alone. It is also a lot easier to implement a driver using these technologies. However, they are platform-dependent and only operate between devices of the same type: Android-to-Android and Darwin-to-Darwin.
+#### Ограничения
+Чтобы обеспечить автономную связь (Berty - это приложение для обмена сообщениями, ориентированное прежде всего на офлайн), мы рассмотрим два типа технологий:
+- Bluetooth Low Energy - это энергосберегающая технология, но ее производительность ограничена (её достаточно для отправки текста). Трудно реализовать, особенно с Android API. Однако его преимущество заключается в том, что он работает между разными платформами (Darwin (iOS, macOS), Android и другие).
+- Apple Multipeer Connectivity (AirDrop) и Android Nearby позволяют одноранговым узлам устанавливать прямое соединение Wi-Fi с использованием BLE, которое обеспечивает гораздо большую производительность, чем только BLE. Также намного проще реализовать драйвер с использованием этих технологий. Однако они зависят от платформы и работают только между устройствами одного типа: от Android к Android и от Darwin к Darwin.
 
-#### How Berty tackles it
+#### Как Berty решает это
 
-- We are currently implementing a driver for MPConnectivity that will be the default transport for communication between Apple devices (Mac and iPhone).
-- After this, we plan to implement a driver for Android Nearby that will be the default transport for communication between Android devices.
-- After the two drivers above, we plan to implement a universal BLE driver for both Android and iOS that will be the fallback transport for cross-platform communications.
+- В настоящее время мы реализуем драйвер MPConnectivity, который будет транспортом по умолчанию для связи между устройствами Apple (Mac и iPhone).
+- После этого мы планируем внедрить драйвер для Android Nearby, который будет транспортом по умолчанию для связи между устройствами Android.
+- После двух указанных выше драйверов мы планируем реализовать универсальный драйвер BLE для Android и iOS, который будет резервным транспортом для межплатформенного взаимодействия.
 
-With the help of community we could also implement universal BLE drivers for Linux and Windows.
+С помощью сообщества мы также могли бы также реализовать универсальные BLE драйверы для Linux и Windows.
 
-For more information on this subject, you can read this [dedicated article](https://berty.tech/blog/bluetooth-low-energy/).
+Для получения дополнительной информации по этому вопросу вы можете прочитать эту [специальную статью](https://berty.tech/blog/bluetooth-low-energy/).
