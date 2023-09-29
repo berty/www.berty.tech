@@ -6,7 +6,7 @@ image: "national-defense.jpg"
 categories:
   - free-speech
 tags:
-  - privacy
+  - конфиденциальность
   - liberty
   - public-security
 description: Since the emergence of large-scale terrorism, the limitations of public security have been the subject of much controversy at the current time.
