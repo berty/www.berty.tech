@@ -9,7 +9,7 @@ categories:
 tags:
   - meetup
   - cybersecurity
-  - privacy
+  - prywatność
   - censorship
 description: "After our participation at IPFS Camp, we were eager to continue the experience and meet people who talk about peer-to-peer and cryptography."
 ---
@@ -31,10 +31,10 @@ Giving the opportunity to make beautiful meetings between enthusiasts and to exc
 * distributed and decentralized systems
 * offline-first applications
 * networking
-* privacy
+* prywatność
 * anti-surveillance
 * anti-censorship
-* security
+* bezpieczeństwo
 * cryptography
 * blockchains
 
