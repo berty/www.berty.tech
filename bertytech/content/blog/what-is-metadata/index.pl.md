@@ -4,7 +4,7 @@ title: "What Is Metadata?"
 date: 2019-12-20
 image: "blogpost-metadata.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - Privacy
   - Security
@@ -61,7 +61,7 @@ In a TedX talk, [“The Power of Metadata: Deepak Jagdish and Daniel Smilkov”]
 Overall, using metadata can be a huge invasion of privacy and have a negative reputation; but it can also be used for good. Metadata has the potential to predict if someone has a life-threatening disease, if someone is about to harm another, or maybe even harm themselves. The future of data has potential to save many lives, or harm many lives. The determining factor is where we as a species will focus our efforts. In conclusion, data itself is useless, only when processed into information can it be used by humans for a purpose.
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{<tweet id="1186666663191728129">}}
 
