@@ -15,7 +15,7 @@ Happy reading, folks!
 
 ## Tech
 
-### Berty Protocol
+### Le protocole Berty
 
 **Manfred** and the technical team worked in-depth on long-term and short-term consumption of the Berty Protocol. There are numerous edge cases and that raise many challenges, like:
   * How will the consumption of bertyprotocol API be realized for external contributors?
