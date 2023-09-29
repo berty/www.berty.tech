@@ -5,11 +5,11 @@ date: 2020-11-25
 #image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 image: "2020-11-23-Berty-Blogpost-How_To_Encrypt_Your_Life_In_10_Min-2.png"
 categories:
-  - free-speech
+  - 自由发言
 tags:
   - how-to
   - cybersecurity
-  - privacy
+  - 隐私
   - surveillance
 description: Easy tips to protect yourself in 10min!
 ---
@@ -105,5 +105,5 @@ When we go home, we close the door. So why don't we do the same online and on ou
 
 So all the little actions we've just seen together are tiny small steps that look like nothing, but in reality, a big step towards our freedom.
 
-Cheers Internet!
+为互联网干杯！
 {{<tweet id="1324705378584637442">}}
