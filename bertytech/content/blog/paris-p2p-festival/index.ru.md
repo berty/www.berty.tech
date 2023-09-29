@@ -8,7 +8,7 @@ categories:
   - free-speech
 tags:
   - technical
-  - security
+  - безопасность
 ---
 
 
