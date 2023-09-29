@@ -1,5 +1,5 @@
 ---
-title: "Features"
+title: "Características"
 hclass: bg-blue gradient bg-features
 image: "berty_features.png"
 #menu:
@@ -8,7 +8,7 @@ image: "berty_features.png"
 #footer_col1:
 #weight: -50
 aliases:
-    - /chat
+  - /Chat
 ---
 
 {{< display_section_features >}}
