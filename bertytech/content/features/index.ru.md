@@ -8,7 +8,7 @@ image: "berty_features.png"
 #footer_col1:
 #weight: -50
 aliases:
-    - /chat
+  - /chat
 ---
 
 {{< display_section_features >}}
