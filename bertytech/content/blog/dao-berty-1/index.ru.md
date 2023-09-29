@@ -7,7 +7,7 @@ categories:
   - announcement
 tags:
   - technical
-  - security
+  - безопасность
 ---
 
 # Why a DAO for Berty? (Part I)
