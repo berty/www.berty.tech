@@ -1,6 +1,6 @@
 ---
 title: "Go-Tor-Transport"
-description: Go and C tor binary builtin transport for libp2p.
+description: Go и C tor встроенный двоичный транспорт для libp2p.
 icon: fab fa-github
 color: black
 display_nav: false
@@ -13,18 +13,18 @@ menu:
 
 # Go-Tor-Transport
 
-**Go and C tor binary builtin transport for libp2p, aiming to provide anonymised access to the libp2p network.**
+**Go и C tor встроенный двоичный транспорт для libp2p, предназначенный для обеспечения анонимного доступа к сети libp2p.**
 
 
-## Introduction
+## Введение
 
-[go-tor-transport](https://github.com/berty/go-tor-transport) is a transport proving access to an libp2p network through the tor network.
+[go-tor-transport](https://github.com/berty/go-tor-transport) это транспорт, обеспечивающий доступ к сети libp2p через сеть tor.
 
-To do that the code mainly uses [go-libtor](https://github.com/ipsn/go-libtor) to provide a go linking of the [Tor's](https://www.torproject.org/) node.
+Для этого в коде в основном используется [go-libtor ](https://github.com/ipsn/go-libtor), чтобы обеспечить прямую связь с узлом [Tor](https://www.torproject.org/).
 
-So at the start it either connects to a node running in system or start his own one embed in the binary, so usage can be seemless as possible.
+Таким образом, вначале он либо подключается к узлу, работающему в системе, либо запускает свой собственный, встраиваемый в двоичный файл, поэтому использование может быть маловероятным.
 
-## Source code
-Source code is available on [github](https://github.com/berty/go-tor-transport).
+## Исходный код
+Исходный код доступен на [GitHub](https://github.com/berty/go-tor-transport).
 
 <a class="btn btn-bty btn-grack" href="https://github.com/berty/go-tor-transport"><i class="fab fa-github"></i>berty/go-tor-transport</a>
