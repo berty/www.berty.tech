@@ -4,7 +4,7 @@ title: "Digital Signature"
 date: 2019-10-17
 image: "digital-signature.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - Technical
   - Security
@@ -76,7 +76,7 @@ Digital signatures can be applied in a wide variety of fields. Although listing 
 Digital signatures are very important in modern-day online computing. This technology makes sure that the sent messages are authentic and their integrity and non-repudiation are not compromised. It speeds up each of these three processes and makes them available world-wide. Without the digital signature technology, it would be very hard to establish trust and confidentiality on the web.
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{<tweet id="1143493043783372801">}}
 
