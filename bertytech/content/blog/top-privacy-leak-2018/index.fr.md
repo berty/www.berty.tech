@@ -1,13 +1,13 @@
 ---
-author: camille
+author: Camille
 title: "Top 2018 Privacy Leaks"
 date: 2019-02-11
 image: "leak-2018.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
-  - privacy
-  - social-networks
+  - vie privée
+  - réseaux sociaux
   - internet
 description: With 2018 now firmly in the rearview mirror, it’s a good time to set aside a moment and take stock of everything that had happened during those 12 months. Just like any other year, 2018 had its ups and downs. However, a notable trend among those low points was widespread in privacy leaks.
 ---
