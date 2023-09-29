@@ -1,12 +1,11 @@
 ---
 title: "Berty Weekly #23"
 date: 2019-11-29
-aliases: ["/newsletter/weekly-23"]
+aliases:
+  - "/newsletter/weekly-23"
 ---
 
-Hello dear friends from all over the globe 🧤
-We hope you are doing well and that you had a good thanksgiving! 🦃🍁
-Happy reading!
+Hello dear friends from all over the globe 🧤 We hope you are doing well and that you had a good thanksgiving! 🦃🍁 Happy reading!
 
 # Current Work
 
