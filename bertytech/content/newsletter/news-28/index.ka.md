@@ -1,7 +1,8 @@
 ---
 title: "Berty News #28"
 date: 2020-01-17
-aliases: ["/newsletter/weekly-28"]
+aliases:
+  - "/newsletter/weekly-28"
 ---
 
 Hi there 🙂
@@ -34,8 +35,7 @@ Manfred started refactoring the go-ipfs-log golang structure (https://github.com
 
 `gomobile-ipfs` is _almost ready!_
 
-Antoine and Guilhem implemented the last changes requested by the IPFS team in the PR review (for example, they replaced command methods with RequestBuilder on iOS/Android).
-When the changes are validated by the IPFS team, we will open-source the initial version of the repo and move it to an IPFS official GitHub organization.
+Antoine and Guilhem implemented the last changes requested by the IPFS team in the PR review (for example, they replaced command methods with RequestBuilder on iOS/Android). When the changes are validated by the IPFS team, we will open-source the initial version of the repo and move it to an IPFS official GitHub organization.
 
 Guilhem added “Unix Domain Socket” support on ipfs/go-ipfs-api (https://github.com/ipfs/go-ipfs-api/pull/202).
 
@@ -106,6 +106,4 @@ Manfred, Zooma, Alex, Antoine, Zaraki, Phil, and many others participated in the
 
 ## Weekly Sync
 
-Read our Weekly Sync:
-[2020-01-10](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-10--staff-team-weekly-sync.md)
-[2020-01-17](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-17--staff-team-weekly-sync.md)
+Read our Weekly Sync: [2020-01-10](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-10--staff-team-weekly-sync.md) [2020-01-17](https://github.com/berty/mgmt/blob/master/meeting-notes/2020/Q1/2020-01-17--staff-team-weekly-sync.md)
