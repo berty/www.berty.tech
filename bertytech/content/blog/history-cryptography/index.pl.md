@@ -4,10 +4,10 @@ title: "History of Cryptography"
 date: 2019-06-26
 image: "2020-07-29-Berty-Blogpost-History_of_cryptography.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
-  - technical
-  - security
+  - techniczne
+  - bezpieczeństwo
 description: Cryptography in one form or other is everywhere online, from banking sites to personal communication apps. But it’s not a modern invention. When exactly did it arise? And what developments has it undergone over the years? The history of cryptography runs parallel to the development of new communication methods and safer transactions. Learn more about it to understand just how important it has become.
 aliases:
   - blog/history-cryptology
@@ -99,6 +99,6 @@ In the blockchain, asymmetric cryptography links blocks of data to create one of
 
 In the end, the history of cryptography is the history of human kind’s relentless drive to find better ways to protect information and secure communications. Without it, the internet as we know it, and the digital age, would not be possible.
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
  {{<tweet id="1144582620501729280">}}
