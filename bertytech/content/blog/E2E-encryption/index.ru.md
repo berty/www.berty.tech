@@ -7,7 +7,7 @@ categories:
   - free-speech
 tags:
   - technical
-  - security
+  - безопасность
 description: You have probably already heard about cryptography and, more specifically, about end-to-end encryption. But do you know what it really is?
 ---
 
