@@ -5,12 +5,12 @@ date: 2020-12-14
 #image: "2020-14-12-Berty-BlogPost-TALKS_AT_PBWS_&_IPFS_WRAP_UP_2020.jpg"
 image: "2020-14-12-Berty-BlogPost-TALKS_AT_PBWS_&_IPFS_WRAP_UP_2020.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - announcement
+  - 通知
   - berty
-  - news
-description: This week, no news[letter] is good news! We participated in two important events and were pretty busy. We'll give you a rundown here, as we recap how these exchanges have helped to move our mission forward in a much-changed social landscape.
+  - 新闻
+description: 本周，没有消息[letter] 就是好消息！ 我们参加了两次重要的活动，相当繁忙。 We'll give you a rundown here, as we recap how these exchanges have helped to move our mission forward in a much-changed social landscape.
 ---
 
 # TALKS AT PBWS & IPFS WRAP UP 2020
