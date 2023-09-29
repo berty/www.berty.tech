@@ -357,11 +357,11 @@ For those simple contacts, we use a distinctive silhouette with the avatar above
     * lots of white space, makes it easier to read
     * large clickable areas to prevent clicking on the wrong thing
 
-![Settings](berty_settings_1.png)
+![Настройки](berty_settings_1.png)
 
 * During onboarding, we saw the two app modes, let's see in the settings how the user can customize the app behavior based on these modes.
 
-![Settings](berty_settings_2.png)
+![Настройки](berty_settings_2.png)
 
 
 * User can also completely switch mode after onboarding.
