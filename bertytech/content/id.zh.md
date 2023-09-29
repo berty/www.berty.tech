@@ -1,7 +1,7 @@
 ---
 title:
 layout: id
-subtitle: 'Open the Berty app on your phone and scan this code to make a contact request to <span class="c-name"></span>'
+subtitle: '在您的手机上打开Berty应用并扫描此代码来发送联系请求 <span class="c-name"></span>'
 ---
 
 {{< display_section_id >}}
