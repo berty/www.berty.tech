@@ -6,8 +6,8 @@ image: "leak-2019.jpg"
 categories:
   - free-speech
 tags:
-  - privacy
-  - security
+  - конфиденциальность
+  - безопасность
 ---
 
 # Top 2019 Privacy Leaks
