@@ -5,7 +5,7 @@ aliases:
   - "/newsletter/weekly-08"
 ---
 
-## Paris P2P
+## Париж P2P
 
 
 The first P2P Paris meet-up took place on last Wednesday 🎉
