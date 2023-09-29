@@ -1,11 +1,11 @@
 ---
-title: "Settings"
+title: "Agordoj"
 description: Keep your data safe & your life private
 icon: fal fa-cog
 color: pink
 private: true
 ---
 
-# Settings
+# Agordoj
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Baldaŭ novaĵoj</span>
