@@ -7,7 +7,7 @@ categories:
   - announcement
 tags:
   - technical
-  - security
+  - безопасность
 ---
 
 # Berty releases gomobile-ipfs
@@ -16,7 +16,7 @@ IPFS is a peer-to-peer hypermedia protocol and a network for storing and sharing
 
 But there's a little problem: as of today, most of the P2P networks are based on desktop computers or even servers with static IP addresses, with 24/7 uptime and powerful CPU. However, running a P2P network on mobile presents its challenges: just a few minutes per day of CPU availability, unreliable network, limited battery life, limited parallel connections, etc... P2P network are slow to start, first calls on a DHT ([Distributed Hash Table](https://www.cs.princeton.edu/courses/archive/fall18/cos418/docs/L6-dhts.pdf)) usually take time, then it becomes faster.
 
-To help with running IPFS on mobile, Berty [created gomobile-ipfs](https://berty.tech/docs/gomobile-ipfs). This repo aims to provide packages for Android, iOS and React-Native that allow one to run and use an IPFS node on mobile devices. It's also a place to discuss the constraints of running IPFS on mobile in order to find solutions and exchange tips.
+To help with running IPFS on mobile, Berty [created gomobile-ipfs](https://berty.tech/docs/gomobile-ipfs). Этот репозиторий направлен на предоставление пакетов для Android, iOS и React-Native, которые позволяют запускать и использовать узел IPFS на мобильных устройствах. It's also a place to discuss the constraints of running IPFS on mobile in order to find solutions and exchange tips.
 
 Some things we're planning to do in the future:
 
