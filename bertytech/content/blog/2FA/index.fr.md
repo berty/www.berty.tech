@@ -5,7 +5,7 @@ date: 2020-09-13
 #image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 image: "2020-08-31-Berty-Blogpost-2FA.jpg"
 categories:
-  - free-speech
+  - liberté d'expression
 tags:
   - sécurité
   - confidentialité
@@ -17,55 +17,55 @@ description: En savoir plus sur l'A2F
 
 De nos jours, l'accès à un compte est de plus en plus compromis. En effet, il existe des logiciels de plus en plus puissant pour tester un ensemble de mots de passe. Alors, comment protéger l'accès à votre compte ? Avez-vous déjà entendu parler de l'authentification multi-étapes ou multi-facteurs ?
 
-Vous n'avez peut-être pas fait attention mais vous utilisez probablement déjà une application d'authentification à deux facteurs. Do you remember this card given by your bank to confirm a transaction on your account? Two-factor authentication, or 2FA as it is commonly known, is an additional step to your necessary login procedure. Without 2FA, you enter your username and password and you are done. The password is your only authentication factor. The second factor makes your account more secure, in a nutshell.
+Vous n'avez peut-être pas fait attention mais vous utilisez probablement déjà une application d'authentification à deux facteurs. Vous souvenez-vous de cette carte donnée par votre banque pour confirmer une transaction sur votre compte ? L'authentification à deux facteurs, ou l'authentification 2FA comme on l'appelle couramment, est une étape supplémentaire de votre procédure de connexion. Sans A2F, vous renseignez votre nom d'utilisateur et votre mot de passe et l'accès vous est accordé. Le mot de passe est votre seul facteur d'authentification. En un mot, le second facteur renforce la sécurité de votre compte.
 
-The 2FA should not be confused with the ability to connect to a site via your email provider ("connect with Google"-like). This is not strictly speaking 2FA but sometimes it is better to have a secure email system rather than trusting a "secure" website. But that's another subject.
+L'A2F ne doit pas être confondue avec la possibilité de se connecter à un site via votre fournisseur de messagerie ("connectez-vous avec Google"). Il ne s'agit pas d'une A2F à proprement parler, mais il est parfois préférable d'avoir un système de messagerie sécurisé plutôt que de faire confiance à un site Web "sécurisé". Mais c'est un autre sujet.
 
-## What is two-factor authentification (2FA)?
+## Qu’est-ce que l’authentification à deux facteurs (2FA) ?
 
 ![](https://i.imgur.com/MJUVRuw.jpg)
 
-Two-factor authentication (2FA) is an authentication method in which a computer user is only granted access after successfully submitting two or more pieces of evidence to an authentication mechanism.
+L'authentification à deux facteurs (A2F) est une méthode d'authentification dans laquelle un utilisateur n'est autorisé à accéder à un service qu'après avoir fourni avec succès au moins deux éléments de preuve à un mécanisme d'authentification.
 
-For example, if you want to log in to your email account, you will need to present an additional method and your password. This may be a code received by SMS or code on an identification application.
+Par exemple, si vous souhaitez vous connecter à votre compte de messagerie, vous devrez présenter votre mot de passe et une méthode supplémentaire. Il peut s'agir d'un code reçu par SMS ou d'un code sur une application d'identification.
 
-Usually, the first authentication method is something you know (your password, a PIN code). The second one is information you don't know (code generated especially for authentication) but which is linked to you.
+Habituellement, la première méthode d'authentification est quelque chose que vous connaissez (votre mot de passe, un code PIN). La seconde n'est pas quelque chose que vous connaissez (code généré spécialement pour l'authentification) mais qui est lié à vous.
 
-It is customary to divide into several types of information:
-- 🔑 something you have (an object like a USB key)
-- 🐾 something you are (fingerprint, facial recognition)
-- 🧠 something you know (a password)
-- 📍 somewhere you are (a GPS location)
+On sépare généralement différents types d'informations :
+- 🔑 quelque chose que vous avez (un objet comme une clé USB)
+- 🐾 quelque chose que vous êtes (empreinte digitale, reconnaissance faciale)
+- 🧠 quelque chose que vous connaissez (un mot de passe)
+- 📍 là où vous vous trouvez (une position GPS)
 
 
-> You can check on https://twofactorauth.org/ is a website/app support 2FA or not.
+> Vous pouvez vérifier sur https://twofactorauth.org/ si un site web/application supporte l'authentification 2FA ou pas.
 
-## 📞 Two Factor Authentication by SMS
+## 📞 Authentification à deux facteurs par SMS
 
 ![](https://i.imgur.com/uuqGxCp.jpg)
 
 
-The second factor in identifying yourself is a code received by SMS. This is probably the method you are most familiar with.
+Le deuxième facteur pour vous identifier est un code reçu par SMS. C'est probablement la méthode avec laquelle vous êtes le plus familier.
 
-The code received by SMS differs each time, so if your password is stolen, it won't be enough to go further. The code is linked to your cell phone number, which is a powerful security feature - unless you have been physically stolen or hacked by a [Sim Swapping](https://berty.tech/blog/sim-swapping/).
+Le code reçu par SMS diffère à chaque fois, donc si votre mot de passe est volé, il ne suffira pas pour aller plus loin. Le code est lié à votre numéro de téléphone portable ce qui est une fonctionnalité de sécurité puissante - sauf si vous avez été physiquement volé ou piraté par une attaque de [Sim Swapping](https://berty.tech/blog/sim-swapping/).
 
-A significant disadvantage of this 2FA is that if the mobile network does not work or is in a region without coverage, you will not receive the code allowing you to identify yourself. Another disadvantage is if you are using connected and centralized equipment (between your tablet and mobile), you will receive the code on these devices; your login codes are as much at risk as your passwords.
+Un inconvénient significatif de cette A2F est que si le réseau mobile ne fonctionne pas ou si l'on se trouve dans une région sans couverture réseau, vous ne recevrez pas le code vous permettant de vous identifier. Un autre inconvénient est que si vous utilisez des équipements connectés et centralisés (entre votre tablette et votre mobile), vous recevrez le code sur ces appareils. Vos codes de connexion sont alors autant à risque que vos mots de passe.
 
 
-## 📱 2FA by Authentificator App:
+## A2F via une Application d'Authentification :
 
 ![](https://i.imgur.com/YuRNDY0.jpg)
 
 
-Authentication applications provide you with the same type of service as 2FA by SMS. However, instead of receiving the codes, they are generated locally within your smartphone or tablet. So, they offer flexibility when traveling to a location without cellular service.
+Les applications d'authentification vous fournissent le même type de service que l'A2F par SMS. Cependant, au lieu de recevoir les codes, ils sont générés localement au sein de votre smartphone ou tablette. Ils offrent donc de la flexibilité lors des déplacements dans des zones non couvertes par le réseau téléphonique.
 
-The operation relies on cryptographic algorithms to generate single-use passwords that integrate the notion of time (Time-based One-time Password algorithm, TOTP).
+L'opération repose sur des algorithmes de chiffrement pour générer des mots de passe à usage unique qui intègrent la notion de temps (Time-based One-time Password algorithm, TOTP).
 
-The 2FA application will first generate a start key called "seed". The latter will be derived and mixed with the time and date to make a one-time code, usually valid for 30 to 60 seconds.
+L'application A2F générera d'abord une clé de départ appelée "seed". Cette dernière sera dérivée et mélangée avec la date et l'heure pour créer un code à usage unique, généralement valable entre 30 et 60 secondes.
 
-> 💡 A good thing to know: there are [password managers](https://berty.tech/blog/best-password-manager/) that manage TOTPs.
+> 💡 Une chose à savoir : il existe [des gestionnaires de mots de passe](https://berty.tech/blog/best-password-manager/) qui gèrent les TOTP.
 
-***Open Source TOTP:***
+***TOTP Open Source :***
 
 👉 https://awesomeopensource.com/projects/totp
 
@@ -73,26 +73,26 @@ The 2FA application will first generate a start key called "seed". The latter wi
 
 👉 https://krypt.co/
 
-The major drawback of 2FA applications is that if a scammer grabs your seed (either from your equipment or by hacking the server), he can compute any future code. If you log in and use the authentication application on the same equipment, your authentication codes are as much at risk as your passwords.
+Le principal inconvénient des applications 2FA est que si un attaquant se saisit de votre seed (soit à partir de votre équipement, soit en piratant le serveur), il peut calculer n'importe quel code futur. Si vous vous connectez et utilisez l'application d'authentification sur le même équipement, vos codes d'authentification n'apportent pas plus de sécurité que vos mots de passe.
 
 
-## 🗝️ FIDO U2F hardware authenticators: YubiKey and others
+## 🗝️ Authentificateurs matériels FIDO U2F : YubiKey et autres
 
 ![](https://i.imgur.com/ZzJa77a.png)
 
 
-If you are looking for a robust solution that fits your pocket, then look no further than hardware tokens based on the U2F (Universal 2nd Factor) standard, created by the FIDO Alliance. The most famous and typical example of U2F is YubiKey, made by Yubico.
+Si vous cherchez une solution robuste qui tient dans la poche, ne cherchez pas plus loin que les jetons matériels basés sur la norme U2F (Universal 2nf Factor), créée par l'alliance FIDO. Le plus célèbre et typique exemple de U2F est YubiKey, fait par Yubico.
 
-Concretely, it is a small device the size of a USB key that generates the identification code locally. Just plug in the key to create the right identification code. It is thus an additional step in the real world: the U2F must be physical with you.
+Concrètement, il s'agit d'un petit appareil de la taille d'une clé USB qui génère le code d'identification localement. Il suffit de brancher la clé pour créer le bon code d’identification. Il s'agit donc d'une étape supplémentaire dans le monde réel : l'U2F doit être physiquement avec vous.
 
-However, you will find yourself confronted with a few constraints: you will have to buy it and the system is not supported on all sites that already support 2FA by SMS/Applications. This 2FA requires physical access to the USB port of the machine (so forget the use with remote access like TeamViewer). Finally, if you lose it, you will have to recover all your accounts using the 2FA recovery codes ... Hope you have saved them well. Otherwise, you are good to contact each site's support to have the 2FA disabled on your accounts!
+Néanmoins, vous serez confronté à quelques contraintes : vous devrez l’acheter et le système n’est pas pris en charge sur tous les sites qui supportent déjà la 2FA par SMS/Applications. Cette 2FA nécessite un accès physique au port USB de la machine (donc oubliez l'utilisation avec un accès à distance comme TeamViewer). Enfin, si vous le perdez, vous devrez récupérer tous vos comptes en utilisant les codes de récupération 2FA ... J'espère que vous les avez bien sauvegardés. Sinon, vous pouvez contacter le support de chaque site pour que le 2FA soit désactivé sur vos comptes !
 
 
 ## Closing Thoughts
 
-To sum up, there is not ONE perfect and unique method. If we were to recommend something to you: mix and match methods. Don't be afraid to go further than two-factor authentication, opt for multiple factor authentication (MFA). Make access to your password manager as secure as possible and activate 2FA whenever possible.
+En résumé, il n'y a pas UNE méthode parfaite et unique. If we were to recommend something to you: mix and match methods. N'ayez pas peur d'aller plus loin que l'authentification à deux facteurs, optez pour l'authentification à facteurs multiples (MFA). Rendez l'accès à votre gestionnaire de mots de passe aussi sécurisé que possible et activez l'A2F dès que possible.
 
-We hope you enjoyed this article. Any ideas and comments are welcome.
+Nous espérons que vous avez apprécié cet article. Toutes les idées et commentaires sont les bienvenus.
 
 Cheers Internet!
 {{<tweet id="1291024965630939136">}}
