@@ -6,8 +6,8 @@ color: black
 display_nav: false
 open: true
 menu:
-    repos:
-        weight: 8
+  repos:
+    weight: 8
 ---
 
 # Yolo
