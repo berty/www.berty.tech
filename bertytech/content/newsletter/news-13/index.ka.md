@@ -1,13 +1,13 @@
 ---
 title: "Berty Weekly #13"
 date: 2019-09-20
-aliases: ["/newsletter/weekly-13"]
+aliases:
+  - "/newsletter/weekly-13"
 ---
 
 ## Current Work
 
-After a week of our annual closure: we are back to work 💪
-We have a couple of nice news to share with you:
+After a week of our annual closure: we are back to work 💪 We have a couple of nice news to share with you:
 
 * **V2 Berty**: We've already been talking about it in our several newsletters and so you know that we started the V2 of the application. We already worked on the new interfaces, new crypto and a brand new Berty protocol. AND we are so pleased to say that we have officially started the implementation.  #bereadyforv2  🎉
 * **Gomobile-ipfs**: The first version of the repo is now complete. We will transfer the repository to the IPFS organization after having reviewed it! 💯 🎉
@@ -21,11 +21,7 @@ This week, we published our article on End-to-end encryption.
 
 Check this 👉 [What is E2E Encryption?](https://berty.tech/blog/e2e-encryption/)
 
-![](newsletter.png)
-
-<!--[![](newsletter.png)](https://berty.tech/blog/e2e-encryption/)-->
-
-<br />
+![](newsletter.png)<!--\[![\](newsletter.png)](https://berty.tech/blog/e2e-encryption/)--><br />
 <br />
 
 ## React Native Developer
