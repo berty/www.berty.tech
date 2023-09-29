@@ -7,8 +7,8 @@ image: "password-manager.jpg"
 categories:
   - news
 tags:
-  - security
-  - privacy
+  - безопасность
+  - конфиденциальность
   - how-to
 description: Best password manager of 2020!
 ---
