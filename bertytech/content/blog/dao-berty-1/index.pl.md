@@ -6,8 +6,8 @@ image: "dao-berty.png"
 categories:
   - announcement
 tags:
-  - technical
-  - security
+  - techniczne
+  - bezpieczeństwo
 ---
 
 # Why a DAO for Berty? (Part I)
