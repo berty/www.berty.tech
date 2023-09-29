@@ -30,7 +30,7 @@ We hope to meet as many people as possible, learn a lot from the conferences, an
 
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
+चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫 </br>
  {{<tweet id="1175014666310959104">}}
 
-Photo Credit: [undraw](https://undraw.co/illustrations) 
+चित्र का श्रेय :[ undraw](https://undraw.co/illustrations) 
