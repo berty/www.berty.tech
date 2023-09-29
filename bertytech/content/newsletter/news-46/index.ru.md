@@ -8,7 +8,7 @@ aliases:
 
 # News #46
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
 How's it going?
 
@@ -16,7 +16,7 @@ At Berty's, everyone is doing well. Even if the temperature fell these last days
 
 Take care of yourself and others 🧡
 
-Cheers!
+Ура!
 
 ## 🚀 Open Source
 
@@ -33,23 +33,23 @@ We have been working on a lot of different topics over the last two weeks:
 * Make the bertybridge (mobile native <-> Go) using initutil to initialize ipfs/libp2p like everything else in the project
 * Wrote a documentation for self-service onboarding on the beta
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
-* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 * **Contributions:**
     * Thanks [Zachoo](https://github.com/zachoooo) for his contributions ([#2377](https://github.com/berty/berty/pull/2377) & [#2408](https://github.com/berty/berty/pull/2408)) 🙏
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * ~~October 7th, 2020:~~ [Paris P2P #12](https://p2p.paris/en/event/monthly-12/) - *postponed*
 * October 21-23, 2020: [PWG 2020](https://www.planetiers.com/worldgathering/)
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-09-21](https://github.com/berty/community/blob/master/meeting-notes/2020/Q3/2020-09-21--staff-team-weekly-sync.md)
     * [2020-09-28](https://github.com/berty/community/blob/master/meeting-notes/2020/Q3/2020-09-28--staff-team-weekly-sync.md)
 
