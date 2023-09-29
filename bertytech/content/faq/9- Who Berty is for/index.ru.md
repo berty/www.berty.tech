@@ -1,11 +1,11 @@
 ---
-title: "Who Berty is for?"
+title: "Для кого нужен Berty?"
 id: 9
 private: true
 ---
 
-Berty messenger and protocol are intended for anyone concerned about their freedom (and for those who are unaware that their freedom is under threat!).
+Мессенджер и протокол Berty предназначены для всех, кто обеспокоен своей свободой (и для тех, кто не знает, что их свобода находится под угрозой!).
 
-In our world, anyone could have their data collected and their communications intercepted. This is the sad consequence of pervasive mass surveillance across the globe.
+В нашем мире любой может получить чужие данные и перехватить сообщения. Это печальное последствие повсеместной массовой слежки по всему миру.
 
-Certain groups of people are at higher risk because of their activity: journalists, military personnel, government officials, activists, corporate members, lawyers, whistleblowers. Berty was designed with them in mind.
+Некоторые группы людей подвергаются повышенному риску из-за своей деятельности: журналисты, военнослужащие, правительственные чиновники, активисты, корпоративные члены, юристы, информаторы. Berty был спроектирован с учетом их потребностей.
