@@ -8,9 +8,9 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
+  - безопасность
   - cybersecurity
-  - privacy
+  - конфиденциальность
 description: Let's meet at FOSDEM 2020 in Brussel!
 ---
 
