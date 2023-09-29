@@ -5,7 +5,7 @@ date: 2020-12-14
 #image: "2020-14-12-Berty-BlogPost-TALKS_AT_PBWS_&_IPFS_WRAP_UP_2020.jpg"
 image: "2020-14-12-Berty-BlogPost-TALKS_AT_PBWS_&_IPFS_WRAP_UP_2020.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - announcement
   - berty
