@@ -4,9 +4,9 @@ title: "Has National Defense Every Right?"
 date: 2018-12-28
 image: "national-defense.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
-  - privacy
+  - prywatność
   - liberty
   - public-security
 description: Since the emergence of large-scale terrorism, the limitations of public security have been the subject of much controversy at the current time.
@@ -52,7 +52,7 @@ These statements make us think about the real reasons for this security because 
 Based on these statements, and now, with full knowledge of the facts, we let you think about what is the most substantial thing to do for you at 🤔.
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{< tweet id="1081206212191010817" >}}
 
