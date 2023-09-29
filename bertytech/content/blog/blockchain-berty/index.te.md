@@ -5,17 +5,17 @@ date: 2021-01-14
 #image: "2021-01-04-Berty-Blogpost-Blockchain.jpg"
 image: "2021-01-04-Berty-Blogpost-Blockchain.jpg"
 categories:
-- news
+  - news
 tags:
-- berty
-- internet
-- privacy
-description: "Is Berty a blockchain?" 
+  - berty
+  - internet
+  - privacy
+description: "Is Berty a blockchain?"
 ---
 
 # Blockchain & Berty: Glad you asked!
 
-As we write these lines, Bitcoin's value has just surpassed its ATH (All Time High). Prepare yourself: In a few days, BTC will be trending everywhere – *again* – along with its more mysterious sibling, the **blockchain**. 
+As we write these lines, Bitcoin's value has just surpassed its ATH (All Time High). Prepare yourself: In a few days, BTC will be trending everywhere – *again* – along with its more mysterious sibling, the **blockchain**.
 
 Curious if Berty has anything to do with this shadowy figure? You won't be the first. This post is for you!
 
@@ -25,7 +25,7 @@ Since 2017, the term "blockchain" has been used to promote an image of radical i
 
 Berty, by nature of its decentralized protocol, is often assumed to be blockchain-based. Is it? **This is one of our most frequently asked questions**, especially at specialized events such as [Paris Blockchain Web Summit](https://berty.tech/blog/2020-talks/).
 
-We'll set the record straight here, starting with a quick technical intro. 
+We'll set the record straight here, starting with a quick technical intro.
 
 > 👉 Don't care? Skip to **Is Berty based on blockchain?**
 
@@ -61,7 +61,7 @@ If you can keep the following principles in mind, you'll have a good starting po
 
 The Berty protocol is indeed a peer-to-peer protocol, therefore distributed and decentralized, but – *unlike blockchain* – **it requires no consensus and no validation by the network**.
 
-Within the Bitcoin protocol, for example, each wallet-to-wallet transaction must be validated, and then be certifed through the network of "miners" who will then "forge" (or mine) the currency. 
+Within the Bitcoin protocol, for example, each wallet-to-wallet transaction must be validated, and then be certifed through the network of "miners" who will then "forge" (or mine) the currency.
 
 By contrast, on Berty, a conversation or file exchange does not need to be verified, since it is not a financial transfer – and we do *not* want your communications to be indelibly recorded.
 
@@ -76,7 +76,7 @@ Nor is it necessary to prove any financial or other personal resources to use th
 
 ### Where Berty and blockchains share turf 🤝
 
-Yes, there are some common points between the Berty protocol and blockchains. 
+Yes, there are some common points between the Berty protocol and blockchains.
 
 * No central authority
 * Secure
@@ -84,7 +84,7 @@ Yes, there are some common points between the Berty protocol and blockchains.
 * Open
 * Borderless
 * Censorship proof
-* Ultimately, no single individual or organization will be in charge of Berty 
+* Ultimately, no single individual or organization will be in charge of Berty
 
 ### Could blockchains be useful to Berty? 💡
 
@@ -104,20 +104,19 @@ We should note here that this isn't feasible for the short term. We're pushing *
 
 But long-term? **A move to the DAO model could have serious benefits for Berty**.
 
-- **Resilience:** Berty could never be taken down. Since a DAO is based on "smart contracts" on a public blockchain, anyone can participate, with no kill switch on hand, no matter how powerful the interloper. 
+- **Resilience:** Berty could never be taken down. Since a DAO is based on "smart contracts" on a public blockchain, anyone can participate, with no kill switch on hand, no matter how powerful the interloper.
 - **Security:** An encrypted P2P protocol AND governance means that no entryway exists for an entity to arbitrarily seize control or modify functionality.
-- **Autonomy:** We *could* eventually go the token route to finance the project (BertyCoin, anyone?), but doing so would likely attract profit-driven collaborators while driving away those who share the NGO's values (like you). Bitcoin and Ethereum themselves are products of a broader vision of a socially beneficial alternative to the current financial system. 
+- **Autonomy:** We *could* eventually go the token route to finance the project (BertyCoin, anyone?), but doing so would likely attract profit-driven collaborators while driving away those who share the NGO's values (like you). Bitcoin and Ethereum themselves are products of a broader vision of a socially beneficial alternative to the current financial system.
 
-Again, restructuring can't be our current focus. At this stage, we're prioritizing efficiency until Berty is ready to be released into the wild. 
+Again, restructuring can't be our current focus. At this stage, we're prioritizing efficiency until Berty is ready to be released into the wild.
 
-Still, we're keeping tabs on blockchain developments with a watchful (and critical) eye. 
+Still, we're keeping tabs on blockchain developments with a watchful (and critical) eye.
 
 **The future is decentralized, and we don't want to overlook tools that could help make Berty an important actor in this revolution.**
 
 ## Concluding Pop Quiz: Do Berty projects use blockchains? 🤨
 
-Not yet, but we feel that many projects could be interested using BLE transport for offline transactions. Network resilience is a very important topic for future of cryptocurrencies transactions, and some projects like BlockStream, or Lightning Network Layer on Bitcoin, are working hard to permit offline transactions and improve scalability.
-Maybe some blockchain developers will be happy to use Berty protocol to explore new perspective in offline transactions!
+Not yet, but we feel that many projects could be interested using BLE transport for offline transactions. Network resilience is a very important topic for future of cryptocurrencies transactions, and some projects like BlockStream, or Lightning Network Layer on Bitcoin, are working hard to permit offline transactions and improve scalability. Maybe some blockchain developers will be happy to use Berty protocol to explore new perspective in offline transactions!
 
 
 Cheers peers! 🏴‍☠️
