@@ -7,8 +7,8 @@ image: "2020-11-30-Berty-Blogpost-Watching-global-security-and-surveillance-in-f
 categories:
   - news
 tags:
-  - security
-  - privacy
+  - 安全
+  - 隐私
   - surveillance
 description: Global Security and Surveillance in France
 ---
