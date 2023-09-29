@@ -8,9 +8,9 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
+  - bezpieczeństwo
   - cybersecurity
-  - privacy
+  - prywatność
 description: Let's meet at FOSDEM 2020 in Brussel!
 ---
 
@@ -30,7 +30,7 @@ We hope to meet as many people as possible, learn a lot from the conferences, an
 
 
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫 </br>
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫 </br>
  {{<tweet id="1175014666310959104">}}
 
 Photo Credit: [undraw](https://undraw.co/illustrations) 
