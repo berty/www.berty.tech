@@ -4,11 +4,11 @@ title: "Differences Between Safety, Security, Private, Privacy and Intimacy"
 date: 2018-12-24
 image: "privacy-security-safety.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - safety
-  - security
-  - privacy
+  - bezpieczeństwo
+  - prywatność
   - intimacy
 description: Security, safety, privacy, and intimacy are closely related terms. They respectively define very different specific nuances, and yet we regularly mix them up. This blog post will aim to study each of these terms and try to understand better how they may or may not associate with each other.
 medium_url: https://medium.com/berty-tech/security-privacy-safety-7050168d5453-d29fd57f5b20
@@ -32,7 +32,7 @@ Individual freedom is an integral part of everyone’s private life. It stops wh
 
 > _"Liberty requires security without intrusion, security plus privacy."_ --  Bruce Schneier
 
-Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+Pozdrawiamy internet, możesz klaskać & śledzić nas, do zobaczenia następnym razem. 🤫
 
 {{< tweet id="1077254213045026816" >}}
 
