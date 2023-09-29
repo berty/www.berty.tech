@@ -1,19 +1,19 @@
 ---
 author: gfanton
-title: "Gomobile-IPFS" 
+title: "Gomobile-IPFS"
 date: 2020-07-02
 image: "gomobile-ipfs.jpg"
 categories:
-- announcement
+  - announcement
 tags:
-- technical
-- security
+  - technical
+  - security
 ---
 
 # Gomobile-IPFS
 
 
-It has been almost a year since the lightbulb went off: "Hey! Everyone! We're making gomobile + IPFS happen!" 
+It has been almost a year since the lightbulb went off: "Hey! Everyone! We're making gomobile + IPFS happen!"
 
 Why the urgency? Read on to learn about the inception of the gomobile-ipfs project, its evolution, and some lessons learned along the way.
 
@@ -72,18 +72,13 @@ You can find the entire exchange on [this issue](https://github.com/ipfs-shipyar
 
 We quickly implemented a first version of gomobile-ipfs with the help of [Steven Allen](https://github.com/Stebalien) from Protocol Labs who reviewed our code in detail and helped us to fix a number of problems.
 
-Then our [repo](https://github.com/ipfs-shipyard/gomobile-ipfs) was quickly moved to [IPFS Shipyard](https://github.com/ipfs-shipyard) and made open-source.
-It currently contains the following components:
+Then our [repo](https://github.com/ipfs-shipyard/gomobile-ipfs) was quickly moved to [IPFS Shipyard](https://github.com/ipfs-shipyard) and made open-source. It currently contains the following components:
 
-- A golang part which exposes the essential functions for the init of the node
-and the functions related to the RequestBuilder
-- Two Swift and Java packages that facilitate node management and send
-requests from these native languages
-- Two demo applications for Android and iOS using gomobile-ipfs that simply
-download a random XKCD over IPFS
+- A golang part which exposes the essential functions for the init of the node and the functions related to the RequestBuilder
+- Two Swift and Java packages that facilitate node management and send requests from these native languages
+- Two demo applications for Android and iOS using gomobile-ipfs that simply download a random XKCD over IPFS
 
-![image alt](https://i.ibb.co/YWB3zTy/gomobile-ipfs-hufbbb43401e0c8d9e17583385642103fd-335201-970x0-resize-q100-lanczos.png)
-*The gomobile-ipfs demo application*
+![image alt](https://i.ibb.co/YWB3zTy/gomobile-ipfs-hufbbb43401e0c8d9e17583385642103fd-335201-970x0-resize-q100-lanczos.png) *The gomobile-ipfs demo application*
 
 Since then, we've also set up a CI that publishes the different Maven packages (Android), Cocoapods packages (iOS) and the demo applications on [Bintray](https://bintray.com/berty).
 
@@ -95,7 +90,7 @@ You can also find here a video that summarizes the basics of what there is to kn
 
 ![image alt](https://media.giphy.com/media/3og0ICZh82LEsNjHoc/giphy.gif)
 
-There are still several points necessary for the project to be mature, some of which are already in progress. 
+There are still several points necessary for the project to be mature, some of which are already in progress.
 
 Let's take a look at our to-do list!
 
