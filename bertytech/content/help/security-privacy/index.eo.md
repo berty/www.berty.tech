@@ -8,4 +8,4 @@ private: true
 
 # Security & Privacy
 
-<span class="tag yellow">Coming soon</span>
+<span class="tag yellow">Baldaŭ novaĵoj</span>
