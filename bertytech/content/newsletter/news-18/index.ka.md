@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #18"
 date: 2019-10-25
-aliases: ["/newsletter/weekly-18"]
+aliases:
+  - "/newsletter/weekly-18"
 ---
 
 # Current Work
@@ -32,6 +33,4 @@ We partnered with the Samouraï Coop team to produce a video aimed at raising aw
 Paris Open Source Summit is Europe's premier event on open source, free software and, open innovation. Pierre submitted our application to the CFP. We hope to be selected!
 
 ### Blog posts
-We published two new articles. Check them out: </br>
-_Cryptography In Our Daily Usage_: 👉 https://berty.tech/blog/cryptography-daily-usage/ </br>
-_Digital Signature_: 👉 https://berty.tech/blog/digital_signature/
+We published two new articles. Check them out: </br> _Cryptography In Our Daily Usage_: 👉 https://berty.tech/blog/cryptography-daily-usage/ </br> _Digital Signature_: 👉 https://berty.tech/blog/digital_signature/
