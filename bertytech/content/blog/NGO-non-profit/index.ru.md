@@ -159,7 +159,7 @@ So yes, it is possible to think about tech, without thinking about the next unic
 
 
 
-## Conclusion
+## Заключение
 
 
 ### NGO advantage:
