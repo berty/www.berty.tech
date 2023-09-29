@@ -7,7 +7,7 @@ aliases:
 
 # News #49
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
 
 The Berty newsletter comes out on Friday the 13th. Coincidence? Nope, we don't think so. 🙃
@@ -34,9 +34,9 @@ Highlights from the last two weeks:
 * Create an integration binary launched on each commit (and periodically in production) to test the protocol, its dependencies, and Internet
 * Various refactors: JS store to support delaying the go daemon startup; in-app notification driver; advanced i18n usages (singular-plurals, expansions)
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
-### Translating
+### Перевод
 
 We finally found a satisfactory translation solution: Crowdin!
 
@@ -47,9 +47,9 @@ You all know how language can be a barrier to access. Help us translate the appl
 👉 http://berty.crowdin.com/
 
 
-### Good First Issue & Help Wanted
+### Хороший первый вопрос и Требуется помощь
 
-If you want to help us, we have two labels on GitHub to let you know where we need help: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+If you want to help us, we have two labels on GitHub to let you know where we need help: [**Good First Issue**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22good+first+issue%22+sort%3Aupdated-desc) & [**Help Wanted**](https://github.com/issues?q=is%3Aissue+is%3Aopen+org%3Aberty+label%3A%22help+wanted%22+sort%3Aupdated-desc+). You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 ## 📚 Blogposts
@@ -62,14 +62,14 @@ We released two blog posts this week. Please have a look!
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/berty?ref_src=twsrc%5Etfw">@berty</a>&#39;s latest news ❤️<br>Always interesting<a href="https://t.co/jzzBZjszf3">https://t.co/jzzBZjszf3</a></p>&mdash; Depado (@Depado_) <a href="https://twitter.com/Depado_/status/1307752027699720192?ref_src=twsrc%5Etfw">September 20, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-11-09](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-09--staff-team-weekly-sync.md)
     * [2020-11-02](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-02--staff-team-weekly-sync.md)
     * [SOW Update - Gomobile IPFS - 11/02](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-11-02--sow-gomobile-ipfs.md)
