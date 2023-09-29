@@ -1,9 +1,9 @@
 ---
-title: "What is your connection to IPFS?"
+title: "Какое у вас подключение к IPFS?"
 id: 4
 private: true
 ---
 
-IPFS is a protocol + peer-to-peer network developed by Protocol Labs. The mission of this software is to democratize the distributed internet. The principle of IPFS is to set up a shared hard drive, while also ensuring immutability. It is more resilient and can also work without the internet.
+IPFS - это протокол + одноранговая сеть, разработанная Protocol Labs. Задача этого программного обеспечения - демократизировать распределенный Интернет. Принцип IPFS состоит в том, чтобы создать общий жесткий диск с одновременным обеспечением неизменности. Это более устойчиво и может работать без Интернета.
 
-Berty's protocol is based on IPFS.
+Протокол Berty основан на IPFS.
