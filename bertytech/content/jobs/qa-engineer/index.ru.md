@@ -1,17 +1,17 @@
 ---
-title: "QA Engineer"
+title: "Инженер по вопросам качества"
 image_bg: paris.png
-location: "Paris, France / Remote"
-contract: "Part Time / Freelance"
+location: "Париж, Франция / Удалённо"
+contract: "Частичная занятость / Фриланс"
 date: "2019-09-23T09:58:25Z"
 employmentType: PART_TIME
 jobURL: https://berty.crew.work/jobs/621f4caface679e4cf8ed81b
 ---
 
-## Outcomes
+## Обязанности
 
-* Participating in all development phases until delivery and production;
-* Developing and deploying of automation testing practices;
-* Participating in writing guidelines and making sure the team is following them;
-* Writing test cases;
-* Estimating the impact of the evolutions on the product;
+* Участие на всех этапах разработки до поставки и производства;
+* Разработка и внедрение практик автоматизации тестирования;
+* Участие в написании руководств и обеспечение их соблюдения командой;
+* Написание тестовых испытаний;
+* Оценка влияния изменений на продукт;
