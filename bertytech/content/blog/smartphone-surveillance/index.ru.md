@@ -7,10 +7,10 @@ categories:
   - free-speech
 description: "What's sitting in your pocket is the most powerful tracking device ever made: localization, habits, communication. Everything can be monitored from your smartphone!"
 tags:
-  - security
+  - безопасность
   - censorship
   - surveillance
-  - privacy
+  - конфиденциальность
 ---
 
 # Are Smartphones the best surveillance devices?
