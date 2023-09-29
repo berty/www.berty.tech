@@ -4,9 +4,9 @@ title: "Has National Defense Every Right?"
 date: 2018-12-28
 image: "national-defense.jpg"
 categories:
-  - free-speech
+  - 自由发言
 tags:
-  - privacy
+  - 隐私
   - liberty
   - public-security
 description: Since the emergence of large-scale terrorism, the limitations of public security have been the subject of much controversy at the current time.
