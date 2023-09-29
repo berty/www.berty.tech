@@ -4,4 +4,4 @@ id: 8
 private: true
 ---
 
-The Berty application is not available yet. However, we will open our preview version soon. If you are interested in testing our Beta “yolo”, send your request using the following form: https://crpt.fyi/berty-preview Your feedback will help us greatly in our development process.
+The Berty app is still under active developement. However, our early version is available. Join us on Discord to get more info and give it a try! Your feedback will help us greatly in our development process.
