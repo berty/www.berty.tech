@@ -9,7 +9,7 @@ categories:
 tags:
   - how-to
   - cybersecurity
-  - privacy
+  - конфиденциальность
   - surveillance
 description: Easy tips to protect yourself in 10min!
 ---
