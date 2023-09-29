@@ -7,7 +7,7 @@ categories:
   - free-speech
 tags:
   - technical
-  - security
+  - безопасность
 description: Cryptography in one form or other is everywhere online, from banking sites to personal communication apps. But it’s not a modern invention. When exactly did it arise? And what developments has it undergone over the years? The history of cryptography runs parallel to the development of new communication methods and safer transactions. Learn more about it to understand just how important it has become.
 aliases:
   - blog/history-cryptology
