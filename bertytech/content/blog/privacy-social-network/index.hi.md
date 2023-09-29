@@ -60,7 +60,7 @@ Moreover, yet, many whistleblowers have shown us the opposite. We have all, as b
 
 A simple question to conclude those simple tests: **which situation is the worst?**
 
- None is the correct answer. So why we keep accepting the unacceptable by the mere fact, it’s not visible? Cheers Internet, feel free to clap & follow our stories, see you next time. 🤫
+ None is the correct answer. So why we keep accepting the unacceptable by the mere fact, it’s not visible? चीयर्स इंटरनेट, ताली बजाने के लिए स्वतंत्र महसूस करें & हमारी कहानियों का अनुसरण करें, फिर मिलते हैं। 🤫
 
 {{< tweet id="1082309056050671617" >}}
 
