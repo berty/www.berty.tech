@@ -1,14 +1,14 @@
 ---
-author: camille
+author: Camille
 title: "Meet us at Paris P2P Festival!"
 date: 2020-01-02
 #image: "parisp2pfestival.png"
 image: "meet_us_paris_p2p_festival.jpg"
 categories:
-  - free-speech
+  - Liberté d'expression
 tags:
   - technical
-  - security
+  - sécurité
 ---
 
 
