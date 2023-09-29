@@ -6,7 +6,7 @@ image: "berty_ux_ui.png"
 categories:
   - UX
 tags:
-  - technical
+  - techniczne
   - UX
   - UI
 ---
