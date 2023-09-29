@@ -1,7 +1,7 @@
 ---
 title:
 layout: id
-subtitle: 'Open the Berty app on your phone and scan this code to make a contact request to <span class="c-name"></span>'
+subtitle: 'Malfermu la aplikaĵon Berteto en via poŝtelefono kaj skanu ĉi-kodon por kontakti <span class="c-name"></span>-on'
 ---
 
 {{< display_section_id >}}
