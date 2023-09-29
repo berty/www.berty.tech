@@ -5,11 +5,11 @@ date: 2020-02-26
 #image: "nantes_cover_3.jpg"
 image: "nantes_cover_3.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
   - meetup
-  - security
-  - technical
+  - bezpieczeństwo
+  - techniczne
 ---
 
 # Berty will be at the Nantes P2P!
