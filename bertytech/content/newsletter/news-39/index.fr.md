@@ -70,7 +70,7 @@ Until further notice, we are canceling all in-person events at public venues –
 
 * We published two blog posts:
     * [How Berty Works #1: IPFS](https://berty.tech/blog/how-berty-works-ipfs/)
-    * [Stop spying on me!](https://berty.tech/blog/stop-spying-on-me/)
+    * [Arrêtez de m'espionner !](https://berty.tech/blog/stop-spying-on-me/)
 
 ## 💌 Mention
 
