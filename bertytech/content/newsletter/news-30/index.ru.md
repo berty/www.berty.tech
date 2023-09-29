@@ -62,7 +62,7 @@ Zöôma, the CEO of the [Samourai Cooperative](https://www.cooperativesamourai.c
 [![Alt text](0.jpg)](https://www.youtube.com/watch?v=RwXqkm3DQnc)
 
 
-We really hope to be a part of FOSDEM 2021 and share more beers with you guys! Cheers!
+We really hope to be a part of FOSDEM 2021 and share more beers with you guys! Ура!
 
 
 ### Paris P2P #6
