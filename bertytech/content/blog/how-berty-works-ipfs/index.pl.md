@@ -5,9 +5,9 @@ date: 2020-06-23
 #image: "HBW1.jpg"
 image: "HBW1.jpg"
 categories:
-  - technical
+  - techniczne
 tags:
-  - technical
+  - techniczne
   - ipfs
   - how-to
 description: "We will explain why we chose to build Berty over IPFS."
