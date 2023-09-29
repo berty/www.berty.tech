@@ -1,7 +1,7 @@
 ---
-title: "Are all my conversations encrypted?"
+title: "Все ли мои разговоры зашифрованы?"
 id: 5
 private: true
 ---
 
-On Berty, all of your exchanges (messages & files) are encrypted from start to finish by default. In other words, nobody except you and the one you communicate with can read or intercept these exchanges. 
+На Berty все ваши обмены (сообщения и файлы) по умолчанию зашифрованы от начала до конца. Другими словами, никто, кроме вас и того, с кем вы общаетесь, не может прочитать или перехватить эти обмены. 
