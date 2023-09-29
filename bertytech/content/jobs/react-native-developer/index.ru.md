@@ -1,32 +1,32 @@
 ---
-title: "React Native Developer"
+title: "React Native разработчик"
 image_bg: paris.png
-location: "Paris, FRANCE / Remote"
-contract: Part Time / Freelance
+location: "Париж, ФРАНЦИЯ / Удалённо"
+contract: Частичная занятость / Фриланс
 date: "2019-09-23T09:58:25Z"
 employmentType: PART_TIME
 jobURL: https://berty.crew.work/jobs/621f4d6face679e4cf8ed81c
 ---
 
-## Outcomes
+## Обязанности
 
-* Participating in all development phases until delivery and production;
-* Developing and maintaining our front-end mobile, web, and desktop applications;
-* Improving performances and code quality;
-* Participating in product definition;
+* Участие на всех этапах разработки до поставки и производства;
+* Разработка и поддержка интерфейсов наших мобильных, веб и настольных приложений;
+* Повышение производительности и качества кода;
+* Участие в определении продукта;
 
-## Requirements
+## Требования
 
-* Advanced knowledge of React
-* Knowledge of React Native, or with mobile development, or able to learn
+* Расширенные знания о React
+* Знание React Native или разработка мобильных приложений, или возможность обучения
 
-## Nice to have (optional)
+## Будет плюсом (необязательно)
 
-* Active profile on GitHub
-* Experience with some of the following pieces of technology: TypeScript, Golang, Gomobile, Protobuf, gRPC, MobX, Redux, ...
-* Experience with some of the following domains: P2P, Cryptography, IPFS, Blockchains, ...
-* Experience with automation: CI, DevOps (Bazel, Docker, ...), Code Generation
-* Experience with low-level mobile concepts (Bluetooth, secure enclave, ...)
-* Having multiple project experiences (startups, personal projects, side-projects, ...)
-  * Being able to design projects or part of a project starting from a blank page
-  * Having an experience of launching or releasing a product
+* Активный профиль на GitHub
+* Опыт с некоторыми из следующих технологий: TypeScript, Golang, Gomobile, Protobuf, gRPC, MobX, Redux, ...
+* Опыт работы с некоторыми доменами: P2P, Cryptography, IPFS, Blockchains, ...
+* Опыт автоматизации: CI, DevOps (Bazel, Docker, ...), Создание кода
+* Опыт работы с низкоуровневыми мобильными концепциями (Bluetooth, безопасный анклав, ...)
+* Иметь несколько опытных проектов (стартовые, персональные проекты, побочные проекты...)
+  * Возможность проектировать проекты или часть проекта, начиная с пустой страницы
+  * Иметь опыт запуска или выпуска продукта
