@@ -4,13 +4,12 @@ title: "Has National Defense Every Right?"
 date: 2018-12-28
 image: "national-defense.jpg"
 categories:
-- free-speech
+  - free-speech
 tags:
-- privacy
-- liberty
-- public-security
-description: Since the emergence of large-scale terrorism, the limitations of public
-  security have been the subject of much controversy at the current time.
+  - privacy
+  - liberty
+  - public-security
+description: Since the emergence of large-scale terrorism, the limitations of public security have been the subject of much controversy at the current time.
 medium_url: https://medium.com/berty-tech/national-security-privacy-c38e55784c6e
 ---
 
@@ -38,8 +37,7 @@ The observation is as follows: Forcing technology companies to provide encryptio
 
 > "_They who can give up  essential liberty, to obtain a little temporary safety, deserve neither liberty nor safety._" -- Benjamin Franklin
 
-This statement now sounds like a warning. Preserving public order in no way authorizes state disorder, that goes without saying!
-Therefore, violating our privacy would be tantamount to interfering with our most essential freedom. We cannot lose this fundamental right, although the maintenance of public order is also a necessity for the exercise of freedoms. A real distinction must be made between information relating to public security and very personal information collected by the government and the various agencies, in which case we risk permanently losing the only values we still have today.
+This statement now sounds like a warning. Preserving public order in no way authorizes state disorder, that goes without saying! Therefore, violating our privacy would be tantamount to interfering with our most essential freedom. We cannot lose this fundamental right, although the maintenance of public order is also a necessity for the exercise of freedoms. A real distinction must be made between information relating to public security and very personal information collected by the government and the various agencies, in which case we risk permanently losing the only values we still have today.
 
 ## 3) Conclusion
 
