@@ -8,8 +8,8 @@ categories:
   - freespeech
 tags:
   - surveillance
-  - security
-  - privacy
+  - 安全
+  - 隐私
 description: "Censorship in the modern age takes many forms. It occurs when access to certain websites, networks, and search engines becomes restricted. When governments delete or distort news and information deemed undesirable. When writers, artists, and web users are threatened with legal action by the police for expressing their views."
 ---
 
