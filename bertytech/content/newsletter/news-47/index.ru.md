@@ -8,7 +8,7 @@ aliases:
 
 # News #47
 
-Ahoy Bertizen! 🏴‍☠️
+Ахой Бертизен! 🏴‍☠️
 
  We hope you are comfortably settled. Ready for newsletter #47?
 
@@ -41,30 +41,30 @@ It will probably look like this:
 ![](https://i.imgur.com/BQQxvC2.png)
 
 
-## 🗣️ Community
+## 🗣️ Сообщество
 
 * More than 4,000 commits!
 
 ![](https://i.imgur.com/MgFK9Mx.png)
 
 
-* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Just saying 😏
+* **Good First Issue & Help Wanted**: If you want to help us, we have two labels on GitHub to let you know where we need help: **Good First Issue** & **Help Wanted**. You will have our eternal gratitude and maybe some stickers if you wish. Просто скажите 😏
 
 
 ## 💌 Mention
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here’s the best project to learn from - these guys are really good coders - In Europe <a href="https://t.co/SBYfT0C2I1">https://t.co/SBYfT0C2I1</a></p>&mdash; Edgar (@EdgarArout) <a href="https://twitter.com/EdgarArout/status/1283442695814483973?ref_src=twsrc%5Etfw">July 15, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-## 🎉 Meet the Berty Crew
+## 🎉 Встреча с командой Berty
 
-Until further notice, we are canceling all in-person events at public venues – but we're coming soon to a screen near you! 🚧🚧
+До дальнейшего уведомления мы отменяем все личные мероприятия в общественных местах, но скоро мы подойдем к экрану рядом с вами! 🚧🚧
 
 * ~~October 7th, 2020:~~ [Paris P2P #12](https://p2p.paris/en/event/monthly-12/) - *postponed*
 * October 21-23, 2020: [PWG 2020](https://www.planetiers.com/worldgathering/)
 
-## ⚙️ Recent Changes
+## ⚙️ Недавние изменения
 
-* **Read our last weekly sync notes:**
+* **Прочтите наши последние еженедельные примечания:**
     * [2020-10-12](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-10-12--staff-team-weekly-sync.md)
     * [2020-10-05](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-10-05--staff-team-weekly-sync.md)
     * [SOW Update - Gomobile IPFS - 2 Oct](https://github.com/berty/community/blob/master/meeting-notes/2020/Q4/2020-10-02--sow-gomobile-ipfs.md)
