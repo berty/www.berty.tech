@@ -4,10 +4,10 @@ title: "Top Privacy Leaks from 2019"
 date: 2020-03-06
 image: "leak-2019.jpg"
 categories:
-  - free-speech
+  - wolność mowy
 tags:
-  - privacy
-  - security
+  - prywatność
+  - bezpieczeństwo
 ---
 
 # Top 2019 Privacy Leaks
