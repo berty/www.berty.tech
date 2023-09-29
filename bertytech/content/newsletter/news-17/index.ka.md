@@ -1,7 +1,8 @@
 ---
 title: "Berty Weekly #17"
 date: 2019-10-18
-aliases: ["/newsletter/weekly-17"]
+aliases:
+  - "/newsletter/weekly-17"
 ---
 
 # Current Work
@@ -13,11 +14,9 @@ We keep on working on the new Berty. This week, we have finished defining the da
 It's still in progress, but we continue working on the integration of gomobile on Berty. We hope to finish it asap 😉
 
 ## Ops
-During the week, we worked on ParisP2P and FranceP2P. The website has been reorganized and new meetings events have been added. You can have a look here </br>
-👉 https://www.meetup.com/fr-FR/France-P2P/
+During the week, we worked on ParisP2P and FranceP2P. The website has been reorganized and new meetings events have been added. You can have a look here </br> 👉 https://www.meetup.com/fr-FR/France-P2P/
 
-We have integrated all our previous newsletters to the website. </br>
-👉  https://berty.tech/newsletter
+We have integrated all our previous newsletters to the website. </br> 👉  https://berty.tech/newsletter
 
 # We found our new React Native developer!
 
