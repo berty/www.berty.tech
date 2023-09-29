@@ -7,8 +7,8 @@ image: "sim-swapping.png"
 categories:
   - news
 tags:
-  - security
-  - privacy
+  - sécurité
+  - confidentialité
 description: Learn about Sim Swapping
 ---
 
