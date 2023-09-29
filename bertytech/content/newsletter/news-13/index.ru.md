@@ -24,7 +24,7 @@ Check this 👉 [What is E2E Encryption?](https://berty.tech/blog/e2e-encryption
 ![](newsletter.png)<!--\[![\](newsletter.png)](https://berty.tech/blog/e2e-encryption/)--><br />
 <br />
 
-## React Native Developer
+## React Native разработчик
 
 As a reminder, we are still looking for a great React Native developer to work with us! Thank you for sharing this information with others!
 
