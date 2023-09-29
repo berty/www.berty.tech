@@ -1,19 +1,19 @@
 ---
-title: "Technical Writer"
+title: "Технический писатель"
 image_bg: paris.png
-location: "Paris, FRANCE / Remote"
-contract: "Part Time / Freelance"
+location: "Париж, ФРАНЦИЯ / Удалённо"
+contract: "Частичная занятость / Фриланс"
 date: "2019-09-23T09:58:25Z"
 employmentType: PART_TIME
 jobURL: https://berty.crew.work/jobs/621f4e0bace679e4cf8ed81d
 ---
 
-## Outcomes
+## Обязанности
 
-* Participating in all development phases until delivery and production;
-* Writing of technical internal and public documentation;
-* Writing of white-papers;
-* Writing of blog posts;
-* Reviewing technical documentations;
-* Speaking at conferences;
-* Participating in writing guidelines and making sure the team is following them;
+* Участие на всех этапах разработки до поставки и производства;
+* Написание технической внутренней и общественной документации;
+* Написание официальных документов;
+* Написание сообщений в блогах;
+* Просмотр технической документации;
+* Выступления на конференциях;
+* Участие в написании руководств и обеспечение их соблюдения командой;
