@@ -3,50 +3,66 @@
 <div id="hero" class="container">
   <section class="section-about top">
       <div class="row text-center">
-
-        <div class="col-md-6 mb-5 mb-md-0">
-          <div class="block bg-white h-100">
-            <div class="d-flex flex-column py-0">
-              <div class="order-2 order-md-1">
-                <h3 class="mb-2">
-                  <strong>No Face, No Name, No Number</strong>
-                </h3>
-                <h4>No SIM card, No Internet</h4>
-                <p>Berty is a messenger that doesn’t require any of your personal data or network connection.</p>
-              </div>
-    
-              <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
-                {{ $img := .Page.Resources.GetMatch "noface-noname.png" }}
-                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
-              </div>
-            </div>
-          </div>
+        <div class="col-md-12 mb-5 mb-md-0 justify-content-end">
+          <a href="https://play.google.com/store/apps/details?id=tech.berty.android" target="_blank" rel="noopener noreferrer">
+            <img src="/img/google-play-logo.png" alt="Google play store" width="200">
+          </a>
+          <a href="https://apps.apple.com/tt/app/berty/id1535500412" target="_blank" rel="noopener noreferrer">
+            <img src="/img/app-store-logo.png" alt="Apple store" width="200">
+          </a>
         </div>
-  
-        <div class="col-md-6 mb-5 mb-md-0">
-          <div class="block bg-white h-100">
-            <div class="d-flex flex-column py-0">
-              <div class="order-2 order-md-1">
-                <h3 class="mb-2">
-                  <strong>Safety by Default</strong>
-                </h3>
-                <h4>Privacy by Design</h4>
-                <p>All conversations are encrypted with end-to-end encryption, in a fully distributed network.</p>
-              </div>
-    
-              <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
-                {{ $img := .Page.Resources.GetMatch "secure-encryption.png" }}
-                {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
   </section>
 </div>
 
+
 <section id="subscribe-1" class="section-features-detail section-hwbg bg-grey">
+  <div class="container">
+    <div class="row text-center">
+
+      <div class="col-md-6 mb-5 mb-md-0">
+        <div class="block bg-white h-100">
+          <div class="d-flex flex-column py-0">
+            <div class="order-2 order-md-1">
+              <h3 class="mb-2">
+                <strong>No Face, No Name, No Number</strong>
+              </h3>
+              <h4>No SIM card, No Internet</h4>
+              <p>Berty is a messenger that doesn’t require any of your personal data or network connection.</p>
+            </div>
+
+            <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
+              {{ $img := .Page.Resources.GetMatch "noface-noname.png" }}
+              {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-5 mb-md-0">
+        <div class="block bg-white h-100">
+          <div class="d-flex flex-column py-0">
+            <div class="order-2 order-md-1">
+              <h3 class="mb-2">
+                <strong>Safety by Default</strong>
+              </h3>
+              <h4>Privacy by Design</h4>
+              <p>All conversations are encrypted with end-to-end encryption, in a fully distributed network.</p>
+            </div>
+
+            <div class="order-1 order-md-2 mb-4 mb-md-0 mt-md-4">
+              {{ $img := .Page.Resources.GetMatch "secure-encryption.png" }}
+              {{ partial "img" (dict "ctx" . "src" $img.RelPermalink "width" "200" "height" "62") }}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!--  /.row -->
+  </div><!-- /.container -->
+</section>
+
+<section id="subscribe-1" class="section-features-detail section-hwbg bg-white">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 text-center">
@@ -79,7 +95,7 @@
   </div><!-- /.container -->
 </section>
 
-<section id="bluetooth" class="section-features-detail bg-white">
+<section id="bluetooth" class="section-features-detail bg-grey">
   <div class="container">
     <div class="row align-items-center justify-content-between">
       <div class="col-lg-5 col-md-6 order-2 order-md-1">
@@ -109,7 +125,7 @@
       </div><!-- /.col -->
       <div class="col-md-5">
         <div class="block-mixed-text">
-          <h3>Available on any device <span>or system: iOS, Android, Windows, Linux</span></h3>
+          <h3>Available on any device<span>: iOS, Android</span></h3>
         </div><!-- /.block-mixed-text -->
       </div><!-- /.col -->
     </div><!--  /.row -->
