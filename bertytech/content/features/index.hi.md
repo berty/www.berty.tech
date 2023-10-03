@@ -1,5 +1,6 @@
 ---
 title: "Features"
+subtitle: Privacy-first messaging application built on top of the protocol Wesh Network.
 hclass: bg-blue gradient bg-features
 image: "berty_features.png"
 #menu:
