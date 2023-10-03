@@ -4,7 +4,7 @@ subtitle: Berty messenger is a privacy-first messaging application built on top 
 header:
   image: icon_messenger.svg
   button:
-    link: https://berty.app
+    link: /features
     text: Berty Messenger
 hclass: bg-blue gradient bg-messenger
 image: "berty_about.png"
@@ -17,7 +17,7 @@ body:
     - Berty, your next unstoppable messenger, no matter what.
   button:
     text: Berty Messenger
-    link: https://berty.app
+    link: /features
   image: img_messenger.png
 ---
 
