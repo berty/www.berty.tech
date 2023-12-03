@@ -12,6 +12,9 @@ aliases: ["/newsletter/weekly-72"]
 
 
 </aside>
+>📰 TLDR;
+The Berty team has been busy with changes and improvements to the Berty Messenger. The protocol behind the Berty Messenger has been separated to a stand-alone protocol called the Wesh Network, and *[`Berty.tech`](http://www.berty.tech)* has been updated. The team is working on getting some partnerships using Wesh Network!
+</br>
 
 # **Welcome back!!**
 
@@ -36,6 +39,19 @@ And we can't forget who has joined the team ofcourse, strengthening the team, br
 
 ### **Wesh Network**
 
+The protocol behind the Berty Messenger has been separated to a stand alone protocol called: The Wesh Network 🕸. Take a look at the [Wesh Network](https://wesh.network/) website or read through the [vision](https://wesh.network/vision) of Wesh Network.  This is done so everyone can use this protocol for their own projects when they want to. Which means that in the future we might be able to see new apps and programs with a save protocol.
+
+### Why did the newsletters stop?
+The team got it very busy with other things, and newsletters where not a priority so they slowed down and then stopped. Let's take a look at that!
+
+## Before we go into what's new
+Since the last newsletter some people have left and some have joined the Berty team. Some of the members who left have worked for or with Berty for years and are now ready for a new part of their life. We wish you all the best!!
+
+And we can't forget who has joined the team ofcourse, strengthening the team, bringing new ideas and skills to the table. I hope you have a good time and can be there when when the Wesh protocol is fully developed to be used in applications around the world!
+
+## What's changed
+
+### Wesh Network
 The protocol behind the Berty Messenger has been separated to a stand alone protocol called: The Wesh Network 🕸. Take a look at the [Wesh Network](https://wesh.network/) website or read through the [vision](https://wesh.network/vision) of Wesh Network.  This is done so everyone can use this protocol for their own projects when they want to. Which means that in the future we might be able to see new apps and programs with a save protocol.
 
 This means the code of Berty messenger and Berty Protocol into two separate repos: [https://github.com/berty/berty](https://github.com/berty/berty) and [https://github.com/berty/weshnet/](https://github.com/berty/weshnet/). -   Some code found in the Wesh network repo is still specific to Berty Messenger, such as the management of push notifications. In order to package the protocol, the team is working on completely isolating the messenger application from the protocol.
@@ -86,6 +102,20 @@ And Berty got a grant from them for bringing GNO to mobile!
 The team is working hard on making GnoMobile.A framework that makes it easier for developers to build [Gno.land](http://Gno.land) applications on mobile devices. You can find the repository here: *[Github](https://github.com/gnolang/gnomobile)*. There are already some previews videos made, if you want to take an early look: *[UI Demo](https://www.loom.com/share/9537299635564761bc3a6d627411e33a)*. But you can always build it locally and see the latest version!
 
 ## **Old but important news**
+
+*[Gno.land](https://gno.land/)* is a platform that allows developers to write smart contracts and other blockchain apps in Gnolang (Gno), an interpreted version of Golang (Go). This enables web2 developers to easily contribute to web3 and build a more transparent, accountable world.
+
+### ****Gnolang funding****
+
+Gnolang has a *[Funding and Grants Program](https://github.com/gnolang/ecosystem-fund-grants)*, where they look for passionate contributors who are interested in building new projects, dApps, tooling, infrastructure, or smart contract libraries in Gno.land.
+
+And Berty got a grant from them for bringing GNO to mobile!
+
+### ****GnoMobile****
+
+The team is working hard on making GnoMobile.A framework that makes it easier for developers to build [Gno.land](http://Gno.land) applications on mobile devices. You can find the repository here: *[Github](https://github.com/gnolang/gnomobile)*. There are already some previews videos made, if you want to take an early look: *[UI Demo](https://www.loom.com/share/9537299635564761bc3a6d627411e33a)*. But you can always build it locally and see the latest version!
+
+## Old but important news
 
 ### 🎬 **Building Web3**
 
