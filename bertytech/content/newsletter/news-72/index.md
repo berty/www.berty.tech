@@ -11,8 +11,6 @@ aliases: ["/newsletter/weekly-72"]
  The Berty team has been busy with changes and improvements to the Berty Messenger. The protocol behind the Berty Messenger has been separated to a stand-alone protocol called the Wesh Network, and [Berty.tech](http://www.berty.tech) has been updated. The team is working on getting some partnerships using Wesh Network!
 
 
-</aside>
-
 # **Welcome back!!**
 
 Hi community, long time not spoken. I'll update you on what has happened since the last time.
