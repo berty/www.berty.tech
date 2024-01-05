@@ -23,42 +23,6 @@
         </div>
       </div>
     </section>
-    <section class="section-jobs">
-      {{ range where .Pages "Section" "jobs" }}
-      <a class="block job-card block-link bg-white blue" href="{{.Params.jobURL | absURL }}" target="_blank">
-        <div class="row">
-          <div class="col-md-3 job-card-image">
-            {{ $ := . }}
-            {{- with $.Params.image_bg -}}
-            {{- $img := $.Page.Resources.GetMatch $.Params.image_bg -}}
-            {{- $resize := $img.Resize "300x" -}}
-            {{ partial "img" (dict "ctx" $ "src" $resize.RelPermalink "width" $resize.Width "height" $resize.Height) }}
-            {{- else -}}
-            {{ partial "img" (dict "ctx" $ "class" "img-rounded" "src" "/img/paris.png" "width" "255" "height" "120") }}
-            {{- end -}}
-          </div><!-- /.col -->
-          <div class="col-md-5">
-            <div class="job-card-middle">
-              <h4 class="job-card-title">{{.Params.Title}}</h4>
-              <div class="job-card-infos">
-                <i class="far fa-map-marker"></i>{{.Params.Location}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="far fa-briefcase"></i>{{.Params.Contract}}
-              </div><!-- /.job-card-infos -->
-            </div><!-- /.job-card-end -->
-          </div><!-- /.col -->
-          <div class="col-md-4">
-            <div class="job-card-end">
-              <div class="job-card-tags">
-                {{.Params.Tags}}
-              </div><!-- /.job-card-tags -->
-              <div class="job-card-button">
-                <button class="btn btn-bty btn-blue icon-right">View offer<i class="far fa-chevron-right"></i></button>
-              </div><!-- /.job-card-button -->
-            </div><!-- /.job-card-end -->
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </a><!-- /.job-card /.block-link -->
-      {{ end }}
-    </section>
 
     {{ partial "section_values" . }}
 
