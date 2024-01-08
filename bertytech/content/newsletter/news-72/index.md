@@ -1,6 +1,6 @@
 ---
 title: "Berty News #72"
-date: 2023-08-18
+date: 2024-01-08
 aliases: ["/newsletter/weekly-72"]
 ---
 
