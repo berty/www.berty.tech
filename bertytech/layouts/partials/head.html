@@ -28,8 +28,6 @@
 {{ $.Scratch.Set "isAmpPage" (or ($.Scratch.Get "isAmpPage") (in $ampPages .RelPermalink)) }}
 {{ $.Scratch.Set "isAmpPage" (or ($.Scratch.Get "isAmpPage") (in $ampSections .Section)) }}
 
-{{ $discourseCommentsPages := slice "blog" "newsletter" }}
-
 <!-- Check if current page has been translated or is just a copy of the English page -->
 {{- $isTranslatedPage := partial "is_translated_page" . -}}
 
@@ -91,11 +89,6 @@
       {{ if in $contentString . }}
       <script async custom-element="{{.}}" src="{{ $amp_url_prefix }}/v0/{{.}}-0.1.js"></script>
       {{ end }}
-    {{ end }}
-
-    <!-- if amp-iframe is used in content, or has comments using Discourse iframe -->
-    {{ if or (in $contentString "amp-iframe") (and (in $discourseCommentsPages (.Type | lower)) .IsPage)}}
-    <script async custom-element="amp-iframe" src="{{ $amp_url_prefix }}/v0/amp-iframe-0.1.js"></script>
     {{ end }}
 
     <!-- Styling -->
