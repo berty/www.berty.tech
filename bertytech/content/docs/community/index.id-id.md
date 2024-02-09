@@ -140,9 +140,8 @@ As you may guess, we don't know every language. However, we want Berty to be acc
 
 This can be the documentation, the app, the support, a blog post, even this page, or another section on the site.
 
-➡️ https://translate.berty.community/
-
-We encourage you to read our dedicated [blog post](https://berty.tech/blog/berty-translation/)
+We encourage you to open a new PR on the [berty](https://github.com/berty/berty) repository.
+All the translations are stored in the [/i18n/locale](https://github.com/berty/berty/tree/master/js/packages/i18n/locale) folder.
 
 ### 🐞 Bugs and Report
 
