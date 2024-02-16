@@ -145,6 +145,9 @@ This can be the documentation, the app, the support, a blog post, even this page
 We encourage you to open a new PR on the [berty](https://github.com/berty/berty) repository.
 All the translations are stored in the [/i18n/locale](https://github.com/berty/berty/tree/master/js/packages/i18n/locale) folder.
 
+You can also contribute to the translation of the website by opening a PR on the [berty.tech](https://github.com/berty/www.berty.tech) repository.
+
+
 ### 🐞 Bugs and Report
 
 We use GitHub issues for tracking requests and bugs. Please post the questions directly there using the 'bug' tag.
