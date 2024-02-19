@@ -133,16 +133,17 @@ There are lots of ways to help on the creative side. We can channel our creative
 
 > Find inspiration: https://assets.berty.tech
 
-
 ### ㊗️ Translation
 
 As you may guess, we don't know every language. However, we want Berty to be accessible to as many people as possible. That's why we need as much material as possible translated into as many languages as possible.
 
 This can be the documentation, the app, the support, a blog post, even this page, or another section on the site.
 
-➡️ https://translate.berty.community/
+We encourage you to open a new PR on the [berty](https://github.com/berty/berty) repository.
+All the translations are stored in the [/i18n/locale](https://github.com/berty/berty/tree/master/js/packages/i18n/locale) folder.
 
-We encourage you to read our dedicated [blog post](https://berty.tech/blog/berty-translation/)
+You can also contribute to the translation of the website by opening a PR on the [berty.tech](https://github.com/berty/www.berty.tech) repository.
+
 
 ### 🐞 Bugs and Report
 
