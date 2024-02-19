@@ -10,6 +10,7 @@ menu:
 
 {{< display_section_contact >}}
 
+
 {{< display_section_social >}}
 
 {{< display_section_newsletter >}}
