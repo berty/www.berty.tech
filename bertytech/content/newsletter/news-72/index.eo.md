@@ -1,4 +1,5 @@
 ---
+author: lfgaming
 title: "Berty News #72"
 date: 2024-01-08
 aliases:
