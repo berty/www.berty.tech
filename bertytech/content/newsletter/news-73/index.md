@@ -1,7 +1,7 @@
 ---
 author: lfgaming
 title: "Berty News #73"
-date: 2024-03-12
+date: 2024-03-27
 aliases: ["/newsletter/weekly-73"]
 ---
 
