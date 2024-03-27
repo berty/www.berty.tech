@@ -31,7 +31,7 @@ Next to all this, the team also is looking into integrating `Wesh` into `Gno`. B
 
 ## App Progress
 
-After releasing the latest version on the Appstore, the team is working working on publishing it on the Play Store as well. Before doing this they need to fix some under the hood technicalities.
+The latest version of Berty Messenger has been released on March 22nd on both App Store and Google Play. The most notable changes are some bug fixes on Notifications. Give it a try. 
 Apart from the tech fixing they are also removing notifications from the app which is causing issues at the moment, and some minor issue fixes for both the app and website.
 
 Then in some other news, the team is looking into doing a security audit for `Wesh`, more information on this later.
