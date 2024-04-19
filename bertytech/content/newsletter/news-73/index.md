@@ -15,7 +15,7 @@ So lets look at everything!
 ## Gno
 
 So, the team is on a 6 month project with Gno, but what are they doing exactly? That's a good question!
-As we have talked about in the previous [newsletter](https://berty.tech/newsletter/news-72/) the Berty team has made the `Gno Native Kit`, and now they are working on `Gno.Social` a decentralised social media platform similar to `X` (previously Twitter).
+As we have talked about in the previous [newsletter](https://berty.tech/newsletter/news-72/) the Berty team has made the `Gno Native Kit`, and now they are working on `dSocial` a decentralised social media platform similar to `X` (previously Twitter).
 Lets talk a bit about `dSocial`!
 </br>
 
