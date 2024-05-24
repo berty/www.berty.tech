@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "tech.berty.android",
+      "sha256_cert_fingerprints": [
+        "F8:EA:49:24:F8:2B:F6:81:90:75:36:3A:03:66:95:11:07:55:1F:C2:FF:0E:03:A1:B5:59:DE:13:7C:4B:46:3A"
+      ]
+    }
+  }
+]
