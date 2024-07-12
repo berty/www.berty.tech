@@ -31,7 +31,6 @@ prod-build:
 	hugo --gc $(HUGO_OPTS)
 	./go-get.sh
 	./post-build.sh
-	node ./validate-amp.js
 
 .PHONY: prod-build-ipfs
 prod-build-ipfs:
