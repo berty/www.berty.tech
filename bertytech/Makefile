@@ -11,8 +11,9 @@ fastdev:
 	HUGO_DISABLELANGUAGES="ar cn eo es fr hi id-id pl pt pt-br ru sl uk ka te" hugo server -D -F
 
 deps:
-	brew reinstall node
-	brew install hugo
+	git lfs install
+	git lfs pull
+	asdf install
 
 node_modules: package.json
 	npm install
