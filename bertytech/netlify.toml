@@ -4,6 +4,9 @@ command = "make prod-build"
 base = "bertytech/"
 ignore = "./ignore-build.sh"
 
+[build.environment]
+SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"
+
 [context.production.environment]
 HUGO_VERSION = "0.91.2"
 HUGO_ENV = "production"
