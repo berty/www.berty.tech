@@ -18,9 +18,9 @@ function main() {
     // -- Find and replace image src paths
     // 1. Loop over all HTML files
     // 2. Find all 'amp-img' and 'img' elements where attribute '[to-webp]="true'
-    // 3. Check if file extension is in convertable list
-    // 4. Push image 'src' attibute to _images array
-    // 5. Replace image 'src' attibute to .webp file extension
+    // 3. Check if file extension is in convertible list
+    // 4. Push image 'src' attribute to _images array
+    // 5. Replace image 'src' attribute to .webp file extension
     files.forEach((file) => {
       const $ = cheerio.load(fs.readFileSync(file));
 
