@@ -36,8 +36,8 @@ module.exports = {
         const parsed = xmlParser.parse(content, {});
         if (parsed.urlset && Array.isArray(parsed.urlset.url)) {
           return parsed.urlset.url.map((url) => {
-            const dirname = new URL(url.loc).pathname;
-            return path.join(PUBLISH_DIR, dirname, "index.html");
+            //const dirname = new URL(url.loc).pathname;
+            return "debug1";
           });
         }
       })
