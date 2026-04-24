@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const glob = require("glob");
-const XMLParser = require("fast-xml-parser");
+const {XMLParser} = require("fast-xml-parser");
 
 const expectedHtmlCount = 3300;
 
