@@ -32,6 +32,6 @@
   "devDependencies": {
     "fast-xml-parser": "^5.7.1",
     "glob": "^7.2.0",
-    "sharp": "^0.27.2"
+    "sharp": "^0.34.5"
   }
 }
