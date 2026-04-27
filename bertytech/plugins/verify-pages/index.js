@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const glob = require("glob");
-const xmlParser = require("fast-xml-parser");
+const {XMLParser} = require("fast-xml-parser");
 
 const expectedHtmlCount = 3300;
 
@@ -33,7 +33,8 @@ module.exports = {
     const pageFiles = allSitemaps
       .map((sitemap) => {
         const content = fs.readFileSync(sitemap, "utf-8");
-        const parsed = xmlParser.parse(content, {});
+        const xmlParser = new XMLParser({});
+        const parsed = xmlParser.parse(content);
         if (parsed.urlset && Array.isArray(parsed.urlset.url)) {
           return parsed.urlset.url.map((url) => {
             const dirname = new URL(url.loc).pathname;

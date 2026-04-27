@@ -1,7 +1,7 @@
 const fs = require("fs");
 const glob = require("glob");
 const htmlnano = require("htmlnano");
-const ampSafePreset = require("htmlnano").presets.ampSafe;
+const ampSafePreset = require("htmlnano/presets/ampSafe").default;
 const postcss = require("./postcss.config");
 
 const publicDir = `${__dirname}/public`;
