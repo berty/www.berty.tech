@@ -9,7 +9,6 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
     "autoprefixer": "^9.7.6",
-    "cheerio": "^1.0.0-rc.3",
     "glob": "^7.1.6",
     "html-minifier": "^4.0.0",
     "postcss-cli": "^7.1.0",
