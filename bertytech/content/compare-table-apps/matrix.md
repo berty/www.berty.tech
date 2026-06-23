@@ -8,9 +8,9 @@ decentralized: Partially
 no_phone_required: true
 anonymous: true
 e2ee: true
-offline_messaging:
+offline_messaging: false
 multi_device: true
 open_spec: true
-aosp:
-privacy_respecting: true
+aosp: true
+privacy_respecting: depends on which homeserver you register at and interact with
 ---
