@@ -1,7 +1,6 @@
 ---
 title: "gno.world Privacy Policy"
 type: fakepost
-url: /gno-world/privacy-policy
 ---
 
 # gno.world Application
